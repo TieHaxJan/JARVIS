@@ -26,6 +26,7 @@ from huggingface_hub.inference_api import InferenceApi
 from huggingface_hub.inference_api import ALL_TASKS
 from huggingface_hub import InferenceClient
 from huggingface_hub import HfApi
+from thefuzz import fuzz
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--config", type=str, default="configs/config.default.yaml")
@@ -232,7 +233,9 @@ def send_request(data):
             logit_bias=data.get("logit_bias")
         )
         #print(f"[ Response ]: {response}")
-        return response["choices"][0]["message"]["content"].strip()
+        content = response["choices"][0]["message"]["content"].strip()
+        cleaned = re.sub(r"<END>\s*$", "", content).rstrip()
+        return cleaned
     response = requests.post(api_endpoint, json=data, headers=HEADER, proxies=PROXY)
     #print(f"[ Response ]: {response.json()}")
     if "error" in response.json():
@@ -953,6 +956,7 @@ def run_task(input, command, results, api_key, api_type, api_endpoint):
             results[id] = collect_result(command, "", inference_result)
             return False
 
+        # Look at all candidates
         candidates = MODELS_MAP[task][:31]
         all_avaliable_models = get_avaliable_models(candidates, config["num_candidate_models"])
         all_avaliable_model_ids = all_avaliable_models["local"] + all_avaliable_models["huggingface"]
@@ -1120,12 +1124,16 @@ def test():
     ]
     chat_huggingface(messages, API_KEY, API_TYPE, API_ENDPOINT, return_planning = False, return_results = False)
 
+exit_variants = ["exit", "exut", "exot", "exir", "exiy", "exjt", "exiit", "quit", "bye"]
+
 def cli():
     messages = []
     print("Welcome to Jarvis! A collaborative system that consists of an LLM as the controller and numerous expert models as collaborative executors. Jarvis can plan tasks, schedule Hugging Face models, generate friendly responses based on your requests, and help you with many things. Please enter your request (`exit` to exit).")
     while True:
         message = input("[ User ]: ")
-        if message == "exit":
+        normalized = message.strip().lower()
+        if any(fuzz.ratio(normalized, variant) >= 80 for variant in exit_variants):
+            print("[ Jarvis ]: Goodnight.")
             break
         messages.append({"role": "user", "content": message})
         answer = chat_huggingface(messages, API_KEY, API_TYPE, API_ENDPOINT, return_planning=False, return_results=False)
