@@ -7,7 +7,8 @@
 The mission of JARVIS is to explore artificial general intelligence (AGI) and deliver cutting-edge research to the whole community.
 
 ## What's New
-
++  [2025.07.17] Added support for local running llama LLM or using huggingface <a href="https://huggingface.co/docs/inference-providers/en/index">Inference Providers</a> for llama. 
+   +  Change from the old deprecated Inference API to also use <a href="https://huggingface.co/docs/inference-providers/en/index">Inference Providers</a> for the expert models.
 +  [2024.01.15] We release Easytool for easier tool usage.
    + The code and datasets are available at [EasyTool](/easytool).
    + The paper is available at [EasyTool: Enhancing LLM-based Agents with Concise Tool Instruction](https://arxiv.org/abs/2401.06201).

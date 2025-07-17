@@ -29,6 +29,8 @@
 
 
 ## Updates
++  [2025.07.17] Added support for local running llama LLM or using huggingface <a href="https://huggingface.co/docs/inference-providers/en/index">Inference Providers</a> for llama. 
+   +  Change from the old deprecated Inference API to also use <a href="https://huggingface.co/docs/inference-providers/en/index">Inference Providers</a> for the expert models.
 +  [2023.07.28] We are now in the process of planning evaluation and project rebuilding. We will release a new version of Jarvis in the near future.
 +  [2023.07.24] We released a light langchain version of Jarvis. See <a href="https://github.com/langchain-ai/langchain/tree/master/libs/experimental/langchain_experimental/autonomous_agents/hugginggpt">here</a>.
 +  [2023.04.16] Jarvis now supports the OpenAI service on the Azure platform and the GPT-4 model.
