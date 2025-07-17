@@ -4,21 +4,27 @@
 legacy/
 
 # for server
-server/models/*
-!server/models/download.sh
-!server/models/download.ps1
-server/logs/
-server/models_dev
-server/public/*
-!server/public/examples/
-server/public/examples/*
-!server/public/examples/a.jpg
-!server/public/examples/b.jpg
-!server/public/examples/c.jpg
-!server/public/examples/d.jpg
-!server/public/examples/e.jpg
-!server/public/examples/f.jpg
-!server/public/examples/g.jpg
+hugginggpt/server/models/*
+!hugginggpt/server/models/download.sh
+!hugginggpt/server/models/download.ps1
+!hugginggpt/server/models/download_huggingface_cli.sh
+hugginggpt/server/logs/
+hugginggpt/server/models_dev
+hugginggpt/server/public/*
+!hugginggpt/server/public/examples/
+hugginggpt/server/public/examples/*
+!hugginggpt/server/public/examples/a.jpg
+!hugginggpt/server/public/examples/b.jpg
+!hugginggpt/server/public/examples/c.jpg
+!hugginggpt/server/public/examples/d.jpg
+!hugginggpt/server/public/examples/e.jpg
+!hugginggpt/server/public/examples/f.jpg
+!hugginggpt/server/public/examples/g.jpg
+
+#environments
+hugginggpt/server/env_chat
+hugginggpt/server/env_models
+hugginggpt/server/jarvis_env
 
 # docker
 Dockerfile
@@ -28,11 +34,11 @@ docker-compose.yml
 # server/run_gradio.py
 
 # for web
-web/node_modules
-web/package-lock.json
-web/dist
-web/electron-dist
-web/yarn.lock
+hugginggpt/web/node_modules
+hugginggpt/web/package-lock.json
+hugginggpt/web/dist
+hugginggpt/web/electron-dist
+hugginggpt/web/yarn.lock
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

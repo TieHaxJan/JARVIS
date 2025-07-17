@@ -14,7 +14,6 @@ import logging
 import argparse
 import yaml
 from PIL import Image, ImageDraw
-from diffusers.utils import load_image
 from pydub import AudioSegment
 import threading
 from queue import Queue
@@ -63,6 +62,14 @@ if log_file:
 LLM = config["model"]
 use_completion = config["use_completion"]
 
+def load_image(url_or_path):
+    if url_or_path.startswith("http"):
+        response = requests.get(url_or_path)
+        return Image.open(BytesIO(response.content)).convert("RGB")
+    else:
+        return Image.open(url_or_path).convert("RGB")
+
+
 # consistent: wrong msra model name 
 LLM_encoding = LLM
 if config["dev"] and LLM == "gpt-3.5-turbo":
@@ -102,6 +109,7 @@ elif API_TYPE == "azure":
     API_KEY = config["azure"]["api_key"]
 elif API_TYPE == "openai":
     API_ENDPOINT = f"https://api.openai.com/v1/{api_name}"
+    #API_ENDPOINT = f"http://0.0.0.0:8010/v1/{api_name}"
     if config["openai"]["api_key"].startswith("sk-"):  # Check for valid OpenAI key in config file
         API_KEY = config["openai"]["api_key"]
     elif "OPENAI_API_KEY" in os.environ and os.getenv("OPENAI_API_KEY").startswith("sk-"):  # Check for environment variable OPENAI_API_KEY
@@ -152,6 +160,8 @@ for model in MODELS:
 METADATAS = {}
 for model in MODELS:
     METADATAS[model["id"]] = model
+for task, models in MODELS_MAP.items():
+    logger.debug(f"{task}: {len(models)} models")
 
 HUGGINGFACE_HEADERS = {}
 if config["huggingface"]["token"] and config["huggingface"]["token"].startswith("hf_"):  # Check for valid huggingface token in config file
@@ -190,7 +200,7 @@ def send_request(data):
     api_key = data.pop("api_key")
     api_type = data.pop("api_type")
     api_endpoint = data.pop("api_endpoint")
-    if use_completion:
+    if use_completion and "prompt" not in data:
         data = convert_chat_to_completion(data)
     if api_type == "openai":
         HEADER = {
@@ -203,7 +213,9 @@ def send_request(data):
         }
     else:
         HEADER = None
+    #print("[ Request ]:", data.get("prompt"))
     response = requests.post(api_endpoint, json=data, headers=HEADER, proxies=PROXY)
+    print(f"[ Response ]: {response.json()}")
     if "error" in response.json():
         return response.json()
     logger.debug(response.text.strip())
@@ -314,6 +326,12 @@ def chitchat(messages, api_key, api_type, api_endpoint):
     }
     return send_request(data)
 
+def build_llama_prompt(task_type, tprompt, demo_text, user_prompt):
+    return f"""{tprompt.strip()} 
+    {demo_text.strip()} 
+    User: {user_prompt.strip()} 
+    Assistant:"""
+
 def parse_task(context, input, api_key, api_type, api_endpoint):
     demos_or_presteps = parse_task_demos_or_presteps
     messages = json.loads(demos_or_presteps)
@@ -325,26 +343,51 @@ def parse_task(context, input, api_key, api_type, api_endpoint):
         history = context[start:]
         prompt = replace_slot(parse_task_prompt, {
             "input": input,
-            "context": history 
+            "context": history
         })
-        messages.append({"role": "user", "content": prompt})
-        history_text = "<im_end>\nuser<im_start>".join([m["content"] for m in messages])
-        num = count_tokens(LLM_encoding, history_text)
-        if get_max_context_length(LLM) - num > 800:
+        if not use_completion:
+            messages = copy.deepcopy(json.loads(demos_or_presteps))
+            messages.insert(0, {"role": "system", "content": parse_task_tprompt})
+            messages.append({"role": "user", "content": prompt_user})
+            history_text = "<im_end>\nuser<im_start>".join([m["content"] for m in messages])
+            num = count_tokens(LLM_encoding, history_text)
+            if get_max_context_length(LLM) - num > 800:
+                break
+        else:
+            # Completion mode doesn't need token check, just build flat prompt
             break
-        messages.pop()
         start += 2
     
     logger.debug(messages)
-    data = {
-        "model": LLM,
-        "messages": messages,
-        "temperature": 0,
-        "logit_bias": {item: config["logit_bias"]["parse_task"] for item in task_parsing_highlight_ids},
-        "api_key": api_key,
-        "api_type": api_type,
-        "api_endpoint": api_endpoint
-    }
+    if use_completion:
+        full_prompt = build_llama_prompt(
+            "parse_task",
+            parse_task_tprompt,
+            demos_or_presteps,
+            prompt
+        )
+        data = {
+            "model": LLM,
+            "prompt": full_prompt,
+            "temperature": 0,
+            "max_tokens": 1024,
+            "stop": ["User:"],
+            "api_key": api_key,
+            "api_type": api_type,
+            "api_endpoint": api_endpoint
+        }
+    else:
+        # Chat-style message for OpenAI API
+        data = {
+            "model": LLM,
+            "messages": messages,
+            "temperature": 0,
+            "logit_bias": {item: config["logit_bias"]["parse_task"] for item in task_parsing_highlight_ids},
+            "api_key": api_key,
+            "api_type": api_type,
+            "api_endpoint": api_endpoint
+        }
+
     return send_request(data)
 
 def choose_model(input, task, metas, api_key, api_type, api_endpoint):
@@ -358,19 +401,37 @@ def choose_model(input, task, metas, api_key, api_type, api_endpoint):
         "task": task,
         "metas": metas
     })
-    messages = json.loads(demos_or_presteps)
-    messages.insert(0, {"role": "system", "content": choose_model_tprompt})
-    messages.append({"role": "user", "content": prompt})
-    logger.debug(messages)
-    data = {
-        "model": LLM,
-        "messages": messages,
-        "temperature": 0,
-        "logit_bias": {item: config["logit_bias"]["choose_model"] for item in choose_model_highlight_ids}, # 5
-        "api_key": api_key,
-        "api_type": api_type,
-        "api_endpoint": api_endpoint
-    }
+    if use_completion:
+        full_prompt = build_llama_prompt(
+            "choose_model",
+            choose_model_tprompt,
+            demos_or_presteps,
+            prompt
+        )
+        data = {
+            "model": LLM,
+            "prompt": full_prompt,
+            "temperature": 0,
+            "max_tokens": 1024,
+            "stop": ["User:"],
+            "api_key": api_key,
+            "api_type": api_type,
+            "api_endpoint": api_endpoint
+        }
+    else:
+        messages = json.loads(demos_or_presteps)
+        messages.insert(0, {"role": "system", "content": choose_model_tprompt})
+        messages.append({"role": "user", "content": prompt_user})
+        data = {
+            "model": LLM,
+            "messages": messages,
+            "temperature": 0,
+            "logit_bias": {item: config["logit_bias"]["choose_model"] for item in choose_model_highlight_ids},
+            "api_key": api_key,
+            "api_type": api_type,
+            "api_endpoint": api_endpoint
+        }
+
     return send_request(data)
 
 
@@ -383,18 +444,36 @@ def response_results(input, results, api_key, api_type, api_endpoint):
         "input": input,
         "processes": results
     })
-    messages = json.loads(demos_or_presteps)
-    messages.insert(0, {"role": "system", "content": response_results_tprompt})
-    messages.append({"role": "user", "content": prompt})
-    logger.debug(messages)
-    data = {
-        "model": LLM,
-        "messages": messages,
-        "temperature": 0,
-        "api_key": api_key,
-        "api_type": api_type,
-        "api_endpoint": api_endpoint
-    }
+    if use_completion:
+        full_prompt = build_llama_prompt(
+            "response_results",
+            response_results_tprompt,
+            demos_or_presteps,
+            prompt
+        )
+        data = {
+            "model": LLM,
+            "prompt": full_prompt,
+            "temperature": 0,
+            "max_tokens": 1024,
+            "stop": ["<END>"],
+            "api_key": api_key,
+            "api_type": api_type,
+            "api_endpoint": api_endpoint
+        }
+    else:
+        messages = json.loads(demos_or_presteps)
+        messages.insert(0, {"role": "system", "content": response_results_tprompt})
+        messages.append({"role": "user", "content": prompt_user})
+        data = {
+            "model": LLM,
+            "messages": messages,
+            "temperature": 0,
+            "api_key": api_key,
+            "api_type": api_type,
+            "api_endpoint": api_endpoint
+        }
+
     return send_request(data)
 
 def huggingface_model_inference(model_id, data, task):
@@ -698,7 +777,8 @@ def get_avaliable_models(candidates, topk=5):
     result_count = len(threads)
     while result_count:
         model_id, status, endpoint_type = result_queue.get()
-        if status and model_id not in all_available_models:
+        logger.debug(f"Model: {model_id} | Status: {status} | Source: {endpoint_type}")
+        if status and model_id not in all_available_models[endpoint_type]:
             all_available_models[endpoint_type].append(model_id)
         if len(all_available_models["local"] + all_available_models["huggingface"]) >= topk:
             break

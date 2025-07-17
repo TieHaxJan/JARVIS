@@ -9,12 +9,14 @@ encodings = {
     "text-davinci-002": tiktoken.get_encoding("p50k_base"),
     "text-davinci-001": tiktoken.get_encoding("r50k_base"),
     "text-curie-001": tiktoken.get_encoding("r50k_base"),
+    "gpt-3.5-turbo-instruct": tiktoken.get_encoding("cl100k_base"),
     "text-babbage-001": tiktoken.get_encoding("r50k_base"),
     "text-ada-001": tiktoken.get_encoding("r50k_base"),
     "davinci": tiktoken.get_encoding("r50k_base"),
     "curie": tiktoken.get_encoding("r50k_base"),
     "babbage": tiktoken.get_encoding("r50k_base"),
     "ada": tiktoken.get_encoding("r50k_base"),
+    "llama-3.1-8b-instruct": tiktoken.get_encoding("p50k_base")
 }
 
 max_length = {
@@ -26,12 +28,14 @@ max_length = {
     "text-davinci-002": 4096,
     "text-davinci-001": 2049,
     "text-curie-001": 2049,
+    "gpt-3.5-turbo-instruct": 4096,
     "text-babbage-001": 2049,
     "text-ada-001": 2049,
     "davinci": 2049,
     "curie": 2049,
     "babbage": 2049,
-    "ada": 2049
+    "ada": 2049,
+    "llama-3.1-8b-instruct": 2049
 }
 
 def count_tokens(model_name, text):

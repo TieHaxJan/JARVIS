@@ -5,13 +5,12 @@ import uuid
 import numpy as np
 from transformers import pipeline
 from diffusers import DiffusionPipeline, StableDiffusionControlNetPipeline, ControlNetModel, UniPCMultistepScheduler
-from diffusers.utils import load_image
 from diffusers import DiffusionPipeline, DPMSolverMultistepScheduler
 from diffusers.utils import export_to_video
 from transformers import SpeechT5Processor, SpeechT5ForTextToSpeech, SpeechT5HifiGan, SpeechT5ForSpeechToSpeech
 from transformers import BlipProcessor, BlipForConditionalGeneration
 from transformers import TrOCRProcessor, VisionEncoderDecoderModel, ViTImageProcessor, AutoTokenizer
-from datasets import load_dataset
+from datasets import load_dataset, load_from_disk
 from PIL import Image
 import flask
 from flask import request, jsonify
@@ -23,7 +22,7 @@ import torch
 import torchaudio
 from speechbrain.pretrained import WaveformEnhancement
 import joblib
-from huggingface_hub import hf_hub_url, cached_download
+from huggingface_hub import hf_hub_url, hf_hub_download
 from transformers import AutoImageProcessor, TimesformerForVideoClassification
 from transformers import MaskFormerFeatureExtractor, MaskFormerForInstanceSegmentation, AutoFeatureExtractor
 from controlnet_aux import OpenposeDetector, MLSDdetector, HEDdetector, CannyDetector, MidasDetector
@@ -39,6 +38,14 @@ from asteroid.models import BaseModel
 import traceback
 import os
 import yaml
+
+def load_image(url_or_path):
+    if url_or_path.startswith("http"):
+        response = requests.get(url_or_path)
+        return Image.open(BytesIO(response.content)).convert("RGB")
+    else:
+        return Image.open(url_or_path).convert("RGB")
+
 
 warnings.filterwarnings("ignore")
 
@@ -149,13 +156,13 @@ def load_pipes(local_deployment):
             #     "model": WaveformEnhancement.from_hparams(source="speechbrain/mtl-mimic-voicebank", savedir="models/mtl-mimic-voicebank"),
             #     "device": device
             # },
-            "microsoft/speecht5_vc":{
-                "processor": SpeechT5Processor.from_pretrained(f"{local_fold}/microsoft/speecht5_vc"),
-                "model": SpeechT5ForSpeechToSpeech.from_pretrained(f"{local_fold}/microsoft/speecht5_vc"),
-                "vocoder": SpeechT5HifiGan.from_pretrained(f"{local_fold}/microsoft/speecht5_hifigan"),
-                "embeddings_dataset": load_dataset(f"{local_fold}/Matthijs/cmu-arctic-xvectors", split="validation"),
-                "device": device
-            },
+            #"microsoft/speecht5_vc":{
+            #    "processor": SpeechT5Processor.from_pretrained(f"{local_fold}/microsoft/speecht5_vc"),
+            #    "model": SpeechT5ForSpeechToSpeech.from_pretrained(f"{local_fold}/microsoft/speecht5_vc"),
+            #    "vocoder": SpeechT5HifiGan.from_pretrained(f"{local_fold}/microsoft/speecht5_hifigan"),
+            #    "embeddings_dataset": load_dataset(f"{local_fold}/Matthijs/cmu-arctic-xvectors", split="validation"),
+            #    "device": device
+            #},
             # "julien-c/wine-quality": {
             #     "model": joblib.load(cached_download(hf_hub_url("julien-c/wine-quality", "sklearn_model.joblib")))
             # },
