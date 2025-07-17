@@ -7,6 +7,10 @@ import time
 import uvicorn
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
+# Change Model Path and Name here
+MODEL_PATH = "../meta-llama/Llama-3-1-8B-Instruct"
+MODEL_NAME = "llama-3.1-8b-instruct"
+
 app = FastAPI()
 
 class Message(BaseModel):
@@ -28,7 +32,7 @@ device = "cuda" if torch.cuda.is_available() else "cpu"
 def load_model():
     global model, tokenizer
     print("Loading tokenizer...")
-    model_name = "../meta-llama/Llama-3-1-8B-Instruct"
+    model_name = MODEL_PATH
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     print("Loading model...")
     model = AutoModelForCausalLM.from_pretrained(model_name, torch_dtype=torch.float16 if device == "cuda" else torch.float32)
@@ -78,7 +82,7 @@ async def completions(req: dict):
     prompt = req["prompt"]
     temperature = max(req.get("temperature", 0), 1e-5)
     max_tokens = req.get("max_tokens", 512)
-    model_name = req.get("model", "llama-3.1-8b-instruct")
+    model_name = req.get("model", MODEL_NAME)
     stop_strs = req.get("stop", ["User:", "\nUser:", "\n\nUser:"])
 
     inputs = tokenizer(prompt, return_tensors="pt").to(device)

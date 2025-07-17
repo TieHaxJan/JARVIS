@@ -58,7 +58,16 @@ We introduce a collaborative system that consists of **an LLM as the controller*
 
 ## System Requirements
 
-### Default (Recommended)
+#### Huggingface Inference LLama (Recommended)
+
+For `configs/config.huggingllama.yaml`:
+
++ Ubuntu 22.04 LTS
++ Nothing else
+
+The configuration `configs/config.huggingllama.yaml` does not require any expert models to be downloaded and deployed locally. However, it means that Jarvis is restricted to models running stably on HuggingFace Inference Providers.
+
+#### Default
 
 For `configs/config.default.yaml`:
 
@@ -98,11 +107,23 @@ pip install -r requirements.txt
 
 # download models. Make sure that `git-lfs` is installed.
 cd models
-bash download.sh # required when `inference_mode` is `local` or `hybrid`. 
+# bash download.sh does not work anymore, because the way to download changed and it is easier to use the huggingface-cli
+# be sure to login before downloading, i.e. `huggingface-cli login`
+bash download_huggingface_cli.sh # required when `inference_mode` is `local` or `hybrid`. 
 
-# run server
+# we suggest creating seperate environment for the models server and the chat if not done the way shown above
+# run model server
 cd ..
+python3 -m venv env_models
+source env_models/bin/activate
+pip install -r requirements.txt
+# fix broken dependencies (for models server only)
+pip install diffusers==0.20.2 huggingface_hub==0.16.4
+pip install werkzeug==2.3.7 flask==2.3.2
+pip install scipy==1.10.1
 python models_server.py --config configs/config.default.yaml # required when `inference_mode` is `local` or `hybrid`
+
+# run chat
 python awesome_chat.py --config configs/config.default.yaml --mode server # for text-davinci-003
 ```
 
@@ -173,7 +194,11 @@ You can also run Jarvis more easily in CLI mode:
 
 ```bash
 cd server
-python awesome_chat.py --config configs/config.default.yaml --mode cli
+python3 -m venv env_chat
+source env_chat/bin/activate
+pip install -r requirements.txt
+python3 awesome_chat.py --config configs/config.default.yaml --mode cli
+deactivate
 ```
 
 Examples of CLI mode:
@@ -186,6 +211,23 @@ Welcome to Jarvis! A collaborative system that consists of an LLM as the control
 [ Jarvis ]: Sure, I understand your request. Based on the inference results of the models, I will answer your request step by step. Firstly, I used the token-classification model dslim/bert-base-NER to recognize the named entities in the sentence. The inference result is that the named entities are Iron Man, Stan Lee, Larry Lieber, Don Heck and Jack Kirby. Then, I used the question-answering model deepset/roberta-base-squad2 to answer your request. The inference result is that there is no output since the context cannot be empty. Therefore, I cannot make it. I hope this answer your request. Is there anything else I can help you with?
 [ User ]: Please generate a canny image based on /examples/f.jpg
 [ Jarvis ]: Sure. I have generated a canny image based on /examples/f.jpg. To do this, I first used the image-to-text model nlpconnect/vit-gpt2-image-captioning to generate the text description of the image, which is "a herd of giraffes and zebras grazing in a field". Then I used the canny-control model to generate the canny image of the original image, which is stored in the path "/images/1ea2.png". Finally, I used the canny-text-to-image model lllyasviel/sd-controlnet-canny to generate the canny image based on the text description and the canny image, which is stored in the path "/images/ba66.png". Do you need anything else?
+```
+
+#### Running LLama locally:
+
+We provide a simple OpenAI API-Style API which wraps locally running llama.
+Follow the below steps to setup local llama.
+Download your preferred llama model anch change the model in the `llama_server.py`.
+Make sure your model is added to `get_token_ids.py`.
+When running llama locally, make sure to set `dev: true`, `use_completion: true` and `local: \ endpoint: http://0.0.0.0:8010` or take a look at `config.localllama.yaml`.
+
+```bash
+cd llama_server
+python3 -m venv env_llama
+source env_llama/bin/activate
+pip install -r requirements.txt
+python3 llama_server.py
+deactivate
 ```
 
 
