@@ -1,0 +1,88 @@
+#openai: 
+#  api_key: YOUR_OPEN_AI_API_KEY
+# azure:
+#   api_key: REPLACE_WITH_YOUR_AZURE_API_KEY_HERE
+#   base_url: REPLACE_WITH_YOUR_ENDPOINT_HERE
+#   deployment_name: REPLACE_WITH_YOUR_DEPLOYMENT_NAME_HERE
+#   api_version: "2022-12-01"
+huggingface:
+  token: YOUR_HF_TOKEN # required: huggingface token @ https://huggingface.co/settings/tokens
+dev: false
+local:
+  endpoint: http://0.0.0.0:8010
+debug: false
+log_file: logs/debug.log
+model: meta-llama/Llama-3.3-70B-Instruct # currently only support text-davinci-003, gpt-4, we will support more open-source LLMs in the future
+use_completion: false
+inference_mode: huggingface # local, huggingface or hybrid, prefer hybrid
+local_deployment: minimal # minimal, standard or full, prefer full
+device: cuda:0 # cuda:id or cpu
+num_candidate_models: 5
+max_description_length: 100
+proxy: # optional: your proxy server "http://ip:port"
+http_listen:
+  host: 0.0.0.0 # if you use web as the client, please set `http://{LAN_IP_of_the_server}:{port}/` to `BASE_URL` of `web/src/config/index.ts`.
+  port: 8004
+local_inference_endpoint:
+  host: localhost
+  port: 8005
+logit_bias:
+  parse_task: 0.1
+  choose_model: 5
+tprompt:
+  parse_task: >-
+    #1 Task Planning Stage: You are a helpful AI assistant. Based on the user's request, you will recommend the best model from Hugging Face for the task, and explain why.
+    The special tag "<GENERATED>-dep_id" refer to the one generated text/image/audio in the dependency task (Please consider whether the dependency task generates resources of this type.) and "dep_id" must be in "dep" list. 
+    The "dep" field denotes the ids of the previous prerequisite tasks which generate a new resource that the current task relies on. 
+    The "args" field must in ["text", "image", "audio"], nothing else. 
+    You must respond in JSON format like:
+    [
+      {
+        "task": task, 
+        "id": task_id, 
+        "dep": dependency_task_id, 
+        "args": {
+          "text": text or <GENERATED>-dep_id, 
+          "image": image_url or <GENERATED>-dep_id, 
+          "audio": audio_url or <GENERATED>-dep_id
+        }
+      }
+    ]
+    Respond with the JSON entry and ONLY the JSON entry!
+    Here are some few-shot examples:
+  choose_model: >-
+    #2 Model Selection Stage: 
+    Given the user request and the parsed tasks, the AI assistant helps the user to select a suitable model from a list of models to process the user request. 
+    The assistant should focus more on the description of the model and find the model that has the most potential to solve requests and tasks. 
+    Also, prefer models with local inference endpoints for speed and stability.
+    You must respond in JSON format like:
+    {
+      "id": "<model-id>",
+      "reason": "<why this model is best suited>"
+    }
+    Allowed task types: ["token-classification", "text2text-generation", "summarization", "translation", "question-answering", "conversational", "text-generation", "sentence-similarity", "tabular-classification", "object-detection", "image-classification", "image-to-image", "image-to-text", "text-to-image", "text-to-video", "visual-question-answering", "document-question-answering", "image-segmentation", "depth-estimation", "text-to-speech", "automatic-speech-recognition", "audio-to-audio", "audio-classification", "canny-control", "hed-control", "mlsd-control", "normal-control", "openpose-control", "canny-text-to-image", "depth-text-to-image", "hed-text-to-image", "mlsd-text-to-image", "normal-text-to-image", "openpose-text-to-image", "seg-text-to-image"]
+    Available models: ["nlpconnect/vit-gpt2-image-captioning", "runwayml/stable-diffusion-v1-5", "damo-vilab/text-to-video-ms-1.7b", "microsoft/speecht5_asr", "JorisCos/DCCRNet_Libri1Mix_enhsingle_16k", "espnet/kan-bayashi_ljspeech_vits", "facebook/detr-resnet-101", "microsoft/speecht5_hifigan", "microsoft/speecht5_vc", "openai/whisper-base", "Intel/dpt-large", "facebook/detr-resnet-50-panoptic", "facebook/detr-resnet-50", "google/owlvit-base-patch32", "impira/layoutlm-document-qa", "ydshieh/vit-gpt2-coco-en", "dandelin/vilt-b32-finetuned-vqa", "lambdalabs/sd-image-variations-diffusers", "facebook/maskformer-swin-base-coco", "Intel/dpt-hybrid-midas"]
+
+    Consider model popularity, task suitability, performance, and availability.
+    Respond with the JSON entry and ONLY the JSON entry!
+  response_results: >-
+    #4 Response Generation Stage: With the task execution logs, the AI assistant needs to describe the process and inference results.
+    If different models provide conflicting results, mention both and explain which one is more likely to be accurate and why. 
+    Prefer higher-confidence and more direct detection results.
+    Your answer should:
+    - Start with a clear sentence that directly addresses the user's request.
+    - Mention the number of objects (if applicable).
+    - Clearly explain which models were used, in what order, and why.
+    - Include model confidence scores and output values if available.
+    - For example for generated images, provide the path to that image.
+    - End the response with the special token <END>.
+demos_or_presteps:
+  parse_task: demos/demo_parse_task.json
+  choose_model: demos/demo_choose_model.json
+  response_results: demos/demo_response_results.json 
+prompt:
+  parse_task: The chat log [ {{context}} ] may contain the resources I mentioned. Now I input { {{input}} }. Pay attention to the input and output types of tasks and the dependencies between tasks.
+  choose_model: >-
+    Please choose the most suitable model from {{metas}} for the task {{task}}. The output must be in a strict JSON format: {"id": "id", "reason": "your detail reasons for the choice"}.
+  response_results: >-
+    Yes. Please first think carefully and directly answer my request based on the inference results. Some of the inferences may not always turn out to be correct and require you to make careful consideration in making decisions. Then please detail your workflow including the used models and inference results for my request in your friendly tone. Please filter out information that is not relevant to my request. Tell me the complete path or urls of files in inference results. If there is nothing in the results, please tell me you can't make it. }

@@ -16,7 +16,9 @@ encodings = {
     "curie": tiktoken.get_encoding("r50k_base"),
     "babbage": tiktoken.get_encoding("r50k_base"),
     "ada": tiktoken.get_encoding("r50k_base"),
-    "llama-3.1-8b-instruct": tiktoken.get_encoding("p50k_base")
+    "llama-3.1-8b-instruct": tiktoken.get_encoding("p50k_base"),
+    #Remote Models
+    "meta-llama/Llama-3.3-70B-Instruct": tiktoken.get_encoding("p50k_base")
 }
 
 max_length = {
@@ -35,7 +37,9 @@ max_length = {
     "curie": 2049,
     "babbage": 2049,
     "ada": 2049,
-    "llama-3.1-8b-instruct": 2049
+    "llama-3.1-8b-instruct": 2049,
+    #Remote Models
+    "meta-llama/Llama-3.3-70B-Instruct": 4096
 }
 
 def count_tokens(model_name, text):
