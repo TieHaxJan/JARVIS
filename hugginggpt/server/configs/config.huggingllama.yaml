@@ -8,10 +8,14 @@
 huggingface:
   token: YOUR_HF_TOKEN # required: huggingface token @ https://huggingface.co/settings/tokens
 dev: false
-local:
-  endpoint: http://0.0.0.0:8010
 debug: false
-log_file: logs/debug.log
+# Use wildcards:
+#   [date]: Y-m-d
+#   [time]: H-M-S
+#   [datetime]: Y-m-d_H-M-S-f
+#   [timestamp]: Unix timestamp
+#   [uuid]: uuid4
+log_file: logs/debug_[datetime].log
 model: meta-llama/Llama-3.3-70B-Instruct # currently only support text-davinci-003, gpt-4, we will support more open-source LLMs in the future
 use_completion: false
 inference_mode: huggingface # local, huggingface or hybrid, prefer hybrid

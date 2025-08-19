@@ -1,6 +1,7 @@
 import base64
 import copy
 from io import BytesIO
+from datetime import datetime
 import io
 import os
 import random
@@ -57,6 +58,13 @@ logger.addHandler(handler)
 
 log_file = config["log_file"]
 if log_file:
+    now = datetime.now()
+    date_str = now.strftime("%Y-%m-%d")
+    time_str = now.strftime("%H-%M-%S")
+    datetime_str = now.strftime("%Y-%m-%d_%H-%M-%S-%f")
+    timestamp = str(int(now.timestamp()))
+    uuid_str = str(uuid.uuid4())
+    log_file = log_file.replace("[date]", date_str).replace("[time]", time_str).replace("[datetime]", datetime_str).replace("[timestamp]", timestamp).replace("[uuid]", uuid_str)
     filehandler = logging.FileHandler(log_file)
     filehandler.setLevel(logging.DEBUG)
     filehandler.setFormatter(formatter)
@@ -282,6 +290,10 @@ def record_case(success, **args):
     else:
         f = open("logs/log_fail.jsonl", "a")
     log = args
+    if success:
+        logger.debug(f" Success: {json.dumps(log)}")
+    else:
+        logger.debug(f" Failure: {json.dumps(log)}")
     f.write(json.dumps(log) + "\n")
     f.close()
 
@@ -838,7 +850,7 @@ def collect_result(command, choose, inference_result):
     result = {"task": command}
     result["inference result"] = inference_result
     result["choose model result"] = choose
-    logger.debug(f"inference result: {inference_result}")
+    logger.debug(f"Inference Result: {inference_result}")
     return result
 
 
@@ -918,7 +930,7 @@ def run_task(input, command, results, api_key, api_type, api_endpoint):
             task = f"{control}-control"
 
     command["args"] = args
-    logger.debug(f"parsed task: {command}")
+    logger.debug(f"Parsed Task: {command}")
 
     if task.endswith("-text-to-image") or task.endswith("-control"):
         if inference_mode != "huggingface":
@@ -930,7 +942,7 @@ def run_task(input, command, results, api_key, api_type, api_endpoint):
             hosted_on = "local"
             reason = "ControlNet is the best model for this task."
             choose = {"id": best_model_id, "reason": reason}
-            logger.debug(f"chosen model: {choose}")
+            logger.debug(f"Chosen Model: {choose}")
         else:
             logger.warning(f"Task {command['task']} is not available. ControlNet need to be deployed locally.")
             record_case(success=False, **{"input": input, "task": command, "reason": f"Task {command['task']} is not available. ControlNet need to be deployed locally.", "op":"message"})
@@ -1028,7 +1040,7 @@ def chat_huggingface(messages, api_key, api_type, api_endpoint, return_planning 
         return {"message": task_str["error"]["message"]}
 
     task_str = task_str.strip()
-    logger.info(task_str)
+    #logger.info(task_str)
 
     try:
         tasks = json.loads(task_str)
@@ -1129,11 +1141,14 @@ exit_variants = ["exit", "exut", "exot", "exir", "exiy", "exjt", "exiit", "quit"
 def cli():
     messages = []
     print("Welcome to Jarvis! A collaborative system that consists of an LLM as the controller and numerous expert models as collaborative executors. Jarvis can plan tasks, schedule Hugging Face models, generate friendly responses based on your requests, and help you with many things. Please enter your request (`exit` to exit).")
+    logger.info("Welcome to Jarvis! A collaborative system that consists of an LLM as the controller and numerous expert models as collaborative executors. Jarvis can plan tasks, schedule Hugging Face models, generate friendly responses based on your requests, and help you with many things. Please enter your request (`exit` to exit).")
     while True:
         message = input("[ User ]: ")
         normalized = message.strip().lower()
+        logger.info(f"[ User ]: {normalized}")
         if any(fuzz.ratio(normalized, variant) >= 80 for variant in exit_variants):
             print("[ Jarvis ]: Goodnight.")
+            logger.info("[ Jarvis ]: Goodnight.")
             break
         messages.append({"role": "user", "content": message})
         answer = chat_huggingface(messages, API_KEY, API_TYPE, API_ENDPOINT, return_planning=False, return_results=False)
