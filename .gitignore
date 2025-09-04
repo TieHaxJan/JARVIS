@@ -8,9 +8,7 @@ hugginggpt/server/models/*
 !hugginggpt/server/models/download.sh
 !hugginggpt/server/models/download.ps1
 !hugginggpt/server/models/download_huggingface_cli.sh
-hugginggpt/server/logs/
 hugginggpt/server/models_dev
-hugginggpt/server/public/*
 !hugginggpt/server/public/examples/
 hugginggpt/server/public/examples/*
 !hugginggpt/server/public/examples/a.jpg
@@ -98,7 +96,6 @@ coverage.xml
 *.pot
 
 # Django stuff:
-*.log
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
