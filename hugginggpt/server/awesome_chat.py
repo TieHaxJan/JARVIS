@@ -14,6 +14,7 @@ import json
 import logging
 import argparse
 import yaml
+from pathlib import Path
 from PIL import Image, ImageDraw
 from pydub import AudioSegment
 import threading
@@ -28,6 +29,7 @@ from huggingface_hub.inference_api import ALL_TASKS
 from huggingface_hub import InferenceClient
 from huggingface_hub import HfApi
 from thefuzz import fuzz
+from retriever import ExplanationRetriever
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--config", type=str, default="configs/config.default.yaml")
@@ -46,7 +48,7 @@ os.makedirs("public/audios", exist_ok=True)
 os.makedirs("public/videos", exist_ok=True)
 
 
-logger = logging.getLogger(__name__)
+logger = logging.getLogger()
 logger.setLevel(logging.DEBUG)
 
 handler = logging.StreamHandler()
@@ -70,15 +72,25 @@ if log_file:
     filehandler.setFormatter(formatter)
     logger.addHandler(filehandler)
 
+retriever = ExplanationRetriever(db_path="data/explanations.jsonl")
+
 LLM = config["model"]
 use_completion = config["use_completion"]
 
-def load_image(url_or_path):
-    if url_or_path.startswith("http"):
-        response = requests.get(url_or_path)
-        return Image.open(BytesIO(response.content)).convert("RGB")
-    else:
-        return Image.open(url_or_path).convert("RGB")
+def load_image(url_or_path: str) -> Image.Image:
+    """
+    Lädt ein Bild von URL oder Pfad und gibt ein PIL.Image im RGB-Modus zurück.
+    """
+    try:
+        if url_or_path.startswith("http"):
+            response = requests.get(url_or_path, timeout=10)
+            response.raise_for_status()
+            logger.info("Loaded image via http.")
+            return Image.open(io.BytesIO(response.content)).convert("RGB")
+        else:
+            return Image.open(url_or_path).convert("RGB")
+    except Exception as e:
+        raise ValueError(f"Could not load image from {url_or_path}: {e}")
 
 
 # consistent: wrong msra model name 
@@ -297,12 +309,17 @@ def record_case(success, **args):
     f.write(json.dumps(log) + "\n")
     f.close()
 
-def image_to_bytes(img_url):
-    img_byte = io.BytesIO()
-    type = img_url.split(".")[-1]
-    load_image(img_url).save(img_byte, format="png")
-    img_data = img_byte.getvalue()
-    return img_data
+def image_to_bytes(img_url: str) -> bytes:
+    if img_url.startswith("http"):
+        response = requests.get(img_url, timeout=10)
+        response.raise_for_status()
+        return response.content
+    else:
+        path = Path(img_url)
+        if not path.exists():
+            raise FileNotFoundError(f"Image not found: {path}")
+        return path.read_bytes()
+
 
 def resource_has_dep(command):
     args = command["args"]
@@ -588,8 +605,9 @@ def huggingface_model_inference(model_id, data, task):
     if task == "object-detection":
         img_url = data["image"]
         img_data = image_to_bytes(img_url)
-        predicted = inferenceClient.object_detection(image=img_data)
-        image = Image.open(BytesIO(img_data))
+        img_path = Path("/home/jan/Documents/VSC Projects/JARVIS/hugginggpt/server/public/examples/c.jpg")
+        predicted = inferenceClient.object_detection(img_data)
+        image = Image.open(BytesIO(img_data)).convert("RGB")
         draw = ImageDraw.Draw(image)
         labels = list(item['label'] for item in predicted)
         color_map = {}
@@ -618,12 +636,13 @@ def huggingface_model_inference(model_id, data, task):
     
     # AUDIO tasks
     if task == "text-to-speech":
-        response = inferenceClient.image_to_text(text=data["text"])
+        #response = inferenceClient.image_to_text(text=data["text"])
         # response = requests.post(task_url, headers=HUGGINGFACE_HEADERS, json={"inputs": text})
-        name = str(uuid.uuid4())[:4]
-        with open(f"public/audios/{name}.flac", "wb") as f:
-            f.write(response.content)
-        result = {"generated audio": f"/audios/{name}.flac"}
+        #name = str(uuid.uuid4())[:4]
+        #with open(f"public/audios/{name}.flac", "wb") as f:
+            #f.write(response.content)
+        #result = {"generated audio": f"/audios/{name}.flac"}
+        raise NotImplementedError("text-to-speech task is not supported by the inference client!")
     if task == "automatic-speech-recognition":
         audio_url = data["audio"]
         audio_data = requests.get(audio_url, timeout=10).content
@@ -1026,6 +1045,25 @@ def run_task(input, command, results, api_key, api_type, api_endpoint):
     results[id] = collect_result(command, choose, inference_result)
     return True
 
+def extract_explanation(text: str) -> str:
+    """Extracts explanation between <EXPLANATION> tags, fallback = full text."""
+    match = re.search(r"<EXPLANATION>(.*?)</EXPLANATION>", text, re.DOTALL)
+    if match:
+        return match.group(1).strip()
+    return text.strip()
+
+def replace_explanation_tags(text: str, new_explanation: str) -> str:
+    """
+    Replaces <EXPLANATION>...</EXPLANATION> in text with new_explanation (without tags).
+    If no tags found, appends explanation at the end.
+    """
+    pattern = r"<EXPLANATION>.*?</EXPLANATION>"
+    if re.search(pattern, text, re.DOTALL):
+        return re.sub(pattern, new_explanation, text, flags=re.DOTALL)
+    else:
+        return text.strip() + "\n\n" + new_explanation
+
+
 def chat_huggingface(messages, api_key, api_type, api_endpoint, return_planning = False, return_results = False):
     start = time.time()
     context = messages[:-1]
@@ -1104,6 +1142,25 @@ def chat_huggingface(messages, api_key, api_type, api_endpoint, return_planning 
         return results
     
     response = response_results(input, results, api_key, api_type, api_endpoint).strip()
+    logger.debug(response)
+
+    explanation = extract_explanation(response)
+
+
+    task_id = str(uuid.uuid4())  # or reuse HuggingGPT task ID
+    retrieval_result = retriever.handle_task(
+        task_id=task_id,
+        task_description=input,
+        hugginggpt_output=json.dumps(results, ensure_ascii=False),
+        base_explainer_fn=lambda desc, out: explanation
+    )
+
+    # Use retrieved or base explanation in final answer
+    final_explanation = retrieval_result["entry"]["explanation"]
+
+    logger.debug(final_explanation)
+
+    response = replace_explanation_tags(response, final_explanation)
 
     end = time.time()
     during = end - start

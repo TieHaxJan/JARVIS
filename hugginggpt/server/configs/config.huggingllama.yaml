@@ -77,6 +77,7 @@ tprompt:
     - Start with a clear sentence that directly addresses the user's request.
     - Mention the number of objects (if applicable).
     - Clearly explain which models were used, in what order, and why.
+    - Please put your user-friendly explanation between <EXPLANATION> ... </EXPLANATION> tags.
     - Include model confidence scores and output values if available.
     - For example for generated images, provide the path to that image.
     - End the response with the special token <END>.
