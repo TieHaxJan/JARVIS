@@ -7,7 +7,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 
 class ExplanationRetriever:
-    def __init__(self, db_path="data/explanations.jsonl", model_name="all-MiniLM-L6-v2", threshold=0.8):
+    def __init__(self, db_path="data/explanations.jsonl", model_name="all-MiniLM-L6-v2", threshold=0.95):
         self.db_path = db_path
         self.embedder = SentenceTransformer(model_name)
         self.threshold = threshold

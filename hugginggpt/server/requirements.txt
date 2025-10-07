@@ -18,4 +18,4 @@ pytesseract==0.3.10
 gradio==3.24.1
 werkzeug==2.3.7
 thefuzz==0.22.1
-SentenceTransformer==5.1.0
+sentence_transformers==5.1.0

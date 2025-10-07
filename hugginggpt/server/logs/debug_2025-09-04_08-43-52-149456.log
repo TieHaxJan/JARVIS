@@ -1,0 +1,288 @@
+2025-09-04 08:43:52,150 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-09-04 08:43:52,150 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-04 08:43:52,151 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-04 08:43:52,300 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-04 08:43:52,305 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-09-04 08:43:52,306 - filelock - DEBUG - Attempting to acquire lock 130917440705472 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/952a9b81c0bfd99800fabf352f69c7ccd46c5e43.lock
+2025-09-04 08:43:52,306 - filelock - DEBUG - Lock 130917440705472 acquired on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/952a9b81c0bfd99800fabf352f69c7ccd46c5e43.lock
+2025-09-04 08:43:52,311 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 349
+2025-09-04 08:43:52,313 - filelock - DEBUG - Attempting to release lock 130917440705472 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/952a9b81c0bfd99800fabf352f69c7ccd46c5e43.lock
+2025-09-04 08:43:52,313 - filelock - DEBUG - Lock 130917440705472 released on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/952a9b81c0bfd99800fabf352f69c7ccd46c5e43.lock
+2025-09-04 08:43:52,416 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-04 08:43:52,421 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-04 08:43:52,421 - filelock - DEBUG - Attempting to acquire lock 130917440704272 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/fd1b291129c607e5d49799f87cb219b27f98acdf.lock
+2025-09-04 08:43:52,422 - filelock - DEBUG - Lock 130917440704272 acquired on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/fd1b291129c607e5d49799f87cb219b27f98acdf.lock
+2025-09-04 08:43:52,425 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 116
+2025-09-04 08:43:52,426 - filelock - DEBUG - Attempting to release lock 130917440704272 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/fd1b291129c607e5d49799f87cb219b27f98acdf.lock
+2025-09-04 08:43:52,426 - filelock - DEBUG - Lock 130917440704272 released on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/fd1b291129c607e5d49799f87cb219b27f98acdf.lock
+2025-09-04 08:43:52,560 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-04 08:43:52,565 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-04 08:43:52,670 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-09-04 08:43:52,675 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+2025-09-04 08:43:52,675 - filelock - DEBUG - Attempting to acquire lock 130917440705472 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/58d4a9a45664eb9e12de9549c548c09b6134c17f.lock
+2025-09-04 08:43:52,675 - filelock - DEBUG - Lock 130917440705472 acquired on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/58d4a9a45664eb9e12de9549c548c09b6134c17f.lock
+2025-09-04 08:43:52,679 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 None
+2025-09-04 08:43:52,680 - filelock - DEBUG - Attempting to release lock 130917440705472 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/58d4a9a45664eb9e12de9549c548c09b6134c17f.lock
+2025-09-04 08:43:52,680 - filelock - DEBUG - Lock 130917440705472 released on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/58d4a9a45664eb9e12de9549c548c09b6134c17f.lock
+2025-09-04 08:43:52,784 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-04 08:43:52,790 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-09-04 08:43:53,077 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-09-04 08:43:53,082 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+2025-09-04 08:43:53,082 - filelock - DEBUG - Attempting to acquire lock 130917440656992 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/59d594003bf59880a884c574bf88ef7555bb0202.lock
+2025-09-04 08:43:53,083 - filelock - DEBUG - Lock 130917440656992 acquired on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/59d594003bf59880a884c574bf88ef7555bb0202.lock
+2025-09-04 08:43:53,087 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 53
+2025-09-04 08:43:53,088 - filelock - DEBUG - Attempting to release lock 130917440656992 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/59d594003bf59880a884c574bf88ef7555bb0202.lock
+2025-09-04 08:43:53,088 - filelock - DEBUG - Lock 130917440656992 released on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/59d594003bf59880a884c574bf88ef7555bb0202.lock
+2025-09-04 08:43:53,229 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-09-04 08:43:53,331 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-09-04 08:43:53,336 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+2025-09-04 08:43:53,337 - filelock - DEBUG - Attempting to acquire lock 130917440661552 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/72b987fd805cfa2b58c4c8c952b274a11bfd5a00.lock
+2025-09-04 08:43:53,337 - filelock - DEBUG - Lock 130917440661552 acquired on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/72b987fd805cfa2b58c4c8c952b274a11bfd5a00.lock
+2025-09-04 08:43:53,341 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 612
+2025-09-04 08:43:53,342 - filelock - DEBUG - Attempting to release lock 130917440661552 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/72b987fd805cfa2b58c4c8c952b274a11bfd5a00.lock
+2025-09-04 08:43:53,342 - filelock - DEBUG - Lock 130917440661552 released on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/72b987fd805cfa2b58c4c8c952b274a11bfd5a00.lock
+2025-09-04 08:43:53,492 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/model.safetensors HTTP/1.1" 302 0
+2025-09-04 08:43:53,493 - filelock - DEBUG - Attempting to acquire lock 130917439612160 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db.lock
+2025-09-04 08:43:53,493 - filelock - DEBUG - Lock 130917439612160 acquired on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db.lock
+2025-09-04 08:43:53,599 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/xet-read-token/c9745ed1d9f207416be6d2e6f8de32d1f16199bf HTTP/1.1" 200 325
+2025-09-04 08:43:54,399 - filelock - DEBUG - Attempting to release lock 130917439612160 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db.lock
+2025-09-04 08:43:54,399 - filelock - DEBUG - Lock 130917439612160 released on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db.lock
+2025-09-04 08:43:54,530 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-09-04 08:43:54,535 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+2025-09-04 08:43:54,536 - filelock - DEBUG - Attempting to acquire lock 130917439615088 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/c79f2b6a0cea6f4b564fed1938984bace9d30ff0.lock
+2025-09-04 08:43:54,536 - filelock - DEBUG - Lock 130917439615088 acquired on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/c79f2b6a0cea6f4b564fed1938984bace9d30ff0.lock
+2025-09-04 08:43:54,540 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 350
+2025-09-04 08:43:54,541 - filelock - DEBUG - Attempting to release lock 130917439615088 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/c79f2b6a0cea6f4b564fed1938984bace9d30ff0.lock
+2025-09-04 08:43:54,541 - filelock - DEBUG - Lock 130917439615088 released on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/c79f2b6a0cea6f4b564fed1938984bace9d30ff0.lock
+2025-09-04 08:43:54,648 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-09-04 08:43:54,760 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/vocab.txt HTTP/1.1" 307 0
+2025-09-04 08:43:54,765 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/vocab.txt HTTP/1.1" 200 0
+2025-09-04 08:43:54,766 - filelock - DEBUG - Attempting to acquire lock 130917439615232 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/fb140275c155a9c7c5a3b3e0e77a9e839594a938.lock
+2025-09-04 08:43:54,766 - filelock - DEBUG - Lock 130917439615232 acquired on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/fb140275c155a9c7c5a3b3e0e77a9e839594a938.lock
+2025-09-04 08:43:54,771 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/vocab.txt HTTP/1.1" 200 None
+2025-09-04 08:43:54,775 - filelock - DEBUG - Attempting to release lock 130917439615232 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/fb140275c155a9c7c5a3b3e0e77a9e839594a938.lock
+2025-09-04 08:43:54,775 - filelock - DEBUG - Lock 130917439615232 released on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/fb140275c155a9c7c5a3b3e0e77a9e839594a938.lock
+2025-09-04 08:43:54,883 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer.json HTTP/1.1" 307 0
+2025-09-04 08:43:54,888 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer.json HTTP/1.1" 200 0
+2025-09-04 08:43:54,888 - filelock - DEBUG - Attempting to acquire lock 130917439614080 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/cb202bfe2e3c98645018a6d12f182a434c9d3e02.lock
+2025-09-04 08:43:54,888 - filelock - DEBUG - Lock 130917439614080 acquired on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/cb202bfe2e3c98645018a6d12f182a434c9d3e02.lock
+2025-09-04 08:43:54,893 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer.json HTTP/1.1" 200 None
+2025-09-04 08:43:54,899 - filelock - DEBUG - Attempting to release lock 130917439614080 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/cb202bfe2e3c98645018a6d12f182a434c9d3e02.lock
+2025-09-04 08:43:54,899 - filelock - DEBUG - Lock 130917439614080 released on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/cb202bfe2e3c98645018a6d12f182a434c9d3e02.lock
+2025-09-04 08:43:55,007 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/added_tokens.json HTTP/1.1" 404 0
+2025-09-04 08:43:55,113 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/special_tokens_map.json HTTP/1.1" 307 0
+2025-09-04 08:43:55,118 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/special_tokens_map.json HTTP/1.1" 200 0
+2025-09-04 08:43:55,118 - filelock - DEBUG - Attempting to acquire lock 130917439610864 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/e7b0375001f109a6b8873d756ad4f7bbb15fbaa5.lock
+2025-09-04 08:43:55,118 - filelock - DEBUG - Lock 130917439610864 acquired on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/e7b0375001f109a6b8873d756ad4f7bbb15fbaa5.lock
+2025-09-04 08:43:55,122 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/special_tokens_map.json HTTP/1.1" 200 112
+2025-09-04 08:43:55,123 - filelock - DEBUG - Attempting to release lock 130917439610864 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/e7b0375001f109a6b8873d756ad4f7bbb15fbaa5.lock
+2025-09-04 08:43:55,123 - filelock - DEBUG - Lock 130917439610864 released on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/e7b0375001f109a6b8873d756ad4f7bbb15fbaa5.lock
+2025-09-04 08:43:55,233 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/chat_template.jinja HTTP/1.1" 404 0
+2025-09-04 08:43:55,371 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-09-04 08:43:55,376 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-09-04 08:43:55,377 - filelock - DEBUG - Attempting to acquire lock 130917439608176 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/d1514c3162bbe87b343f565fadc62e6c06f04f03.lock
+2025-09-04 08:43:55,377 - filelock - DEBUG - Lock 130917439608176 acquired on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/d1514c3162bbe87b343f565fadc62e6c06f04f03.lock
+2025-09-04 08:43:55,382 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 190
+2025-09-04 08:43:55,383 - filelock - DEBUG - Attempting to release lock 130917439608176 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/d1514c3162bbe87b343f565fadc62e6c06f04f03.lock
+2025-09-04 08:43:55,383 - filelock - DEBUG - Lock 130917439608176 released on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/d1514c3162bbe87b343f565fadc62e6c06f04f03.lock
+2025-09-04 08:43:55,488 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6861
+2025-09-04 08:43:55,512 - root - DEBUG - text-classification: 30 models
+2025-09-04 08:43:55,512 - root - DEBUG - token-classification: 30 models
+2025-09-04 08:43:55,512 - root - DEBUG - text2text-generation: 30 models
+2025-09-04 08:43:55,512 - root - DEBUG - summarization: 30 models
+2025-09-04 08:43:55,512 - root - DEBUG - translation: 30 models
+2025-09-04 08:43:55,512 - root - DEBUG - question-answering: 30 models
+2025-09-04 08:43:55,512 - root - DEBUG - conversational: 30 models
+2025-09-04 08:43:55,512 - root - DEBUG - text-generation: 30 models
+2025-09-04 08:43:55,512 - root - DEBUG - sentence-similarity: 30 models
+2025-09-04 08:43:55,512 - root - DEBUG - tabular-classification: 30 models
+2025-09-04 08:43:55,512 - root - DEBUG - object-detection: 30 models
+2025-09-04 08:43:55,512 - root - DEBUG - image-classification: 30 models
+2025-09-04 08:43:55,512 - root - DEBUG - image-to-text: 30 models
+2025-09-04 08:43:55,512 - root - DEBUG - text-to-image: 31 models
+2025-09-04 08:43:55,512 - root - DEBUG - image-to-image: 30 models
+2025-09-04 08:43:55,512 - root - DEBUG - visual-question-answering: 13 models
+2025-09-04 08:43:55,512 - root - DEBUG - document-question-answering: 22 models
+2025-09-04 08:43:55,512 - root - DEBUG - image-segmentation: 30 models
+2025-09-04 08:43:55,512 - root - DEBUG - depth-estimation: 30 models
+2025-09-04 08:43:55,512 - root - DEBUG - text-to-video: 8 models
+2025-09-04 08:43:55,512 - root - DEBUG - text-to-speech: 30 models
+2025-09-04 08:43:55,512 - root - DEBUG - automatic-speech-recognition: 30 models
+2025-09-04 08:43:55,512 - root - DEBUG - audio-to-audio: 30 models
+2025-09-04 08:43:55,512 - root - DEBUG - audio-classification: 30 models
+2025-09-04 08:43:55,512 - root - INFO - Welcome to Jarvis! A collaborative system that consists of an LLM as the controller and numerous expert models as collaborative executors. Jarvis can plan tasks, schedule Hugging Face models, generate friendly responses based on your requests, and help you with many things. Please enter your request (`exit` to exit).
+2025-09-04 08:44:07,005 - root - INFO - [ User ]: generate an image of a llama
+2025-09-04 08:44:07,005 - root - INFO - ********************************************************************************
+2025-09-04 08:44:07,005 - root - INFO - input: Generate an image of a llama
+2025-09-04 08:44:07,008 - root - DEBUG - Messages: [{'role': 'system', 'content': '#1 Task Planning Stage: You are a helpful AI assistant. Based on the user\'s request, you will recommend the best model from Hugging Face for the task, and explain why. The special tag "<GENERATED>-dep_id" refer to the one generated text/image/audio in the dependency task (Please consider whether the dependency task generates resources of this type.) and "dep_id" must be in "dep" list.  The "dep" field denotes the ids of the previous prerequisite tasks which generate a new resource that the current task relies on.  The "args" field must in ["text", "image", "audio"], nothing else.  You must respond in JSON format like: [\n  {\n    "task": task, \n    "id": task_id, \n    "dep": dependency_task_id, \n    "args": {\n      "text": text or <GENERATED>-dep_id, \n      "image": image_url or <GENERATED>-dep_id, \n      "audio": audio_url or <GENERATED>-dep_id\n    }\n  }\n] Respond with the JSON entry and ONLY the JSON entry! Here are some few-shot examples:'}, {'role': 'user', 'content': 'Give you some pictures e1.jpg, e2.png, e3.jpg, help me count the number of sheep?'}, {'role': 'assistant', 'content': '[{"task": "image-to-text", "id": 0, "dep": [-1], "args": {"image": "e1.jpg" }}, {"task": "object-detection", "id": 1, "dep": [-1], "args": {"image": "e1.jpg" }}, {"task": "visual-question-answering", "id": 2, "dep": [1], "args": {"image": "<GENERATED>-1", "text": "How many sheep in the picture"}} }}, {"task": "image-to-text", "id": 3, "dep": [-1], "args": {"image": "e2.png" }}, {"task": "object-detection", "id": 4, "dep": [-1], "args": {"image": "e2.png" }}, {"task": "visual-question-answering", "id": 5, "dep": [4], "args": {"image": "<GENERATED>-4", "text": "How many sheep in the picture"}} }}, {"task": "image-to-text", "id": 6, "dep": [-1], "args": {"image": "e3.jpg" }},  {"task": "object-detection", "id": 7, "dep": [-1], "args": {"image": "e3.jpg" }}, {"task": "visual-question-answering", "id": 8, "dep": [7], "args": {"image": "<GENERATED>-7", "text": "How many sheep in the picture"}}]'}, {'role': 'user', 'content': 'Look at /e.jpg, can you tell me how many objects in the picture? Give me a picture and video similar to this one.'}, {'role': 'assistant', 'content': '[{"task": "image-to-text", "id": 0, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "object-detection", "id": 1, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "visual-question-answering", "id": 2, "dep": [1], "args": {"image": "<GENERATED>-1", "text": "how many objects in the picture?" }}, {"task": "text-to-image", "id": 3, "dep": [0], "args": {"text": "<GENERATED-0>" }}, {"task": "image-to-image", "id": 4, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "text-to-video", "id": 5, "dep": [0], "args": {"text": "<GENERATED-0>" }}]'}, {'role': 'user', 'content': 'given a document /images/e.jpeg, answer me what is the student amount? And describe the image with your voice'}, {'role': 'assistant', 'content': '{"task": "document-question-answering", "id": 0, "dep": [-1], "args": {"image": "/images/e.jpeg", "text": "what is the student amount?" }}, {"task": "visual-question-answering", "id": 1, "dep": [-1], "args": {"image": "/images/e.jpeg", "text": "what is the student amount?" }}, {"task": "image-to-text", "id": 2, "dep": [-1], "args": {"image": "/images/e.jpg" }}, {"task": "text-to-speech", "id": 3, "dep": [2], "args": {"text": "<GENERATED>-2" }}]'}, {'role': 'user', 'content': 'Given an image /example.jpg, first generate a hed image, then based on the hed image generate a new image where a girl is reading a book'}, {'role': 'assistant', 'content': '[{"task": "openpose-control", "id": 0, "dep": [-1], "args": {"image": "/example.jpg" }},  {"task": "openpose-text-to-image", "id": 1, "dep": [0], "args": {"text": "a girl is reading a book", "image": "<GENERATED>-0" }}]'}, {'role': 'user', 'content': "please show me a video and an image of (based on the text) 'a boy is running' and dub it"}, {'role': 'assistant', 'content': '[{"task": "text-to-video", "id": 0, "dep": [-1], "args": {"text": "a boy is running" }}, {"task": "text-to-speech", "id": 1, "dep": [-1], "args": {"text": "a boy is running" }}, {"task": "text-to-image", "id": 2, "dep": [-1], "args": {"text": "a boy is running" }}]'}, {'role': 'user', 'content': 'please show me a joke and an image of cat'}, {'role': 'assistant', 'content': '[{"task": "conversational", "id": 0, "dep": [-1], "args": {"text": "please show me a joke of cat" }}, {"task": "text-to-image", "id": 1, "dep": [-1], "args": {"text": "a photo of cat" }}]'}, {'role': 'user', 'content': 'The chat log [ [] ] may contain the resources I mentioned. Now I input { Generate an image of a llama }. Pay attention to the input and output types of tasks and the dependencies between tasks.'}]
+2025-09-04 08:44:07,116 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/meta-llama/Llama-3.3-70B-Instruct?expand=inferenceProviderMapping HTTP/1.1" 200 1010
+2025-09-04 08:44:07,117 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): router.huggingface.co:443
+2025-09-04 08:44:08,427 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /together/v1/chat/completions HTTP/1.1" 200 None
+2025-09-04 08:44:08,428 - root - DEBUG - [{'task': 'text-to-image', 'id': 0, 'dep': [-1], 'args': {'text': 'a llama'}}]
+2025-09-04 08:44:08,429 - root - DEBUG - Run task: 0 - text-to-image
+2025-09-04 08:44:08,429 - root - DEBUG - Deps: []
+2025-09-04 08:44:08,429 - root - DEBUG - Parsed Task: {'task': 'text-to-image', 'id': 0, 'dep': [-1], 'args': {'text': 'a llama'}}
+2025-09-04 08:44:08,432 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-04 08:44:08,433 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-04 08:44:08,433 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-04 08:44:08,434 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-04 08:44:08,437 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-04 08:44:08,438 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-04 08:44:08,439 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-04 08:44:08,440 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-04 08:44:08,441 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-04 08:44:08,444 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-04 08:44:08,444 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-04 08:44:08,447 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-04 08:44:08,449 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-04 08:44:08,449 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-04 08:44:08,450 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-04 08:44:08,452 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-04 08:44:08,454 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-04 08:44:08,456 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-04 08:44:08,462 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-04 08:44:08,464 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-04 08:44:08,466 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-04 08:44:08,468 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-04 08:44:08,469 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-04 08:44:08,471 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-04 08:44:08,474 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-04 08:44:08,475 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-04 08:44:08,479 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-04 08:44:08,481 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-04 08:44:08,481 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-04 08:44:08,482 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-04 08:44:08,484 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-04 08:44:09,431 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/andite/anything-v4.0 HTTP/1.1" 404 32
+2025-09-04 08:44:09,431 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/hakurei/waifu-diffusion HTTP/1.1" 200 5091
+2025-09-04 08:44:09,434 - root - DEBUG - Model: andite/anything-v4.0 | Status: False | Source: None
+2025-09-04 08:44:09,434 - root - DEBUG - Model: hakurei/waifu-diffusion | Status: False | Source: None
+2025-09-04 08:44:09,454 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/runwayml/stable-diffusion-inpainting HTTP/1.1" 307 96
+2025-09-04 08:44:09,456 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/andite/pastel-mix HTTP/1.1" 404 32
+2025-09-04 08:44:09,457 - root - DEBUG - Model: andite/pastel-mix | Status: False | Source: None
+2025-09-04 08:44:09,458 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/runwayml/stable-diffusion-v1-5 HTTP/1.1" 307 90
+2025-09-04 08:44:09,465 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/nitrosocke/Ghibli-Diffusion HTTP/1.1" 200 5239
+2025-09-04 08:44:09,466 - root - DEBUG - Model: nitrosocke/Ghibli-Diffusion | Status: False | Source: None
+2025-09-04 08:44:09,469 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/dreamlike-art/dreamlike-photoreal-2.0 HTTP/1.1" 200 4933
+2025-09-04 08:44:09,469 - root - DEBUG - Model: dreamlike-art/dreamlike-photoreal-2.0 | Status: False | Source: None
+2025-09-04 08:44:09,470 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/prompthero/openjourney HTTP/1.1" 200 4828
+2025-09-04 08:44:09,470 - root - DEBUG - Model: prompthero/openjourney | Status: False | Source: None
+2025-09-04 08:44:09,471 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/CompVis/stable-diffusion-v-1-4-original HTTP/1.1" 200 4879
+2025-09-04 08:44:09,471 - root - DEBUG - Model: CompVis/stable-diffusion-v-1-4-original | Status: False | Source: None
+2025-09-04 08:44:09,473 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/hakurei/waifu-diffusion-v1-4 HTTP/1.1" 200 1573
+2025-09-04 08:44:09,473 - root - DEBUG - Model: hakurei/waifu-diffusion-v1-4 | Status: False | Source: None
+2025-09-04 08:44:09,495 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/dreamlike-art/dreamlike-diffusion-1.0 HTTP/1.1" 200 4995
+2025-09-04 08:44:09,495 - root - DEBUG - Model: dreamlike-art/dreamlike-diffusion-1.0 | Status: False | Source: None
+2025-09-04 08:44:09,502 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/CompVis/stable-diffusion-v1-4 HTTP/1.1" 200 7406
+2025-09-04 08:44:09,502 - root - DEBUG - Model: CompVis/stable-diffusion-v1-4 | Status: False | Source: None
+2025-09-04 08:44:09,541 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/CompVis/stable-diffusion HTTP/1.1" 200 3697
+2025-09-04 08:44:09,542 - root - DEBUG - Model: CompVis/stable-diffusion | Status: False | Source: None
+2025-09-04 08:44:09,544 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/stabilityai/stable-diffusion-2 HTTP/1.1" 200 5166
+2025-09-04 08:44:09,545 - root - DEBUG - Model: stabilityai/stable-diffusion-2 | Status: False | Source: None
+2025-09-04 08:44:09,550 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/nitrosocke/redshift-diffusion HTTP/1.1" 200 4770
+2025-09-04 08:44:09,551 - root - DEBUG - Model: nitrosocke/redshift-diffusion | Status: False | Source: None
+2025-09-04 08:44:09,551 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/gsdf/Counterfeit-V2.5 HTTP/1.1" 200 5104
+2025-09-04 08:44:09,552 - root - DEBUG - Model: gsdf/Counterfeit-V2.5 | Status: False | Source: None
+2025-09-04 08:44:09,552 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/Envvi/Inkpunk-Diffusion HTTP/1.1" 200 4737
+2025-09-04 08:44:09,552 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/stabilityai/stable-diffusion-2-1 HTTP/1.1" 200 5131
+2025-09-04 08:44:09,553 - root - DEBUG - Model: Envvi/Inkpunk-Diffusion | Status: False | Source: None
+2025-09-04 08:44:09,553 - root - DEBUG - Model: stabilityai/stable-diffusion-2-1 | Status: False | Source: None
+2025-09-04 08:44:09,554 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/nitrosocke/Arcane-Diffusion HTTP/1.1" 200 4908
+2025-09-04 08:44:09,554 - root - DEBUG - Model: nitrosocke/Arcane-Diffusion | Status: False | Source: None
+2025-09-04 08:44:09,556 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/Linaqruf/anything-v3.0 HTTP/1.1" 200 4737
+2025-09-04 08:44:09,556 - root - DEBUG - Model: Linaqruf/anything-v3.0 | Status: False | Source: None
+2025-09-04 08:44:09,557 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/stabilityai/sd-vae-ft-mse-original HTTP/1.1" 200 3950
+2025-09-04 08:44:09,557 - root - DEBUG - Model: stabilityai/sd-vae-ft-mse-original | Status: False | Source: None
+2025-09-04 08:44:09,559 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/riffusion/riffusion-model-v1 HTTP/1.1" 200 5898
+2025-09-04 08:44:09,559 - root - DEBUG - Model: riffusion/riffusion-model-v1 | Status: False | Source: None
+2025-09-04 08:44:09,560 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/stabilityai/stable-diffusion-xl-base-1.0 HTTP/1.1" 200 6349
+2025-09-04 08:44:09,561 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/nitrosocke/mo-di-diffusion HTTP/1.1" 200 4747
+2025-09-04 08:44:09,561 - root - DEBUG - Model: stabilityai/stable-diffusion-xl-base-1.0 | Status: True | Source: huggingface
+2025-09-04 08:44:09,561 - root - DEBUG - Model: nitrosocke/mo-di-diffusion | Status: False | Source: None
+2025-09-04 08:44:09,562 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/prompthero/openjourney-v4 HTTP/1.1" 200 4771
+2025-09-04 08:44:09,562 - root - DEBUG - Model: prompthero/openjourney-v4 | Status: False | Source: None
+2025-09-04 08:44:09,563 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/DGSpitzer/Cyberpunk-Anime-Diffusion HTTP/1.1" 200 5734
+2025-09-04 08:44:09,563 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/hassanblend/hassanblend1.4 HTTP/1.1" 200 5019
+2025-09-04 08:44:09,563 - root - DEBUG - Model: DGSpitzer/Cyberpunk-Anime-Diffusion | Status: False | Source: None
+2025-09-04 08:44:09,564 - root - DEBUG - Model: hassanblend/hassanblend1.4 | Status: False | Source: None
+2025-09-04 08:44:09,564 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/stable-diffusion-v1-5/stable-diffusion-inpainting HTTP/1.1" 200 2541
+2025-09-04 08:44:09,564 - root - DEBUG - Model: runwayml/stable-diffusion-inpainting | Status: False | Source: None
+2025-09-04 08:44:09,565 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/wavymulder/Analog-Diffusion HTTP/1.1" 200 5065
+2025-09-04 08:44:09,566 - root - DEBUG - Model: wavymulder/Analog-Diffusion | Status: False | Source: None
+2025-09-04 08:44:09,569 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/stable-diffusion-v1-5/stable-diffusion-v1-5 HTTP/1.1" 200 6189
+2025-09-04 08:44:09,569 - root - DEBUG - Model: runwayml/stable-diffusion-v1-5 | Status: False | Source: None
+2025-09-04 08:44:09,575 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/gsdf/Counterfeit-V2.0 HTTP/1.1" 200 4791
+2025-09-04 08:44:09,575 - root - DEBUG - Model: gsdf/Counterfeit-V2.0 | Status: False | Source: None
+2025-09-04 08:44:09,582 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/hakurei/waifu-diffusion-v1-3 HTTP/1.1" 200 4440
+2025-09-04 08:44:09,582 - root - DEBUG - Model: hakurei/waifu-diffusion-v1-3 | Status: False | Source: None
+2025-09-04 08:44:09,638 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/WarriorMama777/OrangeMixs HTTP/1.1" 200 8520
+2025-09-04 08:44:09,639 - root - DEBUG - Model: WarriorMama777/OrangeMixs | Status: False | Source: None
+2025-09-04 08:44:09,639 - root - DEBUG - avaliable models on text-to-image: {'local': [], 'huggingface': ['stabilityai/stable-diffusion-xl-base-1.0']}
+2025-09-04 08:44:09,639 - root - DEBUG - chosen model: {'id': 'stabilityai/stable-diffusion-xl-base-1.0', 'reason': 'Only one model available.'}
+2025-09-04 08:44:09,641 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-04 08:44:09,779 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/stabilityai/stable-diffusion-xl-base-1.0?expand=inferenceProviderMapping HTTP/1.1" 200 673
+2025-09-04 08:44:09,780 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): router.huggingface.co:443
+2025-09-04 08:44:16,276 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /nebius/v1/images/generations HTTP/1.1" 200 None
+2025-09-04 08:44:16,511 - PIL.Image - DEBUG - Importing AvifImagePlugin
+2025-09-04 08:44:16,512 - PIL.Image - DEBUG - Importing BlpImagePlugin
+2025-09-04 08:44:16,513 - PIL.Image - DEBUG - Importing BmpImagePlugin
+2025-09-04 08:44:16,513 - PIL.Image - DEBUG - Importing BufrStubImagePlugin
+2025-09-04 08:44:16,513 - PIL.Image - DEBUG - Importing CurImagePlugin
+2025-09-04 08:44:16,513 - PIL.Image - DEBUG - Importing DcxImagePlugin
+2025-09-04 08:44:16,514 - PIL.Image - DEBUG - Importing DdsImagePlugin
+2025-09-04 08:44:16,516 - PIL.Image - DEBUG - Importing EpsImagePlugin
+2025-09-04 08:44:16,517 - PIL.Image - DEBUG - Importing FitsImagePlugin
+2025-09-04 08:44:16,517 - PIL.Image - DEBUG - Importing FliImagePlugin
+2025-09-04 08:44:16,517 - PIL.Image - DEBUG - Importing FpxImagePlugin
+2025-09-04 08:44:16,517 - PIL.Image - DEBUG - Image: failed to import FpxImagePlugin: No module named 'olefile'
+2025-09-04 08:44:16,517 - PIL.Image - DEBUG - Importing FtexImagePlugin
+2025-09-04 08:44:16,518 - PIL.Image - DEBUG - Importing GbrImagePlugin
+2025-09-04 08:44:16,518 - PIL.Image - DEBUG - Importing GifImagePlugin
+2025-09-04 08:44:16,518 - PIL.Image - DEBUG - Importing GribStubImagePlugin
+2025-09-04 08:44:16,518 - PIL.Image - DEBUG - Importing Hdf5StubImagePlugin
+2025-09-04 08:44:16,518 - PIL.Image - DEBUG - Importing IcnsImagePlugin
+2025-09-04 08:44:16,519 - PIL.Image - DEBUG - Importing IcoImagePlugin
+2025-09-04 08:44:16,519 - PIL.Image - DEBUG - Importing ImImagePlugin
+2025-09-04 08:44:16,520 - PIL.Image - DEBUG - Importing ImtImagePlugin
+2025-09-04 08:44:16,520 - PIL.Image - DEBUG - Importing IptcImagePlugin
+2025-09-04 08:44:16,520 - PIL.Image - DEBUG - Importing JpegImagePlugin
+2025-09-04 08:44:16,521 - PIL.Image - DEBUG - Importing Jpeg2KImagePlugin
+2025-09-04 08:44:16,521 - PIL.Image - DEBUG - Importing McIdasImagePlugin
+2025-09-04 08:44:16,521 - PIL.Image - DEBUG - Importing MicImagePlugin
+2025-09-04 08:44:16,521 - PIL.Image - DEBUG - Image: failed to import MicImagePlugin: No module named 'olefile'
+2025-09-04 08:44:16,521 - PIL.Image - DEBUG - Importing MpegImagePlugin
+2025-09-04 08:44:16,521 - PIL.Image - DEBUG - Importing MpoImagePlugin
+2025-09-04 08:44:16,522 - PIL.Image - DEBUG - Importing MspImagePlugin
+2025-09-04 08:44:16,523 - PIL.Image - DEBUG - Importing PalmImagePlugin
+2025-09-04 08:44:16,523 - PIL.Image - DEBUG - Importing PcdImagePlugin
+2025-09-04 08:44:16,523 - PIL.Image - DEBUG - Importing PcxImagePlugin
+2025-09-04 08:44:16,523 - PIL.Image - DEBUG - Importing PdfImagePlugin
+2025-09-04 08:44:16,528 - PIL.Image - DEBUG - Importing PixarImagePlugin
+2025-09-04 08:44:16,528 - PIL.Image - DEBUG - Importing PngImagePlugin
+2025-09-04 08:44:16,528 - PIL.Image - DEBUG - Importing PpmImagePlugin
+2025-09-04 08:44:16,528 - PIL.Image - DEBUG - Importing PsdImagePlugin
+2025-09-04 08:44:16,528 - PIL.Image - DEBUG - Importing QoiImagePlugin
+2025-09-04 08:44:16,528 - PIL.Image - DEBUG - Importing SgiImagePlugin
+2025-09-04 08:44:16,529 - PIL.Image - DEBUG - Importing SpiderImagePlugin
+2025-09-04 08:44:16,529 - PIL.Image - DEBUG - Importing SunImagePlugin
+2025-09-04 08:44:16,529 - PIL.Image - DEBUG - Importing TgaImagePlugin
+2025-09-04 08:44:16,529 - PIL.Image - DEBUG - Importing TiffImagePlugin
+2025-09-04 08:44:16,529 - PIL.Image - DEBUG - Importing WebPImagePlugin
+2025-09-04 08:44:16,531 - PIL.Image - DEBUG - Importing WmfImagePlugin
+2025-09-04 08:44:16,531 - PIL.Image - DEBUG - Importing XbmImagePlugin
+2025-09-04 08:44:16,531 - PIL.Image - DEBUG - Importing XpmImagePlugin
+2025-09-04 08:44:16,532 - PIL.Image - DEBUG - Importing XVThumbImagePlugin
+2025-09-04 08:44:16,615 - root - DEBUG - Inference Result: {'generated image': '/images/3ffa.png'}
+2025-09-04 08:44:16,616 - root - DEBUG - {0: {'task': {'task': 'text-to-image', 'id': 0, 'dep': [-1], 'args': {'text': 'a llama'}}, 'inference result': {'generated image': '/images/3ffa.png'}, 'choose model result': {'id': 'stabilityai/stable-diffusion-xl-base-1.0', 'reason': 'Only one model available.'}}}
+2025-09-04 08:44:19,330 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /together/v1/chat/completions HTTP/1.1" 200 None
+2025-09-04 08:44:19,331 - root - DEBUG - I can generate an image of a llama for you. 
+<EXPLANATION> I used the stabilityai/stable-diffusion-xl-base-1.0 model to generate the image. This model is a text-to-image model that uses a process called diffusion to create images from text prompts. The model takes the text prompt "a llama" as input and generates an image based on that prompt. The inference result is an image file located at /images/3ffa.png. I chose this model because it is a high-quality model that is capable of generating realistic images. The model confidence score is not available for this task, but the output value is the generated image file. If you want to view the image, you can access it at file:///images/3ffa.png. Please note that the image is stored locally and may not be accessible remotely. </EXPLANATION>
+2025-09-04 08:44:19,332 - retriever - DEBUG - Loaded 4 entries from data/explanations.jsonl
+2025-09-04 08:44:19,379 - retriever - DEBUG - Best similarity = 0.826 (threshold = 0.8)
+2025-09-04 08:44:19,379 - retriever - INFO - Retrieved similar explanation (sim=0.826)
+2025-09-04 08:44:19,379 - root - DEBUG - To fulfill your request, I utilized a text-to-image model, specifically the stabilityai/stable-diffusion-xl-base-1.0 model, which is designed to create images from textual descriptions. This model was chosen due to its high performance in generating realistic images. The input text was "a Cow", and the model processed this text to produce an image. The generated image is located at /images/84d0.png. Please note that the quality and accuracy of the generated image depend on the model's capabilities and the complexity of the input text. In this case, the model confidence score is not available, but the output image is a direct result of the model's inference. If you need to access the image, you can find it at the specified path.
+2025-09-04 08:44:19,380 - root - DEBUG -  Success: {"input": "Generate an image of a llama", "task": "[{\"task\": \"text-to-image\", \"id\": 0, \"dep\": [-1], \"args\": {\"text\": \"a llama\"}}]", "results": {"0": {"task": {"task": "text-to-image", "id": 0, "dep": [-1], "args": {"text": "a llama"}}, "inference result": {"generated image": "/images/3ffa.png"}, "choose model result": {"id": "stabilityai/stable-diffusion-xl-base-1.0", "reason": "Only one model available."}}}, "response": "I can generate an image of a llama for you. \nTo fulfill your request, I utilized a text-to-image model, specifically the stabilityai/stable-diffusion-xl-base-1.0 model, which is designed to create images from textual descriptions. This model was chosen due to its high performance in generating realistic images. The input text was \"a Cow\", and the model processed this text to produce an image. The generated image is located at /images/84d0.png. Please note that the quality and accuracy of the generated image depend on the model's capabilities and the complexity of the input text. In this case, the model confidence score is not available, but the output image is a direct result of the model's inference. If you need to access the image, you can find it at the specified path.", "during": 12.374229907989502, "op": "response"}
+2025-09-04 08:44:19,380 - root - INFO - response: I can generate an image of a llama for you. 
+To fulfill your request, I utilized a text-to-image model, specifically the stabilityai/stable-diffusion-xl-base-1.0 model, which is designed to create images from textual descriptions. This model was chosen due to its high performance in generating realistic images. The input text was "a Cow", and the model processed this text to produce an image. The generated image is located at /images/84d0.png. Please note that the quality and accuracy of the generated image depend on the model's capabilities and the complexity of the input text. In this case, the model confidence score is not available, but the output image is a direct result of the model's inference. If you need to access the image, you can find it at the specified path.
+2025-09-04 08:44:31,662 - root - INFO - [ User ]: exit
+2025-09-04 08:44:31,662 - root - INFO - [ Jarvis ]: Goodnight.

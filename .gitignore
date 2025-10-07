@@ -8,6 +8,7 @@ hugginggpt/server/models/*
 !hugginggpt/server/models/download.sh
 !hugginggpt/server/models/download.ps1
 !hugginggpt/server/models/download_huggingface_cli.sh
+!hugginggpt/server/models/download_huggingface_cli_minimal.sh
 hugginggpt/server/models_dev
 !hugginggpt/server/public/examples/
 hugginggpt/server/public/examples/*

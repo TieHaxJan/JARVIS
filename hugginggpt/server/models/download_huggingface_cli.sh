@@ -44,6 +44,9 @@ models=(
     "lambdalabs/sd-image-variations-diffusers"
     "facebook/maskformer-swin-base-coco"
     "Intel/dpt-hybrid-midas"
+    "google/flan-t5-large"
+    "microsoft/trocr-base-printed"
+    "dslim/distilbert-NER"
 )
 
 echo "==================== DOWNLOADING MODELS ===================="

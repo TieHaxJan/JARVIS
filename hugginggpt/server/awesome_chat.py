@@ -30,6 +30,7 @@ from huggingface_hub import InferenceClient
 from huggingface_hub import HfApi
 from thefuzz import fuzz
 from retriever import ExplanationRetriever
+from judge import ExplanationJudge
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--config", type=str, default="configs/config.default.yaml")
@@ -144,7 +145,7 @@ elif API_TYPE == "openai":
 elif API_TYPE == "huggingface":
     API_KEY = config["huggingface"]["token"]
     client = InferenceClient(
-        provider="auto",
+        provider="nebius",
         api_key=API_KEY,
     )
 
@@ -1155,10 +1156,25 @@ def chat_huggingface(messages, api_key, api_type, api_endpoint, return_planning 
         base_explainer_fn=lambda desc, out: explanation
     )
 
-    # Use retrieved or base explanation in final answer
-    final_explanation = retrieval_result["entry"]["explanation"]
+    base_explanation = explanation
+    retrieved_explanation = retrieval_result["entry"]["explanation"]
+    
+    judge = ExplanationJudge(chitchat, api_key, api_type, api_endpoint, LLM)
 
-    logger.debug(final_explanation)
+    judge_result = judge.decide(
+        task_description=input,
+        hugginggpt_output=json.dumps(results, ensure_ascii=False),
+        base_explanation=base_explanation,
+        retrieved_explanation=retrieved_explanation
+    )
+
+    # Pick winner
+    if judge_result["winner"] == "retrieved":
+        final_explanation = retrieved_explanation
+    else:
+        final_explanation = base_explanation
+
+    logger.debug(f"Final explanation chosen by Judge: {final_explanation}")
 
     response = replace_explanation_tags(response, final_explanation)
 
