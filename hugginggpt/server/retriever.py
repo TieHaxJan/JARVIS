@@ -5,6 +5,36 @@ from typing import Optional, Dict, Any
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
+import pathlib
+import urllib.parse
+import re
+
+def mask_paths(s: str) -> str:
+    if not isinstance(s, str):
+        return s
+
+    # (same regexes as in build_clean_context)
+    _PATH_EXTS = (
+        "png","jpg","jpeg","gif","webp","bmp","tiff","svg",
+        "mp3","wav","flac","m4a","ogg",
+        "mp4","mov","avi","mkv","webm",
+        "pdf","txt","json","csv","yaml","yml","xml","html",
+        "zip","tar","gz","7z","doc","docx","ppt","pptx","xls","xlsx"
+    )
+
+    # 1) URLs
+    s = re.sub(r'https?://[^\s)>\]\'"]+', '[PATH]', s)
+    # 2) Windows paths
+    s = re.sub(r'[A-Za-z]:\\[^\s\'"]+', '[PATH]', s)
+    # 3) Unix paths
+    s = re.sub(r'(?<!\w)/[^\s\'"]+', '[PATH]', s)
+    # 4) relative paths with extensions
+    rel_ext_pattern = r'(?:(?:\./|\.\./)?(?:[\w\-\.]+/)+[\w\-.]+\.(?:' + "|".join(_PATH_EXTS) + '))'
+    s = re.sub(rel_ext_pattern, '[PATH]', s, flags=re.IGNORECASE)
+    # 5) JSON-style "/foo/bar.png"
+    s = re.sub(r'\"(?:[\\/][\w\-.]+)+(?:\.[\w]+)\"', '"[PATH]"', s)
+
+    return s
 
 class ExplanationRetriever:
     def __init__(self, db_path="data/explanations.jsonl", model_name="all-MiniLM-L6-v2", threshold=0.95):
@@ -13,7 +43,6 @@ class ExplanationRetriever:
         self.threshold = threshold
         self.logger = logging.getLogger(__name__)
 
-        # DB anlegen, falls nicht existiert
         if not os.path.exists(self.db_path):
             open(self.db_path, "w").close()
             self.logger.debug(f"Created new explanations DB at {self.db_path}")
@@ -27,10 +56,25 @@ class ExplanationRetriever:
         self.logger.debug(f"Loaded {len(entries)} entries from {self.db_path}")
         return entries
 
+    def _mask_entry_strings(self, obj):
+        """
+        Recursively mask paths in all string fields of the object before saving.
+        """
+        if isinstance(obj, dict):
+            return {k: self._mask_entry_strings(v) for k, v in obj.items()}
+        if isinstance(obj, list):
+            return [self._mask_entry_strings(v) for v in obj]
+        if isinstance(obj, str):
+            return mask_paths(obj)
+        return obj
+
     def save_entry(self, entry: Dict[str, Any]):
+        # Ensure *all* strings are path-masked before persisting
+        sanitized = self._mask_entry_strings(entry)
         with open(self.db_path, "a", encoding="utf-8") as f:
-            f.write(json.dumps(entry, ensure_ascii=False) + "\n")
-        self.logger.info(f"Saved new explanation to {self.db_path}: {entry['explanation'][:60]}...")
+            f.write(json.dumps(sanitized, ensure_ascii=False) + "\n")
+        preview = sanitized.get("explanation", "")[:60]
+        self.logger.info(f"Saved new explanation to {self.db_path}: {preview}...")
 
     def find_similar(self, query_text: str) -> Optional[Dict[str, Any]]:
         db = self.load_db()
@@ -59,23 +103,21 @@ class ExplanationRetriever:
             return best_entry
         return None
 
-    def handle_task(self, task_id: str, task_description: str, hugginggpt_output: str, base_explainer_fn) -> Dict[str, Any]:
-        """Check if a similar explanation exists, otherwise create one via base_explainer_fn."""
-        task_text = f"{task_description}\n{hugginggpt_output}"
+    def retrieve_explanation(self, task_id: str, task_description: str, hugginggpt_output: str, base_explanation: str) -> Dict[str, Any]:
+        """Check if a similar explanation exists, otherwise save base explanation"""
+        task_text = mask_paths(f"{task_description}\n{hugginggpt_output}")
         similar = self.find_similar(task_text)
 
         if similar:
             return {"mode": "retrieved", "entry": similar}
 
-        # sonst neue Base Explanation erzeugen
-        explanation = base_explainer_fn(task_description, hugginggpt_output)
         emb = self.embed(task_text).tolist()
 
         entry = {
             "task_id": task_id,
             "task_description": task_description,
             "hugginggpt_output": hugginggpt_output,
-            "explanation": explanation,
+            "explanation": base_explanation,
             "embedding": emb
         }
         self.save_entry(entry)

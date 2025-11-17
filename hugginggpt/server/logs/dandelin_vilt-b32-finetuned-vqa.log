@@ -1,0 +1,160 @@
+2025-10-19 15:07:12,447 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda:0
+2025-10-19 15:07:12,447 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-19 15:07:12,449 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 15:07:12,585 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-10-19 15:07:12,591 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-10-19 15:07:12,709 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-10-19 15:07:12,716 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-10-19 15:07:12,823 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-10-19 15:07:12,828 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-10-19 15:07:12,941 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-10-19 15:07:12,946 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+2025-10-19 15:07:13,051 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-10-19 15:07:13,058 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-10-19 15:07:13,167 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-10-19 15:07:13,174 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+2025-10-19 15:07:13,281 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-10-19 15:07:13,391 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-10-19 15:07:13,396 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+2025-10-19 15:07:13,580 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-10-19 15:07:13,586 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+2025-10-19 15:07:13,710 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-10-19 15:07:13,869 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-10-19 15:07:13,875 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-10-19 15:07:14,001 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6876
+2025-10-19 15:07:14,227 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 15:07:14,245 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /running HTTP/1.1" 200 17
+2025-10-19 15:07:14,261 - root - DEBUG - text-classification: 30 models
+2025-10-19 15:07:14,261 - root - DEBUG - token-classification: 30 models
+2025-10-19 15:07:14,261 - root - DEBUG - text2text-generation: 30 models
+2025-10-19 15:07:14,261 - root - DEBUG - summarization: 30 models
+2025-10-19 15:07:14,261 - root - DEBUG - translation: 30 models
+2025-10-19 15:07:14,261 - root - DEBUG - question-answering: 30 models
+2025-10-19 15:07:14,261 - root - DEBUG - conversational: 30 models
+2025-10-19 15:07:14,261 - root - DEBUG - text-generation: 30 models
+2025-10-19 15:07:14,261 - root - DEBUG - sentence-similarity: 30 models
+2025-10-19 15:07:14,261 - root - DEBUG - tabular-classification: 30 models
+2025-10-19 15:07:14,261 - root - DEBUG - object-detection: 30 models
+2025-10-19 15:07:14,261 - root - DEBUG - image-classification: 30 models
+2025-10-19 15:07:14,261 - root - DEBUG - image-to-text: 30 models
+2025-10-19 15:07:14,261 - root - DEBUG - text-to-image: 31 models
+2025-10-19 15:07:14,261 - root - DEBUG - image-to-image: 30 models
+2025-10-19 15:07:14,261 - root - DEBUG - visual-question-answering: 13 models
+2025-10-19 15:07:14,261 - root - DEBUG - document-question-answering: 22 models
+2025-10-19 15:07:14,261 - root - DEBUG - image-segmentation: 30 models
+2025-10-19 15:07:14,261 - root - DEBUG - depth-estimation: 30 models
+2025-10-19 15:07:14,261 - root - DEBUG - text-to-video: 8 models
+2025-10-19 15:07:14,261 - root - DEBUG - text-to-speech: 30 models
+2025-10-19 15:07:14,261 - root - DEBUG - automatic-speech-recognition: 30 models
+2025-10-19 15:07:14,261 - root - DEBUG - audio-to-audio: 30 models
+2025-10-19 15:07:14,261 - root - DEBUG - audio-classification: 30 models
+2025-10-19 15:07:14,261 - root - INFO - Welcome to Jarvis! A collaborative system that consists of an LLM as the controller and numerous expert models as collaborative executors. Jarvis can plan tasks, schedule Hugging Face models, generate friendly responses based on your requests, and help you with many things. Please enter your request (`exit` to exit).
+2025-10-19 15:07:27,010 - root - INFO - [ User ]: how many zebras in examples/c.jpg
+2025-10-19 15:07:27,011 - root - INFO - ********************************************************************************
+2025-10-19 15:07:27,012 - root - INFO - input: How many zebras in examples/c.jpg
+2025-10-19 15:07:27,014 - root - DEBUG - Messages: [{'role': 'system', 'content': '#1 Task Planning Stage: You are a helpful AI assistant. Based on the user\'s request, you will recommend the best model from Hugging Face for the task, and explain why. The special tag "<GENERATED>-dep_id" refer to the one generated text/image/audio in the dependency task (Please consider whether the dependency task generates resources of this type.) and "dep_id" must be in "dep" list.  The "dep" field denotes the ids of the previous prerequisite tasks which generate a new resource that the current task relies on.  The "args" field must in ["text", "image", "audio"], nothing else.  You must respond in JSON format like: [\n  {\n    "task": task, \n    "id": task_id, \n    "dep": dependency_task_id, \n    "args": {\n      "text": text or <GENERATED>-dep_id, \n      "image": image_url or <GENERATED>-dep_id, \n      "audio": audio_url or <GENERATED>-dep_id\n    }\n  }\n] Respond with the JSON entry and ONLY the JSON entry! Here are some few-shot examples:'}, {'role': 'user', 'content': 'Give you some pictures e1.jpg, e2.png, e3.jpg, help me count the number of sheep?'}, {'role': 'assistant', 'content': '[{"task": "image-to-text", "id": 0, "dep": [-1], "args": {"image": "e1.jpg" }}, {"task": "object-detection", "id": 1, "dep": [-1], "args": {"image": "e1.jpg" }}, {"task": "visual-question-answering", "id": 2, "dep": [1], "args": {"image": "<GENERATED>-1", "text": "How many sheep in the picture"}} }}, {"task": "image-to-text", "id": 3, "dep": [-1], "args": {"image": "e2.png" }}, {"task": "object-detection", "id": 4, "dep": [-1], "args": {"image": "e2.png" }}, {"task": "visual-question-answering", "id": 5, "dep": [4], "args": {"image": "<GENERATED>-4", "text": "How many sheep in the picture"}} }}, {"task": "image-to-text", "id": 6, "dep": [-1], "args": {"image": "e3.jpg" }},  {"task": "object-detection", "id": 7, "dep": [-1], "args": {"image": "e3.jpg" }}, {"task": "visual-question-answering", "id": 8, "dep": [7], "args": {"image": "<GENERATED>-7", "text": "How many sheep in the picture"}}]'}, {'role': 'user', 'content': 'Look at /e.jpg, can you tell me how many objects in the picture? Give me a picture and video similar to this one.'}, {'role': 'assistant', 'content': '[{"task": "image-to-text", "id": 0, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "object-detection", "id": 1, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "visual-question-answering", "id": 2, "dep": [1], "args": {"image": "<GENERATED>-1", "text": "how many objects in the picture?" }}, {"task": "text-to-image", "id": 3, "dep": [0], "args": {"text": "<GENERATED-0>" }}, {"task": "image-to-image", "id": 4, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "text-to-video", "id": 5, "dep": [0], "args": {"text": "<GENERATED-0>" }}]'}, {'role': 'user', 'content': 'given a document /images/e.jpeg, answer me what is the student amount? And describe the image with your voice'}, {'role': 'assistant', 'content': '{"task": "document-question-answering", "id": 0, "dep": [-1], "args": {"image": "/images/e.jpeg", "text": "what is the student amount?" }}, {"task": "visual-question-answering", "id": 1, "dep": [-1], "args": {"image": "/images/e.jpeg", "text": "what is the student amount?" }}, {"task": "image-to-text", "id": 2, "dep": [-1], "args": {"image": "/images/e.jpg" }}, {"task": "text-to-speech", "id": 3, "dep": [2], "args": {"text": "<GENERATED>-2" }}]'}, {'role': 'user', 'content': 'Given an image /example.jpg, first generate a hed image, then based on the hed image generate a new image where a girl is reading a book'}, {'role': 'assistant', 'content': '[{"task": "openpose-control", "id": 0, "dep": [-1], "args": {"image": "/example.jpg" }},  {"task": "openpose-text-to-image", "id": 1, "dep": [0], "args": {"text": "a girl is reading a book", "image": "<GENERATED>-0" }}]'}, {'role': 'user', 'content': "please show me a video and an image of (based on the text) 'a boy is running' and dub it"}, {'role': 'assistant', 'content': '[{"task": "text-to-video", "id": 0, "dep": [-1], "args": {"text": "a boy is running" }}, {"task": "text-to-speech", "id": 1, "dep": [-1], "args": {"text": "a boy is running" }}, {"task": "text-to-image", "id": 2, "dep": [-1], "args": {"text": "a boy is running" }}]'}, {'role': 'user', 'content': 'please show me a joke and an image of cat'}, {'role': 'assistant', 'content': '[{"task": "conversational", "id": 0, "dep": [-1], "args": {"text": "please show me a joke of cat" }}, {"task": "text-to-image", "id": 1, "dep": [-1], "args": {"text": "a photo of cat" }}]'}, {'role': 'user', 'content': 'The chat log [ [] ] may contain the resources I mentioned. Now I input { How many zebras in examples/c.jpg }. Pay attention to the input and output types of tasks and the dependencies between tasks.'}]
+2025-10-19 15:07:27,125 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/meta-llama/Llama-3.3-70B-Instruct?expand=inferenceProviderMapping HTTP/1.1" 200 1321
+2025-10-19 15:07:27,128 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): router.huggingface.co:443
+2025-10-19 15:07:28,016 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /nebius/v1/chat/completions HTTP/1.1" 200 None
+2025-10-19 15:07:28,018 - root - DEBUG - [{'task': 'visual-question-answering', 'id': 0, 'dep': [-1], 'args': {'image': 'examples/c.jpg', 'text': 'How many zebras in the picture'}}]
+2025-10-19 15:07:28,019 - root - DEBUG - Run task: 0 - visual-question-answering
+2025-10-19 15:07:28,019 - root - DEBUG - Deps: []
+2025-10-19 15:07:28,019 - root - DEBUG - Parsed Task: {'task': 'visual-question-answering', 'id': 0, 'dep': [-1], 'args': {'image': 'public/examples/c.jpg', 'text': 'How many zebras in the picture'}}
+2025-10-19 15:07:28,022 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 15:07:28,023 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 15:07:28,025 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 15:07:28,026 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 15:07:28,027 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 15:07:28,029 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 15:07:28,031 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 15:07:28,032 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/dandelin/vilt-b32-finetuned-vqa HTTP/1.1" 200 16
+2025-10-19 15:07:28,033 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 15:07:28,035 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 15:07:28,035 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 15:07:28,037 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Salesforce/blip-vqa-base HTTP/1.1" 200 17
+2025-10-19 15:07:28,038 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 15:07:28,040 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 15:07:28,041 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 15:07:28,042 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 15:07:28,044 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Salesforce/blip-vqa-capfilt-large HTTP/1.1" 200 17
+2025-10-19 15:07:28,045 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/git-large-vqav2 HTTP/1.1" 200 17
+2025-10-19 15:07:28,046 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 15:07:28,047 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 15:07:28,048 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 15:07:28,049 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 15:07:28,049 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/ivelin/donut-refexp-combined-v1 HTTP/1.1" 200 17
+2025-10-19 15:07:28,051 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/git-base-textvqa HTTP/1.1" 200 17
+2025-10-19 15:07:28,051 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 15:07:28,053 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 15:07:28,055 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 15:07:28,056 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 15:07:28,056 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 15:07:28,057 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/git-base-vqav2 HTTP/1.1" 200 17
+2025-10-19 15:07:28,058 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 15:07:28,060 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 15:07:28,061 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 15:07:28,061 - root - DEBUG - Model: dandelin/vilt-b32-finetuned-vqa | Status: True | Source: local
+2025-10-19 15:07:28,062 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/tufa15nik/vilt-finetuned-vqasi HTTP/1.1" 200 17
+2025-10-19 15:07:28,063 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/git-large-textvqa HTTP/1.1" 200 17
+2025-10-19 15:07:28,066 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/azwierzc/vilt-b32-finetuned-vqa-pl HTTP/1.1" 200 17
+2025-10-19 15:07:28,066 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Bingsu/temp_vilt_vqa HTTP/1.1" 200 17
+2025-10-19 15:07:28,067 - root - DEBUG - Model: Salesforce/blip-vqa-base | Status: False | Source: None
+2025-10-19 15:07:28,068 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/hf-tiny-model-private/tiny-random-ViltForQuestionAnswering HTTP/1.1" 200 17
+2025-10-19 15:07:28,071 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/sheldonxxxx/OFA_model_weights HTTP/1.1" 200 17
+2025-10-19 15:07:28,071 - root - DEBUG - Model: Salesforce/blip-vqa-capfilt-large | Status: False | Source: None
+2025-10-19 15:07:28,072 - root - DEBUG - Model: microsoft/git-large-vqav2 | Status: False | Source: None
+2025-10-19 15:07:28,073 - root - DEBUG - Model: ivelin/donut-refexp-combined-v1 | Status: False | Source: None
+2025-10-19 15:07:28,073 - root - DEBUG - Model: microsoft/git-base-textvqa | Status: False | Source: None
+2025-10-19 15:07:28,073 - root - DEBUG - Model: microsoft/git-base-vqav2 | Status: False | Source: None
+2025-10-19 15:07:28,073 - root - DEBUG - Model: tufa15nik/vilt-finetuned-vqasi | Status: False | Source: None
+2025-10-19 15:07:28,073 - root - DEBUG - Model: microsoft/git-large-textvqa | Status: False | Source: None
+2025-10-19 15:07:28,073 - root - DEBUG - Model: azwierzc/vilt-b32-finetuned-vqa-pl | Status: False | Source: None
+2025-10-19 15:07:28,073 - root - DEBUG - Model: Bingsu/temp_vilt_vqa | Status: False | Source: None
+2025-10-19 15:07:28,073 - root - DEBUG - Model: hf-tiny-model-private/tiny-random-ViltForQuestionAnswering | Status: False | Source: None
+2025-10-19 15:07:28,073 - root - DEBUG - Model: sheldonxxxx/OFA_model_weights | Status: False | Source: None
+2025-10-19 15:07:28,622 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/microsoft/git-large-vqav2 HTTP/1.1" 200 1797
+2025-10-19 15:07:28,623 - root - DEBUG - Model: microsoft/git-large-vqav2 | Status: False | Source: None
+2025-10-19 15:07:28,659 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/Salesforce/blip-vqa-base HTTP/1.1" 200 4263
+2025-10-19 15:07:28,659 - root - DEBUG - Model: Salesforce/blip-vqa-base | Status: False | Source: None
+2025-10-19 15:07:28,706 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/microsoft/git-base-textvqa HTTP/1.1" 200 1714
+2025-10-19 15:07:28,707 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/ivelin/donut-refexp-combined-v1 HTTP/1.1" 200 2519
+2025-10-19 15:07:28,707 - root - DEBUG - Model: microsoft/git-base-textvqa | Status: False | Source: None
+2025-10-19 15:07:28,707 - root - DEBUG - Model: ivelin/donut-refexp-combined-v1 | Status: False | Source: None
+2025-10-19 15:07:28,712 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/tufa15nik/vilt-finetuned-vqasi HTTP/1.1" 200 1205
+2025-10-19 15:07:28,713 - root - DEBUG - Model: tufa15nik/vilt-finetuned-vqasi | Status: False | Source: None
+2025-10-19 15:07:28,713 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/microsoft/git-base-vqav2 HTTP/1.1" 200 1940
+2025-10-19 15:07:28,714 - root - DEBUG - Model: microsoft/git-base-vqav2 | Status: False | Source: None
+2025-10-19 15:07:28,719 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/Salesforce/blip-vqa-capfilt-large HTTP/1.1" 200 2477
+2025-10-19 15:07:28,719 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/azwierzc/vilt-b32-finetuned-vqa-pl HTTP/1.1" 200 1151
+2025-10-19 15:07:28,720 - root - DEBUG - Model: Salesforce/blip-vqa-capfilt-large | Status: False | Source: None
+2025-10-19 15:07:28,721 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/hf-tiny-model-private/tiny-random-ViltForQuestionAnswering HTTP/1.1" 200 1239
+2025-10-19 15:07:28,721 - root - DEBUG - Model: azwierzc/vilt-b32-finetuned-vqa-pl | Status: False | Source: None
+2025-10-19 15:07:28,721 - root - DEBUG - Model: hf-tiny-model-private/tiny-random-ViltForQuestionAnswering | Status: False | Source: None
+2025-10-19 15:07:28,723 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/Bingsu/temp_vilt_vqa HTTP/1.1" 200 1208
+2025-10-19 15:07:28,723 - root - DEBUG - Model: Bingsu/temp_vilt_vqa | Status: False | Source: None
+2025-10-19 15:07:28,725 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sheldonxxxx/OFA_model_weights HTTP/1.1" 200 799
+2025-10-19 15:07:28,726 - root - DEBUG - Model: sheldonxxxx/OFA_model_weights | Status: False | Source: None
+2025-10-19 15:07:28,745 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/dandelin/vilt-b32-finetuned-vqa HTTP/1.1" 200 4613
+2025-10-19 15:07:28,745 - root - DEBUG - Model: dandelin/vilt-b32-finetuned-vqa | Status: False | Source: None
+2025-10-19 15:07:28,901 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/microsoft/git-large-textvqa HTTP/1.1" 200 1690
+2025-10-19 15:07:28,901 - root - DEBUG - Model: microsoft/git-large-textvqa | Status: False | Source: None
+2025-10-19 15:07:28,902 - root - DEBUG - avaliable models on visual-question-answering: {'local': ['dandelin/vilt-b32-finetuned-vqa'], 'huggingface': []}
+2025-10-19 15:07:28,902 - root - DEBUG - chosen model: {'id': 'dandelin/vilt-b32-finetuned-vqa', 'reason': 'Only one model available.'}
+2025-10-19 15:07:28,903 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 15:07:29,612 - urllib3.connectionpool - DEBUG - http://localhost:8005 "POST /models/dandelin/vilt-b32-finetuned-vqa HTTP/1.1" 200 219
+2025-10-19 15:07:29,614 - root - DEBUG - Inference Result: [{'answer': '2', 'score': 0.569107711315155}, {'answer': '3', 'score': 0.4749259650707245}, {'answer': '4', 'score': 0.0290520079433918}, {'answer': 'yes', 'score': 0.0018017671536654234}, {'answer': '5', 'score': 0.0014926553703844547}]
+2025-10-19 15:07:29,614 - root - DEBUG - {0: {'task': {'task': 'visual-question-answering', 'id': 0, 'dep': [-1], 'args': {'image': 'public/examples/c.jpg', 'text': 'How many zebras in the picture'}}, 'inference result': [{'answer': '2', 'score': 0.569107711315155}, {'answer': '3', 'score': 0.4749259650707245}, {'answer': '4', 'score': 0.0290520079433918}, {'answer': 'yes', 'score': 0.0018017671536654234}, {'answer': '5', 'score': 0.0014926553703844547}], 'choose model result': {'id': 'dandelin/vilt-b32-finetuned-vqa', 'reason': 'Only one model available.'}}}
+2025-10-19 15:07:32,040 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /nebius/v1/chat/completions HTTP/1.1" 200 None
+2025-10-19 15:07:32,042 - root - DEBUG - There are 2 zebras in the picture examples/c.jpg. 
+<EXPLANATION> To determine the number of zebras in the image examples/c.jpg, I utilized a visual question answering (VQA) model. The model analyzed the image and provided a set of possible answers along with their confidence scores. The top answer was "2" with a confidence score of 0.569107711315155, followed by "3" with a score of 0.4749259650707245. Given the higher confidence score of the answer "2", I concluded that there are 2 zebras in the picture. The model used for this task was dandelin/vilt-b32-finetuned-vqa. The image file used for inference is located at file:///public/examples/c.jpg. Unfortunately, the model did not generate any additional files such as images during the inference process. </EXPLANATION>
+2025-10-19 15:07:32,047 - retriever - DEBUG - Loaded 13 entries from data/explanations.jsonl
+2025-10-19 15:07:32,258 - retriever - DEBUG - Best similarity = 0.810 (threshold = 0.95)
+2025-10-19 15:07:32,265 - retriever - INFO - Saved new explanation to data/explanations.jsonl: To determine the number of zebras in the image examples/c.jp...
+2025-10-19 15:07:33,484 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /nebius/v1/chat/completions HTTP/1.1" 200 None
+2025-10-19 15:07:33,485 - judge - INFO - Judge decided: A (Both explanations are identical and clearly mention the specific image 'examples/c.jpg' and the task at hand, which is to determine the number of zebras in that image. Since they are the same, the choice of winner is arbitrary, but Explanation A is labeled as the 'Base' explanation, implying it might be the original or default explanation provided.)
+2025-10-19 15:07:33,485 - root - DEBUG - Final explanation chosen by Judge: To determine the number of zebras in the image examples/c.jpg, I utilized a visual question answering (VQA) model. The model analyzed the image and provided a set of possible answers along with their confidence scores. The top answer was "2" with a confidence score of 0.569107711315155, followed by "3" with a score of 0.4749259650707245. Given the higher confidence score of the answer "2", I concluded that there are 2 zebras in the picture. The model used for this task was dandelin/vilt-b32-finetuned-vqa. The image file used for inference is located at file:///public/examples/c.jpg. Unfortunately, the model did not generate any additional files such as images during the inference process.
+2025-10-19 15:07:33,486 - root - DEBUG -  Success: {"input": "How many zebras in examples/c.jpg", "task": "[{\"task\": \"visual-question-answering\", \"id\": 0, \"dep\": [-1], \"args\": {\"image\": \"examples/c.jpg\", \"text\": \"How many zebras in the picture\"}}]", "results": {"0": {"task": {"task": "visual-question-answering", "id": 0, "dep": [-1], "args": {"image": "public/examples/c.jpg", "text": "How many zebras in the picture"}}, "inference result": [{"answer": "2", "score": 0.569107711315155}, {"answer": "3", "score": 0.4749259650707245}, {"answer": "4", "score": 0.0290520079433918}, {"answer": "yes", "score": 0.0018017671536654234}, {"answer": "5", "score": 0.0014926553703844547}], "choose model result": {"id": "dandelin/vilt-b32-finetuned-vqa", "reason": "Only one model available."}}}, "response": "There are 2 zebras in the picture examples/c.jpg. \nTo determine the number of zebras in the image examples/c.jpg, I utilized a visual question answering (VQA) model. The model analyzed the image and provided a set of possible answers along with their confidence scores. The top answer was \"2\" with a confidence score of 0.569107711315155, followed by \"3\" with a score of 0.4749259650707245. Given the higher confidence score of the answer \"2\", I concluded that there are 2 zebras in the picture. The model used for this task was dandelin/vilt-b32-finetuned-vqa. The image file used for inference is located at file:///public/examples/c.jpg. Unfortunately, the model did not generate any additional files such as images during the inference process.", "during": 6.474222660064697, "op": "response"}
+2025-10-19 15:07:33,486 - root - INFO - response: There are 2 zebras in the picture examples/c.jpg. 
+To determine the number of zebras in the image examples/c.jpg, I utilized a visual question answering (VQA) model. The model analyzed the image and provided a set of possible answers along with their confidence scores. The top answer was "2" with a confidence score of 0.569107711315155, followed by "3" with a score of 0.4749259650707245. Given the higher confidence score of the answer "2", I concluded that there are 2 zebras in the picture. The model used for this task was dandelin/vilt-b32-finetuned-vqa. The image file used for inference is located at file:///public/examples/c.jpg. Unfortunately, the model did not generate any additional files such as images during the inference process.
+2025-10-19 15:07:43,779 - root - INFO - [ User ]: exit
+2025-10-19 15:07:43,779 - root - INFO - [ Jarvis ]: Goodnight.

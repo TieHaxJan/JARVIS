@@ -1,0 +1,507 @@
+2025-10-19 14:21:18,213 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-10-19 14:21:18,213 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-19 14:21:18,214 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:21:18,355 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-10-19 14:21:18,362 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-10-19 14:21:18,478 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-10-19 14:21:18,484 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-10-19 14:21:18,595 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-10-19 14:21:18,601 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-10-19 14:21:18,709 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-10-19 14:21:18,714 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+2025-10-19 14:21:18,825 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-10-19 14:21:18,832 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-10-19 14:21:18,944 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-10-19 14:21:18,949 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+2025-10-19 14:21:19,068 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-10-19 14:21:19,178 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-10-19 14:21:19,184 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+2025-10-19 14:21:19,376 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-10-19 14:21:19,381 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+2025-10-19 14:21:19,496 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-10-19 14:21:19,653 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-10-19 14:21:19,658 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-10-19 14:21:19,785 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6876
+2025-10-19 14:21:19,798 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:21:19,802 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /running HTTP/1.1" 200 17
+2025-10-19 14:21:19,846 - root - DEBUG - text-classification: 30 models
+2025-10-19 14:21:19,847 - root - DEBUG - token-classification: 30 models
+2025-10-19 14:21:19,847 - root - DEBUG - text2text-generation: 30 models
+2025-10-19 14:21:19,847 - root - DEBUG - summarization: 30 models
+2025-10-19 14:21:19,847 - root - DEBUG - translation: 30 models
+2025-10-19 14:21:19,847 - root - DEBUG - question-answering: 30 models
+2025-10-19 14:21:19,847 - root - DEBUG - conversational: 30 models
+2025-10-19 14:21:19,847 - root - DEBUG - text-generation: 30 models
+2025-10-19 14:21:19,847 - root - DEBUG - sentence-similarity: 30 models
+2025-10-19 14:21:19,847 - root - DEBUG - tabular-classification: 30 models
+2025-10-19 14:21:19,847 - root - DEBUG - object-detection: 30 models
+2025-10-19 14:21:19,847 - root - DEBUG - image-classification: 30 models
+2025-10-19 14:21:19,847 - root - DEBUG - image-to-text: 30 models
+2025-10-19 14:21:19,847 - root - DEBUG - text-to-image: 31 models
+2025-10-19 14:21:19,847 - root - DEBUG - image-to-image: 30 models
+2025-10-19 14:21:19,847 - root - DEBUG - visual-question-answering: 13 models
+2025-10-19 14:21:19,847 - root - DEBUG - document-question-answering: 22 models
+2025-10-19 14:21:19,847 - root - DEBUG - image-segmentation: 30 models
+2025-10-19 14:21:19,847 - root - DEBUG - depth-estimation: 30 models
+2025-10-19 14:21:19,847 - root - DEBUG - text-to-video: 8 models
+2025-10-19 14:21:19,847 - root - DEBUG - text-to-speech: 30 models
+2025-10-19 14:21:19,847 - root - DEBUG - automatic-speech-recognition: 30 models
+2025-10-19 14:21:19,847 - root - DEBUG - audio-to-audio: 30 models
+2025-10-19 14:21:19,847 - root - DEBUG - audio-classification: 30 models
+2025-10-19 14:21:19,847 - root - INFO - Welcome to Jarvis! A collaborative system that consists of an LLM as the controller and numerous expert models as collaborative executors. Jarvis can plan tasks, schedule Hugging Face models, generate friendly responses based on your requests, and help you with many things. Please enter your request (`exit` to exit).
+2025-10-19 14:21:28,673 - root - INFO - [ User ]: generate an image of a bear.
+2025-10-19 14:21:28,673 - root - INFO - ********************************************************************************
+2025-10-19 14:21:28,673 - root - INFO - input: Generate an image of a bear.
+2025-10-19 14:21:28,675 - root - DEBUG - Messages: [{'role': 'system', 'content': '#1 Task Planning Stage: You are a helpful AI assistant. Based on the user\'s request, you will recommend the best model from Hugging Face for the task, and explain why. The special tag "<GENERATED>-dep_id" refer to the one generated text/image/audio in the dependency task (Please consider whether the dependency task generates resources of this type.) and "dep_id" must be in "dep" list.  The "dep" field denotes the ids of the previous prerequisite tasks which generate a new resource that the current task relies on.  The "args" field must in ["text", "image", "audio"], nothing else.  You must respond in JSON format like: [\n  {\n    "task": task, \n    "id": task_id, \n    "dep": dependency_task_id, \n    "args": {\n      "text": text or <GENERATED>-dep_id, \n      "image": image_url or <GENERATED>-dep_id, \n      "audio": audio_url or <GENERATED>-dep_id\n    }\n  }\n] Respond with the JSON entry and ONLY the JSON entry! Here are some few-shot examples:'}, {'role': 'user', 'content': 'Give you some pictures e1.jpg, e2.png, e3.jpg, help me count the number of sheep?'}, {'role': 'assistant', 'content': '[{"task": "image-to-text", "id": 0, "dep": [-1], "args": {"image": "e1.jpg" }}, {"task": "object-detection", "id": 1, "dep": [-1], "args": {"image": "e1.jpg" }}, {"task": "visual-question-answering", "id": 2, "dep": [1], "args": {"image": "<GENERATED>-1", "text": "How many sheep in the picture"}} }}, {"task": "image-to-text", "id": 3, "dep": [-1], "args": {"image": "e2.png" }}, {"task": "object-detection", "id": 4, "dep": [-1], "args": {"image": "e2.png" }}, {"task": "visual-question-answering", "id": 5, "dep": [4], "args": {"image": "<GENERATED>-4", "text": "How many sheep in the picture"}} }}, {"task": "image-to-text", "id": 6, "dep": [-1], "args": {"image": "e3.jpg" }},  {"task": "object-detection", "id": 7, "dep": [-1], "args": {"image": "e3.jpg" }}, {"task": "visual-question-answering", "id": 8, "dep": [7], "args": {"image": "<GENERATED>-7", "text": "How many sheep in the picture"}}]'}, {'role': 'user', 'content': 'Look at /e.jpg, can you tell me how many objects in the picture? Give me a picture and video similar to this one.'}, {'role': 'assistant', 'content': '[{"task": "image-to-text", "id": 0, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "object-detection", "id": 1, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "visual-question-answering", "id": 2, "dep": [1], "args": {"image": "<GENERATED>-1", "text": "how many objects in the picture?" }}, {"task": "text-to-image", "id": 3, "dep": [0], "args": {"text": "<GENERATED-0>" }}, {"task": "image-to-image", "id": 4, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "text-to-video", "id": 5, "dep": [0], "args": {"text": "<GENERATED-0>" }}]'}, {'role': 'user', 'content': 'given a document /images/e.jpeg, answer me what is the student amount? And describe the image with your voice'}, {'role': 'assistant', 'content': '{"task": "document-question-answering", "id": 0, "dep": [-1], "args": {"image": "/images/e.jpeg", "text": "what is the student amount?" }}, {"task": "visual-question-answering", "id": 1, "dep": [-1], "args": {"image": "/images/e.jpeg", "text": "what is the student amount?" }}, {"task": "image-to-text", "id": 2, "dep": [-1], "args": {"image": "/images/e.jpg" }}, {"task": "text-to-speech", "id": 3, "dep": [2], "args": {"text": "<GENERATED>-2" }}]'}, {'role': 'user', 'content': 'Given an image /example.jpg, first generate a hed image, then based on the hed image generate a new image where a girl is reading a book'}, {'role': 'assistant', 'content': '[{"task": "openpose-control", "id": 0, "dep": [-1], "args": {"image": "/example.jpg" }},  {"task": "openpose-text-to-image", "id": 1, "dep": [0], "args": {"text": "a girl is reading a book", "image": "<GENERATED>-0" }}]'}, {'role': 'user', 'content': "please show me a video and an image of (based on the text) 'a boy is running' and dub it"}, {'role': 'assistant', 'content': '[{"task": "text-to-video", "id": 0, "dep": [-1], "args": {"text": "a boy is running" }}, {"task": "text-to-speech", "id": 1, "dep": [-1], "args": {"text": "a boy is running" }}, {"task": "text-to-image", "id": 2, "dep": [-1], "args": {"text": "a boy is running" }}]'}, {'role': 'user', 'content': 'please show me a joke and an image of cat'}, {'role': 'assistant', 'content': '[{"task": "conversational", "id": 0, "dep": [-1], "args": {"text": "please show me a joke of cat" }}, {"task": "text-to-image", "id": 1, "dep": [-1], "args": {"text": "a photo of cat" }}]'}, {'role': 'user', 'content': 'The chat log [ [] ] may contain the resources I mentioned. Now I input { Generate an image of a bear. }. Pay attention to the input and output types of tasks and the dependencies between tasks.'}]
+2025-10-19 14:21:28,796 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/meta-llama/Llama-3.3-70B-Instruct?expand=inferenceProviderMapping HTTP/1.1" 200 1321
+2025-10-19 14:21:28,797 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): router.huggingface.co:443
+2025-10-19 14:21:29,907 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /nebius/v1/chat/completions HTTP/1.1" 200 None
+2025-10-19 14:21:29,909 - root - DEBUG - [{'task': 'text-to-image', 'id': 0, 'dep': [-1], 'args': {'text': 'a bear'}}]
+2025-10-19 14:21:29,909 - root - DEBUG - Run task: 0 - text-to-image
+2025-10-19 14:21:29,910 - root - DEBUG - Deps: []
+2025-10-19 14:21:29,910 - root - DEBUG - Parsed Task: {'task': 'text-to-image', 'id': 0, 'dep': [-1], 'args': {'text': 'a bear'}}
+2025-10-19 14:21:29,912 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:21:29,914 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:21:29,916 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:21:29,917 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:21:29,918 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:21:29,920 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:21:29,920 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:21:29,922 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:21:29,924 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:21:29,925 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:21:29,926 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:21:29,928 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:21:29,929 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:21:29,931 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:21:29,933 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/runwayml/stable-diffusion-v1-5 HTTP/1.1" 200 16
+2025-10-19 14:21:29,934 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/CompVis/stable-diffusion-v1-4 HTTP/1.1" 200 17
+2025-10-19 14:21:29,935 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:21:29,935 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:21:29,936 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:21:29,936 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/WarriorMama777/OrangeMixs HTTP/1.1" 200 17
+2025-10-19 14:21:29,938 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/prompthero/openjourney HTTP/1.1" 200 17
+2025-10-19 14:21:29,939 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:21:29,940 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:21:29,941 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:21:29,943 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:21:29,943 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/CompVis/stable-diffusion-v-1-4-original HTTP/1.1" 200 17
+2025-10-19 14:21:29,943 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/hakurei/waifu-diffusion HTTP/1.1" 200 17
+2025-10-19 14:21:29,944 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:21:29,945 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/stabilityai/stable-diffusion-2-1 HTTP/1.1" 200 17
+2025-10-19 14:21:29,946 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:21:29,948 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:21:29,950 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:21:29,950 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:21:29,951 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/andite/anything-v4.0 HTTP/1.1" 200 17
+2025-10-19 14:21:29,951 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:21:29,952 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:21:29,953 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:21:29,953 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/stabilityai/stable-diffusion-2 HTTP/1.1" 200 17
+2025-10-19 14:21:29,954 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:21:29,955 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:21:29,955 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:21:29,956 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:21:29,957 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:21:29,959 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/runwayml/stable-diffusion-inpainting HTTP/1.1" 200 17
+2025-10-19 14:21:29,959 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:21:29,960 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:21:29,960 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:21:29,961 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:21:29,963 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:21:29,963 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:21:29,964 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:21:29,965 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:21:29,990 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/hakurei/waifu-diffusion-v1-4 HTTP/1.1" 200 17
+2025-10-19 14:21:29,968 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:21:29,968 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:21:29,969 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:21:29,970 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/gsdf/Counterfeit-V2.5 HTTP/1.1" 200 17
+2025-10-19 14:21:29,971 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:21:29,971 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:21:29,972 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/dreamlike-art/dreamlike-photoreal-2.0 HTTP/1.1" 200 17
+2025-10-19 14:21:29,973 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:21:29,973 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:21:29,974 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:21:29,975 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:21:29,976 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:21:29,976 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/andite/pastel-mix HTTP/1.1" 200 17
+2025-10-19 14:21:29,977 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:21:29,978 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:21:29,979 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:21:29,980 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:21:29,981 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:21:29,982 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:21:29,983 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:21:29,984 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:21:29,985 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/dreamlike-art/dreamlike-diffusion-1.0 HTTP/1.1" 200 17
+2025-10-19 14:21:29,986 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:21:29,986 - root - DEBUG - Model: runwayml/stable-diffusion-v1-5 | Status: True | Source: local
+2025-10-19 14:21:29,987 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/CompVis/stable-diffusion HTTP/1.1" 200 17
+2025-10-19 14:21:29,988 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/nitrosocke/mo-di-diffusion HTTP/1.1" 200 17
+2025-10-19 14:21:29,967 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:21:29,991 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/prompthero/openjourney-v4 HTTP/1.1" 200 17
+2025-10-19 14:21:29,995 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Envvi/Inkpunk-Diffusion HTTP/1.1" 200 17
+2025-10-19 14:21:29,996 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/nitrosocke/Arcane-Diffusion HTTP/1.1" 200 17
+2025-10-19 14:21:29,998 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/wavymulder/Analog-Diffusion HTTP/1.1" 200 17
+2025-10-19 14:21:30,000 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/hakurei/waifu-diffusion-v1-3 HTTP/1.1" 200 17
+2025-10-19 14:21:30,001 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/nitrosocke/redshift-diffusion HTTP/1.1" 200 17
+2025-10-19 14:21:30,004 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/DGSpitzer/Cyberpunk-Anime-Diffusion HTTP/1.1" 200 17
+2025-10-19 14:21:30,006 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Linaqruf/anything-v3.0 HTTP/1.1" 200 17
+2025-10-19 14:21:30,007 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/nitrosocke/Ghibli-Diffusion HTTP/1.1" 200 17
+2025-10-19 14:21:30,008 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/hassanblend/hassanblend1.4 HTTP/1.1" 200 17
+2025-10-19 14:21:30,010 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/gsdf/Counterfeit-V2.0 HTTP/1.1" 200 17
+2025-10-19 14:21:30,011 - root - DEBUG - Model: CompVis/stable-diffusion-v1-4 | Status: False | Source: None
+2025-10-19 14:21:30,011 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/riffusion/riffusion-model-v1 HTTP/1.1" 200 17
+2025-10-19 14:21:30,013 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/stabilityai/stable-diffusion-xl-base-1.0 HTTP/1.1" 200 17
+2025-10-19 14:21:30,019 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/stabilityai/sd-vae-ft-mse-original HTTP/1.1" 200 17
+2025-10-19 14:21:30,022 - root - DEBUG - Model: WarriorMama777/OrangeMixs | Status: False | Source: None
+2025-10-19 14:21:30,024 - root - DEBUG - Model: prompthero/openjourney | Status: False | Source: None
+2025-10-19 14:21:30,024 - root - DEBUG - Model: CompVis/stable-diffusion-v-1-4-original | Status: False | Source: None
+2025-10-19 14:21:30,024 - root - DEBUG - Model: hakurei/waifu-diffusion | Status: False | Source: None
+2025-10-19 14:21:30,024 - root - DEBUG - Model: stabilityai/stable-diffusion-2-1 | Status: False | Source: None
+2025-10-19 14:21:30,024 - root - DEBUG - Model: andite/anything-v4.0 | Status: False | Source: None
+2025-10-19 14:21:30,024 - root - DEBUG - Model: stabilityai/stable-diffusion-2 | Status: False | Source: None
+2025-10-19 14:21:30,024 - root - DEBUG - Model: runwayml/stable-diffusion-inpainting | Status: False | Source: None
+2025-10-19 14:21:30,024 - root - DEBUG - Model: hakurei/waifu-diffusion-v1-4 | Status: False | Source: None
+2025-10-19 14:21:30,024 - root - DEBUG - Model: gsdf/Counterfeit-V2.5 | Status: False | Source: None
+2025-10-19 14:21:30,024 - root - DEBUG - Model: dreamlike-art/dreamlike-photoreal-2.0 | Status: False | Source: None
+2025-10-19 14:21:30,024 - root - DEBUG - Model: andite/pastel-mix | Status: False | Source: None
+2025-10-19 14:21:30,024 - root - DEBUG - Model: dreamlike-art/dreamlike-diffusion-1.0 | Status: False | Source: None
+2025-10-19 14:21:30,024 - root - DEBUG - Model: CompVis/stable-diffusion | Status: False | Source: None
+2025-10-19 14:21:30,024 - root - DEBUG - Model: nitrosocke/mo-di-diffusion | Status: False | Source: None
+2025-10-19 14:21:30,024 - root - DEBUG - Model: prompthero/openjourney-v4 | Status: False | Source: None
+2025-10-19 14:21:30,024 - root - DEBUG - Model: Envvi/Inkpunk-Diffusion | Status: False | Source: None
+2025-10-19 14:21:30,024 - root - DEBUG - Model: nitrosocke/Arcane-Diffusion | Status: False | Source: None
+2025-10-19 14:21:30,024 - root - DEBUG - Model: wavymulder/Analog-Diffusion | Status: False | Source: None
+2025-10-19 14:21:30,024 - root - DEBUG - Model: hakurei/waifu-diffusion-v1-3 | Status: False | Source: None
+2025-10-19 14:21:30,024 - root - DEBUG - Model: nitrosocke/redshift-diffusion | Status: False | Source: None
+2025-10-19 14:21:30,024 - root - DEBUG - Model: DGSpitzer/Cyberpunk-Anime-Diffusion | Status: False | Source: None
+2025-10-19 14:21:30,024 - root - DEBUG - Model: Linaqruf/anything-v3.0 | Status: False | Source: None
+2025-10-19 14:21:30,024 - root - DEBUG - Model: nitrosocke/Ghibli-Diffusion | Status: False | Source: None
+2025-10-19 14:21:30,024 - root - DEBUG - Model: hassanblend/hassanblend1.4 | Status: False | Source: None
+2025-10-19 14:21:30,024 - root - DEBUG - Model: gsdf/Counterfeit-V2.0 | Status: False | Source: None
+2025-10-19 14:21:30,024 - root - DEBUG - Model: riffusion/riffusion-model-v1 | Status: False | Source: None
+2025-10-19 14:21:30,024 - root - DEBUG - Model: stabilityai/stable-diffusion-xl-base-1.0 | Status: False | Source: None
+2025-10-19 14:21:30,024 - root - DEBUG - Model: stabilityai/sd-vae-ft-mse-original | Status: False | Source: None
+2025-10-19 14:21:31,244 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/CompVis/stable-diffusion-v1-4 HTTP/1.1" 200 7399
+2025-10-19 14:21:31,248 - root - DEBUG - Model: CompVis/stable-diffusion-v1-4 | Status: False | Source: None
+2025-10-19 14:21:31,287 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/andite/pastel-mix HTTP/1.1" 404 32
+2025-10-19 14:21:31,288 - root - DEBUG - Model: andite/pastel-mix | Status: False | Source: None
+2025-10-19 14:21:31,310 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/wavymulder/Analog-Diffusion HTTP/1.1" 200 5065
+2025-10-19 14:21:31,311 - root - DEBUG - Model: wavymulder/Analog-Diffusion | Status: False | Source: None
+2025-10-19 14:21:31,315 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/nitrosocke/Arcane-Diffusion HTTP/1.1" 200 4908
+2025-10-19 14:21:31,316 - root - DEBUG - Model: nitrosocke/Arcane-Diffusion | Status: False | Source: None
+2025-10-19 14:21:31,316 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/hakurei/waifu-diffusion-v1-3 HTTP/1.1" 200 4426
+2025-10-19 14:21:31,317 - root - DEBUG - Model: hakurei/waifu-diffusion-v1-3 | Status: False | Source: None
+2025-10-19 14:21:31,321 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/CompVis/stable-diffusion-v-1-4-original HTTP/1.1" 200 4890
+2025-10-19 14:21:31,322 - root - DEBUG - Model: CompVis/stable-diffusion-v-1-4-original | Status: False | Source: None
+2025-10-19 14:21:31,325 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/Envvi/Inkpunk-Diffusion HTTP/1.1" 200 4738
+2025-10-19 14:21:31,326 - root - DEBUG - Model: Envvi/Inkpunk-Diffusion | Status: False | Source: None
+2025-10-19 14:21:31,339 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/DGSpitzer/Cyberpunk-Anime-Diffusion HTTP/1.1" 200 5734
+2025-10-19 14:21:31,340 - root - DEBUG - Model: DGSpitzer/Cyberpunk-Anime-Diffusion | Status: False | Source: None
+2025-10-19 14:21:31,349 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/nitrosocke/Ghibli-Diffusion HTTP/1.1" 200 5229
+2025-10-19 14:21:31,350 - root - DEBUG - Model: nitrosocke/Ghibli-Diffusion | Status: False | Source: None
+2025-10-19 14:21:31,354 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/riffusion/riffusion-model-v1 HTTP/1.1" 200 5861
+2025-10-19 14:21:31,355 - root - DEBUG - Model: riffusion/riffusion-model-v1 | Status: False | Source: None
+2025-10-19 14:21:31,357 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/Linaqruf/anything-v3.0 HTTP/1.1" 200 4737
+2025-10-19 14:21:31,358 - root - DEBUG - Model: Linaqruf/anything-v3.0 | Status: False | Source: None
+2025-10-19 14:21:31,362 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/runwayml/stable-diffusion-inpainting HTTP/1.1" 307 96
+2025-10-19 14:21:31,370 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/prompthero/openjourney HTTP/1.1" 200 4829
+2025-10-19 14:21:31,370 - root - DEBUG - Model: prompthero/openjourney | Status: False | Source: None
+2025-10-19 14:21:31,371 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/WarriorMama777/OrangeMixs HTTP/1.1" 200 8543
+2025-10-19 14:21:31,371 - root - DEBUG - Model: WarriorMama777/OrangeMixs | Status: False | Source: None
+2025-10-19 14:21:31,375 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/andite/anything-v4.0 HTTP/1.1" 404 32
+2025-10-19 14:21:31,375 - root - DEBUG - Model: andite/anything-v4.0 | Status: False | Source: None
+2025-10-19 14:21:31,381 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/stabilityai/sd-vae-ft-mse-original HTTP/1.1" 200 3956
+2025-10-19 14:21:31,382 - root - DEBUG - Model: stabilityai/sd-vae-ft-mse-original | Status: False | Source: None
+2025-10-19 14:21:31,392 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/gsdf/Counterfeit-V2.5 HTTP/1.1" 200 5104
+2025-10-19 14:21:31,393 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/hassanblend/hassanblend1.4 HTTP/1.1" 200 5018
+2025-10-19 14:21:31,393 - root - DEBUG - Model: gsdf/Counterfeit-V2.5 | Status: False | Source: None
+2025-10-19 14:21:31,393 - root - DEBUG - Model: hassanblend/hassanblend1.4 | Status: False | Source: None
+2025-10-19 14:21:31,404 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/stabilityai/stable-diffusion-xl-base-1.0 HTTP/1.1" 200 6343
+2025-10-19 14:21:31,405 - root - DEBUG - Model: stabilityai/stable-diffusion-xl-base-1.0 | Status: True | Source: huggingface
+2025-10-19 14:21:31,409 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/runwayml/stable-diffusion-v1-5 HTTP/1.1" 307 90
+2025-10-19 14:21:31,426 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/dreamlike-art/dreamlike-photoreal-2.0 HTTP/1.1" 200 4941
+2025-10-19 14:21:31,427 - root - DEBUG - Model: dreamlike-art/dreamlike-photoreal-2.0 | Status: False | Source: None
+2025-10-19 14:21:31,433 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/CompVis/stable-diffusion HTTP/1.1" 200 3772
+2025-10-19 14:21:31,434 - root - DEBUG - Model: CompVis/stable-diffusion | Status: False | Source: None
+2025-10-19 14:21:31,443 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/stabilityai/stable-diffusion-2-1 HTTP/1.1" 200 5162
+2025-10-19 14:21:31,443 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/hakurei/waifu-diffusion-v1-4 HTTP/1.1" 200 1603
+2025-10-19 14:21:31,443 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/hakurei/waifu-diffusion HTTP/1.1" 200 5091
+2025-10-19 14:21:31,443 - root - DEBUG - Model: stabilityai/stable-diffusion-2-1 | Status: False | Source: None
+2025-10-19 14:21:31,444 - root - DEBUG - Model: hakurei/waifu-diffusion-v1-4 | Status: False | Source: None
+2025-10-19 14:21:31,444 - root - DEBUG - Model: hakurei/waifu-diffusion | Status: False | Source: None
+2025-10-19 14:21:31,445 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/prompthero/openjourney-v4 HTTP/1.1" 200 4771
+2025-10-19 14:21:31,446 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/gsdf/Counterfeit-V2.0 HTTP/1.1" 200 4791
+2025-10-19 14:21:31,446 - root - DEBUG - Model: prompthero/openjourney-v4 | Status: False | Source: None
+2025-10-19 14:21:31,446 - root - DEBUG - Model: gsdf/Counterfeit-V2.0 | Status: False | Source: None
+2025-10-19 14:21:31,447 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/stabilityai/stable-diffusion-2 HTTP/1.1" 200 5165
+2025-10-19 14:21:31,448 - root - DEBUG - Model: stabilityai/stable-diffusion-2 | Status: False | Source: None
+2025-10-19 14:21:31,466 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/nitrosocke/mo-di-diffusion HTTP/1.1" 200 4747
+2025-10-19 14:21:31,467 - root - DEBUG - Model: nitrosocke/mo-di-diffusion | Status: False | Source: None
+2025-10-19 14:21:31,477 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/stable-diffusion-v1-5/stable-diffusion-inpainting HTTP/1.1" 200 2541
+2025-10-19 14:21:31,478 - root - DEBUG - Model: runwayml/stable-diffusion-inpainting | Status: False | Source: None
+2025-10-19 14:21:31,525 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/stable-diffusion-v1-5/stable-diffusion-v1-5 HTTP/1.1" 200 6164
+2025-10-19 14:21:31,527 - root - DEBUG - Model: runwayml/stable-diffusion-v1-5 | Status: False | Source: None
+2025-10-19 14:21:31,534 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/dreamlike-art/dreamlike-diffusion-1.0 HTTP/1.1" 200 4996
+2025-10-19 14:21:31,535 - root - DEBUG - Model: dreamlike-art/dreamlike-diffusion-1.0 | Status: False | Source: None
+2025-10-19 14:21:31,543 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/nitrosocke/redshift-diffusion HTTP/1.1" 200 4770
+2025-10-19 14:21:31,544 - root - DEBUG - Model: nitrosocke/redshift-diffusion | Status: False | Source: None
+2025-10-19 14:21:31,545 - root - DEBUG - avaliable models on text-to-image: {'local': ['runwayml/stable-diffusion-v1-5'], 'huggingface': ['stabilityai/stable-diffusion-xl-base-1.0']}
+2025-10-19 14:21:31,546 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): router.huggingface.co:443
+2025-10-19 14:21:33,228 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /nebius/v1/chat/completions HTTP/1.1" 200 None
+2025-10-19 14:21:33,230 - root - DEBUG - chosen model: {"id": "runwayml/stable-diffusion-v1-5", "reason": "This model is chosen because it has a clear description of being a latent text-to-image diffusion model, which aligns perfectly with the task of generating an image of a bear from text. Additionally, it has a local inference endpoint for speed and stability, and a significant number of likes (6367), indicating its popularity and potential performance. Although the other model has more likes, the lack of description makes it less preferable, as it's harder to assess its suitability for the task at hand."}
+2025-10-19 14:21:33,231 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:22:56,206 - urllib3.connectionpool - DEBUG - http://localhost:8005 "POST /models/runwayml/stable-diffusion-v1-5 HTTP/1.1" 200 28
+2025-10-19 14:22:56,207 - root - DEBUG - Inference Result: {'generated image': '/images/51f0.jpg'}
+2025-10-19 14:22:56,207 - root - DEBUG - {0: {'task': {'task': 'text-to-image', 'id': 0, 'dep': [-1], 'args': {'text': 'a bear'}}, 'inference result': {'generated image': '/images/51f0.jpg'}, 'choose model result': {'id': 'runwayml/stable-diffusion-v1-5', 'reason': "This model is chosen because it has a clear description of being a latent text-to-image diffusion model, which aligns perfectly with the task of generating an image of a bear from text. Additionally, it has a local inference endpoint for speed and stability, and a significant number of likes (6367), indicating its popularity and potential performance. Although the other model has more likes, the lack of description makes it less preferable, as it's harder to assess its suitability for the task at hand."}}}
+2025-10-19 14:22:58,332 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /nebius/v1/chat/completions HTTP/1.1" 200 None
+2025-10-19 14:22:58,333 - root - DEBUG - I've generated an image of a bear for you. 
+<EXPLANATION> To fulfill your request, I utilized a text-to-image model, specifically the "runwayml/stable-diffusion-v1-5" model, due to its suitability for generating images from text descriptions. This model is a latent text-to-image diffusion model, which is well-suited for tasks like creating an image of a bear based on a text prompt. The model generated an image, which can be found at the path: /images/51f0.jpg. I chose this model over others because of its clear description, local inference endpoint for speed and stability, and its popularity indicated by a significant number of likes. Although the model confidence score is not provided, the generated image should meet your expectations based on the model's performance and characteristics. </EXPLANATION>
+2025-10-19 14:22:58,336 - retriever - DEBUG - Loaded 7 entries from data/explanations.jsonl
+2025-10-19 14:22:58,606 - retriever - DEBUG - Best similarity = 0.822 (threshold = 0.95)
+2025-10-19 14:22:58,626 - retriever - INFO - Saved new explanation to data/explanations.jsonl: To fulfill your request, I utilized a text-to-image model, s...
+2025-10-19 14:23:00,075 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /nebius/v1/chat/completions HTTP/1.1" 200 None
+2025-10-19 14:23:00,076 - judge - INFO - Judge decided: A (Both explanations are identical and clearly explain the choice of model and the task at hand, mentioning the correct image path /images/51f0.jpg. Since they are the same, Explanation A is chosen as the winner by default, as it is labeled as the base explanation. The clarity and user-friendliness of both explanations are equal, and they both match the task of generating a specific image of a bear.)
+2025-10-19 14:23:00,076 - root - DEBUG - Final explanation chosen by Judge: To fulfill your request, I utilized a text-to-image model, specifically the "runwayml/stable-diffusion-v1-5" model, due to its suitability for generating images from text descriptions. This model is a latent text-to-image diffusion model, which is well-suited for tasks like creating an image of a bear based on a text prompt. The model generated an image, which can be found at the path: /images/51f0.jpg. I chose this model over others because of its clear description, local inference endpoint for speed and stability, and its popularity indicated by a significant number of likes. Although the model confidence score is not provided, the generated image should meet your expectations based on the model's performance and characteristics.
+2025-10-19 14:23:00,076 - root - DEBUG -  Success: {"input": "Generate an image of a bear.", "task": "[{\"task\": \"text-to-image\", \"id\": 0, \"dep\": [-1], \"args\": {\"text\": \"a bear\"}}]", "results": {"0": {"task": {"task": "text-to-image", "id": 0, "dep": [-1], "args": {"text": "a bear"}}, "inference result": {"generated image": "/images/51f0.jpg"}, "choose model result": {"id": "runwayml/stable-diffusion-v1-5", "reason": "This model is chosen because it has a clear description of being a latent text-to-image diffusion model, which aligns perfectly with the task of generating an image of a bear from text. Additionally, it has a local inference endpoint for speed and stability, and a significant number of likes (6367), indicating its popularity and potential performance. Although the other model has more likes, the lack of description makes it less preferable, as it's harder to assess its suitability for the task at hand."}}}, "response": "I've generated an image of a bear for you. \nTo fulfill your request, I utilized a text-to-image model, specifically the \"runwayml/stable-diffusion-v1-5\" model, due to its suitability for generating images from text descriptions. This model is a latent text-to-image diffusion model, which is well-suited for tasks like creating an image of a bear based on a text prompt. The model generated an image, which can be found at the path: /images/51f0.jpg. I chose this model over others because of its clear description, local inference endpoint for speed and stability, and its popularity indicated by a significant number of likes. Although the model confidence score is not provided, the generated image should meet your expectations based on the model's performance and characteristics.", "during": 91.40262579917908, "op": "response"}
+2025-10-19 14:23:00,076 - root - INFO - response: I've generated an image of a bear for you. 
+To fulfill your request, I utilized a text-to-image model, specifically the "runwayml/stable-diffusion-v1-5" model, due to its suitability for generating images from text descriptions. This model is a latent text-to-image diffusion model, which is well-suited for tasks like creating an image of a bear based on a text prompt. The model generated an image, which can be found at the path: /images/51f0.jpg. I chose this model over others because of its clear description, local inference endpoint for speed and stability, and its popularity indicated by a significant number of likes. Although the model confidence score is not provided, the generated image should meet your expectations based on the model's performance and characteristics.
+2025-10-19 14:26:47,086 - root - INFO - [ User ]: make a short video of a red sports car driving through a tunnel at night.
+2025-10-19 14:26:47,087 - root - INFO - ********************************************************************************
+2025-10-19 14:26:47,087 - root - INFO - input: Make a short video of a red sports car driving through a tunnel at night.
+2025-10-19 14:26:47,091 - root - DEBUG - Messages: [{'role': 'system', 'content': '#1 Task Planning Stage: You are a helpful AI assistant. Based on the user\'s request, you will recommend the best model from Hugging Face for the task, and explain why. The special tag "<GENERATED>-dep_id" refer to the one generated text/image/audio in the dependency task (Please consider whether the dependency task generates resources of this type.) and "dep_id" must be in "dep" list.  The "dep" field denotes the ids of the previous prerequisite tasks which generate a new resource that the current task relies on.  The "args" field must in ["text", "image", "audio"], nothing else.  You must respond in JSON format like: [\n  {\n    "task": task, \n    "id": task_id, \n    "dep": dependency_task_id, \n    "args": {\n      "text": text or <GENERATED>-dep_id, \n      "image": image_url or <GENERATED>-dep_id, \n      "audio": audio_url or <GENERATED>-dep_id\n    }\n  }\n] Respond with the JSON entry and ONLY the JSON entry! Here are some few-shot examples:'}, {'role': 'user', 'content': 'Give you some pictures e1.jpg, e2.png, e3.jpg, help me count the number of sheep?'}, {'role': 'assistant', 'content': '[{"task": "image-to-text", "id": 0, "dep": [-1], "args": {"image": "e1.jpg" }}, {"task": "object-detection", "id": 1, "dep": [-1], "args": {"image": "e1.jpg" }}, {"task": "visual-question-answering", "id": 2, "dep": [1], "args": {"image": "<GENERATED>-1", "text": "How many sheep in the picture"}} }}, {"task": "image-to-text", "id": 3, "dep": [-1], "args": {"image": "e2.png" }}, {"task": "object-detection", "id": 4, "dep": [-1], "args": {"image": "e2.png" }}, {"task": "visual-question-answering", "id": 5, "dep": [4], "args": {"image": "<GENERATED>-4", "text": "How many sheep in the picture"}} }}, {"task": "image-to-text", "id": 6, "dep": [-1], "args": {"image": "e3.jpg" }},  {"task": "object-detection", "id": 7, "dep": [-1], "args": {"image": "e3.jpg" }}, {"task": "visual-question-answering", "id": 8, "dep": [7], "args": {"image": "<GENERATED>-7", "text": "How many sheep in the picture"}}]'}, {'role': 'user', 'content': 'Look at /e.jpg, can you tell me how many objects in the picture? Give me a picture and video similar to this one.'}, {'role': 'assistant', 'content': '[{"task": "image-to-text", "id": 0, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "object-detection", "id": 1, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "visual-question-answering", "id": 2, "dep": [1], "args": {"image": "<GENERATED>-1", "text": "how many objects in the picture?" }}, {"task": "text-to-image", "id": 3, "dep": [0], "args": {"text": "<GENERATED-0>" }}, {"task": "image-to-image", "id": 4, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "text-to-video", "id": 5, "dep": [0], "args": {"text": "<GENERATED-0>" }}]'}, {'role': 'user', 'content': 'given a document /images/e.jpeg, answer me what is the student amount? And describe the image with your voice'}, {'role': 'assistant', 'content': '{"task": "document-question-answering", "id": 0, "dep": [-1], "args": {"image": "/images/e.jpeg", "text": "what is the student amount?" }}, {"task": "visual-question-answering", "id": 1, "dep": [-1], "args": {"image": "/images/e.jpeg", "text": "what is the student amount?" }}, {"task": "image-to-text", "id": 2, "dep": [-1], "args": {"image": "/images/e.jpg" }}, {"task": "text-to-speech", "id": 3, "dep": [2], "args": {"text": "<GENERATED>-2" }}]'}, {'role': 'user', 'content': 'Given an image /example.jpg, first generate a hed image, then based on the hed image generate a new image where a girl is reading a book'}, {'role': 'assistant', 'content': '[{"task": "openpose-control", "id": 0, "dep": [-1], "args": {"image": "/example.jpg" }},  {"task": "openpose-text-to-image", "id": 1, "dep": [0], "args": {"text": "a girl is reading a book", "image": "<GENERATED>-0" }}]'}, {'role': 'user', 'content': "please show me a video and an image of (based on the text) 'a boy is running' and dub it"}, {'role': 'assistant', 'content': '[{"task": "text-to-video", "id": 0, "dep": [-1], "args": {"text": "a boy is running" }}, {"task": "text-to-speech", "id": 1, "dep": [-1], "args": {"text": "a boy is running" }}, {"task": "text-to-image", "id": 2, "dep": [-1], "args": {"text": "a boy is running" }}]'}, {'role': 'user', 'content': 'please show me a joke and an image of cat'}, {'role': 'assistant', 'content': '[{"task": "conversational", "id": 0, "dep": [-1], "args": {"text": "please show me a joke of cat" }}, {"task": "text-to-image", "id": 1, "dep": [-1], "args": {"text": "a photo of cat" }}]'}, {'role': 'user', 'content': "The chat log [ [{'role': 'user', 'content': 'Generate an image of a bear.'}, {'role': 'assistant', 'content': 'I\\'ve generated an image of a bear for you. \\nTo fulfill your request, I utilized a text-to-image model, specifically the 'runwayml/stable-diffusion-v1-5' model, due to its suitability for generating images from text descriptions. This model is a latent text-to-image diffusion model, which is well-suited for tasks like creating an image of a bear based on a text prompt. The model generated an image, which can be found at the path: /images/51f0.jpg. I chose this model over others because of its clear description, local inference endpoint for speed and stability, and its popularity indicated by a significant number of likes. Although the model confidence score is not provided, the generated image should meet your expectations based on the model\\'s performance and characteristics.'}] ] may contain the resources I mentioned. Now I input { Make a short video of a red sports car driving through a tunnel at night. }. Pay attention to the input and output types of tasks and the dependencies between tasks."}]
+2025-10-19 14:26:48,180 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /nebius/v1/chat/completions HTTP/1.1" 200 None
+2025-10-19 14:26:48,180 - root - DEBUG - [{'task': 'text-to-image', 'id': 0, 'dep': [-1], 'args': {'text': 'a red sports car driving through a tunnel at night'}}, {'task': 'image-to-video', 'id': 1, 'dep': [0], 'args': {'image': '<GENERATED>-0'}}]
+2025-10-19 14:26:48,181 - root - DEBUG - Run task: 0 - text-to-image
+2025-10-19 14:26:48,181 - root - DEBUG - Deps: []
+2025-10-19 14:26:48,181 - root - DEBUG - Parsed Task: {'task': 'text-to-image', 'id': 0, 'dep': [-1], 'args': {'text': 'a red sports car driving through a tunnel at night'}}
+2025-10-19 14:26:48,183 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:26:48,185 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:26:48,186 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:26:48,186 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:26:48,188 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:26:48,189 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:26:48,191 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:26:48,192 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:26:48,193 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/runwayml/stable-diffusion-v1-5 HTTP/1.1" 200 16
+2025-10-19 14:26:48,194 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:26:48,197 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:26:48,198 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/CompVis/stable-diffusion-v1-4 HTTP/1.1" 200 17
+2025-10-19 14:26:48,199 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/WarriorMama777/OrangeMixs HTTP/1.1" 200 17
+2025-10-19 14:26:48,199 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:26:48,200 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:26:48,201 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:26:48,201 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:26:48,201 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:26:48,202 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:26:48,202 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/CompVis/stable-diffusion-v-1-4-original HTTP/1.1" 200 17
+2025-10-19 14:26:48,204 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:26:48,205 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:26:48,207 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:26:48,208 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/hakurei/waifu-diffusion HTTP/1.1" 200 17
+2025-10-19 14:26:48,208 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/prompthero/openjourney HTTP/1.1" 200 17
+2025-10-19 14:26:48,209 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:26:48,211 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:26:48,211 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:26:48,212 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:26:48,213 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/stabilityai/stable-diffusion-2-1 HTTP/1.1" 200 17
+2025-10-19 14:26:48,214 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:26:48,215 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:26:48,216 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:26:48,217 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:26:48,217 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/andite/anything-v4.0 HTTP/1.1" 200 17
+2025-10-19 14:26:48,218 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:26:48,220 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:26:48,221 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/stabilityai/stable-diffusion-2 HTTP/1.1" 200 17
+2025-10-19 14:26:48,223 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:26:48,224 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/runwayml/stable-diffusion-inpainting HTTP/1.1" 200 17
+2025-10-19 14:26:48,225 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:26:48,225 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:26:48,226 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:26:48,231 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:26:48,233 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:26:48,234 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:26:48,236 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:26:48,236 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/gsdf/Counterfeit-V2.5 HTTP/1.1" 200 17
+2025-10-19 14:26:48,237 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:26:48,238 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:26:48,239 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:26:48,241 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:26:48,242 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/dreamlike-art/dreamlike-photoreal-2.0 HTTP/1.1" 200 17
+2025-10-19 14:26:48,243 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:26:48,244 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:26:48,245 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:26:48,247 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:26:48,247 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/andite/pastel-mix HTTP/1.1" 200 17
+2025-10-19 14:26:48,249 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/dreamlike-art/dreamlike-diffusion-1.0 HTTP/1.1" 200 17
+2025-10-19 14:26:48,250 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:26:48,251 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:26:48,253 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:26:48,254 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:26:48,254 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:26:48,255 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:26:48,256 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:26:48,256 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/CompVis/stable-diffusion HTTP/1.1" 200 17
+2025-10-19 14:26:48,257 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:26:48,258 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:26:48,259 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:26:48,260 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:26:48,260 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/nitrosocke/mo-di-diffusion HTTP/1.1" 200 17
+2025-10-19 14:26:48,261 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:26:48,262 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:26:48,264 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:26:48,265 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:26:48,265 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/hakurei/waifu-diffusion-v1-4 HTTP/1.1" 200 17
+2025-10-19 14:26:48,267 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:26:48,267 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:26:48,267 - root - DEBUG - Model: runwayml/stable-diffusion-v1-5 | Status: True | Source: local
+2025-10-19 14:26:48,272 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/prompthero/openjourney-v4 HTTP/1.1" 200 17
+2025-10-19 14:26:48,272 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Envvi/Inkpunk-Diffusion HTTP/1.1" 200 17
+2025-10-19 14:26:48,274 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/wavymulder/Analog-Diffusion HTTP/1.1" 200 17
+2025-10-19 14:26:48,276 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/nitrosocke/Arcane-Diffusion HTTP/1.1" 200 17
+2025-10-19 14:26:48,276 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/stabilityai/sd-vae-ft-mse-original HTTP/1.1" 200 17
+2025-10-19 14:26:48,278 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/nitrosocke/redshift-diffusion HTTP/1.1" 200 17
+2025-10-19 14:26:48,280 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/hakurei/waifu-diffusion-v1-3 HTTP/1.1" 200 17
+2025-10-19 14:26:48,281 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/DGSpitzer/Cyberpunk-Anime-Diffusion HTTP/1.1" 200 17
+2025-10-19 14:26:48,282 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Linaqruf/anything-v3.0 HTTP/1.1" 200 17
+2025-10-19 14:26:48,283 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/nitrosocke/Ghibli-Diffusion HTTP/1.1" 200 17
+2025-10-19 14:26:48,287 - root - DEBUG - Model: CompVis/stable-diffusion-v1-4 | Status: False | Source: None
+2025-10-19 14:26:48,287 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/hassanblend/hassanblend1.4 HTTP/1.1" 200 17
+2025-10-19 14:26:48,289 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/gsdf/Counterfeit-V2.0 HTTP/1.1" 200 17
+2025-10-19 14:26:48,289 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/riffusion/riffusion-model-v1 HTTP/1.1" 200 17
+2025-10-19 14:26:48,290 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/stabilityai/stable-diffusion-xl-base-1.0 HTTP/1.1" 200 17
+2025-10-19 14:26:48,293 - root - DEBUG - Model: WarriorMama777/OrangeMixs | Status: False | Source: None
+2025-10-19 14:26:48,294 - root - DEBUG - Model: CompVis/stable-diffusion-v-1-4-original | Status: False | Source: None
+2025-10-19 14:26:48,294 - root - DEBUG - Model: hakurei/waifu-diffusion | Status: False | Source: None
+2025-10-19 14:26:48,294 - root - DEBUG - Model: prompthero/openjourney | Status: False | Source: None
+2025-10-19 14:26:48,294 - root - DEBUG - Model: stabilityai/stable-diffusion-2-1 | Status: False | Source: None
+2025-10-19 14:26:48,294 - root - DEBUG - Model: andite/anything-v4.0 | Status: False | Source: None
+2025-10-19 14:26:48,294 - root - DEBUG - Model: stabilityai/stable-diffusion-2 | Status: False | Source: None
+2025-10-19 14:26:48,294 - root - DEBUG - Model: runwayml/stable-diffusion-inpainting | Status: False | Source: None
+2025-10-19 14:26:48,294 - root - DEBUG - Model: gsdf/Counterfeit-V2.5 | Status: False | Source: None
+2025-10-19 14:26:48,294 - root - DEBUG - Model: dreamlike-art/dreamlike-photoreal-2.0 | Status: False | Source: None
+2025-10-19 14:26:48,294 - root - DEBUG - Model: andite/pastel-mix | Status: False | Source: None
+2025-10-19 14:26:48,294 - root - DEBUG - Model: dreamlike-art/dreamlike-diffusion-1.0 | Status: False | Source: None
+2025-10-19 14:26:48,294 - root - DEBUG - Model: CompVis/stable-diffusion | Status: False | Source: None
+2025-10-19 14:26:48,294 - root - DEBUG - Model: nitrosocke/mo-di-diffusion | Status: False | Source: None
+2025-10-19 14:26:48,294 - root - DEBUG - Model: hakurei/waifu-diffusion-v1-4 | Status: False | Source: None
+2025-10-19 14:26:48,294 - root - DEBUG - Model: prompthero/openjourney-v4 | Status: False | Source: None
+2025-10-19 14:26:48,294 - root - DEBUG - Model: Envvi/Inkpunk-Diffusion | Status: False | Source: None
+2025-10-19 14:26:48,294 - root - DEBUG - Model: wavymulder/Analog-Diffusion | Status: False | Source: None
+2025-10-19 14:26:48,294 - root - DEBUG - Model: nitrosocke/Arcane-Diffusion | Status: False | Source: None
+2025-10-19 14:26:48,294 - root - DEBUG - Model: stabilityai/sd-vae-ft-mse-original | Status: False | Source: None
+2025-10-19 14:26:48,294 - root - DEBUG - Model: nitrosocke/redshift-diffusion | Status: False | Source: None
+2025-10-19 14:26:48,294 - root - DEBUG - Model: hakurei/waifu-diffusion-v1-3 | Status: False | Source: None
+2025-10-19 14:26:48,294 - root - DEBUG - Model: DGSpitzer/Cyberpunk-Anime-Diffusion | Status: False | Source: None
+2025-10-19 14:26:48,294 - root - DEBUG - Model: Linaqruf/anything-v3.0 | Status: False | Source: None
+2025-10-19 14:26:48,294 - root - DEBUG - Model: nitrosocke/Ghibli-Diffusion | Status: False | Source: None
+2025-10-19 14:26:48,294 - root - DEBUG - Model: hassanblend/hassanblend1.4 | Status: False | Source: None
+2025-10-19 14:26:48,294 - root - DEBUG - Model: gsdf/Counterfeit-V2.0 | Status: False | Source: None
+2025-10-19 14:26:48,295 - root - DEBUG - Model: riffusion/riffusion-model-v1 | Status: False | Source: None
+2025-10-19 14:26:48,295 - root - DEBUG - Model: stabilityai/stable-diffusion-xl-base-1.0 | Status: False | Source: None
+2025-10-19 14:26:49,286 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/stabilityai/stable-diffusion-2 HTTP/1.1" 200 5165
+2025-10-19 14:26:49,289 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/dreamlike-art/dreamlike-photoreal-2.0 HTTP/1.1" 200 4941
+2025-10-19 14:26:49,289 - root - DEBUG - Model: stabilityai/stable-diffusion-2 | Status: False | Source: None
+2025-10-19 14:26:49,291 - root - DEBUG - Model: dreamlike-art/dreamlike-photoreal-2.0 | Status: False | Source: None
+2025-10-19 14:26:49,326 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/WarriorMama777/OrangeMixs HTTP/1.1" 200 8560
+2025-10-19 14:26:49,327 - root - DEBUG - Model: WarriorMama777/OrangeMixs | Status: False | Source: None
+2025-10-19 14:26:49,365 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/CompVis/stable-diffusion-v1-4 HTTP/1.1" 200 7399
+2025-10-19 14:26:49,365 - root - DEBUG - Model: CompVis/stable-diffusion-v1-4 | Status: False | Source: None
+2025-10-19 14:26:49,406 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/riffusion/riffusion-model-v1 HTTP/1.1" 200 5861
+2025-10-19 14:26:49,407 - root - DEBUG - Model: riffusion/riffusion-model-v1 | Status: False | Source: None
+2025-10-19 14:26:49,429 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/stabilityai/stable-diffusion-xl-base-1.0 HTTP/1.1" 200 6343
+2025-10-19 14:26:49,430 - root - DEBUG - Model: stabilityai/stable-diffusion-xl-base-1.0 | Status: True | Source: huggingface
+2025-10-19 14:26:49,431 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/gsdf/Counterfeit-V2.0 HTTP/1.1" 200 4791
+2025-10-19 14:26:49,431 - root - DEBUG - Model: gsdf/Counterfeit-V2.0 | Status: False | Source: None
+2025-10-19 14:26:49,438 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/Linaqruf/anything-v3.0 HTTP/1.1" 200 4737
+2025-10-19 14:26:49,439 - root - DEBUG - Model: Linaqruf/anything-v3.0 | Status: False | Source: None
+2025-10-19 14:26:49,469 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/runwayml/stable-diffusion-v1-5 HTTP/1.1" 307 90
+2025-10-19 14:26:49,486 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/CompVis/stable-diffusion-v-1-4-original HTTP/1.1" 200 4890
+2025-10-19 14:26:49,486 - root - DEBUG - Model: CompVis/stable-diffusion-v-1-4-original | Status: False | Source: None
+2025-10-19 14:26:49,510 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/DGSpitzer/Cyberpunk-Anime-Diffusion HTTP/1.1" 200 5734
+2025-10-19 14:26:49,511 - root - DEBUG - Model: DGSpitzer/Cyberpunk-Anime-Diffusion | Status: False | Source: None
+2025-10-19 14:26:49,525 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/runwayml/stable-diffusion-inpainting HTTP/1.1" 307 96
+2025-10-19 14:26:49,553 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/dreamlike-art/dreamlike-diffusion-1.0 HTTP/1.1" 200 4996
+2025-10-19 14:26:49,554 - root - DEBUG - Model: dreamlike-art/dreamlike-diffusion-1.0 | Status: False | Source: None
+2025-10-19 14:26:49,561 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/prompthero/openjourney HTTP/1.1" 200 4829
+2025-10-19 14:26:49,561 - root - DEBUG - Model: prompthero/openjourney | Status: False | Source: None
+2025-10-19 14:26:49,562 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/stabilityai/stable-diffusion-2-1 HTTP/1.1" 200 5162
+2025-10-19 14:26:49,562 - root - DEBUG - Model: stabilityai/stable-diffusion-2-1 | Status: False | Source: None
+2025-10-19 14:26:49,571 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/andite/anything-v4.0 HTTP/1.1" 404 32
+2025-10-19 14:26:49,571 - root - DEBUG - Model: andite/anything-v4.0 | Status: False | Source: None
+2025-10-19 14:26:49,585 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/nitrosocke/redshift-diffusion HTTP/1.1" 200 4770
+2025-10-19 14:26:49,586 - root - DEBUG - Model: nitrosocke/redshift-diffusion | Status: False | Source: None
+2025-10-19 14:26:49,596 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/hakurei/waifu-diffusion HTTP/1.1" 200 5091
+2025-10-19 14:26:49,597 - root - DEBUG - Model: hakurei/waifu-diffusion | Status: False | Source: None
+2025-10-19 14:26:49,604 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/stable-diffusion-v1-5/stable-diffusion-v1-5 HTTP/1.1" 200 6164
+2025-10-19 14:26:49,605 - root - DEBUG - Model: runwayml/stable-diffusion-v1-5 | Status: False | Source: None
+2025-10-19 14:26:49,615 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/hassanblend/hassanblend1.4 HTTP/1.1" 200 5018
+2025-10-19 14:26:49,616 - root - DEBUG - Model: hassanblend/hassanblend1.4 | Status: False | Source: None
+2025-10-19 14:26:49,626 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/hakurei/waifu-diffusion-v1-4 HTTP/1.1" 200 1603
+2025-10-19 14:26:49,627 - root - DEBUG - Model: hakurei/waifu-diffusion-v1-4 | Status: False | Source: None
+2025-10-19 14:26:49,628 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/gsdf/Counterfeit-V2.5 HTTP/1.1" 200 5104
+2025-10-19 14:26:49,628 - root - DEBUG - Model: gsdf/Counterfeit-V2.5 | Status: False | Source: None
+2025-10-19 14:26:49,629 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/CompVis/stable-diffusion HTTP/1.1" 200 3772
+2025-10-19 14:26:49,630 - root - DEBUG - Model: CompVis/stable-diffusion | Status: False | Source: None
+2025-10-19 14:26:49,635 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/Envvi/Inkpunk-Diffusion HTTP/1.1" 200 4738
+2025-10-19 14:26:49,636 - root - DEBUG - Model: Envvi/Inkpunk-Diffusion | Status: False | Source: None
+2025-10-19 14:26:49,636 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/andite/pastel-mix HTTP/1.1" 404 32
+2025-10-19 14:26:49,636 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/stable-diffusion-v1-5/stable-diffusion-inpainting HTTP/1.1" 200 2541
+2025-10-19 14:26:49,638 - root - DEBUG - Model: andite/pastel-mix | Status: False | Source: None
+2025-10-19 14:26:49,638 - root - DEBUG - Model: runwayml/stable-diffusion-inpainting | Status: False | Source: None
+2025-10-19 14:26:49,638 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/hakurei/waifu-diffusion-v1-3 HTTP/1.1" 200 4426
+2025-10-19 14:26:49,639 - root - DEBUG - Model: hakurei/waifu-diffusion-v1-3 | Status: False | Source: None
+2025-10-19 14:26:49,645 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/stabilityai/sd-vae-ft-mse-original HTTP/1.1" 200 3956
+2025-10-19 14:26:49,645 - root - DEBUG - Model: stabilityai/sd-vae-ft-mse-original | Status: False | Source: None
+2025-10-19 14:26:49,656 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/wavymulder/Analog-Diffusion HTTP/1.1" 200 5065
+2025-10-19 14:26:49,656 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/nitrosocke/Ghibli-Diffusion HTTP/1.1" 200 5229
+2025-10-19 14:26:49,657 - root - DEBUG - Model: wavymulder/Analog-Diffusion | Status: False | Source: None
+2025-10-19 14:26:49,657 - root - DEBUG - Model: nitrosocke/Ghibli-Diffusion | Status: False | Source: None
+2025-10-19 14:26:49,660 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/nitrosocke/Arcane-Diffusion HTTP/1.1" 200 4908
+2025-10-19 14:26:49,661 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/nitrosocke/mo-di-diffusion HTTP/1.1" 200 4747
+2025-10-19 14:26:49,661 - root - DEBUG - Model: nitrosocke/Arcane-Diffusion | Status: False | Source: None
+2025-10-19 14:26:49,662 - root - DEBUG - Model: nitrosocke/mo-di-diffusion | Status: False | Source: None
+2025-10-19 14:26:49,667 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/prompthero/openjourney-v4 HTTP/1.1" 200 4771
+2025-10-19 14:26:49,668 - root - DEBUG - Model: prompthero/openjourney-v4 | Status: False | Source: None
+2025-10-19 14:26:49,669 - root - DEBUG - avaliable models on text-to-image: {'local': ['runwayml/stable-diffusion-v1-5'], 'huggingface': ['stabilityai/stable-diffusion-xl-base-1.0']}
+2025-10-19 14:26:49,670 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): router.huggingface.co:443
+2025-10-19 14:26:51,115 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /nebius/v1/chat/completions HTTP/1.1" 200 None
+2025-10-19 14:26:51,117 - root - DEBUG - chosen model: {"id": "runwayml/stable-diffusion-v1-5", "reason": "This model is chosen because it has a high number of likes (6367), indicating its popularity and potentially good performance. Additionally, it is specifically designed for text-to-image tasks, which matches the task at hand. The model's description also mentions it being a latent text-to-image diffusion model, suggesting it is well-suited for generating images based on text prompts, such as the one provided: 'a red sports car driving through a tunnel at night'."}
+2025-10-19 14:26:51,118 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:28:04,781 - urllib3.connectionpool - DEBUG - http://localhost:8005 "POST /models/runwayml/stable-diffusion-v1-5 HTTP/1.1" 200 28
+2025-10-19 14:28:04,782 - root - DEBUG - Inference Result: {'generated image': '/images/288d.jpg'}
+2025-10-19 14:28:05,269 - root - DEBUG - Run task: 1 - image-to-video
+2025-10-19 14:28:05,270 - root - DEBUG - Deps: [{"task": {"task": "text-to-image", "id": 0, "dep": [-1], "args": {"text": "a red sports car driving through a tunnel at night"}}, "inference result": {"generated image": "/images/288d.jpg"}, "choose model result": {"id": "runwayml/stable-diffusion-v1-5", "reason": "This model is chosen because it has a high number of likes (6367), indicating its popularity and potentially good performance. Additionally, it is specifically designed for text-to-image tasks, which matches the task at hand. The model's description also mentions it being a latent text-to-image diffusion model, suggesting it is well-suited for generating images based on text prompts, such as the one provided: 'a red sports car driving through a tunnel at night'."}}]
+2025-10-19 14:28:05,270 - root - DEBUG - Detect the text of dependency task (from args): a red sports car driving through a tunnel at night
+2025-10-19 14:28:05,270 - root - DEBUG - Detect the generated image of dependency task (from results): /images/288d.jpg
+2025-10-19 14:28:05,270 - root - DEBUG - Parsed Task: {'task': 'image-to-video', 'id': 1, 'dep': [0], 'args': {'image': 'public//images/288d.jpg'}}
+2025-10-19 14:28:05,270 - root - WARNING - no available models on image-to-video task.
+2025-10-19 14:28:05,270 - root - DEBUG -  Failure: {"input": "Make a short video of a red sports car driving through a tunnel at night.", "task": {"task": "image-to-video", "id": 1, "dep": [0], "args": {"image": "public//images/288d.jpg"}}, "reason": "task not support: image-to-video", "op": "message"}
+2025-10-19 14:28:05,270 - root - DEBUG - Inference Result: {'error': 'image-to-video not found in available tasks.'}
+2025-10-19 14:28:05,271 - root - DEBUG - {0: {'task': {'task': 'text-to-image', 'id': 0, 'dep': [-1], 'args': {'text': 'a red sports car driving through a tunnel at night'}}, 'inference result': {'generated image': '/images/288d.jpg'}, 'choose model result': {'id': 'runwayml/stable-diffusion-v1-5', 'reason': "This model is chosen because it has a high number of likes (6367), indicating its popularity and potentially good performance. Additionally, it is specifically designed for text-to-image tasks, which matches the task at hand. The model's description also mentions it being a latent text-to-image diffusion model, suggesting it is well-suited for generating images based on text prompts, such as the one provided: 'a red sports car driving through a tunnel at night'."}}, 1: {'task': {'task': 'image-to-video', 'id': 1, 'dep': [0], 'args': {'image': 'public//images/288d.jpg'}}, 'inference result': {'error': 'image-to-video not found in available tasks.'}, 'choose model result': ''}}
+2025-10-19 14:28:07,539 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /nebius/v1/chat/completions HTTP/1.1" 200 None
+2025-10-19 14:28:07,541 - root - DEBUG - I'm sorry to inform you that I couldn't generate a short video of a red sports car driving through a tunnel at night as requested. 
+
+<EXPLANATION> 
+The task execution logs show that the initial text-to-image task was completed successfully, generating an image of a red sports car driving through a tunnel at night, which can be found at /images/288d.jpg. However, the subsequent image-to-video task failed due to the unavailability of such a task in the system. This means that the generated image could not be converted into a video as required. 
+Given the failure of the image-to-video task, I couldn't proceed with generating the requested video. The confidence scores and output values from the successful text-to-image task are not directly relevant to the final goal of creating a video. 
+The model used for the text-to-image task was runwayml/stable-diffusion-v1-5, chosen for its popularity and suitability for text-to-image tasks. Unfortunately, without an image-to-video model, the process couldn't be completed as intended.
+</EXPLANATION>
+2025-10-19 14:28:07,544 - retriever - DEBUG - Loaded 8 entries from data/explanations.jsonl
+2025-10-19 14:28:07,652 - retriever - DEBUG - Best similarity = 0.835 (threshold = 0.95)
+2025-10-19 14:28:07,671 - retriever - INFO - Saved new explanation to data/explanations.jsonl: The task execution logs show that the initial text-to-image ...
+2025-10-19 14:28:09,076 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /nebius/v1/chat/completions HTTP/1.1" 200 None
+2025-10-19 14:28:09,077 - judge - INFO - Judge decided: A (Both explanations are identical and clearly explain the failure to generate the video due to the unavailability of the image-to-video task, mentioning the correct image /images/288d.jpg. Since they are the same, Explanation A is chosen as the winner by default, but in essence, either explanation would serve the purpose equally well for a non-technical person, providing a straightforward account of what happened during the task execution.)
+2025-10-19 14:28:09,078 - root - DEBUG - Final explanation chosen by Judge: The task execution logs show that the initial text-to-image task was completed successfully, generating an image of a red sports car driving through a tunnel at night, which can be found at /images/288d.jpg. However, the subsequent image-to-video task failed due to the unavailability of such a task in the system. This means that the generated image could not be converted into a video as required. 
+Given the failure of the image-to-video task, I couldn't proceed with generating the requested video. The confidence scores and output values from the successful text-to-image task are not directly relevant to the final goal of creating a video. 
+The model used for the text-to-image task was runwayml/stable-diffusion-v1-5, chosen for its popularity and suitability for text-to-image tasks. Unfortunately, without an image-to-video model, the process couldn't be completed as intended.
+2025-10-19 14:28:09,078 - root - DEBUG -  Success: {"input": "Make a short video of a red sports car driving through a tunnel at night.", "task": "[{\"task\": \"text-to-image\", \"id\": 0, \"dep\": [-1], \"args\": {\"text\": \"a red sports car driving through a tunnel at night\" }}, {\"task\": \"image-to-video\", \"id\": 1, \"dep\": [0], \"args\": {\"image\": \"<GENERATED>-0\" }}]", "results": {"0": {"task": {"task": "text-to-image", "id": 0, "dep": [-1], "args": {"text": "a red sports car driving through a tunnel at night"}}, "inference result": {"generated image": "/images/288d.jpg"}, "choose model result": {"id": "runwayml/stable-diffusion-v1-5", "reason": "This model is chosen because it has a high number of likes (6367), indicating its popularity and potentially good performance. Additionally, it is specifically designed for text-to-image tasks, which matches the task at hand. The model's description also mentions it being a latent text-to-image diffusion model, suggesting it is well-suited for generating images based on text prompts, such as the one provided: 'a red sports car driving through a tunnel at night'."}}, "1": {"task": {"task": "image-to-video", "id": 1, "dep": [0], "args": {"image": "public//images/288d.jpg"}}, "inference result": {"error": "image-to-video not found in available tasks."}, "choose model result": ""}}, "response": "I'm sorry to inform you that I couldn't generate a short video of a red sports car driving through a tunnel at night as requested. \n\nThe task execution logs show that the initial text-to-image task was completed successfully, generating an image of a red sports car driving through a tunnel at night, which can be found at /images/288d.jpg. However, the subsequent image-to-video task failed due to the unavailability of such a task in the system. This means that the generated image could not be converted into a video as required. \nGiven the failure of the image-to-video task, I couldn't proceed with generating the requested video. The confidence scores and output values from the successful text-to-image task are not directly relevant to the final goal of creating a video. \nThe model used for the text-to-image task was runwayml/stable-diffusion-v1-5, chosen for its popularity and suitability for text-to-image tasks. Unfortunately, without an image-to-video model, the process couldn't be completed as intended.", "during": 81.99109959602356, "op": "response"}
+2025-10-19 14:28:09,078 - root - INFO - response: I'm sorry to inform you that I couldn't generate a short video of a red sports car driving through a tunnel at night as requested. 
+
+The task execution logs show that the initial text-to-image task was completed successfully, generating an image of a red sports car driving through a tunnel at night, which can be found at /images/288d.jpg. However, the subsequent image-to-video task failed due to the unavailability of such a task in the system. This means that the generated image could not be converted into a video as required. 
+Given the failure of the image-to-video task, I couldn't proceed with generating the requested video. The confidence scores and output values from the successful text-to-image task are not directly relevant to the final goal of creating a video. 
+The model used for the text-to-image task was runwayml/stable-diffusion-v1-5, chosen for its popularity and suitability for text-to-image tasks. Unfortunately, without an image-to-video model, the process couldn't be completed as intended.
+2025-10-19 14:28:52,207 - root - INFO - [ User ]: exit
+2025-10-19 14:28:52,207 - root - INFO - [ Jarvis ]: Goodnight.

@@ -1,0 +1,326 @@
+2025-10-19 14:50:11,612 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda:0
+2025-10-19 14:50:11,612 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-19 14:50:11,613 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:50:11,761 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-10-19 14:50:11,766 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-10-19 14:50:11,767 - filelock - DEBUG - Attempting to acquire lock 125302604700576 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/952a9b81c0bfd99800fabf352f69c7ccd46c5e43.lock
+2025-10-19 14:50:11,767 - filelock - DEBUG - Lock 125302604700576 acquired on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/952a9b81c0bfd99800fabf352f69c7ccd46c5e43.lock
+2025-10-19 14:50:11,772 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 349
+2025-10-19 14:50:11,774 - filelock - DEBUG - Attempting to release lock 125302604700576 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/952a9b81c0bfd99800fabf352f69c7ccd46c5e43.lock
+2025-10-19 14:50:11,774 - filelock - DEBUG - Lock 125302604700576 released on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/952a9b81c0bfd99800fabf352f69c7ccd46c5e43.lock
+2025-10-19 14:50:11,881 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-10-19 14:50:11,886 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-10-19 14:50:11,887 - filelock - DEBUG - Attempting to acquire lock 125302604705232 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/fd1b291129c607e5d49799f87cb219b27f98acdf.lock
+2025-10-19 14:50:11,887 - filelock - DEBUG - Lock 125302604705232 acquired on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/fd1b291129c607e5d49799f87cb219b27f98acdf.lock
+2025-10-19 14:50:11,892 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 116
+2025-10-19 14:50:11,893 - filelock - DEBUG - Attempting to release lock 125302604705232 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/fd1b291129c607e5d49799f87cb219b27f98acdf.lock
+2025-10-19 14:50:11,893 - filelock - DEBUG - Lock 125302604705232 released on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/fd1b291129c607e5d49799f87cb219b27f98acdf.lock
+2025-10-19 14:50:11,998 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-10-19 14:50:12,004 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-10-19 14:50:12,113 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-10-19 14:50:12,118 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+2025-10-19 14:50:12,118 - filelock - DEBUG - Attempting to acquire lock 125302604709024 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/58d4a9a45664eb9e12de9549c548c09b6134c17f.lock
+2025-10-19 14:50:12,119 - filelock - DEBUG - Lock 125302604709024 acquired on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/58d4a9a45664eb9e12de9549c548c09b6134c17f.lock
+2025-10-19 14:50:12,123 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 None
+2025-10-19 14:50:12,124 - filelock - DEBUG - Attempting to release lock 125302604709024 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/58d4a9a45664eb9e12de9549c548c09b6134c17f.lock
+2025-10-19 14:50:12,124 - filelock - DEBUG - Lock 125302604709024 released on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/58d4a9a45664eb9e12de9549c548c09b6134c17f.lock
+2025-10-19 14:50:12,230 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-10-19 14:50:12,236 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-10-19 14:50:12,343 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-10-19 14:50:12,348 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+2025-10-19 14:50:12,349 - filelock - DEBUG - Attempting to acquire lock 125302604705184 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/59d594003bf59880a884c574bf88ef7555bb0202.lock
+2025-10-19 14:50:12,350 - filelock - DEBUG - Lock 125302604705184 acquired on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/59d594003bf59880a884c574bf88ef7555bb0202.lock
+2025-10-19 14:50:12,356 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 53
+2025-10-19 14:50:12,357 - filelock - DEBUG - Attempting to release lock 125302604705184 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/59d594003bf59880a884c574bf88ef7555bb0202.lock
+2025-10-19 14:50:12,358 - filelock - DEBUG - Lock 125302604705184 released on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/59d594003bf59880a884c574bf88ef7555bb0202.lock
+2025-10-19 14:50:12,467 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-10-19 14:50:12,579 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-10-19 14:50:12,587 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+2025-10-19 14:50:12,588 - filelock - DEBUG - Attempting to acquire lock 125302604706912 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/72b987fd805cfa2b58c4c8c952b274a11bfd5a00.lock
+2025-10-19 14:50:12,588 - filelock - DEBUG - Lock 125302604706912 acquired on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/72b987fd805cfa2b58c4c8c952b274a11bfd5a00.lock
+2025-10-19 14:50:12,593 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 612
+2025-10-19 14:50:12,595 - filelock - DEBUG - Attempting to release lock 125302604706912 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/72b987fd805cfa2b58c4c8c952b274a11bfd5a00.lock
+2025-10-19 14:50:12,595 - filelock - DEBUG - Lock 125302604706912 released on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/72b987fd805cfa2b58c4c8c952b274a11bfd5a00.lock
+2025-10-19 14:50:12,763 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/model.safetensors HTTP/1.1" 302 0
+2025-10-19 14:50:12,764 - filelock - DEBUG - Attempting to acquire lock 125302604699664 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db.lock
+2025-10-19 14:50:12,764 - filelock - DEBUG - Lock 125302604699664 acquired on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db.lock
+2025-10-19 14:50:12,896 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/xet-read-token/c9745ed1d9f207416be6d2e6f8de32d1f16199bf HTTP/1.1" 200 325
+2025-10-19 14:50:13,858 - filelock - DEBUG - Attempting to release lock 125302604699664 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db.lock
+2025-10-19 14:50:13,858 - filelock - DEBUG - Lock 125302604699664 released on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db.lock
+2025-10-19 14:50:14,001 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-10-19 14:50:14,007 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+2025-10-19 14:50:14,008 - filelock - DEBUG - Attempting to acquire lock 125302604706384 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/c79f2b6a0cea6f4b564fed1938984bace9d30ff0.lock
+2025-10-19 14:50:14,008 - filelock - DEBUG - Lock 125302604706384 acquired on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/c79f2b6a0cea6f4b564fed1938984bace9d30ff0.lock
+2025-10-19 14:50:14,013 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 350
+2025-10-19 14:50:14,014 - filelock - DEBUG - Attempting to release lock 125302604706384 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/c79f2b6a0cea6f4b564fed1938984bace9d30ff0.lock
+2025-10-19 14:50:14,014 - filelock - DEBUG - Lock 125302604706384 released on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/c79f2b6a0cea6f4b564fed1938984bace9d30ff0.lock
+2025-10-19 14:50:14,126 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-10-19 14:50:14,236 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/vocab.txt HTTP/1.1" 307 0
+2025-10-19 14:50:14,241 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/vocab.txt HTTP/1.1" 200 0
+2025-10-19 14:50:14,242 - filelock - DEBUG - Attempting to acquire lock 125302603611344 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/fb140275c155a9c7c5a3b3e0e77a9e839594a938.lock
+2025-10-19 14:50:14,242 - filelock - DEBUG - Lock 125302603611344 acquired on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/fb140275c155a9c7c5a3b3e0e77a9e839594a938.lock
+2025-10-19 14:50:14,247 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/vocab.txt HTTP/1.1" 200 None
+2025-10-19 14:50:14,252 - filelock - DEBUG - Attempting to release lock 125302603611344 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/fb140275c155a9c7c5a3b3e0e77a9e839594a938.lock
+2025-10-19 14:50:14,252 - filelock - DEBUG - Lock 125302603611344 released on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/fb140275c155a9c7c5a3b3e0e77a9e839594a938.lock
+2025-10-19 14:50:14,362 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer.json HTTP/1.1" 307 0
+2025-10-19 14:50:14,369 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer.json HTTP/1.1" 200 0
+2025-10-19 14:50:14,370 - filelock - DEBUG - Attempting to acquire lock 125302603610768 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/cb202bfe2e3c98645018a6d12f182a434c9d3e02.lock
+2025-10-19 14:50:14,370 - filelock - DEBUG - Lock 125302603610768 acquired on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/cb202bfe2e3c98645018a6d12f182a434c9d3e02.lock
+2025-10-19 14:50:14,377 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer.json HTTP/1.1" 200 None
+2025-10-19 14:50:14,387 - filelock - DEBUG - Attempting to release lock 125302603610768 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/cb202bfe2e3c98645018a6d12f182a434c9d3e02.lock
+2025-10-19 14:50:14,387 - filelock - DEBUG - Lock 125302603610768 released on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/cb202bfe2e3c98645018a6d12f182a434c9d3e02.lock
+2025-10-19 14:50:14,505 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/added_tokens.json HTTP/1.1" 404 0
+2025-10-19 14:50:14,622 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/special_tokens_map.json HTTP/1.1" 307 0
+2025-10-19 14:50:14,628 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/special_tokens_map.json HTTP/1.1" 200 0
+2025-10-19 14:50:14,629 - filelock - DEBUG - Attempting to acquire lock 125302603612064 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/e7b0375001f109a6b8873d756ad4f7bbb15fbaa5.lock
+2025-10-19 14:50:14,630 - filelock - DEBUG - Lock 125302603612064 acquired on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/e7b0375001f109a6b8873d756ad4f7bbb15fbaa5.lock
+2025-10-19 14:50:14,636 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/special_tokens_map.json HTTP/1.1" 200 112
+2025-10-19 14:50:14,638 - filelock - DEBUG - Attempting to release lock 125302603612064 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/e7b0375001f109a6b8873d756ad4f7bbb15fbaa5.lock
+2025-10-19 14:50:14,638 - filelock - DEBUG - Lock 125302603612064 released on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/e7b0375001f109a6b8873d756ad4f7bbb15fbaa5.lock
+2025-10-19 14:50:14,747 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/chat_template.jinja HTTP/1.1" 404 0
+2025-10-19 14:50:14,914 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-10-19 14:50:14,920 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-10-19 14:50:14,921 - filelock - DEBUG - Attempting to acquire lock 125302604706480 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/d1514c3162bbe87b343f565fadc62e6c06f04f03.lock
+2025-10-19 14:50:14,921 - filelock - DEBUG - Lock 125302604706480 acquired on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/d1514c3162bbe87b343f565fadc62e6c06f04f03.lock
+2025-10-19 14:50:14,927 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 190
+2025-10-19 14:50:14,929 - filelock - DEBUG - Attempting to release lock 125302604706480 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/d1514c3162bbe87b343f565fadc62e6c06f04f03.lock
+2025-10-19 14:50:14,929 - filelock - DEBUG - Lock 125302604706480 released on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/d1514c3162bbe87b343f565fadc62e6c06f04f03.lock
+2025-10-19 14:50:15,042 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6876
+2025-10-19 14:50:15,300 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:50:15,304 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /running HTTP/1.1" 200 17
+2025-10-19 14:50:15,321 - root - DEBUG - text-classification: 30 models
+2025-10-19 14:50:15,321 - root - DEBUG - token-classification: 30 models
+2025-10-19 14:50:15,321 - root - DEBUG - text2text-generation: 30 models
+2025-10-19 14:50:15,321 - root - DEBUG - summarization: 30 models
+2025-10-19 14:50:15,321 - root - DEBUG - translation: 30 models
+2025-10-19 14:50:15,321 - root - DEBUG - question-answering: 30 models
+2025-10-19 14:50:15,321 - root - DEBUG - conversational: 30 models
+2025-10-19 14:50:15,321 - root - DEBUG - text-generation: 30 models
+2025-10-19 14:50:15,321 - root - DEBUG - sentence-similarity: 30 models
+2025-10-19 14:50:15,321 - root - DEBUG - tabular-classification: 30 models
+2025-10-19 14:50:15,322 - root - DEBUG - object-detection: 30 models
+2025-10-19 14:50:15,322 - root - DEBUG - image-classification: 30 models
+2025-10-19 14:50:15,322 - root - DEBUG - image-to-text: 30 models
+2025-10-19 14:50:15,322 - root - DEBUG - text-to-image: 31 models
+2025-10-19 14:50:15,322 - root - DEBUG - image-to-image: 30 models
+2025-10-19 14:50:15,322 - root - DEBUG - visual-question-answering: 13 models
+2025-10-19 14:50:15,322 - root - DEBUG - document-question-answering: 22 models
+2025-10-19 14:50:15,322 - root - DEBUG - image-segmentation: 30 models
+2025-10-19 14:50:15,322 - root - DEBUG - depth-estimation: 30 models
+2025-10-19 14:50:15,322 - root - DEBUG - text-to-video: 8 models
+2025-10-19 14:50:15,322 - root - DEBUG - text-to-speech: 30 models
+2025-10-19 14:50:15,322 - root - DEBUG - automatic-speech-recognition: 30 models
+2025-10-19 14:50:15,322 - root - DEBUG - audio-to-audio: 30 models
+2025-10-19 14:50:15,322 - root - DEBUG - audio-classification: 30 models
+2025-10-19 14:50:15,322 - root - INFO - Welcome to Jarvis! A collaborative system that consists of an LLM as the controller and numerous expert models as collaborative executors. Jarvis can plan tasks, schedule Hugging Face models, generate friendly responses based on your requests, and help you with many things. Please enter your request (`exit` to exit).
+2025-10-19 14:50:45,478 - root - INFO - [ User ]: say the sentence hello this is jarvis testing my voice synthesis pipeline.
+2025-10-19 14:50:45,478 - root - INFO - ********************************************************************************
+2025-10-19 14:50:45,478 - root - INFO - input: Say the sentence Hello This is JARVIS testing my voice synthesis pipeline.
+2025-10-19 14:50:45,481 - root - DEBUG - Messages: [{'role': 'system', 'content': '#1 Task Planning Stage: You are a helpful AI assistant. Based on the user\'s request, you will recommend the best model from Hugging Face for the task, and explain why. The special tag "<GENERATED>-dep_id" refer to the one generated text/image/audio in the dependency task (Please consider whether the dependency task generates resources of this type.) and "dep_id" must be in "dep" list.  The "dep" field denotes the ids of the previous prerequisite tasks which generate a new resource that the current task relies on.  The "args" field must in ["text", "image", "audio"], nothing else.  You must respond in JSON format like: [\n  {\n    "task": task, \n    "id": task_id, \n    "dep": dependency_task_id, \n    "args": {\n      "text": text or <GENERATED>-dep_id, \n      "image": image_url or <GENERATED>-dep_id, \n      "audio": audio_url or <GENERATED>-dep_id\n    }\n  }\n] Respond with the JSON entry and ONLY the JSON entry! Here are some few-shot examples:'}, {'role': 'user', 'content': 'Give you some pictures e1.jpg, e2.png, e3.jpg, help me count the number of sheep?'}, {'role': 'assistant', 'content': '[{"task": "image-to-text", "id": 0, "dep": [-1], "args": {"image": "e1.jpg" }}, {"task": "object-detection", "id": 1, "dep": [-1], "args": {"image": "e1.jpg" }}, {"task": "visual-question-answering", "id": 2, "dep": [1], "args": {"image": "<GENERATED>-1", "text": "How many sheep in the picture"}} }}, {"task": "image-to-text", "id": 3, "dep": [-1], "args": {"image": "e2.png" }}, {"task": "object-detection", "id": 4, "dep": [-1], "args": {"image": "e2.png" }}, {"task": "visual-question-answering", "id": 5, "dep": [4], "args": {"image": "<GENERATED>-4", "text": "How many sheep in the picture"}} }}, {"task": "image-to-text", "id": 6, "dep": [-1], "args": {"image": "e3.jpg" }},  {"task": "object-detection", "id": 7, "dep": [-1], "args": {"image": "e3.jpg" }}, {"task": "visual-question-answering", "id": 8, "dep": [7], "args": {"image": "<GENERATED>-7", "text": "How many sheep in the picture"}}]'}, {'role': 'user', 'content': 'Look at /e.jpg, can you tell me how many objects in the picture? Give me a picture and video similar to this one.'}, {'role': 'assistant', 'content': '[{"task": "image-to-text", "id": 0, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "object-detection", "id": 1, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "visual-question-answering", "id": 2, "dep": [1], "args": {"image": "<GENERATED>-1", "text": "how many objects in the picture?" }}, {"task": "text-to-image", "id": 3, "dep": [0], "args": {"text": "<GENERATED-0>" }}, {"task": "image-to-image", "id": 4, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "text-to-video", "id": 5, "dep": [0], "args": {"text": "<GENERATED-0>" }}]'}, {'role': 'user', 'content': 'given a document /images/e.jpeg, answer me what is the student amount? And describe the image with your voice'}, {'role': 'assistant', 'content': '{"task": "document-question-answering", "id": 0, "dep": [-1], "args": {"image": "/images/e.jpeg", "text": "what is the student amount?" }}, {"task": "visual-question-answering", "id": 1, "dep": [-1], "args": {"image": "/images/e.jpeg", "text": "what is the student amount?" }}, {"task": "image-to-text", "id": 2, "dep": [-1], "args": {"image": "/images/e.jpg" }}, {"task": "text-to-speech", "id": 3, "dep": [2], "args": {"text": "<GENERATED>-2" }}]'}, {'role': 'user', 'content': 'Given an image /example.jpg, first generate a hed image, then based on the hed image generate a new image where a girl is reading a book'}, {'role': 'assistant', 'content': '[{"task": "openpose-control", "id": 0, "dep": [-1], "args": {"image": "/example.jpg" }},  {"task": "openpose-text-to-image", "id": 1, "dep": [0], "args": {"text": "a girl is reading a book", "image": "<GENERATED>-0" }}]'}, {'role': 'user', 'content': "please show me a video and an image of (based on the text) 'a boy is running' and dub it"}, {'role': 'assistant', 'content': '[{"task": "text-to-video", "id": 0, "dep": [-1], "args": {"text": "a boy is running" }}, {"task": "text-to-speech", "id": 1, "dep": [-1], "args": {"text": "a boy is running" }}, {"task": "text-to-image", "id": 2, "dep": [-1], "args": {"text": "a boy is running" }}]'}, {'role': 'user', 'content': 'please show me a joke and an image of cat'}, {'role': 'assistant', 'content': '[{"task": "conversational", "id": 0, "dep": [-1], "args": {"text": "please show me a joke of cat" }}, {"task": "text-to-image", "id": 1, "dep": [-1], "args": {"text": "a photo of cat" }}]'}, {'role': 'user', 'content': 'The chat log [ [] ] may contain the resources I mentioned. Now I input { Say the sentence Hello This is JARVIS testing my voice synthesis pipeline. }. Pay attention to the input and output types of tasks and the dependencies between tasks.'}]
+2025-10-19 14:50:45,588 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/meta-llama/Llama-3.3-70B-Instruct?expand=inferenceProviderMapping HTTP/1.1" 200 1321
+2025-10-19 14:50:45,589 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): router.huggingface.co:443
+2025-10-19 14:52:00,472 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /nebius/v1/chat/completions HTTP/1.1" 200 None
+2025-10-19 14:52:00,474 - root - DEBUG - [{'task': 'text-to-speech', 'id': 0, 'dep': [-1], 'args': {'text': 'Hello This is JARVIS testing my voice synthesis pipeline.'}}]
+2025-10-19 14:52:00,474 - root - DEBUG - Run task: 0 - text-to-speech
+2025-10-19 14:52:00,475 - root - DEBUG - Deps: []
+2025-10-19 14:52:00,475 - root - DEBUG - Parsed Task: {'task': 'text-to-speech', 'id': 0, 'dep': [-1], 'args': {'text': 'Hello This is JARVIS testing my voice synthesis pipeline.'}}
+2025-10-19 14:52:00,477 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:52:00,478 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:52:00,481 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:52:00,482 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:52:00,485 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:52:00,486 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:52:00,488 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:52:00,490 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:52:00,490 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/facebook/fastspeech2-en-ljspeech HTTP/1.1" 200 17
+2025-10-19 14:52:00,491 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:52:00,492 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:52:00,494 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/espnet/kan-bayashi_ljspeech_vits HTTP/1.1" 200 17
+2025-10-19 14:52:00,494 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:52:00,496 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:52:00,498 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:52:00,498 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:52:00,498 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/mio/amadeus HTTP/1.1" 200 17
+2025-10-19 14:52:00,498 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/speecht5_tts HTTP/1.1" 200 16
+2025-10-19 14:52:00,500 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:52:00,502 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:52:00,502 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:52:00,503 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:52:00,503 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/speechbrain/tts-tacotron2-ljspeech HTTP/1.1" 200 17
+2025-10-19 14:52:00,504 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:52:00,505 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:52:00,508 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:52:00,508 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:52:00,510 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/facebook/tts_transformer-zh-cv7_css10 HTTP/1.1" 200 17
+2025-10-19 14:52:00,511 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:52:00,511 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:52:00,512 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:52:00,512 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/facebook/tts_transformer-es-css10 HTTP/1.1" 200 17
+2025-10-19 14:52:00,513 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:52:00,514 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:52:00,514 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:52:00,515 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:52:00,516 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:52:00,517 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:52:00,517 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:52:00,518 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:52:00,519 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:52:00,519 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/nvidia/tts_en_fastpitch HTTP/1.1" 200 17
+2025-10-19 14:52:00,520 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:52:00,522 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:52:00,522 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:52:00,522 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/facebook/unit_hifigan_mhubert_vp_en_es_fr_it3_400k_layer11_km1000_lj_dur HTTP/1.1" 200 17
+2025-10-19 14:52:00,523 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:52:00,524 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:52:00,524 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:52:00,525 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:52:00,526 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:52:00,528 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:52:00,528 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:52:00,530 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:52:00,531 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:52:00,531 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/espnet/kan-bayashi_ljspeech_joint_finetune_conformer_fastspeech2_hifigan HTTP/1.1" 200 17
+2025-10-19 14:52:00,532 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:52:00,533 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Voicemod/fastspeech2-en-male1 HTTP/1.1" 200 17
+2025-10-19 14:52:00,534 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:52:00,534 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/speechbrain/tts-hifigan-ljspeech HTTP/1.1" 200 17
+2025-10-19 14:52:00,535 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:52:00,536 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:52:00,537 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:52:00,537 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:52:00,538 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/facebook/tts_transformer-ru-cv7_css10 HTTP/1.1" 200 17
+2025-10-19 14:52:00,540 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:52:00,540 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Voicemod/fastspeech2-en-ljspeech HTTP/1.1" 200 17
+2025-10-19 14:52:00,540 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:52:00,541 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:52:00,542 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:52:00,543 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/nvidia/tts_hifigan HTTP/1.1" 200 17
+2025-10-19 14:52:00,544 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:52:00,544 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:52:00,545 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-19 14:52:00,545 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Rongjiehuang/ProDiff HTTP/1.1" 200 17
+2025-10-19 14:52:00,546 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:52:00,546 - root - DEBUG - Model: facebook/fastspeech2-en-ljspeech | Status: False | Source: None
+2025-10-19 14:52:00,548 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/tensorspeech/tts-mb_melgan-baker-ch HTTP/1.1" 200 17
+2025-10-19 14:52:00,550 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/facebook/tts_transformer-tr-cv7 HTTP/1.1" 200 17
+2025-10-19 14:52:00,550 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/balacoon/tts HTTP/1.1" 200 17
+2025-10-19 14:52:00,551 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/mio/Artoria HTTP/1.1" 200 17
+2025-10-19 14:52:00,552 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/facebook/tts_transformer-vi-cv7 HTTP/1.1" 200 17
+2025-10-19 14:52:00,553 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Snowad/French-Tortoise HTTP/1.1" 200 17
+2025-10-19 14:52:00,556 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/mechanicalsea/speecht5-tts HTTP/1.1" 200 17
+2025-10-19 14:52:00,558 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/tensorspeech/tts-tacotron2-baker-ch HTTP/1.1" 200 17
+2025-10-19 14:52:00,561 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/mio/tokiwa_midori HTTP/1.1" 200 17
+2025-10-19 14:52:00,563 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Voicemod/fastspeech2-en-200_speaker-cv4 HTTP/1.1" 200 17
+2025-10-19 14:52:00,565 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/espnet/kan-bayashi_ljspeech_tacotron2 HTTP/1.1" 200 17
+2025-10-19 14:52:00,565 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/facebook/tts_transformer-en-ljspeech HTTP/1.1" 200 17
+2025-10-19 14:52:00,566 - root - DEBUG - Model: espnet/kan-bayashi_ljspeech_vits | Status: False | Source: None
+2025-10-19 14:52:00,566 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/facebook/fastspeech2-en-200_speaker-cv4 HTTP/1.1" 200 17
+2025-10-19 14:52:00,569 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/espnet/english_male_ryanspeech_fastspeech2 HTTP/1.1" 200 17
+2025-10-19 14:52:00,573 - root - DEBUG - Model: mio/amadeus | Status: False | Source: None
+2025-10-19 14:52:00,574 - root - DEBUG - Model: microsoft/speecht5_tts | Status: True | Source: local
+2025-10-19 14:52:00,574 - root - DEBUG - Model: speechbrain/tts-tacotron2-ljspeech | Status: False | Source: None
+2025-10-19 14:52:00,574 - root - DEBUG - Model: facebook/tts_transformer-zh-cv7_css10 | Status: False | Source: None
+2025-10-19 14:52:00,574 - root - DEBUG - Model: facebook/tts_transformer-es-css10 | Status: False | Source: None
+2025-10-19 14:52:00,574 - root - DEBUG - Model: nvidia/tts_en_fastpitch | Status: False | Source: None
+2025-10-19 14:52:00,574 - root - DEBUG - Model: facebook/unit_hifigan_mhubert_vp_en_es_fr_it3_400k_layer11_km1000_lj_dur | Status: False | Source: None
+2025-10-19 14:52:00,574 - root - DEBUG - Model: espnet/kan-bayashi_ljspeech_joint_finetune_conformer_fastspeech2_hifigan | Status: False | Source: None
+2025-10-19 14:52:00,574 - root - DEBUG - Model: Voicemod/fastspeech2-en-male1 | Status: False | Source: None
+2025-10-19 14:52:00,574 - root - DEBUG - Model: speechbrain/tts-hifigan-ljspeech | Status: False | Source: None
+2025-10-19 14:52:00,574 - root - DEBUG - Model: facebook/tts_transformer-ru-cv7_css10 | Status: False | Source: None
+2025-10-19 14:52:00,574 - root - DEBUG - Model: Voicemod/fastspeech2-en-ljspeech | Status: False | Source: None
+2025-10-19 14:52:00,574 - root - DEBUG - Model: nvidia/tts_hifigan | Status: False | Source: None
+2025-10-19 14:52:00,574 - root - DEBUG - Model: Rongjiehuang/ProDiff | Status: False | Source: None
+2025-10-19 14:52:00,574 - root - DEBUG - Model: tensorspeech/tts-mb_melgan-baker-ch | Status: False | Source: None
+2025-10-19 14:52:00,574 - root - DEBUG - Model: facebook/tts_transformer-tr-cv7 | Status: False | Source: None
+2025-10-19 14:52:00,574 - root - DEBUG - Model: balacoon/tts | Status: False | Source: None
+2025-10-19 14:52:00,574 - root - DEBUG - Model: mio/Artoria | Status: False | Source: None
+2025-10-19 14:52:00,574 - root - DEBUG - Model: facebook/tts_transformer-vi-cv7 | Status: False | Source: None
+2025-10-19 14:52:00,574 - root - DEBUG - Model: Snowad/French-Tortoise | Status: False | Source: None
+2025-10-19 14:52:00,574 - root - DEBUG - Model: mechanicalsea/speecht5-tts | Status: False | Source: None
+2025-10-19 14:52:00,574 - root - DEBUG - Model: tensorspeech/tts-tacotron2-baker-ch | Status: False | Source: None
+2025-10-19 14:52:00,574 - root - DEBUG - Model: mio/tokiwa_midori | Status: False | Source: None
+2025-10-19 14:52:00,574 - root - DEBUG - Model: Voicemod/fastspeech2-en-200_speaker-cv4 | Status: False | Source: None
+2025-10-19 14:52:00,574 - root - DEBUG - Model: espnet/kan-bayashi_ljspeech_tacotron2 | Status: False | Source: None
+2025-10-19 14:52:00,574 - root - DEBUG - Model: facebook/tts_transformer-en-ljspeech | Status: False | Source: None
+2025-10-19 14:52:00,574 - root - DEBUG - Model: facebook/fastspeech2-en-200_speaker-cv4 | Status: False | Source: None
+2025-10-19 14:52:00,574 - root - DEBUG - Model: espnet/english_male_ryanspeech_fastspeech2 | Status: False | Source: None
+2025-10-19 14:52:01,545 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/mio/amadeus HTTP/1.1" 200 3460
+2025-10-19 14:52:01,546 - root - DEBUG - Model: mio/amadeus | Status: False | Source: None
+2025-10-19 14:52:01,742 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/microsoft/speecht5_tts HTTP/1.1" 200 4452
+2025-10-19 14:52:01,743 - root - DEBUG - Model: microsoft/speecht5_tts | Status: False | Source: None
+2025-10-19 14:52:01,760 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/tensorspeech/tts-mb_melgan-baker-ch HTTP/1.1" 200 1070
+2025-10-19 14:52:01,761 - root - DEBUG - Model: tensorspeech/tts-mb_melgan-baker-ch | Status: False | Source: None
+2025-10-19 14:52:01,799 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/Voicemod/fastspeech2-en-male1 HTTP/1.1" 404 32
+2025-10-19 14:52:01,800 - root - DEBUG - Model: Voicemod/fastspeech2-en-male1 | Status: False | Source: None
+2025-10-19 14:52:01,802 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/facebook/unit_hifigan_mhubert_vp_en_es_fr_it3_400k_layer11_km1000_lj_dur HTTP/1.1" 200 2388
+2025-10-19 14:52:01,802 - root - DEBUG - Model: facebook/unit_hifigan_mhubert_vp_en_es_fr_it3_400k_layer11_km1000_lj_dur | Status: False | Source: None
+2025-10-19 14:52:01,809 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/Voicemod/fastspeech2-en-200_speaker-cv4 HTTP/1.1" 404 32
+2025-10-19 14:52:01,810 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/balacoon/tts HTTP/1.1" 200 1382
+2025-10-19 14:52:01,810 - root - DEBUG - Model: Voicemod/fastspeech2-en-200_speaker-cv4 | Status: False | Source: None
+2025-10-19 14:52:01,810 - root - DEBUG - Model: balacoon/tts | Status: False | Source: None
+2025-10-19 14:52:01,810 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/facebook/tts_transformer-en-ljspeech HTTP/1.1" 200 1364
+2025-10-19 14:52:01,811 - root - DEBUG - Model: facebook/tts_transformer-en-ljspeech | Status: False | Source: None
+2025-10-19 14:52:01,813 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/espnet/kan-bayashi_ljspeech_tacotron2 HTTP/1.1" 200 1048
+2025-10-19 14:52:01,814 - root - DEBUG - Model: espnet/kan-bayashi_ljspeech_tacotron2 | Status: False | Source: None
+2025-10-19 14:52:01,821 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/nvidia/tts_hifigan HTTP/1.1" 200 972
+2025-10-19 14:52:01,821 - root - DEBUG - Model: nvidia/tts_hifigan | Status: False | Source: None
+2025-10-19 14:52:01,825 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/mechanicalsea/speecht5-tts HTTP/1.1" 200 3276
+2025-10-19 14:52:01,825 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/tensorspeech/tts-tacotron2-baker-ch HTTP/1.1" 200 1072
+2025-10-19 14:52:01,826 - root - DEBUG - Model: mechanicalsea/speecht5-tts | Status: False | Source: None
+2025-10-19 14:52:01,826 - root - DEBUG - Model: tensorspeech/tts-tacotron2-baker-ch | Status: False | Source: None
+2025-10-19 14:52:01,834 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/facebook/tts_transformer-vi-cv7 HTTP/1.1" 200 1421
+2025-10-19 14:52:01,834 - root - DEBUG - Model: facebook/tts_transformer-vi-cv7 | Status: False | Source: None
+2025-10-19 14:52:01,880 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/facebook/fastspeech2-en-ljspeech HTTP/1.1" 200 4682
+2025-10-19 14:52:01,880 - root - DEBUG - Model: facebook/fastspeech2-en-ljspeech | Status: False | Source: None
+2025-10-19 14:52:01,893 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/facebook/tts_transformer-zh-cv7_css10 HTTP/1.1" 200 1978
+2025-10-19 14:52:01,894 - root - DEBUG - Model: facebook/tts_transformer-zh-cv7_css10 | Status: False | Source: None
+2025-10-19 14:52:01,898 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/facebook/tts_transformer-es-css10 HTTP/1.1" 200 2009
+2025-10-19 14:52:01,898 - root - DEBUG - Model: facebook/tts_transformer-es-css10 | Status: False | Source: None
+2025-10-19 14:52:01,923 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/espnet/english_male_ryanspeech_fastspeech2 HTTP/1.1" 200 5347
+2025-10-19 14:52:01,923 - root - DEBUG - Model: espnet/english_male_ryanspeech_fastspeech2 | Status: False | Source: None
+2025-10-19 14:52:01,930 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/speechbrain/tts-tacotron2-ljspeech HTTP/1.1" 200 2400
+2025-10-19 14:52:01,931 - root - DEBUG - Model: speechbrain/tts-tacotron2-ljspeech | Status: False | Source: None
+2025-10-19 14:52:01,932 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/nvidia/tts_en_fastpitch HTTP/1.1" 200 1002
+2025-10-19 14:52:01,932 - root - DEBUG - Model: nvidia/tts_en_fastpitch | Status: False | Source: None
+2025-10-19 14:52:01,933 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/Voicemod/fastspeech2-en-ljspeech HTTP/1.1" 404 32
+2025-10-19 14:52:01,934 - root - DEBUG - Model: Voicemod/fastspeech2-en-ljspeech | Status: False | Source: None
+2025-10-19 14:52:01,942 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/speechbrain/tts-hifigan-ljspeech HTTP/1.1" 200 1567
+2025-10-19 14:52:01,943 - root - DEBUG - Model: speechbrain/tts-hifigan-ljspeech | Status: False | Source: None
+2025-10-19 14:52:01,946 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/facebook/fastspeech2-en-200_speaker-cv4 HTTP/1.1" 200 1457
+2025-10-19 14:52:01,946 - root - DEBUG - Model: facebook/fastspeech2-en-200_speaker-cv4 | Status: False | Source: None
+2025-10-19 14:52:01,948 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/espnet/kan-bayashi_ljspeech_vits HTTP/1.1" 200 6050
+2025-10-19 14:52:01,949 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/Rongjiehuang/ProDiff HTTP/1.1" 200 2071
+2025-10-19 14:52:01,949 - root - DEBUG - Model: espnet/kan-bayashi_ljspeech_vits | Status: False | Source: None
+2025-10-19 14:52:01,950 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/facebook/tts_transformer-tr-cv7 HTTP/1.1" 200 1424
+2025-10-19 14:52:01,950 - root - DEBUG - Model: Rongjiehuang/ProDiff | Status: False | Source: None
+2025-10-19 14:52:01,950 - root - DEBUG - Model: facebook/tts_transformer-tr-cv7 | Status: False | Source: None
+2025-10-19 14:52:01,955 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/mio/tokiwa_midori HTTP/1.1" 200 3240
+2025-10-19 14:52:01,955 - root - DEBUG - Model: mio/tokiwa_midori | Status: False | Source: None
+2025-10-19 14:52:01,956 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/facebook/tts_transformer-ru-cv7_css10 HTTP/1.1" 200 1554
+2025-10-19 14:52:01,956 - root - DEBUG - Model: facebook/tts_transformer-ru-cv7_css10 | Status: False | Source: None
+2025-10-19 14:52:01,973 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/Snowad/French-Tortoise HTTP/1.1" 200 1045
+2025-10-19 14:52:01,974 - root - DEBUG - Model: Snowad/French-Tortoise | Status: False | Source: None
+2025-10-19 14:52:01,983 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/espnet/kan-bayashi_ljspeech_joint_finetune_conformer_fastspeech2_hifigan HTTP/1.1" 200 4867
+2025-10-19 14:52:01,983 - root - DEBUG - Model: espnet/kan-bayashi_ljspeech_joint_finetune_conformer_fastspeech2_hifigan | Status: False | Source: None
+2025-10-19 14:52:01,984 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/mio/Artoria HTTP/1.1" 200 3159
+2025-10-19 14:52:01,984 - root - DEBUG - Model: mio/Artoria | Status: False | Source: None
+2025-10-19 14:52:01,985 - root - DEBUG - avaliable models on text-to-speech: {'local': ['microsoft/speecht5_tts'], 'huggingface': []}
+2025-10-19 14:52:01,985 - root - DEBUG - chosen model: {'id': 'microsoft/speecht5_tts', 'reason': 'Only one model available.'}
+2025-10-19 14:52:01,985 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-19 14:52:03,666 - urllib3.connectionpool - DEBUG - http://localhost:8005 "POST /models/microsoft/speecht5_tts HTTP/1.1" 200 28
+2025-10-19 14:52:03,667 - root - DEBUG - Inference Result: {'generated audio': '/audios/d5d5.wav'}
+2025-10-19 14:52:03,667 - root - DEBUG - {0: {'task': {'task': 'text-to-speech', 'id': 0, 'dep': [-1], 'args': {'text': 'Hello This is JARVIS testing my voice synthesis pipeline.'}}, 'inference result': {'generated audio': '/audios/d5d5.wav'}, 'choose model result': {'id': 'microsoft/speecht5_tts', 'reason': 'Only one model available.'}}}
+2025-10-19 14:52:05,418 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /nebius/v1/chat/completions HTTP/1.1" 200 None
+2025-10-19 14:52:05,419 - root - DEBUG - Hello, This is JARVIS testing my voice synthesis pipeline. 
+<EXPLANATION> Based on the task execution logs, I found that the text-to-speech model 'microsoft/speecht5_tts' was used to synthesize the given text into an audio file. The model generated an audio file located at '/audios/d5d5.wav'. I chose this model because it was the only available model for the text-to-speech task. The confidence score of the model is not available in this case. If you want to listen to the audio, you can find it at the given path. Please note that the audio file is stored locally and may not be accessible remotely. </EXPLANATION>
+2025-10-19 14:52:05,424 - retriever - DEBUG - Loaded 11 entries from data/explanations.jsonl
+2025-10-19 14:52:05,765 - retriever - DEBUG - Best similarity = 0.973 (threshold = 0.95)
+2025-10-19 14:52:05,765 - retriever - INFO - Retrieved similar explanation (sim=0.973)
+2025-10-19 14:52:07,116 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /nebius/v1/chat/completions HTTP/1.1" 200 None
+2025-10-19 14:52:07,117 - judge - INFO - Judge decided: A (Explanation A is clearer and more user-friendly for a non-technical person because it accurately describes the task execution, mentions the correct model used, and provides the path to the generated audio file. It also matches the task at hand, which is to synthesize the given text into an audio file. Explanation B, on the other hand, mentions an error message that is not present in the task execution logs, which makes it inconsistent with the task.)
+2025-10-19 14:52:07,117 - root - DEBUG - Final explanation chosen by Judge: Based on the task execution logs, I found that the text-to-speech model 'microsoft/speecht5_tts' was used to synthesize the given text into an audio file. The model generated an audio file located at '/audios/d5d5.wav'. I chose this model because it was the only available model for the text-to-speech task. The confidence score of the model is not available in this case. If you want to listen to the audio, you can find it at the given path. Please note that the audio file is stored locally and may not be accessible remotely.
+2025-10-19 14:52:07,117 - root - DEBUG -  Success: {"input": "Say the sentence Hello This is JARVIS testing my voice synthesis pipeline.", "task": "[{\"task\": \"text-to-speech\", \"id\": 0, \"dep\": [-1], \"args\": {\"text\": \"Hello This is JARVIS testing my voice synthesis pipeline.\" }}]", "results": {"0": {"task": {"task": "text-to-speech", "id": 0, "dep": [-1], "args": {"text": "Hello This is JARVIS testing my voice synthesis pipeline."}}, "inference result": {"generated audio": "/audios/d5d5.wav"}, "choose model result": {"id": "microsoft/speecht5_tts", "reason": "Only one model available."}}}, "response": "Hello, This is JARVIS testing my voice synthesis pipeline. \nBased on the task execution logs, I found that the text-to-speech model 'microsoft/speecht5_tts' was used to synthesize the given text into an audio file. The model generated an audio file located at '/audios/d5d5.wav'. I chose this model because it was the only available model for the text-to-speech task. The confidence score of the model is not available in this case. If you want to listen to the audio, you can find it at the given path. Please note that the audio file is stored locally and may not be accessible remotely.", "during": 81.6392068862915, "op": "response"}
+2025-10-19 14:52:07,118 - root - INFO - response: Hello, This is JARVIS testing my voice synthesis pipeline. 
+Based on the task execution logs, I found that the text-to-speech model 'microsoft/speecht5_tts' was used to synthesize the given text into an audio file. The model generated an audio file located at '/audios/d5d5.wav'. I chose this model because it was the only available model for the text-to-speech task. The confidence score of the model is not available in this case. If you want to listen to the audio, you can find it at the given path. Please note that the audio file is stored locally and may not be accessible remotely.
+2025-10-19 14:52:38,444 - root - INFO - [ User ]: exit
+2025-10-19 14:52:38,444 - root - INFO - [ Jarvis ]: Goodnight.

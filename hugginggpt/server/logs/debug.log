@@ -1081,3 +1081,55 @@ To create this image, I used a text-to-image model called stabilityai/stable-dif
 Unfortunately, I'm a large language model, I don't have the capability to directly host or provide URLs for images. However, I can tell you that the image is a unique creation based on your request. If you need to access the image, you may need to use a separate image generation tool or service. 
 
 I hope this helps, and please let me know if you have any further requests!
+2025-11-17 13:00:29,567 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda:0
+2025-11-17 13:00:29,567 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-17 13:00:29,569 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-11-17 13:00:29,719 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-11-17 13:00:29,723 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-11-17 13:00:29,831 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-11-17 13:00:29,836 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-11-17 13:00:29,952 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-11-17 13:00:29,958 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-11-17 13:00:30,066 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-11-17 13:00:30,071 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+2025-11-17 13:00:30,181 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-11-17 13:00:30,186 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-11-17 13:00:30,292 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-11-17 13:00:30,297 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+2025-11-17 13:00:30,404 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-11-17 13:00:30,593 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-11-17 13:00:30,598 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+2025-11-17 13:00:30,801 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-11-17 13:00:30,806 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+2025-11-17 13:00:30,914 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-11-17 13:00:31,053 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-11-17 13:00:31,059 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-11-17 13:00:31,176 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6877
+2025-11-17 13:00:31,413 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-17 13:00:31,417 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /running HTTP/1.1" 200 17
+2025-11-17 13:00:31,437 - root - DEBUG - text-classification: 30 models
+2025-11-17 13:00:31,438 - root - DEBUG - token-classification: 30 models
+2025-11-17 13:00:31,438 - root - DEBUG - text2text-generation: 30 models
+2025-11-17 13:00:31,438 - root - DEBUG - summarization: 30 models
+2025-11-17 13:00:31,438 - root - DEBUG - translation: 30 models
+2025-11-17 13:00:31,438 - root - DEBUG - question-answering: 30 models
+2025-11-17 13:00:31,438 - root - DEBUG - conversational: 30 models
+2025-11-17 13:00:31,438 - root - DEBUG - text-generation: 30 models
+2025-11-17 13:00:31,438 - root - DEBUG - sentence-similarity: 30 models
+2025-11-17 13:00:31,438 - root - DEBUG - tabular-classification: 30 models
+2025-11-17 13:00:31,438 - root - DEBUG - object-detection: 30 models
+2025-11-17 13:00:31,438 - root - DEBUG - image-classification: 30 models
+2025-11-17 13:00:31,438 - root - DEBUG - image-to-text: 30 models
+2025-11-17 13:00:31,438 - root - DEBUG - text-to-image: 31 models
+2025-11-17 13:00:31,438 - root - DEBUG - image-to-image: 30 models
+2025-11-17 13:00:31,438 - root - DEBUG - visual-question-answering: 13 models
+2025-11-17 13:00:31,438 - root - DEBUG - document-question-answering: 22 models
+2025-11-17 13:00:31,438 - root - DEBUG - image-segmentation: 30 models
+2025-11-17 13:00:31,439 - root - DEBUG - depth-estimation: 30 models
+2025-11-17 13:00:31,439 - root - DEBUG - text-to-video: 8 models
+2025-11-17 13:00:31,439 - root - DEBUG - text-to-speech: 30 models
+2025-11-17 13:00:31,439 - root - DEBUG - automatic-speech-recognition: 30 models
+2025-11-17 13:00:31,439 - root - DEBUG - audio-to-audio: 30 models
+2025-11-17 13:00:31,439 - root - DEBUG - audio-classification: 30 models
+2025-11-17 13:00:31,439 - root - DEBUG - named-entity-recognition: 1 models
+2025-11-17 13:00:31,439 - root - DEBUG - optical-character-recognition: 1 models

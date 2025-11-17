@@ -1,0 +1,438 @@
+2025-10-22 15:38:52,011 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda:0
+2025-10-22 15:38:52,011 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-22 15:38:52,015 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:38:52,156 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-10-22 15:38:52,162 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-10-22 15:38:52,278 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-10-22 15:38:52,285 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-10-22 15:38:52,392 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-10-22 15:38:52,397 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-10-22 15:38:52,507 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-10-22 15:38:52,513 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+2025-10-22 15:38:52,620 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-10-22 15:38:52,626 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-10-22 15:38:52,737 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-10-22 15:38:52,743 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+2025-10-22 15:38:52,869 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-10-22 15:38:52,977 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-10-22 15:38:52,982 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+2025-10-22 15:38:53,169 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-10-22 15:38:53,174 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+2025-10-22 15:38:53,305 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-10-22 15:38:53,462 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-10-22 15:38:53,469 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-10-22 15:38:53,583 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6876
+2025-10-22 15:38:53,805 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:38:53,814 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /running HTTP/1.1" 200 17
+2025-10-22 15:38:53,834 - root - DEBUG - text-classification: 30 models
+2025-10-22 15:38:53,834 - root - DEBUG - token-classification: 30 models
+2025-10-22 15:38:53,834 - root - DEBUG - text2text-generation: 30 models
+2025-10-22 15:38:53,834 - root - DEBUG - summarization: 30 models
+2025-10-22 15:38:53,834 - root - DEBUG - translation: 30 models
+2025-10-22 15:38:53,834 - root - DEBUG - question-answering: 30 models
+2025-10-22 15:38:53,834 - root - DEBUG - conversational: 30 models
+2025-10-22 15:38:53,834 - root - DEBUG - text-generation: 30 models
+2025-10-22 15:38:53,834 - root - DEBUG - sentence-similarity: 30 models
+2025-10-22 15:38:53,834 - root - DEBUG - tabular-classification: 30 models
+2025-10-22 15:38:53,834 - root - DEBUG - object-detection: 30 models
+2025-10-22 15:38:53,834 - root - DEBUG - image-classification: 30 models
+2025-10-22 15:38:53,834 - root - DEBUG - image-to-text: 30 models
+2025-10-22 15:38:53,834 - root - DEBUG - text-to-image: 31 models
+2025-10-22 15:38:53,834 - root - DEBUG - image-to-image: 30 models
+2025-10-22 15:38:53,834 - root - DEBUG - visual-question-answering: 13 models
+2025-10-22 15:38:53,834 - root - DEBUG - document-question-answering: 22 models
+2025-10-22 15:38:53,834 - root - DEBUG - image-segmentation: 30 models
+2025-10-22 15:38:53,834 - root - DEBUG - depth-estimation: 30 models
+2025-10-22 15:38:53,834 - root - DEBUG - text-to-video: 8 models
+2025-10-22 15:38:53,834 - root - DEBUG - text-to-speech: 30 models
+2025-10-22 15:38:53,834 - root - DEBUG - automatic-speech-recognition: 30 models
+2025-10-22 15:38:53,834 - root - DEBUG - audio-to-audio: 30 models
+2025-10-22 15:38:53,834 - root - DEBUG - audio-classification: 30 models
+2025-10-22 15:38:53,834 - root - DEBUG - named-entity-recognition: 1 models
+2025-10-22 15:38:53,835 - root - DEBUG - optical-character-recognition: 1 models
+2025-10-22 15:38:53,835 - root - INFO - Welcome to Jarvis! A collaborative system that consists of an LLM as the controller and numerous expert models as collaborative executors. Jarvis can plan tasks, schedule Hugging Face models, generate friendly responses based on your requests, and help you with many things. Please enter your request (`exit` to exit).
+2025-10-22 15:40:00,750 - root - INFO - [ User ]: please generate an image where a girl is reading a book, and her pose is the same as the boy in the image
+2025-10-22 15:40:00,750 - root - INFO - ********************************************************************************
+2025-10-22 15:40:00,750 - root - INFO - input: Please generate an image where a girl is reading a book, and her pose is the same as the boy in the image
+2025-10-22 15:40:00,753 - root - DEBUG - Messages: [{'role': 'system', 'content': '#1 Task Planning Stage: You are a helpful AI assistant. Based on the user\'s request, you will recommend the best model from Hugging Face for the task, and explain why. The special tag "<GENERATED>-dep_id" refer to the one generated text/image/audio in the dependency task (Please consider whether the dependency task generates resources of this type.) and "dep_id" must be in "dep" list.  The "dep" field denotes the ids of the previous prerequisite tasks which generate a new resource that the current task relies on.  The "args" field must in ["text", "image", "audio"], nothing else.  The "task" field must be in ["token-classification", "optical-character-recognition", "named-entity-recognition", "text2text-generation", "summarization", "translation", "question-answering", "conversational", "text-generation", "sentence-similarity", "tabular-classification", "object-detection", "image-classification", "image-to-image", "image-to-text", "text-to-image", "text-to-video", "visual-question-answering", "document-question-answering", "image-segmentation", "depth-estimation", "text-to-speech", "automatic-speech-recognition", "audio-to-audio", "audio-classification", "canny-control", "hed-control", "mlsd-control", "normal-control", "openpose-control", "canny-text-to-image", "depth-text-to-image", "hed-text-to-image", "mlsd-text-to-image", "normal-text-to-image", "openpose-text-to-image", "seg-text-to-image"] You must respond in JSON format like: [\n  {\n    "task": task, \n    "id": task_id, \n    "dep": dependency_task_id, \n    "args": {\n      "text": text or <GENERATED>-dep_id, \n      "image": image_url or <GENERATED>-dep_id, \n      "audio": audio_url or <GENERATED>-dep_id\n    }\n  }\n] Respond with the JSON entry and ONLY the JSON entry! Here are some few-shot examples:'}, {'role': 'user', 'content': 'Give you some pictures e1.jpg, e2.png, e3.jpg, help me count the number of sheep?'}, {'role': 'assistant', 'content': '[{"task": "image-to-text", "id": 0, "dep": [-1], "args": {"image": "e1.jpg" }}, {"task": "object-detection", "id": 1, "dep": [-1], "args": {"image": "e1.jpg" }}, {"task": "visual-question-answering", "id": 2, "dep": [1], "args": {"image": "<GENERATED>-1", "text": "How many sheep in the picture"}} }}, {"task": "image-to-text", "id": 3, "dep": [-1], "args": {"image": "e2.png" }}, {"task": "object-detection", "id": 4, "dep": [-1], "args": {"image": "e2.png" }}, {"task": "visual-question-answering", "id": 5, "dep": [4], "args": {"image": "<GENERATED>-4", "text": "How many sheep in the picture"}} }}, {"task": "image-to-text", "id": 6, "dep": [-1], "args": {"image": "e3.jpg" }},  {"task": "object-detection", "id": 7, "dep": [-1], "args": {"image": "e3.jpg" }}, {"task": "visual-question-answering", "id": 8, "dep": [7], "args": {"image": "<GENERATED>-7", "text": "How many sheep in the picture"}}]'}, {'role': 'user', 'content': 'Look at /e.jpg, can you tell me how many objects in the picture? Give me a picture and video similar to this one.'}, {'role': 'assistant', 'content': '[{"task": "image-to-text", "id": 0, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "object-detection", "id": 1, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "visual-question-answering", "id": 2, "dep": [1], "args": {"image": "<GENERATED>-1", "text": "how many objects in the picture?" }}, {"task": "text-to-image", "id": 3, "dep": [0], "args": {"text": "<GENERATED-0>" }}, {"task": "image-to-image", "id": 4, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "text-to-video", "id": 5, "dep": [0], "args": {"text": "<GENERATED-0>" }}]'}, {'role': 'user', 'content': 'given a document /images/e.jpeg, answer me what is the student amount? And describe the image with your voice'}, {'role': 'assistant', 'content': '{"task": "document-question-answering", "id": 0, "dep": [-1], "args": {"image": "/images/e.jpeg", "text": "what is the student amount?" }}, {"task": "visual-question-answering", "id": 1, "dep": [-1], "args": {"image": "/images/e.jpeg", "text": "what is the student amount?" }}, {"task": "image-to-text", "id": 2, "dep": [-1], "args": {"image": "/images/e.jpg" }}, {"task": "text-to-speech", "id": 3, "dep": [2], "args": {"text": "<GENERATED>-2" }}]'}, {'role': 'user', 'content': 'Given an image /example.jpg, first generate a hed image, then based on the hed image generate a new image where a girl is reading a book'}, {'role': 'assistant', 'content': '[{"task": "openpose-control", "id": 0, "dep": [-1], "args": {"image": "/example.jpg" }},  {"task": "openpose-text-to-image", "id": 1, "dep": [0], "args": {"text": "a girl is reading a book", "image": "<GENERATED>-0" }}]'}, {'role': 'user', 'content': "please show me a video and an image of (based on the text) 'a boy is running' and dub it"}, {'role': 'assistant', 'content': '[{"task": "text-to-video", "id": 0, "dep": [-1], "args": {"text": "a boy is running" }}, {"task": "text-to-speech", "id": 1, "dep": [-1], "args": {"text": "a boy is running" }}, {"task": "text-to-image", "id": 2, "dep": [-1], "args": {"text": "a boy is running" }}]'}, {'role': 'user', 'content': 'please show me a joke and an image of cat'}, {'role': 'assistant', 'content': '[{"task": "conversational", "id": 0, "dep": [-1], "args": {"text": "please show me a joke of cat" }}, {"task": "text-to-image", "id": 1, "dep": [-1], "args": {"text": "a photo of cat" }}]'}, {'role': 'user', 'content': 'The chat log [ [] ] may contain the resources I mentioned. Now I input { Please generate an image where a girl is reading a book, and her pose is the same as the boy in the image }. Pay attention to the input and output types of tasks and the dependencies between tasks.'}]
+2025-10-22 15:40:00,863 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/meta-llama/Llama-3.3-70B-Instruct?expand=inferenceProviderMapping HTTP/1.1" 200 1321
+2025-10-22 15:40:00,865 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): router.huggingface.co:443
+2025-10-22 15:40:02,671 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /nebius/v1/chat/completions HTTP/1.1" 200 None
+2025-10-22 15:40:02,676 - root - DEBUG - [{'task': 'object-detection', 'id': 0, 'dep': [1], 'args': {'image': '<GENERATED>-1'}}, {'task': 'image-to-image', 'id': 1, 'dep': [0], 'args': {'image': '<GENERATED>-0'}}, {'task': 'openpose-control', 'id': 2, 'dep': [1], 'args': {'image': '<GENERATED>-1'}}, {'task': 'openpose-text-to-image', 'id': 3, 'dep': [2], 'args': {'text': 'a girl is reading a book', 'image': '<GENERATED>-2'}}]
+2025-10-22 15:40:02,677 - root - DEBUG - Run task: 0 - object-detection
+2025-10-22 15:40:02,678 - root - DEBUG - Deps: []
+2025-10-22 15:40:02,678 - root - DEBUG - Parsed Task: {'task': 'object-detection', 'id': 0, 'dep': [-1], 'args': {'image': 'public/<GENERATED>-1'}}
+2025-10-22 15:40:02,680 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:02,681 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:02,683 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:02,685 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:02,685 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:02,686 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:02,687 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:02,688 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:02,689 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:02,690 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:02,692 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:02,692 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:02,693 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/facebook/detr-resnet-50 HTTP/1.1" 200 17
+2025-10-22 15:40:02,696 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/table-transformer-structure-recognition HTTP/1.1" 200 17
+2025-10-22 15:40:02,697 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:02,698 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:02,699 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/facebook/detr-resnet-101 HTTP/1.1" 200 16
+2025-10-22 15:40:02,700 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/hustvl/yolos-tiny HTTP/1.1" 200 17
+2025-10-22 15:40:02,702 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:02,703 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:02,704 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:02,705 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/owlvit-base-patch32 HTTP/1.1" 200 17
+2025-10-22 15:40:02,705 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:02,707 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:02,708 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:02,709 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:02,710 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/TahaDouaji/detr-doc-table-detection HTTP/1.1" 200 17
+2025-10-22 15:40:02,711 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:02,712 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:02,713 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:02,713 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/table-transformer-detection HTTP/1.1" 200 17
+2025-10-22 15:40:02,716 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:02,717 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:02,718 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:02,719 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:02,720 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/hustvl/yolos-small HTTP/1.1" 200 17
+2025-10-22 15:40:02,721 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:02,722 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:02,723 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:02,723 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:02,724 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:02,725 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:02,726 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:02,727 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:02,729 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/ultralyticsplus/yolov8s HTTP/1.1" 200 17
+2025-10-22 15:40:02,730 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:02,731 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:02,732 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/owlvit-large-patch14 HTTP/1.1" 200 17
+2025-10-22 15:40:02,734 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:02,735 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:02,735 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/facebook/detr-resnet-101-dc5 HTTP/1.1" 200 17
+2025-10-22 15:40:02,738 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:02,739 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:02,741 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:02,742 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:02,743 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:02,743 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/valentinafeve/yolos-fashionpedia HTTP/1.1" 200 17
+2025-10-22 15:40:02,745 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:02,746 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:02,747 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:02,748 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:02,749 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:02,750 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/keremberke/yolov5m-license-plate HTTP/1.1" 200 17
+2025-10-22 15:40:02,751 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/hustvl/yolos-base HTTP/1.1" 200 17
+2025-10-22 15:40:02,753 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:02,753 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:02,754 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:02,754 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/nickmuchi/yolos-small-finetuned-license-plate-detection HTTP/1.1" 200 17
+2025-10-22 15:40:02,755 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:02,757 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:02,758 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:02,758 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/fcakyon/yolov5s-v7.0 HTTP/1.1" 200 17
+2025-10-22 15:40:02,760 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:02,760 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/keremberke/yolov5n-blood-cell HTTP/1.1" 200 17
+2025-10-22 15:40:02,761 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:02,764 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:02,766 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:02,766 - root - DEBUG - Model: facebook/detr-resnet-50 | Status: False | Source: None
+2025-10-22 15:40:02,767 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Riser/YOLOP HTTP/1.1" 200 17
+2025-10-22 15:40:02,769 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/SamMorgan/yolo_v4_tflite HTTP/1.1" 200 17
+2025-10-22 15:40:02,770 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/mindee/fasterrcnn_mobilenet_v3_large_fpn HTTP/1.1" 200 17
+2025-10-22 15:40:02,772 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/SenseTime/deformable-detr HTTP/1.1" 200 17
+2025-10-22 15:40:02,773 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/owlvit-base-patch16 HTTP/1.1" 200 17
+2025-10-22 15:40:02,776 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/biglam/detr-resnet-50_fine_tuned_nls_chapbooks HTTP/1.1" 200 17
+2025-10-22 15:40:02,778 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/nielsr/detr-table-detection HTTP/1.1" 200 17
+2025-10-22 15:40:02,781 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/keremberke/yolov5n-license-plate HTTP/1.1" 200 17
+2025-10-22 15:40:02,783 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/keremberke/yolov5s-license-plate HTTP/1.1" 200 17
+2025-10-22 15:40:02,788 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/keremberke/yolov8s-table-extraction HTTP/1.1" 200 17
+2025-10-22 15:40:02,789 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/keremberke/yolov8m-table-extraction HTTP/1.1" 200 17
+2025-10-22 15:40:02,790 - root - DEBUG - Model: microsoft/table-transformer-structure-recognition | Status: False | Source: None
+2025-10-22 15:40:02,800 - root - DEBUG - Model: facebook/detr-resnet-101 | Status: True | Source: local
+2025-10-22 15:40:02,795 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/SalML/DETR-table-structure-recognition HTTP/1.1" 200 17
+2025-10-22 15:40:02,792 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/nickmuchi/yolos-small-rego-plates-detection HTTP/1.1" 200 17
+2025-10-22 15:40:02,800 - root - DEBUG - Model: hustvl/yolos-tiny | Status: False | Source: None
+2025-10-22 15:40:02,801 - root - DEBUG - Model: google/owlvit-base-patch32 | Status: False | Source: None
+2025-10-22 15:40:02,801 - root - DEBUG - Model: TahaDouaji/detr-doc-table-detection | Status: False | Source: None
+2025-10-22 15:40:02,801 - root - DEBUG - Model: microsoft/table-transformer-detection | Status: False | Source: None
+2025-10-22 15:40:02,801 - root - DEBUG - Model: hustvl/yolos-small | Status: False | Source: None
+2025-10-22 15:40:02,801 - root - DEBUG - Model: ultralyticsplus/yolov8s | Status: False | Source: None
+2025-10-22 15:40:02,801 - root - DEBUG - Model: google/owlvit-large-patch14 | Status: False | Source: None
+2025-10-22 15:40:02,801 - root - DEBUG - Model: facebook/detr-resnet-101-dc5 | Status: False | Source: None
+2025-10-22 15:40:02,801 - root - DEBUG - Model: valentinafeve/yolos-fashionpedia | Status: False | Source: None
+2025-10-22 15:40:02,801 - root - DEBUG - Model: keremberke/yolov5m-license-plate | Status: False | Source: None
+2025-10-22 15:40:02,801 - root - DEBUG - Model: hustvl/yolos-base | Status: False | Source: None
+2025-10-22 15:40:02,801 - root - DEBUG - Model: nickmuchi/yolos-small-finetuned-license-plate-detection | Status: False | Source: None
+2025-10-22 15:40:02,802 - root - DEBUG - Model: fcakyon/yolov5s-v7.0 | Status: False | Source: None
+2025-10-22 15:40:02,802 - root - DEBUG - Model: keremberke/yolov5n-blood-cell | Status: False | Source: None
+2025-10-22 15:40:02,802 - root - DEBUG - Model: Riser/YOLOP | Status: False | Source: None
+2025-10-22 15:40:02,802 - root - DEBUG - Model: SamMorgan/yolo_v4_tflite | Status: False | Source: None
+2025-10-22 15:40:02,802 - root - DEBUG - Model: mindee/fasterrcnn_mobilenet_v3_large_fpn | Status: False | Source: None
+2025-10-22 15:40:02,802 - root - DEBUG - Model: SenseTime/deformable-detr | Status: False | Source: None
+2025-10-22 15:40:02,802 - root - DEBUG - Model: google/owlvit-base-patch16 | Status: False | Source: None
+2025-10-22 15:40:02,802 - root - DEBUG - Model: biglam/detr-resnet-50_fine_tuned_nls_chapbooks | Status: False | Source: None
+2025-10-22 15:40:02,802 - root - DEBUG - Model: nielsr/detr-table-detection | Status: False | Source: None
+2025-10-22 15:40:02,802 - root - DEBUG - Model: keremberke/yolov5n-license-plate | Status: False | Source: None
+2025-10-22 15:40:02,802 - root - DEBUG - Model: keremberke/yolov5s-license-plate | Status: False | Source: None
+2025-10-22 15:40:02,802 - root - DEBUG - Model: keremberke/yolov8s-table-extraction | Status: False | Source: None
+2025-10-22 15:40:02,802 - root - DEBUG - Model: keremberke/yolov8m-table-extraction | Status: False | Source: None
+2025-10-22 15:40:02,802 - root - DEBUG - Model: SalML/DETR-table-structure-recognition | Status: False | Source: None
+2025-10-22 15:40:02,802 - root - DEBUG - Model: nickmuchi/yolos-small-rego-plates-detection | Status: False | Source: None
+2025-10-22 15:40:03,342 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/microsoft/table-transformer-structure-recognition HTTP/1.1" 200 2982
+2025-10-22 15:40:03,343 - root - DEBUG - Model: microsoft/table-transformer-structure-recognition | Status: False | Source: None
+2025-10-22 15:40:03,454 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/hustvl/yolos-tiny HTTP/1.1" 200 5041
+2025-10-22 15:40:03,455 - root - DEBUG - Model: hustvl/yolos-tiny | Status: False | Source: None
+2025-10-22 15:40:03,458 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/facebook/detr-resnet-50 HTTP/1.1" 200 5101
+2025-10-22 15:40:03,460 - root - DEBUG - Model: facebook/detr-resnet-50 | Status: True | Source: huggingface
+2025-10-22 15:40:03,483 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/facebook/detr-resnet-101 HTTP/1.1" 200 4720
+2025-10-22 15:40:03,484 - root - DEBUG - Model: facebook/detr-resnet-101 | Status: True | Source: huggingface
+2025-10-22 15:40:03,513 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/facebook/detr-resnet-101-dc5 HTTP/1.1" 200 2288
+2025-10-22 15:40:03,514 - root - DEBUG - Model: facebook/detr-resnet-101-dc5 | Status: False | Source: None
+2025-10-22 15:40:03,559 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/google/owlvit-base-patch32 HTTP/1.1" 200 4301
+2025-10-22 15:40:03,560 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/Riser/YOLOP HTTP/1.1" 200 2556
+2025-10-22 15:40:03,560 - root - DEBUG - Model: google/owlvit-base-patch32 | Status: False | Source: None
+2025-10-22 15:40:03,561 - root - DEBUG - Model: Riser/YOLOP | Status: False | Source: None
+2025-10-22 15:40:03,579 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/keremberke/yolov5s-license-plate HTTP/1.1" 200 1907
+2025-10-22 15:40:03,579 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/google/owlvit-base-patch16 HTTP/1.1" 200 1813
+2025-10-22 15:40:03,580 - root - DEBUG - Model: keremberke/yolov5s-license-plate | Status: False | Source: None
+2025-10-22 15:40:03,580 - root - DEBUG - Model: google/owlvit-base-patch16 | Status: False | Source: None
+2025-10-22 15:40:03,583 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/keremberke/yolov8m-table-extraction HTTP/1.1" 200 1863
+2025-10-22 15:40:03,584 - root - DEBUG - Model: keremberke/yolov8m-table-extraction | Status: False | Source: None
+2025-10-22 15:40:03,585 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/keremberke/yolov8s-table-extraction HTTP/1.1" 200 1737
+2025-10-22 15:40:03,586 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/SalML/DETR-table-structure-recognition HTTP/1.1" 200 1149
+2025-10-22 15:40:03,586 - root - DEBUG - Model: keremberke/yolov8s-table-extraction | Status: False | Source: None
+2025-10-22 15:40:03,587 - root - DEBUG - Model: SalML/DETR-table-structure-recognition | Status: False | Source: None
+2025-10-22 15:40:03,592 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/SenseTime/deformable-detr HTTP/1.1" 200 2018
+2025-10-22 15:40:03,593 - root - DEBUG - Model: SenseTime/deformable-detr | Status: False | Source: None
+2025-10-22 15:40:03,597 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/mindee/fasterrcnn_mobilenet_v3_large_fpn HTTP/1.1" 404 32
+2025-10-22 15:40:03,597 - root - DEBUG - Model: mindee/fasterrcnn_mobilenet_v3_large_fpn | Status: False | Source: None
+2025-10-22 15:40:03,600 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/microsoft/table-transformer-detection HTTP/1.1" 200 4820
+2025-10-22 15:40:03,601 - root - DEBUG - Model: microsoft/table-transformer-detection | Status: False | Source: None
+2025-10-22 15:40:03,601 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/nielsr/detr-table-detection HTTP/1.1" 200 902
+2025-10-22 15:40:03,601 - root - DEBUG - Model: nielsr/detr-table-detection | Status: False | Source: None
+2025-10-22 15:40:03,610 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/keremberke/yolov5m-license-plate HTTP/1.1" 200 2030
+2025-10-22 15:40:03,611 - root - DEBUG - Model: keremberke/yolov5m-license-plate | Status: False | Source: None
+2025-10-22 15:40:03,614 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/keremberke/yolov5n-license-plate HTTP/1.1" 200 2105
+2025-10-22 15:40:03,615 - root - DEBUG - Model: keremberke/yolov5n-license-plate | Status: False | Source: None
+2025-10-22 15:40:03,618 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/SamMorgan/yolo_v4_tflite HTTP/1.1" 200 8659
+2025-10-22 15:40:03,618 - root - DEBUG - Model: SamMorgan/yolo_v4_tflite | Status: False | Source: None
+2025-10-22 15:40:03,623 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/ultralyticsplus/yolov8s HTTP/1.1" 200 1481
+2025-10-22 15:40:03,624 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/google/owlvit-large-patch14 HTTP/1.1" 200 1812
+2025-10-22 15:40:03,624 - huggingface_hub.repocard_data - WARNING - Invalid model-index. Not loading eval results into CardData.
+2025-10-22 15:40:03,625 - root - DEBUG - Model: google/owlvit-large-patch14 | Status: False | Source: None
+2025-10-22 15:40:03,625 - root - DEBUG - Model: ultralyticsplus/yolov8s | Status: False | Source: None
+2025-10-22 15:40:03,629 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/biglam/detr-resnet-50_fine_tuned_nls_chapbooks HTTP/1.1" 200 2770
+2025-10-22 15:40:03,629 - root - DEBUG - Model: biglam/detr-resnet-50_fine_tuned_nls_chapbooks | Status: False | Source: None
+2025-10-22 15:40:03,631 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/nickmuchi/yolos-small-finetuned-license-plate-detection HTTP/1.1" 200 1995
+2025-10-22 15:40:03,632 - root - DEBUG - Model: nickmuchi/yolos-small-finetuned-license-plate-detection | Status: False | Source: None
+2025-10-22 15:40:03,632 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/fcakyon/yolov5s-v7.0 HTTP/1.1" 200 929
+2025-10-22 15:40:03,633 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/keremberke/yolov5n-blood-cell HTTP/1.1" 200 1710
+2025-10-22 15:40:03,633 - root - DEBUG - Model: fcakyon/yolov5s-v7.0 | Status: False | Source: None
+2025-10-22 15:40:03,633 - root - DEBUG - Model: keremberke/yolov5n-blood-cell | Status: False | Source: None
+2025-10-22 15:40:03,634 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/nickmuchi/yolos-small-rego-plates-detection HTTP/1.1" 200 2090
+2025-10-22 15:40:03,635 - root - DEBUG - Model: nickmuchi/yolos-small-rego-plates-detection | Status: False | Source: None
+2025-10-22 15:40:03,639 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/hustvl/yolos-base HTTP/1.1" 200 2079
+2025-10-22 15:40:03,640 - root - DEBUG - Model: hustvl/yolos-base | Status: False | Source: None
+2025-10-22 15:40:03,641 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/hustvl/yolos-small HTTP/1.1" 200 3769
+2025-10-22 15:40:03,641 - root - DEBUG - Model: hustvl/yolos-small | Status: False | Source: None
+2025-10-22 15:40:03,650 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/TahaDouaji/detr-doc-table-detection HTTP/1.1" 200 1494
+2025-10-22 15:40:03,651 - root - DEBUG - Model: TahaDouaji/detr-doc-table-detection | Status: False | Source: None
+2025-10-22 15:40:03,870 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/valentinafeve/yolos-fashionpedia HTTP/1.1" 200 2134
+2025-10-22 15:40:03,871 - root - DEBUG - Model: valentinafeve/yolos-fashionpedia | Status: False | Source: None
+2025-10-22 15:40:03,871 - root - DEBUG - avaliable models on object-detection: {'local': ['facebook/detr-resnet-101'], 'huggingface': ['facebook/detr-resnet-50', 'facebook/detr-resnet-101']}
+2025-10-22 15:40:03,873 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): router.huggingface.co:443
+2025-10-22 15:40:05,127 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /nebius/v1/chat/completions HTTP/1.1" 200 None
+2025-10-22 15:40:05,128 - root - DEBUG - chosen model: {"id": "facebook/detr-resnet-50", "reason": "This model has the most likes (129) indicating its popularity and potentially better performance, it also has a local inference endpoint for speed and stability, and its description and tags show it is well-suited for object-detection tasks."}
+2025-10-22 15:40:05,128 - root - WARNING - Inference error: {'message': 'Image not found: public/<GENERATED>-1'}
+2025-10-22 15:40:05,129 - root - DEBUG -  Failure: {"input": "Please generate an image where a girl is reading a book, and her pose is the same as the boy in the image", "task": {"task": "object-detection", "id": 0, "dep": [-1], "args": {"image": "public/<GENERATED>-1"}}, "reason": "inference error: {'message': 'Image not found: public/<GENERATED>-1'}", "op": "message"}
+2025-10-22 15:40:05,129 - root - DEBUG - Inference Result: {'error': {'message': 'Image not found: public/<GENERATED>-1'}}
+2025-10-22 15:40:05,180 - root - DEBUG - Run task: 1 - image-to-image
+2025-10-22 15:40:05,181 - root - DEBUG - Deps: [{"task": {"task": "object-detection", "id": 0, "dep": [-1], "args": {"image": "public/<GENERATED>-1"}}, "inference result": {"error": {"message": "Image not found: public/<GENERATED>-1"}}, "choose model result": {"id": "facebook/detr-resnet-50", "reason": "This model has the most likes (129) indicating its popularity and potentially better performance, it also has a local inference endpoint for speed and stability, and its description and tags show it is well-suited for object-detection tasks."}}]
+2025-10-22 15:40:05,181 - root - DEBUG - Detect the image of dependency task (from args): public/<GENERATED>-1
+2025-10-22 15:40:05,181 - root - DEBUG - Parsed Task: {'task': 'image-to-image', 'id': 1, 'dep': [0], 'args': {'image': 'public/<GENERATED>-1'}}
+2025-10-22 15:40:05,184 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:05,187 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:05,190 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:05,193 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:05,194 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:05,195 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/lambdalabs/sd-image-variations-diffusers HTTP/1.1" 200 16
+2025-10-22 15:40:05,196 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/lambdalabs/stable-diffusion-image-conditioned HTTP/1.1" 200 17
+2025-10-22 15:40:05,197 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:05,198 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/akiyamasho/AnimeBackgroundGAN-Shinkai HTTP/1.1" 200 17
+2025-10-22 15:40:05,199 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:05,200 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:05,201 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:05,202 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:05,204 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:05,207 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:05,208 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/keras-io/lowlight-enhance-mirnet HTTP/1.1" 200 17
+2025-10-22 15:40:05,209 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:05,209 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/maxim-s3-deblurring-gopro HTTP/1.1" 200 17
+2025-10-22 15:40:05,211 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:05,212 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:05,213 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:05,214 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/keras-io/super-resolution HTTP/1.1" 200 17
+2025-10-22 15:40:05,215 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:05,216 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:05,216 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:05,218 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:05,220 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:05,222 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/keras-io/low-light-image-enhancement HTTP/1.1" 200 17
+2025-10-22 15:40:05,223 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/akiyamasho/AnimeBackgroundGAN-Hosoda HTTP/1.1" 200 17
+2025-10-22 15:40:05,223 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:05,225 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:05,225 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/akiyamasho/AnimeBackgroundGAN-Miyazaki HTTP/1.1" 200 17
+2025-10-22 15:40:05,227 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:05,228 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:05,229 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:05,230 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:05,231 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:05,232 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:05,234 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:05,235 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/gwang-kim/DiffusionCLIP-CelebA_HQ HTTP/1.1" 200 17
+2025-10-22 15:40:05,235 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Pie31415/rome HTTP/1.1" 200 17
+2025-10-22 15:40:05,235 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:05,237 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:05,239 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:05,239 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:05,240 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/matttrent/sd-image-variations-diffusers HTTP/1.1" 200 17
+2025-10-22 15:40:05,241 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:05,243 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/sivar/legostyle1-5 HTTP/1.1" 200 17
+2025-10-22 15:40:05,244 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:05,245 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:05,246 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/akiyamasho/AnimeBackgroundGAN-Kon HTTP/1.1" 200 17
+2025-10-22 15:40:05,246 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:05,247 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:05,247 - root - DEBUG - Model: lambdalabs/sd-image-variations-diffusers | Status: True | Source: local
+2025-10-22 15:40:05,248 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/hugginglearners/fastai-style-transfer HTTP/1.1" 200 17
+2025-10-22 15:40:05,249 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/maxim-s3-denoising-sidd HTTP/1.1" 200 17
+2025-10-22 15:40:05,250 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/caidas/swin2SR-classical-sr-x2-64 HTTP/1.1" 200 17
+2025-10-22 15:40:05,252 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/huggan/sim2real_cyclegan HTTP/1.1" 200 17
+2025-10-22 15:40:05,252 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/maxim-s2-enhancement-lol HTTP/1.1" 200 17
+2025-10-22 15:40:05,253 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/keras-io/conditional-gan HTTP/1.1" 200 17
+2025-10-22 15:40:05,254 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/kunheekim/style-aware-discriminator HTTP/1.1" 200 17
+2025-10-22 15:40:05,255 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/weitf/muscleAmine HTTP/1.1" 200 17
+2025-10-22 15:40:05,256 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/cmudrc/microstructure-colorization HTTP/1.1" 200 17
+2025-10-22 15:40:05,257 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/maxim-s2-deraining-raindrop HTTP/1.1" 200 17
+2025-10-22 15:40:05,258 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/rullaf/RealESRGAN_MtG HTTP/1.1" 200 17
+2025-10-22 15:40:05,259 - root - DEBUG - Model: lambdalabs/stable-diffusion-image-conditioned | Status: False | Source: None
+2025-10-22 15:40:05,260 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/huggingnft/cryptopunks__2__bored-apes-yacht-club HTTP/1.1" 200 17
+2025-10-22 15:40:05,260 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/gwang-kim/DiffusionCLIP-LSUN_Bedroom HTTP/1.1" 200 17
+2025-10-22 15:40:05,261 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/huggingnft/boredapeyachtclub__2__mutant-ape-yacht-club HTTP/1.1" 200 17
+2025-10-22 15:40:05,261 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/huggingnft/mini-mutants__2__boredapeyachtclub HTTP/1.1" 200 17
+2025-10-22 15:40:05,262 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/SBB/sbb_binarization HTTP/1.1" 200 17
+2025-10-22 15:40:05,264 - root - DEBUG - Model: akiyamasho/AnimeBackgroundGAN-Shinkai | Status: False | Source: None
+2025-10-22 15:40:05,266 - root - DEBUG - Model: keras-io/lowlight-enhance-mirnet | Status: False | Source: None
+2025-10-22 15:40:05,266 - root - DEBUG - Model: google/maxim-s3-deblurring-gopro | Status: False | Source: None
+2025-10-22 15:40:05,266 - root - DEBUG - Model: keras-io/super-resolution | Status: False | Source: None
+2025-10-22 15:40:05,266 - root - DEBUG - Model: keras-io/low-light-image-enhancement | Status: False | Source: None
+2025-10-22 15:40:05,266 - root - DEBUG - Model: akiyamasho/AnimeBackgroundGAN-Hosoda | Status: False | Source: None
+2025-10-22 15:40:05,266 - root - DEBUG - Model: akiyamasho/AnimeBackgroundGAN-Miyazaki | Status: False | Source: None
+2025-10-22 15:40:05,266 - root - DEBUG - Model: gwang-kim/DiffusionCLIP-CelebA_HQ | Status: False | Source: None
+2025-10-22 15:40:05,266 - root - DEBUG - Model: Pie31415/rome | Status: False | Source: None
+2025-10-22 15:40:05,266 - root - DEBUG - Model: matttrent/sd-image-variations-diffusers | Status: False | Source: None
+2025-10-22 15:40:05,266 - root - DEBUG - Model: sivar/legostyle1-5 | Status: False | Source: None
+2025-10-22 15:40:05,266 - root - DEBUG - Model: akiyamasho/AnimeBackgroundGAN-Kon | Status: False | Source: None
+2025-10-22 15:40:05,266 - root - DEBUG - Model: hugginglearners/fastai-style-transfer | Status: False | Source: None
+2025-10-22 15:40:05,267 - root - DEBUG - Model: google/maxim-s3-denoising-sidd | Status: False | Source: None
+2025-10-22 15:40:05,267 - root - DEBUG - Model: caidas/swin2SR-classical-sr-x2-64 | Status: False | Source: None
+2025-10-22 15:40:05,267 - root - DEBUG - Model: huggan/sim2real_cyclegan | Status: False | Source: None
+2025-10-22 15:40:05,267 - root - DEBUG - Model: google/maxim-s2-enhancement-lol | Status: False | Source: None
+2025-10-22 15:40:05,267 - root - DEBUG - Model: keras-io/conditional-gan | Status: False | Source: None
+2025-10-22 15:40:05,267 - root - DEBUG - Model: kunheekim/style-aware-discriminator | Status: False | Source: None
+2025-10-22 15:40:05,267 - root - DEBUG - Model: weitf/muscleAmine | Status: False | Source: None
+2025-10-22 15:40:05,267 - root - DEBUG - Model: cmudrc/microstructure-colorization | Status: False | Source: None
+2025-10-22 15:40:05,267 - root - DEBUG - Model: google/maxim-s2-deraining-raindrop | Status: False | Source: None
+2025-10-22 15:40:05,267 - root - DEBUG - Model: rullaf/RealESRGAN_MtG | Status: False | Source: None
+2025-10-22 15:40:05,267 - root - DEBUG - Model: huggingnft/cryptopunks__2__bored-apes-yacht-club | Status: False | Source: None
+2025-10-22 15:40:05,267 - root - DEBUG - Model: gwang-kim/DiffusionCLIP-LSUN_Bedroom | Status: False | Source: None
+2025-10-22 15:40:05,267 - root - DEBUG - Model: huggingnft/boredapeyachtclub__2__mutant-ape-yacht-club | Status: False | Source: None
+2025-10-22 15:40:05,267 - root - DEBUG - Model: huggingnft/mini-mutants__2__boredapeyachtclub | Status: False | Source: None
+2025-10-22 15:40:05,267 - root - DEBUG - Model: SBB/sbb_binarization | Status: False | Source: None
+2025-10-22 15:40:05,299 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/lambdalabs/sd-image-variations-diffusers HTTP/1.1" 200 4551
+2025-10-22 15:40:05,300 - root - DEBUG - Model: lambdalabs/sd-image-variations-diffusers | Status: False | Source: None
+2025-10-22 15:40:05,302 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/akiyamasho/AnimeBackgroundGAN-Shinkai HTTP/1.1" 200 989
+2025-10-22 15:40:05,303 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/lambdalabs/stable-diffusion-image-conditioned HTTP/1.1" 200 1187
+2025-10-22 15:40:05,303 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/google/maxim-s3-deblurring-gopro HTTP/1.1" 200 1093
+2025-10-22 15:40:05,303 - root - DEBUG - Model: akiyamasho/AnimeBackgroundGAN-Shinkai | Status: False | Source: None
+2025-10-22 15:40:05,304 - root - DEBUG - Model: lambdalabs/stable-diffusion-image-conditioned | Status: False | Source: None
+2025-10-22 15:40:05,304 - root - DEBUG - Model: google/maxim-s3-deblurring-gopro | Status: False | Source: None
+2025-10-22 15:40:05,312 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/keras-io/super-resolution HTTP/1.1" 200 1017
+2025-10-22 15:40:05,313 - root - DEBUG - Model: keras-io/super-resolution | Status: False | Source: None
+2025-10-22 15:40:05,318 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/gwang-kim/DiffusionCLIP-CelebA_HQ HTTP/1.1" 200 731
+2025-10-22 15:40:05,318 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/Pie31415/rome HTTP/1.1" 200 894
+2025-10-22 15:40:05,319 - root - DEBUG - Model: gwang-kim/DiffusionCLIP-CelebA_HQ | Status: False | Source: None
+2025-10-22 15:40:05,319 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/akiyamasho/AnimeBackgroundGAN-Miyazaki HTTP/1.1" 200 941
+2025-10-22 15:40:05,320 - root - DEBUG - Model: Pie31415/rome | Status: False | Source: None
+2025-10-22 15:40:05,320 - root - DEBUG - Model: akiyamasho/AnimeBackgroundGAN-Miyazaki | Status: False | Source: None
+2025-10-22 15:40:05,327 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/matttrent/sd-image-variations-diffusers HTTP/1.1" 200 2431
+2025-10-22 15:40:05,328 - root - DEBUG - Model: matttrent/sd-image-variations-diffusers | Status: False | Source: None
+2025-10-22 15:40:05,330 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/google/maxim-s3-denoising-sidd HTTP/1.1" 200 1099
+2025-10-22 15:40:05,331 - root - DEBUG - Model: google/maxim-s3-denoising-sidd | Status: False | Source: None
+2025-10-22 15:40:05,333 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/huggan/sim2real_cyclegan HTTP/1.1" 200 764
+2025-10-22 15:40:05,334 - root - DEBUG - Model: huggan/sim2real_cyclegan | Status: False | Source: None
+2025-10-22 15:40:05,338 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/caidas/swin2SR-classical-sr-x2-64 HTTP/1.1" 200 1373
+2025-10-22 15:40:05,338 - root - DEBUG - Model: caidas/swin2SR-classical-sr-x2-64 | Status: False | Source: None
+2025-10-22 15:40:05,340 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/keras-io/conditional-gan HTTP/1.1" 200 1777
+2025-10-22 15:40:05,340 - root - DEBUG - Model: keras-io/conditional-gan | Status: False | Source: None
+2025-10-22 15:40:05,342 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/google/maxim-s2-deraining-raindrop HTTP/1.1" 200 1038
+2025-10-22 15:40:05,343 - root - DEBUG - Model: google/maxim-s2-deraining-raindrop | Status: False | Source: None
+2025-10-22 15:40:05,344 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/weitf/muscleAmine HTTP/1.1" 200 599
+2025-10-22 15:40:05,344 - root - DEBUG - Model: weitf/muscleAmine | Status: False | Source: None
+2025-10-22 15:40:05,349 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/cmudrc/microstructure-colorization HTTP/1.1" 200 1098
+2025-10-22 15:40:05,350 - root - DEBUG - Model: cmudrc/microstructure-colorization | Status: False | Source: None
+2025-10-22 15:40:05,353 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/huggingnft/boredapeyachtclub__2__mutant-ape-yacht-club HTTP/1.1" 200 814
+2025-10-22 15:40:05,353 - root - DEBUG - Model: huggingnft/boredapeyachtclub__2__mutant-ape-yacht-club | Status: False | Source: None
+2025-10-22 15:40:05,355 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/huggingnft/mini-mutants__2__boredapeyachtclub HTTP/1.1" 200 796
+2025-10-22 15:40:05,355 - root - DEBUG - Model: huggingnft/mini-mutants__2__boredapeyachtclub | Status: False | Source: None
+2025-10-22 15:40:05,363 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/hugginglearners/fastai-style-transfer HTTP/1.1" 200 797
+2025-10-22 15:40:05,363 - root - DEBUG - Model: hugginglearners/fastai-style-transfer | Status: False | Source: None
+2025-10-22 15:40:05,427 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/keras-io/low-light-image-enhancement HTTP/1.1" 200 964
+2025-10-22 15:40:05,428 - root - DEBUG - Model: keras-io/low-light-image-enhancement | Status: False | Source: None
+2025-10-22 15:40:05,445 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/akiyamasho/AnimeBackgroundGAN-Hosoda HTTP/1.1" 200 936
+2025-10-22 15:40:05,445 - root - DEBUG - Model: akiyamasho/AnimeBackgroundGAN-Hosoda | Status: False | Source: None
+2025-10-22 15:40:05,446 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/huggingnft/cryptopunks__2__bored-apes-yacht-club HTTP/1.1" 200 802
+2025-10-22 15:40:05,446 - root - DEBUG - Model: huggingnft/cryptopunks__2__bored-apes-yacht-club | Status: False | Source: None
+2025-10-22 15:40:05,514 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/keras-io/lowlight-enhance-mirnet HTTP/1.1" 200 1588
+2025-10-22 15:40:05,514 - root - DEBUG - Model: keras-io/lowlight-enhance-mirnet | Status: False | Source: None
+2025-10-22 15:40:05,538 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/akiyamasho/AnimeBackgroundGAN-Kon HTTP/1.1" 200 927
+2025-10-22 15:40:05,538 - root - DEBUG - Model: akiyamasho/AnimeBackgroundGAN-Kon | Status: False | Source: None
+2025-10-22 15:40:05,549 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/google/maxim-s2-enhancement-lol HTTP/1.1" 200 1090
+2025-10-22 15:40:05,549 - root - DEBUG - Model: google/maxim-s2-enhancement-lol | Status: False | Source: None
+2025-10-22 15:40:05,549 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/gwang-kim/DiffusionCLIP-LSUN_Bedroom HTTP/1.1" 200 715
+2025-10-22 15:40:05,550 - root - DEBUG - Model: gwang-kim/DiffusionCLIP-LSUN_Bedroom | Status: False | Source: None
+2025-10-22 15:40:05,550 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sivar/legostyle1-5 HTTP/1.1" 200 1577
+2025-10-22 15:40:05,551 - root - DEBUG - Model: sivar/legostyle1-5 | Status: False | Source: None
+2025-10-22 15:40:05,553 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/kunheekim/style-aware-discriminator HTTP/1.1" 200 1227
+2025-10-22 15:40:05,553 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/rullaf/RealESRGAN_MtG HTTP/1.1" 200 1389
+2025-10-22 15:40:05,553 - root - DEBUG - Model: kunheekim/style-aware-discriminator | Status: False | Source: None
+2025-10-22 15:40:05,554 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/SBB/sbb_binarization HTTP/1.1" 200 1101
+2025-10-22 15:40:05,555 - root - DEBUG - Model: rullaf/RealESRGAN_MtG | Status: False | Source: None
+2025-10-22 15:40:05,555 - root - DEBUG - Model: SBB/sbb_binarization | Status: False | Source: None
+2025-10-22 15:40:05,556 - root - DEBUG - avaliable models on image-to-image: {'local': ['lambdalabs/sd-image-variations-diffusers'], 'huggingface': []}
+2025-10-22 15:40:05,556 - root - DEBUG - chosen model: {'id': 'lambdalabs/sd-image-variations-diffusers', 'reason': 'Only one model available.'}
+2025-10-22 15:40:05,557 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:06,697 - urllib3.connectionpool - DEBUG - http://localhost:8005 "POST /models/lambdalabs/sd-image-variations-diffusers HTTP/1.1" 200 64
+2025-10-22 15:40:06,697 - root - WARNING - Inference error: {'message': 'Error when running the model inference.'}
+2025-10-22 15:40:06,697 - root - DEBUG -  Failure: {"input": "Please generate an image where a girl is reading a book, and her pose is the same as the boy in the image", "task": {"task": "image-to-image", "id": 1, "dep": [0], "args": {"image": "public/<GENERATED>-1"}}, "reason": "inference error: {'message': 'Error when running the model inference.'}", "op": "message"}
+2025-10-22 15:40:06,698 - root - DEBUG - Inference Result: {'error': {'message': 'Error when running the model inference.'}}
+2025-10-22 15:40:07,183 - root - DEBUG - Run task: 2 - openpose-control
+2025-10-22 15:40:07,183 - root - DEBUG - Deps: [{"task": {"task": "image-to-image", "id": 1, "dep": [0], "args": {"image": "public/<GENERATED>-1"}}, "inference result": {"error": {"message": "Error when running the model inference."}}, "choose model result": {"id": "lambdalabs/sd-image-variations-diffusers", "reason": "Only one model available."}}]
+2025-10-22 15:40:07,183 - root - DEBUG - Detect the image of dependency task (from args): public/<GENERATED>-1
+2025-10-22 15:40:07,183 - root - DEBUG - Parsed Task: {'task': 'openpose-control', 'id': 2, 'dep': [1], 'args': {'image': 'public/<GENERATED>-1'}}
+2025-10-22 15:40:07,183 - root - DEBUG - Chosen Model: {'id': 'openpose-control', 'reason': 'ControlNet is the best model for this task.'}
+2025-10-22 15:40:07,184 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:07,188 - urllib3.connectionpool - DEBUG - http://localhost:8005 "POST /models/openpose-control HTTP/1.1" 404 58
+2025-10-22 15:40:07,189 - root - WARNING - Inference error: {'message': 'Model openpose-control not loaded'}
+2025-10-22 15:40:07,189 - root - DEBUG -  Failure: {"input": "Please generate an image where a girl is reading a book, and her pose is the same as the boy in the image", "task": {"task": "openpose-control", "id": 2, "dep": [1], "args": {"image": "public/<GENERATED>-1"}}, "reason": "inference error: {'message': 'Model openpose-control not loaded'}", "op": "message"}
+2025-10-22 15:40:07,189 - root - DEBUG - Inference Result: {'error': {'message': 'Model openpose-control not loaded'}}
+2025-10-22 15:40:07,684 - root - DEBUG - Run task: 3 - openpose-text-to-image
+2025-10-22 15:40:07,685 - root - DEBUG - Deps: [{"task": {"task": "openpose-control", "id": 2, "dep": [1], "args": {"image": "public/<GENERATED>-1"}}, "inference result": {"error": {"message": "Model openpose-control not loaded"}}, "choose model result": {"id": "openpose-control", "reason": "ControlNet is the best model for this task."}}]
+2025-10-22 15:40:07,685 - root - DEBUG - Detect the image of dependency task (from args): public/<GENERATED>-1
+2025-10-22 15:40:07,685 - root - DEBUG - Parsed Task: {'task': 'openpose-text-to-image', 'id': 3, 'dep': [2], 'args': {'text': 'a girl is reading a book', 'image': 'public/<GENERATED>-1'}}
+2025-10-22 15:40:07,685 - root - DEBUG - Chosen Model: {'id': 'lllyasviel/sd-controlnet-openpose', 'reason': 'ControlNet is the best model for this task.'}
+2025-10-22 15:40:07,686 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005

@@ -1,0 +1,137 @@
+2025-10-21 12:07:12,964 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda:0
+2025-10-21 12:07:12,964 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 12:07:12,966 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-21 12:07:13,143 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-10-21 12:07:13,149 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-10-21 12:07:13,262 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-10-21 12:07:13,268 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-10-21 12:07:13,376 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-10-21 12:07:13,384 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-10-21 12:07:13,490 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-10-21 12:07:13,496 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+2025-10-21 12:07:13,602 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-10-21 12:07:13,608 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-10-21 12:07:13,715 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-10-21 12:07:13,721 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+2025-10-21 12:07:13,827 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-10-21 12:07:13,935 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-10-21 12:07:13,940 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+2025-10-21 12:07:14,129 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-10-21 12:07:14,135 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+2025-10-21 12:07:14,249 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-10-21 12:07:14,399 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-10-21 12:07:14,404 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-10-21 12:07:14,514 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6876
+2025-10-21 12:07:14,667 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-21 12:07:14,670 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /running HTTP/1.1" 200 17
+2025-10-21 12:07:14,694 - root - DEBUG - text-classification: 30 models
+2025-10-21 12:07:14,694 - root - DEBUG - token-classification: 30 models
+2025-10-21 12:07:14,694 - root - DEBUG - text2text-generation: 30 models
+2025-10-21 12:07:14,694 - root - DEBUG - summarization: 30 models
+2025-10-21 12:07:14,694 - root - DEBUG - translation: 30 models
+2025-10-21 12:07:14,694 - root - DEBUG - question-answering: 30 models
+2025-10-21 12:07:14,694 - root - DEBUG - conversational: 30 models
+2025-10-21 12:07:14,694 - root - DEBUG - text-generation: 30 models
+2025-10-21 12:07:14,694 - root - DEBUG - sentence-similarity: 30 models
+2025-10-21 12:07:14,694 - root - DEBUG - tabular-classification: 30 models
+2025-10-21 12:07:14,694 - root - DEBUG - object-detection: 30 models
+2025-10-21 12:07:14,694 - root - DEBUG - image-classification: 30 models
+2025-10-21 12:07:14,694 - root - DEBUG - image-to-text: 30 models
+2025-10-21 12:07:14,694 - root - DEBUG - text-to-image: 31 models
+2025-10-21 12:07:14,694 - root - DEBUG - image-to-image: 30 models
+2025-10-21 12:07:14,694 - root - DEBUG - visual-question-answering: 13 models
+2025-10-21 12:07:14,694 - root - DEBUG - document-question-answering: 22 models
+2025-10-21 12:07:14,695 - root - DEBUG - image-segmentation: 30 models
+2025-10-21 12:07:14,695 - root - DEBUG - depth-estimation: 30 models
+2025-10-21 12:07:14,695 - root - DEBUG - text-to-video: 8 models
+2025-10-21 12:07:14,695 - root - DEBUG - text-to-speech: 30 models
+2025-10-21 12:07:14,695 - root - DEBUG - automatic-speech-recognition: 30 models
+2025-10-21 12:07:14,695 - root - DEBUG - audio-to-audio: 30 models
+2025-10-21 12:07:14,695 - root - DEBUG - audio-classification: 30 models
+2025-10-21 12:07:14,695 - root - DEBUG - named-entity-recognition: 1 models
+2025-10-21 12:07:14,695 - root - DEBUG - optical-character-recognition: 1 models
+2025-10-21 12:07:14,695 - root - INFO - Welcome to Jarvis! A collaborative system that consists of an LLM as the controller and numerous expert models as collaborative executors. Jarvis can plan tasks, schedule Hugging Face models, generate friendly responses based on your requests, and help you with many things. Please enter your request (`exit` to exit).
+2025-10-21 12:07:21,152 - root - INFO - [ User ]: generate a short video from the text: a red sports car driving through a tunnel
+2025-10-21 12:07:21,152 - root - INFO - ********************************************************************************
+2025-10-21 12:07:21,152 - root - INFO - input: Generate a short video from the text: A red sports car driving through a tunnel
+2025-10-21 12:07:21,154 - root - DEBUG - Messages: [{'role': 'system', 'content': '#1 Task Planning Stage: You are a helpful AI assistant. Based on the user\'s request, you will recommend the best model from Hugging Face for the task, and explain why. The special tag "<GENERATED>-dep_id" refer to the one generated text/image/audio in the dependency task (Please consider whether the dependency task generates resources of this type.) and "dep_id" must be in "dep" list.  The "dep" field denotes the ids of the previous prerequisite tasks which generate a new resource that the current task relies on.  The "args" field must in ["text", "image", "audio"], nothing else.  The "task" field must be in ["token-classification", "optical-character-recognition", "named-entity-recognition", "text2text-generation", "summarization", "translation", "question-answering", "conversational", "text-generation", "sentence-similarity", "tabular-classification", "object-detection", "image-classification", "image-to-image", "image-to-text", "text-to-image", "text-to-video", "visual-question-answering", "document-question-answering", "image-segmentation", "depth-estimation", "text-to-speech", "automatic-speech-recognition", "audio-to-audio", "audio-classification", "canny-control", "hed-control", "mlsd-control", "normal-control", "openpose-control", "canny-text-to-image", "depth-text-to-image", "hed-text-to-image", "mlsd-text-to-image", "normal-text-to-image", "openpose-text-to-image", "seg-text-to-image"] You must respond in JSON format like: [\n  {\n    "task": task, \n    "id": task_id, \n    "dep": dependency_task_id, \n    "args": {\n      "text": text or <GENERATED>-dep_id, \n      "image": image_url or <GENERATED>-dep_id, \n      "audio": audio_url or <GENERATED>-dep_id\n    }\n  }\n] Respond with the JSON entry and ONLY the JSON entry! Here are some few-shot examples:'}, {'role': 'user', 'content': 'Give you some pictures e1.jpg, e2.png, e3.jpg, help me count the number of sheep?'}, {'role': 'assistant', 'content': '[{"task": "image-to-text", "id": 0, "dep": [-1], "args": {"image": "e1.jpg" }}, {"task": "object-detection", "id": 1, "dep": [-1], "args": {"image": "e1.jpg" }}, {"task": "visual-question-answering", "id": 2, "dep": [1], "args": {"image": "<GENERATED>-1", "text": "How many sheep in the picture"}} }}, {"task": "image-to-text", "id": 3, "dep": [-1], "args": {"image": "e2.png" }}, {"task": "object-detection", "id": 4, "dep": [-1], "args": {"image": "e2.png" }}, {"task": "visual-question-answering", "id": 5, "dep": [4], "args": {"image": "<GENERATED>-4", "text": "How many sheep in the picture"}} }}, {"task": "image-to-text", "id": 6, "dep": [-1], "args": {"image": "e3.jpg" }},  {"task": "object-detection", "id": 7, "dep": [-1], "args": {"image": "e3.jpg" }}, {"task": "visual-question-answering", "id": 8, "dep": [7], "args": {"image": "<GENERATED>-7", "text": "How many sheep in the picture"}}]'}, {'role': 'user', 'content': 'Look at /e.jpg, can you tell me how many objects in the picture? Give me a picture and video similar to this one.'}, {'role': 'assistant', 'content': '[{"task": "image-to-text", "id": 0, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "object-detection", "id": 1, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "visual-question-answering", "id": 2, "dep": [1], "args": {"image": "<GENERATED>-1", "text": "how many objects in the picture?" }}, {"task": "text-to-image", "id": 3, "dep": [0], "args": {"text": "<GENERATED-0>" }}, {"task": "image-to-image", "id": 4, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "text-to-video", "id": 5, "dep": [0], "args": {"text": "<GENERATED-0>" }}]'}, {'role': 'user', 'content': 'given a document /images/e.jpeg, answer me what is the student amount? And describe the image with your voice'}, {'role': 'assistant', 'content': '{"task": "document-question-answering", "id": 0, "dep": [-1], "args": {"image": "/images/e.jpeg", "text": "what is the student amount?" }}, {"task": "visual-question-answering", "id": 1, "dep": [-1], "args": {"image": "/images/e.jpeg", "text": "what is the student amount?" }}, {"task": "image-to-text", "id": 2, "dep": [-1], "args": {"image": "/images/e.jpg" }}, {"task": "text-to-speech", "id": 3, "dep": [2], "args": {"text": "<GENERATED>-2" }}]'}, {'role': 'user', 'content': 'Given an image /example.jpg, first generate a hed image, then based on the hed image generate a new image where a girl is reading a book'}, {'role': 'assistant', 'content': '[{"task": "openpose-control", "id": 0, "dep": [-1], "args": {"image": "/example.jpg" }},  {"task": "openpose-text-to-image", "id": 1, "dep": [0], "args": {"text": "a girl is reading a book", "image": "<GENERATED>-0" }}]'}, {'role': 'user', 'content': "please show me a video and an image of (based on the text) 'a boy is running' and dub it"}, {'role': 'assistant', 'content': '[{"task": "text-to-video", "id": 0, "dep": [-1], "args": {"text": "a boy is running" }}, {"task": "text-to-speech", "id": 1, "dep": [-1], "args": {"text": "a boy is running" }}, {"task": "text-to-image", "id": 2, "dep": [-1], "args": {"text": "a boy is running" }}]'}, {'role': 'user', 'content': 'please show me a joke and an image of cat'}, {'role': 'assistant', 'content': '[{"task": "conversational", "id": 0, "dep": [-1], "args": {"text": "please show me a joke of cat" }}, {"task": "text-to-image", "id": 1, "dep": [-1], "args": {"text": "a photo of cat" }}]'}, {'role': 'user', 'content': 'The chat log [ [] ] may contain the resources I mentioned. Now I input { Generate a short video from the text: A red sports car driving through a tunnel }. Pay attention to the input and output types of tasks and the dependencies between tasks.'}]
+2025-10-21 12:07:21,283 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/meta-llama/Llama-3.3-70B-Instruct?expand=inferenceProviderMapping HTTP/1.1" 200 1321
+2025-10-21 12:07:21,285 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): router.huggingface.co:443
+2025-10-21 12:07:21,977 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /nebius/v1/chat/completions HTTP/1.1" 200 None
+2025-10-21 12:07:21,978 - root - DEBUG - [{'task': 'text-to-video', 'id': 0, 'dep': [-1], 'args': {'text': 'A red sports car driving through a tunnel'}}]
+2025-10-21 12:07:21,978 - root - DEBUG - Run task: 0 - text-to-video
+2025-10-21 12:07:21,978 - root - DEBUG - Deps: []
+2025-10-21 12:07:21,979 - root - DEBUG - Parsed Task: {'task': 'text-to-video', 'id': 0, 'dep': [-1], 'args': {'text': 'A red sports car driving through a tunnel'}}
+2025-10-21 12:07:21,980 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-21 12:07:21,981 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-21 12:07:21,984 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-21 12:07:21,986 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-21 12:07:21,987 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-21 12:07:21,989 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/damo-vilab/modelscope-damo-text-to-video-synthesis HTTP/1.1" 200 17
+2025-10-21 12:07:21,991 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-21 12:07:21,991 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-21 12:07:21,993 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-21 12:07:21,997 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/damo-vilab/text-to-video-ms-1.7b HTTP/1.1" 200 16
+2025-10-21 12:07:21,998 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-21 12:07:21,999 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-21 12:07:22,000 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-21 12:07:22,001 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-21 12:07:22,003 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-21 12:07:22,004 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-21 12:07:22,004 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Tune-A-Video-library/mo-di-bear-guitar HTTP/1.1" 200 17
+2025-10-21 12:07:22,005 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-21 12:07:22,008 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-21 12:07:22,008 - root - DEBUG - Model: damo-vilab/modelscope-damo-text-to-video-synthesis | Status: False | Source: None
+2025-10-21 12:07:22,010 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/damo-vilab/text-to-video-ms-1.7b-legacy HTTP/1.1" 200 17
+2025-10-21 12:07:22,011 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Tune-A-Video-library/redshift-man-skiing HTTP/1.1" 200 17
+2025-10-21 12:07:22,015 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/chavinlo/TempoFunk HTTP/1.1" 200 17
+2025-10-21 12:07:22,016 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/camenduru/text2-video-zero HTTP/1.1" 200 17
+2025-10-21 12:07:22,018 - root - DEBUG - Model: damo-vilab/text-to-video-ms-1.7b | Status: True | Source: local
+2025-10-21 12:07:22,023 - root - DEBUG - Model: Tune-A-Video-library/mo-di-bear-guitar | Status: False | Source: None
+2025-10-21 12:07:22,023 - root - DEBUG - Model: damo-vilab/text-to-video-ms-1.7b-legacy | Status: False | Source: None
+2025-10-21 12:07:22,023 - root - DEBUG - Model: Tune-A-Video-library/redshift-man-skiing | Status: False | Source: None
+2025-10-21 12:07:22,023 - root - DEBUG - Model: chavinlo/TempoFunk | Status: False | Source: None
+2025-10-21 12:07:22,023 - root - DEBUG - Model: camenduru/text2-video-zero | Status: False | Source: None
+2025-10-21 12:07:22,023 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/provin/test HTTP/1.1" 200 17
+2025-10-21 12:07:22,024 - root - DEBUG - Model: provin/test | Status: False | Source: None
+2025-10-21 12:07:22,260 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/Tune-A-Video-library/mo-di-bear-guitar HTTP/1.1" 200 1936
+2025-10-21 12:07:22,261 - root - DEBUG - Model: Tune-A-Video-library/mo-di-bear-guitar | Status: False | Source: None
+2025-10-21 12:07:22,268 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/damo-vilab/modelscope-damo-text-to-video-synthesis HTTP/1.1" 307 96
+2025-10-21 12:07:22,292 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/damo-vilab/text-to-video-ms-1.7b-legacy HTTP/1.1" 307 85
+2025-10-21 12:07:22,301 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/damo-vilab/text-to-video-ms-1.7b HTTP/1.1" 307 78
+2025-10-21 12:07:22,316 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/chavinlo/TempoFunk HTTP/1.1" 200 695
+2025-10-21 12:07:22,316 - root - DEBUG - Model: chavinlo/TempoFunk | Status: False | Source: None
+2025-10-21 12:07:22,317 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/Tune-A-Video-library/redshift-man-skiing HTTP/1.1" 200 1939
+2025-10-21 12:07:22,317 - root - DEBUG - Model: Tune-A-Video-library/redshift-man-skiing | Status: False | Source: None
+2025-10-21 12:07:22,320 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/camenduru/text2-video-zero HTTP/1.1" 200 34167
+2025-10-21 12:07:22,323 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/provin/test HTTP/1.1" 200 619
+2025-10-21 12:07:22,323 - root - DEBUG - Model: camenduru/text2-video-zero | Status: False | Source: None
+2025-10-21 12:07:22,323 - root - DEBUG - Model: provin/test | Status: False | Source: None
+2025-10-21 12:07:22,404 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/ali-vilab/text-to-video-ms-1.7b-legacy HTTP/1.1" 200 1509
+2025-10-21 12:07:22,405 - root - DEBUG - Model: damo-vilab/text-to-video-ms-1.7b-legacy | Status: False | Source: None
+2025-10-21 12:07:22,419 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/ali-vilab/modelscope-damo-text-to-video-synthesis HTTP/1.1" 200 5139
+2025-10-21 12:07:22,420 - root - DEBUG - Model: damo-vilab/modelscope-damo-text-to-video-synthesis | Status: False | Source: None
+2025-10-21 12:07:22,437 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/ali-vilab/text-to-video-ms-1.7b HTTP/1.1" 200 4622
+2025-10-21 12:07:22,438 - root - DEBUG - Model: damo-vilab/text-to-video-ms-1.7b | Status: False | Source: None
+2025-10-21 12:07:22,439 - root - DEBUG - avaliable models on text-to-video: {'local': ['damo-vilab/text-to-video-ms-1.7b'], 'huggingface': []}
+2025-10-21 12:07:22,439 - root - DEBUG - chosen model: {'id': 'damo-vilab/text-to-video-ms-1.7b', 'reason': 'Only one model available.'}
+2025-10-21 12:07:22,440 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-21 12:07:43,191 - urllib3.connectionpool - DEBUG - http://localhost:8005 "POST /models/damo-vilab/text-to-video-ms-1.7b HTTP/1.1" 200 64
+2025-10-21 12:07:43,192 - root - WARNING - Inference error: {'message': 'Error when running the model inference.'}
+2025-10-21 12:07:43,192 - root - DEBUG -  Failure: {"input": "Generate a short video from the text: A red sports car driving through a tunnel", "task": {"task": "text-to-video", "id": 0, "dep": [-1], "args": {"text": "A red sports car driving through a tunnel"}}, "reason": "inference error: {'message': 'Error when running the model inference.'}", "op": "message"}
+2025-10-21 12:07:43,194 - root - DEBUG - Inference Result: {'error': {'message': 'Error when running the model inference.'}}
+2025-10-21 12:07:43,194 - root - DEBUG - {0: {'task': {'task': 'text-to-video', 'id': 0, 'dep': [-1], 'args': {'text': 'A red sports car driving through a tunnel'}}, 'inference result': {'error': {'message': 'Error when running the model inference.'}}, 'choose model result': {'id': 'damo-vilab/text-to-video-ms-1.7b', 'reason': 'Only one model available.'}}}
+2025-10-21 12:07:45,133 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /nebius/v1/chat/completions HTTP/1.1" 200 None
+2025-10-21 12:07:45,134 - root - DEBUG - I'm happy to help you with generating a short video from the text: A red sports car driving through a tunnel. 
+<EXPLANATION> Unfortunately, I couldn't generate a video based on your request. I used the damo-vilab/text-to-video-ms-1.7b model to try and create the video, but the model inference resulted in an error. The error message indicated that there was a problem running the model inference, and I couldn't retrieve any output values or confidence scores. As a result, I couldn't produce a video that meets your request. If you'd like, I can try to help you explore other options or provide more information on the error I encountered. </EXPLANATION>
+The path to the video is: None
+2025-10-21 12:07:45,140 - retriever - DEBUG - Loaded 31 entries from data/explanations.jsonl
+2025-10-21 12:07:45,410 - retriever - DEBUG - Best similarity = 0.987 (threshold = 0.95)
+2025-10-21 12:07:45,410 - retriever - INFO - Retrieved similar explanation (sim=0.987)
+2025-10-21 12:07:47,206 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /nebius/v1/chat/completions HTTP/1.1" 200 None
+2025-10-21 12:07:47,207 - judge - INFO - Judge decided: combined (Explanation A is more accurate due to the error message, while Explanation B provides useful context on the model's capabilities.)
+2025-10-21 12:07:47,207 - root - DEBUG - Final explanation chosen by Judge: Unfortunately, I couldn't generate a video based on your request. I used the damo-vilab/text-to-video-ms-1.7b model to try and create the video, but the model inference resulted in an error. The error message indicated that there was a problem running the model inference, and I couldn't retrieve any output values or confidence scores. As a result, I couldn't produce a video that meets your request. If you'd like, I can try to help you explore other options or provide more information on the error I encountered.
+2025-10-21 12:07:47,207 - root - DEBUG -  Success: {"input": "Generate a short video from the text: A red sports car driving through a tunnel", "task": "[{\"task\": \"text-to-video\", \"id\": 0, \"dep\": [-1], \"args\": {\"text\": \"A red sports car driving through a tunnel\" }}]", "results": {"0": {"task": {"task": "text-to-video", "id": 0, "dep": [-1], "args": {"text": "A red sports car driving through a tunnel"}}, "inference result": {"error": {"message": "Error when running the model inference."}}, "choose model result": {"id": "damo-vilab/text-to-video-ms-1.7b", "reason": "Only one model available."}}}, "response": "I'm happy to help you with generating a short video from the text: A red sports car driving through a tunnel. \nUnfortunately, I couldn't generate a video based on your request. I used the damo-vilab/text-to-video-ms-1.7b model to try and create the video, but the model inference resulted in an error. The error message indicated that there was a problem running the model inference, and I couldn't retrieve any output values or confidence scores. As a result, I couldn't produce a video that meets your request. If you'd like, I can try to help you explore other options or provide more information on the error I encountered.\nThe path to the video is: None", "during": 26.054944038391113, "op": "response"}
+2025-10-21 12:07:47,208 - root - INFO - response: I'm happy to help you with generating a short video from the text: A red sports car driving through a tunnel. 
+Unfortunately, I couldn't generate a video based on your request. I used the damo-vilab/text-to-video-ms-1.7b model to try and create the video, but the model inference resulted in an error. The error message indicated that there was a problem running the model inference, and I couldn't retrieve any output values or confidence scores. As a result, I couldn't produce a video that meets your request. If you'd like, I can try to help you explore other options or provide more information on the error I encountered.
+The path to the video is: None

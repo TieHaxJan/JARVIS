@@ -1,0 +1,440 @@
+2025-10-22 15:40:14,784 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda:0
+2025-10-22 15:40:14,784 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-22 15:40:14,786 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:14,925 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-10-22 15:40:14,931 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-10-22 15:40:15,041 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-10-22 15:40:15,045 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-10-22 15:40:15,154 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-10-22 15:40:15,160 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-10-22 15:40:15,267 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-10-22 15:40:15,274 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+2025-10-22 15:40:15,381 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-10-22 15:40:15,386 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-10-22 15:40:15,493 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-10-22 15:40:15,497 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+2025-10-22 15:40:15,606 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-10-22 15:40:15,719 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-10-22 15:40:15,725 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+2025-10-22 15:40:15,938 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-10-22 15:40:15,944 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+2025-10-22 15:40:16,054 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-10-22 15:40:16,211 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-10-22 15:40:16,217 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-10-22 15:40:16,327 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6876
+2025-10-22 15:40:16,491 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:16,495 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /running HTTP/1.1" 200 17
+2025-10-22 15:40:16,512 - root - DEBUG - text-classification: 30 models
+2025-10-22 15:40:16,512 - root - DEBUG - token-classification: 30 models
+2025-10-22 15:40:16,512 - root - DEBUG - text2text-generation: 30 models
+2025-10-22 15:40:16,513 - root - DEBUG - summarization: 30 models
+2025-10-22 15:40:16,513 - root - DEBUG - translation: 30 models
+2025-10-22 15:40:16,513 - root - DEBUG - question-answering: 30 models
+2025-10-22 15:40:16,513 - root - DEBUG - conversational: 30 models
+2025-10-22 15:40:16,513 - root - DEBUG - text-generation: 30 models
+2025-10-22 15:40:16,513 - root - DEBUG - sentence-similarity: 30 models
+2025-10-22 15:40:16,513 - root - DEBUG - tabular-classification: 30 models
+2025-10-22 15:40:16,513 - root - DEBUG - object-detection: 30 models
+2025-10-22 15:40:16,513 - root - DEBUG - image-classification: 30 models
+2025-10-22 15:40:16,513 - root - DEBUG - image-to-text: 30 models
+2025-10-22 15:40:16,513 - root - DEBUG - text-to-image: 31 models
+2025-10-22 15:40:16,513 - root - DEBUG - image-to-image: 30 models
+2025-10-22 15:40:16,513 - root - DEBUG - visual-question-answering: 13 models
+2025-10-22 15:40:16,513 - root - DEBUG - document-question-answering: 22 models
+2025-10-22 15:40:16,513 - root - DEBUG - image-segmentation: 30 models
+2025-10-22 15:40:16,513 - root - DEBUG - depth-estimation: 30 models
+2025-10-22 15:40:16,513 - root - DEBUG - text-to-video: 8 models
+2025-10-22 15:40:16,513 - root - DEBUG - text-to-speech: 30 models
+2025-10-22 15:40:16,513 - root - DEBUG - automatic-speech-recognition: 30 models
+2025-10-22 15:40:16,513 - root - DEBUG - audio-to-audio: 30 models
+2025-10-22 15:40:16,513 - root - DEBUG - audio-classification: 30 models
+2025-10-22 15:40:16,513 - root - DEBUG - named-entity-recognition: 1 models
+2025-10-22 15:40:16,513 - root - DEBUG - optical-character-recognition: 1 models
+2025-10-22 15:40:16,513 - root - INFO - Welcome to Jarvis! A collaborative system that consists of an LLM as the controller and numerous expert models as collaborative executors. Jarvis can plan tasks, schedule Hugging Face models, generate friendly responses based on your requests, and help you with many things. Please enter your request (`exit` to exit).
+2025-10-22 15:40:19,653 - root - INFO - [ User ]: please generate an image where a girl is reading a book, and her pose is the same as the boy in the image example.jpg, then please describe the new image with your voice.
+2025-10-22 15:40:19,653 - root - INFO - ********************************************************************************
+2025-10-22 15:40:19,653 - root - INFO - input: Please generate an image where a girl is reading a book, and her pose is the same as the boy in the image example.jpg, then please describe the new image with your voice.
+2025-10-22 15:40:19,655 - root - DEBUG - Messages: [{'role': 'system', 'content': '#1 Task Planning Stage: You are a helpful AI assistant. Based on the user\'s request, you will recommend the best model from Hugging Face for the task, and explain why. The special tag "<GENERATED>-dep_id" refer to the one generated text/image/audio in the dependency task (Please consider whether the dependency task generates resources of this type.) and "dep_id" must be in "dep" list.  The "dep" field denotes the ids of the previous prerequisite tasks which generate a new resource that the current task relies on.  The "args" field must in ["text", "image", "audio"], nothing else.  The "task" field must be in ["token-classification", "optical-character-recognition", "named-entity-recognition", "text2text-generation", "summarization", "translation", "question-answering", "conversational", "text-generation", "sentence-similarity", "tabular-classification", "object-detection", "image-classification", "image-to-image", "image-to-text", "text-to-image", "text-to-video", "visual-question-answering", "document-question-answering", "image-segmentation", "depth-estimation", "text-to-speech", "automatic-speech-recognition", "audio-to-audio", "audio-classification", "canny-control", "hed-control", "mlsd-control", "normal-control", "openpose-control", "canny-text-to-image", "depth-text-to-image", "hed-text-to-image", "mlsd-text-to-image", "normal-text-to-image", "openpose-text-to-image", "seg-text-to-image"] You must respond in JSON format like: [\n  {\n    "task": task, \n    "id": task_id, \n    "dep": dependency_task_id, \n    "args": {\n      "text": text or <GENERATED>-dep_id, \n      "image": image_url or <GENERATED>-dep_id, \n      "audio": audio_url or <GENERATED>-dep_id\n    }\n  }\n] Respond with the JSON entry and ONLY the JSON entry! Here are some few-shot examples:'}, {'role': 'user', 'content': 'Give you some pictures e1.jpg, e2.png, e3.jpg, help me count the number of sheep?'}, {'role': 'assistant', 'content': '[{"task": "image-to-text", "id": 0, "dep": [-1], "args": {"image": "e1.jpg" }}, {"task": "object-detection", "id": 1, "dep": [-1], "args": {"image": "e1.jpg" }}, {"task": "visual-question-answering", "id": 2, "dep": [1], "args": {"image": "<GENERATED>-1", "text": "How many sheep in the picture"}} }}, {"task": "image-to-text", "id": 3, "dep": [-1], "args": {"image": "e2.png" }}, {"task": "object-detection", "id": 4, "dep": [-1], "args": {"image": "e2.png" }}, {"task": "visual-question-answering", "id": 5, "dep": [4], "args": {"image": "<GENERATED>-4", "text": "How many sheep in the picture"}} }}, {"task": "image-to-text", "id": 6, "dep": [-1], "args": {"image": "e3.jpg" }},  {"task": "object-detection", "id": 7, "dep": [-1], "args": {"image": "e3.jpg" }}, {"task": "visual-question-answering", "id": 8, "dep": [7], "args": {"image": "<GENERATED>-7", "text": "How many sheep in the picture"}}]'}, {'role': 'user', 'content': 'Look at /e.jpg, can you tell me how many objects in the picture? Give me a picture and video similar to this one.'}, {'role': 'assistant', 'content': '[{"task": "image-to-text", "id": 0, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "object-detection", "id": 1, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "visual-question-answering", "id": 2, "dep": [1], "args": {"image": "<GENERATED>-1", "text": "how many objects in the picture?" }}, {"task": "text-to-image", "id": 3, "dep": [0], "args": {"text": "<GENERATED-0>" }}, {"task": "image-to-image", "id": 4, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "text-to-video", "id": 5, "dep": [0], "args": {"text": "<GENERATED-0>" }}]'}, {'role': 'user', 'content': 'given a document /images/e.jpeg, answer me what is the student amount? And describe the image with your voice'}, {'role': 'assistant', 'content': '{"task": "document-question-answering", "id": 0, "dep": [-1], "args": {"image": "/images/e.jpeg", "text": "what is the student amount?" }}, {"task": "visual-question-answering", "id": 1, "dep": [-1], "args": {"image": "/images/e.jpeg", "text": "what is the student amount?" }}, {"task": "image-to-text", "id": 2, "dep": [-1], "args": {"image": "/images/e.jpg" }}, {"task": "text-to-speech", "id": 3, "dep": [2], "args": {"text": "<GENERATED>-2" }}]'}, {'role': 'user', 'content': 'Given an image /example.jpg, first generate a hed image, then based on the hed image generate a new image where a girl is reading a book'}, {'role': 'assistant', 'content': '[{"task": "openpose-control", "id": 0, "dep": [-1], "args": {"image": "/example.jpg" }},  {"task": "openpose-text-to-image", "id": 1, "dep": [0], "args": {"text": "a girl is reading a book", "image": "<GENERATED>-0" }}]'}, {'role': 'user', 'content': "please show me a video and an image of (based on the text) 'a boy is running' and dub it"}, {'role': 'assistant', 'content': '[{"task": "text-to-video", "id": 0, "dep": [-1], "args": {"text": "a boy is running" }}, {"task": "text-to-speech", "id": 1, "dep": [-1], "args": {"text": "a boy is running" }}, {"task": "text-to-image", "id": 2, "dep": [-1], "args": {"text": "a boy is running" }}]'}, {'role': 'user', 'content': 'please show me a joke and an image of cat'}, {'role': 'assistant', 'content': '[{"task": "conversational", "id": 0, "dep": [-1], "args": {"text": "please show me a joke of cat" }}, {"task": "text-to-image", "id": 1, "dep": [-1], "args": {"text": "a photo of cat" }}]'}, {'role': 'user', 'content': 'The chat log [ [] ] may contain the resources I mentioned. Now I input { Please generate an image where a girl is reading a book, and her pose is the same as the boy in the image example.jpg, then please describe the new image with your voice. }. Pay attention to the input and output types of tasks and the dependencies between tasks.'}]
+2025-10-22 15:40:19,766 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/meta-llama/Llama-3.3-70B-Instruct?expand=inferenceProviderMapping HTTP/1.1" 200 1321
+2025-10-22 15:40:19,768 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): router.huggingface.co:443
+2025-10-22 15:40:21,332 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /nebius/v1/chat/completions HTTP/1.1" 200 None
+2025-10-22 15:40:21,333 - root - DEBUG - [{'task': 'openpose-control', 'id': 0, 'dep': [-1], 'args': {'image': 'example.jpg'}}, {'task': 'openpose-text-to-image', 'id': 1, 'dep': [0], 'args': {'text': 'a girl is reading a book', 'image': '<GENERATED>-0'}}, {'task': 'image-to-text', 'id': 2, 'dep': [1], 'args': {'image': '<GENERATED>-1'}}, {'task': 'text-to-speech', 'id': 3, 'dep': [2], 'args': {'text': '<GENERATED>-2'}}]
+2025-10-22 15:40:21,334 - root - DEBUG - Run task: 0 - openpose-control
+2025-10-22 15:40:21,334 - root - DEBUG - Deps: []
+2025-10-22 15:40:21,334 - root - DEBUG - Parsed Task: {'task': 'openpose-control', 'id': 0, 'dep': [-1], 'args': {'image': 'public/example.jpg'}}
+2025-10-22 15:40:21,335 - root - DEBUG - Chosen Model: {'id': 'openpose-control', 'reason': 'ControlNet is the best model for this task.'}
+2025-10-22 15:40:21,335 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:21,338 - urllib3.connectionpool - DEBUG - http://localhost:8005 "POST /models/openpose-control HTTP/1.1" 404 58
+2025-10-22 15:40:21,339 - root - WARNING - Inference error: {'message': 'Model openpose-control not loaded'}
+2025-10-22 15:40:21,339 - root - DEBUG -  Failure: {"input": "Please generate an image where a girl is reading a book, and her pose is the same as the boy in the image example.jpg, then please describe the new image with your voice.", "task": {"task": "openpose-control", "id": 0, "dep": [-1], "args": {"image": "public/example.jpg"}}, "reason": "inference error: {'message': 'Model openpose-control not loaded'}", "op": "message"}
+2025-10-22 15:40:21,339 - root - DEBUG - Inference Result: {'error': {'message': 'Model openpose-control not loaded'}}
+2025-10-22 15:40:21,835 - root - DEBUG - Run task: 1 - openpose-text-to-image
+2025-10-22 15:40:21,836 - root - DEBUG - Deps: [{"task": {"task": "openpose-control", "id": 0, "dep": [-1], "args": {"image": "public/example.jpg"}}, "inference result": {"error": {"message": "Model openpose-control not loaded"}}, "choose model result": {"id": "openpose-control", "reason": "ControlNet is the best model for this task."}}]
+2025-10-22 15:40:21,836 - root - DEBUG - Detect the image of dependency task (from args): public/example.jpg
+2025-10-22 15:40:21,836 - root - DEBUG - Parsed Task: {'task': 'openpose-text-to-image', 'id': 1, 'dep': [0], 'args': {'text': 'a girl is reading a book', 'image': 'public/example.jpg'}}
+2025-10-22 15:40:21,836 - root - DEBUG - Chosen Model: {'id': 'lllyasviel/sd-controlnet-openpose', 'reason': 'ControlNet is the best model for this task.'}
+2025-10-22 15:40:21,837 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:21,877 - urllib3.connectionpool - DEBUG - http://localhost:8005 "POST /models/lllyasviel/sd-controlnet-openpose HTTP/1.1" 200 64
+2025-10-22 15:40:21,877 - root - WARNING - Inference error: {'message': 'Error when running the model inference.'}
+2025-10-22 15:40:21,877 - root - DEBUG -  Failure: {"input": "Please generate an image where a girl is reading a book, and her pose is the same as the boy in the image example.jpg, then please describe the new image with your voice.", "task": {"task": "openpose-text-to-image", "id": 1, "dep": [0], "args": {"text": "a girl is reading a book", "image": "public/example.jpg"}}, "reason": "inference error: {'message': 'Error when running the model inference.'}", "op": "message"}
+2025-10-22 15:40:21,877 - root - DEBUG - Inference Result: {'error': {'message': 'Error when running the model inference.'}}
+2025-10-22 15:40:22,336 - root - DEBUG - Run task: 2 - image-to-text
+2025-10-22 15:40:22,336 - root - DEBUG - Deps: [{"task": {"task": "openpose-text-to-image", "id": 1, "dep": [0], "args": {"text": "a girl is reading a book", "image": "public/example.jpg"}}, "inference result": {"error": {"message": "Error when running the model inference."}}, "choose model result": {"id": "lllyasviel/sd-controlnet-openpose", "reason": "ControlNet is the best model for this task."}}]
+2025-10-22 15:40:22,336 - root - DEBUG - Detect the text of dependency task (from args): a girl is reading a book
+2025-10-22 15:40:22,336 - root - DEBUG - Detect the image of dependency task (from args): public/example.jpg
+2025-10-22 15:40:22,337 - root - DEBUG - Parsed Task: {'task': 'image-to-text', 'id': 2, 'dep': [1], 'args': {'image': 'public/example.jpg'}}
+2025-10-22 15:40:22,339 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:22,340 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:22,341 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:22,342 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:22,343 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:22,345 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:22,346 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/nlpconnect/vit-gpt2-image-captioning HTTP/1.1" 200 16
+2025-10-22 15:40:22,346 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:22,347 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:22,348 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:22,350 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/trocr-base-printed HTTP/1.1" 200 16
+2025-10-22 15:40:22,351 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:22,353 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:22,353 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Salesforce/blip-image-captioning-base HTTP/1.1" 200 17
+2025-10-22 15:40:22,353 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:22,354 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Salesforce/blip-image-captioning-large HTTP/1.1" 200 17
+2025-10-22 15:40:22,355 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:22,356 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:22,357 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:22,358 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:22,359 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:22,360 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/trocr-base-handwritten HTTP/1.1" 200 17
+2025-10-22 15:40:22,360 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:22,361 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:22,362 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:22,363 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/naver-clova-ix/donut-base HTTP/1.1" 200 17
+2025-10-22 15:40:22,364 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:22,365 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:22,366 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:22,366 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:22,369 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:22,370 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:22,372 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:22,372 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Salesforce/blip2-opt-2.7b HTTP/1.1" 200 17
+2025-10-22 15:40:22,372 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:22,373 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/pix2struct-base HTTP/1.1" 200 17
+2025-10-22 15:40:22,374 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:22,376 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:22,376 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Salesforce/blip2-opt-6.7b HTTP/1.1" 200 17
+2025-10-22 15:40:22,377 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:22,379 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:22,381 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:22,381 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:22,382 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/kha-white/manga-ocr-base HTTP/1.1" 200 17
+2025-10-22 15:40:22,383 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:22,384 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:22,385 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Salesforce/blip2-flan-t5-xxl HTTP/1.1" 200 17
+2025-10-22 15:40:22,386 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:22,386 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/ydshieh/vit-gpt2-coco-en HTTP/1.1" 200 17
+2025-10-22 15:40:22,387 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:22,388 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:22,390 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:22,391 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:22,391 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:22,392 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:22,393 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:22,393 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/git-large-coco HTTP/1.1" 200 17
+2025-10-22 15:40:22,395 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:22,395 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/pix2struct-textcaps-base HTTP/1.1" 200 17
+2025-10-22 15:40:22,396 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:22,398 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:22,399 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:22,400 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:22,401 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/naver-clova-ix/donut-base-finetuned-cord-v2 HTTP/1.1" 200 17
+2025-10-22 15:40:22,402 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:22,404 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:22,406 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Salesforce/blip2-flan-t5-xl HTTP/1.1" 200 17
+2025-10-22 15:40:22,408 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:22,408 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:22,413 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/pix2struct-ocrvqa-large HTTP/1.1" 200 17
+2025-10-22 15:40:22,413 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/trocr-large-handwritten HTTP/1.1" 200 17
+2025-10-22 15:40:22,415 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:22,418 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:22,419 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:22,421 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/pix2struct-ai2d-base HTTP/1.1" 200 17
+2025-10-22 15:40:22,421 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:22,422 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:22,424 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:22,425 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:22,425 - root - DEBUG - Model: nlpconnect/vit-gpt2-image-captioning | Status: True | Source: local
+2025-10-22 15:40:22,428 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/pix2struct-docvqa-large HTTP/1.1" 200 17
+2025-10-22 15:40:22,429 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/trocr-large-printed HTTP/1.1" 200 17
+2025-10-22 15:40:22,430 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/trocr-small-printed HTTP/1.1" 200 17
+2025-10-22 15:40:22,432 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/keras-io/ocr-for-captcha HTTP/1.1" 200 17
+2025-10-22 15:40:22,436 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/git-large-textcaps HTTP/1.1" 200 17
+2025-10-22 15:40:22,437 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Salesforce/blip2-flan-t5-xl-coco HTTP/1.1" 200 17
+2025-10-22 15:40:22,440 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/dhansmair/flamingo-mini HTTP/1.1" 200 17
+2025-10-22 15:40:22,440 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/tuman/vit-rugpt2-image-captioning HTTP/1.1" 200 17
+2025-10-22 15:40:22,444 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/git-base HTTP/1.1" 200 17
+2025-10-22 15:40:22,445 - root - DEBUG - Model: microsoft/trocr-base-printed | Status: True | Source: local
+2025-10-22 15:40:22,446 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/trocr-small-handwritten HTTP/1.1" 200 17
+2025-10-22 15:40:22,447 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/pix2struct-textcaps-large HTTP/1.1" 200 17
+2025-10-22 15:40:22,451 - root - DEBUG - Model: Salesforce/blip-image-captioning-base | Status: False | Source: None
+2025-10-22 15:40:22,452 - root - DEBUG - Model: Salesforce/blip-image-captioning-large | Status: False | Source: None
+2025-10-22 15:40:22,453 - root - DEBUG - Model: microsoft/trocr-base-handwritten | Status: False | Source: None
+2025-10-22 15:40:22,453 - root - DEBUG - Model: naver-clova-ix/donut-base | Status: False | Source: None
+2025-10-22 15:40:22,453 - root - DEBUG - Model: Salesforce/blip2-opt-2.7b | Status: False | Source: None
+2025-10-22 15:40:22,453 - root - DEBUG - Model: google/pix2struct-base | Status: False | Source: None
+2025-10-22 15:40:22,453 - root - DEBUG - Model: Salesforce/blip2-opt-6.7b | Status: False | Source: None
+2025-10-22 15:40:22,453 - root - DEBUG - Model: kha-white/manga-ocr-base | Status: False | Source: None
+2025-10-22 15:40:22,453 - root - DEBUG - Model: Salesforce/blip2-flan-t5-xxl | Status: False | Source: None
+2025-10-22 15:40:22,453 - root - DEBUG - Model: ydshieh/vit-gpt2-coco-en | Status: False | Source: None
+2025-10-22 15:40:22,453 - root - DEBUG - Model: microsoft/git-large-coco | Status: False | Source: None
+2025-10-22 15:40:22,453 - root - DEBUG - Model: google/pix2struct-textcaps-base | Status: False | Source: None
+2025-10-22 15:40:22,453 - root - DEBUG - Model: naver-clova-ix/donut-base-finetuned-cord-v2 | Status: False | Source: None
+2025-10-22 15:40:22,453 - root - DEBUG - Model: Salesforce/blip2-flan-t5-xl | Status: False | Source: None
+2025-10-22 15:40:22,453 - root - DEBUG - Model: google/pix2struct-ocrvqa-large | Status: False | Source: None
+2025-10-22 15:40:22,453 - root - DEBUG - Model: microsoft/trocr-large-handwritten | Status: False | Source: None
+2025-10-22 15:40:22,453 - root - DEBUG - Model: google/pix2struct-ai2d-base | Status: False | Source: None
+2025-10-22 15:40:22,453 - root - DEBUG - Model: google/pix2struct-docvqa-large | Status: False | Source: None
+2025-10-22 15:40:22,453 - root - DEBUG - Model: microsoft/trocr-large-printed | Status: False | Source: None
+2025-10-22 15:40:22,453 - root - DEBUG - Model: microsoft/trocr-small-printed | Status: False | Source: None
+2025-10-22 15:40:22,453 - root - DEBUG - Model: keras-io/ocr-for-captcha | Status: False | Source: None
+2025-10-22 15:40:22,453 - root - DEBUG - Model: microsoft/git-large-textcaps | Status: False | Source: None
+2025-10-22 15:40:22,453 - root - DEBUG - Model: Salesforce/blip2-flan-t5-xl-coco | Status: False | Source: None
+2025-10-22 15:40:22,453 - root - DEBUG - Model: dhansmair/flamingo-mini | Status: False | Source: None
+2025-10-22 15:40:22,453 - root - DEBUG - Model: tuman/vit-rugpt2-image-captioning | Status: False | Source: None
+2025-10-22 15:40:22,453 - root - DEBUG - Model: microsoft/git-base | Status: False | Source: None
+2025-10-22 15:40:22,453 - root - DEBUG - Model: microsoft/trocr-small-handwritten | Status: False | Source: None
+2025-10-22 15:40:22,453 - root - DEBUG - Model: google/pix2struct-textcaps-large | Status: False | Source: None
+2025-10-22 15:40:23,010 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/Salesforce/blip-image-captioning-base HTTP/1.1" 200 4435
+2025-10-22 15:40:23,012 - root - DEBUG - Model: Salesforce/blip-image-captioning-base | Status: False | Source: None
+2025-10-22 15:40:23,037 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/microsoft/trocr-base-printed HTTP/1.1" 200 5735
+2025-10-22 15:40:23,038 - root - DEBUG - Model: microsoft/trocr-base-printed | Status: False | Source: None
+2025-10-22 15:40:23,053 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/nlpconnect/vit-gpt2-image-captioning HTTP/1.1" 200 5368
+2025-10-22 15:40:23,054 - root - DEBUG - Model: nlpconnect/vit-gpt2-image-captioning | Status: False | Source: None
+2025-10-22 15:40:23,062 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/Salesforce/blip-image-captioning-large HTTP/1.1" 200 4501
+2025-10-22 15:40:23,062 - root - DEBUG - Model: Salesforce/blip-image-captioning-large | Status: False | Source: None
+2025-10-22 15:40:23,106 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/naver-clova-ix/donut-base HTTP/1.1" 200 2501
+2025-10-22 15:40:23,107 - root - DEBUG - Model: naver-clova-ix/donut-base | Status: False | Source: None
+2025-10-22 15:40:23,141 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/google/pix2struct-ocrvqa-large HTTP/1.1" 200 1553
+2025-10-22 15:40:23,142 - root - DEBUG - Model: google/pix2struct-ocrvqa-large | Status: False | Source: None
+2025-10-22 15:40:23,180 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/microsoft/trocr-small-printed HTTP/1.1" 200 3149
+2025-10-22 15:40:23,180 - root - DEBUG - Model: microsoft/trocr-small-printed | Status: False | Source: None
+2025-10-22 15:40:23,184 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/google/pix2struct-docvqa-large HTTP/1.1" 200 1719
+2025-10-22 15:40:23,184 - root - DEBUG - Model: google/pix2struct-docvqa-large | Status: False | Source: None
+2025-10-22 15:40:23,190 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/microsoft/trocr-small-handwritten HTTP/1.1" 200 3008
+2025-10-22 15:40:23,190 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/microsoft/trocr-base-handwritten HTTP/1.1" 200 5640
+2025-10-22 15:40:23,190 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/naver-clova-ix/donut-base-finetuned-cord-v2 HTTP/1.1" 200 3034
+2025-10-22 15:40:23,190 - root - DEBUG - Model: microsoft/trocr-small-handwritten | Status: False | Source: None
+2025-10-22 15:40:23,191 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/microsoft/git-base HTTP/1.1" 200 4011
+2025-10-22 15:40:23,191 - root - DEBUG - Model: microsoft/trocr-base-handwritten | Status: False | Source: None
+2025-10-22 15:40:23,192 - root - DEBUG - Model: naver-clova-ix/donut-base-finetuned-cord-v2 | Status: False | Source: None
+2025-10-22 15:40:23,192 - root - DEBUG - Model: microsoft/git-base | Status: False | Source: None
+2025-10-22 15:40:23,194 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/google/pix2struct-textcaps-large HTTP/1.1" 200 1402
+2025-10-22 15:40:23,194 - root - DEBUG - Model: google/pix2struct-textcaps-large | Status: False | Source: None
+2025-10-22 15:40:23,195 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/tuman/vit-rugpt2-image-captioning HTTP/1.1" 200 1785
+2025-10-22 15:40:23,195 - root - DEBUG - Model: tuman/vit-rugpt2-image-captioning | Status: False | Source: None
+2025-10-22 15:40:23,219 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/Salesforce/blip2-opt-6.7b HTTP/1.1" 200 3015
+2025-10-22 15:40:23,220 - root - DEBUG - Model: Salesforce/blip2-opt-6.7b | Status: False | Source: None
+2025-10-22 15:40:23,224 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/google/pix2struct-base HTTP/1.1" 200 1545
+2025-10-22 15:40:23,224 - root - DEBUG - Model: google/pix2struct-base | Status: False | Source: None
+2025-10-22 15:40:23,227 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/kha-white/manga-ocr-base HTTP/1.1" 200 1944
+2025-10-22 15:40:23,228 - root - DEBUG - Model: kha-white/manga-ocr-base | Status: False | Source: None
+2025-10-22 15:40:23,228 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/ydshieh/vit-gpt2-coco-en HTTP/1.1" 200 4484
+2025-10-22 15:40:23,228 - root - DEBUG - Model: ydshieh/vit-gpt2-coco-en | Status: False | Source: None
+2025-10-22 15:40:23,230 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/Salesforce/blip2-flan-t5-xxl HTTP/1.1" 200 2881
+2025-10-22 15:40:23,230 - root - DEBUG - Model: Salesforce/blip2-flan-t5-xxl | Status: False | Source: None
+2025-10-22 15:40:23,232 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/Salesforce/blip2-opt-2.7b HTTP/1.1" 200 4955
+2025-10-22 15:40:23,233 - root - DEBUG - Model: Salesforce/blip2-opt-2.7b | Status: False | Source: None
+2025-10-22 15:40:23,235 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/microsoft/trocr-large-printed HTTP/1.1" 200 4151
+2025-10-22 15:40:23,235 - root - DEBUG - Model: microsoft/trocr-large-printed | Status: False | Source: None
+2025-10-22 15:40:23,236 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/google/pix2struct-ai2d-base HTTP/1.1" 200 1578
+2025-10-22 15:40:23,236 - root - DEBUG - Model: google/pix2struct-ai2d-base | Status: False | Source: None
+2025-10-22 15:40:23,240 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/keras-io/ocr-for-captcha HTTP/1.1" 200 1264
+2025-10-22 15:40:23,240 - root - DEBUG - Model: keras-io/ocr-for-captcha | Status: False | Source: None
+2025-10-22 15:40:23,240 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/microsoft/trocr-large-handwritten HTTP/1.1" 200 4334
+2025-10-22 15:40:23,241 - root - DEBUG - Model: microsoft/trocr-large-handwritten | Status: False | Source: None
+2025-10-22 15:40:23,248 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/microsoft/git-large-coco HTTP/1.1" 200 3348
+2025-10-22 15:40:23,249 - root - DEBUG - Model: microsoft/git-large-coco | Status: False | Source: None
+2025-10-22 15:40:23,249 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/Salesforce/blip2-flan-t5-xl-coco HTTP/1.1" 200 1804
+2025-10-22 15:40:23,250 - root - DEBUG - Model: Salesforce/blip2-flan-t5-xl-coco | Status: False | Source: None
+2025-10-22 15:40:23,251 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/microsoft/git-large-textcaps HTTP/1.1" 200 1733
+2025-10-22 15:40:23,251 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/Salesforce/blip2-flan-t5-xl HTTP/1.1" 200 3786
+2025-10-22 15:40:23,252 - root - DEBUG - Model: microsoft/git-large-textcaps | Status: False | Source: None
+2025-10-22 15:40:23,252 - root - DEBUG - Model: Salesforce/blip2-flan-t5-xl | Status: False | Source: None
+2025-10-22 15:40:23,254 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/google/pix2struct-textcaps-base HTTP/1.1" 200 1661
+2025-10-22 15:40:23,254 - root - DEBUG - Model: google/pix2struct-textcaps-base | Status: False | Source: None
+2025-10-22 15:40:23,268 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/dhansmair/flamingo-mini HTTP/1.1" 200 1498
+2025-10-22 15:40:23,269 - root - DEBUG - Model: dhansmair/flamingo-mini | Status: False | Source: None
+2025-10-22 15:40:23,269 - root - DEBUG - avaliable models on image-to-text: {'local': ['nlpconnect/vit-gpt2-image-captioning', 'microsoft/trocr-base-printed'], 'huggingface': []}
+2025-10-22 15:40:23,272 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): router.huggingface.co:443
+2025-10-22 15:40:24,373 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /nebius/v1/chat/completions HTTP/1.1" 200 None
+2025-10-22 15:40:24,373 - root - DEBUG - chosen model: {"id": "nlpconnect/vit-gpt2-image-captioning", "reason": "This model is the most suitable for the task because it is specifically designed for image-to-text and image captioning tasks, has a higher number of likes indicating popularity and potentially better performance, and has a local inference endpoint for speed and stability."}
+2025-10-22 15:40:24,374 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:24,795 - urllib3.connectionpool - DEBUG - http://localhost:8005 "POST /models/nlpconnect/vit-gpt2-image-captioning HTTP/1.1" 200 64
+2025-10-22 15:40:24,797 - root - WARNING - Inference error: {'message': 'Error when running the model inference.'}
+2025-10-22 15:40:24,797 - root - DEBUG -  Failure: {"input": "Please generate an image where a girl is reading a book, and her pose is the same as the boy in the image example.jpg, then please describe the new image with your voice.", "task": {"task": "image-to-text", "id": 2, "dep": [1], "args": {"image": "public/example.jpg"}}, "reason": "inference error: {'message': 'Error when running the model inference.'}", "op": "message"}
+2025-10-22 15:40:24,798 - root - DEBUG - Inference Result: {'error': {'message': 'Error when running the model inference.'}}
+2025-10-22 15:40:24,839 - root - DEBUG - Run task: 3 - text-to-speech
+2025-10-22 15:40:24,840 - root - DEBUG - Deps: [{"task": {"task": "image-to-text", "id": 2, "dep": [1], "args": {"image": "public/example.jpg"}}, "inference result": {"error": {"message": "Error when running the model inference."}}, "choose model result": {"id": "nlpconnect/vit-gpt2-image-captioning", "reason": "This model is the most suitable for the task because it is specifically designed for image-to-text and image captioning tasks, has a higher number of likes indicating popularity and potentially better performance, and has a local inference endpoint for speed and stability."}}]
+2025-10-22 15:40:24,840 - root - DEBUG - Detect the image of dependency task (from args): public/example.jpg
+2025-10-22 15:40:24,840 - root - DEBUG - Parsed Task: {'task': 'text-to-speech', 'id': 3, 'dep': [2], 'args': {'text': '<GENERATED>-2'}}
+2025-10-22 15:40:24,842 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:24,845 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:24,848 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:24,850 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/facebook/fastspeech2-en-ljspeech HTTP/1.1" 200 17
+2025-10-22 15:40:24,852 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:24,855 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:24,855 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/espnet/kan-bayashi_ljspeech_vits HTTP/1.1" 200 17
+2025-10-22 15:40:24,857 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/mio/amadeus HTTP/1.1" 200 17
+2025-10-22 15:40:24,859 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:24,862 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:24,864 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:24,866 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:24,867 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:24,870 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:24,870 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/speechbrain/tts-tacotron2-ljspeech HTTP/1.1" 200 17
+2025-10-22 15:40:24,871 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/speecht5_tts HTTP/1.1" 200 16
+2025-10-22 15:40:24,873 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:24,874 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/facebook/tts_transformer-es-css10 HTTP/1.1" 200 17
+2025-10-22 15:40:24,874 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/nvidia/tts_en_fastpitch HTTP/1.1" 200 17
+2025-10-22 15:40:24,876 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:24,878 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/facebook/tts_transformer-zh-cv7_css10 HTTP/1.1" 200 17
+2025-10-22 15:40:24,880 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:24,881 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:24,882 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:24,884 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:24,884 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/facebook/unit_hifigan_mhubert_vp_en_es_fr_it3_400k_layer11_km1000_lj_dur HTTP/1.1" 200 17
+2025-10-22 15:40:24,885 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/espnet/kan-bayashi_ljspeech_joint_finetune_conformer_fastspeech2_hifigan HTTP/1.1" 200 17
+2025-10-22 15:40:24,886 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:24,888 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:24,888 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:24,890 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:24,892 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:24,893 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:24,894 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:24,897 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:24,898 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:24,900 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:24,900 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Voicemod/fastspeech2-en-male1 HTTP/1.1" 200 17
+2025-10-22 15:40:24,902 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:24,905 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:24,905 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/speechbrain/tts-hifigan-ljspeech HTTP/1.1" 200 17
+2025-10-22 15:40:24,906 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/facebook/tts_transformer-ru-cv7_css10 HTTP/1.1" 200 17
+2025-10-22 15:40:24,907 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:24,908 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:24,909 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:24,909 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Voicemod/fastspeech2-en-ljspeech HTTP/1.1" 200 17
+2025-10-22 15:40:24,910 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:24,912 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:24,912 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:24,913 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/nvidia/tts_hifigan HTTP/1.1" 200 17
+2025-10-22 15:40:24,914 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:24,916 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 15:40:24,917 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:24,917 - root - DEBUG - Model: facebook/fastspeech2-en-ljspeech | Status: False | Source: None
+2025-10-22 15:40:24,917 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Rongjiehuang/ProDiff HTTP/1.1" 200 17
+2025-10-22 15:40:24,920 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/tensorspeech/tts-mb_melgan-baker-ch HTTP/1.1" 200 17
+2025-10-22 15:40:24,921 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/balacoon/tts HTTP/1.1" 200 17
+2025-10-22 15:40:24,922 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/facebook/tts_transformer-vi-cv7 HTTP/1.1" 200 17
+2025-10-22 15:40:24,924 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/facebook/tts_transformer-tr-cv7 HTTP/1.1" 200 17
+2025-10-22 15:40:24,925 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/mio/Artoria HTTP/1.1" 200 17
+2025-10-22 15:40:24,926 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Snowad/French-Tortoise HTTP/1.1" 200 17
+2025-10-22 15:40:24,927 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/mechanicalsea/speecht5-tts HTTP/1.1" 200 17
+2025-10-22 15:40:24,928 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/mio/tokiwa_midori HTTP/1.1" 200 17
+2025-10-22 15:40:24,929 - root - DEBUG - Model: espnet/kan-bayashi_ljspeech_vits | Status: False | Source: None
+2025-10-22 15:40:24,929 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/tensorspeech/tts-tacotron2-baker-ch HTTP/1.1" 200 17
+2025-10-22 15:40:24,932 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Voicemod/fastspeech2-en-200_speaker-cv4 HTTP/1.1" 200 17
+2025-10-22 15:40:24,933 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/facebook/fastspeech2-en-200_speaker-cv4 HTTP/1.1" 200 17
+2025-10-22 15:40:24,933 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/espnet/kan-bayashi_ljspeech_tacotron2 HTTP/1.1" 200 17
+2025-10-22 15:40:24,933 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/facebook/tts_transformer-en-ljspeech HTTP/1.1" 200 17
+2025-10-22 15:40:24,934 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/espnet/english_male_ryanspeech_fastspeech2 HTTP/1.1" 200 17
+2025-10-22 15:40:24,937 - root - DEBUG - Model: mio/amadeus | Status: False | Source: None
+2025-10-22 15:40:24,940 - root - DEBUG - Model: speechbrain/tts-tacotron2-ljspeech | Status: False | Source: None
+2025-10-22 15:40:24,940 - root - DEBUG - Model: microsoft/speecht5_tts | Status: True | Source: local
+2025-10-22 15:40:24,940 - root - DEBUG - Model: facebook/tts_transformer-es-css10 | Status: False | Source: None
+2025-10-22 15:40:24,940 - root - DEBUG - Model: nvidia/tts_en_fastpitch | Status: False | Source: None
+2025-10-22 15:40:24,940 - root - DEBUG - Model: facebook/tts_transformer-zh-cv7_css10 | Status: False | Source: None
+2025-10-22 15:40:24,940 - root - DEBUG - Model: facebook/unit_hifigan_mhubert_vp_en_es_fr_it3_400k_layer11_km1000_lj_dur | Status: False | Source: None
+2025-10-22 15:40:24,940 - root - DEBUG - Model: espnet/kan-bayashi_ljspeech_joint_finetune_conformer_fastspeech2_hifigan | Status: False | Source: None
+2025-10-22 15:40:24,940 - root - DEBUG - Model: Voicemod/fastspeech2-en-male1 | Status: False | Source: None
+2025-10-22 15:40:24,941 - root - DEBUG - Model: facebook/tts_transformer-ru-cv7_css10 | Status: False | Source: None
+2025-10-22 15:40:24,941 - root - DEBUG - Model: speechbrain/tts-hifigan-ljspeech | Status: False | Source: None
+2025-10-22 15:40:24,941 - root - DEBUG - Model: Voicemod/fastspeech2-en-ljspeech | Status: False | Source: None
+2025-10-22 15:40:24,941 - root - DEBUG - Model: nvidia/tts_hifigan | Status: False | Source: None
+2025-10-22 15:40:24,941 - root - DEBUG - Model: Rongjiehuang/ProDiff | Status: False | Source: None
+2025-10-22 15:40:24,941 - root - DEBUG - Model: tensorspeech/tts-mb_melgan-baker-ch | Status: False | Source: None
+2025-10-22 15:40:24,941 - root - DEBUG - Model: balacoon/tts | Status: False | Source: None
+2025-10-22 15:40:24,941 - root - DEBUG - Model: facebook/tts_transformer-vi-cv7 | Status: False | Source: None
+2025-10-22 15:40:24,941 - root - DEBUG - Model: facebook/tts_transformer-tr-cv7 | Status: False | Source: None
+2025-10-22 15:40:24,941 - root - DEBUG - Model: mio/Artoria | Status: False | Source: None
+2025-10-22 15:40:24,941 - root - DEBUG - Model: Snowad/French-Tortoise | Status: False | Source: None
+2025-10-22 15:40:24,941 - root - DEBUG - Model: mechanicalsea/speecht5-tts | Status: False | Source: None
+2025-10-22 15:40:24,941 - root - DEBUG - Model: mio/tokiwa_midori | Status: False | Source: None
+2025-10-22 15:40:24,941 - root - DEBUG - Model: tensorspeech/tts-tacotron2-baker-ch | Status: False | Source: None
+2025-10-22 15:40:24,941 - root - DEBUG - Model: Voicemod/fastspeech2-en-200_speaker-cv4 | Status: False | Source: None
+2025-10-22 15:40:24,941 - root - DEBUG - Model: facebook/fastspeech2-en-200_speaker-cv4 | Status: False | Source: None
+2025-10-22 15:40:24,941 - root - DEBUG - Model: espnet/kan-bayashi_ljspeech_tacotron2 | Status: False | Source: None
+2025-10-22 15:40:24,941 - root - DEBUG - Model: facebook/tts_transformer-en-ljspeech | Status: False | Source: None
+2025-10-22 15:40:24,941 - root - DEBUG - Model: espnet/english_male_ryanspeech_fastspeech2 | Status: False | Source: None
+2025-10-22 15:40:24,957 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/facebook/fastspeech2-en-ljspeech HTTP/1.1" 200 4682
+2025-10-22 15:40:24,957 - root - DEBUG - Model: facebook/fastspeech2-en-ljspeech | Status: False | Source: None
+2025-10-22 15:40:24,962 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/mio/amadeus HTTP/1.1" 200 3460
+2025-10-22 15:40:24,962 - root - DEBUG - Model: mio/amadeus | Status: False | Source: None
+2025-10-22 15:40:24,968 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/facebook/tts_transformer-zh-cv7_css10 HTTP/1.1" 200 1978
+2025-10-22 15:40:24,968 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/microsoft/speecht5_tts HTTP/1.1" 200 4452
+2025-10-22 15:40:24,968 - root - DEBUG - Model: facebook/tts_transformer-zh-cv7_css10 | Status: False | Source: None
+2025-10-22 15:40:24,969 - root - DEBUG - Model: microsoft/speecht5_tts | Status: False | Source: None
+2025-10-22 15:40:24,969 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/speechbrain/tts-tacotron2-ljspeech HTTP/1.1" 200 2400
+2025-10-22 15:40:24,970 - root - DEBUG - Model: speechbrain/tts-tacotron2-ljspeech | Status: False | Source: None
+2025-10-22 15:40:24,971 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/espnet/kan-bayashi_ljspeech_vits HTTP/1.1" 200 6050
+2025-10-22 15:40:24,971 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/facebook/tts_transformer-es-css10 HTTP/1.1" 200 2009
+2025-10-22 15:40:24,972 - root - DEBUG - Model: espnet/kan-bayashi_ljspeech_vits | Status: False | Source: None
+2025-10-22 15:40:24,972 - root - DEBUG - Model: facebook/tts_transformer-es-css10 | Status: False | Source: None
+2025-10-22 15:40:24,978 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/Voicemod/fastspeech2-en-male1 HTTP/1.1" 404 32
+2025-10-22 15:40:24,979 - root - DEBUG - Model: Voicemod/fastspeech2-en-male1 | Status: False | Source: None
+2025-10-22 15:40:24,981 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/facebook/unit_hifigan_mhubert_vp_en_es_fr_it3_400k_layer11_km1000_lj_dur HTTP/1.1" 200 2388
+2025-10-22 15:40:24,981 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/espnet/kan-bayashi_ljspeech_joint_finetune_conformer_fastspeech2_hifigan HTTP/1.1" 200 4867
+2025-10-22 15:40:24,981 - root - DEBUG - Model: facebook/unit_hifigan_mhubert_vp_en_es_fr_it3_400k_layer11_km1000_lj_dur | Status: False | Source: None
+2025-10-22 15:40:24,982 - root - DEBUG - Model: espnet/kan-bayashi_ljspeech_joint_finetune_conformer_fastspeech2_hifigan | Status: False | Source: None
+2025-10-22 15:40:24,991 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/facebook/tts_transformer-ru-cv7_css10 HTTP/1.1" 200 1554
+2025-10-22 15:40:24,992 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/speechbrain/tts-hifigan-ljspeech HTTP/1.1" 200 1567
+2025-10-22 15:40:24,992 - root - DEBUG - Model: facebook/tts_transformer-ru-cv7_css10 | Status: False | Source: None
+2025-10-22 15:40:24,993 - root - DEBUG - Model: speechbrain/tts-hifigan-ljspeech | Status: False | Source: None
+2025-10-22 15:40:24,995 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/nvidia/tts_hifigan HTTP/1.1" 200 972
+2025-10-22 15:40:24,996 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/Rongjiehuang/ProDiff HTTP/1.1" 200 2071
+2025-10-22 15:40:24,996 - root - DEBUG - Model: nvidia/tts_hifigan | Status: False | Source: None
+2025-10-22 15:40:24,997 - root - DEBUG - Model: Rongjiehuang/ProDiff | Status: False | Source: None
+2025-10-22 15:40:25,002 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/facebook/tts_transformer-vi-cv7 HTTP/1.1" 200 1421
+2025-10-22 15:40:25,003 - root - DEBUG - Model: facebook/tts_transformer-vi-cv7 | Status: False | Source: None
+2025-10-22 15:40:25,004 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/balacoon/tts HTTP/1.1" 200 1382
+2025-10-22 15:40:25,004 - root - DEBUG - Model: balacoon/tts | Status: False | Source: None
+2025-10-22 15:40:25,008 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/Snowad/French-Tortoise HTTP/1.1" 200 1045
+2025-10-22 15:40:25,008 - root - DEBUG - Model: Snowad/French-Tortoise | Status: False | Source: None
+2025-10-22 15:40:25,013 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/tensorspeech/tts-tacotron2-baker-ch HTTP/1.1" 200 1072
+2025-10-22 15:40:25,013 - root - DEBUG - Model: tensorspeech/tts-tacotron2-baker-ch | Status: False | Source: None
+2025-10-22 15:40:25,015 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/mio/tokiwa_midori HTTP/1.1" 200 3240
+2025-10-22 15:40:25,015 - root - DEBUG - Model: mio/tokiwa_midori | Status: False | Source: None
+2025-10-22 15:40:25,020 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/mio/Artoria HTTP/1.1" 200 3159
+2025-10-22 15:40:25,020 - root - DEBUG - Model: mio/Artoria | Status: False | Source: None
+2025-10-22 15:40:25,028 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/nvidia/tts_en_fastpitch HTTP/1.1" 200 1002
+2025-10-22 15:40:25,029 - root - DEBUG - Model: nvidia/tts_en_fastpitch | Status: False | Source: None
+2025-10-22 15:40:25,050 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/facebook/fastspeech2-en-200_speaker-cv4 HTTP/1.1" 200 1457
+2025-10-22 15:40:25,050 - root - DEBUG - Model: facebook/fastspeech2-en-200_speaker-cv4 | Status: False | Source: None
+2025-10-22 15:40:25,107 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/Voicemod/fastspeech2-en-ljspeech HTTP/1.1" 404 32
+2025-10-22 15:40:25,107 - root - DEBUG - Model: Voicemod/fastspeech2-en-ljspeech | Status: False | Source: None
+2025-10-22 15:40:25,170 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/tensorspeech/tts-mb_melgan-baker-ch HTTP/1.1" 200 1070
+2025-10-22 15:40:25,171 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/Voicemod/fastspeech2-en-200_speaker-cv4 HTTP/1.1" 404 32
+2025-10-22 15:40:25,171 - root - DEBUG - Model: tensorspeech/tts-mb_melgan-baker-ch | Status: False | Source: None
+2025-10-22 15:40:25,172 - root - DEBUG - Model: Voicemod/fastspeech2-en-200_speaker-cv4 | Status: False | Source: None
+2025-10-22 15:40:25,173 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/espnet/english_male_ryanspeech_fastspeech2 HTTP/1.1" 200 5347
+2025-10-22 15:40:25,173 - root - DEBUG - Model: espnet/english_male_ryanspeech_fastspeech2 | Status: False | Source: None
+2025-10-22 15:40:25,175 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/facebook/tts_transformer-tr-cv7 HTTP/1.1" 200 1424
+2025-10-22 15:40:25,175 - root - DEBUG - Model: facebook/tts_transformer-tr-cv7 | Status: False | Source: None
+2025-10-22 15:40:25,186 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/facebook/tts_transformer-en-ljspeech HTTP/1.1" 200 1364
+2025-10-22 15:40:25,186 - root - DEBUG - Model: facebook/tts_transformer-en-ljspeech | Status: False | Source: None
+2025-10-22 15:40:25,194 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/mechanicalsea/speecht5-tts HTTP/1.1" 200 3276
+2025-10-22 15:40:25,194 - root - DEBUG - Model: mechanicalsea/speecht5-tts | Status: False | Source: None
+2025-10-22 15:40:25,202 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/espnet/kan-bayashi_ljspeech_tacotron2 HTTP/1.1" 200 1048
+2025-10-22 15:40:25,203 - root - DEBUG - Model: espnet/kan-bayashi_ljspeech_tacotron2 | Status: False | Source: None
+2025-10-22 15:40:25,204 - root - DEBUG - avaliable models on text-to-speech: {'local': ['microsoft/speecht5_tts'], 'huggingface': []}
+2025-10-22 15:40:25,204 - root - DEBUG - chosen model: {'id': 'microsoft/speecht5_tts', 'reason': 'Only one model available.'}
+2025-10-22 15:40:25,206 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 15:40:25,347 - urllib3.connectionpool - DEBUG - http://localhost:8005 "POST /models/microsoft/speecht5_tts HTTP/1.1" 200 64

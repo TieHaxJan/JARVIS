@@ -24,21 +24,21 @@
     "prompt": "Translate the sentence 'Bonjour tout le monde' into English.",
     "task_type": "single",
     "models": [
-      "google/flan-t5-large"
+      "JARVIS"
     ]
   },
   {
     "prompt": "Generate speech for the text 'Welcome to HuggingGPT testing suite.'",
     "task_type": "single",
     "models": [
-      "espnet/kan-bayashi_ljspeech_vits"
+      "microsoft/speecht5_tts"
     ]
   },
   {
     "prompt": "Estimate the depth of 'mountain_path.jpg'.",
     "task_type": "single",
     "models": [
-      "Intel/dpt-large"
+      "Intel/dpt-hybrid-midas"
     ]
   },
   {
@@ -56,10 +56,10 @@
     ]
   },
   {
-    "prompt": "Classify the emotion in the audio 'laughing.wav'.",
+    "prompt": "Answer 'What is the person holding?' in the image 'club.jpg'.",
     "task_type": "single",
     "models": [
-      "JorisCos/DCCRNet_Libri1Mix_enhsingle_16k"
+      "dandelin/vilt-b32-finetuned-vqa"
     ]
   },
   {
@@ -116,7 +116,7 @@
     "task_type": "single",
     "models": [
       "nlpconnect/vit-gpt2-image-captioning",
-      "espnet/kan-bayashi_ljspeech_vits"
+      "microsoft/speecht5_tts"
     ]
   },
   {
@@ -137,7 +137,7 @@
     "prompt": "Segment the image 'market.png'.",
     "task_type": "single",
     "models": [
-      "facebook/detr-resnet-50-panoptic"
+      "facebook/detr-resnet-101"
     ]
   },
   {
@@ -222,7 +222,7 @@
     "task_type": "single",
     "models": [
       "microsoft/trocr-base-printed",
-      "espnet/kan-bayashi_ljspeech_vits"
+      "microsoft/speecht5_tts"
     ]
   },
   {
@@ -243,7 +243,7 @@
     "prompt": "Identify the main topics in 'AI systems collaborate across modalities'.",
     "task_type": "single",
     "models": [
-      "google/flan-t5-large"
+      "JARVIS"
     ]
   },
   {
@@ -267,7 +267,7 @@
     "task_type": "sequential",
     "models": [
       "microsoft/trocr-base-printed",
-      "google/flan-t5-large"
+      "JARVIS"
     ]
   },
   {
@@ -283,14 +283,14 @@
     "task_type": "sequential",
     "models": [
       "openai/whisper-base",
-      "google/flan-t5-large"
+      "JARVIS"
     ]
   },
   {
     "prompt": "Estimate depth of 'room.jpg' then create a sketch version.",
     "task_type": "sequential",
     "models": [
-      "Intel/dpt-large",
+      "Intel/dpt-hybrid-midas",
       "lllyasviel/sd-controlnet-scribble"
     ]
   },
@@ -307,7 +307,7 @@
     "task_type": "sequential",
     "models": [
       "nlpconnect/vit-gpt2-image-captioning",
-      "espnet/kan-bayashi_ljspeech_vits"
+      "microsoft/speecht5_tts"
     ]
   },
   {
@@ -315,7 +315,7 @@
     "task_type": "sequential",
     "models": [
       "microsoft/trocr-base-printed",
-      "google/flan-t5-large"
+      "JARVIS"
     ]
   },
   {
@@ -323,14 +323,14 @@
     "task_type": "sequential",
     "models": [
       "microsoft/trocr-base-printed",
-      "google/flan-t5-large"
+      "JARVIS"
     ]
   },
   {
     "prompt": "Generate a voiceover for 'Autonomous agents are the future of AI systems.'",
     "task_type": "sequential",
     "models": [
-      "espnet/kan-bayashi_ljspeech_vits"
+      "microsoft/speecht5_tts"
     ]
   },
   {
@@ -346,7 +346,7 @@
     "task_type": "sequential",
     "models": [
       "impira/layoutlm-document-qa",
-      "google/flan-t5-large"
+      "JARVIS"
     ]
   },
   {
@@ -354,7 +354,7 @@
     "task_type": "sequential",
     "models": [
       "microsoft/trocr-base-printed",
-      "espnet/kan-bayashi_ljspeech_vits"
+      "microsoft/speecht5_tts"
     ]
   },
   {
@@ -370,14 +370,14 @@
     "task_type": "sequential",
     "models": [
       "openai/whisper-base",
-      "google/flan-t5-large"
+      "JARVIS"
     ]
   },
   {
     "prompt": "Translate '人工智能改变世界' into English.",
     "task_type": "sequential",
     "models": [
-      "google/flan-t5-large"
+      "JARVIS"
     ]
   },
   {
@@ -393,7 +393,7 @@
     "task_type": "sequential",
     "models": [
       "nlpconnect/vit-gpt2-image-captioning",
-      "google/flan-t5-large"
+      "JARVIS"
     ]
   },
   {
@@ -401,7 +401,7 @@
     "task_type": "sequential",
     "models": [
       "dslim/distilbert-NER",
-      "google/flan-t5-large"
+      "JARVIS"
     ]
   },
   {
@@ -409,7 +409,7 @@
     "task_type": "sequential",
     "models": [
       "microsoft/speecht5_asr",
-      "google/flan-t5-large"
+      "JARVIS"
     ]
   },
   {
@@ -417,7 +417,7 @@
     "task_type": "sequential",
     "models": [
       "microsoft/trocr-base-printed",
-      "google/flan-t5-large"
+      "JARVIS"
     ]
   },
   {
@@ -425,7 +425,7 @@
     "task_type": "sequential",
     "models": [
       "lllyasviel/sd-controlnet-openpose",
-      "google/flan-t5-large"
+      "JARVIS"
     ]
   },
   {
@@ -433,7 +433,7 @@
     "task_type": "sequential",
     "models": [
       "impira/layoutlm-document-qa",
-      "google/flan-t5-large"
+      "JARVIS"
     ]
   },
   {
@@ -441,14 +441,14 @@
     "task_type": "sequential",
     "models": [
       "microsoft/trocr-base-printed",
-      "espnet/kan-bayashi_ljspeech_vits"
+      "microsoft/speecht5_tts"
     ]
   },
   {
     "prompt": "Classify sentiment in 'I love how this model works!' and explain reasoning.",
     "task_type": "sequential",
     "models": [
-      "google/flan-t5-large"
+      "JARVIS"
     ]
   },
   {
@@ -456,7 +456,7 @@
     "task_type": "sequential",
     "models": [
       "nlpconnect/vit-gpt2-image-captioning",
-      "google/flan-t5-large"
+      "JARVIS"
     ]
   },
   {
@@ -464,7 +464,7 @@
     "task_type": "sequential",
     "models": [
       "microsoft/trocr-base-printed",
-      "google/flan-t5-large"
+      "JARVIS"
     ]
   },
   {
@@ -472,7 +472,7 @@
     "task_type": "sequential",
     "models": [
       "microsoft/trocr-base-printed",
-      "google/flan-t5-large"
+      "JARVIS"
     ]
   },
   {
@@ -480,7 +480,7 @@
     "task_type": "sequential",
     "models": [
       "openai/whisper-base",
-      "google/flan-t5-large"
+      "JARVIS"
     ]
   },
   {
@@ -488,7 +488,7 @@
     "task_type": "graph",
     "models": [
       "damo-vilab/text-to-video-ms-1.7b",
-      "espnet/kan-bayashi_ljspeech_vits"
+      "microsoft/speecht5_tts"
     ]
   },
   {
@@ -505,7 +505,7 @@
     "task_type": "graph",
     "models": [
       "nlpconnect/vit-gpt2-image-captioning",
-      "espnet/kan-bayashi_ljspeech_vits"
+      "microsoft/speecht5_tts"
     ]
   },
   {
@@ -520,7 +520,7 @@
     "prompt": "Estimate depth and segmentation for 'mountain_valley.jpg'.",
     "task_type": "graph",
     "models": [
-      "Intel/dpt-large",
+      "Intel/dpt-hybrid-midas",
       "facebook/maskformer-swin-base-coco"
     ]
   },
@@ -589,7 +589,7 @@
     "models": [
       "facebook/detr-resnet-101",
       "nlpconnect/vit-gpt2-image-captioning",
-      "espnet/kan-bayashi_ljspeech_vits"
+      "microsoft/speecht5_tts"
     ]
   },
   {
@@ -614,7 +614,7 @@
     "task_type": "graph",
     "models": [
       "nlpconnect/vit-gpt2-image-captioning",
-      "espnet/kan-bayashi_ljspeech_vits"
+      "microsoft/speecht5_tts"
     ]
   },
   {
@@ -622,7 +622,7 @@
     "task_type": "graph",
     "models": [
       "microsoft/trocr-base-printed",
-      "google/flan-t5-large"
+      "JARVIS"
     ]
   },
   {
@@ -631,7 +631,7 @@
     "models": [
       "facebook/detr-resnet-101",
       "nlpconnect/vit-gpt2-image-captioning",
-      "espnet/kan-bayashi_ljspeech_vits"
+      "microsoft/speecht5_tts"
     ]
   },
   {
@@ -639,7 +639,7 @@
     "task_type": "graph",
     "models": [
       "facebook/detr-resnet-101",
-      "google/flan-t5-large"
+      "JARVIS"
     ]
   },
   {
@@ -655,8 +655,8 @@
     "task_type": "graph",
     "models": [
       "microsoft/trocr-base-printed",
-      "google/flan-t5-large",
-      "espnet/kan-bayashi_ljspeech_vits"
+      "JARVIS",
+      "microsoft/speecht5_tts"
     ]
   },
   {
@@ -672,7 +672,7 @@
     "task_type": "graph",
     "models": [
       "nlpconnect/vit-gpt2-image-captioning",
-      "espnet/kan-bayashi_ljspeech_vits"
+      "microsoft/speecht5_tts"
     ]
   },
   {
@@ -689,8 +689,8 @@
     "task_type": "graph",
     "models": [
       "facebook/detr-resnet-101",
-      "Intel/dpt-large",
-      "google/flan-t5-large"
+      "Intel/dpt-hybrid-midas",
+      "JARVIS"
     ]
   },
   {
@@ -698,7 +698,7 @@
     "task_type": "graph",
     "models": [
       "microsoft/speecht5_asr",
-      "google/flan-t5-large"
+      "JARVIS"
     ]
   },
   {
@@ -714,7 +714,7 @@
     "task_type": "graph",
     "models": [
       "impira/layoutlm-document-qa",
-      "google/flan-t5-large"
+      "JARVIS"
     ]
   },
   {
@@ -723,7 +723,7 @@
     "models": [
       "nlpconnect/vit-gpt2-image-captioning",
       "facebook/maskformer-swin-base-coco",
-      "espnet/kan-bayashi_ljspeech_vits"
+      "microsoft/speecht5_tts"
     ]
   },
   {
@@ -732,7 +732,7 @@
     "models": [
       "facebook/detr-resnet-101",
       "nlpconnect/vit-gpt2-image-captioning",
-      "espnet/kan-bayashi_ljspeech_vits"
+      "microsoft/speecht5_tts"
     ]
   },
   {
@@ -750,7 +750,7 @@
     "models": [
       "facebook/detr-resnet-101",
       "nlpconnect/vit-gpt2-image-captioning",
-      "espnet/kan-bayashi_ljspeech_vits"
+      "microsoft/speecht5_tts"
     ]
   },
   {
@@ -767,8 +767,8 @@
     "task_type": "graph",
     "models": [
       "microsoft/trocr-base-printed",
-      "google/flan-t5-large",
-      "espnet/kan-bayashi_ljspeech_vits"
+      "JARVIS",
+      "microsoft/speecht5_tts"
     ]
   },
   {
@@ -776,9 +776,9 @@
     "task_type": "graph",
     "models": [
       "lllyasviel/sd-controlnet-canny",
-      "Intel/dpt-large",
+      "Intel/dpt-hybrid-midas",
       "runwayml/stable-diffusion-v1-5",
-      "espnet/kan-bayashi_ljspeech_vits"
+      "microsoft/speecht5_tts"
     ]
   }
 ]

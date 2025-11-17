@@ -1,0 +1,257 @@
+2025-10-22 16:11:37,357 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda:0
+2025-10-22 16:11:37,358 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-22 16:11:37,359 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 16:11:37,505 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-10-22 16:11:37,511 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-10-22 16:11:37,620 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-10-22 16:11:37,626 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-10-22 16:11:37,733 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-10-22 16:11:37,741 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-10-22 16:11:37,849 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-10-22 16:11:37,856 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+2025-10-22 16:11:37,963 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-10-22 16:11:37,969 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-10-22 16:11:38,077 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-10-22 16:11:38,084 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+2025-10-22 16:11:38,193 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-10-22 16:11:38,299 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-10-22 16:11:38,304 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+2025-10-22 16:11:38,487 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-10-22 16:11:38,493 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+2025-10-22 16:11:38,604 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-10-22 16:11:38,778 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-10-22 16:11:38,784 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-10-22 16:11:38,931 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6876
+2025-10-22 16:11:39,136 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 16:11:39,139 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /running HTTP/1.1" 200 17
+2025-10-22 16:11:39,154 - root - DEBUG - text-classification: 30 models
+2025-10-22 16:11:39,154 - root - DEBUG - token-classification: 30 models
+2025-10-22 16:11:39,154 - root - DEBUG - text2text-generation: 30 models
+2025-10-22 16:11:39,154 - root - DEBUG - summarization: 30 models
+2025-10-22 16:11:39,154 - root - DEBUG - translation: 30 models
+2025-10-22 16:11:39,154 - root - DEBUG - question-answering: 30 models
+2025-10-22 16:11:39,154 - root - DEBUG - conversational: 30 models
+2025-10-22 16:11:39,154 - root - DEBUG - text-generation: 30 models
+2025-10-22 16:11:39,154 - root - DEBUG - sentence-similarity: 30 models
+2025-10-22 16:11:39,154 - root - DEBUG - tabular-classification: 30 models
+2025-10-22 16:11:39,154 - root - DEBUG - object-detection: 30 models
+2025-10-22 16:11:39,154 - root - DEBUG - image-classification: 30 models
+2025-10-22 16:11:39,154 - root - DEBUG - image-to-text: 30 models
+2025-10-22 16:11:39,154 - root - DEBUG - text-to-image: 31 models
+2025-10-22 16:11:39,154 - root - DEBUG - image-to-image: 30 models
+2025-10-22 16:11:39,154 - root - DEBUG - visual-question-answering: 13 models
+2025-10-22 16:11:39,154 - root - DEBUG - document-question-answering: 22 models
+2025-10-22 16:11:39,154 - root - DEBUG - image-segmentation: 30 models
+2025-10-22 16:11:39,154 - root - DEBUG - depth-estimation: 30 models
+2025-10-22 16:11:39,154 - root - DEBUG - text-to-video: 8 models
+2025-10-22 16:11:39,154 - root - DEBUG - text-to-speech: 30 models
+2025-10-22 16:11:39,154 - root - DEBUG - automatic-speech-recognition: 30 models
+2025-10-22 16:11:39,154 - root - DEBUG - audio-to-audio: 30 models
+2025-10-22 16:11:39,154 - root - DEBUG - audio-classification: 30 models
+2025-10-22 16:11:39,154 - root - DEBUG - named-entity-recognition: 1 models
+2025-10-22 16:11:39,154 - root - DEBUG - optical-character-recognition: 1 models
+2025-10-22 16:11:39,155 - root - INFO - Welcome to Jarvis! A collaborative system that consists of an LLM as the controller and numerous expert models as collaborative executors. Jarvis can plan tasks, schedule Hugging Face models, generate friendly responses based on your requests, and help you with many things. Please enter your request (`exit` to exit).
+2025-10-22 16:11:52,839 - root - INFO - [ User ]: please detect the human pose in the image examples/d.jpg.
+2025-10-22 16:11:52,840 - root - INFO - ********************************************************************************
+2025-10-22 16:11:52,840 - root - INFO - input: Please detect the human pose in the image examples/d.jpg.
+2025-10-22 16:11:52,842 - root - DEBUG - Messages: [{'role': 'system', 'content': '#1 Task Planning Stage: You are a helpful AI assistant. Based on the user\'s request, you will recommend the best model from Hugging Face for the task, and explain why. The special tag "<GENERATED>-dep_id" refer to the one generated text/image/audio in the dependency task (Please consider whether the dependency task generates resources of this type.) and "dep_id" must be in "dep" list.  The "dep" field denotes the ids of the previous prerequisite tasks which generate a new resource that the current task relies on.  The "args" field must in ["text", "image", "audio"], nothing else.  The "task" field must be in ["token-classification", "optical-character-recognition", "named-entity-recognition", "text2text-generation", "summarization", "translation", "question-answering", "conversational", "text-generation", "sentence-similarity", "tabular-classification", "object-detection", "image-classification", "image-to-image", "image-to-text", "text-to-image", "text-to-video", "visual-question-answering", "document-question-answering", "image-segmentation", "depth-estimation", "text-to-speech", "automatic-speech-recognition", "audio-to-audio", "audio-classification", "canny-control", "hed-control", "mlsd-control", "normal-control", "openpose-control", "canny-text-to-image", "depth-text-to-image", "hed-text-to-image", "mlsd-text-to-image", "normal-text-to-image", "seg-text-to-image"] You must respond in JSON format like: [\n  {\n    "task": task, \n    "id": task_id, \n    "dep": dependency_task_id, \n    "args": {\n      "text": text or <GENERATED>-dep_id, \n      "image": image_url or <GENERATED>-dep_id, \n      "audio": audio_url or <GENERATED>-dep_id\n    }\n  }\n] Respond with the JSON entry and ONLY the JSON entry! Here are some few-shot examples:'}, {'role': 'user', 'content': 'Give you some pictures e1.jpg, e2.png, e3.jpg, help me count the number of sheep?'}, {'role': 'assistant', 'content': '[{"task": "image-to-text", "id": 0, "dep": [-1], "args": {"image": "e1.jpg" }}, {"task": "object-detection", "id": 1, "dep": [-1], "args": {"image": "e1.jpg" }}, {"task": "visual-question-answering", "id": 2, "dep": [1], "args": {"image": "<GENERATED>-1", "text": "How many sheep in the picture"}} }}, {"task": "image-to-text", "id": 3, "dep": [-1], "args": {"image": "e2.png" }}, {"task": "object-detection", "id": 4, "dep": [-1], "args": {"image": "e2.png" }}, {"task": "visual-question-answering", "id": 5, "dep": [4], "args": {"image": "<GENERATED>-4", "text": "How many sheep in the picture"}} }}, {"task": "image-to-text", "id": 6, "dep": [-1], "args": {"image": "e3.jpg" }},  {"task": "object-detection", "id": 7, "dep": [-1], "args": {"image": "e3.jpg" }}, {"task": "visual-question-answering", "id": 8, "dep": [7], "args": {"image": "<GENERATED>-7", "text": "How many sheep in the picture"}}]'}, {'role': 'user', 'content': 'Look at /e.jpg, can you tell me how many objects in the picture? Give me a picture and video similar to this one.'}, {'role': 'assistant', 'content': '[{"task": "image-to-text", "id": 0, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "object-detection", "id": 1, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "visual-question-answering", "id": 2, "dep": [1], "args": {"image": "<GENERATED>-1", "text": "how many objects in the picture?" }}, {"task": "text-to-image", "id": 3, "dep": [0], "args": {"text": "<GENERATED-0>" }}, {"task": "image-to-image", "id": 4, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "text-to-video", "id": 5, "dep": [0], "args": {"text": "<GENERATED-0>" }}]'}, {'role': 'user', 'content': 'given a document /images/e.jpeg, answer me what is the student amount? And describe the image with your voice'}, {'role': 'assistant', 'content': '{"task": "document-question-answering", "id": 0, "dep": [-1], "args": {"image": "/images/e.jpeg", "text": "what is the student amount?" }}, {"task": "visual-question-answering", "id": 1, "dep": [-1], "args": {"image": "/images/e.jpeg", "text": "what is the student amount?" }}, {"task": "image-to-text", "id": 2, "dep": [-1], "args": {"image": "/images/e.jpg" }}, {"task": "text-to-speech", "id": 3, "dep": [2], "args": {"text": "<GENERATED>-2" }}]'}, {'role': 'user', 'content': 'Given an image /example.jpg, first generate a hed image, then based on the hed image generate a new image where a girl is reading a book'}, {'role': 'assistant', 'content': '[{"task": "openpose-control", "id": 0, "dep": [-1], "args": {"image": "/example.jpg" }},  {"task": "openpose-text-to-image", "id": 1, "dep": [0], "args": {"text": "a girl is reading a book", "image": "<GENERATED>-0" }}]'}, {'role': 'user', 'content': "please show me a video and an image of (based on the text) 'a boy is running' and dub it"}, {'role': 'assistant', 'content': '[{"task": "text-to-video", "id": 0, "dep": [-1], "args": {"text": "a boy is running" }}, {"task": "text-to-speech", "id": 1, "dep": [-1], "args": {"text": "a boy is running" }}, {"task": "text-to-image", "id": 2, "dep": [-1], "args": {"text": "a boy is running" }}]'}, {'role': 'user', 'content': 'please show me a joke and an image of cat'}, {'role': 'assistant', 'content': '[{"task": "conversational", "id": 0, "dep": [-1], "args": {"text": "please show me a joke of cat" }}, {"task": "text-to-image", "id": 1, "dep": [-1], "args": {"text": "a photo of cat" }}]'}, {'role': 'user', 'content': 'The chat log [ [] ] may contain the resources I mentioned. Now I input { Please detect the human pose in the image examples/d.jpg. }. Pay attention to the input and output types of tasks and the dependencies between tasks.'}]
+2025-10-22 16:11:52,950 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/meta-llama/Llama-3.3-70B-Instruct?expand=inferenceProviderMapping HTTP/1.1" 200 1321
+2025-10-22 16:11:52,952 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): router.huggingface.co:443
+2025-10-22 16:11:53,963 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /nebius/v1/chat/completions HTTP/1.1" 200 None
+2025-10-22 16:11:53,964 - root - DEBUG - [{'task': 'image-classification', 'id': 0, 'dep': [-1], 'args': {'image': 'examples/d.jpg'}}, {'task': 'openpose-control', 'id': 1, 'dep': [0], 'args': {'image': '<GENERATED>-0'}}]
+2025-10-22 16:11:53,964 - root - DEBUG - Run task: 0 - image-classification
+2025-10-22 16:11:53,965 - root - DEBUG - Deps: []
+2025-10-22 16:11:53,965 - root - DEBUG - Parsed Task: {'task': 'image-classification', 'id': 0, 'dep': [-1], 'args': {'image': 'public/examples/d.jpg'}}
+2025-10-22 16:11:53,967 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 16:11:53,968 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 16:11:53,970 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 16:11:53,971 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 16:11:53,972 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 16:11:53,973 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 16:11:53,974 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/vit-base-patch16-224 HTTP/1.1" 200 17
+2025-10-22 16:11:53,976 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 16:11:53,977 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 16:11:53,978 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 16:11:53,980 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 16:11:53,981 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 16:11:53,982 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 16:11:53,983 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/resnet-50 HTTP/1.1" 200 17
+2025-10-22 16:11:53,983 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 16:11:53,984 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/beit-base-patch16-224-pt22k-ft22k HTTP/1.1" 200 17
+2025-10-22 16:11:53,985 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 16:11:53,988 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 16:11:53,990 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 16:11:53,990 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/facebook/deit-base-distilled-patch16-224 HTTP/1.1" 200 17
+2025-10-22 16:11:53,991 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/cafeai/cafe_aesthetic HTTP/1.1" 200 17
+2025-10-22 16:11:53,992 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 16:11:53,994 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 16:11:53,995 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 16:11:53,996 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 16:11:53,996 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/dit-base-finetuned-rvlcdip HTTP/1.1" 200 17
+2025-10-22 16:11:53,997 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 16:11:53,998 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 16:11:54,000 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 16:11:54,002 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 16:11:54,003 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 16:11:54,005 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 16:11:54,007 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 16:11:54,008 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 16:11:54,009 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/nateraw/vit-age-classifier HTTP/1.1" 200 17
+2025-10-22 16:11:54,010 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 16:11:54,010 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/timm/vit_large_patch14_clip_224.openai_ft_in12k_in1k HTTP/1.1" 200 17
+2025-10-22 16:11:54,011 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 16:11:54,012 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/saltacc/anime-ai-detect HTTP/1.1" 200 17
+2025-10-22 16:11:54,013 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 16:11:54,014 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 16:11:54,015 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 16:11:54,016 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 16:11:54,017 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Rajaram1996/FacialEmoRecog HTTP/1.1" 200 17
+2025-10-22 16:11:54,018 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 16:11:54,019 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 16:11:54,019 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 16:11:54,020 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 16:11:54,022 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 16:11:54,023 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/vit-base-patch16-384 HTTP/1.1" 200 17
+2025-10-22 16:11:54,024 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 16:11:54,025 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 16:11:54,026 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 16:11:54,027 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 16:11:54,028 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 16:11:54,029 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/swin-tiny-patch4-window7-224 HTTP/1.1" 200 17
+2025-10-22 16:11:54,031 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 16:11:54,031 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/nvidia/mit-b0 HTTP/1.1" 200 17
+2025-10-22 16:11:54,032 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 16:11:54,033 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/umm-maybe/AI-image-detector HTTP/1.1" 200 17
+2025-10-22 16:11:54,035 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 16:11:54,036 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 16:11:54,038 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 16:11:54,038 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 16:11:54,040 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 16:11:54,041 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 16:11:54,042 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/deepmind/vision-perceiver-learned HTTP/1.1" 200 17
+2025-10-22 16:11:54,043 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 16:11:54,044 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 16:11:54,046 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 16:11:54,047 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 16:11:54,049 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 16:11:54,050 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 16:11:54,050 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 16:11:54,051 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/facebook/deit-base-patch16-224 HTTP/1.1" 200 17
+2025-10-22 16:11:54,052 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 16:11:54,053 - root - DEBUG - Model: google/vit-base-patch16-224 | Status: False | Source: None
+2025-10-22 16:11:54,053 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/nateraw/food HTTP/1.1" 200 17
+2025-10-22 16:11:54,055 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/nateraw/vit-base-beans HTTP/1.1" 200 17
+2025-10-22 16:11:54,057 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/apple/mobilevit-small HTTP/1.1" 200 17
+2025-10-22 16:11:54,060 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/carbon225/vit-base-patch16-224-hentai HTTP/1.1" 200 17
+2025-10-22 16:11:54,065 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/facebook/convnext-tiny-224 HTTP/1.1" 200 17
+2025-10-22 16:11:54,065 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/swin-base-patch4-window7-224-in22k HTTP/1.1" 200 17
+2025-10-22 16:11:54,066 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/vit-base-patch32-384 HTTP/1.1" 200 17
+2025-10-22 16:11:54,068 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/mindspore-ai/LeNet HTTP/1.1" 200 17
+2025-10-22 16:11:54,070 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/ydshieh/vit-gpt2-coco-en-ckpts HTTP/1.1" 200 17
+2025-10-22 16:11:54,073 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/resnet-18 HTTP/1.1" 200 17
+2025-10-22 16:11:54,074 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Hrishikesh332/autotrain-meme-classification-42897109437 HTTP/1.1" 200 17
+2025-10-22 16:11:54,076 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/vit-large-patch16-384 HTTP/1.1" 200 17
+2025-10-22 16:11:54,077 - root - DEBUG - Model: microsoft/resnet-50 | Status: False | Source: None
+2025-10-22 16:11:54,079 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/vit-large-patch32-384 HTTP/1.1" 200 17
+2025-10-22 16:11:54,080 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/julien-c/hotdog-not-hotdog HTTP/1.1" 200 17
+2025-10-22 16:11:54,086 - root - DEBUG - Model: microsoft/beit-base-patch16-224-pt22k-ft22k | Status: False | Source: None
+2025-10-22 16:11:54,088 - root - DEBUG - Model: facebook/deit-base-distilled-patch16-224 | Status: False | Source: None
+2025-10-22 16:11:54,088 - root - DEBUG - Model: cafeai/cafe_aesthetic | Status: False | Source: None
+2025-10-22 16:11:54,088 - root - DEBUG - Model: microsoft/dit-base-finetuned-rvlcdip | Status: False | Source: None
+2025-10-22 16:11:54,088 - root - DEBUG - Model: nateraw/vit-age-classifier | Status: False | Source: None
+2025-10-22 16:11:54,088 - root - DEBUG - Model: timm/vit_large_patch14_clip_224.openai_ft_in12k_in1k | Status: False | Source: None
+2025-10-22 16:11:54,088 - root - DEBUG - Model: saltacc/anime-ai-detect | Status: False | Source: None
+2025-10-22 16:11:54,088 - root - DEBUG - Model: Rajaram1996/FacialEmoRecog | Status: False | Source: None
+2025-10-22 16:11:54,088 - root - DEBUG - Model: google/vit-base-patch16-384 | Status: False | Source: None
+2025-10-22 16:11:54,088 - root - DEBUG - Model: microsoft/swin-tiny-patch4-window7-224 | Status: False | Source: None
+2025-10-22 16:11:54,088 - root - DEBUG - Model: nvidia/mit-b0 | Status: False | Source: None
+2025-10-22 16:11:54,088 - root - DEBUG - Model: umm-maybe/AI-image-detector | Status: False | Source: None
+2025-10-22 16:11:54,088 - root - DEBUG - Model: deepmind/vision-perceiver-learned | Status: False | Source: None
+2025-10-22 16:11:54,088 - root - DEBUG - Model: facebook/deit-base-patch16-224 | Status: False | Source: None
+2025-10-22 16:11:54,088 - root - DEBUG - Model: nateraw/food | Status: False | Source: None
+2025-10-22 16:11:54,088 - root - DEBUG - Model: nateraw/vit-base-beans | Status: False | Source: None
+2025-10-22 16:11:54,088 - root - DEBUG - Model: apple/mobilevit-small | Status: False | Source: None
+2025-10-22 16:11:54,088 - root - DEBUG - Model: carbon225/vit-base-patch16-224-hentai | Status: False | Source: None
+2025-10-22 16:11:54,088 - root - DEBUG - Model: facebook/convnext-tiny-224 | Status: False | Source: None
+2025-10-22 16:11:54,088 - root - DEBUG - Model: google/vit-base-patch32-384 | Status: False | Source: None
+2025-10-22 16:11:54,088 - root - DEBUG - Model: microsoft/swin-base-patch4-window7-224-in22k | Status: False | Source: None
+2025-10-22 16:11:54,088 - root - DEBUG - Model: mindspore-ai/LeNet | Status: False | Source: None
+2025-10-22 16:11:54,088 - root - DEBUG - Model: ydshieh/vit-gpt2-coco-en-ckpts | Status: False | Source: None
+2025-10-22 16:11:54,088 - root - DEBUG - Model: microsoft/resnet-18 | Status: False | Source: None
+2025-10-22 16:11:54,088 - root - DEBUG - Model: Hrishikesh332/autotrain-meme-classification-42897109437 | Status: False | Source: None
+2025-10-22 16:11:54,088 - root - DEBUG - Model: google/vit-large-patch16-384 | Status: False | Source: None
+2025-10-22 16:11:54,088 - root - DEBUG - Model: google/vit-large-patch32-384 | Status: False | Source: None
+2025-10-22 16:11:54,088 - root - DEBUG - Model: julien-c/hotdog-not-hotdog | Status: False | Source: None
+2025-10-22 16:11:54,804 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/microsoft/resnet-50 HTTP/1.1" 200 4578
+2025-10-22 16:11:54,806 - root - DEBUG - Model: microsoft/resnet-50 | Status: True | Source: huggingface
+2025-10-22 16:11:54,852 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/google/vit-base-patch16-224 HTTP/1.1" 200 5199
+2025-10-22 16:11:54,852 - root - DEBUG - Model: google/vit-base-patch16-224 | Status: True | Source: huggingface
+2025-10-22 16:11:54,886 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/microsoft/beit-base-patch16-224-pt22k-ft22k HTTP/1.1" 200 3849
+2025-10-22 16:11:54,887 - root - DEBUG - Model: microsoft/beit-base-patch16-224-pt22k-ft22k | Status: False | Source: None
+2025-10-22 16:11:54,893 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/facebook/deit-base-distilled-patch16-224 HTTP/1.1" 200 1554
+2025-10-22 16:11:54,894 - root - DEBUG - Model: facebook/deit-base-distilled-patch16-224 | Status: True | Source: huggingface
+2025-10-22 16:11:54,902 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/microsoft/dit-base-finetuned-rvlcdip HTTP/1.1" 200 2014
+2025-10-22 16:11:54,904 - root - DEBUG - Model: microsoft/dit-base-finetuned-rvlcdip | Status: True | Source: huggingface
+2025-10-22 16:11:54,938 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/cafeai/cafe_aesthetic HTTP/1.1" 200 1466
+2025-10-22 16:11:54,939 - root - DEBUG - Model: cafeai/cafe_aesthetic | Status: True | Source: huggingface
+2025-10-22 16:11:54,952 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/nateraw/vit-age-classifier HTTP/1.1" 200 4065
+2025-10-22 16:11:54,956 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/timm/vit_large_patch14_clip_224.openai_ft_in12k_in1k HTTP/1.1" 200 1668
+2025-10-22 16:11:55,012 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/Rajaram1996/FacialEmoRecog HTTP/1.1" 200 1373
+2025-10-22 16:11:55,017 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/microsoft/swin-tiny-patch4-window7-224 HTTP/1.1" 200 4885
+2025-10-22 16:11:55,020 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/nvidia/mit-b0 HTTP/1.1" 200 2372
+2025-10-22 16:11:55,021 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/google/vit-base-patch16-384 HTTP/1.1" 200 1629
+2025-10-22 16:11:55,051 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/facebook/deit-base-patch16-224 HTTP/1.1" 200 1577
+2025-10-22 16:11:55,069 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/umm-maybe/AI-image-detector HTTP/1.1" 200 3655
+2025-10-22 16:11:55,077 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/deepmind/vision-perceiver-learned HTTP/1.1" 200 1136
+2025-10-22 16:11:55,083 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/facebook/convnext-tiny-224 HTTP/1.1" 200 2391
+2025-10-22 16:11:55,083 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/saltacc/anime-ai-detect HTTP/1.1" 200 3681
+2025-10-22 16:11:55,095 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/nateraw/food HTTP/1.1" 200 5664
+2025-10-22 16:11:55,097 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/nateraw/vit-base-beans HTTP/1.1" 200 11350
+2025-10-22 16:11:55,098 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/apple/mobilevit-small HTTP/1.1" 200 2247
+2025-10-22 16:11:55,103 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/google/vit-base-patch32-384 HTTP/1.1" 200 1415
+2025-10-22 16:11:55,124 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/ydshieh/vit-gpt2-coco-en-ckpts HTTP/1.1" 200 4966
+2025-10-22 16:11:55,124 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/google/vit-large-patch32-384 HTTP/1.1" 200 1353
+2025-10-22 16:11:55,141 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/microsoft/resnet-18 HTTP/1.1" 200 2688
+2025-10-22 16:11:55,141 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/mindspore-ai/LeNet HTTP/1.1" 200 850
+2025-10-22 16:11:55,142 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/google/vit-large-patch16-384 HTTP/1.1" 200 1348
+2025-10-22 16:11:55,145 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/carbon225/vit-base-patch16-224-hentai HTTP/1.1" 200 1995
+2025-10-22 16:11:55,146 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/microsoft/swin-base-patch4-window7-224-in22k HTTP/1.1" 200 2335
+2025-10-22 16:11:55,332 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/Hrishikesh332/autotrain-meme-classification-42897109437 HTTP/1.1" 200 2643
+2025-10-22 16:11:55,399 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/julien-c/hotdog-not-hotdog HTTP/1.1" 200 4367
+2025-10-22 16:11:55,400 - huggingface_hub.repocard_data - WARNING - Invalid model-index. Not loading eval results into CardData.
+2025-10-22 16:11:55,400 - root - DEBUG - avaliable models on image-classification: {'local': [], 'huggingface': ['microsoft/resnet-50', 'google/vit-base-patch16-224', 'facebook/deit-base-distilled-patch16-224', 'microsoft/dit-base-finetuned-rvlcdip', 'cafeai/cafe_aesthetic']}
+2025-10-22 16:11:55,403 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): router.huggingface.co:443
+2025-10-22 16:11:57,660 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /nebius/v1/chat/completions HTTP/1.1" 200 None
+2025-10-22 16:11:57,661 - root - DEBUG - chosen model: {"id": "google/vit-base-patch16-224", "reason": "The model google/vit-base-patch16-224 is chosen because it has the highest number of likes (169) indicating its popularity, and its description mentions it is a Vision Transformer (base-sized model) pre-trained on ImageNet-2, which suggests it has a strong foundation for image classification tasks. Additionally, it has a local inference endpoint, which is preferred for speed and stability. Although the task is to detect human pose, which is more specifically an object detection or image segmentation task, the provided models are primarily for image classification. Among the given options, google/vit-base-patch16-224 seems to be the most versatile and potentially capable of being adapted or fine-tuned for more specific tasks like human pose detection, given its strong base in vision tasks."}
+2025-10-22 16:11:57,663 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-22 16:11:57,847 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/google/vit-base-patch16-224?expand=inferenceProviderMapping HTTP/1.1" 200 226
+2025-10-22 16:11:57,957 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/google/vit-base-patch16-224 HTTP/1.1" 200 5199
+2025-10-22 16:12:01,266 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /hf-inference/models/google/vit-base-patch16-224 HTTP/1.1" 400 54
+2025-10-22 16:12:01,269 - root - WARNING - Inference error: {'message': "(Request ID: Root=1-68f9024e-5b6ba8be32619c0b096e8c00;a2a85212-282c-4872-aa47-29c57ac8e46d)\n\nBad request:\n'NoneType' object has no attribute 'lower'"}
+2025-10-22 16:12:01,269 - root - DEBUG -  Failure: {"input": "Please detect the human pose in the image examples/d.jpg.", "task": {"task": "image-classification", "id": 0, "dep": [-1], "args": {"image": "public/examples/d.jpg"}}, "reason": "inference error: {'message': \"(Request ID: Root=1-68f9024e-5b6ba8be32619c0b096e8c00;a2a85212-282c-4872-aa47-29c57ac8e46d)\\n\\nBad request:\\n'NoneType' object has no attribute 'lower'\"}", "op": "message"}
+2025-10-22 16:12:01,269 - root - DEBUG - Inference Result: {'error': {'message': "(Request ID: Root=1-68f9024e-5b6ba8be32619c0b096e8c00;a2a85212-282c-4872-aa47-29c57ac8e46d)\n\nBad request:\n'NoneType' object has no attribute 'lower'"}}
+2025-10-22 16:12:01,473 - root - DEBUG - Run task: 1 - openpose-control
+2025-10-22 16:12:01,474 - root - DEBUG - Deps: [{"task": {"task": "image-classification", "id": 0, "dep": [-1], "args": {"image": "public/examples/d.jpg"}}, "inference result": {"error": {"message": "(Request ID: Root=1-68f9024e-5b6ba8be32619c0b096e8c00;a2a85212-282c-4872-aa47-29c57ac8e46d)\n\nBad request:\n'NoneType' object has no attribute 'lower'"}}, "choose model result": {"id": "google/vit-base-patch16-224", "reason": "The model google/vit-base-patch16-224 is chosen because it has the highest number of likes (169) indicating its popularity, and its description mentions it is a Vision Transformer (base-sized model) pre-trained on ImageNet-2, which suggests it has a strong foundation for image classification tasks. Additionally, it has a local inference endpoint, which is preferred for speed and stability. Although the task is to detect human pose, which is more specifically an object detection or image segmentation task, the provided models are primarily for image classification. Among the given options, google/vit-base-patch16-224 seems to be the most versatile and potentially capable of being adapted or fine-tuned for more specific tasks like human pose detection, given its strong base in vision tasks."}}]
+2025-10-22 16:12:01,474 - root - DEBUG - Detect the image of dependency task (from args): public/examples/d.jpg
+2025-10-22 16:12:01,474 - root - DEBUG - Parsed Task: {'task': 'openpose-control', 'id': 1, 'dep': [0], 'args': {'image': 'public/examples/d.jpg'}}
+2025-10-22 16:12:01,474 - root - DEBUG - Chosen Model: {'id': 'openpose-control', 'reason': 'ControlNet is the best model for this task.'}
+2025-10-22 16:12:01,475 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-22 16:12:01,479 - urllib3.connectionpool - DEBUG - http://localhost:8005 "POST /models/openpose-control HTTP/1.1" 404 58
+2025-10-22 16:12:01,480 - root - WARNING - Inference error: {'message': 'Model openpose-control not loaded'}
+2025-10-22 16:12:01,480 - root - DEBUG -  Failure: {"input": "Please detect the human pose in the image examples/d.jpg.", "task": {"task": "openpose-control", "id": 1, "dep": [0], "args": {"image": "public/examples/d.jpg"}}, "reason": "inference error: {'message': 'Model openpose-control not loaded'}", "op": "message"}
+2025-10-22 16:12:01,480 - root - DEBUG - Inference Result: {'error': {'message': 'Model openpose-control not loaded'}}
+2025-10-22 16:12:01,480 - root - DEBUG - {0: {'task': {'task': 'image-classification', 'id': 0, 'dep': [-1], 'args': {'image': 'public/examples/d.jpg'}}, 'inference result': {'error': {'message': "(Request ID: Root=1-68f9024e-5b6ba8be32619c0b096e8c00;a2a85212-282c-4872-aa47-29c57ac8e46d)\n\nBad request:\n'NoneType' object has no attribute 'lower'"}}, 'choose model result': {'id': 'google/vit-base-patch16-224', 'reason': 'The model google/vit-base-patch16-224 is chosen because it has the highest number of likes (169) indicating its popularity, and its description mentions it is a Vision Transformer (base-sized model) pre-trained on ImageNet-2, which suggests it has a strong foundation for image classification tasks. Additionally, it has a local inference endpoint, which is preferred for speed and stability. Although the task is to detect human pose, which is more specifically an object detection or image segmentation task, the provided models are primarily for image classification. Among the given options, google/vit-base-patch16-224 seems to be the most versatile and potentially capable of being adapted or fine-tuned for more specific tasks like human pose detection, given its strong base in vision tasks.'}}, 1: {'task': {'task': 'openpose-control', 'id': 1, 'dep': [0], 'args': {'image': 'public/examples/d.jpg'}}, 'inference result': {'error': {'message': 'Model openpose-control not loaded'}}, 'choose model result': {'id': 'openpose-control', 'reason': 'ControlNet is the best model for this task.'}}}
+2025-10-22 16:12:03,512 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /nebius/v1/chat/completions HTTP/1.1" 200 None
+2025-10-22 16:12:03,514 - root - DEBUG - I'm happy to help you with detecting the human pose in the image examples/d.jpg. 
+<EXPLANATION> Unfortunately, I couldn't detect the human pose in the image examples/d.jpg because the model openpose-control, which is the most suitable model for this task, was not loaded and returned an error message. The other model, google/vit-base-patch16-224, is primarily for image classification and not suitable for human pose detection. Therefore, I couldn't provide the detection results. If you want to detect human pose, I suggest you load the openpose-control model or use other models that are specifically designed for human pose detection. </EXPLANATION>
+2025-10-22 16:12:03,525 - retriever - DEBUG - Loaded 34 entries from data/explanations.jsonl
+2025-10-22 16:12:03,838 - retriever - DEBUG - Best similarity = 0.911 (threshold = 0.95)
+2025-10-22 16:12:03,845 - retriever - INFO - Saved new explanation to data/explanations.jsonl: Unfortunately, I couldn't detect the human pose in the image...
+2025-10-22 16:12:05,595 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /nebius/v1/chat/completions HTTP/1.1" 200 None
+2025-10-22 16:12:05,596 - judge - INFO - Judge decided: combined (Both explanations are identical and accurate, but lack specific details about the error and model capabilities.)
+2025-10-22 16:12:05,597 - root - DEBUG - Final explanation chosen by Judge: Unfortunately, I couldn't detect the human pose in the image examples/d.jpg because the model openpose-control, which is the most suitable model for this task, was not loaded and returned an error message. The other model, google/vit-base-patch16-224, is primarily for image classification and not suitable for human pose detection. Therefore, I couldn't provide the detection results. If you want to detect human pose, I suggest you load the openpose-control model or use other models that are specifically designed for human pose detection.
+2025-10-22 16:12:05,597 - root - DEBUG -  Success: {"input": "Please detect the human pose in the image examples/d.jpg.", "task": "[{\"task\": \"image-classification\", \"id\": 0, \"dep\": [-1], \"args\": {\"image\": \"examples/d.jpg\" }}, {\"task\": \"openpose-control\", \"id\": 1, \"dep\": [0], \"args\": {\"image\": \"<GENERATED>-0\" }}]", "results": {"0": {"task": {"task": "image-classification", "id": 0, "dep": [-1], "args": {"image": "public/examples/d.jpg"}}, "inference result": {"error": {"message": "(Request ID: Root=1-68f9024e-5b6ba8be32619c0b096e8c00;a2a85212-282c-4872-aa47-29c57ac8e46d)\n\nBad request:\n'NoneType' object has no attribute 'lower'"}}, "choose model result": {"id": "google/vit-base-patch16-224", "reason": "The model google/vit-base-patch16-224 is chosen because it has the highest number of likes (169) indicating its popularity, and its description mentions it is a Vision Transformer (base-sized model) pre-trained on ImageNet-2, which suggests it has a strong foundation for image classification tasks. Additionally, it has a local inference endpoint, which is preferred for speed and stability. Although the task is to detect human pose, which is more specifically an object detection or image segmentation task, the provided models are primarily for image classification. Among the given options, google/vit-base-patch16-224 seems to be the most versatile and potentially capable of being adapted or fine-tuned for more specific tasks like human pose detection, given its strong base in vision tasks."}}, "1": {"task": {"task": "openpose-control", "id": 1, "dep": [0], "args": {"image": "public/examples/d.jpg"}}, "inference result": {"error": {"message": "Model openpose-control not loaded"}}, "choose model result": {"id": "openpose-control", "reason": "ControlNet is the best model for this task."}}}, "response": "I'm happy to help you with detecting the human pose in the image examples/d.jpg. \nUnfortunately, I couldn't detect the human pose in the image examples/d.jpg because the model openpose-control, which is the most suitable model for this task, was not loaded and returned an error message. The other model, google/vit-base-patch16-224, is primarily for image classification and not suitable for human pose detection. Therefore, I couldn't provide the detection results. If you want to detect human pose, I suggest you load the openpose-control model or use other models that are specifically designed for human pose detection.", "during": 12.756957292556763, "op": "response"}
+2025-10-22 16:12:05,597 - root - INFO - response: I'm happy to help you with detecting the human pose in the image examples/d.jpg. 
+Unfortunately, I couldn't detect the human pose in the image examples/d.jpg because the model openpose-control, which is the most suitable model for this task, was not loaded and returned an error message. The other model, google/vit-base-patch16-224, is primarily for image classification and not suitable for human pose detection. Therefore, I couldn't provide the detection results. If you want to detect human pose, I suggest you load the openpose-control model or use other models that are specifically designed for human pose detection.
+2025-10-22 16:12:17,845 - root - INFO - [ User ]: exit
+2025-10-22 16:12:17,846 - root - INFO - [ Jarvis ]: Goodnight.

@@ -1,0 +1,253 @@
+2025-11-07 13:19:47,214 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda:0
+2025-11-07 13:19:47,214 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-07 13:19:47,216 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-11-07 13:19:47,368 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-11-07 13:19:47,376 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-11-07 13:19:47,482 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-11-07 13:19:47,487 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-11-07 13:19:47,777 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-11-07 13:19:47,783 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-11-07 13:19:47,893 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-11-07 13:19:47,898 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+2025-11-07 13:19:48,007 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-11-07 13:19:48,012 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-11-07 13:19:48,118 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-11-07 13:19:48,124 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+2025-11-07 13:19:48,231 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-11-07 13:19:48,339 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-11-07 13:19:48,344 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+2025-11-07 13:19:48,522 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-11-07 13:19:48,530 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+2025-11-07 13:19:48,639 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-11-07 13:19:48,804 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-11-07 13:19:48,811 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-11-07 13:19:49,105 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6876
+2025-11-07 13:19:49,257 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-07 13:19:49,259 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /running HTTP/1.1" 200 17
+2025-11-07 13:19:49,277 - root - DEBUG - text-classification: 30 models
+2025-11-07 13:19:49,277 - root - DEBUG - token-classification: 30 models
+2025-11-07 13:19:49,277 - root - DEBUG - text2text-generation: 30 models
+2025-11-07 13:19:49,277 - root - DEBUG - summarization: 30 models
+2025-11-07 13:19:49,277 - root - DEBUG - translation: 30 models
+2025-11-07 13:19:49,277 - root - DEBUG - question-answering: 30 models
+2025-11-07 13:19:49,277 - root - DEBUG - conversational: 30 models
+2025-11-07 13:19:49,277 - root - DEBUG - text-generation: 30 models
+2025-11-07 13:19:49,277 - root - DEBUG - sentence-similarity: 30 models
+2025-11-07 13:19:49,277 - root - DEBUG - tabular-classification: 30 models
+2025-11-07 13:19:49,277 - root - DEBUG - object-detection: 30 models
+2025-11-07 13:19:49,277 - root - DEBUG - image-classification: 30 models
+2025-11-07 13:19:49,277 - root - DEBUG - image-to-text: 30 models
+2025-11-07 13:19:49,277 - root - DEBUG - text-to-image: 31 models
+2025-11-07 13:19:49,277 - root - DEBUG - image-to-image: 30 models
+2025-11-07 13:19:49,277 - root - DEBUG - visual-question-answering: 13 models
+2025-11-07 13:19:49,277 - root - DEBUG - document-question-answering: 22 models
+2025-11-07 13:19:49,277 - root - DEBUG - image-segmentation: 30 models
+2025-11-07 13:19:49,277 - root - DEBUG - depth-estimation: 30 models
+2025-11-07 13:19:49,277 - root - DEBUG - text-to-video: 8 models
+2025-11-07 13:19:49,277 - root - DEBUG - text-to-speech: 30 models
+2025-11-07 13:19:49,277 - root - DEBUG - automatic-speech-recognition: 30 models
+2025-11-07 13:19:49,277 - root - DEBUG - audio-to-audio: 30 models
+2025-11-07 13:19:49,277 - root - DEBUG - audio-classification: 30 models
+2025-11-07 13:19:49,277 - root - DEBUG - named-entity-recognition: 1 models
+2025-11-07 13:19:49,277 - root - DEBUG - optical-character-recognition: 1 models
+2025-11-07 13:19:49,278 - root - INFO - Welcome to Jarvis! A collaborative system that consists of an LLM as the controller and numerous expert models as collaborative executors. Jarvis can plan tasks, schedule Hugging Face models, generate friendly responses based on your requests, and help you with many things. Please enter your request (`exit` to exit).
+2025-11-07 13:20:25,231 - root - INFO - [ User ]: estimate the depth map for this photo: examples/g.jpg
+2025-11-07 13:20:25,231 - root - INFO - ********************************************************************************
+2025-11-07 13:20:25,231 - root - INFO - input: Estimate the depth map for this photo: examples/g.jpg
+2025-11-07 13:20:25,232 - root - DEBUG - Messages: [{'role': 'system', 'content': '#1 Task Planning Stage: You are a helpful AI assistant. Based on the user\'s request, you will recommend the best model from Hugging Face for the task, and explain why. The special tag "<GENERATED>-dep_id" refer to the one generated text/image/audio in the dependency task (Please consider whether the dependency task generates resources of this type.) and "dep_id" must be in "dep" list.  The "dep" field denotes the ids of the previous prerequisite tasks which generate a new resource that the current task relies on.  The "args" field must in ["text", "image", "audio"], nothing else.  The "task" field must be in ["token-classification", "optical-character-recognition", "named-entity-recognition", "text2text-generation", "summarization", "translation", "question-answering", "conversational", "text-generation", "sentence-similarity", "tabular-classification", "object-detection", "image-classification", "image-to-image", "image-to-text", "text-to-image", "text-to-video", "visual-question-answering", "document-question-answering", "image-segmentation", "depth-estimation", "text-to-speech", "automatic-speech-recognition", "audio-to-audio", "audio-classification", "canny-control", "hed-control", "mlsd-control", "normal-control", "openpose-control", "canny-text-to-image", "depth-text-to-image", "hed-text-to-image", "mlsd-text-to-image", "normal-text-to-image", "seg-text-to-image"] You must respond in JSON format like: [\n  {\n    "task": task, \n    "id": task_id, \n    "dep": dependency_task_id, \n    "args": {\n      "text": text or <GENERATED>-dep_id, \n      "image": image_url or <GENERATED>-dep_id, \n      "audio": audio_url or <GENERATED>-dep_id\n    }\n  }\n] Respond with the JSON entry and ONLY the JSON entry! Here are some few-shot examples:'}, {'role': 'user', 'content': 'Give you some pictures e1.jpg, e2.png, e3.jpg, help me count the number of sheep?'}, {'role': 'assistant', 'content': '[{"task": "image-to-text", "id": 0, "dep": [-1], "args": {"image": "e1.jpg" }}, {"task": "object-detection", "id": 1, "dep": [-1], "args": {"image": "e1.jpg" }}, {"task": "visual-question-answering", "id": 2, "dep": [1], "args": {"image": "<GENERATED>-1", "text": "How many sheep in the picture"}} }}, {"task": "image-to-text", "id": 3, "dep": [-1], "args": {"image": "e2.png" }}, {"task": "object-detection", "id": 4, "dep": [-1], "args": {"image": "e2.png" }}, {"task": "visual-question-answering", "id": 5, "dep": [4], "args": {"image": "<GENERATED>-4", "text": "How many sheep in the picture"}} }}, {"task": "image-to-text", "id": 6, "dep": [-1], "args": {"image": "e3.jpg" }},  {"task": "object-detection", "id": 7, "dep": [-1], "args": {"image": "e3.jpg" }}, {"task": "visual-question-answering", "id": 8, "dep": [7], "args": {"image": "<GENERATED>-7", "text": "How many sheep in the picture"}}]'}, {'role': 'user', 'content': 'Look at /e.jpg, can you tell me how many objects in the picture? Give me a picture and video similar to this one.'}, {'role': 'assistant', 'content': '[{"task": "image-to-text", "id": 0, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "object-detection", "id": 1, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "visual-question-answering", "id": 2, "dep": [1], "args": {"image": "<GENERATED>-1", "text": "how many objects in the picture?" }}, {"task": "text-to-image", "id": 3, "dep": [0], "args": {"text": "<GENERATED-0>" }}, {"task": "image-to-image", "id": 4, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "text-to-video", "id": 5, "dep": [0], "args": {"text": "<GENERATED-0>" }}]'}, {'role': 'user', 'content': 'given a document /images/e.jpeg, answer me what is the student amount? And describe the image with your voice'}, {'role': 'assistant', 'content': '{"task": "document-question-answering", "id": 0, "dep": [-1], "args": {"image": "/images/e.jpeg", "text": "what is the student amount?" }}, {"task": "visual-question-answering", "id": 1, "dep": [-1], "args": {"image": "/images/e.jpeg", "text": "what is the student amount?" }}, {"task": "image-to-text", "id": 2, "dep": [-1], "args": {"image": "/images/e.jpg" }}, {"task": "text-to-speech", "id": 3, "dep": [2], "args": {"text": "<GENERATED>-2" }}]'}, {'role': 'user', 'content': 'Given an image /example.jpg, first generate a hed image, then based on the hed image generate a new image where a girl is reading a book'}, {'role': 'assistant', 'content': '[{"task": "openpose-control", "id": 0, "dep": [-1], "args": {"image": "/example.jpg" }},  {"task": "openpose-text-to-image", "id": 1, "dep": [0], "args": {"text": "a girl is reading a book", "image": "<GENERATED>-0" }}]'}, {'role': 'user', 'content': "please show me a video and an image of (based on the text) 'a boy is running' and dub it"}, {'role': 'assistant', 'content': '[{"task": "text-to-video", "id": 0, "dep": [-1], "args": {"text": "a boy is running" }}, {"task": "text-to-speech", "id": 1, "dep": [-1], "args": {"text": "a boy is running" }}, {"task": "text-to-image", "id": 2, "dep": [-1], "args": {"text": "a boy is running" }}]'}, {'role': 'user', 'content': 'please show me a joke and an image of cat'}, {'role': 'assistant', 'content': '[{"task": "conversational", "id": 0, "dep": [-1], "args": {"text": "please show me a joke of cat" }}, {"task": "text-to-image", "id": 1, "dep": [-1], "args": {"text": "a photo of cat" }}]'}, {'role': 'user', 'content': 'The chat log [ [] ] may contain the resources I mentioned. Now I input { Estimate the depth map for this photo: examples/g.jpg }. Pay attention to the input and output types of tasks and the dependencies between tasks.'}]
+2025-11-07 13:20:25,339 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/meta-llama/Llama-3.3-70B-Instruct?expand=inferenceProviderMapping HTTP/1.1" 200 1321
+2025-11-07 13:20:25,341 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): router.huggingface.co:443
+2025-11-07 13:20:26,004 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /nebius/v1/chat/completions HTTP/1.1" 200 None
+2025-11-07 13:20:26,005 - root - DEBUG - [{'task': 'depth-estimation', 'id': 0, 'dep': [-1], 'args': {'image': 'examples/g.jpg'}}]
+2025-11-07 13:20:26,006 - root - DEBUG - Run task: 0 - depth-estimation
+2025-11-07 13:20:26,006 - root - DEBUG - Deps: []
+2025-11-07 13:20:26,006 - root - DEBUG - Parsed Task: {'task': 'depth-estimation', 'id': 0, 'dep': [-1], 'args': {'image': 'public/examples/g.jpg'}}
+2025-11-07 13:20:26,008 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-11-07 13:20:26,010 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-07 13:20:26,014 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-07 13:20:26,016 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-11-07 13:20:26,018 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-07 13:20:26,022 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-11-07 13:20:26,024 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-07 13:20:26,025 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-11-07 13:20:26,031 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-07 13:20:26,032 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-11-07 13:20:26,037 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Intel/dpt-large HTTP/1.1" 200 17
+2025-11-07 13:20:26,038 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-07 13:20:26,044 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Intel/dpt-hybrid-midas HTTP/1.1" 200 16
+2025-11-07 13:20:26,045 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-11-07 13:20:26,047 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/vinvino02/glpn-nyu HTTP/1.1" 200 17
+2025-11-07 13:20:26,049 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-11-07 13:20:26,073 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-11-07 13:20:26,053 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-11-07 13:20:26,056 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/sayakpaul/glpn-nyu-finetuned-diode-221122-044810 HTTP/1.1" 200 17
+2025-11-07 13:20:26,059 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-07 13:20:26,064 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Sohaib36/MonoScene HTTP/1.1" 200 17
+2025-11-07 13:20:26,065 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-11-07 13:20:26,066 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/ChristianOrr/madnet_keras HTTP/1.1" 200 17
+2025-11-07 13:20:26,112 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-07 13:20:26,051 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-07 13:20:26,074 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-07 13:20:26,077 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-11-07 13:20:26,081 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-07 13:20:26,125 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/vinvino02/glpn-kitti HTTP/1.1" 200 17
+2025-11-07 13:20:26,086 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-07 13:20:26,091 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-11-07 13:20:26,094 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-07 13:20:26,104 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/sayakpaul/glpn-nyu-finetuned-diode-221121-063504 HTTP/1.1" 200 17
+2025-11-07 13:20:26,104 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-11-07 13:20:26,106 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-07 13:20:26,110 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-11-07 13:20:26,069 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-07 13:20:26,113 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-11-07 13:20:26,116 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-07 13:20:26,123 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-11-07 13:20:26,125 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-07 13:20:26,126 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/sayakpaul/glpn-nyu-finetuned-diode-230124-104649 HTTP/1.1" 200 17
+2025-11-07 13:20:26,127 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-11-07 13:20:26,082 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-11-07 13:20:26,129 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-07 13:20:26,129 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/sayakpaul/glpn-kitti-finetuned-diode HTTP/1.1" 200 17
+2025-11-07 13:20:26,138 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/nielsr/dpt-large-redesign HTTP/1.1" 200 17
+2025-11-07 13:20:26,139 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-07 13:20:26,139 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-11-07 13:20:26,142 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/hf-tiny-model-private/tiny-random-GLPNForDepthEstimation HTTP/1.1" 200 17
+2025-11-07 13:20:26,143 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-11-07 13:20:26,144 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-07 13:20:26,149 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/sayakpaul/glpn-nyu-finetuned-diode-221116-054332 HTTP/1.1" 200 17
+2025-11-07 13:20:26,151 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/sayakpaul/glpn-nyu-finetuned-diode-221122-014502 HTTP/1.1" 200 17
+2025-11-07 13:20:26,153 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/sayakpaul/glpn-nyu-finetuned-diode-221116-104421 HTTP/1.1" 200 17
+2025-11-07 13:20:26,153 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-07 13:20:26,154 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-11-07 13:20:26,155 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-11-07 13:20:26,157 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-07 13:20:26,160 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/sayakpaul/glpn-nyu-finetuned-diode-221221-102136 HTTP/1.1" 200 17
+2025-11-07 13:20:26,163 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-11-07 13:20:26,165 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-07 13:20:26,168 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-07 13:20:26,170 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-11-07 13:20:26,171 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/sayakpaul/glpn-nyu-finetuned-diode-221122-030603 HTTP/1.1" 200 17
+2025-11-07 13:20:26,172 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-07 13:20:26,173 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-11-07 13:20:26,177 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-11-07 13:20:26,178 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-07 13:20:26,239 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/sayakpaul/glpn-nyu-finetuned-diode-221215-093747 HTTP/1.1" 200 17
+2025-11-07 13:20:26,185 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/hf-tiny-model-private/tiny-random-DPTForDepthEstimation HTTP/1.1" 200 17
+2025-11-07 13:20:26,187 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-07 13:20:26,193 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-11-07 13:20:26,194 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-07 13:20:26,195 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-11-07 13:20:26,198 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-07 13:20:26,202 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/sayakpaul/glpn-nyu-finetuned-diode-221116-110652 HTTP/1.1" 200 17
+2025-11-07 13:20:26,205 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-11-07 13:20:26,208 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-07 13:20:26,208 - root - DEBUG - Model: Intel/dpt-large | Status: False | Source: None
+2025-11-07 13:20:26,216 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/sayakpaul/glpn-nyu-finetuned-diode-221121-113853 HTTP/1.1" 200 17
+2025-11-07 13:20:26,216 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/sayakpaul/glpn-nyu-finetuned-diode-221122-082237 HTTP/1.1" 200 17
+2025-11-07 13:20:26,217 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/Intel/dpt-large HTTP/1.1" 200 4983
+2025-11-07 13:20:26,225 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/sayakpaul/glpn-nyu-finetuned-diode-221214-054706 HTTP/1.1" 200 17
+2025-11-07 13:20:26,232 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/sayakpaul/glpn-nyu-finetuned-diode HTTP/1.1" 200 17
+2025-11-07 13:20:26,234 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/sayakpaul/glpn-nyu-finetuned-diode-221214-081122 HTTP/1.1" 200 17
+2025-11-07 13:20:26,183 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-11-07 13:20:26,241 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/sayakpaul/glpn-kitti-finetuned-diode-221214-123047 HTTP/1.1" 200 17
+2025-11-07 13:20:26,255 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/sayakpaul/glpn-nyu-finetuned-diode-221215-092352 HTTP/1.1" 200 17
+2025-11-07 13:20:26,257 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/sayakpaul/glpn-nyu-finetuned-diode-221221-110911 HTTP/1.1" 200 17
+2025-11-07 13:20:26,261 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/sayakpaul/glpn-nyu-finetuned-diode-221215-095508 HTTP/1.1" 200 17
+2025-11-07 13:20:26,261 - root - DEBUG - Model: Intel/dpt-hybrid-midas | Status: True | Source: local
+2025-11-07 13:20:26,266 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/sayakpaul/glpn-nyu-finetuned-diode-221116-062619 HTTP/1.1" 200 17
+2025-11-07 13:20:26,275 - root - DEBUG - Model: vinvino02/glpn-nyu | Status: False | Source: None
+2025-11-07 13:20:26,276 - root - DEBUG - Model: sayakpaul/glpn-nyu-finetuned-diode-221122-044810 | Status: False | Source: None
+2025-11-07 13:20:26,276 - root - DEBUG - Model: Sohaib36/MonoScene | Status: False | Source: None
+2025-11-07 13:20:26,276 - root - DEBUG - Model: ChristianOrr/madnet_keras | Status: False | Source: None
+2025-11-07 13:20:26,276 - root - DEBUG - Model: vinvino02/glpn-kitti | Status: False | Source: None
+2025-11-07 13:20:26,276 - root - DEBUG - Model: sayakpaul/glpn-nyu-finetuned-diode-221121-063504 | Status: False | Source: None
+2025-11-07 13:20:26,276 - root - DEBUG - Model: sayakpaul/glpn-nyu-finetuned-diode-230124-104649 | Status: False | Source: None
+2025-11-07 13:20:26,276 - root - DEBUG - Model: sayakpaul/glpn-kitti-finetuned-diode | Status: False | Source: None
+2025-11-07 13:20:26,276 - root - DEBUG - Model: nielsr/dpt-large-redesign | Status: False | Source: None
+2025-11-07 13:20:26,276 - root - DEBUG - Model: hf-tiny-model-private/tiny-random-GLPNForDepthEstimation | Status: False | Source: None
+2025-11-07 13:20:26,276 - root - DEBUG - Model: sayakpaul/glpn-nyu-finetuned-diode-221116-054332 | Status: False | Source: None
+2025-11-07 13:20:26,276 - root - DEBUG - Model: sayakpaul/glpn-nyu-finetuned-diode-221122-014502 | Status: False | Source: None
+2025-11-07 13:20:26,276 - root - DEBUG - Model: sayakpaul/glpn-nyu-finetuned-diode-221116-104421 | Status: False | Source: None
+2025-11-07 13:20:26,276 - root - DEBUG - Model: sayakpaul/glpn-nyu-finetuned-diode-221221-102136 | Status: False | Source: None
+2025-11-07 13:20:26,276 - root - DEBUG - Model: sayakpaul/glpn-nyu-finetuned-diode-221122-030603 | Status: False | Source: None
+2025-11-07 13:20:26,276 - root - DEBUG - Model: sayakpaul/glpn-nyu-finetuned-diode-221215-093747 | Status: False | Source: None
+2025-11-07 13:20:26,276 - root - DEBUG - Model: hf-tiny-model-private/tiny-random-DPTForDepthEstimation | Status: False | Source: None
+2025-11-07 13:20:26,276 - root - DEBUG - Model: sayakpaul/glpn-nyu-finetuned-diode-221116-110652 | Status: False | Source: None
+2025-11-07 13:20:26,276 - root - DEBUG - Model: sayakpaul/glpn-nyu-finetuned-diode-221121-113853 | Status: False | Source: None
+2025-11-07 13:20:26,276 - root - DEBUG - Model: sayakpaul/glpn-nyu-finetuned-diode-221122-082237 | Status: False | Source: None
+2025-11-07 13:20:26,276 - root - DEBUG - Model: Intel/dpt-large | Status: False | Source: None
+2025-11-07 13:20:26,276 - root - DEBUG - Model: sayakpaul/glpn-nyu-finetuned-diode-221214-054706 | Status: False | Source: None
+2025-11-07 13:20:26,276 - root - DEBUG - Model: sayakpaul/glpn-nyu-finetuned-diode | Status: False | Source: None
+2025-11-07 13:20:26,276 - root - DEBUG - Model: sayakpaul/glpn-nyu-finetuned-diode-221214-081122 | Status: False | Source: None
+2025-11-07 13:20:26,276 - root - DEBUG - Model: sayakpaul/glpn-nyu-finetuned-diode-221215-092352 | Status: False | Source: None
+2025-11-07 13:20:26,276 - root - DEBUG - Model: sayakpaul/glpn-kitti-finetuned-diode-221214-123047 | Status: False | Source: None
+2025-11-07 13:20:26,276 - root - DEBUG - Model: sayakpaul/glpn-nyu-finetuned-diode-221221-110911 | Status: False | Source: None
+2025-11-07 13:20:26,278 - root - DEBUG - Model: sayakpaul/glpn-nyu-finetuned-diode-221215-095508 | Status: False | Source: None
+2025-11-07 13:20:26,278 - root - DEBUG - Model: sayakpaul/glpn-nyu-finetuned-diode-221116-062619 | Status: False | Source: None
+2025-11-07 13:20:26,557 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/Intel/dpt-hybrid-midas HTTP/1.1" 200 5002
+2025-11-07 13:20:26,558 - root - DEBUG - Model: Intel/dpt-hybrid-midas | Status: False | Source: None
+2025-11-07 13:20:26,809 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/vinvino02/glpn-nyu HTTP/1.1" 200 2465
+2025-11-07 13:20:26,810 - root - DEBUG - Model: vinvino02/glpn-nyu | Status: False | Source: None
+2025-11-07 13:20:26,838 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sayakpaul/glpn-nyu-finetuned-diode-221122-044810 HTTP/1.1" 404 32
+2025-11-07 13:20:26,839 - root - DEBUG - Model: sayakpaul/glpn-nyu-finetuned-diode-221122-044810 | Status: False | Source: None
+2025-11-07 13:20:26,848 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/Sohaib36/MonoScene HTTP/1.1" 200 3323
+2025-11-07 13:20:26,851 - root - DEBUG - Model: Sohaib36/MonoScene | Status: False | Source: None
+2025-11-07 13:20:26,947 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sayakpaul/glpn-nyu-finetuned-diode-230124-104649 HTTP/1.1" 404 32
+2025-11-07 13:20:26,948 - root - DEBUG - Model: sayakpaul/glpn-nyu-finetuned-diode-230124-104649 | Status: False | Source: None
+2025-11-07 13:20:26,957 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sayakpaul/glpn-nyu-finetuned-diode-221121-063504 HTTP/1.1" 404 32
+2025-11-07 13:20:26,958 - root - DEBUG - Model: sayakpaul/glpn-nyu-finetuned-diode-221121-063504 | Status: False | Source: None
+2025-11-07 13:20:26,958 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/vinvino02/glpn-kitti HTTP/1.1" 200 2003
+2025-11-07 13:20:26,959 - root - DEBUG - Model: vinvino02/glpn-kitti | Status: False | Source: None
+2025-11-07 13:20:27,004 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/ChristianOrr/madnet_keras HTTP/1.1" 200 1056
+2025-11-07 13:20:27,009 - root - DEBUG - Model: ChristianOrr/madnet_keras | Status: False | Source: None
+2025-11-07 13:20:27,027 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sayakpaul/glpn-nyu-finetuned-diode-221221-102136 HTTP/1.1" 404 32
+2025-11-07 13:20:27,027 - root - DEBUG - Model: sayakpaul/glpn-nyu-finetuned-diode-221221-102136 | Status: False | Source: None
+2025-11-07 13:20:27,038 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sayakpaul/glpn-nyu-finetuned-diode-221122-014502 HTTP/1.1" 404 32
+2025-11-07 13:20:27,039 - root - DEBUG - Model: sayakpaul/glpn-nyu-finetuned-diode-221122-014502 | Status: False | Source: None
+2025-11-07 13:20:27,043 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sayakpaul/glpn-nyu-finetuned-diode-221116-104421 HTTP/1.1" 404 32
+2025-11-07 13:20:27,043 - root - DEBUG - Model: sayakpaul/glpn-nyu-finetuned-diode-221116-104421 | Status: False | Source: None
+2025-11-07 13:20:27,048 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/hf-tiny-model-private/tiny-random-GLPNForDepthEstimation HTTP/1.1" 200 946
+2025-11-07 13:20:27,049 - root - DEBUG - Model: hf-tiny-model-private/tiny-random-GLPNForDepthEstimation | Status: False | Source: None
+2025-11-07 13:20:27,055 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sayakpaul/glpn-nyu-finetuned-diode-221116-110652 HTTP/1.1" 404 32
+2025-11-07 13:20:27,056 - root - DEBUG - Model: sayakpaul/glpn-nyu-finetuned-diode-221116-110652 | Status: False | Source: None
+2025-11-07 13:20:27,063 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sayakpaul/glpn-kitti-finetuned-diode HTTP/1.1" 404 32
+2025-11-07 13:20:27,064 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sayakpaul/glpn-nyu-finetuned-diode-221214-081122 HTTP/1.1" 404 32
+2025-11-07 13:20:27,065 - root - DEBUG - Model: sayakpaul/glpn-kitti-finetuned-diode | Status: False | Source: None
+2025-11-07 13:20:27,065 - root - DEBUG - Model: sayakpaul/glpn-nyu-finetuned-diode-221214-081122 | Status: False | Source: None
+2025-11-07 13:20:27,066 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sayakpaul/glpn-nyu-finetuned-diode-221122-030603 HTTP/1.1" 404 32
+2025-11-07 13:20:27,068 - root - DEBUG - Model: sayakpaul/glpn-nyu-finetuned-diode-221122-030603 | Status: False | Source: None
+2025-11-07 13:20:27,080 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sayakpaul/glpn-kitti-finetuned-diode-221214-123047 HTTP/1.1" 404 32
+2025-11-07 13:20:27,081 - root - DEBUG - Model: sayakpaul/glpn-kitti-finetuned-diode-221214-123047 | Status: False | Source: None
+2025-11-07 13:20:27,082 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sayakpaul/glpn-nyu-finetuned-diode-221116-054332 HTTP/1.1" 404 32
+2025-11-07 13:20:27,082 - root - DEBUG - Model: sayakpaul/glpn-nyu-finetuned-diode-221116-054332 | Status: False | Source: None
+2025-11-07 13:20:27,088 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sayakpaul/glpn-nyu-finetuned-diode-221121-113853 HTTP/1.1" 404 32
+2025-11-07 13:20:27,090 - root - DEBUG - Model: sayakpaul/glpn-nyu-finetuned-diode-221121-113853 | Status: False | Source: None
+2025-11-07 13:20:27,097 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/nielsr/dpt-large-redesign HTTP/1.1" 200 869
+2025-11-07 13:20:27,097 - root - DEBUG - Model: nielsr/dpt-large-redesign | Status: False | Source: None
+2025-11-07 13:20:27,100 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sayakpaul/glpn-nyu-finetuned-diode-221215-095508 HTTP/1.1" 404 32
+2025-11-07 13:20:27,101 - root - DEBUG - Model: sayakpaul/glpn-nyu-finetuned-diode-221215-095508 | Status: False | Source: None
+2025-11-07 13:20:27,102 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sayakpaul/glpn-nyu-finetuned-diode-221221-110911 HTTP/1.1" 404 32
+2025-11-07 13:20:27,103 - root - DEBUG - Model: sayakpaul/glpn-nyu-finetuned-diode-221221-110911 | Status: False | Source: None
+2025-11-07 13:20:27,105 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/hf-tiny-model-private/tiny-random-DPTForDepthEstimation HTTP/1.1" 200 943
+2025-11-07 13:20:27,107 - root - DEBUG - Model: hf-tiny-model-private/tiny-random-DPTForDepthEstimation | Status: False | Source: None
+2025-11-07 13:20:27,111 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sayakpaul/glpn-nyu-finetuned-diode-221116-062619 HTTP/1.1" 404 32
+2025-11-07 13:20:27,111 - root - DEBUG - Model: sayakpaul/glpn-nyu-finetuned-diode-221116-062619 | Status: False | Source: None
+2025-11-07 13:20:27,114 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sayakpaul/glpn-nyu-finetuned-diode-221215-093747 HTTP/1.1" 404 32
+2025-11-07 13:20:27,114 - root - DEBUG - Model: sayakpaul/glpn-nyu-finetuned-diode-221215-093747 | Status: False | Source: None
+2025-11-07 13:20:27,118 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sayakpaul/glpn-nyu-finetuned-diode-221122-082237 HTTP/1.1" 404 32
+2025-11-07 13:20:27,119 - root - DEBUG - Model: sayakpaul/glpn-nyu-finetuned-diode-221122-082237 | Status: False | Source: None
+2025-11-07 13:20:27,120 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sayakpaul/glpn-nyu-finetuned-diode-221215-092352 HTTP/1.1" 404 32
+2025-11-07 13:20:27,120 - root - DEBUG - Model: sayakpaul/glpn-nyu-finetuned-diode-221215-092352 | Status: False | Source: None
+2025-11-07 13:20:27,122 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sayakpaul/glpn-nyu-finetuned-diode-221214-054706 HTTP/1.1" 404 32
+2025-11-07 13:20:27,122 - root - DEBUG - Model: sayakpaul/glpn-nyu-finetuned-diode-221214-054706 | Status: False | Source: None
+2025-11-07 13:20:27,122 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sayakpaul/glpn-nyu-finetuned-diode HTTP/1.1" 404 32
+2025-11-07 13:20:27,125 - root - DEBUG - Model: sayakpaul/glpn-nyu-finetuned-diode | Status: False | Source: None
+2025-11-07 13:20:27,125 - root - DEBUG - avaliable models on depth-estimation: {'local': ['Intel/dpt-hybrid-midas'], 'huggingface': []}
+2025-11-07 13:20:27,125 - root - DEBUG - chosen model: {'id': 'Intel/dpt-hybrid-midas', 'reason': 'Only one model available.'}
+2025-11-07 13:20:27,127 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-07 13:20:27,330 - urllib3.connectionpool - DEBUG - http://localhost:8005 "POST /models/Intel/dpt-hybrid-midas HTTP/1.1" 200 28
+2025-11-07 13:20:27,330 - root - DEBUG - Inference Result: {'generated image': '/images/43bb.jpg'}
+2025-11-07 13:20:27,331 - root - DEBUG - {0: {'task': {'task': 'depth-estimation', 'id': 0, 'dep': [-1], 'args': {'image': 'public/examples/g.jpg'}}, 'inference result': {'generated image': '/images/43bb.jpg'}, 'choose model result': {'id': 'Intel/dpt-hybrid-midas', 'reason': 'Only one model available.'}}}
+2025-11-07 13:20:29,486 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /nebius/v1/chat/completions HTTP/1.1" 200 None
+2025-11-07 13:20:29,487 - root - DEBUG - The estimated depth map for the given photo, examples/g.jpg, is generated and saved as /images/43bb.jpg. 
+<EXPLANATION> To estimate the depth map, I utilized the Intel/dpt-hybrid-midas model, which is a popular and effective model for depth estimation tasks. This model uses a hybrid approach, combining the strengths of both depth estimation and image processing techniques. The input image, examples/g.jpg, was processed by the model, and the output depth map was generated. The confidence score for this model is not available, but it is generally considered to be a reliable choice for depth estimation tasks. If there were multiple models available, I would have compared their results and chosen the one with the higher confidence score or more direct detection. However, in this case, only one model was available, so I relied on its output. The generated depth map can be found at the path /images/43bb.jpg. </EXPLANATION>

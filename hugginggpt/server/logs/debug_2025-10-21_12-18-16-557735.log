@@ -1,0 +1,55 @@
+2025-10-21 12:18:16,568 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda:0
+2025-10-21 12:18:16,568 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 12:18:16,570 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-10-21 12:18:16,728 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-10-21 12:18:16,734 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-10-21 12:18:16,840 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-10-21 12:18:16,847 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-10-21 12:18:16,973 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-10-21 12:18:16,980 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-10-21 12:18:17,087 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-10-21 12:18:17,092 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+2025-10-21 12:18:17,197 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-10-21 12:18:17,203 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-10-21 12:18:17,308 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-10-21 12:18:17,315 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+2025-10-21 12:18:17,426 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-10-21 12:18:17,535 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-10-21 12:18:17,541 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+2025-10-21 12:18:17,735 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-10-21 12:18:17,741 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+2025-10-21 12:18:17,852 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-10-21 12:18:17,998 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-10-21 12:18:18,004 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-10-21 12:18:18,121 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6876
+2025-10-21 12:18:18,284 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-10-21 12:18:18,287 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /running HTTP/1.1" 200 17
+2025-10-21 12:18:18,311 - root - DEBUG - text-classification: 30 models
+2025-10-21 12:18:18,311 - root - DEBUG - token-classification: 30 models
+2025-10-21 12:18:18,311 - root - DEBUG - text2text-generation: 30 models
+2025-10-21 12:18:18,311 - root - DEBUG - summarization: 30 models
+2025-10-21 12:18:18,311 - root - DEBUG - translation: 30 models
+2025-10-21 12:18:18,312 - root - DEBUG - question-answering: 30 models
+2025-10-21 12:18:18,312 - root - DEBUG - conversational: 30 models
+2025-10-21 12:18:18,312 - root - DEBUG - text-generation: 30 models
+2025-10-21 12:18:18,312 - root - DEBUG - sentence-similarity: 30 models
+2025-10-21 12:18:18,312 - root - DEBUG - tabular-classification: 30 models
+2025-10-21 12:18:18,312 - root - DEBUG - object-detection: 30 models
+2025-10-21 12:18:18,312 - root - DEBUG - image-classification: 30 models
+2025-10-21 12:18:18,312 - root - DEBUG - image-to-text: 30 models
+2025-10-21 12:18:18,312 - root - DEBUG - text-to-image: 31 models
+2025-10-21 12:18:18,312 - root - DEBUG - image-to-image: 30 models
+2025-10-21 12:18:18,312 - root - DEBUG - visual-question-answering: 13 models
+2025-10-21 12:18:18,312 - root - DEBUG - document-question-answering: 22 models
+2025-10-21 12:18:18,312 - root - DEBUG - image-segmentation: 30 models
+2025-10-21 12:18:18,312 - root - DEBUG - depth-estimation: 30 models
+2025-10-21 12:18:18,312 - root - DEBUG - text-to-video: 8 models
+2025-10-21 12:18:18,312 - root - DEBUG - text-to-speech: 30 models
+2025-10-21 12:18:18,312 - root - DEBUG - automatic-speech-recognition: 30 models
+2025-10-21 12:18:18,312 - root - DEBUG - audio-to-audio: 30 models
+2025-10-21 12:18:18,312 - root - DEBUG - audio-classification: 30 models
+2025-10-21 12:18:18,312 - root - DEBUG - named-entity-recognition: 1 models
+2025-10-21 12:18:18,312 - root - DEBUG - optical-character-recognition: 1 models
+2025-10-21 12:18:18,312 - root - INFO - Welcome to Jarvis! A collaborative system that consists of an LLM as the controller and numerous expert models as collaborative executors. Jarvis can plan tasks, schedule Hugging Face models, generate friendly responses based on your requests, and help you with many things. Please enter your request (`exit` to exit).
+2025-10-21 12:19:53,530 - root - INFO - [ User ]: exit
+2025-10-21 12:19:53,530 - root - INFO - [ Jarvis ]: Goodnight.

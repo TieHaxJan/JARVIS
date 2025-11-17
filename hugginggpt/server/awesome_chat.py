@@ -31,6 +31,7 @@ from huggingface_hub import HfApi
 from thefuzz import fuzz
 from retriever import ExplanationRetriever
 from judge import ExplanationJudge
+import urllib.parse
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--config", type=str, default="configs/config.default.yaml")
@@ -606,7 +607,7 @@ def huggingface_model_inference(model_id, data, task):
     if task == "object-detection":
         img_url = data["image"]
         img_data = image_to_bytes(img_url)
-        img_path = Path("/home/jan/Documents/VSC Projects/JARVIS/hugginggpt/server/public/examples/c.jpg")
+        #img_path = Path("/home/jan/Documents/VSC Projects/JARVIS/hugginggpt/server/public/examples/c.jpg")
         predicted = inferenceClient.object_detection(img_data)
         image = Image.open(BytesIO(img_data)).convert("RGB")
         draw = ImageDraw.Draw(image)
@@ -700,7 +701,7 @@ def local_model_inference(model_id, data, task):
     if task == "question-answering" or task == "sentence-similarity":
         response = requests.post(task_url, json=data)
         return response.json()
-    if task in ["text-classification",  "token-classification", "text2text-generation", "summarization", "translation", "conversational", "text-generation"]:
+    if task in ["text-classification",  "token-classification", "text2text-generation", "summarization", "translation", "conversational", "text-generation", "named-entity-recognition"]:
         response = requests.post(task_url, json=data)
         return response.json()
 
@@ -754,7 +755,7 @@ def local_model_inference(model_id, data, task):
         results["generated image"] = f"/images/{name}.jpg"
         results["predicted"] = predicted
         return results
-    if task in ["image-classification", "image-to-text", "document-question-answering", "visual-question-answering"]:
+    if task in ["image-classification", "image-to-text", "document-question-answering", "visual-question-answering", "optical-character-recognition"]:
         img_url = data["image"]
         text = None
         if "text" in data:
@@ -1063,6 +1064,40 @@ def replace_explanation_tags(text: str, new_explanation: str) -> str:
         return re.sub(pattern, new_explanation, text, flags=re.DOTALL)
     else:
         return text.strip() + "\n\n" + new_explanation
+    
+def build_clean_context(task_description: str, results_json: str) -> str:
+    """
+    Turn the task + results into a single, clean, masked text block that is
+    stable for retrieval + judging.
+    """
+    # Basic plaintext framing, then mask paths everywhere.
+    combined = f"INPUT:\n{task_description.strip()}\n\nRESULTS:\n{results_json.strip()}"
+    
+    if not isinstance(combined, str) or not combined:
+        return combined
+    s = combined
+    
+    _PATH_EXTS = (
+        "png","jpg","jpeg","gif","webp","bmp","tiff","svg",
+        "mp3","wav","flac","m4a","ogg",
+        "mp4","mov","avi","mkv","webm",
+        "pdf","txt","json","csv","yaml","yml","xml","html",
+        "zip","tar","gz","7z","doc","docx","ppt","pptx","xls","xlsx"
+    )
+    # 1) URLs
+    # Matches http/https URLs conservatively.
+    s = re.sub(r'https?://[^\s)>\]\'"]+', '[PATH]', s)
+    # 2) Windows absolute paths like C:\foo\bar\baz.ext
+    s = re.sub(r'[A-Za-z]:\\[^\s\'"]+', '[PATH]', s)
+    # 3) Unix absolute paths like /foo/bar/baz.ext
+    s = re.sub(r'(?<!\w)/[^\s\'"]+', '[PATH]', s)
+    # 4) Common relative paths with slashes and a file-like suffix
+    # e.g., public/images/x.png, examples/a.jpg, ./foo/bar.json
+    rel_ext_pattern = r'(?:(?:\./|\.\./)?(?:[\w\-\.]+/)+[\w\-.]+\.(?:' + "|".join(_PATH_EXTS) + '))'
+    s = re.sub(rel_ext_pattern, '[PATH]', s, flags=re.IGNORECASE)
+    # 5) Any \"generated ...\": \"/images/foo.png\" style JSON values
+    s = re.sub(r'\"(?:[\\/][\w\-.]+)+(?:\.[\w]+)\"', '"[PATH]"', s)
+    return s.strip()
 
 
 def chat_huggingface(messages, api_key, api_type, api_endpoint, return_planning = False, return_results = False):
@@ -1145,25 +1180,28 @@ def chat_huggingface(messages, api_key, api_type, api_endpoint, return_planning 
     response = response_results(input, results, api_key, api_type, api_endpoint).strip()
     logger.debug(response)
 
-    explanation = extract_explanation(response)
+    base_explanation = extract_explanation(response)
 
+    # Build masked clean context once and reuse
+    results_json = json.dumps(results, ensure_ascii=False)
+    context_clean = build_clean_context(input, results_json)
+    print(input)
 
-    task_id = str(uuid.uuid4())  # or reuse HuggingGPT task ID
-    retrieval_result = retriever.handle_task(
+    task_id = str(uuid.uuid4()) 
+    retrieval_result = retriever.retrieve_explanation(
         task_id=task_id,
-        task_description=input,
-        hugginggpt_output=json.dumps(results, ensure_ascii=False),
-        base_explainer_fn=lambda desc, out: explanation
+        task_description=input,              
+        hugginggpt_output=results_json,   
+        base_explanation=base_explanation
     )
 
-    base_explanation = explanation
     retrieved_explanation = retrieval_result["entry"]["explanation"]
-    
-    judge = ExplanationJudge(chitchat, api_key, api_type, api_endpoint, LLM)
 
+    # IMPORTANT: judge on the clean, masked context to avoid path leakage
+    judge = ExplanationJudge(chitchat, api_key, api_type, api_endpoint, LLM)
     judge_result = judge.decide(
         task_description=input,
-        hugginggpt_output=json.dumps(results, ensure_ascii=False),
+        hugginggpt_output=context_clean,   # use masked full context
         base_explanation=base_explanation,
         retrieved_explanation=retrieved_explanation
     )
