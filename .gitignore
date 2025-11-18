@@ -10,15 +10,6 @@ hugginggpt/server/models/*
 !hugginggpt/server/models/download_huggingface_cli.sh
 !hugginggpt/server/models/download_huggingface_cli_minimal.sh
 hugginggpt/server/models_dev
-!hugginggpt/server/public/examples/
-hugginggpt/server/public/examples/*
-!hugginggpt/server/public/examples/a.jpg
-!hugginggpt/server/public/examples/b.jpg
-!hugginggpt/server/public/examples/c.jpg
-!hugginggpt/server/public/examples/d.jpg
-!hugginggpt/server/public/examples/e.jpg
-!hugginggpt/server/public/examples/f.jpg
-!hugginggpt/server/public/examples/g.jpg
 
 #environments
 hugginggpt/server/env_chat
