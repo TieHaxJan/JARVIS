@@ -1,13 +1,13 @@
 [
   {
-    "prompt": "Describe the image 'forest.jpg' in as much detail as possible.",
+    "prompt": "Describe the image 'examples/forest.jpg' in as much detail as possible.",
     "task_type": "single",
     "models": [
       "nlpconnect/vit-gpt2-image-captioning"
     ]
   },
   {
-    "prompt": "Detect all objects in 'street_scene.png'.",
+    "prompt": "Detect all objects in 'examples/street_scene.png'.",
     "task_type": "single",
     "models": [
       "facebook/detr-resnet-101"
@@ -155,7 +155,7 @@
     ]
   },
   {
-    "prompt": "Estimate depth for 'depth_sample.png'.",
+    "prompt": "Estimate depth for 'bridge.png'.",
     "task_type": "single",
     "models": [
       "Intel/dpt-hybrid-midas"
@@ -183,7 +183,7 @@
     ]
   },
   {
-    "prompt": "Detect tables in 'report_page.jpg'.",
+    "prompt": "Detect tables in 'table.png'.",
     "task_type": "single",
     "models": [
       "impira/layoutlm-document-qa"
@@ -342,7 +342,7 @@
     ]
   },
   {
-    "prompt": "Detect tables in 'invoice_form.png' and summarize them.",
+    "prompt": "Detect tables in 'table.png' and summarize them.",
     "task_type": "sequential",
     "models": [
       "impira/layoutlm-document-qa",
