@@ -840,11 +840,12 @@ def get_avaliable_models(candidates, topk=5):
     for candidate in candidates:
         model_id = candidate["id"]
 
-        if inference_mode != "local":
-            huggingfaceStatusUrl = f"https://api-inference.huggingface.co/status/{model_id}"
-            thread = threading.Thread(target=get_model_status, args=(model_id, huggingfaceStatusUrl, HUGGINGFACE_HEADERS, result_queue))
-            threads.append(thread)
-            thread.start()
+        # Disabled for Thesis research
+        #if inference_mode != "local":
+        #    huggingfaceStatusUrl = f"https://api-inference.huggingface.co/status/{model_id}"
+        #    thread = threading.Thread(target=get_model_status, args=(model_id, huggingfaceStatusUrl, HUGGINGFACE_HEADERS, result_queue))
+        #    threads.append(thread)
+        #    thread.start()
         
         if inference_mode != "huggingface" and config["local_deployment"] != "minimal":
             localStatusUrl = f"{Model_Server}/status/{model_id}"
