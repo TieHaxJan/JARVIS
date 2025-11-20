@@ -365,7 +365,7 @@ def load_pipes(local_deployment):
             # Object detection
             "facebook/detr-resnet-101": {
                 "model": pipeline(task="object-detection",
-                                  model=f"{local_fold}/facebook/detr-resnet-101"),
+                                  model=f"{local_fold}/facebook/detr-resnet-101", device=0),
                 "device": device
             },
             # Document QA
@@ -716,7 +716,7 @@ def models(model_id):
             result = {"path": f"/images/{file_name}.jpg"}
 
         # -------------------- DETECTION --------------------
-        if model_id == "google/owlvit-base-patch32" or model_id == "facebook/detr-resnet-101":
+        if model_id == "google/owlvit-base-patch32":
             img_url = request.get_json()["img_url"]
             open_types = ["cat", "couch", "person", "car", "dog", "horse", "sheep", "cow", "elephant", "bear",
                           "zebra", "giraffe", "backpack", "umbrella", "handbag", "tie", "suitcase", "frisbee", "skis",
@@ -728,6 +728,10 @@ def models(model_id):
                           "refrigerator", "book", "clock", "vase", "scissors", "teddy bear", "hair drier", "toothbrush",
                           "traffic light", "fire hydrant", "stop sign", "parking meter", "bench", "bird"]
             result = pipe(img_url, candidate_labels=open_types)
+            
+        if model_id == "facebook/detr-resnet-101":
+            img_url = request.get_json()["img_url"]
+            result = pipe(img_url)
 
         # -------------------- VQA --------------------
         if model_id == "dandelin/vilt-b32-finetuned-vqa":
@@ -830,16 +834,35 @@ def models(model_id):
 
         if model_id == "facebook/maskformer-swin-base-coco":
             image = load_image(request.get_json()["img_url"])
-            inputs = pipes[model_id]["feature_extractor"](images=image, return_tensors="pt")
+
+            fe = pipes[model_id]["feature_extractor"]
+            model = pipes[model_id]["model"]
+
+            # Ensure model is on correct device
+            device = torch.device(pipes[model_id]["device"])
+            model = model.to(device)
+
+            # Preprocess
+            inputs = fe(images=image, return_tensors="pt")
+
+            # >>> FIX: Move all tensors to model device <<<
+            inputs = {k: v.to(device) for k, v in inputs.items()}
+
             with torch.no_grad():
-                outputs = pipe(**inputs)
-            post = pipes[model_id]["feature_extractor"].post_process_panoptic_segmentation(
-                outputs, target_sizes=[image.size[::-1]]
+                outputs = model(**inputs)   # NOT "pipe"
+
+            # panoptic post-process (CPU output)
+            post = fe.post_process_panoptic_segmentation(
+                outputs,
+                target_sizes=[image.size[::-1]]
             )[0]
+
             predicted_panoptic_map = post["segmentation"].cpu().numpy()
             predicted_panoptic_map = Image.fromarray(predicted_panoptic_map.astype(np.uint8))
+
             name = str(uuid.uuid4())[:4]
             predicted_panoptic_map.save(f"public/images/{name}.jpg")
+
             result = {"path": f"/images/{name}.jpg"}
 
         # -------------------- NER --------------------

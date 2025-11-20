@@ -1,0 +1,252 @@
+2025-11-20 10:12:39,587 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda:0
+2025-11-20 10:12:39,587 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-20 10:12:39,588 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-11-20 10:12:39,732 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-11-20 10:12:39,737 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-11-20 10:12:39,843 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-11-20 10:12:39,848 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-11-20 10:12:39,953 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-11-20 10:12:39,957 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-11-20 10:12:40,064 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-11-20 10:12:40,069 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+2025-11-20 10:12:40,175 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-11-20 10:12:40,179 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-11-20 10:12:40,285 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-11-20 10:12:40,290 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+2025-11-20 10:12:40,397 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-11-20 10:12:40,502 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-11-20 10:12:40,507 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+2025-11-20 10:12:40,681 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-11-20 10:12:40,686 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+2025-11-20 10:12:40,794 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-11-20 10:12:40,959 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-11-20 10:12:40,965 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-11-20 10:12:41,532 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6889
+2025-11-20 10:12:41,749 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:12:41,751 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /running HTTP/1.1" 200 17
+2025-11-20 10:12:41,764 - root - DEBUG - text-classification: 30 models
+2025-11-20 10:12:41,764 - root - DEBUG - token-classification: 30 models
+2025-11-20 10:12:41,764 - root - DEBUG - text2text-generation: 30 models
+2025-11-20 10:12:41,764 - root - DEBUG - summarization: 30 models
+2025-11-20 10:12:41,764 - root - DEBUG - translation: 30 models
+2025-11-20 10:12:41,764 - root - DEBUG - question-answering: 30 models
+2025-11-20 10:12:41,764 - root - DEBUG - conversational: 30 models
+2025-11-20 10:12:41,764 - root - DEBUG - text-generation: 30 models
+2025-11-20 10:12:41,764 - root - DEBUG - sentence-similarity: 30 models
+2025-11-20 10:12:41,764 - root - DEBUG - tabular-classification: 30 models
+2025-11-20 10:12:41,764 - root - DEBUG - object-detection: 30 models
+2025-11-20 10:12:41,764 - root - DEBUG - image-classification: 30 models
+2025-11-20 10:12:41,764 - root - DEBUG - image-to-text: 30 models
+2025-11-20 10:12:41,764 - root - DEBUG - text-to-image: 31 models
+2025-11-20 10:12:41,764 - root - DEBUG - image-to-image: 30 models
+2025-11-20 10:12:41,764 - root - DEBUG - visual-question-answering: 13 models
+2025-11-20 10:12:41,764 - root - DEBUG - document-question-answering: 22 models
+2025-11-20 10:12:41,764 - root - DEBUG - image-segmentation: 30 models
+2025-11-20 10:12:41,764 - root - DEBUG - depth-estimation: 30 models
+2025-11-20 10:12:41,764 - root - DEBUG - text-to-video: 8 models
+2025-11-20 10:12:41,764 - root - DEBUG - text-to-speech: 30 models
+2025-11-20 10:12:41,764 - root - DEBUG - automatic-speech-recognition: 30 models
+2025-11-20 10:12:41,764 - root - DEBUG - audio-to-audio: 30 models
+2025-11-20 10:12:41,764 - root - DEBUG - audio-classification: 30 models
+2025-11-20 10:12:41,764 - root - DEBUG - named-entity-recognition: 1 models
+2025-11-20 10:12:41,764 - root - DEBUG - optical-character-recognition: 1 models
+2025-11-20 10:12:41,764 - root - INFO - Welcome to Jarvis! A collaborative system that consists of an LLM as the controller and numerous expert models as collaborative executors. Jarvis can plan tasks, schedule Hugging Face models, generate friendly responses based on your requests, and help you with many things. Please enter your request (`exit` to exit).
+2025-11-20 10:13:14,030 - root - INFO - [ User ]: look at this invoice examples/invoice_sample.jpg what is the total amount due?
+2025-11-20 10:13:14,030 - root - INFO - ********************************************************************************
+2025-11-20 10:13:14,030 - root - INFO - input: Look at this invoice examples/invoice_sample.jpg what is the total amount due?
+2025-11-20 10:13:14,032 - root - DEBUG - Messages: [{'role': 'system', 'content': '#1 Task Planning Stage: You are a helpful AI assistant. Based on the user\'s request, you will recommend the best model from Hugging Face for the task, and explain why. The special tag "<GENERATED>-dep_id" refer to the one generated text/image/audio in the dependency task (Please consider whether the dependency task generates resources of this type.) and "dep_id" must be in "dep" list.  The "dep" field denotes the ids of the previous prerequisite tasks which generate a new resource that the current task relies on.  The "args" field must in ["text", "image", "audio"], nothing else.  The "task" field must be in ["token-classification", "optical-character-recognition", "named-entity-recognition", "text2text-generation", "summarization", "translation", "question-answering", "conversational", "text-generation", "sentence-similarity", "tabular-classification", "object-detection", "image-classification", "image-to-image", "image-to-text", "text-to-image", "text-to-video", "visual-question-answering", "document-question-answering", "image-segmentation", "depth-estimation", "text-to-speech", "automatic-speech-recognition", "audio-to-audio", "audio-classification", "canny-control", "hed-control", "mlsd-control", "normal-control", "openpose-control", "canny-text-to-image", "depth-text-to-image", "hed-text-to-image", "mlsd-text-to-image", "normal-text-to-image", "seg-text-to-image"] You must respond in JSON format like: [\n  {\n    "task": task, \n    "id": task_id, \n    "dep": dependency_task_id, \n    "args": {\n      "text": text or <GENERATED>-dep_id, \n      "image": image_url or <GENERATED>-dep_id, \n      "audio": audio_url or <GENERATED>-dep_id\n    }\n  }\n] Respond with the JSON entry and ONLY the JSON entry! Here are some few-shot examples:'}, {'role': 'user', 'content': 'Give you some pictures e1.jpg, e2.png, e3.jpg, help me count the number of sheep?'}, {'role': 'assistant', 'content': '[{"task": "image-to-text", "id": 0, "dep": [-1], "args": {"image": "e1.jpg" }}, {"task": "object-detection", "id": 1, "dep": [-1], "args": {"image": "e1.jpg" }}, {"task": "visual-question-answering", "id": 2, "dep": [1], "args": {"image": "<GENERATED>-1", "text": "How many sheep in the picture"}} }}, {"task": "image-to-text", "id": 3, "dep": [-1], "args": {"image": "e2.png" }}, {"task": "object-detection", "id": 4, "dep": [-1], "args": {"image": "e2.png" }}, {"task": "visual-question-answering", "id": 5, "dep": [4], "args": {"image": "<GENERATED>-4", "text": "How many sheep in the picture"}} }}, {"task": "image-to-text", "id": 6, "dep": [-1], "args": {"image": "e3.jpg" }},  {"task": "object-detection", "id": 7, "dep": [-1], "args": {"image": "e3.jpg" }}, {"task": "visual-question-answering", "id": 8, "dep": [7], "args": {"image": "<GENERATED>-7", "text": "How many sheep in the picture"}}]'}, {'role': 'user', 'content': 'Look at /e.jpg, can you tell me how many objects in the picture? Give me a picture and video similar to this one.'}, {'role': 'assistant', 'content': '[{"task": "image-to-text", "id": 0, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "object-detection", "id": 1, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "visual-question-answering", "id": 2, "dep": [1], "args": {"image": "<GENERATED>-1", "text": "how many objects in the picture?" }}, {"task": "text-to-image", "id": 3, "dep": [0], "args": {"text": "<GENERATED-0>" }}, {"task": "image-to-image", "id": 4, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "text-to-video", "id": 5, "dep": [0], "args": {"text": "<GENERATED-0>" }}]'}, {'role': 'user', 'content': 'given a document /images/e.jpeg, answer me what is the student amount? And describe the image with your voice'}, {'role': 'assistant', 'content': '{"task": "document-question-answering", "id": 0, "dep": [-1], "args": {"image": "/images/e.jpeg", "text": "what is the student amount?" }}, {"task": "visual-question-answering", "id": 1, "dep": [-1], "args": {"image": "/images/e.jpeg", "text": "what is the student amount?" }}, {"task": "image-to-text", "id": 2, "dep": [-1], "args": {"image": "/images/e.jpg" }}, {"task": "text-to-speech", "id": 3, "dep": [2], "args": {"text": "<GENERATED>-2" }}]'}, {'role': 'user', 'content': 'Given an image /example.jpg, first generate a hed image, then based on the hed image generate a new image where a girl is reading a book'}, {'role': 'assistant', 'content': '[{"task": "openpose-control", "id": 0, "dep": [-1], "args": {"image": "/example.jpg" }},  {"task": "openpose-text-to-image", "id": 1, "dep": [0], "args": {"text": "a girl is reading a book", "image": "<GENERATED>-0" }}]'}, {'role': 'user', 'content': "please show me a video and an image of (based on the text) 'a boy is running' and dub it"}, {'role': 'assistant', 'content': '[{"task": "text-to-video", "id": 0, "dep": [-1], "args": {"text": "a boy is running" }}, {"task": "text-to-speech", "id": 1, "dep": [-1], "args": {"text": "a boy is running" }}, {"task": "text-to-image", "id": 2, "dep": [-1], "args": {"text": "a boy is running" }}]'}, {'role': 'user', 'content': 'please show me a joke and an image of cat'}, {'role': 'assistant', 'content': '[{"task": "conversational", "id": 0, "dep": [-1], "args": {"text": "please show me a joke of cat" }}, {"task": "text-to-image", "id": 1, "dep": [-1], "args": {"text": "a photo of cat" }}]'}, {'role': 'user', 'content': 'The chat log [ [] ] may contain the resources I mentioned. Now I input { Look at this invoice examples/invoice_sample.jpg what is the total amount due? }. Pay attention to the input and output types of tasks and the dependencies between tasks.'}]
+2025-11-20 10:13:14,138 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/meta-llama/Llama-3.3-70B-Instruct?expand=inferenceProviderMapping HTTP/1.1" 200 1439
+2025-11-20 10:13:14,140 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): router.huggingface.co:443
+2025-11-20 10:13:15,235 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /nebius/v1/chat/completions HTTP/1.1" 200 None
+2025-11-20 10:13:15,237 - root - DEBUG - [{'task': 'image-to-text', 'id': 0, 'dep': [-1], 'args': {'image': 'examples/invoice_sample.jpg'}}, {'task': 'document-question-answering', 'id': 1, 'dep': [0], 'args': {'text': '<GENERATED>-0', 'question': 'what is the total amount due?'}}]
+2025-11-20 10:13:15,237 - root - DEBUG - Run task: 0 - image-to-text
+2025-11-20 10:13:15,238 - root - DEBUG - Deps: []
+2025-11-20 10:13:15,238 - root - DEBUG - Parsed Task: {'task': 'image-to-text', 'id': 0, 'dep': [-1], 'args': {'image': 'public/examples/invoice_sample.jpg'}}
+2025-11-20 10:13:15,240 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:13:15,241 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:13:15,243 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:13:15,245 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:13:15,245 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/nlpconnect/vit-gpt2-image-captioning HTTP/1.1" 200 16
+2025-11-20 10:13:15,247 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:13:15,248 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:13:15,249 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:13:15,250 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:13:15,251 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:13:15,251 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/trocr-base-printed HTTP/1.1" 200 16
+2025-11-20 10:13:15,252 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Salesforce/blip-image-captioning-base HTTP/1.1" 200 17
+2025-11-20 10:13:15,252 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:13:15,253 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Salesforce/blip-image-captioning-large HTTP/1.1" 200 17
+2025-11-20 10:13:15,253 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/naver-clova-ix/donut-base HTTP/1.1" 200 17
+2025-11-20 10:13:15,254 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/trocr-base-handwritten HTTP/1.1" 200 17
+2025-11-20 10:13:15,254 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:13:15,255 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Salesforce/blip2-opt-2.7b HTTP/1.1" 200 17
+2025-11-20 10:13:15,256 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:13:15,256 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/pix2struct-base HTTP/1.1" 200 17
+2025-11-20 10:13:15,257 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:13:15,258 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:13:15,259 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Salesforce/blip2-opt-6.7b HTTP/1.1" 200 17
+2025-11-20 10:13:15,259 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:13:15,260 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:13:15,261 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:13:15,261 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/kha-white/manga-ocr-base HTTP/1.1" 200 17
+2025-11-20 10:13:15,262 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:13:15,262 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:13:15,263 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:13:15,264 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:13:15,264 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:13:15,265 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:13:15,266 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:13:15,266 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:13:15,267 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Salesforce/blip2-flan-t5-xxl HTTP/1.1" 200 17
+2025-11-20 10:13:15,268 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:13:15,268 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:13:15,269 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:13:15,270 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:13:15,271 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/pix2struct-textcaps-base HTTP/1.1" 200 17
+2025-11-20 10:13:15,271 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/ydshieh/vit-gpt2-coco-en HTTP/1.1" 200 17
+2025-11-20 10:13:15,273 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/git-large-coco HTTP/1.1" 200 17
+2025-11-20 10:13:15,273 - root - DEBUG - Model: nlpconnect/vit-gpt2-image-captioning | Status: True | Source: local
+2025-11-20 10:13:15,274 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:13:15,275 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/naver-clova-ix/donut-base-finetuned-cord-v2 HTTP/1.1" 200 17
+2025-11-20 10:13:15,276 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/trocr-large-handwritten HTTP/1.1" 200 17
+2025-11-20 10:13:15,277 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Salesforce/blip2-flan-t5-xl HTTP/1.1" 200 17
+2025-11-20 10:13:15,278 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/pix2struct-ocrvqa-large HTTP/1.1" 200 17
+2025-11-20 10:13:15,278 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/pix2struct-ai2d-base HTTP/1.1" 200 17
+2025-11-20 10:13:15,280 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/trocr-large-printed HTTP/1.1" 200 17
+2025-11-20 10:13:15,280 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/pix2struct-docvqa-large HTTP/1.1" 200 17
+2025-11-20 10:13:15,281 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/keras-io/ocr-for-captcha HTTP/1.1" 200 17
+2025-11-20 10:13:15,281 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/trocr-small-printed HTTP/1.1" 200 17
+2025-11-20 10:13:15,281 - root - DEBUG - Model: microsoft/trocr-base-printed | Status: True | Source: local
+2025-11-20 10:13:15,282 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/git-large-textcaps HTTP/1.1" 200 17
+2025-11-20 10:13:15,282 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Salesforce/blip2-flan-t5-xl-coco HTTP/1.1" 200 17
+2025-11-20 10:13:15,283 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/dhansmair/flamingo-mini HTTP/1.1" 200 17
+2025-11-20 10:13:15,283 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/tuman/vit-rugpt2-image-captioning HTTP/1.1" 200 17
+2025-11-20 10:13:15,284 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/trocr-small-handwritten HTTP/1.1" 200 17
+2025-11-20 10:13:15,285 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/git-base HTTP/1.1" 200 17
+2025-11-20 10:13:15,286 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/pix2struct-textcaps-large HTTP/1.1" 200 17
+2025-11-20 10:13:15,287 - root - DEBUG - Model: Salesforce/blip-image-captioning-base | Status: False | Source: None
+2025-11-20 10:13:15,289 - root - DEBUG - Model: Salesforce/blip-image-captioning-large | Status: False | Source: None
+2025-11-20 10:13:15,289 - root - DEBUG - Model: naver-clova-ix/donut-base | Status: False | Source: None
+2025-11-20 10:13:15,289 - root - DEBUG - Model: microsoft/trocr-base-handwritten | Status: False | Source: None
+2025-11-20 10:13:15,289 - root - DEBUG - Model: Salesforce/blip2-opt-2.7b | Status: False | Source: None
+2025-11-20 10:13:15,289 - root - DEBUG - Model: google/pix2struct-base | Status: False | Source: None
+2025-11-20 10:13:15,289 - root - DEBUG - Model: Salesforce/blip2-opt-6.7b | Status: False | Source: None
+2025-11-20 10:13:15,289 - root - DEBUG - Model: kha-white/manga-ocr-base | Status: False | Source: None
+2025-11-20 10:13:15,289 - root - DEBUG - Model: Salesforce/blip2-flan-t5-xxl | Status: False | Source: None
+2025-11-20 10:13:15,289 - root - DEBUG - Model: google/pix2struct-textcaps-base | Status: False | Source: None
+2025-11-20 10:13:15,289 - root - DEBUG - Model: ydshieh/vit-gpt2-coco-en | Status: False | Source: None
+2025-11-20 10:13:15,289 - root - DEBUG - Model: microsoft/git-large-coco | Status: False | Source: None
+2025-11-20 10:13:15,289 - root - DEBUG - Model: naver-clova-ix/donut-base-finetuned-cord-v2 | Status: False | Source: None
+2025-11-20 10:13:15,289 - root - DEBUG - Model: microsoft/trocr-large-handwritten | Status: False | Source: None
+2025-11-20 10:13:15,289 - root - DEBUG - Model: Salesforce/blip2-flan-t5-xl | Status: False | Source: None
+2025-11-20 10:13:15,289 - root - DEBUG - Model: google/pix2struct-ocrvqa-large | Status: False | Source: None
+2025-11-20 10:13:15,289 - root - DEBUG - Model: google/pix2struct-ai2d-base | Status: False | Source: None
+2025-11-20 10:13:15,289 - root - DEBUG - Model: microsoft/trocr-large-printed | Status: False | Source: None
+2025-11-20 10:13:15,289 - root - DEBUG - Model: google/pix2struct-docvqa-large | Status: False | Source: None
+2025-11-20 10:13:15,289 - root - DEBUG - Model: keras-io/ocr-for-captcha | Status: False | Source: None
+2025-11-20 10:13:15,289 - root - DEBUG - Model: microsoft/trocr-small-printed | Status: False | Source: None
+2025-11-20 10:13:15,290 - root - DEBUG - Model: microsoft/git-large-textcaps | Status: False | Source: None
+2025-11-20 10:13:15,290 - root - DEBUG - Model: Salesforce/blip2-flan-t5-xl-coco | Status: False | Source: None
+2025-11-20 10:13:15,290 - root - DEBUG - Model: dhansmair/flamingo-mini | Status: False | Source: None
+2025-11-20 10:13:15,290 - root - DEBUG - Model: tuman/vit-rugpt2-image-captioning | Status: False | Source: None
+2025-11-20 10:13:15,290 - root - DEBUG - Model: microsoft/trocr-small-handwritten | Status: False | Source: None
+2025-11-20 10:13:15,290 - root - DEBUG - Model: microsoft/git-base | Status: False | Source: None
+2025-11-20 10:13:15,290 - root - DEBUG - Model: google/pix2struct-textcaps-large | Status: False | Source: None
+2025-11-20 10:13:15,290 - root - DEBUG - avaliable models on image-to-text: {'local': ['nlpconnect/vit-gpt2-image-captioning', 'microsoft/trocr-base-printed'], 'huggingface': []}
+2025-11-20 10:13:15,291 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): router.huggingface.co:443
+2025-11-20 10:13:16,825 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /nebius/v1/chat/completions HTTP/1.1" 200 None
+2025-11-20 10:13:16,826 - root - DEBUG - chosen model: {"id": "microsoft/trocr-base-printed", "reason": "The model microsoft/trocr-base-printed is specifically fine-tuned on the SROIE dataset, which is related to reading text in images such as invoices, making it highly suitable for extracting text from invoice images. Additionally, it has a local inference endpoint available, which can enhance speed and stability. Although nlpconnect/vit-gpt2-image-captioning has more likes, the specific task of extracting text from an invoice (which can be considered a form of image-to-text) is better aligned with the capabilities of microsoft/trocr-base-printed."}
+2025-11-20 10:13:16,826 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:13:18,166 - urllib3.connectionpool - DEBUG - http://localhost:8005 "POST /models/microsoft/trocr-base-printed HTTP/1.1" 200 25
+2025-11-20 10:13:18,166 - root - DEBUG - Inference Result: {'generated text': '***'}
+2025-11-20 10:13:18,241 - root - DEBUG - Run task: 1 - document-question-answering
+2025-11-20 10:13:18,242 - root - DEBUG - Deps: [{"task": {"task": "image-to-text", "id": 0, "dep": [-1], "args": {"image": "public/examples/invoice_sample.jpg"}}, "inference result": {"generated text": "***"}, "choose model result": {"id": "microsoft/trocr-base-printed", "reason": "The model microsoft/trocr-base-printed is specifically fine-tuned on the SROIE dataset, which is related to reading text in images such as invoices, making it highly suitable for extracting text from invoice images. Additionally, it has a local inference endpoint available, which can enhance speed and stability. Although nlpconnect/vit-gpt2-image-captioning has more likes, the specific task of extracting text from an invoice (which can be considered a form of image-to-text) is better aligned with the capabilities of microsoft/trocr-base-printed."}}]
+2025-11-20 10:13:18,242 - root - DEBUG - Detect the generated text of dependency task (from results):***
+2025-11-20 10:13:18,242 - root - DEBUG - Detect the image of dependency task (from args): public/examples/invoice_sample.jpg
+2025-11-20 10:13:18,242 - root - DEBUG - Parsed Task: {'task': 'document-question-answering', 'id': 1, 'dep': [0], 'args': {'text': '***', 'question': 'what is the total amount due?'}}
+2025-11-20 10:13:18,243 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:13:18,245 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:13:18,246 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:13:18,247 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:13:18,248 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:13:18,249 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:13:18,251 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:13:18,252 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:13:18,253 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:13:18,254 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/tiennvcs/layoutlmv2-base-uncased-finetuned-docvqa HTTP/1.1" 200 17
+2025-11-20 10:13:18,254 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:13:18,254 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/naver-clova-ix/donut-base-finetuned-docvqa HTTP/1.1" 200 17
+2025-11-20 10:13:18,255 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:13:18,256 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:13:18,256 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/impira/layoutlm-document-qa HTTP/1.1" 200 16
+2025-11-20 10:13:18,257 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:13:18,258 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:13:18,259 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:13:18,259 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:13:18,260 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:13:18,260 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:13:18,261 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:13:18,262 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:13:18,263 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:13:18,264 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/impira/layoutlm-invoices HTTP/1.1" 200 17
+2025-11-20 10:13:18,265 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:13:18,265 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/DataIntelligenceTeam/eurocorpV4 HTTP/1.1" 200 17
+2025-11-20 10:13:18,266 - root - DEBUG - Model: tiennvcs/layoutlmv2-base-uncased-finetuned-docvqa | Status: False | Source: None
+2025-11-20 10:13:18,266 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/faisalraza/layoutlm-invoices HTTP/1.1" 200 17
+2025-11-20 10:13:18,266 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/MariaK/layoutlmv2-base-uncased_finetuned_docvqa_v2 HTTP/1.1" 200 17
+2025-11-20 10:13:18,267 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/xhyi/layoutlmv3_docvqa_t11c5000 HTTP/1.1" 200 17
+2025-11-20 10:13:18,268 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/cloudqi/CQI_Visual_Question_Awnser_PT_v0 HTTP/1.1" 200 17
+2025-11-20 10:13:18,269 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/pardeepSF/layoutlm-vqa HTTP/1.1" 200 17
+2025-11-20 10:13:18,270 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/tiennvcs/layoutlmv2-large-uncased-finetuned-infovqa HTTP/1.1" 200 17
+2025-11-20 10:13:18,271 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/jinhybr/OCR-DocVQA-Donut HTTP/1.1" 200 17
+2025-11-20 10:13:18,272 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/davanstrien/testwebhook HTTP/1.1" 200 17
+2025-11-20 10:13:18,272 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/rubentito/layoutlmv3-base-mpdocvqa HTTP/1.1" 200 17
+2025-11-20 10:13:18,273 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/frizwankhan/entity-linking-model-final HTTP/1.1" 200 17
+2025-11-20 10:13:18,273 - root - DEBUG - Model: naver-clova-ix/donut-base-finetuned-docvqa | Status: False | Source: None
+2025-11-20 10:13:18,274 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/tiennvcs/layoutlmv2-large-uncased-finetuned-vi-infovqa HTTP/1.1" 200 17
+2025-11-20 10:13:18,274 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/tiennvcs/layoutlmv2-base-uncased-finetuned-vi-infovqa HTTP/1.1" 200 17
+2025-11-20 10:13:18,275 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/tiennvcs/layoutlmv2-base-uncased-finetuned-infovqa HTTP/1.1" 200 17
+2025-11-20 10:13:18,276 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/hf-tiny-model-private/tiny-random-LayoutLMForQuestionAnswering HTTP/1.1" 200 17
+2025-11-20 10:13:18,276 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/hf-tiny-model-private/tiny-random-LayoutLMv3ForQuestionAnswering HTTP/1.1" 200 17
+2025-11-20 10:13:18,277 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/mishig/temp-model HTTP/1.1" 200 17
+2025-11-20 10:13:18,277 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/L-oenai/LayoutLMX_pt_question_answer_ocrazure_correct_V15_30_03_2023 HTTP/1.1" 200 17
+2025-11-20 10:13:18,279 - root - DEBUG - Model: impira/layoutlm-document-qa | Status: True | Source: local
+2025-11-20 10:13:18,281 - root - DEBUG - Model: impira/layoutlm-invoices | Status: False | Source: None
+2025-11-20 10:13:18,281 - root - DEBUG - Model: DataIntelligenceTeam/eurocorpV4 | Status: False | Source: None
+2025-11-20 10:13:18,281 - root - DEBUG - Model: faisalraza/layoutlm-invoices | Status: False | Source: None
+2025-11-20 10:13:18,281 - root - DEBUG - Model: MariaK/layoutlmv2-base-uncased_finetuned_docvqa_v2 | Status: False | Source: None
+2025-11-20 10:13:18,281 - root - DEBUG - Model: xhyi/layoutlmv3_docvqa_t11c5000 | Status: False | Source: None
+2025-11-20 10:13:18,281 - root - DEBUG - Model: cloudqi/CQI_Visual_Question_Awnser_PT_v0 | Status: False | Source: None
+2025-11-20 10:13:18,281 - root - DEBUG - Model: pardeepSF/layoutlm-vqa | Status: False | Source: None
+2025-11-20 10:13:18,281 - root - DEBUG - Model: tiennvcs/layoutlmv2-large-uncased-finetuned-infovqa | Status: False | Source: None
+2025-11-20 10:13:18,281 - root - DEBUG - Model: jinhybr/OCR-DocVQA-Donut | Status: False | Source: None
+2025-11-20 10:13:18,281 - root - DEBUG - Model: davanstrien/testwebhook | Status: False | Source: None
+2025-11-20 10:13:18,281 - root - DEBUG - Model: rubentito/layoutlmv3-base-mpdocvqa | Status: False | Source: None
+2025-11-20 10:13:18,281 - root - DEBUG - Model: frizwankhan/entity-linking-model-final | Status: False | Source: None
+2025-11-20 10:13:18,281 - root - DEBUG - Model: tiennvcs/layoutlmv2-large-uncased-finetuned-vi-infovqa | Status: False | Source: None
+2025-11-20 10:13:18,281 - root - DEBUG - Model: tiennvcs/layoutlmv2-base-uncased-finetuned-vi-infovqa | Status: False | Source: None
+2025-11-20 10:13:18,281 - root - DEBUG - Model: tiennvcs/layoutlmv2-base-uncased-finetuned-infovqa | Status: False | Source: None
+2025-11-20 10:13:18,281 - root - DEBUG - Model: hf-tiny-model-private/tiny-random-LayoutLMForQuestionAnswering | Status: False | Source: None
+2025-11-20 10:13:18,281 - root - DEBUG - Model: hf-tiny-model-private/tiny-random-LayoutLMv3ForQuestionAnswering | Status: False | Source: None
+2025-11-20 10:13:18,281 - root - DEBUG - Model: mishig/temp-model | Status: False | Source: None
+2025-11-20 10:13:18,281 - root - DEBUG - Model: L-oenai/LayoutLMX_pt_question_answer_ocrazure_correct_V15_30_03_2023 | Status: False | Source: None
+2025-11-20 10:13:18,282 - root - DEBUG - avaliable models on document-question-answering: {'local': ['impira/layoutlm-document-qa'], 'huggingface': []}
+2025-11-20 10:13:18,282 - root - DEBUG - chosen model: {'id': 'impira/layoutlm-document-qa', 'reason': 'Only one model available.'}
+2025-11-20 10:13:18,282 - root - WARNING - Inference error: {'message': "'image'"}
+2025-11-20 10:13:18,282 - root - DEBUG -  Failure: {"input": "Look at this invoice examples/invoice_sample.jpg what is the total amount due?", "task": {"task": "document-question-answering", "id": 1, "dep": [0], "args": {"text": "***", "question": "what is the total amount due?"}}, "reason": "inference error: {'message': \"'image'\"}", "op": "message"}
+2025-11-20 10:13:18,282 - root - DEBUG - Inference Result: {'error': {'message': "'image'"}}
+2025-11-20 10:13:18,282 - root - DEBUG - {0: {'task': {'task': 'image-to-text', 'id': 0, 'dep': [-1], 'args': {'image': 'public/examples/invoice_sample.jpg'}}, 'inference result': {'generated text': '***'}, 'choose model result': {'id': 'microsoft/trocr-base-printed', 'reason': 'The model microsoft/trocr-base-printed is specifically fine-tuned on the SROIE dataset, which is related to reading text in images such as invoices, making it highly suitable for extracting text from invoice images. Additionally, it has a local inference endpoint available, which can enhance speed and stability. Although nlpconnect/vit-gpt2-image-captioning has more likes, the specific task of extracting text from an invoice (which can be considered a form of image-to-text) is better aligned with the capabilities of microsoft/trocr-base-printed.'}}, 1: {'task': {'task': 'document-question-answering', 'id': 1, 'dep': [0], 'args': {'text': '***', 'question': 'what is the total amount due?'}}, 'inference result': {'error': {'message': "'image'"}}, 'choose model result': {'id': 'impira/layoutlm-document-qa', 'reason': 'Only one model available.'}}}
+2025-11-20 10:13:20,219 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /nebius/v1/chat/completions HTTP/1.1" 200 None
+2025-11-20 10:13:20,220 - root - DEBUG - The total amount due on the invoice examples/invoice_sample.jpg is not available as the inference results do not contain the required information. 
+<EXPLANATION> To determine the total amount due, I first attempted to extract text from the invoice image using an image-to-text model. However, the model output did not contain the necessary information to calculate the total amount due. The image-to-text model used was microsoft/trocr-base-printed, which is specifically fine-tuned on the SROIE dataset and is suitable for extracting text from invoice images. Unfortunately, the output of this model did not provide the required details. Next, I tried to use a document question answering model, impira/layoutlm-document-qa, to extract the total amount due from the text extracted by the image-to-text model. However, this model also did not provide the required information. The path to the invoice image is examples/invoice_sample.jpg. I couldn't find the total amount due in the inference results, so I couldn't make it. </EXPLANATION>
+2025-11-20 10:13:20,226 - retriever - DEBUG - Loaded 11 entries from data/explanations.jsonl
+2025-11-20 10:13:20,440 - retriever - DEBUG - Best similarity = 0.552 (threshold = 0.95)
+2025-11-20 10:13:20,447 - retriever - INFO - Saved new explanation to data/explanations.jsonl: To determine the total amount due, I first attempted to extr...
+2025-11-20 10:13:22,300 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /nebius/v1/chat/completions HTTP/1.1" 200 None
+2025-11-20 10:13:22,301 - judge - INFO - Judge decided: combined (Both explanations are identical and lack specific details about the system's behavior, so a combined explanation is not possible in the traditional sense. However, I can create an improved explanation that provides more clarity and context.)
+2025-11-20 10:13:22,301 - root - DEBUG - Final explanation chosen by Judge: To determine the total amount due, I first attempted to extract text from the invoice image using an image-to-text model. However, the model output did not contain the necessary information to calculate the total amount due. The image-to-text model used was microsoft/trocr-base-printed, which is specifically fine-tuned on the SROIE dataset and is suitable for extracting text from invoice images. Unfortunately, the output of this model did not provide the required details. Next, I tried to use a document question answering model, impira/layoutlm-document-qa, to extract the total amount due from the text extracted by the image-to-text model. However, this model also did not provide the required information. The path to the invoice image is examples/invoice_sample.jpg. I couldn't find the total amount due in the inference results, so I couldn't make it.
+2025-11-20 10:13:22,301 - root - DEBUG -  Success: {"input": "Look at this invoice examples/invoice_sample.jpg what is the total amount due?", "task": "[{\"task\": \"image-to-text\", \"id\": 0, \"dep\": [-1], \"args\": {\"image\": \"examples/invoice_sample.jpg\"}}, {\"task\": \"document-question-answering\", \"id\": 1, \"dep\": [0], \"args\": {\"text\": \"<GENERATED>-0\", \"question\": \"what is the total amount due?\"}}]", "results": {"0": {"task": {"task": "image-to-text", "id": 0, "dep": [-1], "args": {"image": "public/examples/invoice_sample.jpg"}}, "inference result": {"generated text": "***"}, "choose model result": {"id": "microsoft/trocr-base-printed", "reason": "The model microsoft/trocr-base-printed is specifically fine-tuned on the SROIE dataset, which is related to reading text in images such as invoices, making it highly suitable for extracting text from invoice images. Additionally, it has a local inference endpoint available, which can enhance speed and stability. Although nlpconnect/vit-gpt2-image-captioning has more likes, the specific task of extracting text from an invoice (which can be considered a form of image-to-text) is better aligned with the capabilities of microsoft/trocr-base-printed."}}, "1": {"task": {"task": "document-question-answering", "id": 1, "dep": [0], "args": {"text": "***", "question": "what is the total amount due?"}}, "inference result": {"error": {"message": "'image'"}}, "choose model result": {"id": "impira/layoutlm-document-qa", "reason": "Only one model available."}}}, "response": "The total amount due on the invoice examples/invoice_sample.jpg is not available as the inference results do not contain the required information. \nTo determine the total amount due, I first attempted to extract text from the invoice image using an image-to-text model. However, the model output did not contain the necessary information to calculate the total amount due. The image-to-text model used was microsoft/trocr-base-printed, which is specifically fine-tuned on the SROIE dataset and is suitable for extracting text from invoice images. Unfortunately, the output of this model did not provide the required details. Next, I tried to use a document question answering model, impira/layoutlm-document-qa, to extract the total amount due from the text extracted by the image-to-text model. However, this model also did not provide the required information. The path to the invoice image is examples/invoice_sample.jpg. I couldn't find the total amount due in the inference results, so I couldn't make it.", "during": 8.270728349685669, "op": "response"}
+2025-11-20 10:13:22,301 - root - INFO - response: The total amount due on the invoice examples/invoice_sample.jpg is not available as the inference results do not contain the required information. 
+To determine the total amount due, I first attempted to extract text from the invoice image using an image-to-text model. However, the model output did not contain the necessary information to calculate the total amount due. The image-to-text model used was microsoft/trocr-base-printed, which is specifically fine-tuned on the SROIE dataset and is suitable for extracting text from invoice images. Unfortunately, the output of this model did not provide the required details. Next, I tried to use a document question answering model, impira/layoutlm-document-qa, to extract the total amount due from the text extracted by the image-to-text model. However, this model also did not provide the required information. The path to the invoice image is examples/invoice_sample.jpg. I couldn't find the total amount due in the inference results, so I couldn't make it.
+2025-11-20 10:14:17,163 - root - INFO - [ User ]: exit
+2025-11-20 10:14:17,163 - root - INFO - [ Jarvis ]: Goodnight.

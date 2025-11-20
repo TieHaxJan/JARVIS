@@ -1,0 +1,174 @@
+2025-11-20 10:11:01,305 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda:0
+2025-11-20 10:11:01,305 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-20 10:11:01,307 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-11-20 10:11:01,443 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-11-20 10:11:01,447 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-11-20 10:11:01,553 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-11-20 10:11:01,558 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-11-20 10:11:01,667 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-11-20 10:11:01,673 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-11-20 10:11:01,787 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-11-20 10:11:01,793 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+2025-11-20 10:11:01,899 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-11-20 10:11:01,905 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-11-20 10:11:02,015 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-11-20 10:11:02,021 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+2025-11-20 10:11:02,130 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-11-20 10:11:02,238 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-11-20 10:11:02,244 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+2025-11-20 10:11:02,453 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-11-20 10:11:02,458 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+2025-11-20 10:11:02,569 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-11-20 10:11:02,727 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-11-20 10:11:02,732 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-11-20 10:11:02,842 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6889
+2025-11-20 10:11:03,068 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:11:03,071 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /running HTTP/1.1" 200 17
+2025-11-20 10:11:03,086 - root - DEBUG - text-classification: 30 models
+2025-11-20 10:11:03,086 - root - DEBUG - token-classification: 30 models
+2025-11-20 10:11:03,086 - root - DEBUG - text2text-generation: 30 models
+2025-11-20 10:11:03,086 - root - DEBUG - summarization: 30 models
+2025-11-20 10:11:03,086 - root - DEBUG - translation: 30 models
+2025-11-20 10:11:03,086 - root - DEBUG - question-answering: 30 models
+2025-11-20 10:11:03,086 - root - DEBUG - conversational: 30 models
+2025-11-20 10:11:03,086 - root - DEBUG - text-generation: 30 models
+2025-11-20 10:11:03,086 - root - DEBUG - sentence-similarity: 30 models
+2025-11-20 10:11:03,086 - root - DEBUG - tabular-classification: 30 models
+2025-11-20 10:11:03,086 - root - DEBUG - object-detection: 30 models
+2025-11-20 10:11:03,086 - root - DEBUG - image-classification: 30 models
+2025-11-20 10:11:03,086 - root - DEBUG - image-to-text: 30 models
+2025-11-20 10:11:03,086 - root - DEBUG - text-to-image: 31 models
+2025-11-20 10:11:03,086 - root - DEBUG - image-to-image: 30 models
+2025-11-20 10:11:03,086 - root - DEBUG - visual-question-answering: 13 models
+2025-11-20 10:11:03,086 - root - DEBUG - document-question-answering: 22 models
+2025-11-20 10:11:03,086 - root - DEBUG - image-segmentation: 30 models
+2025-11-20 10:11:03,086 - root - DEBUG - depth-estimation: 30 models
+2025-11-20 10:11:03,086 - root - DEBUG - text-to-video: 8 models
+2025-11-20 10:11:03,086 - root - DEBUG - text-to-speech: 30 models
+2025-11-20 10:11:03,086 - root - DEBUG - automatic-speech-recognition: 30 models
+2025-11-20 10:11:03,086 - root - DEBUG - audio-to-audio: 30 models
+2025-11-20 10:11:03,086 - root - DEBUG - audio-classification: 30 models
+2025-11-20 10:11:03,086 - root - DEBUG - named-entity-recognition: 1 models
+2025-11-20 10:11:03,086 - root - DEBUG - optical-character-recognition: 1 models
+2025-11-20 10:11:03,086 - root - INFO - Welcome to Jarvis! A collaborative system that consists of an LLM as the controller and numerous expert models as collaborative executors. Jarvis can plan tasks, schedule Hugging Face models, generate friendly responses based on your requests, and help you with many things. Please enter your request (`exit` to exit).
+2025-11-20 10:11:07,202 - root - INFO - [ User ]: detect zebras in examples/c.jpg
+2025-11-20 10:11:07,202 - root - INFO - ********************************************************************************
+2025-11-20 10:11:07,202 - root - INFO - input: Detect zebras in examples/c.jpg
+2025-11-20 10:11:07,204 - root - DEBUG - Messages: [{'role': 'system', 'content': '#1 Task Planning Stage: You are a helpful AI assistant. Based on the user\'s request, you will recommend the best model from Hugging Face for the task, and explain why. The special tag "<GENERATED>-dep_id" refer to the one generated text/image/audio in the dependency task (Please consider whether the dependency task generates resources of this type.) and "dep_id" must be in "dep" list.  The "dep" field denotes the ids of the previous prerequisite tasks which generate a new resource that the current task relies on.  The "args" field must in ["text", "image", "audio"], nothing else.  The "task" field must be in ["token-classification", "optical-character-recognition", "named-entity-recognition", "text2text-generation", "summarization", "translation", "question-answering", "conversational", "text-generation", "sentence-similarity", "tabular-classification", "object-detection", "image-classification", "image-to-image", "image-to-text", "text-to-image", "text-to-video", "visual-question-answering", "document-question-answering", "image-segmentation", "depth-estimation", "text-to-speech", "automatic-speech-recognition", "audio-to-audio", "audio-classification", "canny-control", "hed-control", "mlsd-control", "normal-control", "openpose-control", "canny-text-to-image", "depth-text-to-image", "hed-text-to-image", "mlsd-text-to-image", "normal-text-to-image", "seg-text-to-image"] You must respond in JSON format like: [\n  {\n    "task": task, \n    "id": task_id, \n    "dep": dependency_task_id, \n    "args": {\n      "text": text or <GENERATED>-dep_id, \n      "image": image_url or <GENERATED>-dep_id, \n      "audio": audio_url or <GENERATED>-dep_id\n    }\n  }\n] Respond with the JSON entry and ONLY the JSON entry! Here are some few-shot examples:'}, {'role': 'user', 'content': 'Give you some pictures e1.jpg, e2.png, e3.jpg, help me count the number of sheep?'}, {'role': 'assistant', 'content': '[{"task": "image-to-text", "id": 0, "dep": [-1], "args": {"image": "e1.jpg" }}, {"task": "object-detection", "id": 1, "dep": [-1], "args": {"image": "e1.jpg" }}, {"task": "visual-question-answering", "id": 2, "dep": [1], "args": {"image": "<GENERATED>-1", "text": "How many sheep in the picture"}} }}, {"task": "image-to-text", "id": 3, "dep": [-1], "args": {"image": "e2.png" }}, {"task": "object-detection", "id": 4, "dep": [-1], "args": {"image": "e2.png" }}, {"task": "visual-question-answering", "id": 5, "dep": [4], "args": {"image": "<GENERATED>-4", "text": "How many sheep in the picture"}} }}, {"task": "image-to-text", "id": 6, "dep": [-1], "args": {"image": "e3.jpg" }},  {"task": "object-detection", "id": 7, "dep": [-1], "args": {"image": "e3.jpg" }}, {"task": "visual-question-answering", "id": 8, "dep": [7], "args": {"image": "<GENERATED>-7", "text": "How many sheep in the picture"}}]'}, {'role': 'user', 'content': 'Look at /e.jpg, can you tell me how many objects in the picture? Give me a picture and video similar to this one.'}, {'role': 'assistant', 'content': '[{"task": "image-to-text", "id": 0, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "object-detection", "id": 1, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "visual-question-answering", "id": 2, "dep": [1], "args": {"image": "<GENERATED>-1", "text": "how many objects in the picture?" }}, {"task": "text-to-image", "id": 3, "dep": [0], "args": {"text": "<GENERATED-0>" }}, {"task": "image-to-image", "id": 4, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "text-to-video", "id": 5, "dep": [0], "args": {"text": "<GENERATED-0>" }}]'}, {'role': 'user', 'content': 'given a document /images/e.jpeg, answer me what is the student amount? And describe the image with your voice'}, {'role': 'assistant', 'content': '{"task": "document-question-answering", "id": 0, "dep": [-1], "args": {"image": "/images/e.jpeg", "text": "what is the student amount?" }}, {"task": "visual-question-answering", "id": 1, "dep": [-1], "args": {"image": "/images/e.jpeg", "text": "what is the student amount?" }}, {"task": "image-to-text", "id": 2, "dep": [-1], "args": {"image": "/images/e.jpg" }}, {"task": "text-to-speech", "id": 3, "dep": [2], "args": {"text": "<GENERATED>-2" }}]'}, {'role': 'user', 'content': 'Given an image /example.jpg, first generate a hed image, then based on the hed image generate a new image where a girl is reading a book'}, {'role': 'assistant', 'content': '[{"task": "openpose-control", "id": 0, "dep": [-1], "args": {"image": "/example.jpg" }},  {"task": "openpose-text-to-image", "id": 1, "dep": [0], "args": {"text": "a girl is reading a book", "image": "<GENERATED>-0" }}]'}, {'role': 'user', 'content': "please show me a video and an image of (based on the text) 'a boy is running' and dub it"}, {'role': 'assistant', 'content': '[{"task": "text-to-video", "id": 0, "dep": [-1], "args": {"text": "a boy is running" }}, {"task": "text-to-speech", "id": 1, "dep": [-1], "args": {"text": "a boy is running" }}, {"task": "text-to-image", "id": 2, "dep": [-1], "args": {"text": "a boy is running" }}]'}, {'role': 'user', 'content': 'please show me a joke and an image of cat'}, {'role': 'assistant', 'content': '[{"task": "conversational", "id": 0, "dep": [-1], "args": {"text": "please show me a joke of cat" }}, {"task": "text-to-image", "id": 1, "dep": [-1], "args": {"text": "a photo of cat" }}]'}, {'role': 'user', 'content': 'The chat log [ [] ] may contain the resources I mentioned. Now I input { Detect zebras in examples/c.jpg }. Pay attention to the input and output types of tasks and the dependencies between tasks.'}]
+2025-11-20 10:11:07,311 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/meta-llama/Llama-3.3-70B-Instruct?expand=inferenceProviderMapping HTTP/1.1" 200 1439
+2025-11-20 10:11:07,313 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): router.huggingface.co:443
+2025-11-20 10:11:08,235 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /nebius/v1/chat/completions HTTP/1.1" 200 None
+2025-11-20 10:11:08,236 - root - DEBUG - [{'task': 'object-detection', 'id': 0, 'dep': [-1], 'args': {'image': 'examples/c.jpg'}}]
+2025-11-20 10:11:08,237 - root - DEBUG - Run task: 0 - object-detection
+2025-11-20 10:11:08,237 - root - DEBUG - Deps: []
+2025-11-20 10:11:08,237 - root - DEBUG - Parsed Task: {'task': 'object-detection', 'id': 0, 'dep': [-1], 'args': {'image': 'public/examples/c.jpg'}}
+2025-11-20 10:11:08,239 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:11:08,241 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:11:08,242 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:11:08,245 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:11:08,246 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:11:08,247 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/hustvl/yolos-tiny HTTP/1.1" 200 17
+2025-11-20 10:11:08,247 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/table-transformer-structure-recognition HTTP/1.1" 200 17
+2025-11-20 10:11:08,248 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/facebook/detr-resnet-50 HTTP/1.1" 200 17
+2025-11-20 10:11:08,248 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:11:08,250 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:11:08,253 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:11:08,253 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/facebook/detr-resnet-101 HTTP/1.1" 200 16
+2025-11-20 10:11:08,254 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/owlvit-base-patch32 HTTP/1.1" 200 17
+2025-11-20 10:11:08,255 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:11:08,256 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:11:08,257 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:11:08,257 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:11:08,258 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:11:08,259 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:11:08,260 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:11:08,261 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:11:08,261 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/TahaDouaji/detr-doc-table-detection HTTP/1.1" 200 17
+2025-11-20 10:11:08,262 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:11:08,263 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:11:08,264 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/table-transformer-detection HTTP/1.1" 200 17
+2025-11-20 10:11:08,265 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:11:08,266 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:11:08,267 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:11:08,269 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:11:08,270 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:11:08,271 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:11:08,271 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/hustvl/yolos-small HTTP/1.1" 200 17
+2025-11-20 10:11:08,272 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:11:08,272 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/owlvit-large-patch14 HTTP/1.1" 200 17
+2025-11-20 10:11:08,272 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/ultralyticsplus/yolov8s HTTP/1.1" 200 17
+2025-11-20 10:11:08,275 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:11:08,276 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:11:08,277 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:11:08,278 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:11:08,279 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/facebook/detr-resnet-101-dc5 HTTP/1.1" 200 17
+2025-11-20 10:11:08,280 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:11:08,280 - root - DEBUG - Model: hustvl/yolos-tiny | Status: False | Source: None
+2025-11-20 10:11:08,280 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/valentinafeve/yolos-fashionpedia HTTP/1.1" 200 17
+2025-11-20 10:11:08,281 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/keremberke/yolov5m-license-plate HTTP/1.1" 200 17
+2025-11-20 10:11:08,282 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/hustvl/yolos-base HTTP/1.1" 200 17
+2025-11-20 10:11:08,283 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/fcakyon/yolov5s-v7.0 HTTP/1.1" 200 17
+2025-11-20 10:11:08,284 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/nickmuchi/yolos-small-finetuned-license-plate-detection HTTP/1.1" 200 17
+2025-11-20 10:11:08,285 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Riser/YOLOP HTTP/1.1" 200 17
+2025-11-20 10:11:08,285 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/keremberke/yolov5n-blood-cell HTTP/1.1" 200 17
+2025-11-20 10:11:08,287 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/SamMorgan/yolo_v4_tflite HTTP/1.1" 200 17
+2025-11-20 10:11:08,288 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/SenseTime/deformable-detr HTTP/1.1" 200 17
+2025-11-20 10:11:08,289 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/mindee/fasterrcnn_mobilenet_v3_large_fpn HTTP/1.1" 200 17
+2025-11-20 10:11:08,289 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/owlvit-base-patch16 HTTP/1.1" 200 17
+2025-11-20 10:11:08,290 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/biglam/detr-resnet-50_fine_tuned_nls_chapbooks HTTP/1.1" 200 17
+2025-11-20 10:11:08,290 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/nielsr/detr-table-detection HTTP/1.1" 200 17
+2025-11-20 10:11:08,291 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/keremberke/yolov5n-license-plate HTTP/1.1" 200 17
+2025-11-20 10:11:08,294 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/keremberke/yolov5s-license-plate HTTP/1.1" 200 17
+2025-11-20 10:11:08,294 - root - DEBUG - Model: microsoft/table-transformer-structure-recognition | Status: False | Source: None
+2025-11-20 10:11:08,295 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/keremberke/yolov8s-table-extraction HTTP/1.1" 200 17
+2025-11-20 10:11:08,295 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/nickmuchi/yolos-small-rego-plates-detection HTTP/1.1" 200 17
+2025-11-20 10:11:08,296 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/keremberke/yolov8m-table-extraction HTTP/1.1" 200 17
+2025-11-20 10:11:08,296 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/SalML/DETR-table-structure-recognition HTTP/1.1" 200 17
+2025-11-20 10:11:08,302 - root - DEBUG - Model: facebook/detr-resnet-50 | Status: False | Source: None
+2025-11-20 10:11:08,304 - root - DEBUG - Model: facebook/detr-resnet-101 | Status: True | Source: local
+2025-11-20 10:11:08,304 - root - DEBUG - Model: google/owlvit-base-patch32 | Status: False | Source: None
+2025-11-20 10:11:08,304 - root - DEBUG - Model: TahaDouaji/detr-doc-table-detection | Status: False | Source: None
+2025-11-20 10:11:08,304 - root - DEBUG - Model: microsoft/table-transformer-detection | Status: False | Source: None
+2025-11-20 10:11:08,304 - root - DEBUG - Model: hustvl/yolos-small | Status: False | Source: None
+2025-11-20 10:11:08,304 - root - DEBUG - Model: google/owlvit-large-patch14 | Status: False | Source: None
+2025-11-20 10:11:08,304 - root - DEBUG - Model: ultralyticsplus/yolov8s | Status: False | Source: None
+2025-11-20 10:11:08,304 - root - DEBUG - Model: facebook/detr-resnet-101-dc5 | Status: False | Source: None
+2025-11-20 10:11:08,304 - root - DEBUG - Model: valentinafeve/yolos-fashionpedia | Status: False | Source: None
+2025-11-20 10:11:08,304 - root - DEBUG - Model: keremberke/yolov5m-license-plate | Status: False | Source: None
+2025-11-20 10:11:08,304 - root - DEBUG - Model: hustvl/yolos-base | Status: False | Source: None
+2025-11-20 10:11:08,304 - root - DEBUG - Model: fcakyon/yolov5s-v7.0 | Status: False | Source: None
+2025-11-20 10:11:08,304 - root - DEBUG - Model: nickmuchi/yolos-small-finetuned-license-plate-detection | Status: False | Source: None
+2025-11-20 10:11:08,304 - root - DEBUG - Model: Riser/YOLOP | Status: False | Source: None
+2025-11-20 10:11:08,304 - root - DEBUG - Model: keremberke/yolov5n-blood-cell | Status: False | Source: None
+2025-11-20 10:11:08,304 - root - DEBUG - Model: SamMorgan/yolo_v4_tflite | Status: False | Source: None
+2025-11-20 10:11:08,304 - root - DEBUG - Model: SenseTime/deformable-detr | Status: False | Source: None
+2025-11-20 10:11:08,304 - root - DEBUG - Model: mindee/fasterrcnn_mobilenet_v3_large_fpn | Status: False | Source: None
+2025-11-20 10:11:08,304 - root - DEBUG - Model: google/owlvit-base-patch16 | Status: False | Source: None
+2025-11-20 10:11:08,304 - root - DEBUG - Model: biglam/detr-resnet-50_fine_tuned_nls_chapbooks | Status: False | Source: None
+2025-11-20 10:11:08,304 - root - DEBUG - Model: nielsr/detr-table-detection | Status: False | Source: None
+2025-11-20 10:11:08,304 - root - DEBUG - Model: keremberke/yolov5n-license-plate | Status: False | Source: None
+2025-11-20 10:11:08,304 - root - DEBUG - Model: keremberke/yolov5s-license-plate | Status: False | Source: None
+2025-11-20 10:11:08,304 - root - DEBUG - Model: keremberke/yolov8s-table-extraction | Status: False | Source: None
+2025-11-20 10:11:08,304 - root - DEBUG - Model: nickmuchi/yolos-small-rego-plates-detection | Status: False | Source: None
+2025-11-20 10:11:08,304 - root - DEBUG - Model: keremberke/yolov8m-table-extraction | Status: False | Source: None
+2025-11-20 10:11:08,304 - root - DEBUG - Model: SalML/DETR-table-structure-recognition | Status: False | Source: None
+2025-11-20 10:11:08,305 - root - DEBUG - avaliable models on object-detection: {'local': ['facebook/detr-resnet-101'], 'huggingface': []}
+2025-11-20 10:11:08,305 - root - DEBUG - chosen model: {'id': 'facebook/detr-resnet-101', 'reason': 'Only one model available.'}
+2025-11-20 10:11:08,305 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-11-20 10:11:09,070 - urllib3.connectionpool - DEBUG - http://localhost:8005 "POST /models/facebook/detr-resnet-101 HTTP/1.1" 200 290
+2025-11-20 10:11:09,095 - root - DEBUG - Inference Result: {'generated image': '/images/d5e8.jpg', 'predicted': [{'box': {'xmax': 343, 'xmin': 34, 'ymax': 481, 'ymin': 115}, 'label': 'zebra', 'score': 0.999323844909668}, {'box': {'xmax': 546, 'xmin': 315, 'ymax': 480, 'ymin': 76}, 'label': 'zebra', 'score': 0.9955006241798401}, {'box': {'xmax': 659, 'xmin': 490, 'ymax': 479, 'ymin': 138}, 'label': 'zebra', 'score': 0.9952672719955444}]}
+2025-11-20 10:11:09,096 - root - DEBUG - {0: {'task': {'task': 'object-detection', 'id': 0, 'dep': [-1], 'args': {'image': 'public/examples/c.jpg'}}, 'inference result': {'generated image': '/images/d5e8.jpg', 'predicted': [{'box': {'xmax': 343, 'xmin': 34, 'ymax': 481, 'ymin': 115}, 'label': 'zebra', 'score': 0.999323844909668}, {'box': {'xmax': 546, 'xmin': 315, 'ymax': 480, 'ymin': 76}, 'label': 'zebra', 'score': 0.9955006241798401}, {'box': {'xmax': 659, 'xmin': 490, 'ymax': 479, 'ymin': 138}, 'label': 'zebra', 'score': 0.9952672719955444}]}, 'choose model result': {'id': 'facebook/detr-resnet-101', 'reason': 'Only one model available.'}}}
+2025-11-20 10:11:11,518 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /nebius/v1/chat/completions HTTP/1.1" 200 None
+2025-11-20 10:11:11,519 - root - DEBUG - I detected 3 zebras in the image examples/c.jpg. 
+<EXPLANATION> To accomplish this task, I utilized a single model, facebook/detr-resnet-101, which is a popular and effective object detection model. The model analyzed the input image and provided a list of detected objects, along with their corresponding bounding boxes and confidence scores. In this case, the model detected three zebras with high confidence scores: 0.999323844909668, 0.9955006241798401, and 0.9952672719955444. The detected zebras are located at the following coordinates: (34, 115, 343, 481), (315, 76, 546, 480), and (490, 138, 659, 479). The generated image with bounding boxes can be found at /images/d5e8.jpg. I chose to use the facebook/detr-resnet-101 model because it was the only model available for this task, and it has demonstrated strong performance in object detection tasks. </EXPLANATION>
+2025-11-20 10:11:11,525 - retriever - DEBUG - Loaded 10 entries from data/explanations.jsonl
+2025-11-20 10:11:11,812 - retriever - DEBUG - Best similarity = 0.752 (threshold = 0.95)
+2025-11-20 10:11:11,820 - retriever - INFO - Saved new explanation to data/explanations.jsonl: To accomplish this task, I utilized a single model, facebook...
+2025-11-20 10:11:14,155 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /nebius/v1/chat/completions HTTP/1.1" 200 None
+2025-11-20 10:11:14,156 - judge - INFO - Judge decided: combined (Both explanations are identical and lack additional context or insights, so a combined explanation is not truly possible, but the provided explanations can be slightly improved for clarity and user-friendliness.)
+2025-11-20 10:11:14,156 - root - DEBUG - Final explanation chosen by Judge: To accomplish this task, I utilized a single model, facebook/detr-resnet-101, which is a popular and effective object detection model. The model analyzed the input image and provided a list of detected objects, along with their corresponding bounding boxes and confidence scores. In this case, the model detected three zebras with high confidence scores: 0.999323844909668, 0.9955006241798401, and 0.9952672719955444. The detected zebras are located at the following coordinates: (34, 115, 343, 481), (315, 76, 546, 480), and (490, 138, 659, 479). The generated image with bounding boxes can be found at /images/d5e8.jpg. I chose to use the facebook/detr-resnet-101 model because it was the only model available for this task, and it has demonstrated strong performance in object detection tasks.
+2025-11-20 10:11:14,157 - root - DEBUG -  Success: {"input": "Detect zebras in examples/c.jpg", "task": "[{\"task\": \"object-detection\", \"id\": 0, \"dep\": [-1], \"args\": {\"image\": \"examples/c.jpg\" }}]", "results": {"0": {"task": {"task": "object-detection", "id": 0, "dep": [-1], "args": {"image": "public/examples/c.jpg"}}, "inference result": {"generated image": "/images/d5e8.jpg", "predicted": [{"box": {"xmax": 343, "xmin": 34, "ymax": 481, "ymin": 115}, "label": "zebra", "score": 0.999323844909668}, {"box": {"xmax": 546, "xmin": 315, "ymax": 480, "ymin": 76}, "label": "zebra", "score": 0.9955006241798401}, {"box": {"xmax": 659, "xmin": 490, "ymax": 479, "ymin": 138}, "label": "zebra", "score": 0.9952672719955444}]}, "choose model result": {"id": "facebook/detr-resnet-101", "reason": "Only one model available."}}}, "response": "I detected 3 zebras in the image examples/c.jpg. \nTo accomplish this task, I utilized a single model, facebook/detr-resnet-101, which is a popular and effective object detection model. The model analyzed the input image and provided a list of detected objects, along with their corresponding bounding boxes and confidence scores. In this case, the model detected three zebras with high confidence scores: 0.999323844909668, 0.9955006241798401, and 0.9952672719955444. The detected zebras are located at the following coordinates: (34, 115, 343, 481), (315, 76, 546, 480), and (490, 138, 659, 479). The generated image with bounding boxes can be found at /images/d5e8.jpg. I chose to use the facebook/detr-resnet-101 model because it was the only model available for this task, and it has demonstrated strong performance in object detection tasks.", "during": 6.954591989517212, "op": "response"}
+2025-11-20 10:11:14,157 - root - INFO - response: I detected 3 zebras in the image examples/c.jpg. 
+To accomplish this task, I utilized a single model, facebook/detr-resnet-101, which is a popular and effective object detection model. The model analyzed the input image and provided a list of detected objects, along with their corresponding bounding boxes and confidence scores. In this case, the model detected three zebras with high confidence scores: 0.999323844909668, 0.9955006241798401, and 0.9952672719955444. The detected zebras are located at the following coordinates: (34, 115, 343, 481), (315, 76, 546, 480), and (490, 138, 659, 479). The generated image with bounding boxes can be found at /images/d5e8.jpg. I chose to use the facebook/detr-resnet-101 model because it was the only model available for this task, and it has demonstrated strong performance in object detection tasks.
+2025-11-20 10:12:33,238 - root - INFO - [ User ]: exit
+2025-11-20 10:12:33,239 - root - INFO - [ Jarvis ]: Goodnight.
