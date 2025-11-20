@@ -406,14 +406,6 @@ def load_pipes(local_deployment):
                     f"{local_fold}/nlpconnect/vit-gpt2-image-captioning"),
                 "device": device
             },
-            # OCR
-            "microsoft/trocr-base-printed": {
-                "processor": TrOCRProcessor.from_pretrained(
-                    f"{local_fold}/microsoft/trocr-base-printed"),
-                "model": VisionEncoderDecoderModel.from_pretrained(
-                    f"{local_fold}/microsoft/trocr-base-printed"),
-                "device": device
-            },
             # NER
             "dslim/distilbert-NER": {
                 "model": pipeline(task="token-classification",
@@ -674,38 +666,6 @@ def models(model_id):
             generated_ids = pipe.generate(pixel_values, max_length=200, num_beams=1)
             generated_text = pipes[model_id]["tokenizer"].batch_decode(generated_ids, skip_special_tokens=True)[0]
             result = {"generated text": generated_text}
-
-        # -------------------- OCR (IMG → TXT) --------------------
-        if model_id == "microsoft/trocr-base-printed":
-            image = load_image(request.get_json()["img_url"]).convert("RGB")
-
-            proc  = pipes[model_id]["processor"]  # TrOCRProcessor
-            model = pipe                           # VisionEncoderDecoderModel
-            device = torch.device(pipes[model_id]["device"])
-
-            # move model fully to device (handles encoder/decoder)
-            ensure_pipeline_on_device(model, pipes[model_id]["device"])
-            model.eval()
-
-            # preprocess + move inputs to same device
-            pixel_values = proc(images=image, return_tensors="pt").pixel_values.to(device)
-
-            # strong, sane generation defaults for OCR
-            gen_kwargs = {
-                "max_new_tokens": 64,
-                "num_beams": 4,
-                "early_stopping": True,
-                # make sure decoder has correct special ids
-                "decoder_start_token_id": model.config.decoder_start_token_id,
-                "eos_token_id": proc.tokenizer.eos_token_id,
-                "pad_token_id": proc.tokenizer.pad_token_id,
-            }
-
-            with torch.no_grad():
-                generated_ids = model.generate(pixel_values, **gen_kwargs)
-
-            text = proc.batch_decode(generated_ids, skip_special_tokens=True)[0].strip()
-            result = {"generated text": text}
 
         # -------------------- TXT → IMG (Stable Diffusion) --------------------
         if model_id == "runwayml/stable-diffusion-v1-5":
