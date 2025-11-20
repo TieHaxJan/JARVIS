@@ -172,3 +172,5 @@ The segmented image can be found at file:///images/b5f6.jpg.
 2025-11-20 10:25:17,231 - root - INFO - response: I have successfully segmented the objects in the image examples/f.jpg. There are several objects detected in the image. 
 To accomplish this task, I utilized the facebook/maskformer-swin-base-coco model, which is a state-of-the-art model for image segmentation tasks. This model uses a swin-base backbone and was trained on the COCO dataset. The model generated a segmented image, which can be found at /images/b5f6.jpg. The model confidence score for this task was 0.85, indicating a high level of confidence in the results. I chose this model because it is the most suitable for this type of task and has achieved high accuracy in similar tasks. If there were multiple models available, I would have chosen the one with the highest confidence score and most direct detection results. However, in this case, only one model was available, so I relied on its output.
 The segmented image can be found at file:///images/b5f6.jpg.
+2025-11-20 10:26:19,594 - root - INFO - [ User ]: exit
+2025-11-20 10:26:19,594 - root - INFO - [ Jarvis ]: Goodnight.
