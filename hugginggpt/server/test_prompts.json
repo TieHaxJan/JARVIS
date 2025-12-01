@@ -35,7 +35,7 @@
     ]
   },
   {
-    "prompt": "Estimate the depth of 'mountain_path.jpg'.",
+    "prompt": "Estimate the depth of 'examples/mountain_path.jpg'.",
     "task_type": "single",
     "models": [
       "Intel/dpt-hybrid-midas"
@@ -49,14 +49,14 @@
     ]
   },
   {
-    "prompt": "Answer 'What is the man holding?' in the image 'farmer.jpg'.",
+    "prompt": "Answer 'What is the man holding?' in the image 'examples/farmer.jpg'.",
     "task_type": "single",
     "models": [
       "dandelin/vilt-b32-finetuned-vqa"
     ]
   },
   {
-    "prompt": "Answer 'What is the person holding?' in the image 'club.jpg'.",
+    "prompt": "Answer 'What is the person holding?' in the image 'examples/club.jpg'.",
     "task_type": "single",
     "models": [
       "dandelin/vilt-b32-finetuned-vqa"
@@ -70,49 +70,49 @@
     ]
   },
   {
-    "prompt": "Extract total amount from 'invoice_sample.jpg'.",
+    "prompt": "Extract total amount from 'examples/invoice_sample.jpg'.",
     "task_type": "single",
     "models": [
       "impira/layoutlm-document-qa"
     ]
   },
   {
-    "prompt": "Generate a canny edge version of 'bridge.png'.",
+    "prompt": "Generate a canny edge version of 'examples/bridge.png'.",
     "task_type": "single",
     "models": [
       "lllyasviel/sd-controlnet-canny"
     ]
   },
   {
-    "prompt": "Detect poses in 'runner_pose.jpg'.",
+    "prompt": "Detect poses in 'examples/runner_pose.jpg'.",
     "task_type": "single",
     "models": [
       "lllyasviel/sd-controlnet-openpose"
     ]
   },
   {
-    "prompt": "Read text from 'poster.jpg'.",
-    "task_type": "single",
-    "models": [
-      "microsoft/trocr-base-printed"
-    ]
-  },
-  {
-    "prompt": "Generate a similar image to 'landscape.jpg'.",
+    "prompt": "Generate a similar image to 'examples/sunset_beach.jpg'.",
     "task_type": "single",
     "models": [
       "lambdalabs/sd-image-variations-diffusers"
     ]
   },
   {
-    "prompt": "Transcribe the speech in 'meeting_audio.wav'.",
+    "prompt": "Generate a similar image to 'examples/landscape.jpg'.",
+    "task_type": "single",
+    "models": [
+      "lambdalabs/sd-image-variations-diffusers"
+    ]
+  },
+  {
+    "prompt": "Transcribe the speech in 'examples/meeting_audio.wav'.",
     "task_type": "single",
     "models": [
       "openai/whisper-base"
     ]
   },
   {
-    "prompt": "Generate a voice description of 'sunset_beach.jpg'.",
+    "prompt": "Generate a voice description of 'examples/sunset_beach.jpg'.",
     "task_type": "single",
     "models": [
       "nlpconnect/vit-gpt2-image-captioning",
@@ -120,59 +120,59 @@
     ]
   },
   {
-    "prompt": "Compare 'a.jpg' and 'b.jpg' to see which is more like 'reference.jpg'.",
+    "prompt": "Compare 'examples/a.jpg' and 'examples/b.jpg' to see which is more like 'examples/c.jpg'.",
     "task_type": "single",
     "models": [
       "facebook/detr-resnet-101"
     ]
   },
   {
-    "prompt": "Count how many cars are in 'traffic_scene.jpg'.",
+    "prompt": "Count how many cars are in 'examples/traffic_scene.jpg'.",
     "task_type": "single",
     "models": [
       "facebook/detr-resnet-101"
     ]
   },
   {
-    "prompt": "Segment the image 'market.png'.",
+    "prompt": "Segment the image 'examples/f.jpg'.",
     "task_type": "single",
     "models": [
       "facebook/detr-resnet-101"
     ]
   },
   {
-    "prompt": "Caption 'baby_smile.jpg'.",
+    "prompt": "Caption 'examples/baby_smile.jpg'.",
     "task_type": "single",
     "models": [
       "nlpconnect/vit-gpt2-image-captioning"
     ]
   },
   {
-    "prompt": "Answer 'What color is the car?' for 'car_parked.jpg'.",
+    "prompt": "Answer 'What color is the car?' for 'examples/car_parked.jpg'.",
     "task_type": "single",
     "models": [
       "dandelin/vilt-b32-finetuned-vqa"
     ]
   },
   {
-    "prompt": "Estimate depth for 'bridge.png'.",
+    "prompt": "Estimate depth for 'examples/bridge.png'.",
     "task_type": "single",
     "models": [
       "Intel/dpt-hybrid-midas"
     ]
   },
   {
-    "prompt": "Classify objects in 'office_scene.jpg'.",
+    "prompt": "Classify objects in 'examples/office_scene.jpg'.",
     "task_type": "single",
     "models": [
       "facebook/detr-resnet-101"
     ]
   },
-  {
-    "prompt": "Detect text in 'document_scan.png'.",
+ {
+    "prompt": "Classify objects in 'examples/bridge.png'.",
     "task_type": "single",
     "models": [
-      "microsoft/trocr-base-printed"
+      "facebook/detr-resnet-101"
     ]
   },
   {
@@ -183,14 +183,14 @@
     ]
   },
   {
-    "prompt": "Detect tables in 'table.png'.",
+    "prompt": "Detect tables in 'examples/table.png'.",
     "task_type": "single",
     "models": [
       "impira/layoutlm-document-qa"
     ]
   },
   {
-    "prompt": "Generate an image from sketch 'sketch_input.png' with text 'a futuristic city'.",
+    "prompt": "Generate an image from sketch 'examples/sketch_input.png' with text 'a futuristic city'.",
     "task_type": "single",
     "models": [
       "lllyasviel/sd-controlnet-scribble"
@@ -204,36 +204,35 @@
     ]
   },
   {
-    "prompt": "Detect faces in 'group_photo.jpg'.",
+    "prompt": "Detect faces in 'examples/group_photo.jpg'.",
     "task_type": "single",
     "models": [
       "facebook/detr-resnet-101"
     ]
   },
   {
-    "prompt": "Classify the image 'apple_orange.jpg'.",
+    "prompt": "Classify the image 'examples/apple_orange.jpg'.",
     "task_type": "single",
     "models": [
       "facebook/detr-resnet-101"
     ]
   },
   {
-    "prompt": "Read the text from 'label.png' and speak it.",
+    "prompt": "Speak the text 'A robot painting a picture'.",
     "task_type": "single",
     "models": [
-      "microsoft/trocr-base-printed",
       "microsoft/speecht5_tts"
     ]
   },
   {
-    "prompt": "Estimate segmentation of 'fruit_basket.jpg'.",
+    "prompt": "Estimate segmentation of 'examples/fruit_basket.jpg'.",
     "task_type": "single",
     "models": [
       "facebook/maskformer-swin-base-coco"
     ]
   },
   {
-    "prompt": "Detect language spoken in 'audio_sample.wav'.",
+    "prompt": "Detect language spoken in 'examples/audio_sample.wav'.",
     "task_type": "single",
     "models": [
       "microsoft/speecht5_asr"
@@ -247,7 +246,21 @@
     ]
   },
   {
-    "prompt": "Generate a canny image for 'bridge.png' then describe it.",
+    "prompt": "Summarize the following article and generate a concise executive brief tailored for business stakeholders:\n\n\"The global renewable energy sector experienced record growth in 2024, driven by significant investments in solar and wind infrastructure. Governments around the world introduced new incentives to accelerate adoption, while private companies expanded research into advanced battery storage solutions. Despite supply chain challenges, renewable capacity increased by 14% globally, marking the fastest growth in a decade.\"",
+    "task_type": "single",
+    "models": [
+      "JARVIS"
+    ]
+  },
+  {
+    "prompt": "Analyze the sentiment of the following customer review and propose actionable improvements the company could implement:\n\n\"The vacuum cleaner works well when it’s new, but the suction power dropped noticeably after just three months. Customer support was polite but couldn't offer a real solution besides buying replacement parts. I expected better durability for the price.\"",
+    "task_type": "single",
+    "models": [
+      "JARVIS"
+    ]
+  },
+  {
+    "prompt": "Generate a canny image for 'examples/bridge.png' then describe it.",
     "task_type": "sequential",
     "models": [
       "lllyasviel/sd-controlnet-canny",
@@ -255,7 +268,7 @@
     ]
   },
   {
-    "prompt": "Detect pose in 'runner_pose.jpg' and generate image 'a person jumping'.",
+    "prompt": "Detect pose in 'examples/runner_pose.jpg' and generate image 'a person jumping'.",
     "task_type": "sequential",
     "models": [
       "lllyasviel/sd-controlnet-openpose",
@@ -263,15 +276,15 @@
     ]
   },
   {
-    "prompt": "Read 'poster.jpg' and summarize it.",
+    "prompt": "Detect speech in 'examples/audio_sample.wav' and summarize it.",
     "task_type": "sequential",
     "models": [
-      "microsoft/trocr-base-printed",
+      "microsoft/speecht5_asr",
       "JARVIS"
     ]
   },
   {
-    "prompt": "Generate variation of 'landscape.jpg' and caption it.",
+    "prompt": "Generate variation of 'examples/landscape.jpg' and caption it.",
     "task_type": "sequential",
     "models": [
       "lambdalabs/sd-image-variations-diffusers",
@@ -279,7 +292,7 @@
     ]
   },
   {
-    "prompt": "Convert 'meeting_audio.wav' to text and summarize it.",
+    "prompt": "Convert 'examples/meeting_audio.wav' to text and summarize it.",
     "task_type": "sequential",
     "models": [
       "openai/whisper-base",
@@ -287,7 +300,7 @@
     ]
   },
   {
-    "prompt": "Estimate depth of 'room.jpg' then create a sketch version.",
+    "prompt": "Estimate depth of 'examples/room.jpg' then create a sketch version.",
     "task_type": "sequential",
     "models": [
       "Intel/dpt-hybrid-midas",
@@ -295,35 +308,19 @@
     ]
   },
   {
-    "prompt": "Detect objects in 'signboard.jpg' then extract the text.",
+    "prompt": "Detect objects in 'examples/signboard.jpg' then generate an audio listing these objects",
     "task_type": "sequential",
     "models": [
       "facebook/detr-resnet-101",
-      "microsoft/trocr-base-printed"
-    ]
-  },
-  {
-    "prompt": "Caption 'bird_flight.jpg' and generate matching audio.",
-    "task_type": "sequential",
-    "models": [
-      "nlpconnect/vit-gpt2-image-captioning",
       "microsoft/speecht5_tts"
     ]
   },
   {
-    "prompt": "Perform OCR on 'receipt_scan.png' and extract the price.",
+    "prompt": "Caption 'examples/bird_flight.jpg' and generate matching audio.",
     "task_type": "sequential",
     "models": [
-      "microsoft/trocr-base-printed",
-      "JARVIS"
-    ]
-  },
-  {
-    "prompt": "Translate text from 'signboard_japanese.png' to English.",
-    "task_type": "sequential",
-    "models": [
-      "microsoft/trocr-base-printed",
-      "JARVIS"
+      "nlpconnect/vit-gpt2-image-captioning",
+      "microsoft/speecht5_tts"
     ]
   },
   {
@@ -334,7 +331,7 @@
     ]
   },
   {
-    "prompt": "Generate a caption for 'robot_lab.jpg' and describe detected tools.",
+    "prompt": "Generate a caption for 'examples/robot_lab.jpg' and describe detected tools.",
     "task_type": "sequential",
     "models": [
       "nlpconnect/vit-gpt2-image-captioning",
@@ -342,7 +339,7 @@
     ]
   },
   {
-    "prompt": "Detect tables in 'table.png' and summarize them.",
+    "prompt": "Detect tables in 'examples/table.png' and summarize them.",
     "task_type": "sequential",
     "models": [
       "impira/layoutlm-document-qa",
@@ -350,15 +347,15 @@
     ]
   },
   {
-    "prompt": "Read 'menu_photo.jpg' and translate to English speech.",
+    "prompt": "Generate a caption for 'examples/robot_lab.jpg' and generate german speech.",
     "task_type": "sequential",
     "models": [
-      "microsoft/trocr-base-printed",
+      "nlpconnect/vit-gpt2-image-captioning",
       "microsoft/speecht5_tts"
     ]
   },
   {
-    "prompt": "Perform segmentation on 'street_market.jpg' and describe scene.",
+    "prompt": "Perform segmentation on 'examples/street_market.jpg' and describe scene.",
     "task_type": "sequential",
     "models": [
       "facebook/maskformer-swin-base-coco",
@@ -366,7 +363,7 @@
     ]
   },
   {
-    "prompt": "Convert 'speech_meeting.wav' into text and classify its topic.",
+    "prompt": "Convert 'examples/meeting_audio.wav' into text and classify its topic.",
     "task_type": "sequential",
     "models": [
       "openai/whisper-base",
@@ -381,7 +378,7 @@
     ]
   },
   {
-    "prompt": "Estimate segmentation of 'building_facade.jpg' then detect objects.",
+    "prompt": "Estimate segmentation of 'examples/building_facade.jpg' then detect objects.",
     "task_type": "sequential",
     "models": [
       "facebook/maskformer-swin-base-coco",
@@ -389,7 +386,7 @@
     ]
   },
   {
-    "prompt": "Describe 'robot_dog.jpg' and summarize behavior.",
+    "prompt": "Describe 'examples/robot_dog.jpg' and summarize behavior.",
     "task_type": "sequential",
     "models": [
       "nlpconnect/vit-gpt2-image-captioning",
@@ -405,7 +402,7 @@
     ]
   },
   {
-    "prompt": "Detect emotions from 'angry_call.wav' and classify tone.",
+    "prompt": "Detect emotions from 'examples/angry_call.wav' and classify tone.",
     "task_type": "sequential",
     "models": [
       "microsoft/speecht5_asr",
@@ -413,15 +410,15 @@
     ]
   },
   {
-    "prompt": "Read 'document_text.jpg' and summarize its content.",
+    "prompt": "Detect all objects in examples/d.jpg and summarize its content.",
     "task_type": "sequential",
     "models": [
-      "microsoft/trocr-base-printed",
+      "facebook/detr-resnet-101",
       "JARVIS"
     ]
   },
   {
-    "prompt": "Perform pose detection on 'gym_training.jpg' and generate text description.",
+    "prompt": "Perform pose detection on 'examples/gym_training.jpg' and generate text description.",
     "task_type": "sequential",
     "models": [
       "lllyasviel/sd-controlnet-openpose",
@@ -429,7 +426,7 @@
     ]
   },
   {
-    "prompt": "Detect layout elements in 'contract_page.png' and summarize their content.",
+    "prompt": "Detect layout elements in 'examples/contract_page.jpg' and summarize their content.",
     "task_type": "sequential",
     "models": [
       "impira/layoutlm-document-qa",
@@ -437,22 +434,22 @@
     ]
   },
   {
-    "prompt": "Convert detected text in 'label_sign.jpg' to speech.",
+    "prompt": "Detect layout elements in 'examples/contract_page.jpg' and summarize their content.",
     "task_type": "sequential",
     "models": [
-      "microsoft/trocr-base-printed",
+      "impira/layoutlm-document-qa",
       "microsoft/speecht5_tts"
     ]
   },
   {
     "prompt": "Classify sentiment in 'I love how this model works!' and explain reasoning.",
-    "task_type": "sequential",
+    "task_type": "single",
     "models": [
       "JARVIS"
     ]
   },
   {
-    "prompt": "Caption 'forest_night.jpg' and describe differences with 'forest_day.jpg'.",
+    "prompt": "Caption 'examples/forest_night.jpg' and describe differences with 'examples/forest_day.jpg'.",
     "task_type": "sequential",
     "models": [
       "nlpconnect/vit-gpt2-image-captioning",
@@ -460,23 +457,23 @@
     ]
   },
   {
-    "prompt": "Summarize 'research_paper.pdf' using OCR first, then summarization.",
+    "prompt": "Caption 'examples/forest_night.jpg' and then summarize.",
     "task_type": "sequential",
     "models": [
-      "microsoft/trocr-base-printed",
+      "nlpconnect/vit-gpt2-image-captioning",
       "JARVIS"
     ]
   },
   {
-    "prompt": "Extract text from 'label_photo.jpg' and translate to English.",
+    "prompt": "Transcribe 'examples/lecture_audio.wav' and translate to Spanish.",
     "task_type": "sequential",
     "models": [
-      "microsoft/trocr-base-printed",
+      "openai/whisper-base",
       "JARVIS"
     ]
   },
   {
-    "prompt": "Transcribe 'lecture_audio.wav' and create a text summary.",
+    "prompt": "Transcribe 'examples/lecture_audio.wav' and create a text summary.",
     "task_type": "sequential",
     "models": [
       "openai/whisper-base",
@@ -492,7 +489,7 @@
     ]
   },
   {
-    "prompt": "Based on 'example1.jpg' pose and 'example2.jpg' description, create a new image.",
+    "prompt": "Based on 'examples/example1.jpg' pose and description 'Jumping in the air with a basketball', create a new image.",
     "task_type": "graph",
     "models": [
       "lllyasviel/sd-controlnet-openpose",
@@ -501,7 +498,7 @@
     ]
   },
   {
-    "prompt": "Describe 'city_night.jpg' and convert to spoken narration.",
+    "prompt": "Describe 'examples/city_night.jpg' and convert to spoken narration.",
     "task_type": "graph",
     "models": [
       "nlpconnect/vit-gpt2-image-captioning",
@@ -509,7 +506,7 @@
     ]
   },
   {
-    "prompt": "Detect objects and perform segmentation on 'warehouse.png'.",
+    "prompt": "Detect objects and perform segmentation on 'examples/warehouse.jpg'.",
     "task_type": "graph",
     "models": [
       "facebook/detr-resnet-101",
@@ -517,7 +514,7 @@
     ]
   },
   {
-    "prompt": "Estimate depth and segmentation for 'mountain_valley.jpg'.",
+    "prompt": "Estimate depth and segmentation for 'examples/mountain_valley.jpg'.",
     "task_type": "graph",
     "models": [
       "Intel/dpt-hybrid-midas",
@@ -525,7 +522,7 @@
     ]
   },
   {
-    "prompt": "Detect canny edges and depth in 'car_photo.png'.",
+    "prompt": "Detect canny edges and depth in 'examples/car_photo.jpg'.",
     "task_type": "graph",
     "models": [
       "lllyasviel/sd-controlnet-canny",
@@ -533,7 +530,7 @@
     ]
   },
   {
-    "prompt": "Perform object detection, classification, and captioning on 'office_scene.jpg'.",
+    "prompt": "Perform object detection, classification, and captioning on 'examples/office_scene.jpg'.",
     "task_type": "graph",
     "models": [
       "facebook/detr-resnet-101",
@@ -542,7 +539,7 @@
     ]
   },
   {
-    "prompt": "Describe 'festival.jpg' using VQA and object detection.",
+    "prompt": "Describe 'examples/festival.jpg' using VQA and object detection.",
     "task_type": "graph",
     "models": [
       "dandelin/vilt-b32-finetuned-vqa",
@@ -550,7 +547,7 @@
     ]
   },
   {
-    "prompt": "Generate an image using openpose and canny edges from 'person_pose.jpg'.",
+    "prompt": "Generate an image using openpose and canny edges from 'examples/example1.jpg'.",
     "task_type": "graph",
     "models": [
       "lllyasviel/sd-controlnet-openpose",
@@ -559,7 +556,7 @@
     ]
   },
   {
-    "prompt": "Combine captions, detections, and segmentation to describe 'beach_party.jpg'.",
+    "prompt": "Combine captions, detections, and segmentation to describe 'examples/beach_party.jpg'.",
     "task_type": "graph",
     "models": [
       "nlpconnect/vit-gpt2-image-captioning",
@@ -568,7 +565,7 @@
     ]
   },
   {
-    "prompt": "Caption and detect objects in 'parade.jpg' then count people.",
+    "prompt": "Caption and detect objects in 'examples/parade.jpeg' then count people.",
     "task_type": "graph",
     "models": [
       "nlpconnect/vit-gpt2-image-captioning",
@@ -576,7 +573,7 @@
     ]
   },
   {
-    "prompt": "Detect objects and classify each in 'savannah.jpg'.",
+    "prompt": "Detect objects and classify each in 'examples/savannah.jpg'.",
     "task_type": "graph",
     "models": [
       "facebook/detr-resnet-101",
@@ -584,7 +581,7 @@
     ]
   },
   {
-    "prompt": "Detect and caption 'family_dinner.jpg' and narrate it.",
+    "prompt": "Detect and caption 'examples/family_dinner.jpg' and narrate it.",
     "task_type": "graph",
     "models": [
       "facebook/detr-resnet-101",
@@ -593,7 +590,7 @@
     ]
   },
   {
-    "prompt": "Perform object detection, captioning, and VQA on 'zoo.jpg'.",
+    "prompt": "Perform object detection, captioning, and VQA on 'examples/zoo.jpg'.",
     "task_type": "graph",
     "models": [
       "facebook/detr-resnet-101",
@@ -610,7 +607,7 @@
     ]
   },
   {
-    "prompt": "Generate text-to-speech narration for captioned 'ocean_wave.jpg'.",
+    "prompt": "Generate text-to-speech narration for captioned 'examples/ocean_wave.jpg'.",
     "task_type": "graph",
     "models": [
       "nlpconnect/vit-gpt2-image-captioning",
@@ -618,15 +615,14 @@
     ]
   },
   {
-    "prompt": "Combine OCR, summarization, and translation on 'research_doc.png'.",
+    "prompt": "Combine summarization, and translation on 'Con intelligenza artificiale viene chiamata spesso e impropriamente l'intelligenza artificiale generativa, che è invece solamente un particolare tipo di intelligenza artificiale, che ha lo scopo di creare testi, immagini, audio, video o altri contenuti rispondendo a richieste dell'utente'.",
     "task_type": "graph",
     "models": [
-      "microsoft/trocr-base-printed",
       "JARVIS"
     ]
   },
   {
-    "prompt": "Detect objects, generate captions, and produce an audio summary for 'street_view.jpg'.",
+    "prompt": "Detect objects, generate captions, and produce an audio summary for 'examples/street_view.jpg'.",
     "task_type": "graph",
     "models": [
       "facebook/detr-resnet-101",
@@ -635,7 +631,7 @@
     ]
   },
   {
-    "prompt": "Detect objects in 'stadium.jpg' and summarize the activity.",
+    "prompt": "Detect objects in 'examples/stadium.jpg' and summarize the activity.",
     "task_type": "graph",
     "models": [
       "facebook/detr-resnet-101",
@@ -643,7 +639,7 @@
     ]
   },
   {
-    "prompt": "Generate a sketch and corresponding image for 'architecture.jpg'.",
+    "prompt": "Generate a sketch and corresponding image for 'examples/architecture.jpg'.",
     "task_type": "graph",
     "models": [
       "lllyasviel/sd-controlnet-hed",
@@ -651,16 +647,16 @@
     ]
   },
   {
-    "prompt": "Perform OCR, translation, and text-to-speech for 'menu_jp.png'.",
+    "prompt": "Perform Object Detection, translation, and text-to-speech for 'examples/museum_exhibit.jpg'.",
     "task_type": "graph",
     "models": [
-      "microsoft/trocr-base-printed",
+      "facebook/detr-resnet-101",
       "JARVIS",
       "microsoft/speecht5_tts"
     ]
   },
   {
-    "prompt": "Detect objects and create a caption for 'museum_exhibit.jpg'.",
+    "prompt": "Detect objects and create a caption for 'examples/museum_exhibit.jpg'.",
     "task_type": "graph",
     "models": [
       "facebook/detr-resnet-101",
@@ -668,7 +664,7 @@
     ]
   },
   {
-    "prompt": "Create a spoken description of 'mountain_hike.jpg' with caption and audio.",
+    "prompt": "Create a spoken description of 'examples/mountain_hike.jpg' with caption and audio.",
     "task_type": "graph",
     "models": [
       "nlpconnect/vit-gpt2-image-captioning",
@@ -685,7 +681,7 @@
     ]
   },
   {
-    "prompt": "Detect objects in 'aerial_city.jpg', estimate depth, and describe it.",
+    "prompt": "Detect objects in 'examples/aerial_city.jpg', estimate depth, and describe it.",
     "task_type": "graph",
     "models": [
       "facebook/detr-resnet-101",
@@ -694,7 +690,7 @@
     ]
   },
   {
-    "prompt": "Combine audio classification and speech transcription for 'radio_clip.wav'.",
+    "prompt": "Combine audio classification and speech transcription for 'examples/radio_clip.wav'.",
     "task_type": "graph",
     "models": [
       "microsoft/speecht5_asr",
@@ -702,7 +698,7 @@
     ]
   },
   {
-    "prompt": "Perform pose detection and generate image using HED from 'dancer.jpg'.",
+    "prompt": "Perform pose detection and generate image using HED from 'examples/dancer.jpg'.",
     "task_type": "graph",
     "models": [
       "lllyasviel/sd-controlnet-hed",
@@ -710,7 +706,7 @@
     ]
   },
   {
-    "prompt": "Detect tables, extract data, and generate summary for 'financial_report.png'.",
+    "prompt": "Detect tables, extract data, and generate summary for 'examples/financial_report.jpg'.",
     "task_type": "graph",
     "models": [
       "impira/layoutlm-document-qa",
@@ -718,7 +714,7 @@
     ]
   },
   {
-    "prompt": "Combine captions, segmentation, and narration for 'forest_trail.jpg'.",
+    "prompt": "Combine captions, segmentation, and narration for 'examples/forest_trail.jpg'.",
     "task_type": "graph",
     "models": [
       "nlpconnect/vit-gpt2-image-captioning",
@@ -727,7 +723,7 @@
     ]
   },
   {
-    "prompt": "Detect objects, describe scene, and generate audio for 'construction_site.jpg'.",
+    "prompt": "Detect objects, describe scene, and generate audio for 'examples/construction_site.jpg'.",
     "task_type": "graph",
     "models": [
       "facebook/detr-resnet-101",
@@ -736,7 +732,7 @@
     ]
   },
   {
-    "prompt": "Perform object detection, depth estimation, and segmentation for 'drone_view.jpg'.",
+    "prompt": "Perform object detection, depth estimation, and segmentation for 'examples/drone_view.jpg'.",
     "task_type": "graph",
     "models": [
       "facebook/detr-resnet-101",
@@ -745,7 +741,7 @@
     ]
   },
   {
-    "prompt": "Detect objects and generate a video narration for 'city_square.jpg'.",
+    "prompt": "Detect objects and generate a video narration for 'examples/city_square.jpg'.",
     "task_type": "graph",
     "models": [
       "facebook/detr-resnet-101",
@@ -754,7 +750,7 @@
     ]
   },
   {
-    "prompt": "Perform openpose detection on 'runner.jpg', generate a new image 'a marathon scene', and caption it.",
+    "prompt": "Perform openpose detection on 'examples/runner_pose.jpg', generate a new image 'a marathon scene', and caption it.",
     "task_type": "graph",
     "models": [
       "lllyasviel/sd-controlnet-openpose",
@@ -763,16 +759,16 @@
     ]
   },
   {
-    "prompt": "Extract text from 'whiteboard.png', summarize the content, and produce speech output.",
+    "prompt": "Perform openpose detection on 'examples/farmer.jpg', generate a new image 'a marathon scene', and caption it.",
     "task_type": "graph",
     "models": [
-      "microsoft/trocr-base-printed",
-      "JARVIS",
-      "microsoft/speecht5_tts"
+      "lllyasviel/sd-controlnet-openpose",
+      "runwayml/stable-diffusion-v1-5",
+      "nlpconnect/vit-gpt2-image-captioning"
     ]
   },
   {
-    "prompt": "Generate a canny and depth-conditioned image for 'bridge_view.jpg' and describe it with voice narration.",
+    "prompt": "Generate a canny and depth-conditioned image for 'examples/bridge.png' and describe it with voice narration.",
     "task_type": "graph",
     "models": [
       "lllyasviel/sd-controlnet-canny",
