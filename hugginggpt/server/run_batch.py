@@ -3,6 +3,7 @@ import requests
 import os
 import argparse
 from datetime import datetime
+import time
 
 SERVER_URL = "http://127.0.0.1:8004/hugginggpt"       # adjust if needed
 HF_TOKEN = ""          
@@ -34,9 +35,11 @@ os.makedirs("batch_results", exist_ok=True)
 results = []
 
 error_count = 0
+total_start = time.time()
 
 # Run prompts
 for i, item in enumerate(prompts, start=start_index + 1):
+    item_start = time.time() 
     prompt = item["prompt"]
 
     print(f"\n=== {i}/{start_index + len(prompts)}  RUNNING ===")
@@ -53,15 +56,20 @@ for i, item in enumerate(prompts, start=start_index + 1):
     try:
         response = requests.post(SERVER_URL, json=payload).json()
     except Exception as e:
+        duration = time.time() - item_start
         print(f"ERROR requesting server for item {i}: {e}")
         error_count += 1
         item["response"] = f"ERROR: {e}"
+        item["duration"] = duration
         results.append(item)
         continue
 
+    duration = time.time() - item_start
+    print(f"Response received in {duration:.2f} seconds")
     message = response.get("message", "")
     item["response"] = message
     print(f"Response: {message}")
+    item["duration"] = duration
     results.append(item)
 
 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -69,6 +77,10 @@ output_path = f"batch_results/batch_output_{timestamp}.json"
 
 with open(output_path, "w") as out:
     json.dump(results, out, indent=2)
+    
+total_end = time.time()
+total_duration = total_end - total_start
+print(f"Total runtime: {total_duration:.2f} seconds ({total_duration/60:.2f} minutes)")
 
 print("\n=== DONE, all items processed ===")
 print(f"Total request errors: {error_count}")
