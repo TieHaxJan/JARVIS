@@ -697,7 +697,29 @@ def models(model_id):
         if model_id == "dandelin/vilt-b32-finetuned-vqa":
             question = request.get_json()["text"]
             img_url = request.get_json()["img_url"]
-            result = pipe(question=question, image=img_url)
+        
+            device = pipes[model_id]["device"]
+            device = torch.device(device)
+        
+            # Load & preprocess image
+            image = load_image(img_url).convert("RGB")
+            encoding = pipe.processor(images=image, text=question, return_tensors="pt")
+        
+            # >>> MOVE ALL INPUT TENSORS TO THE SAME DEVICE <<<
+            encoding = {k: v.to(device) for k, v in encoding.items()}
+        
+            # >>> Ensure model on same device <<<
+            ensure_pipeline_on_device(pipe, device)
+        
+            with torch.no_grad():
+                outputs = pipe.model(**encoding)
+        
+            logits = outputs.logits
+            answer_id = logits.argmax(-1).item()
+            answer_string = pipe.model.config.id2label[answer_id]
+        
+            result = {"answer": answer_string}
+
 
         # -------------------- Document QA --------------------
         if model_id == "impira/layoutlm-document-qa":
