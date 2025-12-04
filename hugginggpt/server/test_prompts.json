@@ -120,7 +120,7 @@
     ]
   },
   {
-    "prompt": "Compare 'examples/a.jpg' and 'examples/b.jpg' to see which is more like 'examples/c.jpg'.",
+    "prompt": "Count how many cars are in 'examples/c.jpg'.",
     "task_type": "single",
     "models": [
       "facebook/detr-resnet-101"

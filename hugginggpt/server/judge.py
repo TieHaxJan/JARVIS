@@ -40,7 +40,12 @@ class ExplanationJudge:
         Respond in strict JSON format with the following keys:
         - "winner": "A" if the base explanation is better, "B" if the retrieved one is better, or "combined" if the improved version merges both.
         - "reason": a short justification for your choice.
-        - "improved_explanation": the final, improved explanation (even if it's mostly from one source).
+        - "improved_explanation": the final, improved explanation.
+        
+        "improved_explanation" must be a plain string.
+            It must NOT be an object, list, dictionary, or structured data.
+            Do not wrap it in JSON or return nested fields.
+            Return ONLY a raw natural-language string for "improved_explanation".
 
         Do not use markdown or extra commentary — only return the JSON object.
         """
@@ -60,7 +65,7 @@ class ExplanationJudge:
             improved_explanation = parsed.get("improved_explanation", "")
         except Exception:
             logger.warning(f"Judge response not valid JSON: {response}")
-            winner, reason, improved_explanation = "A", "fallback", ""
+            winner, reason, improved_explanation = "A", "fallback", base_explanation
 
         # Normalize winner values
         if winner not in ["A", "B", "combined"]:
@@ -75,6 +80,19 @@ class ExplanationJudge:
             winner_label = "combined"
 
         logger.info(f"Judge decided: {winner_label} ({reason})")
+        
+        # --- SAFELY NORMALIZE THE IMPROVED EXPLANATION --------------------
+        # LLMs sometimes return a dict, list, number, or mixed JSON instead of a string.
+        # Guarantee that improved_explanation is ALWAYS a plain string.
+        if isinstance(improved_explanation, dict):
+            improved_explanation = json.dumps(improved_explanation, ensure_ascii=False)
+        elif isinstance(improved_explanation, list):
+            improved_explanation = " ".join(str(x) for x in improved_explanation)
+        elif improved_explanation is None:
+            improved_explanation = ""
+        else:
+            improved_explanation = str(improved_explanation)
+        # --------------------------------------------------------------------
 
         return {
             "winner": winner_label,

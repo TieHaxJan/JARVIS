@@ -331,16 +331,37 @@ def resource_has_dep(command):
     return False
 
 def fix_dep(tasks):
+    import logging
+    logger = logging.getLogger(__name__)
+
     for task in tasks:
-        args = task["args"]
+        args = task.get("args", {})
         task["dep"] = []
+
         for k, v in args.items():
+            # Skip non-string values safely
+            if not isinstance(v, str):
+                continue
+
             if "<GENERATED>" in v:
-                dep_task_id = int(v.split("-")[1])
-                if dep_task_id not in task["dep"]:
-                    task["dep"].append(dep_task_id)
+                try:
+                    # try to extract the dependency ID
+                    dep_str = v.split("-", 1)[1]
+                    dep_task_id = int(dep_str)
+
+                    if dep_task_id not in task["dep"]:
+                        task["dep"].append(dep_task_id)
+
+                except Exception as e:
+                    # Print the error and skip this dependency
+                    logger.error(f"[fix_dep] Invalid GENERATED placeholder '{v}' "
+                                 f"for task id {task.get('id')}: {e}")
+                    continue
+
+        # No valid deps force -1
         if len(task["dep"]) == 0:
             task["dep"] = [-1]
+
     return tasks
 
 def unfold(tasks):
@@ -1210,8 +1231,15 @@ def chat_huggingface(messages, api_key, api_type, api_endpoint, return_planning 
     # Pick winner
     if judge_result["winner"] == "retrieved":
         final_explanation = retrieved_explanation
+    elif judge_result["winner"] == "combined":
+        final_explanation = judge_result["improved_explanation"]
     else:
         final_explanation = base_explanation
+        
+    retriever.update_explanation(
+        task_description=input,
+        new_explanation=final_explanation
+    )
 
     logger.debug(f"Final explanation chosen by Judge: {final_explanation}")
 

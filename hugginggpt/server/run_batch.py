@@ -13,11 +13,17 @@ MODEL_NAME = "meta-llama/Llama-3.1-8B-Instruct"
 parser = argparse.ArgumentParser()
 parser.add_argument("--limit", type=int, default=None,
                     help="Number of prompts to run (default: all)")
+parser.add_argument("--start-at", type=int, default=1,
+                    help="1-based index to start processing (default: 1)")
 args = parser.parse_args()
 
 # Load prompts
 with open("test_prompts.json", "r") as f:
     prompts = json.load(f)
+    
+# Apply --start-at (convert to 0-based index internally)
+start_index = max(args.start_at - 1, 0)
+prompts = prompts[start_index:]
 
 # Limit prompts
 if args.limit is not None:
@@ -27,11 +33,13 @@ os.makedirs("batch_results", exist_ok=True)
 
 results = []
 
+error_count = 0
+
 # Run prompts
-for i, item in enumerate(prompts, start=1):
+for i, item in enumerate(prompts, start=start_index + 1):
     prompt = item["prompt"]
 
-    print(f"\n=== {i}/{len(prompts)}  RUNNING ===")
+    print(f"\n=== {i}/{start_index + len(prompts)}  RUNNING ===")
     print(f"Prompt: {prompt}")
 
     payload = {
@@ -42,10 +50,16 @@ for i, item in enumerate(prompts, start=1):
         "model": MODEL_NAME
     }
 
-    response = requests.post(SERVER_URL, json=payload).json()
-    
-    message = response.get("message", "")
+    try:
+        response = requests.post(SERVER_URL, json=payload).json()
+    except Exception as e:
+        print(f"ERROR requesting server for item {i}: {e}")
+        error_count += 1
+        item["response"] = f"ERROR: {e}"
+        results.append(item)
+        continue
 
+    message = response.get("message", "")
     item["response"] = message
     print(f"Response: {message}")
     results.append(item)
@@ -57,3 +71,4 @@ with open(output_path, "w") as out:
     json.dump(results, out, indent=2)
 
 print("\n=== DONE, all items processed ===")
+print(f"Total request errors: {error_count}")

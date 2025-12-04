@@ -122,3 +122,35 @@ class ExplanationRetriever:
         }
         self.save_entry(entry)
         return {"mode": "base", "entry": entry}
+    
+    def update_explanation(self, task_description: str, new_explanation: str):
+        """
+        Update the explanation of an existing entry by matching the exact task_description. Rewrites the JSONL file.
+        """
+        db = self.load_db()
+
+        updated = False
+        new_lines = []
+
+        for entry in db:
+            # Match criteria — EXACT task_description match
+            if entry.get("task_description") == task_description:
+                entry["explanation"] = new_explanation
+                updated = True
+
+            new_lines.append(entry)
+
+        # If nothing matched, log a warning but do NOT fail
+        if not updated:
+            self.logger.warning(
+                f"No existing entry found to update for task_description='{task_description[:60]}...'"
+            )
+        else:
+            self.logger.info(f"Updated explanation for: {task_description[:60]}...")
+
+        # Rewrite the DB file safely
+        with open(self.db_path, "w", encoding="utf-8") as f:
+            for entry in new_lines:
+                # also mask before saving
+                sanitized = self._mask_entry_strings(entry)
+                f.write(json.dumps(sanitized, ensure_ascii=False) + "\n")
