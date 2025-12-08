@@ -1249,7 +1249,7 @@ def chat_huggingface(messages, api_key, api_type, api_endpoint, return_planning 
         final_explanation = base_explanation
         
     retriever.update_explanation(
-        task_description=input,
+        task_id=retrieval_result["entry"]["task_id"],
         new_explanation=final_explanation
     )
 
