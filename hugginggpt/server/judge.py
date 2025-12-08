@@ -15,39 +15,60 @@ class ExplanationJudge:
     def decide(self, task_description: str, hugginggpt_output: str,
                base_explanation: str, retrieved_explanation: str) -> Dict[str, str]:
         """
-        Compare base vs. retrieved explanation via LLM judge.
-        Returns {"winner": "base"|"retrieved", "reason": "..."}
+        Compare two explanations using an LLM judge.
+        Adds:
+        - A-F scoring for each explanation
+        - Combining only when the merged explanation is strictly better
+        - Using a single explanation if it is already sufficient
         """
 
         prompt = f"""
-        You are a judge and an explainer. Your job is to compare two explanations of a system decision and, if possible, improve them.
+        You are an expert evaluator of explanations. 
+        You evaluate two explanations (A and B) based on clarity, correctness, completeness, and usefulness.
 
-        Task: {task_description}
-        HuggingGPT Output: {hugginggpt_output}
+        Your tasks:
+        1. Provide a letter-grade rating (A-F) for each explanation:
+           - A = excellent
+           - B = good
+           - C = acceptable
+           - D = weak
+           - E = poor
+           - F = unusable
 
-        Explanation A (Base):
+        2. Decide whether A or B is better.
+           If both are weak (C or worse) but contain complementary strengths, you MAY combine them.
+
+        3. Only choose "combined" if the merged explanation is meaningfully better than both A and B individually.
+           If a single explanation is already sufficient (B or better), choose ONLY that one.
+
+        4. Produce an improved or final explanation:
+           - If winner = "A": improved_explanation = Explanation A (possibly lightly polished)
+           - If winner = "B": improved_explanation = Explanation B (possibly lightly polished)
+           - If winner = "combined": merge them into a single, better explanation
+
+        VERY IMPORTANT RULES:
+        - The returned JSON MUST contain plain strings only.
+        - "improved_explanation" MUST NOT be a dict, list, object, or nested JSON.
+        - No markdown, no commentary, no code fences.
+
+        Task description:
+        {task_description}
+
+        System Output:
+        {hugginggpt_output}
+
+        Explanation A:
         {base_explanation}
 
-        Explanation B (Retrieved):
+        Explanation B:
         {retrieved_explanation}
 
-        Step 1: Evaluate which explanation is clearer, more user-friendly, and more accurate for a non-technical audience.
-        Also assess which one best matches the task context (e.g., image, text, or audio mentioned).
-
-        Step 2: If both explanations have useful complementary information, combine them into a single improved explanation.
-        This new explanation should be natural, human-readable, concise, and faithful to the actual system behavior.
-
-        Respond in strict JSON format with the following keys:
-        - "winner": "A" if the base explanation is better, "B" if the retrieved one is better, or "combined" if the improved version merges both.
-        - "reason": a short justification for your choice.
-        - "improved_explanation": the final, improved explanation.
-        
-        "improved_explanation" must be a plain string.
-            It must NOT be an object, list, dictionary, or structured data.
-            Do not wrap it in JSON or return nested fields.
-            Return ONLY a raw natural-language string for "improved_explanation".
-
-        Do not use markdown or extra commentary — only return the JSON object.
+        Respond ONLY with strict JSON with keys:
+        - "rating_A": letter A-F
+        - "rating_B": letter A-F
+        - "winner": "A", "B", or "combined"
+        - "reason": short explanation of your choice
+        - "improved_explanation": final natural-language explanation as a string
         """
 
         messages = [{"role": "user", "content": prompt}]
@@ -62,10 +83,14 @@ class ExplanationJudge:
             parsed = json.loads(response)
             winner = parsed.get("winner", "A")
             reason = parsed.get("reason", "")
+            rating_A = parsed.get("rating_A", "C")
+            rating_B = parsed.get("rating_B", "C")
             improved_explanation = parsed.get("improved_explanation", "")
         except Exception:
             logger.warning(f"Judge response not valid JSON: {response}")
-            winner, reason, improved_explanation = "A", "fallback", base_explanation
+            winner, reason = "A", "fallback"
+            rating_A, rating_B = "C", "C"
+            improved_explanation = base_explanation
 
         # Normalize winner values
         if winner not in ["A", "B", "combined"]:
@@ -79,7 +104,7 @@ class ExplanationJudge:
         else:
             winner_label = "combined"
 
-        logger.info(f"Judge decided: {winner_label} ({reason})")
+        logger.info(f"Judge decided: {winner_label} (A={rating_A}, B={rating_B}) reason={reason})")
         
         # --- SAFELY NORMALIZE THE IMPROVED EXPLANATION --------------------
         # LLMs sometimes return a dict, list, number, or mixed JSON instead of a string.
@@ -97,5 +122,7 @@ class ExplanationJudge:
         return {
             "winner": winner_label,
             "reason": reason,
+            "rating_A": rating_A,
+            "rating_B": rating_B,
             "improved_explanation": improved_explanation.strip()
         }
