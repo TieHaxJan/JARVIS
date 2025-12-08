@@ -537,7 +537,19 @@ def response_results(input, results, api_key, api_type, api_endpoint):
             "api_endpoint": api_endpoint
         }
     else:
-        messages = json.loads(demos_or_presteps)
+        # Load the demo JSON first
+        messages = json.loads(response_results_demos_or_presteps)
+
+        # Safely insert content into the parsed structure
+        for msg in messages:
+            if "{{input}}" in msg["content"]:
+                msg["content"] = msg["content"].replace("{{input}}", input)
+
+            if "{{processes}}" in msg["content"]:
+                # Convert results to a pretty-printed JSON block safely
+                pretty_results = json.dumps(results, ensure_ascii=False, indent=2)
+                msg["content"] = msg["content"].replace("{{processes}}", pretty_results)
+
         messages.insert(0, {"role": "system", "content": response_results_tprompt})
         messages.append({"role": "user", "content": prompt})
         data = {

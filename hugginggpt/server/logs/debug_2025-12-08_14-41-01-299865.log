@@ -1,0 +1,218 @@
+2025-12-08 14:41:01,310 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda:0
+2025-12-08 14:41:01,310 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-12-08 14:41:01,311 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-12-08 14:41:01,450 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-12-08 14:41:01,455 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-12-08 14:41:01,562 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-12-08 14:41:01,567 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-12-08 14:41:01,673 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-12-08 14:41:01,677 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-12-08 14:41:01,783 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-12-08 14:41:01,788 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+2025-12-08 14:41:01,894 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-12-08 14:41:01,899 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-12-08 14:41:02,005 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-12-08 14:41:02,010 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+2025-12-08 14:41:02,126 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-12-08 14:41:02,232 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-12-08 14:41:02,237 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+2025-12-08 14:41:02,399 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-12-08 14:41:02,403 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+2025-12-08 14:41:02,513 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-12-08 14:41:02,646 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-12-08 14:41:02,651 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-12-08 14:41:02,864 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6958
+2025-12-08 14:41:03,005 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:41:03,008 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /running HTTP/1.1" 200 17
+2025-12-08 14:41:03,022 - root - DEBUG - text-classification: 30 models
+2025-12-08 14:41:03,022 - root - DEBUG - token-classification: 30 models
+2025-12-08 14:41:03,022 - root - DEBUG - text2text-generation: 30 models
+2025-12-08 14:41:03,022 - root - DEBUG - summarization: 30 models
+2025-12-08 14:41:03,022 - root - DEBUG - translation: 30 models
+2025-12-08 14:41:03,022 - root - DEBUG - question-answering: 30 models
+2025-12-08 14:41:03,022 - root - DEBUG - conversational: 30 models
+2025-12-08 14:41:03,022 - root - DEBUG - text-generation: 30 models
+2025-12-08 14:41:03,022 - root - DEBUG - sentence-similarity: 30 models
+2025-12-08 14:41:03,022 - root - DEBUG - tabular-classification: 30 models
+2025-12-08 14:41:03,022 - root - DEBUG - object-detection: 30 models
+2025-12-08 14:41:03,022 - root - DEBUG - image-classification: 30 models
+2025-12-08 14:41:03,022 - root - DEBUG - image-to-text: 30 models
+2025-12-08 14:41:03,022 - root - DEBUG - text-to-image: 31 models
+2025-12-08 14:41:03,022 - root - DEBUG - image-to-image: 30 models
+2025-12-08 14:41:03,023 - root - DEBUG - visual-question-answering: 13 models
+2025-12-08 14:41:03,023 - root - DEBUG - document-question-answering: 22 models
+2025-12-08 14:41:03,023 - root - DEBUG - image-segmentation: 30 models
+2025-12-08 14:41:03,023 - root - DEBUG - depth-estimation: 30 models
+2025-12-08 14:41:03,023 - root - DEBUG - text-to-video: 8 models
+2025-12-08 14:41:03,023 - root - DEBUG - text-to-speech: 30 models
+2025-12-08 14:41:03,023 - root - DEBUG - automatic-speech-recognition: 30 models
+2025-12-08 14:41:03,023 - root - DEBUG - audio-to-audio: 30 models
+2025-12-08 14:41:03,023 - root - DEBUG - audio-classification: 30 models
+2025-12-08 14:41:03,023 - root - DEBUG - named-entity-recognition: 1 models
+2025-12-08 14:41:03,023 - root - INFO - Welcome to Jarvis! A collaborative system that consists of an LLM as the controller and numerous expert models as collaborative executors. Jarvis can plan tasks, schedule Hugging Face models, generate friendly responses based on your requests, and help you with many things. Please enter your request (`exit` to exit).
+2025-12-08 14:41:12,325 - root - INFO - [ User ]: generate a sketch and corresponding image for 'examples/architecture.jpg'.
+2025-12-08 14:41:12,325 - root - INFO - ********************************************************************************
+2025-12-08 14:41:12,325 - root - INFO - input: Generate a sketch and corresponding image for 'examples/architecture.jpg'.
+2025-12-08 14:41:12,327 - root - DEBUG - Messages: [{'role': 'system', 'content': '#1 Task Planning Stage: You are a helpful AI assistant. Based on the user\'s request, you will recommend the best model from Hugging Face for the task, and explain why. The special tag "<GENERATED>-dep_id" refer to the one generated text/image/audio in the dependency task (Please consider whether the dependency task generates resources of this type.) and "dep_id" must be in "dep" list.  The "dep" field denotes the ids of the previous prerequisite tasks which generate a new resource that the current task relies on.  The "args" field must in ["text", "image", "audio"], nothing else.  The "task" field must be in ["token-classification", "optical-character-recognition", "named-entity-recognition", "text2text-generation", "summarization", "translation", "question-answering", "conversational", "text-generation", "sentence-similarity", "tabular-classification", "object-detection", "image-classification", "image-to-image", "image-to-text", "text-to-image", "text-to-video", "visual-question-answering", "document-question-answering", "image-segmentation", "depth-estimation", "text-to-speech", "automatic-speech-recognition", "audio-to-audio", "audio-classification", "canny-control", "hed-control", "mlsd-control", "normal-control", "openpose-control", "canny-text-to-image", "depth-text-to-image", "hed-text-to-image", "mlsd-text-to-image", "normal-text-to-image", "seg-text-to-image"] You must respond in JSON format like: [\n  {\n    "task": task, \n    "id": task_id, \n    "dep": dependency_task_id, \n    "args": {\n      "text": text or <GENERATED>-dep_id, \n      "image": image_url or <GENERATED>-dep_id, \n      "audio": audio_url or <GENERATED>-dep_id\n    }\n  }\n] Respond with the JSON entry and ONLY the JSON entry! Here are some few-shot examples:'}, {'role': 'user', 'content': 'Give you some pictures e1.jpg, e2.png, e3.jpg, help me count the number of sheep?'}, {'role': 'assistant', 'content': '[{"task": "image-to-text", "id": 0, "dep": [-1], "args": {"image": "e1.jpg" }}, {"task": "object-detection", "id": 1, "dep": [-1], "args": {"image": "e1.jpg" }}, {"task": "visual-question-answering", "id": 2, "dep": [1], "args": {"image": "<GENERATED>-1", "text": "How many sheep in the picture"}} }}, {"task": "image-to-text", "id": 3, "dep": [-1], "args": {"image": "e2.png" }}, {"task": "object-detection", "id": 4, "dep": [-1], "args": {"image": "e2.png" }}, {"task": "visual-question-answering", "id": 5, "dep": [4], "args": {"image": "<GENERATED>-4", "text": "How many sheep in the picture"}} }}, {"task": "image-to-text", "id": 6, "dep": [-1], "args": {"image": "e3.jpg" }},  {"task": "object-detection", "id": 7, "dep": [-1], "args": {"image": "e3.jpg" }}, {"task": "visual-question-answering", "id": 8, "dep": [7], "args": {"image": "<GENERATED>-7", "text": "How many sheep in the picture"}}]'}, {'role': 'user', 'content': 'Look at /e.jpg, can you tell me how many objects in the picture? Give me a picture and video similar to this one.'}, {'role': 'assistant', 'content': '[{"task": "image-to-text", "id": 0, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "object-detection", "id": 1, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "visual-question-answering", "id": 2, "dep": [1], "args": {"image": "<GENERATED>-1", "text": "how many objects in the picture?" }}, {"task": "text-to-image", "id": 3, "dep": [0], "args": {"text": "<GENERATED-0>" }}, {"task": "image-to-image", "id": 4, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "text-to-video", "id": 5, "dep": [0], "args": {"text": "<GENERATED-0>" }}]'}, {'role': 'user', 'content': 'given a document /images/e.jpeg, answer me what is the student amount? And describe the image with your voice'}, {'role': 'assistant', 'content': '{"task": "document-question-answering", "id": 0, "dep": [-1], "args": {"image": "/images/e.jpeg", "text": "what is the student amount?" }}, {"task": "visual-question-answering", "id": 1, "dep": [-1], "args": {"image": "/images/e.jpeg", "text": "what is the student amount?" }}, {"task": "image-to-text", "id": 2, "dep": [-1], "args": {"image": "/images/e.jpg" }}, {"task": "text-to-speech", "id": 3, "dep": [2], "args": {"text": "<GENERATED>-2" }}]'}, {'role': 'user', 'content': 'Given an image /example.jpg, first generate a hed image, then based on the hed image generate a new image where a girl is reading a book'}, {'role': 'assistant', 'content': '[{"task": "openpose-control", "id": 0, "dep": [-1], "args": {"image": "/example.jpg" }},  {"task": "openpose-text-to-image", "id": 1, "dep": [0], "args": {"text": "a girl is reading a book", "image": "<GENERATED>-0" }}]'}, {'role': 'user', 'content': "please show me a video and an image of (based on the text) 'a boy is running' and dub it"}, {'role': 'assistant', 'content': '[{"task": "text-to-video", "id": 0, "dep": [-1], "args": {"text": "a boy is running" }}, {"task": "text-to-speech", "id": 1, "dep": [-1], "args": {"text": "a boy is running" }}, {"task": "text-to-image", "id": 2, "dep": [-1], "args": {"text": "a boy is running" }}]'}, {'role': 'user', 'content': 'please show me a joke and an image of cat'}, {'role': 'assistant', 'content': '[{"task": "conversational", "id": 0, "dep": [-1], "args": {"text": "please show me a joke of cat" }}, {"task": "text-to-image", "id": 1, "dep": [-1], "args": {"text": "a photo of cat" }}]'}, {'role': 'user', 'content': "The chat log [ [] ] may contain the resources I mentioned. Now I input { Generate a sketch and corresponding image for 'examples/architecture.jpg'. }. Pay attention to the input and output types of tasks and the dependencies between tasks."}]
+2025-12-08 14:41:12,434 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/meta-llama/Llama-3.3-70B-Instruct?expand=inferenceProviderMapping HTTP/1.1" 200 1439
+2025-12-08 14:41:12,436 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): router.huggingface.co:443
+2025-12-08 14:41:14,195 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /nebius/v1/chat/completions HTTP/1.1" 200 None
+2025-12-08 14:41:14,196 - root - DEBUG - [{'task': 'canny-text-to-image', 'id': 0, 'dep': [-1], 'args': {'text': 'examples/architecture.jpg', 'image': 'none'}}, {'task': 'canny-control', 'id': 1, 'dep': [0], 'args': {'image': '<GENERATED>-0'}}, {'task': 'hed-text-to-image', 'id': 2, 'dep': [-1], 'args': {'text': 'examples/architecture.jpg', 'image': 'none'}}, {'task': 'hed-control', 'id': 3, 'dep': [2], 'args': {'image': '<GENERATED>-2'}}, {'task': 'image-to-image', 'id': 4, 'dep': [1], 'args': {'image': '<GENERATED>-1'}}]
+2025-12-08 14:41:14,197 - root - DEBUG - Run task: 0 - canny-text-to-image
+2025-12-08 14:41:14,197 - root - DEBUG - Deps: []
+2025-12-08 14:41:14,197 - root - DEBUG - Run task: 2 - hed-text-to-image
+2025-12-08 14:41:14,198 - root - DEBUG - Parsed Task: {'task': 'canny-text-to-image', 'id': 0, 'dep': [-1], 'args': {'text': 'examples/architecture.jpg', 'image': 'public/none'}}
+2025-12-08 14:41:14,198 - root - DEBUG - Deps: []
+2025-12-08 14:41:14,198 - root - DEBUG - Chosen Model: {'id': 'lllyasviel/sd-controlnet-canny', 'reason': 'ControlNet is the best model for this task.'}
+2025-12-08 14:41:14,198 - root - DEBUG - Parsed Task: {'task': 'hed-text-to-image', 'id': 2, 'dep': [-1], 'args': {'text': 'examples/architecture.jpg', 'image': 'public/none'}}
+2025-12-08 14:41:14,199 - root - DEBUG - Chosen Model: {'id': 'lllyasviel/sd-controlnet-hed', 'reason': 'ControlNet is the best model for this task.'}
+2025-12-08 14:41:14,201 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:41:14,202 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:41:17,303 - urllib3.connectionpool - DEBUG - http://localhost:8005 "POST /models/lllyasviel/sd-controlnet-canny HTTP/1.1" 200 64
+2025-12-08 14:41:17,304 - root - WARNING - Inference error: {'message': 'Error when running the model inference.'}
+2025-12-08 14:41:17,304 - root - DEBUG -  Failure: {"input": "Generate a sketch and corresponding image for 'examples/architecture.jpg'.", "task": {"task": "canny-text-to-image", "id": 0, "dep": [-1], "args": {"text": "examples/architecture.jpg", "image": "public/none"}}, "reason": "inference error: {'message': 'Error when running the model inference.'}", "op": "message"}
+2025-12-08 14:41:17,304 - root - DEBUG - Inference Result: {'error': {'message': 'Error when running the model inference.'}}
+2025-12-08 14:41:17,702 - root - DEBUG - Run task: 1 - canny-control
+2025-12-08 14:41:17,702 - root - DEBUG - Deps: [{"task": {"task": "canny-text-to-image", "id": 0, "dep": [-1], "args": {"text": "examples/architecture.jpg", "image": "public/none"}}, "inference result": {"error": {"message": "Error when running the model inference."}}, "choose model result": {"id": "lllyasviel/sd-controlnet-canny", "reason": "ControlNet is the best model for this task."}}]
+2025-12-08 14:41:17,702 - root - DEBUG - Detect the text of dependency task (from args): examples/architecture.jpg
+2025-12-08 14:41:17,702 - root - DEBUG - Detect the image of dependency task (from args): public/none
+2025-12-08 14:41:17,703 - root - DEBUG - Parsed Task: {'task': 'canny-control', 'id': 1, 'dep': [0], 'args': {'image': 'public/none'}}
+2025-12-08 14:41:17,703 - root - DEBUG - Chosen Model: {'id': 'canny-control', 'reason': 'ControlNet is the best model for this task.'}
+2025-12-08 14:41:17,704 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:41:17,748 - urllib3.connectionpool - DEBUG - http://localhost:8005 "POST /models/canny-control HTTP/1.1" 404 55
+2025-12-08 14:41:17,748 - root - WARNING - Inference error: {'message': 'Model canny-control not loaded'}
+2025-12-08 14:41:17,749 - root - DEBUG -  Failure: {"input": "Generate a sketch and corresponding image for 'examples/architecture.jpg'.", "task": {"task": "canny-control", "id": 1, "dep": [0], "args": {"image": "public/none"}}, "reason": "inference error: {'message': 'Model canny-control not loaded'}", "op": "message"}
+2025-12-08 14:41:17,749 - root - DEBUG - Inference Result: {'error': {'message': 'Model canny-control not loaded'}}
+2025-12-08 14:41:18,203 - root - DEBUG - Run task: 4 - image-to-image
+2025-12-08 14:41:18,203 - root - DEBUG - Deps: [{"task": {"task": "canny-control", "id": 1, "dep": [0], "args": {"image": "public/none"}}, "inference result": {"error": {"message": "Model canny-control not loaded"}}, "choose model result": {"id": "canny-control", "reason": "ControlNet is the best model for this task."}}]
+2025-12-08 14:41:18,203 - root - DEBUG - Detect the image of dependency task (from args): public/none
+2025-12-08 14:41:18,204 - root - DEBUG - Parsed Task: {'task': 'image-to-image', 'id': 4, 'dep': [1], 'args': {'image': 'public/none'}}
+2025-12-08 14:41:18,205 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:41:18,207 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:41:18,208 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:41:18,211 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:41:18,212 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:41:18,213 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/lambdalabs/sd-image-variations-diffusers HTTP/1.1" 200 16
+2025-12-08 14:41:18,214 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:41:18,215 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/lambdalabs/stable-diffusion-image-conditioned HTTP/1.1" 200 17
+2025-12-08 14:41:18,215 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/keras-io/lowlight-enhance-mirnet HTTP/1.1" 200 17
+2025-12-08 14:41:18,216 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:41:18,217 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/maxim-s3-deblurring-gopro HTTP/1.1" 200 17
+2025-12-08 14:41:18,218 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:41:18,220 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:41:18,221 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/akiyamasho/AnimeBackgroundGAN-Shinkai HTTP/1.1" 200 17
+2025-12-08 14:41:18,222 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:41:18,223 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:41:18,224 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:41:18,225 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:41:18,226 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/keras-io/super-resolution HTTP/1.1" 200 17
+2025-12-08 14:41:18,227 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:41:18,227 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:41:18,227 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/keras-io/low-light-image-enhancement HTTP/1.1" 200 17
+2025-12-08 14:41:18,228 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:41:18,229 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/akiyamasho/AnimeBackgroundGAN-Hosoda HTTP/1.1" 200 17
+2025-12-08 14:41:18,230 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:41:18,231 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:41:18,231 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:41:18,232 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:41:18,233 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:41:18,234 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:41:18,235 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:41:18,235 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:41:18,238 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:41:18,239 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:41:18,239 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/akiyamasho/AnimeBackgroundGAN-Miyazaki HTTP/1.1" 200 17
+2025-12-08 14:41:18,240 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Pie31415/rome HTTP/1.1" 200 17
+2025-12-08 14:41:18,240 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:41:18,241 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:41:18,242 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:41:18,242 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:41:18,243 - root - DEBUG - Model: lambdalabs/sd-image-variations-diffusers | Status: True | Source: local
+2025-12-08 14:41:18,244 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/gwang-kim/DiffusionCLIP-CelebA_HQ HTTP/1.1" 200 17
+2025-12-08 14:41:18,244 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/matttrent/sd-image-variations-diffusers HTTP/1.1" 200 17
+2025-12-08 14:41:18,245 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/sivar/legostyle1-5 HTTP/1.1" 200 17
+2025-12-08 14:41:18,246 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/akiyamasho/AnimeBackgroundGAN-Kon HTTP/1.1" 200 17
+2025-12-08 14:41:18,247 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/hugginglearners/fastai-style-transfer HTTP/1.1" 200 17
+2025-12-08 14:41:18,248 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/maxim-s3-denoising-sidd HTTP/1.1" 200 17
+2025-12-08 14:41:18,249 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/huggan/sim2real_cyclegan HTTP/1.1" 200 17
+2025-12-08 14:41:18,250 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/caidas/swin2SR-classical-sr-x2-64 HTTP/1.1" 200 17
+2025-12-08 14:41:18,250 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/maxim-s2-enhancement-lol HTTP/1.1" 200 17
+2025-12-08 14:41:18,251 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/kunheekim/style-aware-discriminator HTTP/1.1" 200 17
+2025-12-08 14:41:18,252 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/weitf/muscleAmine HTTP/1.1" 200 17
+2025-12-08 14:41:18,252 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/keras-io/conditional-gan HTTP/1.1" 200 17
+2025-12-08 14:41:18,253 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/rullaf/RealESRGAN_MtG HTTP/1.1" 200 17
+2025-12-08 14:41:18,254 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/maxim-s2-deraining-raindrop HTTP/1.1" 200 17
+2025-12-08 14:41:18,254 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/cmudrc/microstructure-colorization HTTP/1.1" 200 17
+2025-12-08 14:41:18,254 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/gwang-kim/DiffusionCLIP-LSUN_Bedroom HTTP/1.1" 200 17
+2025-12-08 14:41:18,255 - root - DEBUG - Model: lambdalabs/stable-diffusion-image-conditioned | Status: False | Source: None
+2025-12-08 14:41:18,257 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/huggingnft/cryptopunks__2__bored-apes-yacht-club HTTP/1.1" 200 17
+2025-12-08 14:41:18,257 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/huggingnft/mini-mutants__2__boredapeyachtclub HTTP/1.1" 200 17
+2025-12-08 14:41:18,258 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/huggingnft/boredapeyachtclub__2__mutant-ape-yacht-club HTTP/1.1" 200 17
+2025-12-08 14:41:18,258 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/SBB/sbb_binarization HTTP/1.1" 200 17
+2025-12-08 14:41:18,264 - root - DEBUG - Model: keras-io/lowlight-enhance-mirnet | Status: False | Source: None
+2025-12-08 14:41:18,266 - root - DEBUG - Model: google/maxim-s3-deblurring-gopro | Status: False | Source: None
+2025-12-08 14:41:18,266 - root - DEBUG - Model: akiyamasho/AnimeBackgroundGAN-Shinkai | Status: False | Source: None
+2025-12-08 14:41:18,266 - root - DEBUG - Model: keras-io/super-resolution | Status: False | Source: None
+2025-12-08 14:41:18,266 - root - DEBUG - Model: keras-io/low-light-image-enhancement | Status: False | Source: None
+2025-12-08 14:41:18,266 - root - DEBUG - Model: akiyamasho/AnimeBackgroundGAN-Hosoda | Status: False | Source: None
+2025-12-08 14:41:18,266 - root - DEBUG - Model: akiyamasho/AnimeBackgroundGAN-Miyazaki | Status: False | Source: None
+2025-12-08 14:41:18,266 - root - DEBUG - Model: Pie31415/rome | Status: False | Source: None
+2025-12-08 14:41:18,266 - root - DEBUG - Model: gwang-kim/DiffusionCLIP-CelebA_HQ | Status: False | Source: None
+2025-12-08 14:41:18,266 - root - DEBUG - Model: matttrent/sd-image-variations-diffusers | Status: False | Source: None
+2025-12-08 14:41:18,266 - root - DEBUG - Model: sivar/legostyle1-5 | Status: False | Source: None
+2025-12-08 14:41:18,266 - root - DEBUG - Model: akiyamasho/AnimeBackgroundGAN-Kon | Status: False | Source: None
+2025-12-08 14:41:18,266 - root - DEBUG - Model: hugginglearners/fastai-style-transfer | Status: False | Source: None
+2025-12-08 14:41:18,266 - root - DEBUG - Model: google/maxim-s3-denoising-sidd | Status: False | Source: None
+2025-12-08 14:41:18,266 - root - DEBUG - Model: huggan/sim2real_cyclegan | Status: False | Source: None
+2025-12-08 14:41:18,266 - root - DEBUG - Model: caidas/swin2SR-classical-sr-x2-64 | Status: False | Source: None
+2025-12-08 14:41:18,266 - root - DEBUG - Model: google/maxim-s2-enhancement-lol | Status: False | Source: None
+2025-12-08 14:41:18,266 - root - DEBUG - Model: kunheekim/style-aware-discriminator | Status: False | Source: None
+2025-12-08 14:41:18,266 - root - DEBUG - Model: weitf/muscleAmine | Status: False | Source: None
+2025-12-08 14:41:18,266 - root - DEBUG - Model: keras-io/conditional-gan | Status: False | Source: None
+2025-12-08 14:41:18,266 - root - DEBUG - Model: rullaf/RealESRGAN_MtG | Status: False | Source: None
+2025-12-08 14:41:18,266 - root - DEBUG - Model: google/maxim-s2-deraining-raindrop | Status: False | Source: None
+2025-12-08 14:41:18,266 - root - DEBUG - Model: cmudrc/microstructure-colorization | Status: False | Source: None
+2025-12-08 14:41:18,266 - root - DEBUG - Model: gwang-kim/DiffusionCLIP-LSUN_Bedroom | Status: False | Source: None
+2025-12-08 14:41:18,266 - root - DEBUG - Model: huggingnft/cryptopunks__2__bored-apes-yacht-club | Status: False | Source: None
+2025-12-08 14:41:18,266 - root - DEBUG - Model: huggingnft/mini-mutants__2__boredapeyachtclub | Status: False | Source: None
+2025-12-08 14:41:18,266 - root - DEBUG - Model: huggingnft/boredapeyachtclub__2__mutant-ape-yacht-club | Status: False | Source: None
+2025-12-08 14:41:18,266 - root - DEBUG - Model: SBB/sbb_binarization | Status: False | Source: None
+2025-12-08 14:41:18,267 - root - DEBUG - avaliable models on image-to-image: {'local': ['lambdalabs/sd-image-variations-diffusers'], 'huggingface': []}
+2025-12-08 14:41:18,267 - root - DEBUG - chosen model: {'id': 'lambdalabs/sd-image-variations-diffusers', 'reason': 'Only one model available.'}
+2025-12-08 14:41:18,267 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:41:21,753 - urllib3.connectionpool - DEBUG - http://localhost:8005 "POST /models/lllyasviel/sd-controlnet-hed HTTP/1.1" 200 64
+2025-12-08 14:41:21,754 - root - WARNING - Inference error: {'message': 'Error when running the model inference.'}
+2025-12-08 14:41:21,754 - root - DEBUG -  Failure: {"input": "Generate a sketch and corresponding image for 'examples/architecture.jpg'.", "task": {"task": "hed-text-to-image", "id": 2, "dep": [-1], "args": {"text": "examples/architecture.jpg", "image": "public/none"}}, "reason": "inference error: {'message': 'Error when running the model inference.'}", "op": "message"}
+2025-12-08 14:41:21,754 - root - DEBUG - Inference Result: {'error': {'message': 'Error when running the model inference.'}}
+2025-12-08 14:41:22,208 - root - DEBUG - Run task: 3 - hed-control
+2025-12-08 14:41:22,208 - root - DEBUG - Deps: [{"task": {"task": "hed-text-to-image", "id": 2, "dep": [-1], "args": {"text": "examples/architecture.jpg", "image": "public/none"}}, "inference result": {"error": {"message": "Error when running the model inference."}}, "choose model result": {"id": "lllyasviel/sd-controlnet-hed", "reason": "ControlNet is the best model for this task."}}]
+2025-12-08 14:41:22,208 - root - DEBUG - Detect the text of dependency task (from args): examples/architecture.jpg
+2025-12-08 14:41:22,208 - root - DEBUG - Detect the image of dependency task (from args): public/none
+2025-12-08 14:41:22,208 - root - DEBUG - Parsed Task: {'task': 'hed-control', 'id': 3, 'dep': [2], 'args': {'image': 'public/none'}}
+2025-12-08 14:41:22,209 - root - DEBUG - Chosen Model: {'id': 'hed-control', 'reason': 'ControlNet is the best model for this task.'}
+2025-12-08 14:41:22,210 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:41:22,212 - urllib3.connectionpool - DEBUG - http://localhost:8005 "POST /models/hed-control HTTP/1.1" 404 53
+2025-12-08 14:41:22,213 - root - WARNING - Inference error: {'message': 'Model hed-control not loaded'}
+2025-12-08 14:41:22,213 - root - DEBUG -  Failure: {"input": "Generate a sketch and corresponding image for 'examples/architecture.jpg'.", "task": {"task": "hed-control", "id": 3, "dep": [2], "args": {"image": "public/none"}}, "reason": "inference error: {'message': 'Model hed-control not loaded'}", "op": "message"}
+2025-12-08 14:41:22,213 - root - DEBUG - Inference Result: {'error': {'message': 'Model hed-control not loaded'}}
+2025-12-08 14:41:24,833 - urllib3.connectionpool - DEBUG - http://localhost:8005 "POST /models/lambdalabs/sd-image-variations-diffusers HTTP/1.1" 200 64
+2025-12-08 14:41:24,834 - root - WARNING - Inference error: {'message': 'Error when running the model inference.'}
+2025-12-08 14:41:24,834 - root - DEBUG -  Failure: {"input": "Generate a sketch and corresponding image for 'examples/architecture.jpg'.", "task": {"task": "image-to-image", "id": 4, "dep": [1], "args": {"image": "public/none"}}, "reason": "inference error: {'message': 'Error when running the model inference.'}", "op": "message"}
+2025-12-08 14:41:24,834 - root - DEBUG - Inference Result: {'error': {'message': 'Error when running the model inference.'}}
+2025-12-08 14:41:24,834 - root - DEBUG - {0: {'task': {'task': 'canny-text-to-image', 'id': 0, 'dep': [-1], 'args': {'text': 'examples/architecture.jpg', 'image': 'public/none'}}, 'inference result': {'error': {'message': 'Error when running the model inference.'}}, 'choose model result': {'id': 'lllyasviel/sd-controlnet-canny', 'reason': 'ControlNet is the best model for this task.'}}, 1: {'task': {'task': 'canny-control', 'id': 1, 'dep': [0], 'args': {'image': 'public/none'}}, 'inference result': {'error': {'message': 'Model canny-control not loaded'}}, 'choose model result': {'id': 'canny-control', 'reason': 'ControlNet is the best model for this task.'}}, 2: {'task': {'task': 'hed-text-to-image', 'id': 2, 'dep': [-1], 'args': {'text': 'examples/architecture.jpg', 'image': 'public/none'}}, 'inference result': {'error': {'message': 'Error when running the model inference.'}}, 'choose model result': {'id': 'lllyasviel/sd-controlnet-hed', 'reason': 'ControlNet is the best model for this task.'}}, 3: {'task': {'task': 'hed-control', 'id': 3, 'dep': [2], 'args': {'image': 'public/none'}}, 'inference result': {'error': {'message': 'Model hed-control not loaded'}}, 'choose model result': {'id': 'hed-control', 'reason': 'ControlNet is the best model for this task.'}}, 4: {'task': {'task': 'image-to-image', 'id': 4, 'dep': [1], 'args': {'image': 'public/none'}}, 'inference result': {'error': {'message': 'Error when running the model inference.'}}, 'choose model result': {'id': 'lambdalabs/sd-image-variations-diffusers', 'reason': 'Only one model available.'}}}
+2025-12-08 14:41:27,097 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /nebius/v1/chat/completions HTTP/1.1" 200 None
+2025-12-08 14:41:27,098 - root - DEBUG - I'm happy to help you with generating a sketch and corresponding image for 'examples/architecture.jpg'. 
+<EXPLANATION> Unfortunately, I couldn't generate a sketch and corresponding image for 'examples/architecture.jpg' as the inference results from the models used contained errors. The models used in the workflow included canny-text-to-image, canny-control, hed-text-to-image, hed-control, and image-to-image. However, the inference results from these models contained error messages such as 'Error when running the model inference' and 'Model not loaded'. Due to these errors, I couldn't obtain a complete sketch and corresponding image. If you would like, I can try to assist you with a different task or provide more information on the models used in the workflow. </EXPLANATION>
+2025-12-08 14:41:27,113 - retriever - DEBUG - Loaded 105 entries from data/explanations.jsonl
+2025-12-08 14:41:27,327 - retriever - DEBUG - Best similarity = 0.966 (threshold = 0.95)
+2025-12-08 14:41:27,328 - retriever - INFO - Retrieved similar explanation (sim=0.966)
+2025-12-08 14:41:29,362 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /nebius/v1/chat/completions HTTP/1.1" 200 None
+2025-12-08 14:41:29,363 - judge - INFO - Judge decided: combined (Both explanations provide useful information, but Explanation B is clearer and more concise, while Explanation A provides more context about the models used. Combining them creates a more comprehensive and user-friendly explanation.)
+2025-12-08 14:41:29,374 - retriever - DEBUG - Loaded 105 entries from data/explanations.jsonl
+2025-12-08 14:41:29,374 - retriever - WARNING - No existing entry found to update for task_description='Generate a sketch and corresponding image for 'examples/arch...'
+2025-12-08 14:41:29,424 - root - DEBUG - Final explanation chosen by Judge: I attempted to generate a sketch and corresponding image for 'examples/architecture.jpg' using a sequence of models, including canny-text-to-image, canny-control, hed-text-to-image, hed-control, and image-to-image. Unfortunately, all of these models returned errors during inference, such as 'Error when running the model inference' and 'Model not loaded', which prevented me from obtaining a complete sketch and corresponding image. The canny-text-to-image and hed-text-to-image models, typically used for generating sketches and images, failed to produce outputs. As a result, the image-to-image model, used for generating variations of an image, couldn't be utilized due to the lack of input from the previous models. If you'd like to try again or need help with a different task, please let me know.
+2025-12-08 14:41:29,425 - root - DEBUG -  Success: {"input": "Generate a sketch and corresponding image for 'examples/architecture.jpg'.", "task": "[{\"task\": \"canny-text-to-image\", \"id\": 0, \"dep\": [-1], \"args\": {\"text\": \"examples/architecture.jpg\", \"image\": \"none\" }}, {\"task\": \"canny-control\", \"id\": 1, \"dep\": [0], \"args\": {\"image\": \"<GENERATED>-0\" }}, {\"task\": \"hed-text-to-image\", \"id\": 2, \"dep\": [-1], \"args\": {\"text\": \"examples/architecture.jpg\", \"image\": \"none\" }}, {\"task\": \"hed-control\", \"id\": 3, \"dep\": [2], \"args\": {\"image\": \"<GENERATED>-2\" }}, {\"task\": \"image-to-image\", \"id\": 4, \"dep\": [1, 3], \"args\": {\"image\": \"<GENERATED>-1\" }}]", "results": {"0": {"task": {"task": "canny-text-to-image", "id": 0, "dep": [-1], "args": {"text": "examples/architecture.jpg", "image": "public/none"}}, "inference result": {"error": {"message": "Error when running the model inference."}}, "choose model result": {"id": "lllyasviel/sd-controlnet-canny", "reason": "ControlNet is the best model for this task."}}, "1": {"task": {"task": "canny-control", "id": 1, "dep": [0], "args": {"image": "public/none"}}, "inference result": {"error": {"message": "Model canny-control not loaded"}}, "choose model result": {"id": "canny-control", "reason": "ControlNet is the best model for this task."}}, "2": {"task": {"task": "hed-text-to-image", "id": 2, "dep": [-1], "args": {"text": "examples/architecture.jpg", "image": "public/none"}}, "inference result": {"error": {"message": "Error when running the model inference."}}, "choose model result": {"id": "lllyasviel/sd-controlnet-hed", "reason": "ControlNet is the best model for this task."}}, "3": {"task": {"task": "hed-control", "id": 3, "dep": [2], "args": {"image": "public/none"}}, "inference result": {"error": {"message": "Model hed-control not loaded"}}, "choose model result": {"id": "hed-control", "reason": "ControlNet is the best model for this task."}}, "4": {"task": {"task": "image-to-image", "id": 4, "dep": [1], "args": {"image": "public/none"}}, "inference result": {"error": {"message": "Error when running the model inference."}}, "choose model result": {"id": "lambdalabs/sd-image-variations-diffusers", "reason": "Only one model available."}}}, "response": "I'm happy to help you with generating a sketch and corresponding image for 'examples/architecture.jpg'. \nI attempted to generate a sketch and corresponding image for 'examples/architecture.jpg' using a sequence of models, including canny-text-to-image, canny-control, hed-text-to-image, hed-control, and image-to-image. Unfortunately, all of these models returned errors during inference, such as 'Error when running the model inference' and 'Model not loaded', which prevented me from obtaining a complete sketch and corresponding image. The canny-text-to-image and hed-text-to-image models, typically used for generating sketches and images, failed to produce outputs. As a result, the image-to-image model, used for generating variations of an image, couldn't be utilized due to the lack of input from the previous models. If you'd like to try again or need help with a different task, please let me know.", "during": 17.09942603111267, "op": "response"}
+2025-12-08 14:41:29,425 - root - INFO - response: I'm happy to help you with generating a sketch and corresponding image for 'examples/architecture.jpg'. 
+I attempted to generate a sketch and corresponding image for 'examples/architecture.jpg' using a sequence of models, including canny-text-to-image, canny-control, hed-text-to-image, hed-control, and image-to-image. Unfortunately, all of these models returned errors during inference, such as 'Error when running the model inference' and 'Model not loaded', which prevented me from obtaining a complete sketch and corresponding image. The canny-text-to-image and hed-text-to-image models, typically used for generating sketches and images, failed to produce outputs. As a result, the image-to-image model, used for generating variations of an image, couldn't be utilized due to the lack of input from the previous models. If you'd like to try again or need help with a different task, please let me know.
+2025-12-08 14:52:46,006 - root - INFO - [ User ]: exit
+2025-12-08 14:52:46,007 - root - INFO - [ Jarvis ]: Goodnight.

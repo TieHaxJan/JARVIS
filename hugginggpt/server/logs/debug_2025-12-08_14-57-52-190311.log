@@ -1,0 +1,697 @@
+2025-12-08 14:57:52,200 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda:0
+2025-12-08 14:57:52,201 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-12-08 14:57:52,202 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-12-08 14:57:52,342 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-12-08 14:57:52,348 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-12-08 14:57:52,458 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-12-08 14:57:52,463 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-12-08 14:57:52,572 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-12-08 14:57:52,576 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-12-08 14:57:52,683 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-12-08 14:57:52,688 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+2025-12-08 14:57:52,792 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-12-08 14:57:52,796 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-12-08 14:57:52,903 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-12-08 14:57:52,908 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+2025-12-08 14:57:53,033 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-12-08 14:57:53,151 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-12-08 14:57:53,156 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+2025-12-08 14:57:53,326 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-12-08 14:57:53,331 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+2025-12-08 14:57:53,441 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-12-08 14:57:53,578 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-12-08 14:57:53,583 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-12-08 14:57:53,692 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6958
+2025-12-08 14:57:53,841 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:57:53,858 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /running HTTP/1.1" 200 17
+2025-12-08 14:57:53,878 - root - DEBUG - text-classification: 30 models
+2025-12-08 14:57:53,878 - root - DEBUG - token-classification: 30 models
+2025-12-08 14:57:53,878 - root - DEBUG - text2text-generation: 30 models
+2025-12-08 14:57:53,878 - root - DEBUG - summarization: 30 models
+2025-12-08 14:57:53,878 - root - DEBUG - translation: 30 models
+2025-12-08 14:57:53,878 - root - DEBUG - question-answering: 30 models
+2025-12-08 14:57:53,878 - root - DEBUG - conversational: 30 models
+2025-12-08 14:57:53,878 - root - DEBUG - text-generation: 30 models
+2025-12-08 14:57:53,878 - root - DEBUG - sentence-similarity: 30 models
+2025-12-08 14:57:53,878 - root - DEBUG - tabular-classification: 30 models
+2025-12-08 14:57:53,878 - root - DEBUG - object-detection: 30 models
+2025-12-08 14:57:53,878 - root - DEBUG - image-classification: 30 models
+2025-12-08 14:57:53,878 - root - DEBUG - image-to-text: 30 models
+2025-12-08 14:57:53,878 - root - DEBUG - text-to-image: 31 models
+2025-12-08 14:57:53,878 - root - DEBUG - image-to-image: 30 models
+2025-12-08 14:57:53,878 - root - DEBUG - visual-question-answering: 13 models
+2025-12-08 14:57:53,878 - root - DEBUG - document-question-answering: 22 models
+2025-12-08 14:57:53,878 - root - DEBUG - image-segmentation: 30 models
+2025-12-08 14:57:53,878 - root - DEBUG - depth-estimation: 30 models
+2025-12-08 14:57:53,878 - root - DEBUG - text-to-video: 8 models
+2025-12-08 14:57:53,878 - root - DEBUG - text-to-speech: 30 models
+2025-12-08 14:57:53,878 - root - DEBUG - automatic-speech-recognition: 30 models
+2025-12-08 14:57:53,878 - root - DEBUG - audio-to-audio: 30 models
+2025-12-08 14:57:53,878 - root - DEBUG - audio-classification: 30 models
+2025-12-08 14:57:53,878 - root - DEBUG - named-entity-recognition: 1 models
+2025-12-08 14:57:53,878 - root - INFO - Welcome to Jarvis! A collaborative system that consists of an LLM as the controller and numerous expert models as collaborative executors. Jarvis can plan tasks, schedule Hugging Face models, generate friendly responses based on your requests, and help you with many things. Please enter your request (`exit` to exit).
+2025-12-08 14:57:58,112 - root - INFO - [ User ]: detect tables, extract data, and generate summary for 'examples/financial_report.jpg'.
+2025-12-08 14:57:58,112 - root - INFO - ********************************************************************************
+2025-12-08 14:57:58,112 - root - INFO - input: Detect tables, extract data, and generate summary for 'examples/financial_report.jpg'.
+2025-12-08 14:57:58,114 - root - DEBUG - Messages: [{'role': 'system', 'content': '#1 Task Planning Stage: You are a helpful AI assistant. Based on the user\'s request, you will recommend the best model from Hugging Face for the task, and explain why. The special tag "<GENERATED>-dep_id" refer to the one generated text/image/audio in the dependency task (Please consider whether the dependency task generates resources of this type.) and "dep_id" must be in "dep" list.  The "dep" field denotes the ids of the previous prerequisite tasks which generate a new resource that the current task relies on.  The "args" field must in ["text", "image", "audio"], nothing else.  The "task" field must be in ["token-classification", "optical-character-recognition", "named-entity-recognition", "text2text-generation", "summarization", "translation", "question-answering", "conversational", "text-generation", "sentence-similarity", "tabular-classification", "object-detection", "image-classification", "image-to-image", "image-to-text", "text-to-image", "text-to-video", "visual-question-answering", "document-question-answering", "image-segmentation", "depth-estimation", "text-to-speech", "automatic-speech-recognition", "audio-to-audio", "audio-classification", "canny-control", "hed-control", "mlsd-control", "normal-control", "openpose-control", "canny-text-to-image", "depth-text-to-image", "hed-text-to-image", "mlsd-text-to-image", "normal-text-to-image", "seg-text-to-image"] You must respond in JSON format like: [\n  {\n    "task": task, \n    "id": task_id, \n    "dep": dependency_task_id, \n    "args": {\n      "text": text or <GENERATED>-dep_id, \n      "image": image_url or <GENERATED>-dep_id, \n      "audio": audio_url or <GENERATED>-dep_id\n    }\n  }\n] Respond with the JSON entry and ONLY the JSON entry! Here are some few-shot examples:'}, {'role': 'user', 'content': 'Give you some pictures e1.jpg, e2.png, e3.jpg, help me count the number of sheep?'}, {'role': 'assistant', 'content': '[{"task": "image-to-text", "id": 0, "dep": [-1], "args": {"image": "e1.jpg" }}, {"task": "object-detection", "id": 1, "dep": [-1], "args": {"image": "e1.jpg" }}, {"task": "visual-question-answering", "id": 2, "dep": [1], "args": {"image": "<GENERATED>-1", "text": "How many sheep in the picture"}} }}, {"task": "image-to-text", "id": 3, "dep": [-1], "args": {"image": "e2.png" }}, {"task": "object-detection", "id": 4, "dep": [-1], "args": {"image": "e2.png" }}, {"task": "visual-question-answering", "id": 5, "dep": [4], "args": {"image": "<GENERATED>-4", "text": "How many sheep in the picture"}} }}, {"task": "image-to-text", "id": 6, "dep": [-1], "args": {"image": "e3.jpg" }},  {"task": "object-detection", "id": 7, "dep": [-1], "args": {"image": "e3.jpg" }}, {"task": "visual-question-answering", "id": 8, "dep": [7], "args": {"image": "<GENERATED>-7", "text": "How many sheep in the picture"}}]'}, {'role': 'user', 'content': 'Look at /e.jpg, can you tell me how many objects in the picture? Give me a picture and video similar to this one.'}, {'role': 'assistant', 'content': '[{"task": "image-to-text", "id": 0, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "object-detection", "id": 1, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "visual-question-answering", "id": 2, "dep": [1], "args": {"image": "<GENERATED>-1", "text": "how many objects in the picture?" }}, {"task": "text-to-image", "id": 3, "dep": [0], "args": {"text": "<GENERATED-0>" }}, {"task": "image-to-image", "id": 4, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "text-to-video", "id": 5, "dep": [0], "args": {"text": "<GENERATED-0>" }}]'}, {'role': 'user', 'content': 'given a document /images/e.jpeg, answer me what is the student amount? And describe the image with your voice'}, {'role': 'assistant', 'content': '{"task": "document-question-answering", "id": 0, "dep": [-1], "args": {"image": "/images/e.jpeg", "text": "what is the student amount?" }}, {"task": "visual-question-answering", "id": 1, "dep": [-1], "args": {"image": "/images/e.jpeg", "text": "what is the student amount?" }}, {"task": "image-to-text", "id": 2, "dep": [-1], "args": {"image": "/images/e.jpg" }}, {"task": "text-to-speech", "id": 3, "dep": [2], "args": {"text": "<GENERATED>-2" }}]'}, {'role': 'user', 'content': 'Given an image /example.jpg, first generate a hed image, then based on the hed image generate a new image where a girl is reading a book'}, {'role': 'assistant', 'content': '[{"task": "openpose-control", "id": 0, "dep": [-1], "args": {"image": "/example.jpg" }},  {"task": "openpose-text-to-image", "id": 1, "dep": [0], "args": {"text": "a girl is reading a book", "image": "<GENERATED>-0" }}]'}, {'role': 'user', 'content': "please show me a video and an image of (based on the text) 'a boy is running' and dub it"}, {'role': 'assistant', 'content': '[{"task": "text-to-video", "id": 0, "dep": [-1], "args": {"text": "a boy is running" }}, {"task": "text-to-speech", "id": 1, "dep": [-1], "args": {"text": "a boy is running" }}, {"task": "text-to-image", "id": 2, "dep": [-1], "args": {"text": "a boy is running" }}]'}, {'role': 'user', 'content': 'please show me a joke and an image of cat'}, {'role': 'assistant', 'content': '[{"task": "conversational", "id": 0, "dep": [-1], "args": {"text": "please show me a joke of cat" }}, {"task": "text-to-image", "id": 1, "dep": [-1], "args": {"text": "a photo of cat" }}]'}, {'role': 'user', 'content': "The chat log [ [] ] may contain the resources I mentioned. Now I input { Detect tables, extract data, and generate summary for 'examples/financial_report.jpg'. }. Pay attention to the input and output types of tasks and the dependencies between tasks."}]
+2025-12-08 14:57:58,225 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/meta-llama/Llama-3.3-70B-Instruct?expand=inferenceProviderMapping HTTP/1.1" 200 1439
+2025-12-08 14:57:58,226 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): router.huggingface.co:443
+2025-12-08 14:57:59,571 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /nebius/v1/chat/completions HTTP/1.1" 200 None
+2025-12-08 14:57:59,573 - root - DEBUG - [{'task': 'image-classification', 'id': 0, 'dep': [-1], 'args': {'image': 'examples/financial_report.jpg'}}, {'task': 'object-detection', 'id': 1, 'dep': [0], 'args': {'image': '<GENERATED>-0'}}, {'task': 'image-to-text', 'id': 2, 'dep': [1], 'args': {'image': '<GENERATED>-1'}}, {'task': 'tabular-classification', 'id': 3, 'dep': [2], 'args': {'text': '<GENERATED>-2'}}, {'task': 'summarization', 'id': 4, 'dep': [3], 'args': {'text': '<GENERATED>-3'}}]
+2025-12-08 14:57:59,574 - root - DEBUG - Run task: 0 - image-classification
+2025-12-08 14:57:59,574 - root - DEBUG - Deps: []
+2025-12-08 14:57:59,574 - root - DEBUG - Parsed Task: {'task': 'image-classification', 'id': 0, 'dep': [-1], 'args': {'image': 'public/examples/financial_report.jpg'}}
+2025-12-08 14:57:59,577 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:57:59,578 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:57:59,582 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:57:59,583 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:57:59,585 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:57:59,586 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/vit-base-patch16-224 HTTP/1.1" 200 17
+2025-12-08 14:57:59,587 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:57:59,589 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:57:59,591 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:57:59,592 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/resnet-50 HTTP/1.1" 200 17
+2025-12-08 14:57:59,593 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/cafeai/cafe_aesthetic HTTP/1.1" 200 17
+2025-12-08 14:57:59,593 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:57:59,594 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:57:59,594 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/facebook/deit-base-distilled-patch16-224 HTTP/1.1" 200 17
+2025-12-08 14:57:59,595 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/beit-base-patch16-224-pt22k-ft22k HTTP/1.1" 200 17
+2025-12-08 14:57:59,595 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/dit-base-finetuned-rvlcdip HTTP/1.1" 200 17
+2025-12-08 14:57:59,597 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:57:59,598 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/timm/vit_large_patch14_clip_224.openai_ft_in12k_in1k HTTP/1.1" 200 17
+2025-12-08 14:57:59,599 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:57:59,600 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:57:59,601 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:57:59,602 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/nateraw/vit-age-classifier HTTP/1.1" 200 17
+2025-12-08 14:57:59,603 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:57:59,604 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/saltacc/anime-ai-detect HTTP/1.1" 200 17
+2025-12-08 14:57:59,605 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:57:59,606 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:57:59,607 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:57:59,608 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:57:59,609 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:57:59,610 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:57:59,611 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:57:59,612 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Rajaram1996/FacialEmoRecog HTTP/1.1" 200 17
+2025-12-08 14:57:59,613 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:57:59,615 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:57:59,616 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:57:59,617 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/vit-base-patch16-384 HTTP/1.1" 200 17
+2025-12-08 14:57:59,618 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:57:59,618 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/swin-tiny-patch4-window7-224 HTTP/1.1" 200 17
+2025-12-08 14:57:59,619 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:57:59,621 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:57:59,622 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:57:59,622 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/nvidia/mit-b0 HTTP/1.1" 200 17
+2025-12-08 14:57:59,623 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:57:59,623 - root - DEBUG - Model: google/vit-base-patch16-224 | Status: False | Source: None
+2025-12-08 14:57:59,625 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/umm-maybe/AI-image-detector HTTP/1.1" 200 17
+2025-12-08 14:57:59,626 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/deepmind/vision-perceiver-learned HTTP/1.1" 200 17
+2025-12-08 14:57:59,627 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/facebook/deit-base-patch16-224 HTTP/1.1" 200 17
+2025-12-08 14:57:59,628 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/nateraw/food HTTP/1.1" 200 17
+2025-12-08 14:57:59,628 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/nateraw/vit-base-beans HTTP/1.1" 200 17
+2025-12-08 14:57:59,629 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/apple/mobilevit-small HTTP/1.1" 200 17
+2025-12-08 14:57:59,630 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/carbon225/vit-base-patch16-224-hentai HTTP/1.1" 200 17
+2025-12-08 14:57:59,631 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/swin-base-patch4-window7-224-in22k HTTP/1.1" 200 17
+2025-12-08 14:57:59,632 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/facebook/convnext-tiny-224 HTTP/1.1" 200 17
+2025-12-08 14:57:59,632 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/vit-base-patch32-384 HTTP/1.1" 200 17
+2025-12-08 14:57:59,634 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/mindspore-ai/LeNet HTTP/1.1" 200 17
+2025-12-08 14:57:59,635 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/resnet-18 HTTP/1.1" 200 17
+2025-12-08 14:57:59,636 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/ydshieh/vit-gpt2-coco-en-ckpts HTTP/1.1" 200 17
+2025-12-08 14:57:59,637 - root - DEBUG - Model: microsoft/resnet-50 | Status: False | Source: None
+2025-12-08 14:57:59,637 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Hrishikesh332/autotrain-meme-classification-42897109437 HTTP/1.1" 200 17
+2025-12-08 14:57:59,640 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/vit-large-patch32-384 HTTP/1.1" 200 17
+2025-12-08 14:57:59,640 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/vit-large-patch16-384 HTTP/1.1" 200 17
+2025-12-08 14:57:59,641 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/julien-c/hotdog-not-hotdog HTTP/1.1" 200 17
+2025-12-08 14:57:59,645 - root - DEBUG - Model: cafeai/cafe_aesthetic | Status: False | Source: None
+2025-12-08 14:57:59,647 - root - DEBUG - Model: facebook/deit-base-distilled-patch16-224 | Status: False | Source: None
+2025-12-08 14:57:59,647 - root - DEBUG - Model: microsoft/beit-base-patch16-224-pt22k-ft22k | Status: False | Source: None
+2025-12-08 14:57:59,647 - root - DEBUG - Model: microsoft/dit-base-finetuned-rvlcdip | Status: False | Source: None
+2025-12-08 14:57:59,647 - root - DEBUG - Model: timm/vit_large_patch14_clip_224.openai_ft_in12k_in1k | Status: False | Source: None
+2025-12-08 14:57:59,647 - root - DEBUG - Model: nateraw/vit-age-classifier | Status: False | Source: None
+2025-12-08 14:57:59,647 - root - DEBUG - Model: saltacc/anime-ai-detect | Status: False | Source: None
+2025-12-08 14:57:59,647 - root - DEBUG - Model: Rajaram1996/FacialEmoRecog | Status: False | Source: None
+2025-12-08 14:57:59,647 - root - DEBUG - Model: google/vit-base-patch16-384 | Status: False | Source: None
+2025-12-08 14:57:59,647 - root - DEBUG - Model: microsoft/swin-tiny-patch4-window7-224 | Status: False | Source: None
+2025-12-08 14:57:59,647 - root - DEBUG - Model: nvidia/mit-b0 | Status: False | Source: None
+2025-12-08 14:57:59,647 - root - DEBUG - Model: umm-maybe/AI-image-detector | Status: False | Source: None
+2025-12-08 14:57:59,647 - root - DEBUG - Model: deepmind/vision-perceiver-learned | Status: False | Source: None
+2025-12-08 14:57:59,647 - root - DEBUG - Model: facebook/deit-base-patch16-224 | Status: False | Source: None
+2025-12-08 14:57:59,647 - root - DEBUG - Model: nateraw/food | Status: False | Source: None
+2025-12-08 14:57:59,647 - root - DEBUG - Model: nateraw/vit-base-beans | Status: False | Source: None
+2025-12-08 14:57:59,647 - root - DEBUG - Model: apple/mobilevit-small | Status: False | Source: None
+2025-12-08 14:57:59,647 - root - DEBUG - Model: carbon225/vit-base-patch16-224-hentai | Status: False | Source: None
+2025-12-08 14:57:59,647 - root - DEBUG - Model: microsoft/swin-base-patch4-window7-224-in22k | Status: False | Source: None
+2025-12-08 14:57:59,647 - root - DEBUG - Model: facebook/convnext-tiny-224 | Status: False | Source: None
+2025-12-08 14:57:59,647 - root - DEBUG - Model: google/vit-base-patch32-384 | Status: False | Source: None
+2025-12-08 14:57:59,647 - root - DEBUG - Model: mindspore-ai/LeNet | Status: False | Source: None
+2025-12-08 14:57:59,647 - root - DEBUG - Model: microsoft/resnet-18 | Status: False | Source: None
+2025-12-08 14:57:59,648 - root - DEBUG - Model: ydshieh/vit-gpt2-coco-en-ckpts | Status: False | Source: None
+2025-12-08 14:57:59,648 - root - DEBUG - Model: Hrishikesh332/autotrain-meme-classification-42897109437 | Status: False | Source: None
+2025-12-08 14:57:59,648 - root - DEBUG - Model: google/vit-large-patch32-384 | Status: False | Source: None
+2025-12-08 14:57:59,648 - root - DEBUG - Model: google/vit-large-patch16-384 | Status: False | Source: None
+2025-12-08 14:57:59,648 - root - DEBUG - Model: julien-c/hotdog-not-hotdog | Status: False | Source: None
+2025-12-08 14:57:59,648 - root - DEBUG - avaliable models on image-classification: {'local': [], 'huggingface': []}
+2025-12-08 14:57:59,648 - root - WARNING - no available models on image-classification
+2025-12-08 14:57:59,648 - root - DEBUG -  Failure: {"input": "Detect tables, extract data, and generate summary for 'examples/financial_report.jpg'.", "task": {"task": "image-classification", "id": 0, "dep": [-1], "args": {"image": "public/examples/financial_report.jpg"}}, "reason": "no available models: image-classification", "op": "message"}
+2025-12-08 14:57:59,648 - root - DEBUG - Inference Result: {'error': 'no available models on image-classification task.'}
+2025-12-08 14:58:00,075 - root - DEBUG - Run task: 1 - object-detection
+2025-12-08 14:58:00,075 - root - DEBUG - Deps: [{"task": {"task": "image-classification", "id": 0, "dep": [-1], "args": {"image": "public/examples/financial_report.jpg"}}, "inference result": {"error": "no available models on image-classification task."}, "choose model result": ""}]
+2025-12-08 14:58:00,076 - root - DEBUG - Detect the image of dependency task (from args): public/examples/financial_report.jpg
+2025-12-08 14:58:00,076 - root - DEBUG - Parsed Task: {'task': 'object-detection', 'id': 1, 'dep': [0], 'args': {'image': 'public/examples/financial_report.jpg'}}
+2025-12-08 14:58:00,077 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:00,079 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:00,080 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:00,081 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:00,083 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:00,084 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:00,084 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:00,085 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:00,087 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/facebook/detr-resnet-50 HTTP/1.1" 200 17
+2025-12-08 14:58:00,088 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:00,089 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:00,091 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:00,093 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:00,093 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/hustvl/yolos-tiny HTTP/1.1" 200 17
+2025-12-08 14:58:00,094 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/table-transformer-structure-recognition HTTP/1.1" 200 17
+2025-12-08 14:58:00,094 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/facebook/detr-resnet-101 HTTP/1.1" 200 16
+2025-12-08 14:58:00,095 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:00,096 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:00,097 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:00,098 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:00,099 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:00,100 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:00,101 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:00,102 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:00,104 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:00,104 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:00,105 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/table-transformer-detection HTTP/1.1" 200 17
+2025-12-08 14:58:00,105 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/owlvit-base-patch32 HTTP/1.1" 200 17
+2025-12-08 14:58:00,106 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/TahaDouaji/detr-doc-table-detection HTTP/1.1" 200 17
+2025-12-08 14:58:00,107 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:00,108 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:00,109 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:00,110 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:00,111 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:00,112 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:00,114 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:00,114 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/hustvl/yolos-small HTTP/1.1" 200 17
+2025-12-08 14:58:00,115 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:00,116 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/owlvit-large-patch14 HTTP/1.1" 200 17
+2025-12-08 14:58:00,116 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/ultralyticsplus/yolov8s HTTP/1.1" 200 17
+2025-12-08 14:58:00,117 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/facebook/detr-resnet-101-dc5 HTTP/1.1" 200 17
+2025-12-08 14:58:00,117 - root - DEBUG - Model: facebook/detr-resnet-50 | Status: False | Source: None
+2025-12-08 14:58:00,118 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/valentinafeve/yolos-fashionpedia HTTP/1.1" 200 17
+2025-12-08 14:58:00,120 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/keremberke/yolov5m-license-plate HTTP/1.1" 200 17
+2025-12-08 14:58:00,121 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/hustvl/yolos-base HTTP/1.1" 200 17
+2025-12-08 14:58:00,121 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/nickmuchi/yolos-small-finetuned-license-plate-detection HTTP/1.1" 200 17
+2025-12-08 14:58:00,122 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/keremberke/yolov5n-blood-cell HTTP/1.1" 200 17
+2025-12-08 14:58:00,123 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/fcakyon/yolov5s-v7.0 HTTP/1.1" 200 17
+2025-12-08 14:58:00,124 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Riser/YOLOP HTTP/1.1" 200 17
+2025-12-08 14:58:00,125 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/SamMorgan/yolo_v4_tflite HTTP/1.1" 200 17
+2025-12-08 14:58:00,126 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/SenseTime/deformable-detr HTTP/1.1" 200 17
+2025-12-08 14:58:00,126 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/mindee/fasterrcnn_mobilenet_v3_large_fpn HTTP/1.1" 200 17
+2025-12-08 14:58:00,127 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/owlvit-base-patch16 HTTP/1.1" 200 17
+2025-12-08 14:58:00,128 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/biglam/detr-resnet-50_fine_tuned_nls_chapbooks HTTP/1.1" 200 17
+2025-12-08 14:58:00,129 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/nielsr/detr-table-detection HTTP/1.1" 200 17
+2025-12-08 14:58:00,130 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/keremberke/yolov5n-license-plate HTTP/1.1" 200 17
+2025-12-08 14:58:00,131 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/keremberke/yolov5s-license-plate HTTP/1.1" 200 17
+2025-12-08 14:58:00,131 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/keremberke/yolov8s-table-extraction HTTP/1.1" 200 17
+2025-12-08 14:58:00,133 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/keremberke/yolov8m-table-extraction HTTP/1.1" 200 17
+2025-12-08 14:58:00,133 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/SalML/DETR-table-structure-recognition HTTP/1.1" 200 17
+2025-12-08 14:58:00,133 - root - DEBUG - Model: hustvl/yolos-tiny | Status: False | Source: None
+2025-12-08 14:58:00,134 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/nickmuchi/yolos-small-rego-plates-detection HTTP/1.1" 200 17
+2025-12-08 14:58:00,141 - root - DEBUG - Model: microsoft/table-transformer-structure-recognition | Status: False | Source: None
+2025-12-08 14:58:00,142 - root - DEBUG - Model: facebook/detr-resnet-101 | Status: True | Source: local
+2025-12-08 14:58:00,142 - root - DEBUG - Model: microsoft/table-transformer-detection | Status: False | Source: None
+2025-12-08 14:58:00,142 - root - DEBUG - Model: google/owlvit-base-patch32 | Status: False | Source: None
+2025-12-08 14:58:00,142 - root - DEBUG - Model: TahaDouaji/detr-doc-table-detection | Status: False | Source: None
+2025-12-08 14:58:00,142 - root - DEBUG - Model: hustvl/yolos-small | Status: False | Source: None
+2025-12-08 14:58:00,142 - root - DEBUG - Model: google/owlvit-large-patch14 | Status: False | Source: None
+2025-12-08 14:58:00,142 - root - DEBUG - Model: ultralyticsplus/yolov8s | Status: False | Source: None
+2025-12-08 14:58:00,142 - root - DEBUG - Model: facebook/detr-resnet-101-dc5 | Status: False | Source: None
+2025-12-08 14:58:00,142 - root - DEBUG - Model: valentinafeve/yolos-fashionpedia | Status: False | Source: None
+2025-12-08 14:58:00,142 - root - DEBUG - Model: keremberke/yolov5m-license-plate | Status: False | Source: None
+2025-12-08 14:58:00,142 - root - DEBUG - Model: hustvl/yolos-base | Status: False | Source: None
+2025-12-08 14:58:00,142 - root - DEBUG - Model: nickmuchi/yolos-small-finetuned-license-plate-detection | Status: False | Source: None
+2025-12-08 14:58:00,142 - root - DEBUG - Model: keremberke/yolov5n-blood-cell | Status: False | Source: None
+2025-12-08 14:58:00,142 - root - DEBUG - Model: fcakyon/yolov5s-v7.0 | Status: False | Source: None
+2025-12-08 14:58:00,142 - root - DEBUG - Model: Riser/YOLOP | Status: False | Source: None
+2025-12-08 14:58:00,142 - root - DEBUG - Model: SamMorgan/yolo_v4_tflite | Status: False | Source: None
+2025-12-08 14:58:00,142 - root - DEBUG - Model: SenseTime/deformable-detr | Status: False | Source: None
+2025-12-08 14:58:00,142 - root - DEBUG - Model: mindee/fasterrcnn_mobilenet_v3_large_fpn | Status: False | Source: None
+2025-12-08 14:58:00,142 - root - DEBUG - Model: google/owlvit-base-patch16 | Status: False | Source: None
+2025-12-08 14:58:00,142 - root - DEBUG - Model: biglam/detr-resnet-50_fine_tuned_nls_chapbooks | Status: False | Source: None
+2025-12-08 14:58:00,142 - root - DEBUG - Model: nielsr/detr-table-detection | Status: False | Source: None
+2025-12-08 14:58:00,143 - root - DEBUG - Model: keremberke/yolov5n-license-plate | Status: False | Source: None
+2025-12-08 14:58:00,143 - root - DEBUG - Model: keremberke/yolov5s-license-plate | Status: False | Source: None
+2025-12-08 14:58:00,143 - root - DEBUG - Model: keremberke/yolov8s-table-extraction | Status: False | Source: None
+2025-12-08 14:58:00,143 - root - DEBUG - Model: keremberke/yolov8m-table-extraction | Status: False | Source: None
+2025-12-08 14:58:00,143 - root - DEBUG - Model: SalML/DETR-table-structure-recognition | Status: False | Source: None
+2025-12-08 14:58:00,143 - root - DEBUG - Model: nickmuchi/yolos-small-rego-plates-detection | Status: False | Source: None
+2025-12-08 14:58:00,143 - root - DEBUG - avaliable models on object-detection: {'local': ['facebook/detr-resnet-101'], 'huggingface': []}
+2025-12-08 14:58:00,143 - root - DEBUG - chosen model: {'id': 'facebook/detr-resnet-101', 'reason': 'Only one model available.'}
+2025-12-08 14:58:00,144 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:00,611 - urllib3.connectionpool - DEBUG - http://localhost:8005 "POST /models/facebook/detr-resnet-101 HTTP/1.1" 200 95
+2025-12-08 14:58:00,634 - root - DEBUG - Inference Result: {'generated image': '/images/d02c.jpg', 'predicted': [{'box': {'xmax': 959, 'xmin': 0, 'ymax': 535, 'ymin': 16}, 'label': 'book', 'score': 0.9660783410072327}]}
+2025-12-08 14:58:01,077 - root - DEBUG - Run task: 2 - image-to-text
+2025-12-08 14:58:01,078 - root - DEBUG - Deps: [{"task": {"task": "object-detection", "id": 1, "dep": [0], "args": {"image": "public/examples/financial_report.jpg"}}, "inference result": {"generated image": "/images/d02c.jpg", "predicted": [{"box": {"xmax": 959, "xmin": 0, "ymax": 535, "ymin": 16}, "label": "book", "score": 0.9660783410072327}]}, "choose model result": {"id": "facebook/detr-resnet-101", "reason": "Only one model available."}}]
+2025-12-08 14:58:01,078 - root - DEBUG - Detect the generated image of dependency task (from results): /images/d02c.jpg
+2025-12-08 14:58:01,078 - root - DEBUG - Parsed Task: {'task': 'image-to-text', 'id': 2, 'dep': [1], 'args': {'image': 'public//images/d02c.jpg'}}
+2025-12-08 14:58:01,080 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:01,081 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:01,083 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:01,084 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:01,084 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:01,085 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:01,086 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:01,087 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:01,088 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:01,090 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Salesforce/blip-image-captioning-large HTTP/1.1" 200 17
+2025-12-08 14:58:01,091 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:01,092 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/nlpconnect/vit-gpt2-image-captioning HTTP/1.1" 200 16
+2025-12-08 14:58:01,094 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:01,094 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/trocr-base-printed HTTP/1.1" 200 17
+2025-12-08 14:58:01,094 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Salesforce/blip-image-captioning-base HTTP/1.1" 200 17
+2025-12-08 14:58:01,095 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/naver-clova-ix/donut-base HTTP/1.1" 200 17
+2025-12-08 14:58:01,095 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/trocr-base-handwritten HTTP/1.1" 200 17
+2025-12-08 14:58:01,096 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/pix2struct-base HTTP/1.1" 200 17
+2025-12-08 14:58:01,097 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:01,097 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Salesforce/blip2-opt-2.7b HTTP/1.1" 200 17
+2025-12-08 14:58:01,099 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Salesforce/blip2-opt-6.7b HTTP/1.1" 200 17
+2025-12-08 14:58:01,100 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:01,103 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:01,104 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:01,104 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/kha-white/manga-ocr-base HTTP/1.1" 200 17
+2025-12-08 14:58:01,105 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:01,107 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:01,107 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Salesforce/blip2-flan-t5-xxl HTTP/1.1" 200 17
+2025-12-08 14:58:01,108 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:01,110 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:01,111 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:01,113 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:01,114 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:01,115 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:01,116 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:01,118 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:01,119 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:01,119 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/ydshieh/vit-gpt2-coco-en HTTP/1.1" 200 17
+2025-12-08 14:58:01,120 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:01,121 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:01,122 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:01,122 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/pix2struct-textcaps-base HTTP/1.1" 200 17
+2025-12-08 14:58:01,123 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:01,124 - root - DEBUG - Model: Salesforce/blip-image-captioning-large | Status: False | Source: None
+2025-12-08 14:58:01,125 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/git-large-coco HTTP/1.1" 200 17
+2025-12-08 14:58:01,126 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/naver-clova-ix/donut-base-finetuned-cord-v2 HTTP/1.1" 200 17
+2025-12-08 14:58:01,127 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/trocr-large-handwritten HTTP/1.1" 200 17
+2025-12-08 14:58:01,128 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Salesforce/blip2-flan-t5-xl HTTP/1.1" 200 17
+2025-12-08 14:58:01,130 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/pix2struct-ocrvqa-large HTTP/1.1" 200 17
+2025-12-08 14:58:01,130 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/pix2struct-ai2d-base HTTP/1.1" 200 17
+2025-12-08 14:58:01,131 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/trocr-small-printed HTTP/1.1" 200 17
+2025-12-08 14:58:01,131 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/pix2struct-docvqa-large HTTP/1.1" 200 17
+2025-12-08 14:58:01,133 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/trocr-large-printed HTTP/1.1" 200 17
+2025-12-08 14:58:01,133 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/keras-io/ocr-for-captcha HTTP/1.1" 200 17
+2025-12-08 14:58:01,134 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/git-large-textcaps HTTP/1.1" 200 17
+2025-12-08 14:58:01,135 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Salesforce/blip2-flan-t5-xl-coco HTTP/1.1" 200 17
+2025-12-08 14:58:01,135 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/dhansmair/flamingo-mini HTTP/1.1" 200 17
+2025-12-08 14:58:01,136 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/tuman/vit-rugpt2-image-captioning HTTP/1.1" 200 17
+2025-12-08 14:58:01,137 - root - DEBUG - Model: nlpconnect/vit-gpt2-image-captioning | Status: True | Source: local
+2025-12-08 14:58:01,137 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/trocr-small-handwritten HTTP/1.1" 200 17
+2025-12-08 14:58:01,138 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/git-base HTTP/1.1" 200 17
+2025-12-08 14:58:01,140 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/pix2struct-textcaps-large HTTP/1.1" 200 17
+2025-12-08 14:58:01,146 - root - DEBUG - Model: microsoft/trocr-base-printed | Status: False | Source: None
+2025-12-08 14:58:01,147 - root - DEBUG - Model: Salesforce/blip-image-captioning-base | Status: False | Source: None
+2025-12-08 14:58:01,147 - root - DEBUG - Model: naver-clova-ix/donut-base | Status: False | Source: None
+2025-12-08 14:58:01,147 - root - DEBUG - Model: microsoft/trocr-base-handwritten | Status: False | Source: None
+2025-12-08 14:58:01,147 - root - DEBUG - Model: google/pix2struct-base | Status: False | Source: None
+2025-12-08 14:58:01,147 - root - DEBUG - Model: Salesforce/blip2-opt-2.7b | Status: False | Source: None
+2025-12-08 14:58:01,147 - root - DEBUG - Model: Salesforce/blip2-opt-6.7b | Status: False | Source: None
+2025-12-08 14:58:01,147 - root - DEBUG - Model: kha-white/manga-ocr-base | Status: False | Source: None
+2025-12-08 14:58:01,148 - root - DEBUG - Model: Salesforce/blip2-flan-t5-xxl | Status: False | Source: None
+2025-12-08 14:58:01,148 - root - DEBUG - Model: ydshieh/vit-gpt2-coco-en | Status: False | Source: None
+2025-12-08 14:58:01,148 - root - DEBUG - Model: google/pix2struct-textcaps-base | Status: False | Source: None
+2025-12-08 14:58:01,148 - root - DEBUG - Model: microsoft/git-large-coco | Status: False | Source: None
+2025-12-08 14:58:01,148 - root - DEBUG - Model: naver-clova-ix/donut-base-finetuned-cord-v2 | Status: False | Source: None
+2025-12-08 14:58:01,148 - root - DEBUG - Model: microsoft/trocr-large-handwritten | Status: False | Source: None
+2025-12-08 14:58:01,148 - root - DEBUG - Model: Salesforce/blip2-flan-t5-xl | Status: False | Source: None
+2025-12-08 14:58:01,148 - root - DEBUG - Model: google/pix2struct-ocrvqa-large | Status: False | Source: None
+2025-12-08 14:58:01,148 - root - DEBUG - Model: google/pix2struct-ai2d-base | Status: False | Source: None
+2025-12-08 14:58:01,148 - root - DEBUG - Model: microsoft/trocr-small-printed | Status: False | Source: None
+2025-12-08 14:58:01,148 - root - DEBUG - Model: google/pix2struct-docvqa-large | Status: False | Source: None
+2025-12-08 14:58:01,148 - root - DEBUG - Model: microsoft/trocr-large-printed | Status: False | Source: None
+2025-12-08 14:58:01,148 - root - DEBUG - Model: keras-io/ocr-for-captcha | Status: False | Source: None
+2025-12-08 14:58:01,148 - root - DEBUG - Model: microsoft/git-large-textcaps | Status: False | Source: None
+2025-12-08 14:58:01,148 - root - DEBUG - Model: Salesforce/blip2-flan-t5-xl-coco | Status: False | Source: None
+2025-12-08 14:58:01,148 - root - DEBUG - Model: dhansmair/flamingo-mini | Status: False | Source: None
+2025-12-08 14:58:01,148 - root - DEBUG - Model: tuman/vit-rugpt2-image-captioning | Status: False | Source: None
+2025-12-08 14:58:01,148 - root - DEBUG - Model: microsoft/trocr-small-handwritten | Status: False | Source: None
+2025-12-08 14:58:01,148 - root - DEBUG - Model: microsoft/git-base | Status: False | Source: None
+2025-12-08 14:58:01,148 - root - DEBUG - Model: google/pix2struct-textcaps-large | Status: False | Source: None
+2025-12-08 14:58:01,148 - root - DEBUG - avaliable models on image-to-text: {'local': ['nlpconnect/vit-gpt2-image-captioning'], 'huggingface': []}
+2025-12-08 14:58:01,148 - root - DEBUG - chosen model: {'id': 'nlpconnect/vit-gpt2-image-captioning', 'reason': 'Only one model available.'}
+2025-12-08 14:58:01,149 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:01,963 - urllib3.connectionpool - DEBUG - http://localhost:8005 "POST /models/nlpconnect/vit-gpt2-image-captioning HTTP/1.1" 200 70
+2025-12-08 14:58:01,964 - root - DEBUG - Inference Result: {'generated text': 'a table with a bunch of different colored paper '}
+2025-12-08 14:58:02,079 - root - DEBUG - Run task: 3 - tabular-classification
+2025-12-08 14:58:02,079 - root - DEBUG - Deps: [{"task": {"task": "image-to-text", "id": 2, "dep": [1], "args": {"image": "public//images/d02c.jpg"}}, "inference result": {"generated text": "a table with a bunch of different colored paper "}, "choose model result": {"id": "nlpconnect/vit-gpt2-image-captioning", "reason": "Only one model available."}}]
+2025-12-08 14:58:02,079 - root - DEBUG - Detect the generated text of dependency task (from results):a table with a bunch of different colored paper 
+2025-12-08 14:58:02,079 - root - DEBUG - Detect the image of dependency task (from args): public//images/d02c.jpg
+2025-12-08 14:58:02,080 - root - DEBUG - Parsed Task: {'task': 'tabular-classification', 'id': 3, 'dep': [2], 'args': {'text': 'a table with a bunch of different colored paper '}}
+2025-12-08 14:58:02,081 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:02,083 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:02,085 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:02,086 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:02,086 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:02,087 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:02,088 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:02,088 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:02,089 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:02,090 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:02,091 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:02,092 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:02,093 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:02,094 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:02,096 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:02,097 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:02,099 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:02,099 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/omarques/autotrain-in-class-test-demo-1659958767 HTTP/1.1" 200 17
+2025-12-08 14:58:02,101 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/julien-c/wine-quality HTTP/1.1" 200 17
+2025-12-08 14:58:02,102 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:02,102 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/templates/tabular-classification HTTP/1.1" 200 17
+2025-12-08 14:58:02,104 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:02,106 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:02,106 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/keras-io/imbalanced_classification HTTP/1.1" 200 17
+2025-12-08 14:58:02,108 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:02,108 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/victor/titanic-survival-with-ml-console HTTP/1.1" 200 17
+2025-12-08 14:58:02,110 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:02,110 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/keras-io/tab_transformer HTTP/1.1" 200 17
+2025-12-08 14:58:02,111 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:02,112 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:02,113 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/abhishek/autotrain-iris-xgboost HTTP/1.1" 200 17
+2025-12-08 14:58:02,113 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/keras-io/TF_Decision_Trees HTTP/1.1" 200 17
+2025-12-08 14:58:02,113 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/keras-io/structured-data-classification-grn-vsn HTTP/1.1" 200 17
+2025-12-08 14:58:02,115 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:02,115 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/halflings/pokemon_is_legendary HTTP/1.1" 200 17
+2025-12-08 14:58:02,115 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Ramos-Ramos/emb-gam-dino HTTP/1.1" 200 17
+2025-12-08 14:58:02,117 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:02,118 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:02,119 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/imodels/figs-compas-recidivism HTTP/1.1" 200 17
+2025-12-08 14:58:02,119 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/freddyaboulton/tabular-playground HTTP/1.1" 200 17
+2025-12-08 14:58:02,120 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:02,121 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:02,122 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:58:02,124 - root - DEBUG - Model: omarques/autotrain-in-class-test-demo-1659958767 | Status: False | Source: None
+2025-12-08 14:58:02,126 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/scikit-learn/tabular-playground HTTP/1.1" 200 17
+2025-12-08 14:58:02,126 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/pachi107/autotrain-in-class-test-1780161764 HTTP/1.1" 200 17
+2025-12-08 14:58:02,127 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/osanseviero/titanic_mlconsole HTTP/1.1" 200 17
+2025-12-08 14:58:02,128 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/osanseviero/wine-quality HTTP/1.1" 200 17
+2025-12-08 14:58:02,128 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/merve/breast_cancernb8gjv4n-diagnosis-classification HTTP/1.1" 200 17
+2025-12-08 14:58:02,129 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/mindwrapped/collaborative-filtering-movielens-copy HTTP/1.1" 200 17
+2025-12-08 14:58:02,130 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/omarques/autotrain-in-class-test-demo-1659958764 HTTP/1.1" 200 17
+2025-12-08 14:58:02,131 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/tejas23/autotrain-amx2-1702259725 HTTP/1.1" 200 17
+2025-12-08 14:58:02,132 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/abhishek/autotrain-iris-logistic-regression HTTP/1.1" 200 17
+2025-12-08 14:58:02,133 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/julien-c/skops-digits HTTP/1.1" 200 17
+2025-12-08 14:58:02,133 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/jwan2021/autotrain-jwan-autotrain1-1768961489 HTTP/1.1" 200 17
+2025-12-08 14:58:02,136 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/kem000123/autotrain-model1-binary-class-1843363194 HTTP/1.1" 200 17
+2025-12-08 14:58:02,137 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/navidfk/autotrain-wine-1986366196 HTTP/1.1" 200 17
+2025-12-08 14:58:02,138 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/abhishek/autotrain-adult-census-xgboost HTTP/1.1" 200 17
+2025-12-08 14:58:02,138 - root - DEBUG - Model: julien-c/wine-quality | Status: False | Source: None
+2025-12-08 14:58:02,139 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Kluuking/autotrain-flight-delay-3621096840 HTTP/1.1" 200 17
+2025-12-08 14:58:02,140 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/datadmg/autotrain-test-news-44534112235 HTTP/1.1" 200 17
+2025-12-08 14:58:02,140 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Alexei1/imdb HTTP/1.1" 200 17
+2025-12-08 14:58:02,146 - root - DEBUG - Model: templates/tabular-classification | Status: False | Source: None
+2025-12-08 14:58:02,148 - root - DEBUG - Model: keras-io/imbalanced_classification | Status: False | Source: None
+2025-12-08 14:58:02,148 - root - DEBUG - Model: victor/titanic-survival-with-ml-console | Status: False | Source: None
+2025-12-08 14:58:02,148 - root - DEBUG - Model: keras-io/tab_transformer | Status: False | Source: None
+2025-12-08 14:58:02,148 - root - DEBUG - Model: abhishek/autotrain-iris-xgboost | Status: False | Source: None
+2025-12-08 14:58:02,148 - root - DEBUG - Model: keras-io/TF_Decision_Trees | Status: False | Source: None
+2025-12-08 14:58:02,148 - root - DEBUG - Model: keras-io/structured-data-classification-grn-vsn | Status: False | Source: None
+2025-12-08 14:58:02,148 - root - DEBUG - Model: halflings/pokemon_is_legendary | Status: False | Source: None
+2025-12-08 14:58:02,148 - root - DEBUG - Model: Ramos-Ramos/emb-gam-dino | Status: False | Source: None
+2025-12-08 14:58:02,148 - root - DEBUG - Model: imodels/figs-compas-recidivism | Status: False | Source: None
+2025-12-08 14:58:02,148 - root - DEBUG - Model: freddyaboulton/tabular-playground | Status: False | Source: None
+2025-12-08 14:58:02,148 - root - DEBUG - Model: scikit-learn/tabular-playground | Status: False | Source: None
+2025-12-08 14:58:02,148 - root - DEBUG - Model: pachi107/autotrain-in-class-test-1780161764 | Status: False | Source: None
+2025-12-08 14:58:02,148 - root - DEBUG - Model: osanseviero/titanic_mlconsole | Status: False | Source: None
+2025-12-08 14:58:02,148 - root - DEBUG - Model: osanseviero/wine-quality | Status: False | Source: None
+2025-12-08 14:58:02,148 - root - DEBUG - Model: merve/breast_cancernb8gjv4n-diagnosis-classification | Status: False | Source: None
+2025-12-08 14:58:02,148 - root - DEBUG - Model: mindwrapped/collaborative-filtering-movielens-copy | Status: False | Source: None
+2025-12-08 14:58:02,148 - root - DEBUG - Model: omarques/autotrain-in-class-test-demo-1659958764 | Status: False | Source: None
+2025-12-08 14:58:02,148 - root - DEBUG - Model: tejas23/autotrain-amx2-1702259725 | Status: False | Source: None
+2025-12-08 14:58:02,148 - root - DEBUG - Model: abhishek/autotrain-iris-logistic-regression | Status: False | Source: None
+2025-12-08 14:58:02,148 - root - DEBUG - Model: julien-c/skops-digits | Status: False | Source: None
+2025-12-08 14:58:02,148 - root - DEBUG - Model: jwan2021/autotrain-jwan-autotrain1-1768961489 | Status: False | Source: None
+2025-12-08 14:58:02,148 - root - DEBUG - Model: kem000123/autotrain-model1-binary-class-1843363194 | Status: False | Source: None
+2025-12-08 14:58:02,148 - root - DEBUG - Model: navidfk/autotrain-wine-1986366196 | Status: False | Source: None
+2025-12-08 14:58:02,148 - root - DEBUG - Model: abhishek/autotrain-adult-census-xgboost | Status: False | Source: None
+2025-12-08 14:58:02,148 - root - DEBUG - Model: Kluuking/autotrain-flight-delay-3621096840 | Status: False | Source: None
+2025-12-08 14:58:02,148 - root - DEBUG - Model: datadmg/autotrain-test-news-44534112235 | Status: False | Source: None
+2025-12-08 14:58:02,148 - root - DEBUG - Model: Alexei1/imdb | Status: False | Source: None
+2025-12-08 14:58:02,149 - root - DEBUG - avaliable models on tabular-classification: {'local': [], 'huggingface': []}
+2025-12-08 14:58:02,149 - root - WARNING - no available models on tabular-classification
+2025-12-08 14:58:02,149 - root - DEBUG -  Failure: {"input": "Detect tables, extract data, and generate summary for 'examples/financial_report.jpg'.", "task": {"task": "tabular-classification", "id": 3, "dep": [2], "args": {"text": "a table with a bunch of different colored paper "}}, "reason": "no available models: tabular-classification", "op": "message"}
+2025-12-08 14:58:02,149 - root - DEBUG - Inference Result: {'error': 'no available models on tabular-classification task.'}
+2025-12-08 14:58:02,580 - root - DEBUG - Run task: 4 - summarization
+2025-12-08 14:58:02,580 - root - DEBUG - Deps: [{"task": {"task": "tabular-classification", "id": 3, "dep": [2], "args": {"text": "a table with a bunch of different colored paper "}}, "inference result": {"error": "no available models on tabular-classification task."}, "choose model result": ""}]
+2025-12-08 14:58:02,580 - root - DEBUG - Detect the text of dependency task (from args): a table with a bunch of different colored paper 
+2025-12-08 14:58:02,581 - root - DEBUG - Parsed Task: {'task': 'summarization', 'id': 4, 'dep': [3], 'args': {'text': 'a table with a bunch of different colored paper '}}
+2025-12-08 14:58:02,582 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): router.huggingface.co:443
+2025-12-08 14:58:04,192 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /nebius/v1/chat/completions HTTP/1.1" 200 None
+2025-12-08 14:58:04,193 - root - DEBUG - Inference Result: {'response': "The provided text is 'a table with a bunch of different colored paper'. This text appears to be a descriptive phrase of a visual scene, possibly from an image or a physical setup, rather than a detailed financial report or table with specific data. Given the lack of specific financial data or detailed information within the text, a direct summarization of financial content is not possible.\n\nHowever, if we interpret the task as summarizing the given text itself, the summary would be that the text describes a visual setup involving a table and colored paper, without providing any specific financial details or data. If the intention was to analyze a financial report or table, the provided text does not contain sufficient information to generate a meaningful summary of financial data."}
+2025-12-08 14:58:04,193 - root - DEBUG - {0: {'task': {'task': 'image-classification', 'id': 0, 'dep': [-1], 'args': {'image': 'public/examples/financial_report.jpg'}}, 'inference result': {'error': 'no available models on image-classification task.'}, 'choose model result': ''}, 1: {'task': {'task': 'object-detection', 'id': 1, 'dep': [0], 'args': {'image': 'public/examples/financial_report.jpg'}}, 'inference result': {'generated image': '/images/d02c.jpg', 'predicted': [{'box': {'xmax': 959, 'xmin': 0, 'ymax': 535, 'ymin': 16}, 'label': 'book', 'score': 0.9660783410072327}]}, 'choose model result': {'id': 'facebook/detr-resnet-101', 'reason': 'Only one model available.'}}, 2: {'task': {'task': 'image-to-text', 'id': 2, 'dep': [1], 'args': {'image': 'public//images/d02c.jpg'}}, 'inference result': {'generated text': 'a table with a bunch of different colored paper '}, 'choose model result': {'id': 'nlpconnect/vit-gpt2-image-captioning', 'reason': 'Only one model available.'}}, 3: {'task': {'task': 'tabular-classification', 'id': 3, 'dep': [2], 'args': {'text': 'a table with a bunch of different colored paper '}}, 'inference result': {'error': 'no available models on tabular-classification task.'}, 'choose model result': ''}, 4: {'task': {'task': 'summarization', 'id': 4, 'dep': [3], 'args': {'text': 'a table with a bunch of different colored paper '}}, 'inference result': {'response': "The provided text is 'a table with a bunch of different colored paper'. This text appears to be a descriptive phrase of a visual scene, possibly from an image or a physical setup, rather than a detailed financial report or table with specific data. Given the lack of specific financial data or detailed information within the text, a direct summarization of financial content is not possible.\n\nHowever, if we interpret the task as summarizing the given text itself, the summary would be that the text describes a visual setup involving a table and colored paper, without providing any specific financial details or data. If the intention was to analyze a financial report or table, the provided text does not contain sufficient information to generate a meaningful summary of financial data."}, 'choose model result': {'id': 'ChatGPT', 'reason': 'ChatGPT performs well on some NLP tasks as well.'}}}
+2025-12-08 14:58:06,241 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /nebius/v1/chat/completions HTTP/1.1" 200 None
+2025-12-08 14:58:06,242 - root - DEBUG - I detected 1 object, a book, in the image 'examples/financial_report.jpg', but unfortunately, I couldn't extract any data or generate a summary of a financial report from it. 
+<EXPLANATION> 
+To fulfill your request, I first performed object detection on the image 'examples/financial_report.jpg' using the 'facebook/detr-resnet-101' model. The model detected 1 object, a book, with a confidence score of 0.9660783410072327, and generated an image '/images/d02c.jpg' highlighting the detected object. Then, I used the 'nlpconnect/vit-gpt2-image-captioning' model to generate text from the image '/images/d02c.jpg', which resulted in the text 'a table with a bunch of different colored paper '. However, this text does not contain any specific financial data or information that could be used to generate a summary of a financial report. 
+Given the lack of relevant information in the text, I couldn't proceed with extracting data or generating a summary. 
+If you have any further requests or questions, feel free to ask! 
+</EXPLANATION>
+2025-12-08 14:58:06,259 - retriever - DEBUG - Loaded 105 entries from data/explanations.jsonl
+2025-12-08 14:58:06,474 - retriever - DEBUG - Best similarity = 0.931 (threshold = 0.95)
+2025-12-08 14:58:06,482 - retriever - INFO - Saved new explanation to data/explanations.jsonl: To fulfill your request, I first performed object detection ...
+2025-12-08 14:58:08,263 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /nebius/v1/chat/completions HTTP/1.1" 200 None
+2025-12-08 14:58:08,264 - judge - INFO - Judge decided: combined (Both explanations are identical and lack specific details about the system's decision-making process, so a combined explanation is not truly merging new information but rather acknowledging that both are the same and could be improved for clarity and user-friendliness.)
+2025-12-08 14:58:08,274 - retriever - DEBUG - Loaded 106 entries from data/explanations.jsonl
+2025-12-08 14:58:08,274 - retriever - WARNING - No existing entry found to update for task_description='Detect tables, extract data, and generate summary for 'examp...'
+2025-12-08 14:58:08,325 - root - DEBUG - Final explanation chosen by Judge: To fulfill your request, I performed object detection on the image 'examples/financial_report.jpg' using the 'facebook/detr-resnet-101' model, which detected a book with a high confidence score. Then, I used the 'nlpconnect/vit-gpt2-image-captioning' model to generate text from the detected object, resulting in a description of a table with colored paper. However, this text lacked specific financial data, preventing further analysis or summary generation. Given the outcome, it seems the initial image processing did not align well with the expected task of detecting and summarizing financial report data, suggesting a potential mismatch in the approach used for this specific task context.
+2025-12-08 14:58:08,325 - root - DEBUG -  Success: {"input": "Detect tables, extract data, and generate summary for 'examples/financial_report.jpg'.", "task": "[{\"task\": \"image-classification\", \"id\": 0, \"dep\": [-1], \"args\": {\"image\": \"examples/financial_report.jpg\"}}, {\"task\": \"object-detection\", \"id\": 1, \"dep\": [0], \"args\": {\"image\": \"<GENERATED>-0\"}}, {\"task\": \"image-to-text\", \"id\": 2, \"dep\": [1], \"args\": {\"image\": \"<GENERATED>-1\"}}, {\"task\": \"tabular-classification\", \"id\": 3, \"dep\": [2], \"args\": {\"text\": \"<GENERATED>-2\"}}, {\"task\": \"summarization\", \"id\": 4, \"dep\": [3], \"args\": {\"text\": \"<GENERATED>-3\"}}]", "results": {"0": {"task": {"task": "image-classification", "id": 0, "dep": [-1], "args": {"image": "public/examples/financial_report.jpg"}}, "inference result": {"error": "no available models on image-classification task."}, "choose model result": ""}, "1": {"task": {"task": "object-detection", "id": 1, "dep": [0], "args": {"image": "public/examples/financial_report.jpg"}}, "inference result": {"generated image": "/images/d02c.jpg", "predicted": [{"box": {"xmax": 959, "xmin": 0, "ymax": 535, "ymin": 16}, "label": "book", "score": 0.9660783410072327}]}, "choose model result": {"id": "facebook/detr-resnet-101", "reason": "Only one model available."}}, "2": {"task": {"task": "image-to-text", "id": 2, "dep": [1], "args": {"image": "public//images/d02c.jpg"}}, "inference result": {"generated text": "a table with a bunch of different colored paper "}, "choose model result": {"id": "nlpconnect/vit-gpt2-image-captioning", "reason": "Only one model available."}}, "3": {"task": {"task": "tabular-classification", "id": 3, "dep": [2], "args": {"text": "a table with a bunch of different colored paper "}}, "inference result": {"error": "no available models on tabular-classification task."}, "choose model result": ""}, "4": {"task": {"task": "summarization", "id": 4, "dep": [3], "args": {"text": "a table with a bunch of different colored paper "}}, "inference result": {"response": "The provided text is 'a table with a bunch of different colored paper'. This text appears to be a descriptive phrase of a visual scene, possibly from an image or a physical setup, rather than a detailed financial report or table with specific data. Given the lack of specific financial data or detailed information within the text, a direct summarization of financial content is not possible.\n\nHowever, if we interpret the task as summarizing the given text itself, the summary would be that the text describes a visual setup involving a table and colored paper, without providing any specific financial details or data. If the intention was to analyze a financial report or table, the provided text does not contain sufficient information to generate a meaningful summary of financial data."}, "choose model result": {"id": "ChatGPT", "reason": "ChatGPT performs well on some NLP tasks as well."}}}, "response": "I detected 1 object, a book, in the image 'examples/financial_report.jpg', but unfortunately, I couldn't extract any data or generate a summary of a financial report from it. \nTo fulfill your request, I performed object detection on the image 'examples/financial_report.jpg' using the 'facebook/detr-resnet-101' model, which detected a book with a high confidence score. Then, I used the 'nlpconnect/vit-gpt2-image-captioning' model to generate text from the detected object, resulting in a description of a table with colored paper. However, this text lacked specific financial data, preventing further analysis or summary generation. Given the outcome, it seems the initial image processing did not align well with the expected task of detecting and summarizing financial report data, suggesting a potential mismatch in the approach used for this specific task context.", "during": 10.21286392211914, "op": "response"}
+2025-12-08 14:58:08,325 - root - INFO - response: I detected 1 object, a book, in the image 'examples/financial_report.jpg', but unfortunately, I couldn't extract any data or generate a summary of a financial report from it. 
+To fulfill your request, I performed object detection on the image 'examples/financial_report.jpg' using the 'facebook/detr-resnet-101' model, which detected a book with a high confidence score. Then, I used the 'nlpconnect/vit-gpt2-image-captioning' model to generate text from the detected object, resulting in a description of a table with colored paper. However, this text lacked specific financial data, preventing further analysis or summary generation. Given the outcome, it seems the initial image processing did not align well with the expected task of detecting and summarizing financial report data, suggesting a potential mismatch in the approach used for this specific task context.
+2025-12-08 14:59:17,539 - root - INFO - [ User ]: detect tables, extract data, and generate summary for 'examples/financial_report.jpg'.
+2025-12-08 14:59:17,540 - root - INFO - ********************************************************************************
+2025-12-08 14:59:17,540 - root - INFO - input: Detect tables, extract data, and generate summary for 'examples/financial_report.jpg'.
+2025-12-08 14:59:17,541 - root - DEBUG - Messages: [{'role': 'system', 'content': '#1 Task Planning Stage: You are a helpful AI assistant. Based on the user\'s request, you will recommend the best model from Hugging Face for the task, and explain why. The special tag "<GENERATED>-dep_id" refer to the one generated text/image/audio in the dependency task (Please consider whether the dependency task generates resources of this type.) and "dep_id" must be in "dep" list.  The "dep" field denotes the ids of the previous prerequisite tasks which generate a new resource that the current task relies on.  The "args" field must in ["text", "image", "audio"], nothing else.  The "task" field must be in ["token-classification", "optical-character-recognition", "named-entity-recognition", "text2text-generation", "summarization", "translation", "question-answering", "conversational", "text-generation", "sentence-similarity", "tabular-classification", "object-detection", "image-classification", "image-to-image", "image-to-text", "text-to-image", "text-to-video", "visual-question-answering", "document-question-answering", "image-segmentation", "depth-estimation", "text-to-speech", "automatic-speech-recognition", "audio-to-audio", "audio-classification", "canny-control", "hed-control", "mlsd-control", "normal-control", "openpose-control", "canny-text-to-image", "depth-text-to-image", "hed-text-to-image", "mlsd-text-to-image", "normal-text-to-image", "seg-text-to-image"] You must respond in JSON format like: [\n  {\n    "task": task, \n    "id": task_id, \n    "dep": dependency_task_id, \n    "args": {\n      "text": text or <GENERATED>-dep_id, \n      "image": image_url or <GENERATED>-dep_id, \n      "audio": audio_url or <GENERATED>-dep_id\n    }\n  }\n] Respond with the JSON entry and ONLY the JSON entry! Here are some few-shot examples:'}, {'role': 'user', 'content': 'Give you some pictures e1.jpg, e2.png, e3.jpg, help me count the number of sheep?'}, {'role': 'assistant', 'content': '[{"task": "image-to-text", "id": 0, "dep": [-1], "args": {"image": "e1.jpg" }}, {"task": "object-detection", "id": 1, "dep": [-1], "args": {"image": "e1.jpg" }}, {"task": "visual-question-answering", "id": 2, "dep": [1], "args": {"image": "<GENERATED>-1", "text": "How many sheep in the picture"}} }}, {"task": "image-to-text", "id": 3, "dep": [-1], "args": {"image": "e2.png" }}, {"task": "object-detection", "id": 4, "dep": [-1], "args": {"image": "e2.png" }}, {"task": "visual-question-answering", "id": 5, "dep": [4], "args": {"image": "<GENERATED>-4", "text": "How many sheep in the picture"}} }}, {"task": "image-to-text", "id": 6, "dep": [-1], "args": {"image": "e3.jpg" }},  {"task": "object-detection", "id": 7, "dep": [-1], "args": {"image": "e3.jpg" }}, {"task": "visual-question-answering", "id": 8, "dep": [7], "args": {"image": "<GENERATED>-7", "text": "How many sheep in the picture"}}]'}, {'role': 'user', 'content': 'Look at /e.jpg, can you tell me how many objects in the picture? Give me a picture and video similar to this one.'}, {'role': 'assistant', 'content': '[{"task": "image-to-text", "id": 0, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "object-detection", "id": 1, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "visual-question-answering", "id": 2, "dep": [1], "args": {"image": "<GENERATED>-1", "text": "how many objects in the picture?" }}, {"task": "text-to-image", "id": 3, "dep": [0], "args": {"text": "<GENERATED-0>" }}, {"task": "image-to-image", "id": 4, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "text-to-video", "id": 5, "dep": [0], "args": {"text": "<GENERATED-0>" }}]'}, {'role': 'user', 'content': 'given a document /images/e.jpeg, answer me what is the student amount? And describe the image with your voice'}, {'role': 'assistant', 'content': '{"task": "document-question-answering", "id": 0, "dep": [-1], "args": {"image": "/images/e.jpeg", "text": "what is the student amount?" }}, {"task": "visual-question-answering", "id": 1, "dep": [-1], "args": {"image": "/images/e.jpeg", "text": "what is the student amount?" }}, {"task": "image-to-text", "id": 2, "dep": [-1], "args": {"image": "/images/e.jpg" }}, {"task": "text-to-speech", "id": 3, "dep": [2], "args": {"text": "<GENERATED>-2" }}]'}, {'role': 'user', 'content': 'Given an image /example.jpg, first generate a hed image, then based on the hed image generate a new image where a girl is reading a book'}, {'role': 'assistant', 'content': '[{"task": "openpose-control", "id": 0, "dep": [-1], "args": {"image": "/example.jpg" }},  {"task": "openpose-text-to-image", "id": 1, "dep": [0], "args": {"text": "a girl is reading a book", "image": "<GENERATED>-0" }}]'}, {'role': 'user', 'content': "please show me a video and an image of (based on the text) 'a boy is running' and dub it"}, {'role': 'assistant', 'content': '[{"task": "text-to-video", "id": 0, "dep": [-1], "args": {"text": "a boy is running" }}, {"task": "text-to-speech", "id": 1, "dep": [-1], "args": {"text": "a boy is running" }}, {"task": "text-to-image", "id": 2, "dep": [-1], "args": {"text": "a boy is running" }}]'}, {'role': 'user', 'content': 'please show me a joke and an image of cat'}, {'role': 'assistant', 'content': '[{"task": "conversational", "id": 0, "dep": [-1], "args": {"text": "please show me a joke of cat" }}, {"task": "text-to-image", "id": 1, "dep": [-1], "args": {"text": "a photo of cat" }}]'}, {'role': 'user', 'content': "The chat log [ [{'role': 'user', 'content': 'Detect tables, extract data, and generate summary for 'examples/financial_report.jpg'.'}, {'role': 'assistant', 'content': 'I detected 1 object, a book, in the image 'examples/financial_report.jpg', but unfortunately, I couldn't extract any data or generate a summary of a financial report from it. \\nTo fulfill your request, I performed object detection on the image 'examples/financial_report.jpg' using the 'facebook/detr-resnet-101' model, which detected a book with a high confidence score. Then, I used the 'nlpconnect/vit-gpt2-image-captioning' model to generate text from the detected object, resulting in a description of a table with colored paper. However, this text lacked specific financial data, preventing further analysis or summary generation. Given the outcome, it seems the initial image processing did not align well with the expected task of detecting and summarizing financial report data, suggesting a potential mismatch in the approach used for this specific task context.'}] ] may contain the resources I mentioned. Now I input { Detect tables, extract data, and generate summary for 'examples/financial_report.jpg'. }. Pay attention to the input and output types of tasks and the dependencies between tasks."}]
+2025-12-08 14:59:18,875 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /nebius/v1/chat/completions HTTP/1.1" 200 None
+2025-12-08 14:59:18,876 - root - DEBUG - [{'task': 'image-to-text', 'id': 0, 'dep': [-1], 'args': {'image': 'examples/financial_report.jpg'}}, {'task': 'tabular-classification', 'id': 1, 'dep': [0], 'args': {'text': '<GENERATED>-0'}}, {'task': 'text2text-generation', 'id': 2, 'dep': [1], 'args': {'text': '<GENERATED>-1'}}, {'task': 'summarization', 'id': 3, 'dep': [2], 'args': {'text': '<GENERATED>-2'}}]
+2025-12-08 14:59:18,876 - root - DEBUG - Run task: 0 - image-to-text
+2025-12-08 14:59:18,876 - root - DEBUG - Deps: []
+2025-12-08 14:59:18,876 - root - DEBUG - Parsed Task: {'task': 'image-to-text', 'id': 0, 'dep': [-1], 'args': {'image': 'public/examples/financial_report.jpg'}}
+2025-12-08 14:59:18,878 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:18,879 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:18,881 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:18,882 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:18,883 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:18,884 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:18,885 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:18,885 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Salesforce/blip-image-captioning-large HTTP/1.1" 200 17
+2025-12-08 14:59:18,886 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:18,887 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:18,888 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:18,889 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/trocr-base-printed HTTP/1.1" 200 17
+2025-12-08 14:59:18,890 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/nlpconnect/vit-gpt2-image-captioning HTTP/1.1" 200 16
+2025-12-08 14:59:18,891 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Salesforce/blip-image-captioning-base HTTP/1.1" 200 17
+2025-12-08 14:59:18,892 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/naver-clova-ix/donut-base HTTP/1.1" 200 17
+2025-12-08 14:59:18,893 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/trocr-base-handwritten HTTP/1.1" 200 17
+2025-12-08 14:59:18,894 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:18,894 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:18,895 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:18,896 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:18,896 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/pix2struct-base HTTP/1.1" 200 17
+2025-12-08 14:59:18,897 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:18,897 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Salesforce/blip2-opt-2.7b HTTP/1.1" 200 17
+2025-12-08 14:59:18,898 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:18,899 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:18,899 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:18,900 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Salesforce/blip2-opt-6.7b HTTP/1.1" 200 17
+2025-12-08 14:59:18,901 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:18,901 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:18,902 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:18,904 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:18,904 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:18,905 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/kha-white/manga-ocr-base HTTP/1.1" 200 17
+2025-12-08 14:59:18,906 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:18,907 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:18,909 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:18,909 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:18,911 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:18,911 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:18,912 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:18,912 - root - DEBUG - Model: Salesforce/blip-image-captioning-large | Status: False | Source: None
+2025-12-08 14:59:18,916 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/ydshieh/vit-gpt2-coco-en HTTP/1.1" 200 17
+2025-12-08 14:59:18,916 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Salesforce/blip2-flan-t5-xxl HTTP/1.1" 200 17
+2025-12-08 14:59:18,917 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/pix2struct-textcaps-base HTTP/1.1" 200 17
+2025-12-08 14:59:18,917 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/git-large-coco HTTP/1.1" 200 17
+2025-12-08 14:59:18,918 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/naver-clova-ix/donut-base-finetuned-cord-v2 HTTP/1.1" 200 17
+2025-12-08 14:59:18,920 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Salesforce/blip2-flan-t5-xl HTTP/1.1" 200 17
+2025-12-08 14:59:18,920 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/trocr-large-handwritten HTTP/1.1" 200 17
+2025-12-08 14:59:18,921 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/pix2struct-ocrvqa-large HTTP/1.1" 200 17
+2025-12-08 14:59:18,922 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/pix2struct-ai2d-base HTTP/1.1" 200 17
+2025-12-08 14:59:18,922 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/pix2struct-docvqa-large HTTP/1.1" 200 17
+2025-12-08 14:59:18,924 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/trocr-large-printed HTTP/1.1" 200 17
+2025-12-08 14:59:18,924 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/trocr-small-printed HTTP/1.1" 200 17
+2025-12-08 14:59:18,925 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/keras-io/ocr-for-captcha HTTP/1.1" 200 17
+2025-12-08 14:59:18,926 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Salesforce/blip2-flan-t5-xl-coco HTTP/1.1" 200 17
+2025-12-08 14:59:18,926 - root - DEBUG - Model: microsoft/trocr-base-printed | Status: False | Source: None
+2025-12-08 14:59:18,928 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/dhansmair/flamingo-mini HTTP/1.1" 200 17
+2025-12-08 14:59:18,929 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/git-large-textcaps HTTP/1.1" 200 17
+2025-12-08 14:59:18,929 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/tuman/vit-rugpt2-image-captioning HTTP/1.1" 200 17
+2025-12-08 14:59:18,930 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/trocr-small-handwritten HTTP/1.1" 200 17
+2025-12-08 14:59:18,931 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/git-base HTTP/1.1" 200 17
+2025-12-08 14:59:18,932 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/pix2struct-textcaps-large HTTP/1.1" 200 17
+2025-12-08 14:59:18,938 - root - DEBUG - Model: nlpconnect/vit-gpt2-image-captioning | Status: True | Source: local
+2025-12-08 14:59:18,942 - root - DEBUG - Model: Salesforce/blip-image-captioning-base | Status: False | Source: None
+2025-12-08 14:59:18,942 - root - DEBUG - Model: naver-clova-ix/donut-base | Status: False | Source: None
+2025-12-08 14:59:18,942 - root - DEBUG - Model: microsoft/trocr-base-handwritten | Status: False | Source: None
+2025-12-08 14:59:18,942 - root - DEBUG - Model: google/pix2struct-base | Status: False | Source: None
+2025-12-08 14:59:18,943 - root - DEBUG - Model: Salesforce/blip2-opt-2.7b | Status: False | Source: None
+2025-12-08 14:59:18,943 - root - DEBUG - Model: Salesforce/blip2-opt-6.7b | Status: False | Source: None
+2025-12-08 14:59:18,943 - root - DEBUG - Model: kha-white/manga-ocr-base | Status: False | Source: None
+2025-12-08 14:59:18,943 - root - DEBUG - Model: ydshieh/vit-gpt2-coco-en | Status: False | Source: None
+2025-12-08 14:59:18,943 - root - DEBUG - Model: Salesforce/blip2-flan-t5-xxl | Status: False | Source: None
+2025-12-08 14:59:18,943 - root - DEBUG - Model: google/pix2struct-textcaps-base | Status: False | Source: None
+2025-12-08 14:59:18,943 - root - DEBUG - Model: microsoft/git-large-coco | Status: False | Source: None
+2025-12-08 14:59:18,943 - root - DEBUG - Model: naver-clova-ix/donut-base-finetuned-cord-v2 | Status: False | Source: None
+2025-12-08 14:59:18,943 - root - DEBUG - Model: Salesforce/blip2-flan-t5-xl | Status: False | Source: None
+2025-12-08 14:59:18,943 - root - DEBUG - Model: microsoft/trocr-large-handwritten | Status: False | Source: None
+2025-12-08 14:59:18,943 - root - DEBUG - Model: google/pix2struct-ocrvqa-large | Status: False | Source: None
+2025-12-08 14:59:18,943 - root - DEBUG - Model: google/pix2struct-ai2d-base | Status: False | Source: None
+2025-12-08 14:59:18,943 - root - DEBUG - Model: google/pix2struct-docvqa-large | Status: False | Source: None
+2025-12-08 14:59:18,943 - root - DEBUG - Model: microsoft/trocr-large-printed | Status: False | Source: None
+2025-12-08 14:59:18,943 - root - DEBUG - Model: microsoft/trocr-small-printed | Status: False | Source: None
+2025-12-08 14:59:18,943 - root - DEBUG - Model: keras-io/ocr-for-captcha | Status: False | Source: None
+2025-12-08 14:59:18,943 - root - DEBUG - Model: Salesforce/blip2-flan-t5-xl-coco | Status: False | Source: None
+2025-12-08 14:59:18,943 - root - DEBUG - Model: dhansmair/flamingo-mini | Status: False | Source: None
+2025-12-08 14:59:18,943 - root - DEBUG - Model: microsoft/git-large-textcaps | Status: False | Source: None
+2025-12-08 14:59:18,943 - root - DEBUG - Model: microsoft/trocr-small-handwritten | Status: False | Source: None
+2025-12-08 14:59:18,943 - root - DEBUG - Model: tuman/vit-rugpt2-image-captioning | Status: False | Source: None
+2025-12-08 14:59:18,943 - root - DEBUG - Model: microsoft/git-base | Status: False | Source: None
+2025-12-08 14:59:18,943 - root - DEBUG - Model: google/pix2struct-textcaps-large | Status: False | Source: None
+2025-12-08 14:59:18,944 - root - DEBUG - avaliable models on image-to-text: {'local': ['nlpconnect/vit-gpt2-image-captioning'], 'huggingface': []}
+2025-12-08 14:59:18,944 - root - DEBUG - chosen model: {'id': 'nlpconnect/vit-gpt2-image-captioning', 'reason': 'Only one model available.'}
+2025-12-08 14:59:18,945 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:20,803 - urllib3.connectionpool - DEBUG - http://localhost:8005 "POST /models/nlpconnect/vit-gpt2-image-captioning HTTP/1.1" 200 92
+2025-12-08 14:59:20,804 - root - DEBUG - Inference Result: {'generated text': 'a series of photographs showing a variety of different types of books '}
+2025-12-08 14:59:20,879 - root - DEBUG - Run task: 1 - tabular-classification
+2025-12-08 14:59:20,879 - root - DEBUG - Deps: [{"task": {"task": "image-to-text", "id": 0, "dep": [-1], "args": {"image": "public/examples/financial_report.jpg"}}, "inference result": {"generated text": "a series of photographs showing a variety of different types of books "}, "choose model result": {"id": "nlpconnect/vit-gpt2-image-captioning", "reason": "Only one model available."}}]
+2025-12-08 14:59:20,879 - root - DEBUG - Detect the generated text of dependency task (from results):a series of photographs showing a variety of different types of books 
+2025-12-08 14:59:20,880 - root - DEBUG - Detect the image of dependency task (from args): public/examples/financial_report.jpg
+2025-12-08 14:59:20,880 - root - DEBUG - Parsed Task: {'task': 'tabular-classification', 'id': 1, 'dep': [0], 'args': {'text': 'a series of photographs showing a variety of different types of books '}}
+2025-12-08 14:59:20,881 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:20,883 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:20,884 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:20,885 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:20,887 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:20,888 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:20,889 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/julien-c/wine-quality HTTP/1.1" 200 17
+2025-12-08 14:59:20,889 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:20,890 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:20,891 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:20,891 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:20,892 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:20,893 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:20,894 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:20,895 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:20,896 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:20,896 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:20,897 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/templates/tabular-classification HTTP/1.1" 200 17
+2025-12-08 14:59:20,898 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:20,899 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:20,899 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/keras-io/TF_Decision_Trees HTTP/1.1" 200 17
+2025-12-08 14:59:20,900 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:20,901 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/keras-io/tab_transformer HTTP/1.1" 200 17
+2025-12-08 14:59:20,901 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:20,902 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:20,903 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/keras-io/imbalanced_classification HTTP/1.1" 200 17
+2025-12-08 14:59:20,904 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:20,904 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/victor/titanic-survival-with-ml-console HTTP/1.1" 200 17
+2025-12-08 14:59:20,904 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/omarques/autotrain-in-class-test-demo-1659958767 HTTP/1.1" 200 17
+2025-12-08 14:59:20,905 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:20,905 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:20,906 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:20,907 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:20,907 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:20,908 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/halflings/pokemon_is_legendary HTTP/1.1" 200 17
+2025-12-08 14:59:20,908 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:20,910 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:20,910 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/abhishek/autotrain-iris-xgboost HTTP/1.1" 200 17
+2025-12-08 14:59:20,910 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-08 14:59:20,911 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/keras-io/structured-data-classification-grn-vsn HTTP/1.1" 200 17
+2025-12-08 14:59:20,911 - root - DEBUG - Model: julien-c/wine-quality | Status: False | Source: None
+2025-12-08 14:59:20,913 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/imodels/figs-compas-recidivism HTTP/1.1" 200 17
+2025-12-08 14:59:20,914 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Ramos-Ramos/emb-gam-dino HTTP/1.1" 200 17
+2025-12-08 14:59:20,915 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/freddyaboulton/tabular-playground HTTP/1.1" 200 17
+2025-12-08 14:59:20,917 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/pachi107/autotrain-in-class-test-1780161764 HTTP/1.1" 200 17
+2025-12-08 14:59:20,917 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/scikit-learn/tabular-playground HTTP/1.1" 200 17
+2025-12-08 14:59:20,919 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/osanseviero/wine-quality HTTP/1.1" 200 17
+2025-12-08 14:59:20,920 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/osanseviero/titanic_mlconsole HTTP/1.1" 200 17
+2025-12-08 14:59:20,921 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/mindwrapped/collaborative-filtering-movielens-copy HTTP/1.1" 200 17
+2025-12-08 14:59:20,922 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/merve/breast_cancernb8gjv4n-diagnosis-classification HTTP/1.1" 200 17
+2025-12-08 14:59:20,923 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/omarques/autotrain-in-class-test-demo-1659958764 HTTP/1.1" 200 17
+2025-12-08 14:59:20,924 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/tejas23/autotrain-amx2-1702259725 HTTP/1.1" 200 17
+2025-12-08 14:59:20,925 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/abhishek/autotrain-iris-logistic-regression HTTP/1.1" 200 17
+2025-12-08 14:59:20,926 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/julien-c/skops-digits HTTP/1.1" 200 17
+2025-12-08 14:59:20,927 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/jwan2021/autotrain-jwan-autotrain1-1768961489 HTTP/1.1" 200 17
+2025-12-08 14:59:20,928 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/kem000123/autotrain-model1-binary-class-1843363194 HTTP/1.1" 200 17
+2025-12-08 14:59:20,929 - root - DEBUG - Model: templates/tabular-classification | Status: False | Source: None
+2025-12-08 14:59:20,929 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/navidfk/autotrain-wine-1986366196 HTTP/1.1" 200 17
+2025-12-08 14:59:20,930 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/abhishek/autotrain-adult-census-xgboost HTTP/1.1" 200 17
+2025-12-08 14:59:20,931 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Kluuking/autotrain-flight-delay-3621096840 HTTP/1.1" 200 17
+2025-12-08 14:59:20,932 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/datadmg/autotrain-test-news-44534112235 HTTP/1.1" 200 17
+2025-12-08 14:59:20,933 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Alexei1/imdb HTTP/1.1" 200 17
+2025-12-08 14:59:20,940 - root - DEBUG - Model: keras-io/TF_Decision_Trees | Status: False | Source: None
+2025-12-08 14:59:20,943 - root - DEBUG - Model: keras-io/tab_transformer | Status: False | Source: None
+2025-12-08 14:59:20,943 - root - DEBUG - Model: keras-io/imbalanced_classification | Status: False | Source: None
+2025-12-08 14:59:20,943 - root - DEBUG - Model: victor/titanic-survival-with-ml-console | Status: False | Source: None
+2025-12-08 14:59:20,943 - root - DEBUG - Model: omarques/autotrain-in-class-test-demo-1659958767 | Status: False | Source: None
+2025-12-08 14:59:20,943 - root - DEBUG - Model: halflings/pokemon_is_legendary | Status: False | Source: None
+2025-12-08 14:59:20,943 - root - DEBUG - Model: abhishek/autotrain-iris-xgboost | Status: False | Source: None
+2025-12-08 14:59:20,943 - root - DEBUG - Model: keras-io/structured-data-classification-grn-vsn | Status: False | Source: None
+2025-12-08 14:59:20,943 - root - DEBUG - Model: imodels/figs-compas-recidivism | Status: False | Source: None
+2025-12-08 14:59:20,943 - root - DEBUG - Model: Ramos-Ramos/emb-gam-dino | Status: False | Source: None
+2025-12-08 14:59:20,943 - root - DEBUG - Model: freddyaboulton/tabular-playground | Status: False | Source: None
+2025-12-08 14:59:20,943 - root - DEBUG - Model: pachi107/autotrain-in-class-test-1780161764 | Status: False | Source: None
+2025-12-08 14:59:20,943 - root - DEBUG - Model: scikit-learn/tabular-playground | Status: False | Source: None
+2025-12-08 14:59:20,943 - root - DEBUG - Model: osanseviero/wine-quality | Status: False | Source: None
+2025-12-08 14:59:20,943 - root - DEBUG - Model: osanseviero/titanic_mlconsole | Status: False | Source: None
+2025-12-08 14:59:20,943 - root - DEBUG - Model: mindwrapped/collaborative-filtering-movielens-copy | Status: False | Source: None
+2025-12-08 14:59:20,943 - root - DEBUG - Model: merve/breast_cancernb8gjv4n-diagnosis-classification | Status: False | Source: None
+2025-12-08 14:59:20,943 - root - DEBUG - Model: omarques/autotrain-in-class-test-demo-1659958764 | Status: False | Source: None
+2025-12-08 14:59:20,943 - root - DEBUG - Model: tejas23/autotrain-amx2-1702259725 | Status: False | Source: None
+2025-12-08 14:59:20,943 - root - DEBUG - Model: abhishek/autotrain-iris-logistic-regression | Status: False | Source: None
+2025-12-08 14:59:20,943 - root - DEBUG - Model: julien-c/skops-digits | Status: False | Source: None
+2025-12-08 14:59:20,943 - root - DEBUG - Model: jwan2021/autotrain-jwan-autotrain1-1768961489 | Status: False | Source: None
+2025-12-08 14:59:20,943 - root - DEBUG - Model: kem000123/autotrain-model1-binary-class-1843363194 | Status: False | Source: None
+2025-12-08 14:59:20,943 - root - DEBUG - Model: navidfk/autotrain-wine-1986366196 | Status: False | Source: None
+2025-12-08 14:59:20,943 - root - DEBUG - Model: abhishek/autotrain-adult-census-xgboost | Status: False | Source: None
+2025-12-08 14:59:20,943 - root - DEBUG - Model: Kluuking/autotrain-flight-delay-3621096840 | Status: False | Source: None
+2025-12-08 14:59:20,943 - root - DEBUG - Model: datadmg/autotrain-test-news-44534112235 | Status: False | Source: None
+2025-12-08 14:59:20,943 - root - DEBUG - Model: Alexei1/imdb | Status: False | Source: None
+2025-12-08 14:59:20,943 - root - DEBUG - avaliable models on tabular-classification: {'local': [], 'huggingface': []}
+2025-12-08 14:59:20,944 - root - WARNING - no available models on tabular-classification
+2025-12-08 14:59:20,944 - root - DEBUG -  Failure: {"input": "Detect tables, extract data, and generate summary for 'examples/financial_report.jpg'.", "task": {"task": "tabular-classification", "id": 1, "dep": [0], "args": {"text": "a series of photographs showing a variety of different types of books "}}, "reason": "no available models: tabular-classification", "op": "message"}
+2025-12-08 14:59:20,944 - root - DEBUG - Inference Result: {'error': 'no available models on tabular-classification task.'}
+2025-12-08 14:59:21,383 - root - DEBUG - Run task: 2 - text2text-generation
+2025-12-08 14:59:21,383 - root - DEBUG - Deps: [{"task": {"task": "tabular-classification", "id": 1, "dep": [0], "args": {"text": "a series of photographs showing a variety of different types of books "}}, "inference result": {"error": "no available models on tabular-classification task."}, "choose model result": ""}]
+2025-12-08 14:59:21,383 - root - DEBUG - Detect the text of dependency task (from args): a series of photographs showing a variety of different types of books 
+2025-12-08 14:59:21,383 - root - DEBUG - Parsed Task: {'task': 'text2text-generation', 'id': 2, 'dep': [1], 'args': {'text': 'a series of photographs showing a variety of different types of books '}}
+2025-12-08 14:59:21,384 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): router.huggingface.co:443
+2025-12-08 14:59:22,948 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /nebius/v1/chat/completions HTTP/1.1" 200 None
+2025-12-08 14:59:22,949 - root - DEBUG - Inference Result: {'response': 'Based on the input text "a series of photographs showing a variety of different types of books", I will generate a text that describes the scene in more detail.\n\nThe photographs showcase an eclectic collection of books, with various genres and styles on display. There are classic novels with worn leather covers, sitting alongside modern bestsellers with vibrant, eye-catching designs. Some books have colorful illustrations, while others feature simple, elegant typography. The images also reveal a range of book formats, from slim paperbacks to hefty hardcovers, and even a few rare, antique volumes with yellowed pages. Overall, the series of photographs celebrates the diversity and richness of the literary world, inviting viewers to explore and discover new titles and authors.'}
+2025-12-08 14:59:23,385 - root - DEBUG - Run task: 3 - summarization
+2025-12-08 14:59:23,386 - root - DEBUG - Deps: [{"task": {"task": "text2text-generation", "id": 2, "dep": [1], "args": {"text": "a series of photographs showing a variety of different types of books "}}, "inference result": {"response": "Based on the input text \"a series of photographs showing a variety of different types of books\", I will generate a text that describes the scene in more detail.\n\nThe photographs showcase an eclectic collection of books, with various genres and styles on display. There are classic novels with worn leather covers, sitting alongside modern bestsellers with vibrant, eye-catching designs. Some books have colorful illustrations, while others feature simple, elegant typography. The images also reveal a range of book formats, from slim paperbacks to hefty hardcovers, and even a few rare, antique volumes with yellowed pages. Overall, the series of photographs celebrates the diversity and richness of the literary world, inviting viewers to explore and discover new titles and authors."}, "choose model result": {"id": "ChatGPT", "reason": "ChatGPT performs well on some NLP tasks as well."}}]
+2025-12-08 14:59:23,386 - root - DEBUG - Detect the text of dependency task (from args): a series of photographs showing a variety of different types of books 
+2025-12-08 14:59:23,386 - root - DEBUG - Parsed Task: {'task': 'summarization', 'id': 3, 'dep': [2], 'args': {'text': 'a series of photographs showing a variety of different types of books '}}
+2025-12-08 14:59:24,182 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /nebius/v1/chat/completions HTTP/1.1" 200 None
+2025-12-08 14:59:24,183 - root - DEBUG - Inference Result: {'response': 'The given text is "a series of photographs showing a variety of different types of books". \n\nHere is a summary: The text describes a collection of photos featuring various book types.'}
+2025-12-08 14:59:24,183 - root - DEBUG - {0: {'task': {'task': 'image-to-text', 'id': 0, 'dep': [-1], 'args': {'image': 'public/examples/financial_report.jpg'}}, 'inference result': {'generated text': 'a series of photographs showing a variety of different types of books '}, 'choose model result': {'id': 'nlpconnect/vit-gpt2-image-captioning', 'reason': 'Only one model available.'}}, 1: {'task': {'task': 'tabular-classification', 'id': 1, 'dep': [0], 'args': {'text': 'a series of photographs showing a variety of different types of books '}}, 'inference result': {'error': 'no available models on tabular-classification task.'}, 'choose model result': ''}, 2: {'task': {'task': 'text2text-generation', 'id': 2, 'dep': [1], 'args': {'text': 'a series of photographs showing a variety of different types of books '}}, 'inference result': {'response': 'Based on the input text "a series of photographs showing a variety of different types of books", I will generate a text that describes the scene in more detail.\n\nThe photographs showcase an eclectic collection of books, with various genres and styles on display. There are classic novels with worn leather covers, sitting alongside modern bestsellers with vibrant, eye-catching designs. Some books have colorful illustrations, while others feature simple, elegant typography. The images also reveal a range of book formats, from slim paperbacks to hefty hardcovers, and even a few rare, antique volumes with yellowed pages. Overall, the series of photographs celebrates the diversity and richness of the literary world, inviting viewers to explore and discover new titles and authors.'}, 'choose model result': {'id': 'ChatGPT', 'reason': 'ChatGPT performs well on some NLP tasks as well.'}}, 3: {'task': {'task': 'summarization', 'id': 3, 'dep': [2], 'args': {'text': 'a series of photographs showing a variety of different types of books '}}, 'inference result': {'response': 'The given text is "a series of photographs showing a variety of different types of books". \n\nHere is a summary: The text describes a collection of photos featuring various book types.'}, 'choose model result': {'id': 'ChatGPT', 'reason': 'ChatGPT performs well on some NLP tasks as well.'}}}

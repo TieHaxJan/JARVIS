@@ -529,10 +529,9 @@
     ]
   },
   {
-    "prompt": "Perform object detection, classification, and captioning on 'examples/office_scene.jpg'.",
+    "prompt": "Perform object detection and captioning on 'examples/office_scene.jpg'.",
     "task_type": "graph",
     "models": [
-      "facebook/detr-resnet-101",
       "facebook/detr-resnet-101",
       "nlpconnect/vit-gpt2-image-captioning"
     ]
@@ -598,7 +597,7 @@
     ]
   },
   {
-    "prompt": "Detect pose and generate a new image based on text 'a reading girl'.",
+    "prompt": "Detect pose in 'examples/runner_pose.jpg' and generate a new image based on text 'a reading girl'.",
     "task_type": "graph",
     "models": [
       "lllyasviel/sd-controlnet-openpose",

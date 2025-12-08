@@ -10,6 +10,7 @@ from diffusers.utils import export_to_video
 from transformers import SpeechT5Processor, SpeechT5ForTextToSpeech, SpeechT5HifiGan, SpeechT5ForSpeechToSpeech
 from transformers import BlipProcessor, BlipForConditionalGeneration
 from transformers import TrOCRProcessor, VisionEncoderDecoderModel, ViTImageProcessor, AutoTokenizer
+from transformers import ViltProcessor
 from datasets import load_dataset, load_from_disk
 from PIL import Image
 import flask
@@ -376,8 +377,14 @@ def load_pipes(local_deployment):
             },
             # Visual QA
             "dandelin/vilt-b32-finetuned-vqa": {
-                "model": pipeline(task="visual-question-answering",
-                                  model=f"{local_fold}/dandelin/vilt-b32-finetuned-vqa"),
+                "model": pipeline(
+                    task="visual-question-answering",
+                    model=f"{local_fold}/dandelin/vilt-b32-finetuned-vqa",
+                    device=device
+                ),
+                "processor": ViltProcessor.from_pretrained(
+                    f"{local_fold}/dandelin/vilt-b32-finetuned-vqa"
+                ),
                 "device": device
             },
             # Image segmentation
@@ -528,7 +535,7 @@ def status(model_id):
         print(f"[ check {model_id} ] success")
         return jsonify({"loaded": True})
     else:
-        print(f"[ check {model_id} ] failed")
+        #print(f"[ check {model_id} ] failed")
         return jsonify({"loaded": False})
 
 @app.route('/models/<path:model_id>', methods=['POST'])
@@ -541,6 +548,10 @@ def models(model_id):
         Ensures that the given pipeline (or model) and its submodules are moved
         to the correct torch.device, fixing mismatches between CPU and GPU tensors.
         """
+        # Normalize device_str → string
+        if isinstance(device_str, torch.device):
+            device_str = str(device_str)
+    
         dev = torch.device(device_str if "cuda" in device_str else "cpu")
 
         try:
@@ -693,32 +704,42 @@ def models(model_id):
             img_url = request.get_json()["img_url"]
             result = pipe(img_url)
 
-        # -------------------- VQA --------------------
+        # -------------------- VQA (ViLT) --------------------
         if model_id == "dandelin/vilt-b32-finetuned-vqa":
+            pipe = pipes[model_id]["model"]
+            processor = pipes[model_id]["processor"]
+            device = torch.device(pipes[model_id]["device"])
+
             question = request.get_json()["text"]
             img_url = request.get_json()["img_url"]
-        
-            device = pipes[model_id]["device"]
-            device = torch.device(device)
-        
-            # Load & preprocess image
+
+            # Load image
             image = load_image(img_url).convert("RGB")
-            encoding = pipe.processor(images=image, text=question, return_tensors="pt")
-        
-            # >>> MOVE ALL INPUT TENSORS TO THE SAME DEVICE <<<
+
+            # Preprocess using the processor (tokenizer + feature extractor)
+            encoding = processor(
+                text=question,
+                images=image,
+                return_tensors="pt",
+                padding="max_length",
+                truncation=True
+            )
+
+            # Move to correct device
             encoding = {k: v.to(device) for k, v in encoding.items()}
-        
-            # >>> Ensure model on same device <<<
+
+            # Ensure model on same device
             ensure_pipeline_on_device(pipe, device)
-        
+
+            # Run inference
             with torch.no_grad():
                 outputs = pipe.model(**encoding)
-        
+
             logits = outputs.logits
             answer_id = logits.argmax(-1).item()
-            answer_string = pipe.model.config.id2label[answer_id]
-        
-            result = {"answer": answer_string}
+            answer = pipe.model.config.id2label[answer_id]
+
+            result = {"answer": answer}
 
 
         # -------------------- Document QA --------------------
