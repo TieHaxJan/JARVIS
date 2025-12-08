@@ -1,0 +1,254 @@
+2025-12-04 19:58:38,488 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda:0
+2025-12-04 19:58:38,489 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-12-04 19:58:38,490 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-12-04 19:58:38,635 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-12-04 19:58:38,640 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-12-04 19:58:38,745 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-12-04 19:58:38,751 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-12-04 19:58:38,858 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-12-04 19:58:38,863 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-12-04 19:58:39,036 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-12-04 19:58:39,041 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+2025-12-04 19:58:39,149 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-12-04 19:58:39,154 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-12-04 19:58:39,261 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-12-04 19:58:39,266 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+2025-12-04 19:58:39,377 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-12-04 19:58:39,486 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-12-04 19:58:39,491 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+2025-12-04 19:58:39,692 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-12-04 19:58:39,697 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+2025-12-04 19:58:39,807 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-12-04 19:58:39,958 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-12-04 19:58:39,963 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-12-04 19:58:40,073 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6946
+2025-12-04 19:58:40,280 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:40,298 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /running HTTP/1.1" 200 17
+2025-12-04 19:58:40,313 - root - DEBUG - text-classification: 30 models
+2025-12-04 19:58:40,313 - root - DEBUG - token-classification: 30 models
+2025-12-04 19:58:40,313 - root - DEBUG - text2text-generation: 30 models
+2025-12-04 19:58:40,313 - root - DEBUG - summarization: 30 models
+2025-12-04 19:58:40,313 - root - DEBUG - translation: 30 models
+2025-12-04 19:58:40,313 - root - DEBUG - question-answering: 30 models
+2025-12-04 19:58:40,313 - root - DEBUG - conversational: 30 models
+2025-12-04 19:58:40,313 - root - DEBUG - text-generation: 30 models
+2025-12-04 19:58:40,313 - root - DEBUG - sentence-similarity: 30 models
+2025-12-04 19:58:40,313 - root - DEBUG - tabular-classification: 30 models
+2025-12-04 19:58:40,313 - root - DEBUG - object-detection: 30 models
+2025-12-04 19:58:40,313 - root - DEBUG - image-classification: 30 models
+2025-12-04 19:58:40,313 - root - DEBUG - image-to-text: 30 models
+2025-12-04 19:58:40,313 - root - DEBUG - text-to-image: 31 models
+2025-12-04 19:58:40,313 - root - DEBUG - image-to-image: 30 models
+2025-12-04 19:58:40,313 - root - DEBUG - visual-question-answering: 13 models
+2025-12-04 19:58:40,313 - root - DEBUG - document-question-answering: 22 models
+2025-12-04 19:58:40,313 - root - DEBUG - image-segmentation: 30 models
+2025-12-04 19:58:40,313 - root - DEBUG - depth-estimation: 30 models
+2025-12-04 19:58:40,313 - root - DEBUG - text-to-video: 8 models
+2025-12-04 19:58:40,313 - root - DEBUG - text-to-speech: 30 models
+2025-12-04 19:58:40,313 - root - DEBUG - automatic-speech-recognition: 30 models
+2025-12-04 19:58:40,313 - root - DEBUG - audio-to-audio: 30 models
+2025-12-04 19:58:40,313 - root - DEBUG - audio-classification: 30 models
+2025-12-04 19:58:40,313 - root - DEBUG - named-entity-recognition: 1 models
+2025-12-04 19:58:40,313 - root - INFO - Welcome to Jarvis! A collaborative system that consists of an LLM as the controller and numerous expert models as collaborative executors. Jarvis can plan tasks, schedule Hugging Face models, generate friendly responses based on your requests, and help you with many things. Please enter your request (`exit` to exit).
+2025-12-04 19:58:42,359 - root - INFO - [ User ]: extract total amount from 'examples/invoice_sample.jpg'
+2025-12-04 19:58:42,359 - root - INFO - ********************************************************************************
+2025-12-04 19:58:42,359 - root - INFO - input: Extract total amount from 'examples/invoice_sample.jpg'
+2025-12-04 19:58:42,362 - root - DEBUG - Messages: [{'role': 'system', 'content': '#1 Task Planning Stage: You are a helpful AI assistant. Based on the user\'s request, you will recommend the best model from Hugging Face for the task, and explain why. The special tag "<GENERATED>-dep_id" refer to the one generated text/image/audio in the dependency task (Please consider whether the dependency task generates resources of this type.) and "dep_id" must be in "dep" list.  The "dep" field denotes the ids of the previous prerequisite tasks which generate a new resource that the current task relies on.  The "args" field must in ["text", "image", "audio"], nothing else.  The "task" field must be in ["token-classification", "optical-character-recognition", "named-entity-recognition", "text2text-generation", "summarization", "translation", "question-answering", "conversational", "text-generation", "sentence-similarity", "tabular-classification", "object-detection", "image-classification", "image-to-image", "image-to-text", "text-to-image", "text-to-video", "visual-question-answering", "document-question-answering", "image-segmentation", "depth-estimation", "text-to-speech", "automatic-speech-recognition", "audio-to-audio", "audio-classification", "canny-control", "hed-control", "mlsd-control", "normal-control", "openpose-control", "canny-text-to-image", "depth-text-to-image", "hed-text-to-image", "mlsd-text-to-image", "normal-text-to-image", "seg-text-to-image"] You must respond in JSON format like: [\n  {\n    "task": task, \n    "id": task_id, \n    "dep": dependency_task_id, \n    "args": {\n      "text": text or <GENERATED>-dep_id, \n      "image": image_url or <GENERATED>-dep_id, \n      "audio": audio_url or <GENERATED>-dep_id\n    }\n  }\n] Respond with the JSON entry and ONLY the JSON entry! Here are some few-shot examples:'}, {'role': 'user', 'content': 'Give you some pictures e1.jpg, e2.png, e3.jpg, help me count the number of sheep?'}, {'role': 'assistant', 'content': '[{"task": "image-to-text", "id": 0, "dep": [-1], "args": {"image": "e1.jpg" }}, {"task": "object-detection", "id": 1, "dep": [-1], "args": {"image": "e1.jpg" }}, {"task": "visual-question-answering", "id": 2, "dep": [1], "args": {"image": "<GENERATED>-1", "text": "How many sheep in the picture"}} }}, {"task": "image-to-text", "id": 3, "dep": [-1], "args": {"image": "e2.png" }}, {"task": "object-detection", "id": 4, "dep": [-1], "args": {"image": "e2.png" }}, {"task": "visual-question-answering", "id": 5, "dep": [4], "args": {"image": "<GENERATED>-4", "text": "How many sheep in the picture"}} }}, {"task": "image-to-text", "id": 6, "dep": [-1], "args": {"image": "e3.jpg" }},  {"task": "object-detection", "id": 7, "dep": [-1], "args": {"image": "e3.jpg" }}, {"task": "visual-question-answering", "id": 8, "dep": [7], "args": {"image": "<GENERATED>-7", "text": "How many sheep in the picture"}}]'}, {'role': 'user', 'content': 'Look at /e.jpg, can you tell me how many objects in the picture? Give me a picture and video similar to this one.'}, {'role': 'assistant', 'content': '[{"task": "image-to-text", "id": 0, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "object-detection", "id": 1, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "visual-question-answering", "id": 2, "dep": [1], "args": {"image": "<GENERATED>-1", "text": "how many objects in the picture?" }}, {"task": "text-to-image", "id": 3, "dep": [0], "args": {"text": "<GENERATED-0>" }}, {"task": "image-to-image", "id": 4, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "text-to-video", "id": 5, "dep": [0], "args": {"text": "<GENERATED-0>" }}]'}, {'role': 'user', 'content': 'given a document /images/e.jpeg, answer me what is the student amount? And describe the image with your voice'}, {'role': 'assistant', 'content': '{"task": "document-question-answering", "id": 0, "dep": [-1], "args": {"image": "/images/e.jpeg", "text": "what is the student amount?" }}, {"task": "visual-question-answering", "id": 1, "dep": [-1], "args": {"image": "/images/e.jpeg", "text": "what is the student amount?" }}, {"task": "image-to-text", "id": 2, "dep": [-1], "args": {"image": "/images/e.jpg" }}, {"task": "text-to-speech", "id": 3, "dep": [2], "args": {"text": "<GENERATED>-2" }}]'}, {'role': 'user', 'content': 'Given an image /example.jpg, first generate a hed image, then based on the hed image generate a new image where a girl is reading a book'}, {'role': 'assistant', 'content': '[{"task": "openpose-control", "id": 0, "dep": [-1], "args": {"image": "/example.jpg" }},  {"task": "openpose-text-to-image", "id": 1, "dep": [0], "args": {"text": "a girl is reading a book", "image": "<GENERATED>-0" }}]'}, {'role': 'user', 'content': "please show me a video and an image of (based on the text) 'a boy is running' and dub it"}, {'role': 'assistant', 'content': '[{"task": "text-to-video", "id": 0, "dep": [-1], "args": {"text": "a boy is running" }}, {"task": "text-to-speech", "id": 1, "dep": [-1], "args": {"text": "a boy is running" }}, {"task": "text-to-image", "id": 2, "dep": [-1], "args": {"text": "a boy is running" }}]'}, {'role': 'user', 'content': 'please show me a joke and an image of cat'}, {'role': 'assistant', 'content': '[{"task": "conversational", "id": 0, "dep": [-1], "args": {"text": "please show me a joke of cat" }}, {"task": "text-to-image", "id": 1, "dep": [-1], "args": {"text": "a photo of cat" }}]'}, {'role': 'user', 'content': "The chat log [ [] ] may contain the resources I mentioned. Now I input { Extract total amount from 'examples/invoice_sample.jpg' }. Pay attention to the input and output types of tasks and the dependencies between tasks."}]
+2025-12-04 19:58:42,473 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/meta-llama/Llama-3.3-70B-Instruct?expand=inferenceProviderMapping HTTP/1.1" 200 1439
+2025-12-04 19:58:42,476 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): router.huggingface.co:443
+2025-12-04 19:58:43,323 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /nebius/v1/chat/completions HTTP/1.1" 200 None
+2025-12-04 19:58:43,325 - root - DEBUG - [{'task': 'image-to-text', 'id': 0, 'dep': [-1], 'args': {'image': 'examples/invoice_sample.jpg'}}, {'task': 'document-question-answering', 'id': 1, 'dep': [0], 'args': {'text': '<GENERATED>-0', 'question': 'What is the total amount?'}}]
+2025-12-04 19:58:43,326 - root - DEBUG - Run task: 0 - image-to-text
+2025-12-04 19:58:43,326 - root - DEBUG - Deps: []
+2025-12-04 19:58:43,326 - root - DEBUG - Parsed Task: {'task': 'image-to-text', 'id': 0, 'dep': [-1], 'args': {'image': 'public/examples/invoice_sample.jpg'}}
+2025-12-04 19:58:43,328 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:43,329 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:43,331 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:43,331 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:43,332 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:43,334 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:43,336 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:43,337 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/trocr-base-printed HTTP/1.1" 200 17
+2025-12-04 19:58:43,338 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:43,339 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Salesforce/blip-image-captioning-large HTTP/1.1" 200 17
+2025-12-04 19:58:43,339 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:43,340 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/nlpconnect/vit-gpt2-image-captioning HTTP/1.1" 200 16
+2025-12-04 19:58:43,341 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:43,342 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:43,343 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/naver-clova-ix/donut-base HTTP/1.1" 200 17
+2025-12-04 19:58:43,344 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Salesforce/blip-image-captioning-base HTTP/1.1" 200 17
+2025-12-04 19:58:43,345 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:43,345 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Salesforce/blip2-opt-2.7b HTTP/1.1" 200 17
+2025-12-04 19:58:43,346 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:43,347 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:43,347 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:43,348 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/trocr-base-handwritten HTTP/1.1" 200 17
+2025-12-04 19:58:43,349 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:43,349 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:43,350 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:43,351 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:43,352 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:43,352 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/pix2struct-base HTTP/1.1" 200 17
+2025-12-04 19:58:43,353 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Salesforce/blip2-opt-6.7b HTTP/1.1" 200 17
+2025-12-04 19:58:43,354 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:43,354 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:43,355 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:43,356 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:43,357 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/kha-white/manga-ocr-base HTTP/1.1" 200 17
+2025-12-04 19:58:43,358 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:43,359 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:43,359 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Salesforce/blip2-flan-t5-xxl HTTP/1.1" 200 17
+2025-12-04 19:58:43,360 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:43,361 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:43,361 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:43,362 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:43,362 - root - DEBUG - Model: microsoft/trocr-base-printed | Status: False | Source: None
+2025-12-04 19:58:43,365 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/pix2struct-textcaps-base HTTP/1.1" 200 17
+2025-12-04 19:58:43,365 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/ydshieh/vit-gpt2-coco-en HTTP/1.1" 200 17
+2025-12-04 19:58:43,366 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/naver-clova-ix/donut-base-finetuned-cord-v2 HTTP/1.1" 200 17
+2025-12-04 19:58:43,366 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/git-large-coco HTTP/1.1" 200 17
+2025-12-04 19:58:43,368 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Salesforce/blip2-flan-t5-xl HTTP/1.1" 200 17
+2025-12-04 19:58:43,368 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/trocr-large-handwritten HTTP/1.1" 200 17
+2025-12-04 19:58:43,369 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/pix2struct-ai2d-base HTTP/1.1" 200 17
+2025-12-04 19:58:43,370 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/pix2struct-ocrvqa-large HTTP/1.1" 200 17
+2025-12-04 19:58:43,372 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/pix2struct-docvqa-large HTTP/1.1" 200 17
+2025-12-04 19:58:43,372 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/trocr-large-printed HTTP/1.1" 200 17
+2025-12-04 19:58:43,373 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/trocr-small-printed HTTP/1.1" 200 17
+2025-12-04 19:58:43,373 - root - DEBUG - Model: Salesforce/blip-image-captioning-large | Status: False | Source: None
+2025-12-04 19:58:43,374 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/git-large-textcaps HTTP/1.1" 200 17
+2025-12-04 19:58:43,375 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/keras-io/ocr-for-captcha HTTP/1.1" 200 17
+2025-12-04 19:58:43,376 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Salesforce/blip2-flan-t5-xl-coco HTTP/1.1" 200 17
+2025-12-04 19:58:43,377 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/dhansmair/flamingo-mini HTTP/1.1" 200 17
+2025-12-04 19:58:43,378 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/git-base HTTP/1.1" 200 17
+2025-12-04 19:58:43,379 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/tuman/vit-rugpt2-image-captioning HTTP/1.1" 200 17
+2025-12-04 19:58:43,380 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/trocr-small-handwritten HTTP/1.1" 200 17
+2025-12-04 19:58:43,381 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/pix2struct-textcaps-large HTTP/1.1" 200 17
+2025-12-04 19:58:43,382 - root - DEBUG - Model: nlpconnect/vit-gpt2-image-captioning | Status: True | Source: local
+2025-12-04 19:58:43,387 - root - DEBUG - Model: naver-clova-ix/donut-base | Status: False | Source: None
+2025-12-04 19:58:43,387 - root - DEBUG - Model: Salesforce/blip-image-captioning-base | Status: False | Source: None
+2025-12-04 19:58:43,387 - root - DEBUG - Model: Salesforce/blip2-opt-2.7b | Status: False | Source: None
+2025-12-04 19:58:43,387 - root - DEBUG - Model: microsoft/trocr-base-handwritten | Status: False | Source: None
+2025-12-04 19:58:43,387 - root - DEBUG - Model: google/pix2struct-base | Status: False | Source: None
+2025-12-04 19:58:43,387 - root - DEBUG - Model: Salesforce/blip2-opt-6.7b | Status: False | Source: None
+2025-12-04 19:58:43,387 - root - DEBUG - Model: kha-white/manga-ocr-base | Status: False | Source: None
+2025-12-04 19:58:43,387 - root - DEBUG - Model: Salesforce/blip2-flan-t5-xxl | Status: False | Source: None
+2025-12-04 19:58:43,387 - root - DEBUG - Model: google/pix2struct-textcaps-base | Status: False | Source: None
+2025-12-04 19:58:43,387 - root - DEBUG - Model: ydshieh/vit-gpt2-coco-en | Status: False | Source: None
+2025-12-04 19:58:43,387 - root - DEBUG - Model: naver-clova-ix/donut-base-finetuned-cord-v2 | Status: False | Source: None
+2025-12-04 19:58:43,387 - root - DEBUG - Model: microsoft/git-large-coco | Status: False | Source: None
+2025-12-04 19:58:43,387 - root - DEBUG - Model: Salesforce/blip2-flan-t5-xl | Status: False | Source: None
+2025-12-04 19:58:43,387 - root - DEBUG - Model: microsoft/trocr-large-handwritten | Status: False | Source: None
+2025-12-04 19:58:43,387 - root - DEBUG - Model: google/pix2struct-ai2d-base | Status: False | Source: None
+2025-12-04 19:58:43,387 - root - DEBUG - Model: google/pix2struct-ocrvqa-large | Status: False | Source: None
+2025-12-04 19:58:43,387 - root - DEBUG - Model: google/pix2struct-docvqa-large | Status: False | Source: None
+2025-12-04 19:58:43,387 - root - DEBUG - Model: microsoft/trocr-large-printed | Status: False | Source: None
+2025-12-04 19:58:43,387 - root - DEBUG - Model: microsoft/trocr-small-printed | Status: False | Source: None
+2025-12-04 19:58:43,387 - root - DEBUG - Model: microsoft/git-large-textcaps | Status: False | Source: None
+2025-12-04 19:58:43,387 - root - DEBUG - Model: keras-io/ocr-for-captcha | Status: False | Source: None
+2025-12-04 19:58:43,387 - root - DEBUG - Model: Salesforce/blip2-flan-t5-xl-coco | Status: False | Source: None
+2025-12-04 19:58:43,387 - root - DEBUG - Model: dhansmair/flamingo-mini | Status: False | Source: None
+2025-12-04 19:58:43,387 - root - DEBUG - Model: microsoft/git-base | Status: False | Source: None
+2025-12-04 19:58:43,387 - root - DEBUG - Model: tuman/vit-rugpt2-image-captioning | Status: False | Source: None
+2025-12-04 19:58:43,387 - root - DEBUG - Model: microsoft/trocr-small-handwritten | Status: False | Source: None
+2025-12-04 19:58:43,388 - root - DEBUG - Model: google/pix2struct-textcaps-large | Status: False | Source: None
+2025-12-04 19:58:43,388 - root - DEBUG - avaliable models on image-to-text: {'local': ['nlpconnect/vit-gpt2-image-captioning'], 'huggingface': []}
+2025-12-04 19:58:43,388 - root - DEBUG - chosen model: {'id': 'nlpconnect/vit-gpt2-image-captioning', 'reason': 'Only one model available.'}
+2025-12-04 19:58:43,389 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:44,762 - urllib3.connectionpool - DEBUG - http://localhost:8005 "POST /models/nlpconnect/vit-gpt2-image-captioning HTTP/1.1" 200 70
+2025-12-04 19:58:44,763 - root - DEBUG - Inference Result: {'generated text': 'a large screen tv with a bunch of numbers on it '}
+2025-12-04 19:58:44,828 - root - DEBUG - Run task: 1 - document-question-answering
+2025-12-04 19:58:44,829 - root - DEBUG - Deps: [{"task": {"task": "image-to-text", "id": 0, "dep": [-1], "args": {"image": "public/examples/invoice_sample.jpg"}}, "inference result": {"generated text": "a large screen tv with a bunch of numbers on it "}, "choose model result": {"id": "nlpconnect/vit-gpt2-image-captioning", "reason": "Only one model available."}}]
+2025-12-04 19:58:44,829 - root - DEBUG - Detect the generated text of dependency task (from results):a large screen tv with a bunch of numbers on it 
+2025-12-04 19:58:44,829 - root - DEBUG - Detect the image of dependency task (from args): public/examples/invoice_sample.jpg
+2025-12-04 19:58:44,829 - root - DEBUG - Parsed Task: {'task': 'document-question-answering', 'id': 1, 'dep': [0], 'args': {'text': 'a large screen tv with a bunch of numbers on it ', 'question': 'What is the total amount?'}}
+2025-12-04 19:58:44,830 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:44,832 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:44,833 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:44,835 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:44,836 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:44,838 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:44,839 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:44,840 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/impira/layoutlm-invoices HTTP/1.1" 200 17
+2025-12-04 19:58:44,841 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/impira/layoutlm-document-qa HTTP/1.1" 200 16
+2025-12-04 19:58:44,841 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:44,842 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:44,843 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:44,843 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/faisalraza/layoutlm-invoices HTTP/1.1" 200 17
+2025-12-04 19:58:44,844 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:44,845 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:44,846 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:44,847 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:44,847 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/tiennvcs/layoutlmv2-base-uncased-finetuned-docvqa HTTP/1.1" 200 17
+2025-12-04 19:58:44,848 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:44,849 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:44,850 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/cloudqi/CQI_Visual_Question_Awnser_PT_v0 HTTP/1.1" 200 17
+2025-12-04 19:58:44,851 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:44,852 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:44,853 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:44,853 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/DataIntelligenceTeam/eurocorpV4 HTTP/1.1" 200 17
+2025-12-04 19:58:44,854 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:44,854 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:44,855 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:58:44,855 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/naver-clova-ix/donut-base-finetuned-docvqa HTTP/1.1" 200 17
+2025-12-04 19:58:44,856 - root - DEBUG - Model: impira/layoutlm-invoices | Status: False | Source: None
+2025-12-04 19:58:44,857 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/MariaK/layoutlmv2-base-uncased_finetuned_docvqa_v2 HTTP/1.1" 200 17
+2025-12-04 19:58:44,859 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/jinhybr/OCR-DocVQA-Donut HTTP/1.1" 200 17
+2025-12-04 19:58:44,859 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/xhyi/layoutlmv3_docvqa_t11c5000 HTTP/1.1" 200 17
+2025-12-04 19:58:44,860 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/tiennvcs/layoutlmv2-large-uncased-finetuned-infovqa HTTP/1.1" 200 17
+2025-12-04 19:58:44,861 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/pardeepSF/layoutlm-vqa HTTP/1.1" 200 17
+2025-12-04 19:58:44,862 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/rubentito/layoutlmv3-base-mpdocvqa HTTP/1.1" 200 17
+2025-12-04 19:58:44,863 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/davanstrien/testwebhook HTTP/1.1" 200 17
+2025-12-04 19:58:44,864 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/frizwankhan/entity-linking-model-final HTTP/1.1" 200 17
+2025-12-04 19:58:44,865 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/tiennvcs/layoutlmv2-base-uncased-finetuned-vi-infovqa HTTP/1.1" 200 17
+2025-12-04 19:58:44,866 - root - DEBUG - Model: impira/layoutlm-document-qa | Status: True | Source: local
+2025-12-04 19:58:44,866 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/tiennvcs/layoutlmv2-base-uncased-finetuned-infovqa HTTP/1.1" 200 17
+2025-12-04 19:58:44,866 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/hf-tiny-model-private/tiny-random-LayoutLMForQuestionAnswering HTTP/1.1" 200 17
+2025-12-04 19:58:44,868 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/hf-tiny-model-private/tiny-random-LayoutLMv3ForQuestionAnswering HTTP/1.1" 200 17
+2025-12-04 19:58:44,870 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/mishig/temp-model HTTP/1.1" 200 17
+2025-12-04 19:58:44,870 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/tiennvcs/layoutlmv2-large-uncased-finetuned-vi-infovqa HTTP/1.1" 200 17
+2025-12-04 19:58:44,872 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/L-oenai/LayoutLMX_pt_question_answer_ocrazure_correct_V15_30_03_2023 HTTP/1.1" 200 17
+2025-12-04 19:58:44,872 - root - DEBUG - Model: faisalraza/layoutlm-invoices | Status: False | Source: None
+2025-12-04 19:58:44,875 - root - DEBUG - Model: tiennvcs/layoutlmv2-base-uncased-finetuned-docvqa | Status: False | Source: None
+2025-12-04 19:58:44,875 - root - DEBUG - Model: cloudqi/CQI_Visual_Question_Awnser_PT_v0 | Status: False | Source: None
+2025-12-04 19:58:44,875 - root - DEBUG - Model: DataIntelligenceTeam/eurocorpV4 | Status: False | Source: None
+2025-12-04 19:58:44,875 - root - DEBUG - Model: naver-clova-ix/donut-base-finetuned-docvqa | Status: False | Source: None
+2025-12-04 19:58:44,875 - root - DEBUG - Model: MariaK/layoutlmv2-base-uncased_finetuned_docvqa_v2 | Status: False | Source: None
+2025-12-04 19:58:44,875 - root - DEBUG - Model: jinhybr/OCR-DocVQA-Donut | Status: False | Source: None
+2025-12-04 19:58:44,875 - root - DEBUG - Model: xhyi/layoutlmv3_docvqa_t11c5000 | Status: False | Source: None
+2025-12-04 19:58:44,875 - root - DEBUG - Model: tiennvcs/layoutlmv2-large-uncased-finetuned-infovqa | Status: False | Source: None
+2025-12-04 19:58:44,875 - root - DEBUG - Model: pardeepSF/layoutlm-vqa | Status: False | Source: None
+2025-12-04 19:58:44,875 - root - DEBUG - Model: rubentito/layoutlmv3-base-mpdocvqa | Status: False | Source: None
+2025-12-04 19:58:44,875 - root - DEBUG - Model: davanstrien/testwebhook | Status: False | Source: None
+2025-12-04 19:58:44,875 - root - DEBUG - Model: frizwankhan/entity-linking-model-final | Status: False | Source: None
+2025-12-04 19:58:44,875 - root - DEBUG - Model: tiennvcs/layoutlmv2-base-uncased-finetuned-vi-infovqa | Status: False | Source: None
+2025-12-04 19:58:44,875 - root - DEBUG - Model: tiennvcs/layoutlmv2-base-uncased-finetuned-infovqa | Status: False | Source: None
+2025-12-04 19:58:44,875 - root - DEBUG - Model: hf-tiny-model-private/tiny-random-LayoutLMForQuestionAnswering | Status: False | Source: None
+2025-12-04 19:58:44,875 - root - DEBUG - Model: hf-tiny-model-private/tiny-random-LayoutLMv3ForQuestionAnswering | Status: False | Source: None
+2025-12-04 19:58:44,875 - root - DEBUG - Model: mishig/temp-model | Status: False | Source: None
+2025-12-04 19:58:44,875 - root - DEBUG - Model: tiennvcs/layoutlmv2-large-uncased-finetuned-vi-infovqa | Status: False | Source: None
+2025-12-04 19:58:44,876 - root - DEBUG - Model: L-oenai/LayoutLMX_pt_question_answer_ocrazure_correct_V15_30_03_2023 | Status: False | Source: None
+2025-12-04 19:58:44,876 - root - DEBUG - avaliable models on document-question-answering: {'local': ['impira/layoutlm-document-qa'], 'huggingface': []}
+2025-12-04 19:58:44,876 - root - DEBUG - chosen model: {'id': 'impira/layoutlm-document-qa', 'reason': 'Only one model available.'}
+2025-12-04 19:58:44,876 - root - WARNING - Inference error: {'message': "'image'"}
+2025-12-04 19:58:44,876 - root - DEBUG -  Failure: {" input": "Extract total amount from 'examples/invoice_sample.jpg'", "task": {"task": "document-question-answering", "id": 1, "dep": [0], "args": {"text": "a large screen tv with a bunch of numbers on it ", "question": "What is the total amount?"}}, "reason": "inference error: {'message': \"'image'\"}", "op": "message"}
+2025-12-04 19:58:44,876 - root - DEBUG - Inference Result: {'error': {'message': "'image'"}}
+2025-12-04 19:58:44,876 - root - DEBUG - {0: {'task': {'task': 'image-to-text', 'id': 0, 'dep': [-1], 'args': {'image': 'public/examples/invoice_sample.jpg'}}, 'inference result': {'generated text': 'a large screen tv with a bunch of numbers on it '}, 'choose model result': {'id': 'nlpconnect/vit-gpt2-image-captioning', 'reason': 'Only one model available.'}}, 1: {'task': {'task': 'document-question-answering', 'id': 1, 'dep': [0], 'args': {'text': 'a large screen tv with a bunch of numbers on it ', 'question': 'What is the total amount?'}}, 'inference result': {'error': {'message': "'image'"}}, 'choose model result': {'id': 'impira/layoutlm-document-qa', 'reason': 'Only one model available.'}}}
+2025-12-04 19:58:46,691 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /nebius/v1/chat/completions HTTP/1.1" 200 None
+2025-12-04 19:58:46,691 - root - DEBUG - I'm unable to extract the total amount from 'examples/invoice_sample.jpg' as the inference results do not provide a clear answer to your question. 
+<EXPLANATION> 
+The task execution logs show that two models were used in sequence. The first model, 'nlpconnect/vit-gpt2-image-captioning', was used for image-to-text tasks and generated the text 'a large screen tv with a bunch of numbers on it ' from the image 'examples/invoice_sample.jpg'. However, this text does not contain any information about the total amount. The second model, 'impira/layoutlm-document-qa', was used for document question answering tasks and was asked the question 'What is the total amount?' based on the generated text. Unfortunately, this model returned an error message, indicating that it was unable to extract the total amount from the text. 
+Given the results from these models, I cannot provide a confident answer to your question about the total amount. If you have any further questions or would like to try a different approach, please let me know.
+</EXPLANATION>
+2025-12-04 19:58:46,711 - retriever - DEBUG - Loaded 94 entries from data/explanations.jsonl
+2025-12-04 19:58:46,948 - retriever - DEBUG - Best similarity = 0.999 (threshold = 0.95)
+2025-12-04 19:58:46,948 - retriever - INFO - Retrieved similar explanation (sim=0.999)
+2025-12-04 19:58:48,524 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /nebius/v1/chat/completions HTTP/1.1" 200 None
+2025-12-04 19:58:48,525 - judge - INFO - Judge decided: base (Explanation A is clearer and more user-friendly as it mentions the specific image file 'examples/invoice_sample.jpg' and provides a more detailed conclusion.)
+2025-12-04 19:58:48,534 - retriever - DEBUG - Loaded 94 entries from data/explanations.jsonl
+2025-12-04 19:58:48,534 - retriever - WARNING - No existing entry found to update for task_description='Extract total amount from 'examples/invoice_sample.jpg'...'
+2025-12-04 19:58:48,579 - root - DEBUG - Final explanation chosen by Judge: The task execution logs show that two models were used in sequence. The first model, 'nlpconnect/vit-gpt2-image-captioning', was used for image-to-text tasks and generated the text 'a large screen tv with a bunch of numbers on it ' from the image 'examples/invoice_sample.jpg'. However, this text does not contain any information about the total amount. The second model, 'impira/layoutlm-document-qa', was used for document question answering tasks and was asked the question 'What is the total amount?' based on the generated text. Unfortunately, this model returned an error message, indicating that it was unable to extract the total amount from the text. 
+Given the results from these models, I cannot provide a confident answer to your question about the total amount. If you have any further questions or would like to try a different approach, please let me know.
+2025-12-04 19:58:48,579 - root - DEBUG -  Success: {"input": "Extract total amount from 'examples/invoice_sample.jpg'", "task": "[{\"task\": \"image-to-text\", \"id\": 0, \"dep\": [-1], \"args\": {\"image\": \"examples/invoice_sample.jpg\" }}, {\"task\": \"document-question-answering\", \"id\": 1, \"dep\": [0], \"args\": {\"text\": \"<GENERATED>-0\", \"question\": \"What is the total amount?\" }}]", "results": {"0": {"task": {"task": "image-to-text", "id": 0, "dep": [-1], "args": {"image": "public/examples/invoice_sample.jpg"}}, "inference result": {"generated text": "a large screen tv with a bunch of numbers on it "}, "choose model result": {"id": "nlpconnect/vit-gpt2-image-captioning", "reason": "Only one model available."}}, "1": {"task": {"task": "document-question-answering", "id": 1, "dep": [0], "args": {"text": "a large screen tv with a bunch of numbers on it ", "question": "What is the total amount?"}}, "inference result": {"error": {"message": "'image'"}}, "choose model result": {"id": "impira/layoutlm-document-qa", "reason": "Only one model available."}}}, "response": "I'm unable to extract the total amount from 'examples/invoice_sample.jpg' as the inference results do not provide a clear answer to your question. \nThe task execution logs show that two models were used in sequence. The first model, 'nlpconnect/vit-gpt2-image-captioning', was used for image-to-text tasks and generated the text 'a large screen tv with a bunch of numbers on it ' from the image 'examples/invoice_sample.jpg'. However, this text does not contain any information about the total amount. The second model, 'impira/layoutlm-document-qa', was used for document question answering tasks and was asked the question 'What is the total amount?' based on the generated text. Unfortunately, this model returned an error message, indicating that it was unable to extract the total amount from the text. \nGiven the results from these models, I cannot provide a confident answer to your question about the total amount. If you have any further questions or would like to try a different approach, please let me know.", "during": 6.220023155212402, "op": "response"}
+2025-12-04 19:58:48,580 - root - INFO - response: I'm unable to extract the total amount from 'examples/invoice_sample.jpg' as the inference results do not provide a clear answer to your question. 
+The task execution logs show that two models were used in sequence. The first model, 'nlpconnect/vit-gpt2-image-captioning', was used for image-to-text tasks and generated the text 'a large screen tv with a bunch of numbers on it ' from the image 'examples/invoice_sample.jpg'. However, this text does not contain any information about the total amount. The second model, 'impira/layoutlm-document-qa', was used for document question answering tasks and was asked the question 'What is the total amount?' based on the generated text. Unfortunately, this model returned an error message, indicating that it was unable to extract the total amount from the text. 
+Given the results from these models, I cannot provide a confident answer to your question about the total amount. If you have any further questions or would like to try a different approach, please let me know.

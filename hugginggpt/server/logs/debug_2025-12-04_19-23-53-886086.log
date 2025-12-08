@@ -1,0 +1,226 @@
+2025-12-04 19:23:53,900 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda:0
+2025-12-04 19:23:53,900 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-12-04 19:23:53,902 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-12-04 19:23:54,057 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-12-04 19:23:54,062 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-12-04 19:23:54,169 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-12-04 19:23:54,174 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-12-04 19:23:54,311 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-12-04 19:23:54,317 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-12-04 19:23:54,427 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-12-04 19:23:54,433 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+2025-12-04 19:23:54,543 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-12-04 19:23:54,549 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-12-04 19:23:54,657 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-12-04 19:23:54,662 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+2025-12-04 19:23:54,771 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-12-04 19:23:54,879 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-12-04 19:23:54,885 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+2025-12-04 19:23:55,079 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-12-04 19:23:55,085 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+2025-12-04 19:23:55,196 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-12-04 19:23:55,346 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-12-04 19:23:55,351 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-12-04 19:23:55,464 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6946
+2025-12-04 19:23:55,648 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:23:55,650 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /running HTTP/1.1" 200 17
+2025-12-04 19:23:55,664 - root - DEBUG - text-classification: 30 models
+2025-12-04 19:23:55,664 - root - DEBUG - token-classification: 30 models
+2025-12-04 19:23:55,664 - root - DEBUG - text2text-generation: 30 models
+2025-12-04 19:23:55,664 - root - DEBUG - summarization: 30 models
+2025-12-04 19:23:55,664 - root - DEBUG - translation: 30 models
+2025-12-04 19:23:55,664 - root - DEBUG - question-answering: 30 models
+2025-12-04 19:23:55,664 - root - DEBUG - conversational: 30 models
+2025-12-04 19:23:55,665 - root - DEBUG - text-generation: 30 models
+2025-12-04 19:23:55,665 - root - DEBUG - sentence-similarity: 30 models
+2025-12-04 19:23:55,665 - root - DEBUG - tabular-classification: 30 models
+2025-12-04 19:23:55,665 - root - DEBUG - object-detection: 30 models
+2025-12-04 19:23:55,665 - root - DEBUG - image-classification: 30 models
+2025-12-04 19:23:55,665 - root - DEBUG - image-to-text: 30 models
+2025-12-04 19:23:55,665 - root - DEBUG - text-to-image: 31 models
+2025-12-04 19:23:55,665 - root - DEBUG - image-to-image: 30 models
+2025-12-04 19:23:55,665 - root - DEBUG - visual-question-answering: 13 models
+2025-12-04 19:23:55,665 - root - DEBUG - document-question-answering: 22 models
+2025-12-04 19:23:55,665 - root - DEBUG - image-segmentation: 30 models
+2025-12-04 19:23:55,665 - root - DEBUG - depth-estimation: 30 models
+2025-12-04 19:23:55,665 - root - DEBUG - text-to-video: 8 models
+2025-12-04 19:23:55,665 - root - DEBUG - text-to-speech: 30 models
+2025-12-04 19:23:55,665 - root - DEBUG - automatic-speech-recognition: 30 models
+2025-12-04 19:23:55,665 - root - DEBUG - audio-to-audio: 30 models
+2025-12-04 19:23:55,665 - root - DEBUG - audio-classification: 30 models
+2025-12-04 19:23:55,665 - root - DEBUG - named-entity-recognition: 1 models
+2025-12-04 19:23:55,665 - root - INFO - Welcome to Jarvis! A collaborative system that consists of an LLM as the controller and numerous expert models as collaborative executors. Jarvis can plan tasks, schedule Hugging Face models, generate friendly responses based on your requests, and help you with many things. Please enter your request (`exit` to exit).
+2025-12-04 19:24:02,254 - root - INFO - [ User ]: answer 'what is the man holding?' in the image 'examples/farmer.jpg'.
+2025-12-04 19:24:02,254 - root - INFO - ********************************************************************************
+2025-12-04 19:24:02,254 - root - INFO - input: Answer 'What is the man holding?' in the image 'examples/farmer.jpg'.
+2025-12-04 19:24:02,256 - root - DEBUG - Messages: [{'role': 'system', 'content': '#1 Task Planning Stage: You are a helpful AI assistant. Based on the user\'s request, you will recommend the best model from Hugging Face for the task, and explain why. The special tag "<GENERATED>-dep_id" refer to the one generated text/image/audio in the dependency task (Please consider whether the dependency task generates resources of this type.) and "dep_id" must be in "dep" list.  The "dep" field denotes the ids of the previous prerequisite tasks which generate a new resource that the current task relies on.  The "args" field must in ["text", "image", "audio"], nothing else.  The "task" field must be in ["token-classification", "optical-character-recognition", "named-entity-recognition", "text2text-generation", "summarization", "translation", "question-answering", "conversational", "text-generation", "sentence-similarity", "tabular-classification", "object-detection", "image-classification", "image-to-image", "image-to-text", "text-to-image", "text-to-video", "visual-question-answering", "document-question-answering", "image-segmentation", "depth-estimation", "text-to-speech", "automatic-speech-recognition", "audio-to-audio", "audio-classification", "canny-control", "hed-control", "mlsd-control", "normal-control", "openpose-control", "canny-text-to-image", "depth-text-to-image", "hed-text-to-image", "mlsd-text-to-image", "normal-text-to-image", "seg-text-to-image"] You must respond in JSON format like: [\n  {\n    "task": task, \n    "id": task_id, \n    "dep": dependency_task_id, \n    "args": {\n      "text": text or <GENERATED>-dep_id, \n      "image": image_url or <GENERATED>-dep_id, \n      "audio": audio_url or <GENERATED>-dep_id\n    }\n  }\n] Respond with the JSON entry and ONLY the JSON entry! Here are some few-shot examples:'}, {'role': 'user', 'content': 'Give you some pictures e1.jpg, e2.png, e3.jpg, help me count the number of sheep?'}, {'role': 'assistant', 'content': '[{"task": "image-to-text", "id": 0, "dep": [-1], "args": {"image": "e1.jpg" }}, {"task": "object-detection", "id": 1, "dep": [-1], "args": {"image": "e1.jpg" }}, {"task": "visual-question-answering", "id": 2, "dep": [1], "args": {"image": "<GENERATED>-1", "text": "How many sheep in the picture"}} }}, {"task": "image-to-text", "id": 3, "dep": [-1], "args": {"image": "e2.png" }}, {"task": "object-detection", "id": 4, "dep": [-1], "args": {"image": "e2.png" }}, {"task": "visual-question-answering", "id": 5, "dep": [4], "args": {"image": "<GENERATED>-4", "text": "How many sheep in the picture"}} }}, {"task": "image-to-text", "id": 6, "dep": [-1], "args": {"image": "e3.jpg" }},  {"task": "object-detection", "id": 7, "dep": [-1], "args": {"image": "e3.jpg" }}, {"task": "visual-question-answering", "id": 8, "dep": [7], "args": {"image": "<GENERATED>-7", "text": "How many sheep in the picture"}}]'}, {'role': 'user', 'content': 'Look at /e.jpg, can you tell me how many objects in the picture? Give me a picture and video similar to this one.'}, {'role': 'assistant', 'content': '[{"task": "image-to-text", "id": 0, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "object-detection", "id": 1, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "visual-question-answering", "id": 2, "dep": [1], "args": {"image": "<GENERATED>-1", "text": "how many objects in the picture?" }}, {"task": "text-to-image", "id": 3, "dep": [0], "args": {"text": "<GENERATED-0>" }}, {"task": "image-to-image", "id": 4, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "text-to-video", "id": 5, "dep": [0], "args": {"text": "<GENERATED-0>" }}]'}, {'role': 'user', 'content': 'given a document /images/e.jpeg, answer me what is the student amount? And describe the image with your voice'}, {'role': 'assistant', 'content': '{"task": "document-question-answering", "id": 0, "dep": [-1], "args": {"image": "/images/e.jpeg", "text": "what is the student amount?" }}, {"task": "visual-question-answering", "id": 1, "dep": [-1], "args": {"image": "/images/e.jpeg", "text": "what is the student amount?" }}, {"task": "image-to-text", "id": 2, "dep": [-1], "args": {"image": "/images/e.jpg" }}, {"task": "text-to-speech", "id": 3, "dep": [2], "args": {"text": "<GENERATED>-2" }}]'}, {'role': 'user', 'content': 'Given an image /example.jpg, first generate a hed image, then based on the hed image generate a new image where a girl is reading a book'}, {'role': 'assistant', 'content': '[{"task": "openpose-control", "id": 0, "dep": [-1], "args": {"image": "/example.jpg" }},  {"task": "openpose-text-to-image", "id": 1, "dep": [0], "args": {"text": "a girl is reading a book", "image": "<GENERATED>-0" }}]'}, {'role': 'user', 'content': "please show me a video and an image of (based on the text) 'a boy is running' and dub it"}, {'role': 'assistant', 'content': '[{"task": "text-to-video", "id": 0, "dep": [-1], "args": {"text": "a boy is running" }}, {"task": "text-to-speech", "id": 1, "dep": [-1], "args": {"text": "a boy is running" }}, {"task": "text-to-image", "id": 2, "dep": [-1], "args": {"text": "a boy is running" }}]'}, {'role': 'user', 'content': 'please show me a joke and an image of cat'}, {'role': 'assistant', 'content': '[{"task": "conversational", "id": 0, "dep": [-1], "args": {"text": "please show me a joke of cat" }}, {"task": "text-to-image", "id": 1, "dep": [-1], "args": {"text": "a photo of cat" }}]'}, {'role': 'user', 'content': "The chat log [ [] ] may contain the resources I mentioned. Now I input { Answer 'What is the man holding?' in the image 'examples/farmer.jpg'. }. Pay attention to the input and output types of tasks and the dependencies between tasks."}]
+2025-12-04 19:24:02,363 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/meta-llama/Llama-3.3-70B-Instruct?expand=inferenceProviderMapping HTTP/1.1" 200 1439
+2025-12-04 19:24:02,364 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): router.huggingface.co:443
+2025-12-04 19:24:03,433 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /nebius/v1/chat/completions HTTP/1.1" 200 None
+2025-12-04 19:24:03,434 - root - DEBUG - [{'task': 'image-to-text', 'id': 0, 'dep': [-1], 'args': {'image': 'examples/farmer.jpg'}}, {'task': 'visual-question-answering', 'id': 1, 'dep': [0], 'args': {'image': '<GENERATED>-0', 'text': 'What is the man holding?'}}]
+2025-12-04 19:24:03,434 - root - DEBUG - Run task: 0 - image-to-text
+2025-12-04 19:24:03,435 - root - DEBUG - Deps: []
+2025-12-04 19:24:03,435 - root - DEBUG - Parsed Task: {'task': 'image-to-text', 'id': 0, 'dep': [-1], 'args': {'image': 'public/examples/farmer.jpg'}}
+2025-12-04 19:24:03,437 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:24:03,438 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:24:03,441 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:24:03,443 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:24:03,444 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:24:03,446 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:24:03,446 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/nlpconnect/vit-gpt2-image-captioning HTTP/1.1" 200 16
+2025-12-04 19:24:03,446 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/trocr-base-printed HTTP/1.1" 200 17
+2025-12-04 19:24:03,448 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:24:03,450 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Salesforce/blip-image-captioning-large HTTP/1.1" 200 17
+2025-12-04 19:24:03,450 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:24:03,451 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Salesforce/blip-image-captioning-base HTTP/1.1" 200 17
+2025-12-04 19:24:03,451 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/naver-clova-ix/donut-base HTTP/1.1" 200 17
+2025-12-04 19:24:03,452 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:24:03,452 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/trocr-base-handwritten HTTP/1.1" 200 17
+2025-12-04 19:24:03,454 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:24:03,455 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:24:03,456 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:24:03,457 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/pix2struct-base HTTP/1.1" 200 17
+2025-12-04 19:24:03,457 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:24:03,458 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:24:03,459 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:24:03,460 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:24:03,461 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Salesforce/blip2-opt-2.7b HTTP/1.1" 200 17
+2025-12-04 19:24:03,461 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:24:03,462 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:24:03,463 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Salesforce/blip2-opt-6.7b HTTP/1.1" 200 17
+2025-12-04 19:24:03,463 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:24:03,464 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:24:03,465 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:24:03,465 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/kha-white/manga-ocr-base HTTP/1.1" 200 17
+2025-12-04 19:24:03,466 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:24:03,467 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Salesforce/blip2-flan-t5-xxl HTTP/1.1" 200 17
+2025-12-04 19:24:03,468 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:24:03,469 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:24:03,469 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:24:03,470 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:24:03,471 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:24:03,472 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:24:03,474 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:24:03,474 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/ydshieh/vit-gpt2-coco-en HTTP/1.1" 200 17
+2025-12-04 19:24:03,475 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:24:03,475 - root - DEBUG - Model: nlpconnect/vit-gpt2-image-captioning | Status: True | Source: local
+2025-12-04 19:24:03,476 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/git-large-coco HTTP/1.1" 200 17
+2025-12-04 19:24:03,477 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/naver-clova-ix/donut-base-finetuned-cord-v2 HTTP/1.1" 200 17
+2025-12-04 19:24:03,477 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/pix2struct-textcaps-base HTTP/1.1" 200 17
+2025-12-04 19:24:03,478 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Salesforce/blip2-flan-t5-xl HTTP/1.1" 200 17
+2025-12-04 19:24:03,479 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/pix2struct-ocrvqa-large HTTP/1.1" 200 17
+2025-12-04 19:24:03,479 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/trocr-large-handwritten HTTP/1.1" 200 17
+2025-12-04 19:24:03,480 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/pix2struct-docvqa-large HTTP/1.1" 200 17
+2025-12-04 19:24:03,480 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/pix2struct-ai2d-base HTTP/1.1" 200 17
+2025-12-04 19:24:03,481 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/trocr-large-printed HTTP/1.1" 200 17
+2025-12-04 19:24:03,482 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/trocr-small-printed HTTP/1.1" 200 17
+2025-12-04 19:24:03,483 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/keras-io/ocr-for-captcha HTTP/1.1" 200 17
+2025-12-04 19:24:03,483 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/git-large-textcaps HTTP/1.1" 200 17
+2025-12-04 19:24:03,484 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Salesforce/blip2-flan-t5-xl-coco HTTP/1.1" 200 17
+2025-12-04 19:24:03,485 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/dhansmair/flamingo-mini HTTP/1.1" 200 17
+2025-12-04 19:24:03,485 - root - DEBUG - Model: microsoft/trocr-base-printed | Status: False | Source: None
+2025-12-04 19:24:03,485 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/tuman/vit-rugpt2-image-captioning HTTP/1.1" 200 17
+2025-12-04 19:24:03,486 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/git-base HTTP/1.1" 200 17
+2025-12-04 19:24:03,487 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/trocr-small-handwritten HTTP/1.1" 200 17
+2025-12-04 19:24:03,488 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/google/pix2struct-textcaps-large HTTP/1.1" 200 17
+2025-12-04 19:24:03,490 - root - DEBUG - Model: Salesforce/blip-image-captioning-large | Status: False | Source: None
+2025-12-04 19:24:03,491 - root - DEBUG - Model: Salesforce/blip-image-captioning-base | Status: False | Source: None
+2025-12-04 19:24:03,492 - root - DEBUG - Model: naver-clova-ix/donut-base | Status: False | Source: None
+2025-12-04 19:24:03,492 - root - DEBUG - Model: microsoft/trocr-base-handwritten | Status: False | Source: None
+2025-12-04 19:24:03,492 - root - DEBUG - Model: google/pix2struct-base | Status: False | Source: None
+2025-12-04 19:24:03,492 - root - DEBUG - Model: Salesforce/blip2-opt-2.7b | Status: False | Source: None
+2025-12-04 19:24:03,492 - root - DEBUG - Model: Salesforce/blip2-opt-6.7b | Status: False | Source: None
+2025-12-04 19:24:03,492 - root - DEBUG - Model: kha-white/manga-ocr-base | Status: False | Source: None
+2025-12-04 19:24:03,492 - root - DEBUG - Model: Salesforce/blip2-flan-t5-xxl | Status: False | Source: None
+2025-12-04 19:24:03,492 - root - DEBUG - Model: ydshieh/vit-gpt2-coco-en | Status: False | Source: None
+2025-12-04 19:24:03,492 - root - DEBUG - Model: microsoft/git-large-coco | Status: False | Source: None
+2025-12-04 19:24:03,492 - root - DEBUG - Model: naver-clova-ix/donut-base-finetuned-cord-v2 | Status: False | Source: None
+2025-12-04 19:24:03,492 - root - DEBUG - Model: google/pix2struct-textcaps-base | Status: False | Source: None
+2025-12-04 19:24:03,492 - root - DEBUG - Model: Salesforce/blip2-flan-t5-xl | Status: False | Source: None
+2025-12-04 19:24:03,492 - root - DEBUG - Model: google/pix2struct-ocrvqa-large | Status: False | Source: None
+2025-12-04 19:24:03,492 - root - DEBUG - Model: microsoft/trocr-large-handwritten | Status: False | Source: None
+2025-12-04 19:24:03,492 - root - DEBUG - Model: google/pix2struct-docvqa-large | Status: False | Source: None
+2025-12-04 19:24:03,492 - root - DEBUG - Model: google/pix2struct-ai2d-base | Status: False | Source: None
+2025-12-04 19:24:03,492 - root - DEBUG - Model: microsoft/trocr-large-printed | Status: False | Source: None
+2025-12-04 19:24:03,492 - root - DEBUG - Model: microsoft/trocr-small-printed | Status: False | Source: None
+2025-12-04 19:24:03,492 - root - DEBUG - Model: keras-io/ocr-for-captcha | Status: False | Source: None
+2025-12-04 19:24:03,492 - root - DEBUG - Model: microsoft/git-large-textcaps | Status: False | Source: None
+2025-12-04 19:24:03,492 - root - DEBUG - Model: Salesforce/blip2-flan-t5-xl-coco | Status: False | Source: None
+2025-12-04 19:24:03,492 - root - DEBUG - Model: dhansmair/flamingo-mini | Status: False | Source: None
+2025-12-04 19:24:03,492 - root - DEBUG - Model: tuman/vit-rugpt2-image-captioning | Status: False | Source: None
+2025-12-04 19:24:03,492 - root - DEBUG - Model: microsoft/git-base | Status: False | Source: None
+2025-12-04 19:24:03,492 - root - DEBUG - Model: microsoft/trocr-small-handwritten | Status: False | Source: None
+2025-12-04 19:24:03,492 - root - DEBUG - Model: google/pix2struct-textcaps-large | Status: False | Source: None
+2025-12-04 19:24:03,492 - root - DEBUG - avaliable models on image-to-text: {'local': ['nlpconnect/vit-gpt2-image-captioning'], 'huggingface': []}
+2025-12-04 19:24:03,493 - root - DEBUG - chosen model: {'id': 'nlpconnect/vit-gpt2-image-captioning', 'reason': 'Only one model available.'}
+2025-12-04 19:24:03,493 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:24:04,734 - urllib3.connectionpool - DEBUG - http://localhost:8005 "POST /models/nlpconnect/vit-gpt2-image-captioning HTTP/1.1" 200 59
+2025-12-04 19:24:04,735 - root - DEBUG - Inference Result: {'generated text': 'a woman holding a knife and a basket '}
+2025-12-04 19:24:04,937 - root - DEBUG - Run task: 1 - visual-question-answering
+2025-12-04 19:24:04,937 - root - DEBUG - Deps: [{"task": {"task": "image-to-text", "id": 0, "dep": [-1], "args": {"image": "public/examples/farmer.jpg"}}, "inference result": {"generated text": "a woman holding a knife and a basket "}, "choose model result": {"id": "nlpconnect/vit-gpt2-image-captioning", "reason": "Only one model available."}}]
+2025-12-04 19:24:04,937 - root - DEBUG - Detect the generated text of dependency task (from results):a woman holding a knife and a basket 
+2025-12-04 19:24:04,937 - root - DEBUG - Detect the image of dependency task (from args): public/examples/farmer.jpg
+2025-12-04 19:24:04,937 - root - DEBUG - Parsed Task: {'task': 'visual-question-answering', 'id': 1, 'dep': [0], 'args': {'image': 'public/examples/farmer.jpg', 'text': 'What is the man holding?'}}
+2025-12-04 19:24:04,939 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:24:04,941 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:24:04,943 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:24:04,945 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:24:04,946 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:24:04,947 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:24:04,949 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:24:04,949 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:24:04,950 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:24:04,951 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:24:04,952 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:24:04,952 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:24:04,953 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:24:04,954 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/dandelin/vilt-b32-finetuned-vqa HTTP/1.1" 200 16
+2025-12-04 19:24:04,954 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/git-large-vqav2 HTTP/1.1" 200 17
+2025-12-04 19:24:04,955 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/git-base-textvqa HTTP/1.1" 200 17
+2025-12-04 19:24:04,956 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Salesforce/blip-vqa-base HTTP/1.1" 200 17
+2025-12-04 19:24:04,958 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Salesforce/blip-vqa-capfilt-large HTTP/1.1" 200 17
+2025-12-04 19:24:04,958 - root - DEBUG - Model: dandelin/vilt-b32-finetuned-vqa | Status: True | Source: local
+2025-12-04 19:24:04,959 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/ivelin/donut-refexp-combined-v1 HTTP/1.1" 200 17
+2025-12-04 19:24:04,960 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/tufa15nik/vilt-finetuned-vqasi HTTP/1.1" 200 17
+2025-12-04 19:24:04,960 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/git-large-textvqa HTTP/1.1" 200 17
+2025-12-04 19:24:04,961 - root - DEBUG - Model: microsoft/git-large-vqav2 | Status: False | Source: None
+2025-12-04 19:24:04,962 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/Bingsu/temp_vilt_vqa HTTP/1.1" 200 17
+2025-12-04 19:24:04,963 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/microsoft/git-base-vqav2 HTTP/1.1" 200 17
+2025-12-04 19:24:04,963 - root - DEBUG - Model: microsoft/git-base-textvqa | Status: False | Source: None
+2025-12-04 19:24:04,963 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/sheldonxxxx/OFA_model_weights HTTP/1.1" 200 17
+2025-12-04 19:24:04,964 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/hf-tiny-model-private/tiny-random-ViltForQuestionAnswering HTTP/1.1" 200 17
+2025-12-04 19:24:04,964 - root - DEBUG - Model: Salesforce/blip-vqa-base | Status: False | Source: None
+2025-12-04 19:24:04,966 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /status/azwierzc/vilt-b32-finetuned-vqa-pl HTTP/1.1" 200 17
+2025-12-04 19:24:04,966 - root - DEBUG - Model: Salesforce/blip-vqa-capfilt-large | Status: False | Source: None
+2025-12-04 19:24:04,967 - root - DEBUG - Model: ivelin/donut-refexp-combined-v1 | Status: False | Source: None
+2025-12-04 19:24:04,967 - root - DEBUG - Model: tufa15nik/vilt-finetuned-vqasi | Status: False | Source: None
+2025-12-04 19:24:04,967 - root - DEBUG - Model: microsoft/git-large-textvqa | Status: False | Source: None
+2025-12-04 19:24:04,967 - root - DEBUG - Model: Bingsu/temp_vilt_vqa | Status: False | Source: None
+2025-12-04 19:24:04,967 - root - DEBUG - Model: microsoft/git-base-vqav2 | Status: False | Source: None
+2025-12-04 19:24:04,967 - root - DEBUG - Model: sheldonxxxx/OFA_model_weights | Status: False | Source: None
+2025-12-04 19:24:04,967 - root - DEBUG - Model: hf-tiny-model-private/tiny-random-ViltForQuestionAnswering | Status: False | Source: None
+2025-12-04 19:24:04,967 - root - DEBUG - Model: azwierzc/vilt-b32-finetuned-vqa-pl | Status: False | Source: None
+2025-12-04 19:24:04,967 - root - DEBUG - avaliable models on visual-question-answering: {'local': ['dandelin/vilt-b32-finetuned-vqa'], 'huggingface': []}
+2025-12-04 19:24:04,967 - root - DEBUG - chosen model: {'id': 'dandelin/vilt-b32-finetuned-vqa', 'reason': 'Only one model available.'}
+2025-12-04 19:24:04,968 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2025-12-04 19:24:05,349 - urllib3.connectionpool - DEBUG - http://localhost:8005 "POST /models/dandelin/vilt-b32-finetuned-vqa HTTP/1.1" 200 64
+2025-12-04 19:24:05,349 - root - WARNING - Inference error: {'message': 'Error when running the model inference.'}
+2025-12-04 19:24:05,349 - root - DEBUG -  Failure: {"input": "Answer 'What is the man holding?' in the image 'examples/farmer.jpg'.", "task": {"task": "visual-question-answering", "id": 1, "dep": [0], "args": {"image": "public/examples/farmer.jpg", "text": "What is the man holding?"}}, "reason": "inference error: {'message': 'Error when running the model inference.'}", "op": "message"}
+2025-12-04 19:24:05,350 - root - DEBUG - Inference Result: {'error': {'message': 'Error when running the model inference.'}}
+2025-12-04 19:24:05,350 - root - DEBUG - {0: {'task': {'task': 'image-to-text', 'id': 0, 'dep': [-1], 'args': {'image': 'public/examples/farmer.jpg'}}, 'inference result': {'generated text': 'a woman holding a knife and a basket '}, 'choose model result': {'id': 'nlpconnect/vit-gpt2-image-captioning', 'reason': 'Only one model available.'}}, 1: {'task': {'task': 'visual-question-answering', 'id': 1, 'dep': [0], 'args': {'image': 'public/examples/farmer.jpg', 'text': 'What is the man holding?'}}, 'inference result': {'error': {'message': 'Error when running the model inference.'}}, 'choose model result': {'id': 'dandelin/vilt-b32-finetuned-vqa', 'reason': 'Only one model available.'}}}
+2025-12-04 19:24:07,911 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /nebius/v1/chat/completions HTTP/1.1" 200 None
+2025-12-04 19:24:07,912 - root - DEBUG - The man in the image 'examples/farmer.jpg' is holding a basket and possibly other objects, but the inference results are not entirely clear or consistent. 
+<EXPLANATION> I used two models to try to answer your question. The first model, 'nlpconnect/vit-gpt2-image-captioning', generated a caption for the image, which mentioned a woman holding a knife and a basket. However, this model did not specifically address your question about the man. The second model, 'dandelin/vilt-b32-finetuned-vqa', attempted to answer your question directly but unfortunately returned an error. Given the available information, I had to make an educated guess based on the caption generated by the first model, assuming that the man might be holding something similar to the woman mentioned in the caption. However, without more accurate or direct information from the models, I cannot provide a definitive answer. The image path used for the inference is 'examples/farmer.jpg'. Unfortunately, due to the error in the visual question answering model, I couldn't obtain a more precise answer. </EXPLANATION>
+2025-12-04 19:24:07,941 - retriever - DEBUG - Loaded 92 entries from data/explanations.jsonl
+2025-12-04 19:24:08,184 - retriever - DEBUG - Best similarity = 0.977 (threshold = 0.95)
+2025-12-04 19:24:08,185 - retriever - INFO - Retrieved similar explanation (sim=0.977)
+2025-12-04 19:24:10,566 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /nebius/v1/chat/completions HTTP/1.1" 200 None
+2025-12-04 19:24:10,567 - judge - INFO - Judge decided: combined (Explanation A provides context about the models used and their limitations, while Explanation B offers a direct answer despite the error in one of the models. Combining them creates a more comprehensive and user-friendly explanation.)
+2025-12-04 19:24:10,578 - retriever - DEBUG - Loaded 92 entries from data/explanations.jsonl
+2025-12-04 19:24:10,578 - retriever - WARNING - No existing entry found to update for task_description='Answer 'What is the man holding?' in the image 'examples/far...'
+2025-12-04 19:24:10,620 - root - DEBUG - Final explanation chosen by Judge: To answer your question about what the man is holding in the image 'examples/farmer.jpg', I used two models: 'nlpconnect/vit-gpt2-image-captioning' for image captioning and 'dandelin/vilt-b32-finetuned-vqa' for visual question answering. The captioning model generated a description mentioning a woman with a knife and a basket but did not directly address the man. Unfortunately, the visual question answering model returned an error, which prevented it from providing a direct answer. Despite these limitations, the task aimed to utilize the visual question answering model 'dandelin/vilt-b32-finetuned-vqa' to directly answer the question about the man, considering its suitability for such tasks. However, due to the error, a definitive answer based on the model's output could not be provided. The process involved analyzing the image and the question to provide an accurate response, but the error in the model hindered achieving this goal.
+2025-12-04 19:24:10,621 - root - DEBUG -  Success: {"input": "Answer 'What is the man holding?' in the image 'examples/farmer.jpg'.", "task": "[{\"task\": \"image-to-text\", \"id\": 0, \"dep\": [-1], \"args\": {\"image\": \"examples/farmer.jpg\"}}, {\"task\": \"visual-question-answering\", \"id\": 1, \"dep\": [0], \"args\": {\"image\": \"<GENERATED>-0\", \"text\": \"What is the man holding?\"}}]", "results": {"0": {"task": {"task": "image-to-text", "id": 0, "dep": [-1], "args": {"image": "public/examples/farmer.jpg"}}, "inference result": {"generated text": "a woman holding a knife and a basket "}, "choose model result": {"id": "nlpconnect/vit-gpt2-image-captioning", "reason": "Only one model available."}}, "1": {"task": {"task": "visual-question-answering", "id": 1, "dep": [0], "args": {"image": "public/examples/farmer.jpg", "text": "What is the man holding?"}}, "inference result": {"error": {"message": "Error when running the model inference."}}, "choose model result": {"id": "dandelin/vilt-b32-finetuned-vqa", "reason": "Only one model available."}}}, "response": "The man in the image 'examples/farmer.jpg' is holding a basket and possibly other objects, but the inference results are not entirely clear or consistent. \nTo answer your question about what the man is holding in the image 'examples/farmer.jpg', I used two models: 'nlpconnect/vit-gpt2-image-captioning' for image captioning and 'dandelin/vilt-b32-finetuned-vqa' for visual question answering. The captioning model generated a description mentioning a woman with a knife and a basket but did not directly address the man. Unfortunately, the visual question answering model returned an error, which prevented it from providing a direct answer. Despite these limitations, the task aimed to utilize the visual question answering model 'dandelin/vilt-b32-finetuned-vqa' to directly answer the question about the man, considering its suitability for such tasks. However, due to the error, a definitive answer based on the model's output could not be provided. The process involved analyzing the image and the question to provide an accurate response, but the error in the model hindered achieving this goal.", "during": 8.366333246231079, "op": "response"}
+2025-12-04 19:24:10,621 - root - INFO - response: The man in the image 'examples/farmer.jpg' is holding a basket and possibly other objects, but the inference results are not entirely clear or consistent. 
+To answer your question about what the man is holding in the image 'examples/farmer.jpg', I used two models: 'nlpconnect/vit-gpt2-image-captioning' for image captioning and 'dandelin/vilt-b32-finetuned-vqa' for visual question answering. The captioning model generated a description mentioning a woman with a knife and a basket but did not directly address the man. Unfortunately, the visual question answering model returned an error, which prevented it from providing a direct answer. Despite these limitations, the task aimed to utilize the visual question answering model 'dandelin/vilt-b32-finetuned-vqa' to directly answer the question about the man, considering its suitability for such tasks. However, due to the error, a definitive answer based on the model's output could not be provided. The process involved analyzing the image and the question to provide an accurate response, but the error in the model hindered achieving this goal.
+2025-12-04 19:24:45,184 - root - INFO - [ User ]: exit
+2025-12-04 19:24:45,184 - root - INFO - [ Jarvis ]: Goodnight.

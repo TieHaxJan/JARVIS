@@ -426,11 +426,10 @@
     ]
   },
   {
-    "prompt": "Detect layout elements in 'examples/contract_page.jpg' and summarize their content.",
-    "task_type": "sequential",
+    "prompt": "Detect layout elements in 'examples/contract_page.jpg'",
+    "task_type": "single",
     "models": [
-      "impira/layoutlm-document-qa",
-      "JARVIS"
+      "impira/layoutlm-document-qa"
     ]
   },
   {
@@ -449,7 +448,7 @@
     ]
   },
   {
-    "prompt": "Caption 'examples/forest_night.jpg' and describe differences with 'examples/forest_day.jpg'.",
+    "prompt": "Caption 'examples/forest_night.jpg' and describe what would be different during day.",
     "task_type": "sequential",
     "models": [
       "nlpconnect/vit-gpt2-image-captioning",
@@ -690,7 +689,7 @@
     ]
   },
   {
-    "prompt": "Combine audio classification and speech transcription for 'examples/radio_clip.wav'.",
+    "prompt": "Combine audio classification and speech transcription for 'examples/meeting_audio.wav'.",
     "task_type": "graph",
     "models": [
       "microsoft/speecht5_asr",
