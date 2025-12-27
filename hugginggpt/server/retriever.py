@@ -100,7 +100,10 @@ class ExplanationRetriever:
 
         if best_sim >= self.threshold:
             self.logger.info(f"Retrieved similar explanation (sim={best_sim:.3f})")
-            return best_entry
+            return {
+                "entry": best_entry,
+                "cosine_similarity": float(best_sim)
+            }
         return None
 
     def retrieve_explanation(self, task_id: str, task_description: str, hugginggpt_output: str, base_explanation: str) -> Dict[str, Any]:
@@ -109,7 +112,11 @@ class ExplanationRetriever:
         similar = self.find_similar(task_text)
 
         if similar:
-            return {"mode": "retrieved", "entry": similar}
+            return {
+                "mode": "retrieved",
+                "entry": similar["entry"],
+                "cosine_similarity": similar["cosine_similarity"]
+            }
 
         emb = self.embed(task_text).tolist()
 
@@ -121,7 +128,7 @@ class ExplanationRetriever:
             "embedding": emb
         }
         self.save_entry(entry)
-        return {"mode": "base", "entry": entry}
+        return {"mode": "base", "entry": entry, "cosine_similarity": 0.0}
     
     def update_explanation(self, task_id: str, new_explanation: str):
         """

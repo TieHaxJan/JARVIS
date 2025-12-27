@@ -44,9 +44,16 @@ for i, item in enumerate(prompts, start=start_index + 1):
 
     print(f"\n=== {i}/{start_index + len(prompts)}  RUNNING ===")
     print(f"Prompt: {prompt}")
+    
+    wrapped_prompt = (
+        f"<<PROMPT_ID:{i}>>"
+        f"<<ITERATION:{1}>>\n"
+        f"{item['prompt']}"
+    )
+
 
     payload = {
-        "messages": [ {"role": "user", "content": prompt} ],
+        "messages": [ {"role": "user", "content": wrapped_prompt} ],
         "api_type": "huggingface",
         "api_key": HF_TOKEN,
         "api_endpoint": "",

@@ -1,0 +1,29 @@
+[
+  {
+    "prompt": "Describe the image 'examples/forest.jpg' in as much detail as possible.",
+    "task_type": "single",
+    "models": [
+      "nlpconnect/vit-gpt2-image-captioning"
+    ],
+    "response": "ERROR: Expecting value: line 1 column 1 (char 0)",
+    "duration": 5.7234206199646
+  },
+  {
+    "prompt": "Detect all objects in 'examples/street_scene.png'.",
+    "task_type": "single",
+    "models": [
+      "facebook/detr-resnet-101"
+    ],
+    "response": "ERROR: Expecting value: line 1 column 1 (char 0)",
+    "duration": 5.38355016708374
+  },
+  {
+    "prompt": "Generate an image from the text 'a medieval castle under the moonlight'.",
+    "task_type": "single",
+    "models": [
+      "runwayml/stable-diffusion-v1-5"
+    ],
+    "response": "ERROR: Expecting value: line 1 column 1 (char 0)",
+    "duration": 10.93052625656128
+  }
+]

@@ -1,7 +1,7 @@
 import base64
 import copy
 from io import BytesIO
-from datetime import datetime
+from datetime import datetime, timezone
 import io
 import os
 import random
@@ -1133,11 +1133,34 @@ def build_clean_context(task_description: str, results_json: str) -> str:
     s = re.sub(r'\"(?:[\\/][\w\-.]+)+(?:\.[\w]+)\"', '"[PATH]"', s)
     return s.strip()
 
+def log_iteration(record: dict, iteration: int):
+    record["iteration"] = iteration
+    record["timestamp"] = datetime.now(timezone.utc).isoformat()
+
+    out_file = f"batch_results/iteration_{iteration}.jsonl"
+    with open(out_file, "a") as f:
+        f.write(json.dumps(record, ensure_ascii=False) + "\n")
 
 def chat_huggingface(messages, api_key, api_type, api_endpoint, return_planning = False, return_results = False):
     start = time.time()
     context = messages[:-1]
     input = messages[-1]["content"]
+    
+    PROMPT_ID_RE = re.compile(r"<<PROMPT_ID:(\d+)>>")
+    ITER_RE = re.compile(r"<<ITERATION:(\d+)>>")
+
+    raw_input = input
+
+    pid_match = PROMPT_ID_RE.search(raw_input)
+    iter_match = ITER_RE.search(raw_input)
+
+    input_id = int(pid_match.group(1)) if pid_match else None
+    iteration = int(iter_match.group(1)) if iter_match else None
+
+    # Strip metadata before ANY model sees it
+    input = PROMPT_ID_RE.sub("", raw_input)
+    input = ITER_RE.sub("", input).strip()
+
     logger.info("*"*80)
     logger.info(f"input: {input}")
 
@@ -1254,6 +1277,28 @@ def chat_huggingface(messages, api_key, api_type, api_endpoint, return_planning 
     )
 
     logger.debug(f"Final explanation chosen by Judge: {final_explanation}")
+    
+    record = {
+        "prompt_id": input_id,                     # stable across iterations
+        "prompt": input,
+        "expert_output": results,                  # already an array
+        "base_explanation": base_explanation,
+        "retriever": {
+            "cosine_similarity": retrieval_result["cosine_similarity"],
+            "retrieved_explanation": retrieval_result["entry"]["explanation"],
+            "retrieval_id": retrieval_result["entry"]["task_id"]
+        },
+        "judge": {
+            "winner": judge_result["winner"],
+            "grade_base": judge_result["rating_A"],
+            "grade_retrieved": judge_result["rating_B"],
+            "reason": judge_result["reason"],
+            "improved_explanation": judge_result["improved_explanation"]
+        },
+        "final_explanation": final_explanation
+    }
+
+    log_iteration(record, iteration=iteration)
 
     response = replace_explanation_tags(response, final_explanation)
 
