@@ -25,6 +25,13 @@ class ExplanationJudge:
         prompt = f"""
         You are an expert evaluator of explanations. 
         You evaluate two explanations (A and B) based on clarity, correctness, completeness, and usefulness.
+        
+        Bias control:
+        - Do not prefer A or B due to label, origin, or writing style.
+        - Anchor judgments to the System Output: reward only claims supported by it.
+        - Avoid length bias: do not reward verbosity; prefer higher information density.
+        - Penalize redundancy: if an explanation mostly restates what the other already said, score it lower.
+        - If both are similarly correct, prefer the explanation that adds more verifiable, task-relevant detail and clearer next steps.
 
         Your tasks:
         1. Provide a letter-grade rating (A-F) for each explanation:
