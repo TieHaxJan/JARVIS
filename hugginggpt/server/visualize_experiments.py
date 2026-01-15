@@ -59,7 +59,7 @@ plt.rcParams.update({
 def savefig(name):
     plt.tight_layout()
     plt.savefig(os.path.join(OUT_DIR, f"{name}.png"))
-    plt.savefig(os.path.join(OUT_DIR, f"{name}.pdf"))
+    #plt.savefig(os.path.join(OUT_DIR, f"{name}.pdf"))
     plt.close()
 
 def mean_ci(series):
