@@ -49,6 +49,36 @@ class ExplanationRetriever:
 
     def embed(self, text: str) -> np.ndarray:
         return self.embedder.encode(self.canonicalize(text), convert_to_numpy=True)
+    
+    def canonicalize(self, text: str) -> str:
+        """
+        Canonicalize text for retrieval:
+        - normalize casing
+        - mask paths consistently
+        - normalize whitespace
+        - lightly normalize punctuation
+        - preserve structure and technical tokens
+        """
+        if not isinstance(text, str):
+            text = str(text)
+
+        # 1) lowercase
+        t = text.lower()
+
+        # 2) mask paths (your existing logic)
+        t = mask_paths(t)
+
+        # 3) normalize whitespace (newlines → spaces)
+        t = re.sub(r"\s+", " ", t).strip()
+
+        # 4) normalize quotes/backticks (formatting noise)
+        t = re.sub(r"[\"`']", "", t)
+
+        # 5) collapse repeated punctuation (but keep symbols meaningful to code)
+        #    e.g. "!!!" → "!"
+        t = re.sub(r"([!?.,:;])\1+", r"\1", t)
+
+        return t
 
     def load_db(self):
         with open(self.db_path, "r", encoding="utf-8") as f:
