@@ -1262,13 +1262,25 @@ def chat_huggingface(messages, api_key, api_type, api_endpoint, return_planning 
     retrieved_explanation = retrieval_result["entry"]["explanation"]
 
     # IMPORTANT: judge on the clean, masked context to avoid path leakage
-    judge = ExplanationJudge(chitchat, api_key, api_type, api_endpoint, LLM)
-    judge_result = judge.decide(
-        task_description=input,
-        hugginggpt_output=context_clean,   # use masked full context
-        base_explanation=base_explanation,
-        retrieved_explanation=retrieved_explanation
-    )
+    if retrieval_result.get("mode") == "base":
+        # choose a default grade you like; "B" is a reasonable default
+        grade = "B"
+        judge_result = {
+            "winner": "base",
+            "reason": "No retrieved match (first iteration), so return the base explanation.",
+            "rating_A": grade,
+            "rating_B": grade,  # treat as same in this branch
+            "improved_explanation": base_explanation.strip() if isinstance(base_explanation, str) else str(base_explanation)
+        }
+    else:
+        # IMPORTANT: judge on the clean, masked context to avoid path leakage
+        judge = ExplanationJudge(chitchat, api_key, api_type, api_endpoint, LLM)
+        judge_result = judge.decide(
+            task_description=input,
+            hugginggpt_output=context_clean,  # masked full context
+            base_explanation=base_explanation,
+            retrieved_explanation=retrieved_explanation
+        )
 
     # Pick winner
     if judge_result["winner"] == "retrieved":
