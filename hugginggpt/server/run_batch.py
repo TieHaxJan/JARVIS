@@ -87,6 +87,9 @@ def main():
     short_id = uuid.uuid4().hex[:4]
     run_dir = Path(args.out_root) / f"{run_stamp}_{short_id}"
     (run_dir / "public").mkdir(parents=True, exist_ok=True)
+    (run_dir / "public" / "videos").mkdir(parents=True, exist_ok=True)
+    (run_dir / "public" / "images").mkdir(parents=True, exist_ok=True)
+    (run_dir / "public" / "audios").mkdir(parents=True, exist_ok=True)
     (run_dir / "logs").mkdir(parents=True, exist_ok=True)
     (run_dir / "explanations").mkdir(parents=True, exist_ok=True)
 
