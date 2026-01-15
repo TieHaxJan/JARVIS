@@ -298,11 +298,11 @@ def get_id_reason(choose_str):
     choose = {"id": id, "reason": reason}
     return id.strip(), reason.strip(), choose
 
-def record_case(success, **args):
+def record_case(run_dir, success, **args):
     if success:
-        f = open("logs/log_success.jsonl", "a")
+        f = open(f"{run_dir}/logs/log_success.jsonl", "a")
     else:
-        f = open("logs/log_fail.jsonl", "a")
+        f = open(f"{run_dir}/logs/log_fail.jsonl", "a")
     log = args
     if success:
         logger.debug(f" Success: {json.dumps(log)}")
@@ -809,7 +809,7 @@ def local_model_inference(model_id, data, task):
         return response.json()
 
 
-def model_inference(model_id, data, hosted_on, task):
+def model_inference(model_id, data, hosted_on, task, run_dir):
     if hosted_on == "unknown":
         localStatusUrl = f"{Model_Server}/status/{model_id}"
         r = requests.get(localStatusUrl)
@@ -826,7 +826,7 @@ def model_inference(model_id, data, hosted_on, task):
         if hosted_on == "local":
             inference_result = local_model_inference(model_id, data, task)
         elif hosted_on == "huggingface":
-            inference_result = huggingface_model_inference(model_id, data, task)
+            inference_result = huggingface_model_inference(model_id, data, task, run_dir)
     except Exception as e:
         print(e)
         traceback.print_exc()
@@ -909,7 +909,7 @@ def collect_result(command, choose, inference_result):
     return result
 
 
-def run_task(input, command, results, api_key, api_type, api_endpoint):
+def run_task(input, command, results, api_key, api_type, api_endpoint, run_dir):
     id = command["id"]
     args = command["args"]
     task = command["task"]
@@ -1000,7 +1000,7 @@ def run_task(input, command, results, api_key, api_type, api_endpoint):
             logger.debug(f"Chosen Model: {choose}")
         else:
             logger.warning(f"Task {command['task']} is not available. ControlNet need to be deployed locally.")
-            record_case(success=False, **{"input": input, "task": command, "reason": f"Task {command['task']} is not available. ControlNet need to be deployed locally.", "op":"message"})
+            record_case(run_dir=run_dir, success=False, **{"input": input, "task": command, "reason": f"Task {command['task']} is not available. ControlNet need to be deployed locally.", "op":"message"})
             inference_result = {"error": f"service related to ControlNet is not available."}
             results[id] = collect_result(command, "", inference_result)
             return False
@@ -1018,7 +1018,7 @@ def run_task(input, command, results, api_key, api_type, api_endpoint):
     else:
         if task not in MODELS_MAP:
             logger.warning(f"no available models on {task} task.")
-            record_case(success=False, **{"input": input, "task": command, "reason": f"task not support: {command['task']}", "op":"message"})
+            record_case(run_dir=run_dir, success=False, **{"input": input, "task": command, "reason": f"task not support: {command['task']}", "op":"message"})
             inference_result = {"error": f"{command['task']} not found in available tasks."}
             results[id] = collect_result(command, "", inference_result)
             return False
@@ -1031,7 +1031,7 @@ def run_task(input, command, results, api_key, api_type, api_endpoint):
 
         if len(all_avaliable_model_ids) == 0:
             logger.warning(f"no available models on {command['task']}")
-            record_case(success=False, **{"input": input, "task": command, "reason": f"no available models: {command['task']}", "op":"message"})
+            record_case(run_dir=run_dir, success=False, **{"input": input, "task": command, "reason": f"no available models: {command['task']}", "op":"message"})
             inference_result = {"error": f"no available models on {command['task']} task."}
             results[id] = collect_result(command, "", inference_result)
             return False
@@ -1070,11 +1070,11 @@ def run_task(input, command, results, api_key, api_type, api_endpoint):
                 choose_str = find_json(choose_str)
                 best_model_id, reason, choose  = get_id_reason(choose_str)
                 hosted_on = "local" if best_model_id in all_avaliable_models["local"] else "huggingface"
-    inference_result = model_inference(best_model_id, args, hosted_on, command['task'])
+    inference_result = model_inference(best_model_id, args, hosted_on, command['task'], run_dir)
 
     if "error" in inference_result:
         logger.warning(f"Inference error: {inference_result['error']}")
-        record_case(success=False, **{"input": input, "task": command, "reason": f"inference error: {inference_result['error']}", "op":"message"})
+        record_case(run_dir=run_dir, success=False, **{"input": input, "task": command, "reason": f"inference error: {inference_result['error']}", "op":"message"})
         results[id] = collect_result(command, choose, inference_result)
         return False
     
@@ -1133,11 +1133,14 @@ def build_clean_context(task_description: str, results_json: str) -> str:
     s = re.sub(r'\"(?:[\\/][\w\-.]+)+(?:\.[\w]+)\"', '"[PATH]"', s)
     return s.strip()
 
-def log_iteration(record: dict, iteration: int):
+def log_iteration(record: dict, iteration: int, run_dir: str):
     record["iteration"] = iteration
     record["timestamp"] = datetime.now(timezone.utc).isoformat()
+    
+    iterations_dir = Path(run_dir) / "iterations"
+    iterations_dir.mkdir(parents=True, exist_ok=True)
 
-    out_file = f"batch_results/iteration_{iteration}.jsonl"
+    out_file = f"{run_dir}/iterations/iteration_{iteration}.jsonl"
     with open(out_file, "a") as f:
         f.write(json.dumps(record, ensure_ascii=False) + "\n")
 
@@ -1148,18 +1151,22 @@ def chat_huggingface(messages, api_key, api_type, api_endpoint, return_planning 
     
     PROMPT_ID_RE = re.compile(r"<<PROMPT_ID:(\d+)>>")
     ITER_RE = re.compile(r"<<ITERATION:(\d+)>>")
+    RUN_DIR = re.compile(r"<<RUN_DIR:(.+?)>>")
 
     raw_input = input
 
     pid_match = PROMPT_ID_RE.search(raw_input)
     iter_match = ITER_RE.search(raw_input)
+    run_match = RUN_DIR.search(raw_input)
 
     input_id = int(pid_match.group(1)) if pid_match else None
     iteration = int(iter_match.group(1)) if iter_match else None
+    run_dir = run_match.group(1) if run_match else None
 
     # Strip metadata before ANY model sees it
     input = PROMPT_ID_RE.sub("", raw_input)
     input = ITER_RE.sub("", input).strip()
+    input = RUN_DIR.sub("", input).strip()
 
     logger.info("*"*80)
     logger.info(f"input: {input}")
@@ -1167,7 +1174,7 @@ def chat_huggingface(messages, api_key, api_type, api_endpoint, return_planning 
     task_str = parse_task(context, input, api_key, api_type, api_endpoint)
 
     if "error" in task_str:
-        record_case(success=False, **{"input": input, "task": task_str, "reason": f"task parsing error: {task_str['error']['message']}", "op":"report message"})
+        record_case(run_dir=run_dir, success=False, **{"input": input, "task": task_str, "reason": f"task parsing error: {task_str['error']['message']}", "op":"report message"})
         return {"message": task_str["error"]["message"]}
 
     task_str = task_str.strip()
@@ -1178,16 +1185,16 @@ def chat_huggingface(messages, api_key, api_type, api_endpoint, return_planning 
     except Exception as e:
         logger.debug(e)
         response = chitchat(messages, api_key, api_type, api_endpoint)
-        record_case(success=False, **{"input": input, "task": task_str, "reason": "task parsing fail", "op":"chitchat"})
+        record_case(run_dir=run_dir, success=False, **{"input": input, "task": task_str, "reason": "task parsing fail", "op":"chitchat"})
         return {"message": response}
     
     if task_str == "[]":  # using LLM response for empty task
-        record_case(success=False, **{"input": input, "task": [], "reason": "task parsing fail: empty", "op": "chitchat"})
+        record_case(run_dir=run_dir, success=False, **{"input": input, "task": [], "reason": "task parsing fail: empty", "op": "chitchat"})
         response = chitchat(messages, api_key, api_type, api_endpoint)
         return {"message": response}
 
     if len(tasks) == 1 and tasks[0]["task"] in ["summarization", "translation", "conversational", "text-generation", "text2text-generation"]:
-        record_case(success=True, **{"input": input, "task": tasks, "reason": "chitchat tasks", "op": "chitchat"})
+        record_case(run_dir=run_dir, success=True, **{"input": input, "task": tasks, "reason": "chitchat tasks", "op": "chitchat"})
         response = chitchat(messages, api_key, api_type, api_endpoint)
         return {"message": response}
 
@@ -1214,7 +1221,7 @@ def chat_huggingface(messages, api_key, api_type, api_endpoint, return_planning 
             dep = task["dep"]
             if dep[0] == -1 or len(list(set(dep).intersection(d.keys()))) == len(dep):
                 tasks.remove(task)
-                thread = threading.Thread(target=run_task, args=(input, task, d, api_key, api_type, api_endpoint))
+                thread = threading.Thread(target=run_task, args=(input, task, d, api_key, api_type, api_endpoint, run_dir))
                 thread.start()
                 threads.append(thread)
         if num_thread == len(threads):
@@ -1298,7 +1305,7 @@ def chat_huggingface(messages, api_key, api_type, api_endpoint, return_planning 
         "final_explanation": final_explanation
     }
 
-    log_iteration(record, iteration=iteration)
+    log_iteration(record, iteration=iteration, run_dir=run_dir)
 
     response = replace_explanation_tags(response, final_explanation)
 
@@ -1306,7 +1313,7 @@ def chat_huggingface(messages, api_key, api_type, api_endpoint, return_planning 
     during = end - start
 
     answer = {"message": response}
-    record_case(success=True, **{"input": input, "task": task_str, "results": results, "response": response, "during": during, "op":"response"})
+    record_case(run_dir=run_dir, success=True, **{"input": input, "task": task_str, "results": results, "response": response, "during": during, "op":"response"})
     logger.info(f"response: {response}")
     return answer
 
