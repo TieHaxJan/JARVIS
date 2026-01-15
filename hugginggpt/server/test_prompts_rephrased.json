@@ -134,7 +134,7 @@
     ]
   },
   {
-    "prompt": "Segment the image '/f.jpg'.",
+    "prompt": "Segment the image 'examples/f.jpg'.",
     "task_type": "single",
     "models": [
       "facebook/detr-resnet-101"
