@@ -22,8 +22,8 @@ import seaborn as sns
 # Configuration
 # ============================================================
 
-LOG_PATTERN = "batch_results/iteration_*.jsonl"
-OUT_DIR = "figures"
+LOG_PATTERN = "runs/20260115_164102_7e59/iterations/iteration_*.jsonl"
+OUT_DIR = "runs/20260115_164102_7e59/figures"
 os.makedirs(OUT_DIR, exist_ok=True)
 
 # Prompt subgroup for cosine stability plot
