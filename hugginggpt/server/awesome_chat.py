@@ -1300,13 +1300,14 @@ def chat_huggingface(messages, api_key, api_type, api_endpoint, return_planning 
     record = {
         "prompt_id": input_id,                     # stable across iterations
         "prompt": input,
+        "masked_prompt": retriever._mask_entry_strings(input),
         "expert_output": results,                  # already an array
         "base_explanation": base_explanation,
         "retriever": {
             "cosine_similarity": retrieval_result["cosine_similarity"],
             "retrieved_explanation": retrieval_result["entry"]["explanation"],
             "retrieval_id": retrieval_result["entry"]["task_id"],
-            "task_description": retrieval_result["entry"]["task_description"]
+            "retrieved_prompt": retrieval_result["entry"]["task_description"]
         },
         "judge": {
             "winner": judge_result["winner"],
