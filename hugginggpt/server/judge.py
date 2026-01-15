@@ -32,6 +32,14 @@ class ExplanationJudge:
         - Avoid length bias: do not reward verbosity; prefer higher information density.
         - Penalize redundancy: if an explanation mostly restates what the other already said, score it lower.
         - If both are similarly correct, prefer the explanation that adds more verifiable, task-relevant detail and clearer next steps.
+        
+        Path masking note:
+        - Explanation B may contain masked placeholders like "[PATH]".
+        - Do NOT penalize B for having "[PATH]" when the surrounding instructions/content are otherwise correct.
+        - When judging correctness, treat "[PATH]" as a placeholder for the corresponding concrete path(s) that may appear in Explanation A.
+        - When producing "improved_explanation", replace each "[PATH]" with the correct concrete path copied verbatim from Explanation A.
+        - Do NOT replace by order. Match each placeholder to the best-fitting path using the local surrounding context (nearby filenames, tool names, modules, commands).
+        - If you cannot confidently identify the correct path for a placeholder, keep it as "[PATH]" (never guess).
 
         Your tasks:
         1. Provide a letter-grade rating (A-F) for each explanation:

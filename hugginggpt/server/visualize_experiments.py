@@ -27,7 +27,7 @@ OUT_DIR = "figures"
 os.makedirs(OUT_DIR, exist_ok=True)
 
 # Prompt subgroup for cosine stability plot
-STABLE_PROMPT_IDS = [0, 1, 2, 3, 4]
+STABLE_PROMPT_IDS = [0, 1, 2, 3, 4, 5, 6, 20, 25, 35, 56, 72, 74, 89, 90]
 
 # Grade mapping
 GRADE_MAP = {"A": 5, "B": 4, "C": 3, "D": 2, "E": 1, "F": 0}

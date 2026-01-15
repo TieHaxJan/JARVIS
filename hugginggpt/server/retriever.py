@@ -37,7 +37,7 @@ def mask_paths(s: str) -> str:
     return s
 
 class ExplanationRetriever:
-    def __init__(self, db_path="data/explanations.jsonl", model_name="all-MiniLM-L6-v2", threshold=0.95):
+    def __init__(self, db_path="data/explanations.jsonl", model_name="sentence-transformers/all-mpnet-base-v2", threshold=0.95):
         self.db_path = db_path
         self.embedder = SentenceTransformer(model_name)
         self.threshold = threshold
@@ -48,7 +48,7 @@ class ExplanationRetriever:
             self.logger.debug(f"Created new explanations DB at {self.db_path}")
 
     def embed(self, text: str) -> np.ndarray:
-        return self.embedder.encode(text, convert_to_numpy=True)
+        return self.embedder.encode(self.canonicalize(text), convert_to_numpy=True)
 
     def load_db(self):
         with open(self.db_path, "r", encoding="utf-8") as f:
@@ -94,8 +94,9 @@ class ExplanationRetriever:
         if not sims:
             self.logger.debug("No valid embeddings found in DB")
             return None
-
-        best_sim, best_entry = max(sims, key=lambda x: x[0])
+        
+        sims.sort(key=lambda x: x[0], reverse=True)
+        best_sim, best_entry = sims[0]
         self.logger.debug(f"Best similarity = {best_sim:.3f} (threshold = {self.threshold})")
 
         if best_sim >= self.threshold:
@@ -121,7 +122,7 @@ class ExplanationRetriever:
         emb = self.embed(task_text).tolist()
 
         entry = {
-            "task_id": task_id,
+            "task_id": task_id, 
             "task_description": task_description,
             "hugginggpt_output": hugginggpt_output,
             "explanation": base_explanation,
