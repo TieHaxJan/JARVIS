@@ -8,6 +8,8 @@ import glob
 import math
 import numpy as np
 import pandas as pd
+import argparse
+from difflib import SequenceMatcher
 
 # -----------------------------
 # Force headless backend
@@ -22,12 +24,20 @@ import seaborn as sns
 # Configuration
 # ============================================================
 
-LOG_PATTERN = "runs/20260115_164102_7e59/iterations/iteration_*.jsonl"
-OUT_DIR = "runs/20260115_164102_7e59/figures"
+parser = argparse.ArgumentParser()
+parser.add_argument("--run", default="runs/20260115_164102_7e59",
+                    help="Run directory, e.g. runs/20260115_164102_7e59")
+args = parser.parse_args()
+
+RUN_DIR = args.run.rstrip("/")
+
+LOG_PATTERN = os.path.join(RUN_DIR, "iterations", "iteration_*.jsonl")
+OUT_DIR = os.path.join(RUN_DIR, "figures")
 os.makedirs(OUT_DIR, exist_ok=True)
 
+
 # Prompt subgroup for cosine stability plot
-STABLE_PROMPT_IDS = [0, 1, 2, 3, 4, 5, 6, 20, 25, 35, 56, 72, 74, 89, 90]
+STABLE_PROMPT_IDS = [0, 1, 2, 3, 4, 5, 6, 20, 25]
 
 # Grade mapping
 GRADE_MAP = {"A": 5, "B": 4, "C": 3, "D": 2, "E": 1, "F": 0}
@@ -107,6 +117,78 @@ df["winner"] = df["judge"].apply(lambda j: j.get("winner"))
 df["cosine_similarity"] = df["retriever"].apply(
     lambda r: r.get("cosine_similarity", 0.0)
 )
+
+# --- Prompt match analysis ---
+df["masked_prompt"] = df.get("masked_prompt")
+
+df["retrieved_prompt"] = df["retriever"].apply(
+    lambda r: r.get("retrieved_prompt") if isinstance(r, dict) else None
+)
+
+def close_ratio(a, b) -> float:
+    if not isinstance(a, str) or not isinstance(b, str) or not a or not b:
+        return np.nan
+    return SequenceMatcher(None, a, b).ratio()
+
+df["prompt_match_ratio"] = df.apply(
+    lambda row: close_ratio(row["masked_prompt"], row["retrieved_prompt"]),
+    axis=1
+)
+
+# "same" means exact equality after stripping whitespace
+df["prompt_same"] = df.apply(
+    lambda row: (
+        isinstance(row["masked_prompt"], str) and
+        isinstance(row["retrieved_prompt"], str) and
+        row["masked_prompt"].strip() == row["retrieved_prompt"].strip()
+    ),
+    axis=1
+)
+
+# Overall stats
+same_count = int(df["prompt_same"].sum())
+both_present = int(df[["masked_prompt", "retrieved_prompt"]].notna().all(axis=1).sum())
+same_rate = (same_count / both_present) if both_present > 0 else 0.0
+
+# Write mismatches
+mismatch_path = os.path.join(OUT_DIR, "prompt_mismatches.txt")
+mismatches = df[
+    df[["masked_prompt", "retrieved_prompt"]].notna().all(axis=1) & (~df["prompt_same"])
+].copy()
+
+mismatches = mismatches.sort_values(
+    by=["prompt_match_ratio"], ascending=True
+)
+
+with open(mismatch_path, "w", encoding="utf-8") as f:
+    f.write(f"Run: {RUN_DIR}\n")
+    f.write(f"Exact same (strip) count: {same_count}\n")
+    f.write(f"Both present count: {both_present}\n")
+    f.write(f"Exact same rate: {same_rate:.4f}\n\n")
+    f.write("MISMATCHES (sorted by lowest close-match ratio first)\n")
+    f.write("=" * 80 + "\n\n")
+
+    for _, row in mismatches.iterrows():
+        pid = row.get("prompt_id", "NA")
+        it = row.get("iteration", "NA")
+        ratio = row.get("prompt_match_ratio", np.nan)
+
+        mp = row.get("masked_prompt", "")
+        rp = row.get("retrieved_prompt", "")
+
+        # short previews to keep file readable
+        mp_prev = (mp[:300] + "…") if isinstance(mp, str) and len(mp) > 300 else mp
+        rp_prev = (rp[:300] + "…") if isinstance(rp, str) and len(rp) > 300 else rp
+
+        f.write(f"prompt_id={pid} iteration={it} match_ratio={ratio:.4f}\n")
+        f.write("masked_prompt:\n")
+        f.write(mp_prev + "\n")
+        f.write("retrieved_prompt:\n")
+        f.write(rp_prev + "\n")
+        f.write("-" * 80 + "\n\n")
+
+print(f"[OK] Prompt exact-same rate: {same_rate:.3f} ({same_count}/{both_present})")
+print(f"[OK] Mismatches written to: {mismatch_path}")
 
 # ============================================================
 # 1. Average Grades per Iteration (with CI)
@@ -242,6 +324,52 @@ plt.ylabel("Cosine Similarity")
 plt.title("Cosine Similarity Stability (Task Subgroup)")
 plt.legend(title="Prompt ID")
 savefig("cosine_stability_subgroup")
+
+# ============================================================
+# 6. Prompt match per Iteration
+# ============================================================
+
+pm_stats = []
+for it, g in df.groupby("iteration"):
+    # exact same fraction (only where both strings exist)
+    both = g[["masked_prompt", "retrieved_prompt"]].notna().all(axis=1)
+    if both.any():
+        exact_frac = float(g.loc[both, "prompt_same"].mean())
+        mean_ratio, ci_ratio = mean_ci(g.loc[both, "prompt_match_ratio"])
+    else:
+        exact_frac = np.nan
+        mean_ratio, ci_ratio = np.nan, np.nan
+
+    pm_stats.append({
+        "iteration": it,
+        "exact_same_frac": exact_frac,
+        "mean_ratio": mean_ratio,
+        "ci_ratio": ci_ratio
+    })
+
+pm_stats = pd.DataFrame(pm_stats).sort_values("iteration")
+
+# (a) exact same fraction
+plt.figure()
+plt.plot(pm_stats["iteration"], pm_stats["exact_same_frac"], marker="o")
+plt.xlabel("Iteration")
+plt.ylabel("Exact Same Fraction")
+plt.ylim(0, 1)
+plt.title("Exact Match: masked_prompt vs retrieved_prompt")
+savefig("prompt_exact_match_per_iteration")
+
+# (b) close-match ratio (with CI)
+plt.figure()
+plt.errorbar(
+    pm_stats["iteration"], pm_stats["mean_ratio"],
+    yerr=pm_stats["ci_ratio"], marker="o"
+)
+plt.xlabel("Iteration")
+plt.ylabel("Close-Match Ratio")
+plt.ylim(0, 1)
+plt.title("Close Match Ratio: masked_prompt vs retrieved_prompt")
+savefig("prompt_close_match_ratio_per_iteration")
+
 
 # ============================================================
 # Done
