@@ -153,7 +153,7 @@ class ExplanationRetriever:
 
         entry = {
             "task_id": task_id, 
-            "task_description": task_description,
+            "task_description": mask_paths(task_description),
             "hugginggpt_output": hugginggpt_output,
             "explanation": base_explanation,
             "embedding": emb
