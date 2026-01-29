@@ -370,6 +370,82 @@ plt.ylim(0, 1)
 plt.title("Close Match Ratio: masked_prompt vs retrieved_prompt")
 savefig("prompt_close_match_ratio_per_iteration")
 
+has_both = df[["masked_prompt", "retrieved_prompt"]].notna().all(axis=1)
+
+rows = []
+for it, g in df[has_both].groupby("iteration"):
+    g_exact = g[g["prompt_same"]]
+    g_wrong = g[~g["prompt_same"]]
+    rows.append({
+        "iteration": it,
+        "win_rate_exact": (g_exact["winner"] == "retrieved").mean() if len(g_exact) else np.nan,
+        "win_rate_wrong": (g_wrong["winner"] == "retrieved").mean() if len(g_wrong) else np.nan,
+        "n_exact": len(g_exact),
+        "n_wrong": len(g_wrong),
+    })
+
+wr = pd.DataFrame(rows).sort_values("iteration")
+
+plt.figure()
+plt.plot(
+    wr["iteration"], wr["win_rate_exact"],
+    marker="o",
+    label="P(Judge picks Retrieved | exact retrieval)"
+)
+plt.plot(
+    wr["iteration"], wr["win_rate_wrong"],
+    marker="o",
+    label="P(Judge picks Retrieved | non-exact retrieval)"
+)
+plt.xlabel("Iteration")
+plt.ylabel("Retrieved win rate")
+plt.ylim(0, 1)
+plt.title("Judge preference for Retrieved under exact vs non-exact retrieval")
+plt.legend()
+savefig("retrieved_win_rate_exact_vs_wrong")
+
+# --- Heatmap: 4 regimes per iteration (fractions) ---
+use = df[has_both].copy()
+
+use["retrieval_correct"] = np.where(use["prompt_same"], "Exact", "Non-exact")
+use["judge_winner"] = np.where(use["winner"] == "retrieved", "Retrieved wins", "Base wins")
+
+# Counts per iteration x (retrieval_correct, judge_winner)
+counts = (
+    use.groupby(["iteration", "retrieval_correct", "judge_winner"])
+    .size()
+    .reset_index(name="count")
+)
+
+# Pivot into 4 columns
+pivot_counts = counts.pivot_table(
+    index="iteration",
+    columns=["retrieval_correct", "judge_winner"],
+    values="count",
+    fill_value=0
+).sort_index()
+
+# Convert to within-iteration fractions (so each iteration sums to 1)
+pivot_frac = pivot_counts.div(pivot_counts.sum(axis=1), axis=0)
+
+# Flatten column names for nicer heatmap labels
+pivot_frac.columns = [f"{a} | {b}" for a, b in pivot_frac.columns]
+
+n_iter = len(pivot_frac)
+
+plt.figure(figsize=(10, max(6, 0.6 * n_iter)))
+sns.heatmap(
+    pivot_frac,
+    vmin=0, vmax=1,
+    linewidths=0.5,
+    linecolor="white",
+    cbar_kws={"label": "Fraction"}
+)
+plt.xlabel("Regime (retrieval correctness | judge decision)")
+plt.ylabel("Iteration")
+plt.title("RAG regimes per iteration")
+savefig("heatmap_rag_regimes_per_iteration")
+
 
 # ============================================================
 # Done
