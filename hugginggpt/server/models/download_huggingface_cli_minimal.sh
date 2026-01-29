@@ -29,6 +29,7 @@ models=(
     "Intel/dpt-hybrid-midas"
     "microsoft/trocr-base-printed"
     "dslim/distilbert-NER"
+    "microsoft/beit-base-patch16-224-pt22k-ft22k"
 )
 
 echo "==================== DOWNLOADING MODELS ===================="

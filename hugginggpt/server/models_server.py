@@ -11,6 +11,7 @@ from transformers import SpeechT5Processor, SpeechT5ForTextToSpeech, SpeechT5Hif
 from transformers import BlipProcessor, BlipForConditionalGeneration
 from transformers import TrOCRProcessor, VisionEncoderDecoderModel, ViTImageProcessor, AutoTokenizer
 from transformers import ViltProcessor
+from transformers import BeitImageProcessor
 from datasets import load_dataset, load_from_disk
 from PIL import Image
 import flask
@@ -432,7 +433,19 @@ def load_pipes(local_deployment):
                     f"{local_fold}/microsoft/speecht5_hifigan"
                 ),
                 "device": device
-            }
+            },
+            # image-classification
+            "microsoft/beit-base-patch16-224-pt22k-ft22k": {
+                "model": pipeline(
+                    task="image-classification",
+                    model=f"{local_fold}/microsoft/beit-base-patch16-224-pt22k-ft22k",
+                    image_processor=BeitImageProcessor.from_pretrained(
+                        f"{local_fold}/microsoft/beit-base-patch16-224-pt22k-ft22k"
+                    ),
+                    device=device
+                ),
+                "device": device
+            },
         }
 
         other_pipes = {
@@ -890,6 +903,39 @@ def models(model_id):
             ents = [{"token": t, "label": l} for t, l in zip(tokens, labels)]
 
             result = {"entities": ents}
+            
+        # ------------- Image Classification -------------
+        
+        if model_id == "microsoft/beit-base-patch16-224-pt22k-ft22k":
+            img_url = request.get_json()["img_url"]
+
+            pipe = pipes[model_id]["model"]
+            device_str = pipes[model_id]["device"]
+            ensure_pipeline_on_device(pipe, device_str)
+
+            image = load_image(img_url).convert("RGB")
+
+            processor = BeitImageProcessor.from_pretrained(
+                f"{local_fold}/microsoft/beit-base-patch16-224-pt22k-ft22k"
+            )
+
+            inputs = processor(images=image, return_tensors="pt")
+            inputs = {k: v.to(device_str) for k, v in inputs.items()}
+
+            with torch.no_grad():
+                outputs = pipe.model(**inputs)
+                probs = torch.softmax(outputs.logits, dim=-1)
+
+            top_k = request.get_json().get("top_k", 5)
+            values, indices = probs.topk(top_k)
+
+            id2label = pipe.model.config.id2label
+            preds = [
+                {"label": id2label[idx.item()], "score": val.item()}
+                for val, idx in zip(values[0], indices[0])
+            ]
+
+            result = {"predictions": preds}
 
     except Exception as e:
         print(e)
