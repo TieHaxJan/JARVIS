@@ -37,9 +37,9 @@ def mask_paths(s: str) -> str:
     return s
 
 class ExplanationRetriever:
-    def __init__(self, db_path="data/explanations.jsonl", model_name="sentence-transformers/all-mpnet-base-v2", threshold=0.95):
+    def __init__(self, db_path="data/explanations.jsonl", model_name="Snowflake/snowflake-arctic-embed-m-v2.0", threshold=0.95):
         self.db_path = db_path
-        self.embedder = SentenceTransformer(model_name)
+        self.embedder = SentenceTransformer(model_name, trust_remote_code=True)
         self.threshold = threshold
         self.logger = logging.getLogger(__name__)
 
@@ -48,7 +48,10 @@ class ExplanationRetriever:
             self.logger.debug(f"Created new explanations DB at {self.db_path}")
 
     def embed(self, text: str) -> np.ndarray:
-        return self.embedder.encode(self.canonicalize(text), convert_to_numpy=True)
+        emb = self.embedder.encode(self.canonicalize(text), convert_to_numpy=True)
+        emb = emb.astype(np.float32, copy=False)
+        emb /= (np.linalg.norm(emb) + 1e-12)
+        return emb
     
     def canonicalize(self, text: str) -> str:
         """
@@ -111,14 +114,14 @@ class ExplanationRetriever:
         if not db:
             self.logger.debug("DB empty → no similar entries")
             return None
-        query_emb = self.embed(query_text).reshape(1, -1)
+        query_emb = self.embed(query_text)
 
         sims = []
         for entry in db:
             if "embedding" not in entry:
                 continue
-            emb = np.array(entry["embedding"]).reshape(1, -1)
-            sim = cosine_similarity(query_emb, emb)[0][0]
+            emb = np.array(entry["embedding"], dtype=np.float32)
+            sim = float(np.dot(query_emb, emb))
             sims.append((sim, entry))
 
         if not sims:
@@ -154,7 +157,7 @@ class ExplanationRetriever:
         entry = {
             "task_id": task_id, 
             "task_description": mask_paths(task_description),
-            "hugginggpt_output": hugginggpt_output,
+            "hugginggpt_output": mask_paths(hugginggpt_output),
             "explanation": base_explanation,
             "embedding": emb
         }

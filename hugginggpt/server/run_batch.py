@@ -63,8 +63,8 @@ def main():
                         help="1-based index to start processing (default: 1)")
 
     # Iterations
-    parser.add_argument("--iterations", type=int, default=6,
-                        help="How many iterations to run (default: 6)")
+    parser.add_argument("--iterations", type=int, default=7,
+                        help="How many iterations to run (default: 7)")
 
     # Output root
     parser.add_argument("--out-root", type=str, default="runs",
@@ -132,8 +132,9 @@ def main():
         print(f"Run folder: {run_dir}")
         print(f"==============================")
 
-        # Choose prompts: last iteration uses rephrased prompts
-        prompts = rephrased_prompts if iteration == args.iterations else base_prompts
+        # --- inside the iteration loop: use rephrased prompts for iterations 6 AND 7 ---
+        # Choose prompts: last two iterations (6 and 7) use rephrased prompts
+        prompts = rephrased_prompts if iteration >= 6 else base_prompts
 
         iter_errors = 0
         iter_start = time.time()
@@ -214,6 +215,18 @@ def main():
         iter_duration = time.time() - iter_start
         print(f"\nIteration {iteration} runtime: {iter_duration:.2f}s")
         print(f"Iteration {iteration} request errors: {iter_errors}")
+        
+    for sub in ("audios", "images", "videos"):
+        src_dir = Path("public") / sub
+        dst_dir = run_dir / "public" / sub
+        dst_dir.mkdir(parents=True, exist_ok=True)
+
+        if src_dir.exists():
+            for p in src_dir.iterdir():
+                if p.is_file():
+                    shutil.move(str(p), str(dst_dir / p.name))
+                elif p.is_dir():
+                    shutil.move(str(p), str(dst_dir / p.name))
 
     total_duration = time.time() - total_start
     print("\n=== DONE ===")

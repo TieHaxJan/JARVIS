@@ -1,0 +1,330 @@
+Run: runs/20260131_142308_a487
+Exact same (strip) count: 157
+Both present count: 203
+Exact same rate: 0.7734
+
+MISMATCHES (sorted by lowest close-match ratio first)
+================================================================================
+
+prompt_id=1 iteration=6 match_ratio=0.4505
+masked_prompt:
+Provide a detailed description of the image '[PATH]'.
+retrieved_prompt:
+Describe the image '[PATH]' in as much detail as possible.
+--------------------------------------------------------------------------------
+
+prompt_id=1 iteration=7 match_ratio=0.4505
+masked_prompt:
+Provide a detailed description of the image '[PATH]'.
+retrieved_prompt:
+Describe the image '[PATH]' in as much detail as possible.
+--------------------------------------------------------------------------------
+
+prompt_id=19 iteration=6 match_ratio=0.5647
+masked_prompt:
+Determine the number of cars present in '[PATH]'.
+retrieved_prompt:
+Count how many cars are in '[PATH]'.
+--------------------------------------------------------------------------------
+
+prompt_id=19 iteration=7 match_ratio=0.5647
+masked_prompt:
+Determine the number of cars present in '[PATH]'.
+retrieved_prompt:
+Count how many cars are in '[PATH]'.
+--------------------------------------------------------------------------------
+
+prompt_id=15 iteration=6 match_ratio=0.6234
+masked_prompt:
+Create an image that resembles '[PATH]'.
+retrieved_prompt:
+Generate a similar image to '[PATH]'.
+--------------------------------------------------------------------------------
+
+prompt_id=14 iteration=7 match_ratio=0.6234
+masked_prompt:
+Create an image that resembles '[PATH]'.
+retrieved_prompt:
+Generate a similar image to '[PATH]'.
+--------------------------------------------------------------------------------
+
+prompt_id=15 iteration=7 match_ratio=0.6234
+masked_prompt:
+Create an image that resembles '[PATH]'.
+retrieved_prompt:
+Generate a similar image to '[PATH]'.
+--------------------------------------------------------------------------------
+
+prompt_id=14 iteration=6 match_ratio=0.6234
+masked_prompt:
+Create an image that resembles '[PATH]'.
+retrieved_prompt:
+Generate a similar image to '[PATH]'.
+--------------------------------------------------------------------------------
+
+prompt_id=28 iteration=6 match_ratio=0.7643
+masked_prompt:
+Create an image based on the sketch '[PATH]' that features the text 'a futuristic city'.
+retrieved_prompt:
+Generate an image from sketch '[PATH]' with text 'a futuristic city'.
+--------------------------------------------------------------------------------
+
+prompt_id=27 iteration=7 match_ratio=0.8148
+masked_prompt:
+Identify tables in '[PATH]'.
+retrieved_prompt:
+Detect tables in '[PATH]'.
+--------------------------------------------------------------------------------
+
+prompt_id=27 iteration=6 match_ratio=0.8148
+masked_prompt:
+Identify tables in '[PATH]'.
+retrieved_prompt:
+Detect tables in '[PATH]'.
+--------------------------------------------------------------------------------
+
+prompt_id=3 iteration=6 match_ratio=0.8235
+masked_prompt:
+Create an image based on the description 'a medieval castle under the moonlight'.
+retrieved_prompt:
+Generate an image from the text 'a medieval castle under the moonlight'.
+--------------------------------------------------------------------------------
+
+prompt_id=3 iteration=7 match_ratio=0.8235
+masked_prompt:
+Create an image based on the description 'a medieval castle under the moonlight'.
+retrieved_prompt:
+Generate an image from the text 'a medieval castle under the moonlight'.
+--------------------------------------------------------------------------------
+
+prompt_id=11 iteration=6 match_ratio=0.8267
+masked_prompt:
+Retrieve the total amount from '[PATH]'.
+retrieved_prompt:
+Extract total amount from '[PATH]'.
+--------------------------------------------------------------------------------
+
+prompt_id=11 iteration=7 match_ratio=0.8267
+masked_prompt:
+Retrieve the total amount from '[PATH]'.
+retrieved_prompt:
+Extract total amount from '[PATH]'.
+--------------------------------------------------------------------------------
+
+prompt_id=17 iteration=6 match_ratio=0.8293
+masked_prompt:
+Produce a voice description for '[PATH]'.
+retrieved_prompt:
+Generate a voice description of '[PATH]'.
+--------------------------------------------------------------------------------
+
+prompt_id=17 iteration=7 match_ratio=0.8293
+masked_prompt:
+Produce a voice description for '[PATH]'.
+retrieved_prompt:
+Generate a voice description of '[PATH]'.
+--------------------------------------------------------------------------------
+
+prompt_id=29 iteration=7 match_ratio=0.8333
+masked_prompt:
+Create an image based on the text 'a robot painting a picture'.
+retrieved_prompt:
+Generate an image from text 'a robot painting a picture'.
+--------------------------------------------------------------------------------
+
+prompt_id=29 iteration=6 match_ratio=0.8333
+masked_prompt:
+Create an image based on the text 'a robot painting a picture'.
+retrieved_prompt:
+Generate an image from text 'a robot painting a picture'.
+--------------------------------------------------------------------------------
+
+prompt_id=9 iteration=7 match_ratio=0.8372
+masked_prompt:
+Respond to 'What is the person holding?' regarding the image '[PATH]'.
+retrieved_prompt:
+Answer 'What is the person holding?' in the image '[PATH]'.
+--------------------------------------------------------------------------------
+
+prompt_id=9 iteration=6 match_ratio=0.8372
+masked_prompt:
+Respond to 'What is the person holding?' regarding the image '[PATH]'.
+retrieved_prompt:
+Answer 'What is the person holding?' in the image '[PATH]'.
+--------------------------------------------------------------------------------
+
+prompt_id=2 iteration=6 match_ratio=0.8438
+masked_prompt:
+Identify all objects in '[PATH]'.
+retrieved_prompt:
+Detect all objects in '[PATH]'.
+--------------------------------------------------------------------------------
+
+prompt_id=2 iteration=7 match_ratio=0.8438
+masked_prompt:
+Identify all objects in '[PATH]'.
+retrieved_prompt:
+Detect all objects in '[PATH]'.
+--------------------------------------------------------------------------------
+
+prompt_id=24 iteration=7 match_ratio=0.8529
+masked_prompt:
+Classify the objects found in '[PATH]'.
+retrieved_prompt:
+Classify objects in '[PATH]'.
+--------------------------------------------------------------------------------
+
+prompt_id=24 iteration=6 match_ratio=0.8529
+masked_prompt:
+Classify the objects found in '[PATH]'.
+retrieved_prompt:
+Classify objects in '[PATH]'.
+--------------------------------------------------------------------------------
+
+prompt_id=26 iteration=6 match_ratio=0.8636
+masked_prompt:
+Generate a 5-second video depicting 'A butterfly flying near flowers'.
+retrieved_prompt:
+Create a 5-second video for 'A butterfly flying near flowers'.
+--------------------------------------------------------------------------------
+
+prompt_id=26 iteration=7 match_ratio=0.8636
+masked_prompt:
+Generate a 5-second video depicting 'A butterfly flying near flowers'.
+retrieved_prompt:
+Create a 5-second video for 'A butterfly flying near flowers'.
+--------------------------------------------------------------------------------
+
+prompt_id=10 iteration=6 match_ratio=0.8739
+masked_prompt:
+Create a video for the caption 'A dog running through snow'.
+retrieved_prompt:
+Generate a video for the text 'A dog running through snow'.
+--------------------------------------------------------------------------------
+
+prompt_id=10 iteration=7 match_ratio=0.8739
+masked_prompt:
+Create a video for the caption 'A dog running through snow'.
+retrieved_prompt:
+Generate a video for the text 'A dog running through snow'.
+--------------------------------------------------------------------------------
+
+prompt_id=8 iteration=7 match_ratio=0.8793
+masked_prompt:
+Respond to 'What is the man holding?' in the image '[PATH]'.
+retrieved_prompt:
+Answer 'What is the man holding?' in the image '[PATH]'.
+--------------------------------------------------------------------------------
+
+prompt_id=8 iteration=6 match_ratio=0.8793
+masked_prompt:
+Respond to 'What is the man holding?' in the image '[PATH]'.
+retrieved_prompt:
+Answer 'What is the man holding?' in the image '[PATH]'.
+--------------------------------------------------------------------------------
+
+prompt_id=23 iteration=1 match_ratio=0.8814
+masked_prompt:
+Estimate depth for '[PATH]'.
+retrieved_prompt:
+Estimate the depth of '[PATH]'.
+--------------------------------------------------------------------------------
+
+prompt_id=23 iteration=2 match_ratio=0.8814
+masked_prompt:
+Estimate depth for '[PATH]'.
+retrieved_prompt:
+Estimate the depth of '[PATH]'.
+--------------------------------------------------------------------------------
+
+prompt_id=23 iteration=4 match_ratio=0.8814
+masked_prompt:
+Estimate depth for '[PATH]'.
+retrieved_prompt:
+Estimate the depth of '[PATH]'.
+--------------------------------------------------------------------------------
+
+prompt_id=23 iteration=5 match_ratio=0.8814
+masked_prompt:
+Estimate depth for '[PATH]'.
+retrieved_prompt:
+Estimate the depth of '[PATH]'.
+--------------------------------------------------------------------------------
+
+prompt_id=23 iteration=3 match_ratio=0.8814
+masked_prompt:
+Estimate depth for '[PATH]'.
+retrieved_prompt:
+Estimate the depth of '[PATH]'.
+--------------------------------------------------------------------------------
+
+prompt_id=5 iteration=7 match_ratio=0.8824
+masked_prompt:
+Create a speech for the phrase 'Welcome to HuggingGPT testing suite.'
+retrieved_prompt:
+Generate speech for the text 'Welcome to HuggingGPT testing suite.'
+--------------------------------------------------------------------------------
+
+prompt_id=5 iteration=6 match_ratio=0.8824
+masked_prompt:
+Create a speech for the phrase 'Welcome to HuggingGPT testing suite.'
+retrieved_prompt:
+Generate speech for the text 'Welcome to HuggingGPT testing suite.'
+--------------------------------------------------------------------------------
+
+prompt_id=7 iteration=6 match_ratio=0.9054
+masked_prompt:
+Identify the named entities in the text 'Elon Musk founded SpaceX in 2002.'.
+retrieved_prompt:
+Recognize named entities in the text 'Elon Musk founded SpaceX in 2002.'
+--------------------------------------------------------------------------------
+
+prompt_id=7 iteration=7 match_ratio=0.9054
+masked_prompt:
+Identify the named entities in the text 'Elon Musk founded SpaceX in 2002.'.
+retrieved_prompt:
+Recognize named entities in the text 'Elon Musk founded SpaceX in 2002.'
+--------------------------------------------------------------------------------
+
+prompt_id=16 iteration=6 match_ratio=0.9189
+masked_prompt:
+Transcribe the speech found in '[PATH]'.
+retrieved_prompt:
+Transcribe the speech in '[PATH]'.
+--------------------------------------------------------------------------------
+
+prompt_id=16 iteration=7 match_ratio=0.9189
+masked_prompt:
+Transcribe the speech found in '[PATH]'.
+retrieved_prompt:
+Transcribe the speech in '[PATH]'.
+--------------------------------------------------------------------------------
+
+prompt_id=12 iteration=7 match_ratio=0.9268
+masked_prompt:
+Create a canny edge version of '[PATH]'.
+retrieved_prompt:
+Generate a canny edge version of '[PATH]'.
+--------------------------------------------------------------------------------
+
+prompt_id=12 iteration=6 match_ratio=0.9268
+masked_prompt:
+Create a canny edge version of '[PATH]'.
+retrieved_prompt:
+Generate a canny edge version of '[PATH]'.
+--------------------------------------------------------------------------------
+
+prompt_id=23 iteration=6 match_ratio=0.9524
+masked_prompt:
+Estimate the depth for '[PATH]'.
+retrieved_prompt:
+Estimate the depth of '[PATH]'.
+--------------------------------------------------------------------------------
+
+prompt_id=23 iteration=7 match_ratio=0.9524
+masked_prompt:
+Estimate the depth for '[PATH]'.
+retrieved_prompt:
+Estimate the depth of '[PATH]'.
+--------------------------------------------------------------------------------
+

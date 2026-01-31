@@ -85,6 +85,19 @@ def mean_ci(series):
     ci = 1.96 * std / math.sqrt(n) if n > 1 else 0.0
     return mean, ci
 
+REPHRASED_ITS = [6, 7]
+
+def mark_rephrased_iters():
+    """
+    Visually highlight iterations that use rephrased prompts (6 and 7) on *all* plots.
+    """
+    ax = plt.gca()
+    # Shade the region covering iterations 6 and 7
+    ax.axvspan(5.5, 7.5, alpha=0.12)
+    # Add vertical reference lines at 6 and 7
+    for it in REPHRASED_ITS:
+        ax.axvline(it, linestyle="--", linewidth=1.0, alpha=0.7)
+
 # ============================================================
 # Load data
 # ============================================================
@@ -222,6 +235,7 @@ plt.xlabel("Iteration")
 plt.ylabel("Average Grade")
 plt.title("Average Explanation Quality per Iteration")
 plt.legend()
+mark_rephrased_iters()
 savefig("avg_grades_per_iteration")
 
 # ============================================================
@@ -235,45 +249,68 @@ winner_counts = (
     .sort_index()
 )
 
-winner_counts.plot(
+ax = winner_counts.plot(
     kind="bar",
     stacked=True,
     figsize=(6, 4),
 )
+
 plt.xlabel("Iteration")
 plt.ylabel("Count")
 plt.title("Judge Decisions per Iteration")
 plt.legend(title="Winner")
+
+# Mark iterations 6 and 7 by bar *index* (works even if x is categorical)
+# winner_counts.index contains the actual iteration numbers in order
+idx = list(winner_counts.index)
+for it in REPHRASED_ITS:
+    if it in idx:
+        j = idx.index(it)                  # bar position (0..n-1)
+        ax.axvspan(j - 0.5, j + 0.5, alpha=0.12)
+        ax.axvline(j, linestyle="--", linewidth=1.0, alpha=0.7)
+
 savefig("judge_winner_counts")
 
 # ============================================================
 # 3. RAG Reliance per Iteration (winner == retrieved)
 # ============================================================
 
-rag_stats = []
+# --- RAG Reliance per Iteration: stacked-area with two lines
+# retrieved line at r
+# combined line at r + c   (where c is your "combined" metric, NOT 1-r)
 
+rag_stats = []
 for it, g in df.groupby("iteration"):
-    vals = (g["winner"] == "retrieved").astype(int)
-    mean, ci = mean_ci(vals)
-    rag_stats.append({
-        "iteration": it,
-        "mean": mean,
-        "ci": ci
-    })
+    r = (g["winner"] == "retrieved").astype(int)
+    c = (g["winner"] == "combined").astype(int)   # <-- assumes your logs use winner == "combined"
+    r_mean, _ = mean_ci(r)
+    c_mean, _ = mean_ci(c)
+    rag_stats.append({"iteration": it, "retr_mean": r_mean, "comb_mean": c_mean})
 
 rag_stats = pd.DataFrame(rag_stats).sort_values("iteration")
 
 plt.figure()
-plt.errorbar(
-    rag_stats["iteration"],
-    rag_stats["mean"],
-    yerr=rag_stats["ci"],
-    marker="o"
-)
+x = rag_stats["iteration"].to_numpy()
+y_retr = rag_stats["retr_mean"].to_numpy()
+y_comb = rag_stats["comb_mean"].to_numpy()
+y_top = y_retr + y_comb
+
+# Area 1: under retrieved
+plt.fill_between(x, 0, y_retr, alpha=0.85, label="Retrieved")
+
+# Area 2: between retrieved and retrieved+combined
+plt.fill_between(x, y_retr, y_top, alpha=0.55, label="Combined (stacked)")
+
+# Boundary lines (no points)
+plt.plot(x, y_retr, linewidth=1.8, label="Retrieved (boundary)")
+plt.plot(x, y_top, linewidth=1.8, label="Retrieved + Combined (boundary)")
+
 plt.xlabel("Iteration")
-plt.ylabel("Fraction Retrieved Wins")
+plt.ylabel("Fraction")
 plt.ylim(0, 1)
 plt.title("RAG Reliance per Iteration")
+plt.legend()
+mark_rephrased_iters()
 savefig("rag_reliance")
 
 # ============================================================
@@ -302,6 +339,7 @@ plt.errorbar(
 plt.xlabel("Iteration")
 plt.ylabel("Cosine Similarity")
 plt.title("Retriever Cosine Similarity per Iteration")
+mark_rephrased_iters()
 savefig("cosine_similarity_per_iteration")
 
 # ============================================================
@@ -323,6 +361,7 @@ plt.xlabel("Iteration")
 plt.ylabel("Cosine Similarity")
 plt.title("Cosine Similarity Stability (Task Subgroup)")
 plt.legend(title="Prompt ID")
+mark_rephrased_iters()
 savefig("cosine_stability_subgroup")
 
 # ============================================================
@@ -356,6 +395,7 @@ plt.xlabel("Iteration")
 plt.ylabel("Exact Same Fraction")
 plt.ylim(0, 1)
 plt.title("Exact Match: masked_prompt vs retrieved_prompt")
+mark_rephrased_iters()
 savefig("prompt_exact_match_per_iteration")
 
 # (b) close-match ratio (with CI)
@@ -368,6 +408,7 @@ plt.xlabel("Iteration")
 plt.ylabel("Close-Match Ratio")
 plt.ylim(0, 1)
 plt.title("Close Match Ratio: masked_prompt vs retrieved_prompt")
+mark_rephrased_iters()
 savefig("prompt_close_match_ratio_per_iteration")
 
 has_both = df[["masked_prompt", "retrieved_prompt"]].notna().all(axis=1)
@@ -444,6 +485,7 @@ sns.heatmap(
 plt.xlabel("Regime (retrieval correctness | judge decision)")
 plt.ylabel("Iteration")
 plt.title("RAG regimes per iteration")
+mark_rephrased_iters()
 savefig("heatmap_rag_regimes_per_iteration")
 
 
