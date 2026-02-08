@@ -31,7 +31,7 @@ class ExplanationJudge:
         - Anchor judgments to the System Output: reward only claims supported by it.
         - Avoid length bias: do not reward verbosity; prefer higher information density.
         - Penalize redundancy: if an explanation mostly restates what the other already said, score it lower.
-        - If both are similarly correct, prefer the explanation that adds more verifiable, task-relevant detail and clearer next steps.
+        - Prefer explanations that give correct, concrete next steps that are directly supported by the System Output.
         
         Path masking note:
         - Explanation B may contain masked placeholders like "[PATH]".
@@ -41,30 +41,38 @@ class ExplanationJudge:
         - Do NOT replace by order. Match each placeholder to the best-fitting path using the local surrounding context (nearby filenames, tool names, modules, commands).
         - If you cannot confidently identify the correct path for a placeholder, keep it as "[PATH]" (never guess).
 
-        Your tasks:
-        1. Provide a letter-grade rating (A-F) for each explanation:
-           - A = excellent
-           - B = good
-           - C = acceptable
-           - D = weak
-           - E = poor
-           - F = unusable
+        Scoring rubric (0-5 each; integers only):
+        - correctness: factual/technical correctness relative to System Output
+        - completeness: covers the key points needed to understand the output and what to do next
+        - clarity: easy to follow, well-structured, minimal ambiguity
+        - usefulness: actionable next steps and diagnostic value
+        Total score = sum (0-20).
 
-        2. Decide whether A or B is better.
-           If both are weak (C or worse) but contain complementary strengths, you MAY combine them.
+        Decision rule:
+        - Compute total score for A and B.
+        - If one total score is higher by 2 or more, pick it.
+        - If totals differ by 0-1 (near-tie), prefer the explanation that is (a) more directly grounded in System Output and (b) more reusable as a general explanation template (higher information density, clearer next steps).
+        - Choose "combined" ONLY if the merged explanation is meaningfully better than both (i.e., improves total score beyond the better one by at least 2 points).
 
-        3. Only choose "combined" if the merged explanation is meaningfully better than both A and B individually.
-           If a single explanation is already sufficient (B or better), choose ONLY that one.
-
-        4. Produce an improved or final explanation:
-           - If winner = "A": improved_explanation = Explanation A (possibly lightly polished)
-           - If winner = "B": improved_explanation = Explanation B (possibly lightly polished)
-           - If winner = "combined": merge them into a single, better explanation
+        Grade mapping from total score:
+        - A: 18-20
+        - B: 15-17
+        - C: 12-14
+        - D: 8-11
+        - E: 4-7
+        - F: 0-3
 
         VERY IMPORTANT RULES:
         - The returned JSON MUST contain plain strings only.
         - "improved_explanation" MUST NOT be a dict, list, object, or nested JSON.
         - No markdown, no commentary, no code fences.
+        
+        Respond ONLY with strict JSON with keys:
+        - "rating_A": letter A-F
+        - "rating_B": letter A-F
+        - "winner": "A", "B", or "combined"
+        - "reason": short explanation of your choice
+        - "improved_explanation": final natural-language explanation as a string
 
         Task description:
         {task_description}
@@ -77,13 +85,6 @@ class ExplanationJudge:
 
         Explanation B:
         {retrieved_explanation}
-
-        Respond ONLY with strict JSON with keys:
-        - "rating_A": letter A-F
-        - "rating_B": letter A-F
-        - "winner": "A", "B", or "combined"
-        - "reason": short explanation of your choice
-        - "improved_explanation": final natural-language explanation as a string
         """
 
         messages = [{"role": "user", "content": prompt}]
