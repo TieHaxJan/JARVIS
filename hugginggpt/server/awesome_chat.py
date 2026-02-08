@@ -1193,10 +1193,14 @@ def chat_huggingface(messages, api_key, api_type, api_endpoint, return_planning 
         response = chitchat(messages, api_key, api_type, api_endpoint)
         return {"message": response}
 
-    if len(tasks) == 1 and tasks[0]["task"] in ["summarization", "translation", "conversational", "text-generation", "text2text-generation"]:
-        record_case(run_dir=run_dir, success=True, **{"input": input, "task": tasks, "reason": "chitchat tasks", "op": "chitchat"})
-        response = chitchat(messages, api_key, api_type, api_endpoint)
-        return {"message": response}
+    #if len(tasks) == 1 and tasks[0]["task"] in ["summarization", "translation", "conversational", "text-generation", "text2text-generation"]:
+    #    record_case(run_dir=run_dir, success=True, **{"input": input, "task": tasks, "reason": "chitchat tasks", "op": "chitchat"})
+    #    response = chitchat(messages, api_key, api_type, api_endpoint)
+    #    return {"message": response}
+    is_chitchat = (len(tasks) == 1 and tasks[0]["task"] in [
+        "summarization", "translation", "conversational", "text-generation", "text2text-generation"
+    ])
+
 
     tasks = unfold(tasks)
     tasks = fix_dep(tasks)
@@ -1206,48 +1210,55 @@ def chat_huggingface(messages, api_key, api_type, api_endpoint, return_planning 
         return tasks
 
     results = {}
-    threads = []
-    tasks = tasks[:]
-    d = dict()
-    retry = 0
-    while True:
-        num_thread = len(threads)
-        for task in tasks:
-            # logger.debug(f"d.keys(): {d.keys()}, dep: {dep}")
-            for dep_id in task["dep"]:
-                if dep_id >= task["id"]:
-                    task["dep"] = [-1]
-                    break
-            dep = task["dep"]
-            if dep[0] == -1 or len(list(set(dep).intersection(d.keys()))) == len(dep):
-                tasks.remove(task)
-                thread = threading.Thread(target=run_task, args=(input, task, d, api_key, api_type, api_endpoint, run_dir))
-                thread.start()
-                threads.append(thread)
-        if num_thread == len(threads):
-            time.sleep(0.5)
-            retry += 1
-        if retry > 160:
-            logger.debug("User has waited too long, Loop break.")
-            break
-        if len(tasks) == 0:
-            break
-    for thread in threads:
-        thread.join()
+    if is_chitchat:
+        # No tool execution; just get the model response
+        response = chitchat(messages, api_key, api_type, api_endpoint).strip()
+
+        # For consistency, treat the LLM output as the "system output" for context building
+        results_json = json.dumps({"chitchat_response": response}, ensure_ascii=False)
+    else:
+        threads = []
+        tasks = tasks[:]
+        d = dict()
+        retry = 0
+        while True:
+            num_thread = len(threads)
+            for task in tasks:
+                # logger.debug(f"d.keys(): {d.keys()}, dep: {dep}")
+                for dep_id in task["dep"]:
+                    if dep_id >= task["id"]:
+                        task["dep"] = [-1]
+                        break
+                dep = task["dep"]
+                if dep[0] == -1 or len(list(set(dep).intersection(d.keys()))) == len(dep):
+                    tasks.remove(task)
+                    thread = threading.Thread(target=run_task, args=(input, task, d, api_key, api_type, api_endpoint, run_dir))
+                    thread.start()
+                    threads.append(thread)
+            if num_thread == len(threads):
+                time.sleep(0.5)
+                retry += 1
+            if retry > 160:
+                logger.debug("User has waited too long, Loop break.")
+                break
+            if len(tasks) == 0:
+                break
+        for thread in threads:
+            thread.join()
     
-    results = d.copy()
+        results = d.copy()
 
-    logger.debug(results)
-    if return_results:
-        return results
+        logger.debug(results)
+        if return_results:
+            return results
     
-    response = response_results(input, results, api_key, api_type, api_endpoint).strip()
-    logger.debug(response)
+        response = response_results(input, results, api_key, api_type, api_endpoint).strip()
+        logger.debug(response)
 
-    base_explanation = extract_explanation(response)
-
-    # Build masked clean context once and reuse
-    results_json = json.dumps(results, ensure_ascii=False)
+        # Build masked clean context once and reuse
+        results_json = json.dumps(results, ensure_ascii=False)
+        
+    base_explanation = extract_explanation(response)        
     context_clean = build_clean_context(input, results_json)
     print(input)
 
