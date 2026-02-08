@@ -48,7 +48,7 @@ class ExplanationRetriever:
             self.logger.debug(f"Created new explanations DB at {self.db_path}")
 
     def embed(self, text: str) -> np.ndarray:
-        emb = self.embedder.encode(self.canonicalize(text), convert_to_numpy=True)
+        emb = self.embedder.encode(self.canonicalize(text), convert_to_numpy=True, batch_size=32)
         emb = emb.astype(np.float32, copy=False)
         emb /= (np.linalg.norm(emb) + 1e-12)
         return emb
@@ -100,6 +100,28 @@ class ExplanationRetriever:
         if isinstance(obj, str):
             return mask_paths(obj)
         return obj
+    
+    def _load_db_matrix(self):
+        db = self.load_db()
+        entries = []
+        embs = []
+
+        for entry in db:
+            emb = entry.get("embedding", None)
+            if emb is None:
+                continue
+
+            emb = np.asarray(emb, dtype=np.float32)
+
+            embs.append(emb)
+            entries.append(entry)
+
+        if not embs:
+            return None, None
+
+        E = np.vstack(embs)  # (N, d)
+        return entries, E
+
 
     def save_entry(self, entry: Dict[str, Any]):
         # Ensure *all* strings are path-masked before persisting
@@ -109,35 +131,24 @@ class ExplanationRetriever:
         preview = sanitized.get("explanation", "")[:60]
         self.logger.info(f"Saved new explanation to {self.db_path}: {preview}...")
 
-    def find_similar(self, query_text: str) -> Optional[Dict[str, Any]]:
-        db = self.load_db()
-        if not db:
+    def find_similar(self, query_text: str):
+        entries, E_db = self._load_db_matrix()
+        if entries is None:
             self.logger.debug("DB empty → no similar entries")
             return None
-        query_emb = self.embed(query_text)
 
-        sims = []
-        for entry in db:
-            if "embedding" not in entry:
-                continue
-            emb = np.array(entry["embedding"], dtype=np.float32)
-            sim = float(np.dot(query_emb, emb))
-            sims.append((sim, entry))
+        q = self.embed(query_text)            # (d,)
+        q = q.reshape(1, -1)                 # (1, d) for sklearn
 
-        if not sims:
-            self.logger.debug("No valid embeddings found in DB")
-            return None
-        
-        sims.sort(key=lambda x: x[0], reverse=True)
-        best_sim, best_entry = sims[0]
+        sims = cosine_similarity(q, E_db)[0] # (N,)
+        best_idx = int(np.argmax(sims))
+        best_sim = float(sims[best_idx])
+
         self.logger.debug(f"Best similarity = {best_sim:.3f} (threshold = {self.threshold})")
 
         if best_sim >= self.threshold:
-            self.logger.info(f"Retrieved similar explanation (sim={best_sim:.3f})")
-            return {
-                "entry": best_entry,
-                "cosine_similarity": float(best_sim)
-            }
+            return {"entry": entries[best_idx], "cosine_similarity": best_sim}
+
         return None
 
     def retrieve_explanation(self, task_id: str, task_description: str, hugginggpt_output: str, base_explanation: str) -> Dict[str, Any]:
