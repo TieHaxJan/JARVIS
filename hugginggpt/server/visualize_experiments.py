@@ -40,7 +40,7 @@ os.makedirs(OUT_DIR, exist_ok=True)
 STABLE_PROMPT_IDS = [0, 1, 2, 3, 4, 5, 6, 20, 25]
 
 # Grade mapping
-GRADE_MAP = {"A": 5, "B": 4, "C": 3, "D": 2, "E": 1, "F": 0}
+GRADE_MAP = {"A": 1, "B": 2, "C": 3, "D": 4, "E": 5, "F": 6}
 
 # ============================================================
 # NeurIPS-style plotting defaults
