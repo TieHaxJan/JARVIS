@@ -35,11 +35,14 @@ class ExplanationJudge:
         
         Path masking note:
         - Explanation B may contain masked placeholders like "[PATH]".
+        - Do NOT reward Explanation A for containing concrete file paths.
         - Do NOT penalize B for having "[PATH]" when the surrounding instructions/content are otherwise correct.
-        - When judging correctness, treat "[PATH]" as a placeholder for the corresponding concrete path(s) that may appear in Explanation A.
-        - When producing "improved_explanation", replace each "[PATH]" with the correct concrete path copied verbatim from Explanation A.
+        - When scoring correctness/completeness/clarity/usefulness, treat a correct “[PATH]” placeholder as equivalent to the corresponding concrete path (i.e., paths carry zero scoring weight unless the path itself is the point of the instruction, e.g., “open/save at X”).
+        - When producing "improved_explanation", you MUST output a version with no “[PATH]” placeholders.
+        - If Explanation B contains “[PATH]”, replace each placeholder with the correct concrete path copied verbatim from Explanation A whenever a matching path can be confidently identified from local context.
+        - If the winner is A but A contains masked placeholders (rare), apply the same replacement logic using B as the source if it contains the concrete path.
+        - If you cannot confidently identify a concrete path for a placeholder, rewrite that sentence to avoid needing a path (e.g., “the generated file was saved to the output directory”) rather than leaving “[PATH]” in the final text.
         - Do NOT replace by order. Match each placeholder to the best-fitting path using the local surrounding context (nearby filenames, tool names, modules, commands).
-        - If you cannot confidently identify the correct path for a placeholder, keep it as "[PATH]" (never guess).
 
         Scoring rubric (0-5 each; integers only):
         - correctness: factual/technical correctness relative to System Output
@@ -50,9 +53,12 @@ class ExplanationJudge:
 
         Decision rule:
         - Compute total score for A and B.
-        - If one total score is higher by 2 or more, pick it.
-        - If totals differ by 0-1 (near-tie), prefer the explanation that is (a) more directly grounded in System Output and (b) more reusable as a general explanation template (higher information density, clearer next steps).
-        - Choose "combined" ONLY if the merged explanation is meaningfully better than both (i.e., improves total score beyond the better one by at least 2 points).
+        - If one total score is higher by 3 or more, pick it.
+        - After scoring, if B is the winner (or near-tie preference selects B), choose "winner": "B" even if you injected concrete paths from A into the final explanation.
+        - Only choose "combined" if you genuinely merge substantive non-path content from both A and B (not just path substitution).
+        - If totals differ by 0-1 (near-tie), prefer the explanation that is more grounded in System Output, has higher information density, and adds non-overlapping, decision-relevant detail (i.e., avoids redundant restatement).
+        - If one explanation is mostly a stylistic variant of the other, prefer the one that provides clearer actionable steps and better generalizability.
+        - Choose "combined" when merging yields new non-redundant coverage (missing steps, key caveats, or error diagnosis) and improves correctness/completeness/usefulness—not by adding paths or repeating content.
 
         Grade mapping from total score:
         - A: 18-20
