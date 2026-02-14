@@ -146,7 +146,7 @@ elif API_TYPE == "openai":
 elif API_TYPE == "huggingface":
     API_KEY = config["huggingface"]["token"]
     client = InferenceClient(
-        provider="novita",
+        provider="nscale",
         api_key=API_KEY,
     )
 
