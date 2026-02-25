@@ -24,7 +24,7 @@
     "prompt": "Translate the sentence 'Bonjour tout le monde' into English.",
     "task_type": "single",
     "models": [
-      "JARVIS"
+      "ChatGPT"
     ]
   },
   {
@@ -80,14 +80,14 @@
     "prompt": "Create a canny edge version of 'examples/bridge.png'.",
     "task_type": "single",
     "models": [
-      "lllyasviel/sd-controlnet-canny"
+      "canny-control"
     ]
   },
   {
     "prompt": "Identify poses in 'examples/runner_pose.jpg'.",
     "task_type": "single",
     "models": [
-      "lllyasviel/sd-controlnet-openpose"
+      "openpose-control"
     ]
   },
   {
@@ -235,35 +235,35 @@
     "prompt": "Identify the language used in 'examples/audio_sample.wav'.",
     "task_type": "single",
     "models": [
-      "microsoft/speecht5_asr"
+      "openai/whisper-base"
     ]
   },
   {
     "prompt": "Determine the key themes in 'AI systems collaborate across modalities'.",
     "task_type": "single",
     "models": [
-      "JARVIS"
+      "ChatGPT"
     ]
   },
   {
     "prompt": "Summarize the article below and create a brief executive summary for business stakeholders: \n\n\"The global renewable energy sector experienced record growth in 2024, driven by significant investments in solar and wind infrastructure. Governments around the world introduced new incentives to accelerate adoption, while private companies expanded research into advanced battery storage solutions. Despite supply chain challenges, renewable capacity increased by 14% globally, marking the fastest growth in a decade.\"",
     "task_type": "single",
     "models": [
-      "JARVIS"
+      "ChatGPT"
     ]
   },
   {
     "prompt": "Examine the sentiment presented in this customer review and suggest practical enhancements the company might consider:\n\n\"The vacuum cleaner works well when it’s new, but the suction power dropped noticeably after just three months. Customer support was polite but couldn't offer a real solution besides buying replacement parts. I expected better durability for the price.\"",
     "task_type": "single",
     "models": [
-      "JARVIS"
+      "ChatGPT"
     ]
   },
   {
     "prompt": "Create a canny image for 'examples/bridge.png' and then provide a description of it.",
     "task_type": "sequential",
     "models": [
-      "lllyasviel/sd-controlnet-canny",
+      "canny-control",
       "nlpconnect/vit-gpt2-image-captioning"
     ]
   },
@@ -271,7 +271,7 @@
     "prompt": "Identify the pose in 'examples/runner_pose.jpg' and create an image of 'a person jumping'.",
     "task_type": "sequential",
     "models": [
-      "lllyasviel/sd-controlnet-openpose",
+      "openpose-control",
       "runwayml/stable-diffusion-v1-5"
     ]
   },
@@ -279,8 +279,8 @@
     "prompt": "Detect speech in 'examples/audio_sample.wav' and provide a summary.",
     "task_type": "sequential",
     "models": [
-      "microsoft/speecht5_asr",
-      "JARVIS"
+      "openai/whisper-base",
+      "ChatGPT"
     ]
   },
   {
@@ -296,7 +296,7 @@
     "task_type": "sequential",
     "models": [
       "openai/whisper-base",
-      "JARVIS"
+      "ChatGPT"
     ]
   },
   {
@@ -343,7 +343,7 @@
     "task_type": "sequential",
     "models": [
       "impira/layoutlm-document-qa",
-      "JARVIS"
+      "ChatGPT"
     ]
   },
   {
@@ -367,14 +367,14 @@
     "task_type": "sequential",
     "models": [
       "openai/whisper-base",
-      "JARVIS"
+      "ChatGPT"
     ]
   },
   {
     "prompt": "Translate '人工智能改变世界' into English.",
     "task_type": "single",
     "models": [
-      "JARVIS"
+      "ChatGPT"
     ]
   },
   {
@@ -390,7 +390,7 @@
     "task_type": "sequential",
     "models": [
       "nlpconnect/vit-gpt2-image-captioning",
-      "JARVIS"
+      "ChatGPT"
     ]
   },
   {
@@ -398,15 +398,14 @@
     "task_type": "sequential",
     "models": [
       "dslim/distilbert-NER",
-      "JARVIS"
+      "ChatGPT"
     ]
   },
   {
     "prompt": "Identify emotions in 'examples/angry_call.wav' and categorize the tone.",
     "task_type": "sequential",
     "models": [
-      "microsoft/speecht5_asr",
-      "JARVIS"
+      "openai/whisper-base"
     ]
   },
   {
@@ -414,15 +413,15 @@
     "task_type": "sequential",
     "models": [
       "facebook/detr-resnet-101",
-      "JARVIS"
+      "ChatGPT"
     ]
   },
   {
     "prompt": "Conduct pose detection on 'examples/gym_training.jpg' and formulate a text description.",
     "task_type": "sequential",
     "models": [
-      "lllyasviel/sd-controlnet-openpose",
-      "JARVIS"
+      "openpose-control",
+      "ChatGPT"
     ]
   },
   {
@@ -437,14 +436,14 @@
     "task_type": "sequential",
     "models": [
       "impira/layoutlm-document-qa",
-      "microsoft/speecht5_tts"
+      "ChatGPT"
     ]
   },
   {
     "prompt": "Classify the sentiment in 'I love how this model works!' and provide an explanation for your reasoning.",
     "task_type": "single",
     "models": [
-      "JARVIS"
+      "ChatGPT"
     ]
   },
   {
@@ -452,7 +451,7 @@
     "task_type": "sequential",
     "models": [
       "nlpconnect/vit-gpt2-image-captioning",
-      "JARVIS"
+      "ChatGPT"
     ]
   },
   {
@@ -460,7 +459,7 @@
     "task_type": "sequential",
     "models": [
       "nlpconnect/vit-gpt2-image-captioning",
-      "JARVIS"
+      "ChatGPT"
     ]
   },
   {
@@ -468,7 +467,7 @@
     "task_type": "sequential",
     "models": [
       "openai/whisper-base",
-      "JARVIS"
+      "ChatGPT"
     ]
   },
   {
@@ -476,7 +475,7 @@
     "task_type": "sequential",
     "models": [
       "openai/whisper-base",
-      "JARVIS"
+      "ChatGPT"
     ]
   },
   {
@@ -491,7 +490,7 @@
     "prompt": "Using 'examples/example1.jpg' as a reference, generate a new image depicting the pose and description 'Jumping in the air with a basketball'.",
     "task_type": "graph",
     "models": [
-      "lllyasviel/sd-controlnet-openpose",
+      "openpose-control",
       "nlpconnect/vit-gpt2-image-captioning",
       "runwayml/stable-diffusion-v1-5"
     ]
@@ -524,7 +523,7 @@
     "prompt": "Detect Canny edges and depth in 'examples/car_photo.jpg'.",
     "task_type": "graph",
     "models": [
-      "lllyasviel/sd-controlnet-canny",
+      "canny-control",
       "Intel/dpt-hybrid-midas"
     ]
   },
@@ -548,8 +547,8 @@
     "prompt": "Create an image utilizing openpose and canny edges from 'examples/example1.jpg'.",
     "task_type": "graph",
     "models": [
-      "lllyasviel/sd-controlnet-openpose",
-      "lllyasviel/sd-controlnet-canny",
+      "openpose-control",
+      "canny-control",
       "runwayml/stable-diffusion-v1-5"
     ]
   },
@@ -600,7 +599,7 @@
     "prompt": "Detect pose in 'examples/runner_pose.jpg' and create a new image inspired by the text 'a reading girl'.",
     "task_type": "graph",
     "models": [
-      "lllyasviel/sd-controlnet-openpose",
+      "openpose-control",
       "runwayml/stable-diffusion-v1-5"
     ]
   },
@@ -616,7 +615,7 @@
     "prompt": "Summarize and translate the following text: 'Con intelligenza artificiale viene chiamata spesso e impropriamente l'intelligenza artificiale generativa, che è invece solamente un particolare tipo di intelligenza artificiale, che ha lo scopo di creare testi, immagini, audio, video o altri contenuti rispondendo a richieste dell'utente'.",
     "task_type": "graph",
     "models": [
-      "JARVIS"
+      "ChatGPT"
     ]
   },
   {
@@ -633,14 +632,14 @@
     "task_type": "graph",
     "models": [
       "facebook/detr-resnet-101",
-      "JARVIS"
+      "ChatGPT"
     ]
   },
   {
     "prompt": "Create a sketch and an associated image for 'examples/architecture.jpg'.",
     "task_type": "graph",
     "models": [
-      "lllyasviel/sd-controlnet-hed",
+      "hed-control",
       "runwayml/stable-diffusion-v1-5"
     ]
   },
@@ -649,7 +648,7 @@
     "task_type": "graph",
     "models": [
       "facebook/detr-resnet-101",
-      "JARVIS",
+      "ChatGPT",
       "microsoft/speecht5_tts"
     ]
   },
@@ -673,7 +672,7 @@
     "prompt": "Detect Canny edges, create a diffusion-based image, and add a caption to it.",
     "task_type": "graph",
     "models": [
-      "lllyasviel/sd-controlnet-canny",
+      "canny-control",
       "runwayml/stable-diffusion-v1-5",
       "nlpconnect/vit-gpt2-image-captioning"
     ]
@@ -684,22 +683,21 @@
     "models": [
       "facebook/detr-resnet-101",
       "Intel/dpt-hybrid-midas",
-      "JARVIS"
+      "ChatGPT"
     ]
   },
   {
     "prompt": "Integrate audio classification with speech transcription for 'examples/meeting_audio.wav'.",
     "task_type": "graph",
     "models": [
-      "microsoft/speecht5_asr",
-      "JARVIS"
+      "openai/whisper-base"
     ]
   },
   {
     "prompt": "Conduct pose detection and create an image utilizing HED from 'examples/dancer.jpg'.",
     "task_type": "graph",
     "models": [
-      "lllyasviel/sd-controlnet-hed",
+      "hed-control",
       "runwayml/stable-diffusion-v1-5"
     ]
   },
@@ -708,7 +706,7 @@
     "task_type": "graph",
     "models": [
       "impira/layoutlm-document-qa",
-      "JARVIS"
+      "ChatGPT"
     ]
   },
   {
@@ -751,7 +749,7 @@
     "prompt": "Conduct openpose detection on 'examples/runner_pose.jpg', create a new image titled 'a marathon scene', and provide a caption for it.",
     "task_type": "graph",
     "models": [
-      "lllyasviel/sd-controlnet-openpose",
+      "openpose-control",
       "runwayml/stable-diffusion-v1-5",
       "nlpconnect/vit-gpt2-image-captioning"
     ]
@@ -760,7 +758,7 @@
     "prompt": "Conduct openpose detection on 'examples/farmer.jpg', create a new image titled 'a marathon scene', and provide a caption for it.",
     "task_type": "graph",
     "models": [
-      "lllyasviel/sd-controlnet-openpose",
+      "openpose-control",
       "runwayml/stable-diffusion-v1-5",
       "nlpconnect/vit-gpt2-image-captioning"
     ]
@@ -769,7 +767,7 @@
     "prompt": "Create a canny and depth-conditioned image for 'examples/bridge.png' and provide a voice narration to describe it.",
     "task_type": "graph",
     "models": [
-      "lllyasviel/sd-controlnet-canny",
+      "canny-control",
       "Intel/dpt-hybrid-midas",
       "runwayml/stable-diffusion-v1-5",
       "microsoft/speecht5_tts"

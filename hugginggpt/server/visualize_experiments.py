@@ -42,6 +42,19 @@ STABLE_PROMPT_IDS = [0, 1, 2, 3, 4, 5, 6, 20, 25]
 # Grade mapping
 GRADE_MAP = {"A": 1, "B": 2, "C": 3, "D": 4, "E": 5, "F": 6}
 
+TEST_PROMPTS_PATH = "./test_prompts.json"
+TEST_PROMPTS_REPHRASED_PATH = "./test_prompts_rephrased.json"
+
+# Colorblind-friendly-ish colors (Okabe-Ito style)
+CB_GREEN = "#009E73"  # bluish green
+CB_RED   = "#D55E00"  # vermillion (reads as red/orange, very colorblind-safe)
+CB_BLUE  = "#0072B2"
+CB_PURPLE= "#CC79A7"
+CB_GRAY  = "#666666"
+
+from cycler import cycler
+plt.rcParams["axes.prop_cycle"] = cycler(color=[CB_BLUE, CB_GREEN, CB_RED, CB_PURPLE, "black", CB_GRAY])
+
 # ============================================================
 # NeurIPS-style plotting defaults
 # ============================================================
@@ -50,13 +63,13 @@ sns.set_theme(style="whitegrid")
 plt.rcParams.update({
     "font.family": "serif",
     "font.serif": ["Times New Roman", "Times", "DejaVu Serif"],
-    "font.size": 11,
-    "axes.labelsize": 11,
-    "axes.titlesize": 12,
-    "legend.fontsize": 10,
-    "xtick.labelsize": 10,
-    "ytick.labelsize": 10,
-    "figure.dpi": 300,
+    "font.size": 14,
+    "axes.labelsize": 14,
+    "axes.titlesize": 15,
+    "legend.fontsize": 12,
+    "xtick.labelsize": 12,
+    "ytick.labelsize": 12,
+    "figure.dpi": 300, 
     "savefig.dpi": 300,
     "axes.spines.top": False,
     "axes.spines.right": False,
@@ -69,7 +82,7 @@ plt.rcParams.update({
 def savefig(name):
     plt.tight_layout()
     plt.savefig(os.path.join(OUT_DIR, f"{name}.png"))
-    #plt.savefig(os.path.join(OUT_DIR, f"{name}.pdf"))
+    plt.savefig(os.path.join(OUT_DIR, f"{name}.pdf"))
     plt.close()
 
 def mean_ci(series):
@@ -223,17 +236,30 @@ for it, g in df.groupby("iteration"):
 stats = pd.DataFrame(stats).sort_values("iteration")
 
 plt.figure()
+
 plt.errorbar(
     stats["iteration"], stats["base_mean"],
-    yerr=stats["base_ci"], marker="o", label="Base"
+    yerr=stats["base_ci"],
+    marker="o",
+    label="Base",
+    color="#D55E00"  # colorblind-safe red (vermillion)
 )
+
 plt.errorbar(
     stats["iteration"], stats["retr_mean"],
-    yerr=stats["retr_ci"], marker="o", label="Retrieved"
+    yerr=stats["retr_ci"],
+    marker="o",
+    label="Retrieved",
+    color="#009E73"  # colorblind-safe green
 )
+
 plt.xlabel("Iteration")
 plt.ylabel("Average Grade")
 plt.title("Average Explanation Quality per Iteration")
+
+# Reverse grade scale: 1 at top, 6 at bottom
+plt.ylim(2.4, 1.6)
+
 plt.legend()
 mark_rephrased_iters()
 savefig("avg_grades_per_iteration")
@@ -249,10 +275,20 @@ winner_counts = (
     .sort_index()
 )
 
+ordered_cols = [c for c in ["base", "combined", "retrieved"] if c in winner_counts.columns]
+winner_counts = winner_counts[ordered_cols]
+
+color_map = {
+    "retrieved": CB_GREEN,
+    "base": CB_RED,
+    "combined": CB_BLUE,   # or CB_GRAY
+}
+
 ax = winner_counts.plot(
     kind="bar",
     stacked=True,
     figsize=(6, 4),
+    color=[color_map[c] for c in winner_counts.columns],
 )
 
 plt.xlabel("Iteration")
@@ -296,14 +332,14 @@ y_comb = rag_stats["comb_mean"].to_numpy()
 y_top = y_retr + y_comb
 
 # Area 1: under retrieved
-plt.fill_between(x, 0, y_retr, alpha=0.85, label="Retrieved")
+plt.fill_between(x, 0, y_retr, alpha=0.85, label="Retrieved", color="#009E73")
 
 # Area 2: between retrieved and retrieved+combined
-plt.fill_between(x, y_retr, y_top, alpha=0.55, label="Combined (stacked)")
+plt.fill_between(x, y_retr, y_top, alpha=0.55, label="Combined (stacked)", color="#D55E00")
 
 # Boundary lines (no points)
-plt.plot(x, y_retr, linewidth=1.8, label="Retrieved (boundary)")
-plt.plot(x, y_top, linewidth=1.8, label="Retrieved + Combined (boundary)")
+plt.plot(x, y_retr, linewidth=1.8, label="Retrieved (boundary)", color="#00916A")
+plt.plot(x, y_top, linewidth=1.8, label="Retrieved + Combined (boundary)", color="#C55500")
 
 plt.xlabel("Iteration")
 plt.ylabel("Fraction")
@@ -334,7 +370,8 @@ plt.errorbar(
     cos_stats["iteration"],
     cos_stats["mean"],
     yerr=cos_stats["ci"],
-    marker="o"
+    marker="o",
+    color="#009E73"
 )
 plt.xlabel("Iteration")
 plt.ylabel("Cosine Similarity")
@@ -355,7 +392,8 @@ sns.lineplot(
     y="cosine_similarity",
     hue="prompt_id",
     marker="o",
-    legend="full"
+    legend="full",
+    palette="colorblind"
 )
 plt.xlabel("Iteration")
 plt.ylabel("Cosine Similarity")
@@ -390,7 +428,7 @@ pm_stats = pd.DataFrame(pm_stats).sort_values("iteration")
 
 # (a) exact same fraction
 plt.figure()
-plt.plot(pm_stats["iteration"], pm_stats["exact_same_frac"], marker="o")
+plt.plot(pm_stats["iteration"], pm_stats["exact_same_frac"], marker="o", color=CB_GREEN)
 plt.xlabel("Iteration")
 plt.ylabel("Exact Same Fraction")
 plt.ylim(0, 1)
@@ -402,7 +440,8 @@ savefig("prompt_exact_match_per_iteration")
 plt.figure()
 plt.errorbar(
     pm_stats["iteration"], pm_stats["mean_ratio"],
-    yerr=pm_stats["ci_ratio"], marker="o"
+    yerr=pm_stats["ci_ratio"], marker="o",
+    color="#009E73"
 )
 plt.xlabel("Iteration")
 plt.ylabel("Close-Match Ratio")
@@ -431,11 +470,13 @@ plt.figure()
 plt.plot(
     wr["iteration"], wr["win_rate_exact"],
     marker="o",
+    color=CB_GREEN,
     label="P(Judge picks Retrieved | exact retrieval)"
 )
 plt.plot(
     wr["iteration"], wr["win_rate_wrong"],
     marker="o",
+    color=CB_RED,
     label="P(Judge picks Retrieved | non-exact retrieval)"
 )
 plt.xlabel("Iteration")
@@ -487,6 +528,263 @@ plt.ylabel("Iteration")
 plt.title("RAG regimes per iteration")
 mark_rephrased_iters()
 savefig("heatmap_rag_regimes_per_iteration")
+
+def load_expected_prompts(path: str) -> dict:
+    """
+    Returns mapping: prompt_string -> expected_models_list
+    Accepts either:
+      - JSON list of objects
+      - JSON object with a top-level key containing the list
+    Each item expected to have fields: "prompt", "models" (list of HF ids)
+    """
+    with open(path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    if isinstance(data, dict):
+        # try common containers
+        for k in ["prompts", "data", "items", "test_prompts"]:
+            if k in data and isinstance(data[k], list):
+                data = data[k]
+                break
+
+    if not isinstance(data, list):
+        raise ValueError(f"Expected a list in {path}, got {type(data)}")
+
+    m = {}
+    for item in data:
+        p = item.get("prompt")
+        models = item.get("models", [])
+        if isinstance(p, str):
+            m[p.strip()] = [x.strip() for x in models if isinstance(x, str)]
+    return m
+
+expected_base = load_expected_prompts(TEST_PROMPTS_PATH)
+expected_rephr = load_expected_prompts(TEST_PROMPTS_REPHRASED_PATH)
+
+def extract_predicted_models(expert_output) -> list:
+    """
+    Extract all selected model ids from your log structure:
+      expert_output: {"0": {"choose model result": {"id": "..."} ...}, ...}
+    Returns list of model ids (may be empty).
+    """
+    models = []
+    if not isinstance(expert_output, dict):
+        return models
+
+    for _, task_obj in expert_output.items():
+        if not isinstance(task_obj, dict):
+            continue
+
+        cmr = task_obj.get("choose model result")
+        if isinstance(cmr, dict):
+            mid = cmr.get("id")
+            if isinstance(mid, str) and mid.strip():
+                models.append(mid.strip())
+        elif isinstance(cmr, str) and cmr.strip():
+            models.append(cmr.strip())
+
+        # Some variants might store selected model under other keys
+        mid2 = task_obj.get("model_id") or task_obj.get("model")
+        if isinstance(mid2, str) and mid2.strip():
+            models.append(mid2.strip())
+
+    # de-duplicate while preserving order
+    seen = set()
+    out = []
+    for m in models:
+        if m not in seen:
+            seen.add(m)
+            out.append(m)
+    return out
+
+ERROR_KEYS = {"error", "exception", "traceback", "stderr"}
+def task_inference_failed(task_obj: dict) -> bool:
+    """
+    Heuristic: failure if inference result missing/empty OR contains error-like keys.
+    """
+    if not isinstance(task_obj, dict):
+        return True
+
+    inf = task_obj.get("inference result", None)
+
+    # explicit error-like keys anywhere at top level or inside inference result
+    for k in ERROR_KEYS:
+        if k in task_obj:
+            return True
+    if isinstance(inf, dict):
+        for k in ERROR_KEYS:
+            if k in inf:
+                return True
+
+    # missing or empty inference result
+    if inf is None:
+        return True
+    if isinstance(inf, (dict, list, str)) and len(inf) == 0:
+        return True
+
+    return False
+
+def record_inference_failure_rate(expert_output) -> float:
+    """
+    Returns fraction of tasks in expert_output that look failed.
+    If there are no tasks, returns 1.0 (treat as failure).
+    """
+    if not isinstance(expert_output, dict) or len(expert_output) == 0:
+        return 1.0
+
+    fails = 0
+    total = 0
+    for _, task_obj in expert_output.items():
+        if not isinstance(task_obj, dict):
+            fails += 1
+            total += 1
+            continue
+        total += 1
+        if task_inference_failed(task_obj):
+            fails += 1
+
+    return fails / total if total > 0 else 1.0
+
+def get_expected_models_for_row(row) -> list:
+    """
+    Use rephrased expected prompts only for iterations 6 and 7.
+    Match exact prompt string.
+    """
+    p = row.get("prompt")
+    if not isinstance(p, str):
+        return []
+    key = p.strip()
+    it = int(row.get("iteration", -1))
+    if it in REPHRASED_ITS:
+        return expected_rephr.get(key, [])
+    return expected_base.get(key, [])
+
+df["expected_models"] = df.apply(get_expected_models_for_row, axis=1)
+df["predicted_models"] = df["expert_output"].apply(extract_predicted_models)
+
+def model_hit(expected, predicted) -> float:
+    """
+    HIT: at least one expected model is among predicted models.
+    (robust when your system runs multiple helpers)
+    """
+    if not isinstance(expected, list) or not expected:
+        return np.nan
+    if not isinstance(predicted, list):
+        return 0.0
+    e = set(expected)
+    p = set(predicted)
+    return 1.0 if len(e.intersection(p)) > 0 else 0.0
+
+def model_exact(expected, predicted) -> float:
+    """
+    EXACT: predicted model set equals expected model set.
+    """
+    if not isinstance(expected, list) or not expected:
+        return np.nan
+    if not isinstance(predicted, list):
+        return 0.0
+    return 1.0 if set(expected) == set(predicted) else 0.0
+
+df["model_hit"] = df.apply(lambda r: model_hit(r["expected_models"], r["predicted_models"]), axis=1)
+df["model_exact"] = df.apply(lambda r: model_exact(r["expected_models"], r["predicted_models"]), axis=1)
+df["inference_failure_rate"] = df["expert_output"].apply(record_inference_failure_rate)
+
+# ------------------------------------------------------------
+# Write model mismatch report (for quick debugging)
+# ------------------------------------------------------------
+model_mismatch_path = os.path.join(OUT_DIR, "model_mismatches.txt")
+mm = df[df["model_hit"].notna() & (df["model_hit"] == 0.0)].copy()
+
+with open(model_mismatch_path, "w", encoding="utf-8") as f:
+    f.write(f"Run: {RUN_DIR}\n")
+    f.write(f"Model HIT==0 count: {len(mm)} / {int(df['model_hit'].notna().sum())}\n\n")
+    f.write("MISSES (HIT==0)\n")
+    f.write("=" * 80 + "\n\n")
+    for _, row in mm.sort_values(["iteration", "prompt_id"]).iterrows():
+        f.write(f"iteration={row.get('iteration')} prompt_id={row.get('prompt_id')}\n")
+        f.write("prompt:\n")
+        f.write((row.get("prompt") or "") + "\n")
+        f.write(f"expected_models: {row.get('expected_models')}\n")
+        f.write(f"predicted_models: {row.get('predicted_models')}\n")
+        f.write("-" * 80 + "\n\n")
+
+print(f"[OK] Model mismatches written to: {model_mismatch_path}")
+
+# ============================================================
+# NEW PLOTS
+# ============================================================
+
+# 7. Model Hit/Miss rate per iteration (with CI)
+hit_stats = []
+for it, g in df.groupby("iteration"):
+    m, ci = mean_ci(g["model_hit"])
+    hit_stats.append({"iteration": it, "mean": m, "ci": ci})
+hit_stats = pd.DataFrame(hit_stats).sort_values("iteration")
+
+plt.figure()
+plt.errorbar(hit_stats["iteration"], hit_stats["mean"], yerr=hit_stats["ci"], marker="o", color="#009E73")
+plt.xlabel("Iteration")
+plt.ylabel("Hit rate")
+plt.ylim(0, 1)
+plt.title("Model Selection Hit Rate per Iteration")
+mark_rephrased_iters()
+savefig("model_hit_rate_per_iteration")
+
+# 8. Model Exact-set match rate per iteration (with CI)
+exact_stats = []
+for it, g in df.groupby("iteration"):
+    m, ci = mean_ci(g["model_exact"])
+    exact_stats.append({"iteration": it, "mean": m, "ci": ci})
+exact_stats = pd.DataFrame(exact_stats).sort_values("iteration")
+
+plt.figure()
+plt.errorbar(exact_stats["iteration"], exact_stats["mean"], yerr=exact_stats["ci"], marker="o", color="#009E73")
+plt.xlabel("Iteration")
+plt.ylabel("Exact match rate")
+plt.ylim(0, 1)
+plt.title("Model Selection Exact-Set Match per Iteration")
+mark_rephrased_iters()
+savefig("model_exact_match_rate_per_iteration")
+
+# 9. Inference failure rate per iteration (with CI)
+fail_stats = []
+for it, g in df.groupby("iteration"):
+    m, ci = mean_ci(g["inference_failure_rate"])
+    fail_stats.append({"iteration": it, "mean": m, "ci": ci})
+fail_stats = pd.DataFrame(fail_stats).sort_values("iteration")
+
+plt.figure()
+plt.errorbar(fail_stats["iteration"], fail_stats["mean"], yerr=fail_stats["ci"], marker="o", color="#009E73")
+plt.xlabel("Iteration")
+plt.ylabel("Failure rate")
+plt.ylim(0, 1)
+plt.title("Inference Failure Rate per Iteration")
+mark_rephrased_iters()
+savefig("inference_failure_rate_per_iteration")
+
+# 10. (Optional) Stacked bar: Hits vs Misses per iteration
+hm = (
+    df[df["model_hit"].notna()]
+    .assign(hit=lambda x: (x["model_hit"] == 1.0).astype(int),
+            miss=lambda x: (x["model_hit"] == 0.0).astype(int))
+    .groupby("iteration")[["hit", "miss"]]
+    .sum()
+    .sort_index()
+)
+
+ax = hm.plot(kind="bar", stacked=True, figsize=(6, 4),
+             color=[CB_GREEN, CB_RED])
+plt.xlabel("Iteration")
+plt.ylabel("Count")
+plt.title("Model Selection: Hit vs Miss (Counts)")
+# highlight 6/7 in categorical space
+idx = list(hm.index)
+for it in REPHRASED_ITS:
+    if it in idx:
+        j = idx.index(it)
+        ax.axvspan(j - 0.5, j + 0.5, alpha=0.12)
+        ax.axvline(j, linestyle="--", linewidth=1.0, alpha=0.7)
+savefig("model_hit_miss_counts")
 
 
 # ============================================================
