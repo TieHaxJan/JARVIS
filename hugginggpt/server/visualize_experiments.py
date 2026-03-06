@@ -63,12 +63,12 @@ sns.set_theme(style="whitegrid")
 plt.rcParams.update({
     "font.family": "serif",
     "font.serif": ["Times New Roman", "Times", "DejaVu Serif"],
-    "font.size": 14,
-    "axes.labelsize": 14,
-    "axes.titlesize": 15,
-    "legend.fontsize": 12,
-    "xtick.labelsize": 12,
-    "ytick.labelsize": 12,
+    "font.size": 22,
+    "axes.labelsize": 24,
+    "axes.titlesize": 24,
+    "legend.fontsize": 18,
+    "xtick.labelsize": 20,
+    "ytick.labelsize": 20,
     "figure.dpi": 300, 
     "savefig.dpi": 300,
     "axes.spines.top": False,
@@ -79,10 +79,17 @@ plt.rcParams.update({
 # Utility functions
 # ============================================================
 
+FIGSIZE = (8, 5)
+BAR_WIDTH = 0.75
+ALPHA_MAIN = 0.85
+ALPHA_COMP = 0.45
+CAPSIZE = 4
+COUNT_YMAX = 100
+RATE_YMAX = 1.0
+
 def savefig(name):
-    plt.tight_layout()
-    plt.savefig(os.path.join(OUT_DIR, f"{name}.png"))
-    plt.savefig(os.path.join(OUT_DIR, f"{name}.pdf"))
+    plt.tight_layout(pad=0.6)
+    plt.savefig(os.path.join(OUT_DIR, f"{name}.pdf"), bbox_inches="tight", dpi=300)
     plt.close()
 
 def mean_ci(series):
@@ -102,14 +109,159 @@ REPHRASED_ITS = [6, 7]
 
 def mark_rephrased_iters():
     """
-    Visually highlight iterations that use rephrased prompts (6 and 7) on *all* plots.
+    Highlight iterations 6 and 7 for plots with numeric x-axis.
     """
     ax = plt.gca()
-    # Shade the region covering iterations 6 and 7
-    ax.axvspan(5.5, 7.5, alpha=0.12)
-    # Add vertical reference lines at 6 and 7
+    ax.axvspan(5.5, 7.5, alpha=0.12, color=CB_GRAY)
     for it in REPHRASED_ITS:
-        ax.axvline(it, linestyle="--", linewidth=1.0, alpha=0.7)
+        ax.axvline(it, linestyle="--", linewidth=1.0, alpha=0.7, color="black")
+
+def mark_rephrased_iters_categorical(index_values):
+    """
+    Highlight iterations 6 and 7 for bar plots with categorical x-axis positions.
+    """
+    ax = plt.gca()
+    idx = list(index_values)
+    for it in REPHRASED_ITS:
+        if it in idx:
+            j = idx.index(it)
+            ax.axvspan(j - 0.5, j + 0.5, alpha=0.12, color=CB_GRAY)
+            ax.axvline(j, linestyle="--", linewidth=1.0, alpha=0.7, color="black")
+
+def stacked_rate_bar(
+    df_plot,
+    x_col,
+    y_col,
+    ylabel,
+    filename,
+    color=CB_GREEN,
+    yerr_col=None,
+    ylim=None,
+    invert_y=False
+):
+    """
+    Single-rate plot shown as stacked green/red bars:
+    green = observed rate
+    red   = complement to 1
+    """
+    plt.figure(figsize=FIGSIZE)
+
+    x = df_plot[x_col].to_numpy()
+    y = df_plot[y_col].to_numpy()
+
+    plt.bar(
+        x,
+        y,
+        width=BAR_WIDTH,
+        color=color,
+        alpha=ALPHA_MAIN,
+        yerr=df_plot[yerr_col].to_numpy() if yerr_col is not None else None,
+        capsize=CAPSIZE if yerr_col is not None else 0
+    )
+
+    plt.xlabel("Iteration")
+    plt.ylabel(ylabel)
+    plt.xticks(x, rotation=0)
+
+    if ylim is not None:
+        plt.ylim(*ylim)
+
+    if invert_y:
+        plt.gca().invert_yaxis()
+
+    mark_rephrased_iters()
+    savefig(filename)
+
+def grouped_two_bar(
+    df_plot,
+    x_col,
+    y1_col,
+    y2_col,
+    ylabel,
+    filename,
+    y1err_col=None,
+    y2err_col=None,
+    ylim=None,
+    invert_y=False,
+    label1="Series 1",
+    label2="Series 2"
+):
+    """
+    Two-series grouped bars with fully consistent width/style.
+    """
+    plt.figure(figsize=FIGSIZE)
+
+    x = df_plot[x_col].to_numpy()
+    width = 0.36
+
+    plt.bar(
+        x - width/2,
+        df_plot[y1_col].to_numpy(),
+        width=width,
+        color=CB_RED,
+        alpha=ALPHA_MAIN,
+        yerr=df_plot[y1err_col].to_numpy() if y1err_col is not None else None,
+        capsize=CAPSIZE if y1err_col is not None else 0,
+        label=label1
+    )
+
+    plt.bar(
+        x + width/2,
+        df_plot[y2_col].to_numpy(),
+        width=width,
+        color=CB_GREEN,
+        alpha=ALPHA_MAIN,
+        yerr=df_plot[y2err_col].to_numpy() if y2err_col is not None else None,
+        capsize=CAPSIZE if y2err_col is not None else 0,
+        label=label2
+    )
+
+    plt.xlabel("Iteration")
+    plt.ylabel(ylabel)
+    plt.xticks(x, rotation=0)
+
+    if ylim is not None:
+        plt.ylim(*ylim)
+
+    if invert_y:
+        plt.gca().invert_yaxis()
+
+    plt.legend()
+    mark_rephrased_iters()
+    savefig(filename)
+    
+def stacked_count_bar(
+    df_plot,
+    x_col,
+    y_col,
+    ylabel,
+    filename,
+    ymax=100
+):
+    """
+    Single count plot shown as stacked green/red bars:
+    green = observed count
+    red   = remaining count to ymax
+    """
+    plt.figure(figsize=FIGSIZE)
+
+    x = df_plot[x_col].to_numpy()
+    y = df_plot[y_col].to_numpy()
+    comp = ymax - y
+
+    plt.bar(
+        x, y,
+        width=BAR_WIDTH,
+        color=CB_GREEN
+    )
+
+    plt.xlabel("Iteration")
+    plt.ylabel(ylabel)
+    plt.xticks(x, rotation=0)
+    plt.ylim(0, ymax)
+
+    mark_rephrased_iters()
+    savefig(filename)
 
 # ============================================================
 # Load data
@@ -235,30 +387,34 @@ for it, g in df.groupby("iteration"):
 
 stats = pd.DataFrame(stats).sort_values("iteration")
 
-plt.figure()
+plt.figure(figsize=FIGSIZE)
 
 plt.errorbar(
     stats["iteration"], stats["base_mean"],
     yerr=stats["base_ci"],
-    marker="o",
+    fmt="o",
     label="Base",
-    color="#D55E00"  # colorblind-safe red (vermillion)
+    linestyle="none",
+    capsize=CAPSIZE,
+    color=CB_RED  # colorblind-safe red (vermillion)
 )
 
 plt.errorbar(
     stats["iteration"], stats["retr_mean"],
     yerr=stats["retr_ci"],
-    marker="o",
+    fmt="o",
     label="Retrieved",
-    color="#009E73"  # colorblind-safe green
+    linestyle="none",
+    capsize=CAPSIZE,
+    color=CB_GREEN  # colorblind-safe green
 )
 
 plt.xlabel("Iteration")
 plt.ylabel("Average Grade")
-plt.title("Average Explanation Quality per Iteration")
+plt.xticks(stats["iteration"], rotation=0)
 
 # Reverse grade scale: 1 at top, 6 at bottom
-plt.ylim(2.4, 1.6)
+plt.ylim(2.6, 1.4)
 
 plt.legend()
 mark_rephrased_iters()
@@ -287,24 +443,17 @@ color_map = {
 ax = winner_counts.plot(
     kind="bar",
     stacked=True,
+    width=BAR_WIDTH,
     figsize=(6, 4),
     color=[color_map[c] for c in winner_counts.columns],
 )
 
 plt.xlabel("Iteration")
 plt.ylabel("Count")
-plt.title("Judge Decisions per Iteration")
-plt.legend(title="Winner")
-
-# Mark iterations 6 and 7 by bar *index* (works even if x is categorical)
-# winner_counts.index contains the actual iteration numbers in order
-idx = list(winner_counts.index)
-for it in REPHRASED_ITS:
-    if it in idx:
-        j = idx.index(it)                  # bar position (0..n-1)
-        ax.axvspan(j - 0.5, j + 0.5, alpha=0.12)
-        ax.axvline(j, linestyle="--", linewidth=1.0, alpha=0.7)
-
+plt.legend()
+plt.ylim(0, 100)
+plt.xticks(rotation=0)
+mark_rephrased_iters_categorical(winner_counts.index)
 savefig("judge_winner_counts")
 
 # ============================================================
@@ -318,33 +467,37 @@ savefig("judge_winner_counts")
 rag_stats = []
 for it, g in df.groupby("iteration"):
     r = (g["winner"] == "retrieved").astype(int)
-    c = (g["winner"] == "combined").astype(int)   # <-- assumes your logs use winner == "combined"
+    c = (g["winner"] == "combined").astype(int)
     r_mean, _ = mean_ci(r)
     c_mean, _ = mean_ci(c)
     rag_stats.append({"iteration": it, "retr_mean": r_mean, "comb_mean": c_mean})
 
 rag_stats = pd.DataFrame(rag_stats).sort_values("iteration")
+rag_stats["top"] = rag_stats["retr_mean"] + rag_stats["comb_mean"]
 
-plt.figure()
+plt.figure(figsize=FIGSIZE)
 x = rag_stats["iteration"].to_numpy()
-y_retr = rag_stats["retr_mean"].to_numpy()
-y_comb = rag_stats["comb_mean"].to_numpy()
-y_top = y_retr + y_comb
 
-# Area 1: under retrieved
-plt.fill_between(x, 0, y_retr, alpha=0.85, label="Retrieved", color="#009E73")
-
-# Area 2: between retrieved and retrieved+combined
-plt.fill_between(x, y_retr, y_top, alpha=0.55, label="Combined (stacked)", color="#D55E00")
-
-# Boundary lines (no points)
-plt.plot(x, y_retr, linewidth=1.8, label="Retrieved (boundary)", color="#00916A")
-plt.plot(x, y_top, linewidth=1.8, label="Retrieved + Combined (boundary)", color="#C55500")
+plt.bar(
+    x,
+    rag_stats["retr_mean"],
+    width=BAR_WIDTH,
+    color=CB_GREEN,
+    label="Retrieved"
+)
+plt.bar(
+    x,
+    rag_stats["comb_mean"],
+    width=BAR_WIDTH,
+    bottom=rag_stats["retr_mean"],
+    color=CB_RED,
+    label="Combined"
+)
 
 plt.xlabel("Iteration")
 plt.ylabel("Fraction")
+plt.xticks(x, rotation=0)
 plt.ylim(0, 1)
-plt.title("RAG Reliance per Iteration")
 plt.legend()
 mark_rephrased_iters()
 savefig("rag_reliance")
@@ -365,40 +518,38 @@ for it, g in df.groupby("iteration"):
 
 cos_stats = pd.DataFrame(cos_stats).sort_values("iteration")
 
-plt.figure()
-plt.errorbar(
-    cos_stats["iteration"],
-    cos_stats["mean"],
-    yerr=cos_stats["ci"],
-    marker="o",
-    color="#009E73"
+stacked_rate_bar(
+    cos_stats,
+    x_col="iteration",
+    y_col="mean",
+    yerr_col="ci",
+    ylabel="Cosine Similarity",
+    filename="cosine_similarity_per_iteration"
 )
-plt.xlabel("Iteration")
-plt.ylabel("Cosine Similarity")
-plt.title("Retriever Cosine Similarity per Iteration")
-mark_rephrased_iters()
-savefig("cosine_similarity_per_iteration")
 
 # ============================================================
 # 5. Stability of Cosine Similarity (Task Subgroup)
 # ============================================================
 
-sub_df = df[df["prompt_id"].isin(STABLE_PROMPT_IDS)]
+sub_df = df[df["prompt_id"].isin(STABLE_PROMPT_IDS)].copy()
 
-plt.figure(figsize=(6, 4))
-sns.lineplot(
-    data=sub_df,
+stab = (
+    sub_df.groupby(["iteration", "prompt_id"])["cosine_similarity"]
+    .mean()
+    .reset_index()
+)
+
+plt.figure(figsize=(9, 4.8))
+sns.barplot(
+    data=stab,
     x="iteration",
     y="cosine_similarity",
     hue="prompt_id",
-    marker="o",
-    legend="full",
     palette="colorblind"
 )
 plt.xlabel("Iteration")
 plt.ylabel("Cosine Similarity")
-plt.title("Cosine Similarity Stability (Task Subgroup)")
-plt.legend(title="Prompt ID")
+plt.legend(title="Prompt ID", ncol=3)
 mark_rephrased_iters()
 savefig("cosine_stability_subgroup")
 
@@ -426,27 +577,30 @@ for it, g in df.groupby("iteration"):
 
 pm_stats = pd.DataFrame(pm_stats).sort_values("iteration")
 
-# (a) exact same fraction
-plt.figure()
-plt.plot(pm_stats["iteration"], pm_stats["exact_same_frac"], marker="o", color=CB_GREEN)
-plt.xlabel("Iteration")
-plt.ylabel("Exact Same Fraction")
-plt.ylim(0, 1)
-plt.title("Exact Match: masked_prompt vs retrieved_prompt")
-mark_rephrased_iters()
-savefig("prompt_exact_match_per_iteration")
-
-# (b) close-match ratio (with CI)
-plt.figure()
-plt.errorbar(
-    pm_stats["iteration"], pm_stats["mean_ratio"],
-    yerr=pm_stats["ci_ratio"], marker="o",
-    color="#009E73"
+stacked_rate_bar(
+    pm_stats,
+    x_col="iteration",
+    y_col="exact_same_frac",
+    yerr_col=None,
+    ylabel="Exact Same Fraction",
+    filename="prompt_exact_match_per_iteration"
 )
+
+plt.figure(figsize=FIGSIZE)
+x = pm_stats["iteration"].to_numpy()
+
+plt.bar(
+    x,
+    pm_stats["mean_ratio"],
+    width=BAR_WIDTH,
+    color=CB_GREEN,
+    capsize=CAPSIZE
+)
+
 plt.xlabel("Iteration")
 plt.ylabel("Close-Match Ratio")
+plt.xticks(x, rotation=0)
 plt.ylim(0, 1)
-plt.title("Close Match Ratio: masked_prompt vs retrieved_prompt")
 mark_rephrased_iters()
 savefig("prompt_close_match_ratio_per_iteration")
 
@@ -466,24 +620,31 @@ for it, g in df[has_both].groupby("iteration"):
 
 wr = pd.DataFrame(rows).sort_values("iteration")
 
-plt.figure()
-plt.plot(
-    wr["iteration"], wr["win_rate_exact"],
-    marker="o",
-    color=CB_GREEN,
-    label="P(Judge picks Retrieved | exact retrieval)"
-)
-plt.plot(
-    wr["iteration"], wr["win_rate_wrong"],
-    marker="o",
+plt.figure(figsize=FIGSIZE)
+x = wr["iteration"].to_numpy()
+
+plt.bar(
+    x,
+    wr["win_rate_wrong"],
+    width=BAR_WIDTH,
     color=CB_RED,
-    label="P(Judge picks Retrieved | non-exact retrieval)"
+    label="Non-exact retrieval"
 )
+plt.bar(
+    x,
+    wr["win_rate_exact"],
+    width=BAR_WIDTH,
+    bottom=wr["win_rate_wrong"],
+    color=CB_GREEN,
+    label="Exact retrieval"
+)
+
 plt.xlabel("Iteration")
-plt.ylabel("Retrieved win rate")
+plt.ylabel("Retrieved Win Rate")
+plt.xticks(x, rotation=0)
 plt.ylim(0, 1)
-plt.title("Judge preference for Retrieved under exact vs non-exact retrieval")
 plt.legend()
+mark_rephrased_iters()
 savefig("retrieved_win_rate_exact_vs_wrong")
 
 # --- Heatmap: 4 regimes per iteration (fractions) ---
@@ -525,8 +686,6 @@ sns.heatmap(
 )
 plt.xlabel("Regime (retrieval correctness | judge decision)")
 plt.ylabel("Iteration")
-plt.title("RAG regimes per iteration")
-mark_rephrased_iters()
 savefig("heatmap_rag_regimes_per_iteration")
 
 def load_expected_prompts(path: str) -> dict:
@@ -717,52 +876,53 @@ print(f"[OK] Model mismatches written to: {model_mismatch_path}")
 # 7. Model Hit/Miss rate per iteration (with CI)
 hit_stats = []
 for it, g in df.groupby("iteration"):
-    m, ci = mean_ci(g["model_hit"])
-    hit_stats.append({"iteration": it, "mean": m, "ci": ci})
+    hit_count = (g["model_hit"] == 1.0).sum()
+    hit_stats.append({"iteration": it, "count": hit_count})
 hit_stats = pd.DataFrame(hit_stats).sort_values("iteration")
 
-plt.figure()
-plt.errorbar(hit_stats["iteration"], hit_stats["mean"], yerr=hit_stats["ci"], marker="o", color="#009E73")
-plt.xlabel("Iteration")
-plt.ylabel("Hit rate")
-plt.ylim(0, 1)
-plt.title("Model Selection Hit Rate per Iteration")
-mark_rephrased_iters()
-savefig("model_hit_rate_per_iteration")
+stacked_count_bar(
+    hit_stats,
+    x_col="iteration",
+    y_col="count",
+    ylabel="Hit Count",
+    filename="model_hit_rate_per_iteration",
+    ymax=100
+)
 
-# 8. Model Exact-set match rate per iteration (with CI)
+# 8. Model Exact-set match rate per iteration
 exact_stats = []
 for it, g in df.groupby("iteration"):
-    m, ci = mean_ci(g["model_exact"])
-    exact_stats.append({"iteration": it, "mean": m, "ci": ci})
+    exact_count = (g["model_exact"] == 1.0).sum()
+    exact_stats.append({"iteration": it, "count": exact_count})
 exact_stats = pd.DataFrame(exact_stats).sort_values("iteration")
 
-plt.figure()
-plt.errorbar(exact_stats["iteration"], exact_stats["mean"], yerr=exact_stats["ci"], marker="o", color="#009E73")
-plt.xlabel("Iteration")
-plt.ylabel("Exact match rate")
-plt.ylim(0, 1)
-plt.title("Model Selection Exact-Set Match per Iteration")
-mark_rephrased_iters()
-savefig("model_exact_match_rate_per_iteration")
+stacked_count_bar(
+    exact_stats,
+    x_col="iteration",
+    y_col="count",
+    ylabel="Exact Match Count",
+    filename="model_exact_match_rate_per_iteration",
+    ymax=100
+)
 
-# 9. Inference failure rate per iteration (with CI)
+# 9. Inference failure rate per iteration
 fail_stats = []
 for it, g in df.groupby("iteration"):
     m, ci = mean_ci(g["inference_failure_rate"])
     fail_stats.append({"iteration": it, "mean": m, "ci": ci})
 fail_stats = pd.DataFrame(fail_stats).sort_values("iteration")
 
-plt.figure()
-plt.errorbar(fail_stats["iteration"], fail_stats["mean"], yerr=fail_stats["ci"], marker="o", color="#009E73")
-plt.xlabel("Iteration")
-plt.ylabel("Failure rate")
-plt.ylim(0, 1)
-plt.title("Inference Failure Rate per Iteration")
-mark_rephrased_iters()
-savefig("inference_failure_rate_per_iteration")
+stacked_rate_bar(
+    fail_stats,
+    x_col="iteration",
+    y_col="mean",
+    yerr_col="ci",
+    ylabel="Average Failure Rate",
+    filename="inference_failure_rate_per_iteration",
+    ylim=(0, 1)
+)
 
-# 10. (Optional) Stacked bar: Hits vs Misses per iteration
+# 10. Stacked bar: Hits vs Misses per iteration
 hm = (
     df[df["model_hit"].notna()]
     .assign(hit=lambda x: (x["model_hit"] == 1.0).astype(int),
@@ -772,18 +932,31 @@ hm = (
     .sort_index()
 )
 
-ax = hm.plot(kind="bar", stacked=True, figsize=(6, 4),
-             color=[CB_GREEN, CB_RED])
+plt.figure(figsize=FIGSIZE)
+x = hm.index.to_numpy()
+
+plt.bar(
+    x,
+    hm["hit"].to_numpy(),
+    width=BAR_WIDTH,
+    color=CB_GREEN,
+    label="Hit"
+)
+plt.bar(
+    x,
+    hm["miss"].to_numpy(),
+    width=BAR_WIDTH,
+    color=CB_RED,
+    bottom=hm["hit"],
+    label="Miss"
+)
+
 plt.xlabel("Iteration")
 plt.ylabel("Count")
-plt.title("Model Selection: Hit vs Miss (Counts)")
-# highlight 6/7 in categorical space
-idx = list(hm.index)
-for it in REPHRASED_ITS:
-    if it in idx:
-        j = idx.index(it)
-        ax.axvspan(j - 0.5, j + 0.5, alpha=0.12)
-        ax.axvline(j, linestyle="--", linewidth=1.0, alpha=0.7)
+plt.xticks(x, rotation=0)
+plt.ylim(0, 100)
+plt.legend()
+mark_rephrased_iters()
 savefig("model_hit_miss_counts")
 
 
@@ -791,4 +964,4 @@ savefig("model_hit_miss_counts")
 # Done
 # ============================================================
 
-print(f"[OK] Figures saved to ./{OUT_DIR}/ (PNG + PDF)")
+print(f"[OK] PDF figures saved to ./{OUT_DIR}/")
