@@ -25,8 +25,8 @@ import seaborn as sns
 # ============================================================
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--run", default="runs/20260115_164102_7e59",
-                    help="Run directory, e.g. runs/20260115_164102_7e59")
+parser.add_argument("--run", default="runs/20260214_095426_e7f9",
+                    help="Run directory, e.g. runs/20260214_095426_e7f9")
 args = parser.parse_args()
 
 RUN_DIR = args.run.rstrip("/")
