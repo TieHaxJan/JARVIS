@@ -269,7 +269,7 @@ def stacked_count_bar(
 
 records = []
 for file in glob.glob(LOG_PATTERN):
-    with open(file, "r") as f:
+    with open(file, "r", encoding="utf-8") as f:
         for line in f:
             records.append(json.loads(line))
 
@@ -440,11 +440,12 @@ color_map = {
     "combined": CB_BLUE,   # or CB_GRAY
 }
 
+plt.figure(figsize=FIGSIZE)
 ax = winner_counts.plot(
     kind="bar",
     stacked=True,
     width=BAR_WIDTH,
-    figsize=(6, 4),
+    figsize=FIGSIZE,
     color=[color_map[c] for c in winner_counts.columns],
 )
 
@@ -959,7 +960,122 @@ plt.legend()
 mark_rephrased_iters()
 savefig("model_hit_miss_counts")
 
+# ============================================================
+# Build Quality Analytics Help
+# ============================================================
 
+from collections import defaultdict
+
+# Group records by prompt_id
+by_prompt = defaultdict(list)
+
+for r in records:
+    by_prompt[r["prompt_id"]].append(r)
+
+target = ["base", "base", "base", "base", "base", "base", "base"]
+
+for pid, items in by_prompt.items():
+    # sort by iteration
+    items_sorted = sorted(items, key=lambda x: x["iteration"])
+
+    winners = [it["judge"]["winner"] for it in items_sorted]
+
+    # check ordered subsequence
+    i = 0
+    for w in winners:
+        if w == target[i]:
+            i += 1
+            if i == len(target):
+                print(f"prompt_id {pid}: {winners}")
+                break
+
+from collections import defaultdict
+
+TARGET_PROMPTS = {13, 16, 26, 46, 69}
+OUTPUT_FILE = OUT_DIR + "/qualitative_analysis.txt"
+
+by_prompt = defaultdict(list)
+
+for r in records:
+    if r["prompt_id"] in TARGET_PROMPTS:
+        by_prompt[r["prompt_id"]].append(r)
+
+def latex_escape(text):
+    if text is None:
+        return ""
+    return (
+        text.replace("\\", r"\textbackslash{}")
+            .replace("_", r"\_")
+            .replace("%", r"\%")
+            .replace("&", r"\&")
+            .replace("#", r"\#")
+            .replace("$", r"\$")
+            .replace("{", r"\{")
+            .replace("}", r"\}")
+    )
+
+latex_output = []
+
+for pid in sorted(TARGET_PROMPTS):
+    if pid not in by_prompt:
+        continue
+
+    items = sorted(by_prompt[pid], key=lambda x: x["iteration"])
+    latex_output.append(f"\\subsubsection{{Prompt {pid}}}\\label{{prompt:{pid}}}\n")
+
+    for it in items:
+        winner = it["judge"]["winner"]
+        grade_base = it["judge"]["grade_base"]
+        grade_ret = it["judge"]["grade_retrieved"]
+
+        base = latex_escape(it.get("base_explanation", ""))
+        retrieved = latex_escape(it.get("retriever", {}).get("retrieved_explanation", ""))
+        combined = latex_escape(it.get("judge", {}).get("improved_explanation", ""))
+        reason = latex_escape(it.get("judge", {}).get("reason", ""))
+
+        iteration = it["iteration"]
+
+        latex_output.append(
+            f"\\paragraph{{Iteration {iteration} --- Winner: {winner}}}\\mbox{{}}\\\\"
+        )
+        
+        latex_output.append(
+            f"""
+\\textbf{{Reason}}: {reason}"""
+        )
+
+
+        # special rule: first iteration + winner is base -> only print base
+        if iteration == 1 and winner == "base":
+            latex_output.append(
+                f"""
+\\textbf{{Base (Grade {grade_base})}}: {base}"""
+            )
+            continue
+
+        # always show base
+        latex_output.append(
+            f"""
+\\textbf{{Base (Grade {grade_base})}}: {base}"""
+        )
+
+        # show retrieved unless first-iteration/base special case already continued
+        latex_output.append(
+            f"""
+\\textbf{{Retrieved (Grade {grade_ret})}}: {retrieved}"""
+        )
+
+        # only show combined if winner is actually combined
+        if winner == "combined":
+            latex_output.append(
+                f"""
+\\textbf{{Combined}}: {combined}"""
+            )
+
+with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+    f.write("\n".join(latex_output))
+
+print(f"Saved qualitative analysis to {OUTPUT_FILE}")
 # ============================================================
 # Done
 # ============================================================

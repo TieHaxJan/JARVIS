@@ -55,7 +55,7 @@ retrieved_prompt:
 Segment the image '[PATH]'.
 --------------------------------------------------------------------------------
 
-prompt_id=33 iteration=1 match_ratio=0.5574
+prompt_id=33 iteration=4 match_ratio=0.5574
 masked_prompt:
 Estimate segmentation of '[PATH]'.
 retrieved_prompt:
@@ -69,13 +69,6 @@ retrieved_prompt:
 Segment the image '[PATH]'.
 --------------------------------------------------------------------------------
 
-prompt_id=33 iteration=4 match_ratio=0.5574
-masked_prompt:
-Estimate segmentation of '[PATH]'.
-retrieved_prompt:
-Segment the image '[PATH]'.
---------------------------------------------------------------------------------
-
 prompt_id=33 iteration=3 match_ratio=0.5574
 masked_prompt:
 Estimate segmentation of '[PATH]'.
@@ -83,14 +76,21 @@ retrieved_prompt:
 Segment the image '[PATH]'.
 --------------------------------------------------------------------------------
 
-prompt_id=88 iteration=7 match_ratio=0.5581
+prompt_id=33 iteration=1 match_ratio=0.5574
+masked_prompt:
+Estimate segmentation of '[PATH]'.
+retrieved_prompt:
+Segment the image '[PATH]'.
+--------------------------------------------------------------------------------
+
+prompt_id=88 iteration=6 match_ratio=0.5581
 masked_prompt:
 Generate an audio description for '[PATH]' that includes a caption.
 retrieved_prompt:
 Create a caption for '[PATH]' and produce corresponding audio.
 --------------------------------------------------------------------------------
 
-prompt_id=88 iteration=6 match_ratio=0.5581
+prompt_id=88 iteration=7 match_ratio=0.5581
 masked_prompt:
 Generate an audio description for '[PATH]' that includes a caption.
 retrieved_prompt:
@@ -132,6 +132,13 @@ retrieved_prompt:
 Generate a similar image to '[PATH]'.
 --------------------------------------------------------------------------------
 
+prompt_id=15 iteration=7 match_ratio=0.6234
+masked_prompt:
+Create an image that resembles '[PATH]'.
+retrieved_prompt:
+Generate a similar image to '[PATH]'.
+--------------------------------------------------------------------------------
+
 prompt_id=15 iteration=6 match_ratio=0.6234
 masked_prompt:
 Create an image that resembles '[PATH]'.
@@ -140,13 +147,6 @@ Generate a similar image to '[PATH]'.
 --------------------------------------------------------------------------------
 
 prompt_id=14 iteration=6 match_ratio=0.6234
-masked_prompt:
-Create an image that resembles '[PATH]'.
-retrieved_prompt:
-Generate a similar image to '[PATH]'.
---------------------------------------------------------------------------------
-
-prompt_id=15 iteration=7 match_ratio=0.6234
 masked_prompt:
 Create an image that resembles '[PATH]'.
 retrieved_prompt:
@@ -195,14 +195,14 @@ retrieved_prompt:
 Caption '[PATH]' and then summarize.
 --------------------------------------------------------------------------------
 
-prompt_id=90 iteration=7 match_ratio=0.7077
+prompt_id=90 iteration=6 match_ratio=0.7077
 masked_prompt:
 Identify objects in '[PATH]', assess depth, and provide a description.
 retrieved_prompt:
 Detect objects in '[PATH]', estimate depth, and describe it.
 --------------------------------------------------------------------------------
 
-prompt_id=90 iteration=6 match_ratio=0.7077
+prompt_id=90 iteration=7 match_ratio=0.7077
 masked_prompt:
 Identify objects in '[PATH]', assess depth, and provide a description.
 retrieved_prompt:
@@ -552,18 +552,18 @@ retrieved_prompt:
 Detect objects and create a caption for '[PATH]'.
 --------------------------------------------------------------------------------
 
-prompt_id=55 iteration=6 match_ratio=0.8431
-masked_prompt:
-Conduct named entity recognition on 'Microsoft acquired GitHub in 2018.' and provide a summary of the results.
-retrieved_prompt:
-Perform named entity recognition on 'Microsoft acquired GitHub in 2018.' and summarize result.
---------------------------------------------------------------------------------
-
 prompt_id=87 iteration=6 match_ratio=0.8431
 masked_prompt:
 Identify objects and generate a caption for '[PATH]'.
 retrieved_prompt:
 Detect objects and create a caption for '[PATH]'.
+--------------------------------------------------------------------------------
+
+prompt_id=55 iteration=6 match_ratio=0.8431
+masked_prompt:
+Conduct named entity recognition on 'Microsoft acquired GitHub in 2018.' and provide a summary of the results.
+retrieved_prompt:
+Perform named entity recognition on 'Microsoft acquired GitHub in 2018.' and summarize result.
 --------------------------------------------------------------------------------
 
 prompt_id=2 iteration=6 match_ratio=0.8438
@@ -594,13 +594,6 @@ retrieved_prompt:
 Detect objects, describe scene, and generate audio for '[PATH]'.
 --------------------------------------------------------------------------------
 
-prompt_id=43 iteration=6 match_ratio=0.8595
-masked_prompt:
-Estimate the depth of '[PATH]' and then produce a sketch version.
-retrieved_prompt:
-Estimate depth of '[PATH]' then create a sketch version.
---------------------------------------------------------------------------------
-
 prompt_id=43 iteration=7 match_ratio=0.8595
 masked_prompt:
 Estimate the depth of '[PATH]' and then produce a sketch version.
@@ -608,11 +601,11 @@ retrieved_prompt:
 Estimate depth of '[PATH]' then create a sketch version.
 --------------------------------------------------------------------------------
 
-prompt_id=91 iteration=7 match_ratio=0.8613
+prompt_id=43 iteration=6 match_ratio=0.8595
 masked_prompt:
-Integrate audio classification with speech transcription for '[PATH]'.
+Estimate the depth of '[PATH]' and then produce a sketch version.
 retrieved_prompt:
-Combine audio classification and speech transcription for '[PATH]'.
+Estimate depth of '[PATH]' then create a sketch version.
 --------------------------------------------------------------------------------
 
 prompt_id=91 iteration=6 match_ratio=0.8613
@@ -622,14 +615,21 @@ retrieved_prompt:
 Combine audio classification and speech transcription for '[PATH]'.
 --------------------------------------------------------------------------------
 
-prompt_id=26 iteration=6 match_ratio=0.8636
+prompt_id=91 iteration=7 match_ratio=0.8613
+masked_prompt:
+Integrate audio classification with speech transcription for '[PATH]'.
+retrieved_prompt:
+Combine audio classification and speech transcription for '[PATH]'.
+--------------------------------------------------------------------------------
+
+prompt_id=26 iteration=7 match_ratio=0.8636
 masked_prompt:
 Generate a 5-second video depicting 'A butterfly flying near flowers'.
 retrieved_prompt:
 Create a 5-second video for 'A butterfly flying near flowers'.
 --------------------------------------------------------------------------------
 
-prompt_id=26 iteration=7 match_ratio=0.8636
+prompt_id=26 iteration=6 match_ratio=0.8636
 masked_prompt:
 Generate a 5-second video depicting 'A butterfly flying near flowers'.
 retrieved_prompt:
@@ -650,14 +650,14 @@ retrieved_prompt:
 Detect objects and generate a video narration for '[PATH]'.
 --------------------------------------------------------------------------------
 
-prompt_id=80 iteration=6 match_ratio=0.8727
+prompt_id=80 iteration=7 match_ratio=0.8727
 masked_prompt:
 Detect pose in '[PATH]' and create a new image inspired by the text 'a reading girl'.
 retrieved_prompt:
 Detect pose in '[PATH]' and generate a new image based on text 'a reading girl'.
 --------------------------------------------------------------------------------
 
-prompt_id=80 iteration=7 match_ratio=0.8727
+prompt_id=80 iteration=6 match_ratio=0.8727
 masked_prompt:
 Detect pose in '[PATH]' and create a new image inspired by the text 'a reading girl'.
 retrieved_prompt:
@@ -678,13 +678,6 @@ retrieved_prompt:
 Generate a video for the text 'A dog running through snow'.
 --------------------------------------------------------------------------------
 
-prompt_id=8 iteration=7 match_ratio=0.8793
-masked_prompt:
-Respond to 'What is the man holding?' in the image '[PATH]'.
-retrieved_prompt:
-Answer 'What is the man holding?' in the image '[PATH]'.
---------------------------------------------------------------------------------
-
 prompt_id=8 iteration=6 match_ratio=0.8793
 masked_prompt:
 Respond to 'What is the man holding?' in the image '[PATH]'.
@@ -692,14 +685,14 @@ retrieved_prompt:
 Answer 'What is the man holding?' in the image '[PATH]'.
 --------------------------------------------------------------------------------
 
-prompt_id=23 iteration=3 match_ratio=0.8814
+prompt_id=8 iteration=7 match_ratio=0.8793
 masked_prompt:
-Estimate depth for '[PATH]'.
+Respond to 'What is the man holding?' in the image '[PATH]'.
 retrieved_prompt:
-Estimate the depth of '[PATH]'.
+Answer 'What is the man holding?' in the image '[PATH]'.
 --------------------------------------------------------------------------------
 
-prompt_id=23 iteration=2 match_ratio=0.8814
+prompt_id=23 iteration=3 match_ratio=0.8814
 masked_prompt:
 Estimate depth for '[PATH]'.
 retrieved_prompt:
@@ -727,11 +720,11 @@ retrieved_prompt:
 Estimate the depth of '[PATH]'.
 --------------------------------------------------------------------------------
 
-prompt_id=5 iteration=7 match_ratio=0.8824
+prompt_id=23 iteration=2 match_ratio=0.8814
 masked_prompt:
-Create a speech for the phrase 'Welcome to HuggingGPT testing suite.'
+Estimate depth for '[PATH]'.
 retrieved_prompt:
-Generate speech for the text 'Welcome to HuggingGPT testing suite.'
+Estimate the depth of '[PATH]'.
 --------------------------------------------------------------------------------
 
 prompt_id=5 iteration=6 match_ratio=0.8824
@@ -741,11 +734,11 @@ retrieved_prompt:
 Generate speech for the text 'Welcome to HuggingGPT testing suite.'
 --------------------------------------------------------------------------------
 
-prompt_id=72 iteration=6 match_ratio=0.8846
+prompt_id=5 iteration=7 match_ratio=0.8824
 masked_prompt:
-Conduct object detection and captioning on '[PATH]'.
+Create a speech for the phrase 'Welcome to HuggingGPT testing suite.'
 retrieved_prompt:
-Perform object detection and captioning on '[PATH]'.
+Generate speech for the text 'Welcome to HuggingGPT testing suite.'
 --------------------------------------------------------------------------------
 
 prompt_id=72 iteration=7 match_ratio=0.8846
@@ -755,11 +748,11 @@ retrieved_prompt:
 Perform object detection and captioning on '[PATH]'.
 --------------------------------------------------------------------------------
 
-prompt_id=82 iteration=7 match_ratio=0.8952
+prompt_id=72 iteration=6 match_ratio=0.8846
 masked_prompt:
-Summarize and translate the following text: 'Con intelligenza artificiale viene chiamata spesso e impropriamente l'intelligenza artificiale generativa, che è invece solamente un particolare tipo di intelligenza artificiale, che ha lo scopo di creare testi, immagini, audio, video o altri contenuti ri…
+Conduct object detection and captioning on '[PATH]'.
 retrieved_prompt:
-Combine summarization, and translation on 'Con intelligenza artificiale viene chiamata spesso e impropriamente l'intelligenza artificiale generativa, che è invece solamente un particolare tipo di intelligenza artificiale, che ha lo scopo di creare testi, immagini, audio, video o altri contenuti risp…
+Perform object detection and captioning on '[PATH]'.
 --------------------------------------------------------------------------------
 
 prompt_id=82 iteration=6 match_ratio=0.8952
@@ -769,11 +762,11 @@ retrieved_prompt:
 Combine summarization, and translation on 'Con intelligenza artificiale viene chiamata spesso e impropriamente l'intelligenza artificiale generativa, che è invece solamente un particolare tipo di intelligenza artificiale, che ha lo scopo di creare testi, immagini, audio, video o altri contenuti risp…
 --------------------------------------------------------------------------------
 
-prompt_id=79 iteration=6 match_ratio=0.8966
+prompt_id=82 iteration=7 match_ratio=0.8952
 masked_prompt:
-Execute object detection, captioning, and VQA on '[PATH]'.
+Summarize and translate the following text: 'Con intelligenza artificiale viene chiamata spesso e impropriamente l'intelligenza artificiale generativa, che è invece solamente un particolare tipo di intelligenza artificiale, che ha lo scopo di creare testi, immagini, audio, video o altri contenuti ri…
 retrieved_prompt:
-Perform object detection, captioning, and VQA on '[PATH]'.
+Combine summarization, and translation on 'Con intelligenza artificiale viene chiamata spesso e impropriamente l'intelligenza artificiale generativa, che è invece solamente un particolare tipo di intelligenza artificiale, che ha lo scopo di creare testi, immagini, audio, video o altri contenuti risp…
 --------------------------------------------------------------------------------
 
 prompt_id=79 iteration=7 match_ratio=0.8966
@@ -783,11 +776,11 @@ retrieved_prompt:
 Perform object detection, captioning, and VQA on '[PATH]'.
 --------------------------------------------------------------------------------
 
-prompt_id=7 iteration=7 match_ratio=0.9054
+prompt_id=79 iteration=6 match_ratio=0.8966
 masked_prompt:
-Identify the named entities in the text 'Elon Musk founded SpaceX in 2002.'.
+Execute object detection, captioning, and VQA on '[PATH]'.
 retrieved_prompt:
-Recognize named entities in the text 'Elon Musk founded SpaceX in 2002.'
+Perform object detection, captioning, and VQA on '[PATH]'.
 --------------------------------------------------------------------------------
 
 prompt_id=7 iteration=6 match_ratio=0.9054
@@ -797,11 +790,11 @@ retrieved_prompt:
 Recognize named entities in the text 'Elon Musk founded SpaceX in 2002.'
 --------------------------------------------------------------------------------
 
-prompt_id=46 iteration=6 match_ratio=0.9079
+prompt_id=7 iteration=7 match_ratio=0.9054
 masked_prompt:
-Create a voiceover for 'Autonomous agents represent the future of AI systems.'
+Identify the named entities in the text 'Elon Musk founded SpaceX in 2002.'.
 retrieved_prompt:
-Generate a voiceover for 'Autonomous agents are the future of AI systems.'
+Recognize named entities in the text 'Elon Musk founded SpaceX in 2002.'
 --------------------------------------------------------------------------------
 
 prompt_id=46 iteration=7 match_ratio=0.9079
@@ -811,15 +804,11 @@ retrieved_prompt:
 Generate a voiceover for 'Autonomous agents are the future of AI systems.'
 --------------------------------------------------------------------------------
 
-prompt_id=36 iteration=7 match_ratio=0.9098
+prompt_id=46 iteration=6 match_ratio=0.9079
 masked_prompt:
-Summarize the article below and create a brief executive summary for business stakeholders: 
-
-"The global renewable energy sector experienced record growth in 2024, driven by significant investments in solar and wind infrastructure. Governments around the world introduced new incentives to accelerat…
+Create a voiceover for 'Autonomous agents represent the future of AI systems.'
 retrieved_prompt:
-Summarize the following article and generate a concise executive brief tailored for business stakeholders:
-
-"The global renewable energy sector experienced record growth in 2024, driven by significant investments in solar and wind infrastructure. Governments around the world introduced new incentive…
+Generate a voiceover for 'Autonomous agents are the future of AI systems.'
 --------------------------------------------------------------------------------
 
 prompt_id=36 iteration=6 match_ratio=0.9098
@@ -833,11 +822,15 @@ Summarize the following article and generate a concise executive brief tailored 
 "The global renewable energy sector experienced record growth in 2024, driven by significant investments in solar and wind infrastructure. Governments around the world introduced new incentive…
 --------------------------------------------------------------------------------
 
-prompt_id=81 iteration=6 match_ratio=0.9138
+prompt_id=36 iteration=7 match_ratio=0.9098
 masked_prompt:
-Create text-to-speech narration for the captioned '[PATH]'.
+Summarize the article below and create a brief executive summary for business stakeholders: 
+
+"The global renewable energy sector experienced record growth in 2024, driven by significant investments in solar and wind infrastructure. Governments around the world introduced new incentives to accelerat…
 retrieved_prompt:
-Generate text-to-speech narration for captioned '[PATH]'.
+Summarize the following article and generate a concise executive brief tailored for business stakeholders:
+
+"The global renewable energy sector experienced record growth in 2024, driven by significant investments in solar and wind infrastructure. Governments around the world introduced new incentive…
 --------------------------------------------------------------------------------
 
 prompt_id=81 iteration=7 match_ratio=0.9138
@@ -847,18 +840,11 @@ retrieved_prompt:
 Generate text-to-speech narration for captioned '[PATH]'.
 --------------------------------------------------------------------------------
 
-prompt_id=96 iteration=6 match_ratio=0.9189
+prompt_id=81 iteration=6 match_ratio=0.9138
 masked_prompt:
-Conduct object detection, depth estimation, and segmentation for '[PATH]'.
+Create text-to-speech narration for the captioned '[PATH]'.
 retrieved_prompt:
-Perform object detection, depth estimation, and segmentation for '[PATH]'.
---------------------------------------------------------------------------------
-
-prompt_id=16 iteration=7 match_ratio=0.9189
-masked_prompt:
-Transcribe the speech found in '[PATH]'.
-retrieved_prompt:
-Transcribe the speech in '[PATH]'.
+Generate text-to-speech narration for captioned '[PATH]'.
 --------------------------------------------------------------------------------
 
 prompt_id=16 iteration=6 match_ratio=0.9189
@@ -868,7 +854,21 @@ retrieved_prompt:
 Transcribe the speech in '[PATH]'.
 --------------------------------------------------------------------------------
 
+prompt_id=16 iteration=7 match_ratio=0.9189
+masked_prompt:
+Transcribe the speech found in '[PATH]'.
+retrieved_prompt:
+Transcribe the speech in '[PATH]'.
+--------------------------------------------------------------------------------
+
 prompt_id=96 iteration=7 match_ratio=0.9189
+masked_prompt:
+Conduct object detection, depth estimation, and segmentation for '[PATH]'.
+retrieved_prompt:
+Perform object detection, depth estimation, and segmentation for '[PATH]'.
+--------------------------------------------------------------------------------
+
+prompt_id=96 iteration=6 match_ratio=0.9189
 masked_prompt:
 Conduct object detection, depth estimation, and segmentation for '[PATH]'.
 retrieved_prompt:
