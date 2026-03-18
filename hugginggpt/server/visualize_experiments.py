@@ -414,7 +414,7 @@ plt.ylabel("Average Grade")
 plt.xticks(stats["iteration"], rotation=0)
 
 # Reverse grade scale: 1 at top, 6 at bottom
-plt.ylim(2.6, 1.4)
+plt.ylim(3, 1.4)
 
 plt.legend()
 mark_rephrased_iters()
@@ -609,14 +609,16 @@ has_both = df[["masked_prompt", "retrieved_prompt"]].notna().all(axis=1)
 
 rows = []
 for it, g in df[has_both].groupby("iteration"):
-    g_exact = g[g["prompt_same"]]
-    g_wrong = g[~g["prompt_same"]]
+    n = len(g)
+
+    exact_retrieved = ((g["prompt_same"]) & (g["winner"] == "retrieved")).sum()
+    wrong_retrieved = ((~g["prompt_same"]) & (g["winner"] == "retrieved")).sum()
+
     rows.append({
         "iteration": it,
-        "win_rate_exact": (g_exact["winner"] == "retrieved").mean() if len(g_exact) else np.nan,
-        "win_rate_wrong": (g_wrong["winner"] == "retrieved").mean() if len(g_wrong) else np.nan,
-        "n_exact": len(g_exact),
-        "n_wrong": len(g_wrong),
+        "frac_exact_retrieved": exact_retrieved / n if n else np.nan,
+        "frac_wrong_retrieved": wrong_retrieved / n if n else np.nan,
+        "n_total": n,
     })
 
 wr = pd.DataFrame(rows).sort_values("iteration")
@@ -626,22 +628,22 @@ x = wr["iteration"].to_numpy()
 
 plt.bar(
     x,
-    wr["win_rate_wrong"],
+    wr["frac_wrong_retrieved"],
     width=BAR_WIDTH,
     color=CB_RED,
-    label="Non-exact retrieval"
+    label="Retrieved win with non-exact retrieval"
 )
 plt.bar(
     x,
-    wr["win_rate_exact"],
+    wr["frac_exact_retrieved"],
     width=BAR_WIDTH,
-    bottom=wr["win_rate_wrong"],
+    bottom=wr["frac_wrong_retrieved"],
     color=CB_GREEN,
-    label="Exact retrieval"
+    label="Retrieved win with exact retrieval"
 )
 
 plt.xlabel("Iteration")
-plt.ylabel("Retrieved Win Rate")
+plt.ylabel("Fraction of All Cases")
 plt.xticks(x, rotation=0)
 plt.ylim(0, 1)
 plt.legend()
