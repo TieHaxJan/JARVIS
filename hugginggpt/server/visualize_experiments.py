@@ -974,7 +974,7 @@ by_prompt = defaultdict(list)
 for r in records:
     by_prompt[r["prompt_id"]].append(r)
 
-target = ["base", "base", "base", "base", "base", "base", "base"]
+target = ["base", "retrieved", "retrieved", "retrieved", "retrieved"]
 
 for pid, items in by_prompt.items():
     # sort by iteration
@@ -993,7 +993,7 @@ for pid, items in by_prompt.items():
 
 from collections import defaultdict
 
-TARGET_PROMPTS = {13, 16, 26, 46, 69}
+TARGET_PROMPTS = {25, 39, 52, 69}
 OUTPUT_FILE = OUT_DIR + "/qualitative_analysis.txt"
 
 by_prompt = defaultdict(list)
@@ -1078,6 +1078,299 @@ with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
     f.write("\n".join(latex_output))
 
 print(f"Saved qualitative analysis to {OUTPUT_FILE}")
+
+# ============================================================
+# Human Evaluation Sheet Generator
+# ============================================================
+
+import os
+import random
+from collections import defaultdict
+
+RANDOM_SEED = 42
+random.seed(RANDOM_SEED)
+
+OUTPUT_FILE = os.path.join(OUT_DIR, "human_eval_sheet.tex")
+
+# ------------------------------------------------------------
+# Helper: group records by (prompt_id, iteration)
+# ------------------------------------------------------------
+by_pair = {}
+for r in records:
+    key = (r["prompt_id"], r["iteration"])
+    by_pair[key] = r
+
+# ------------------------------------------------------------
+# Fixed examples requested by user
+#
+# compare_mode:
+#   - "base_vs_retrieved"
+#   - "base_vs_combined"
+#   - "retrieved_vs_combined"
+#
+# For combined-winning examples, base_vs_combined is usually
+# the most interesting human comparison.
+# ------------------------------------------------------------
+FIXED_SELECTIONS = [
+    # Prompt 25 (base-dominant)
+    {"prompt_id": 25, "iteration": 2, "compare_mode": "base_vs_retrieved"},
+    {"prompt_id": 25, "iteration": 6, "compare_mode": "base_vs_retrieved"},
+
+    # Prompt 39 (failure case)
+    {"prompt_id": 39, "iteration": 1, "compare_mode": "base_vs_combined"},
+    {"prompt_id": 39, "iteration": 3, "compare_mode": "base_vs_retrieved"},
+    {"prompt_id": 39, "iteration": 7, "compare_mode": "base_vs_combined"},
+
+    # Prompt 52 (simple)
+    {"prompt_id": 52, "iteration": 2, "compare_mode": "base_vs_retrieved"},
+    {"prompt_id": 52, "iteration": 5, "compare_mode": "base_vs_retrieved"},
+
+    # Prompt 69 (complex)
+    {"prompt_id": 69, "iteration": 2, "compare_mode": "base_vs_combined"},
+    {"prompt_id": 69, "iteration": 3, "compare_mode": "base_vs_retrieved"},
+    {"prompt_id": 69, "iteration": 7, "compare_mode": "base_vs_combined"},
+]
+
+# ------------------------------------------------------------
+# Latex escaping
+# ------------------------------------------------------------
+def latex_escape(text):
+    if text is None:
+        return ""
+    return (
+        str(text)
+        .replace("\\", r"\textbackslash{}")
+        .replace("_", r"\_")
+        .replace("%", r"\%")
+        .replace("&", r"\&")
+        .replace("#", r"\#")
+        .replace("$", r"\$")
+        .replace("{", r"\{")
+        .replace("}", r"\}")
+        .replace("~", r"\textasciitilde{}")
+        .replace("^", r"\textasciicircum{}")
+    )
+
+# ------------------------------------------------------------
+# Pick the two explanations to compare
+# ------------------------------------------------------------
+def get_explanations(rec, compare_mode):
+    base = rec.get("base_explanation", "")
+    retrieved = rec.get("retriever", {}).get("retrieved_explanation", "")
+    combined = rec.get("judge", {}).get("improved_explanation", "")
+
+    if compare_mode == "base_vs_retrieved":
+        return ("Base", base, "Retrieved", retrieved)
+    elif compare_mode == "base_vs_combined":
+        return ("Base", base, "Combined", combined)
+    elif compare_mode == "retrieved_vs_combined":
+        return ("Retrieved", retrieved, "Combined", combined)
+    else:
+        raise ValueError(f"Unknown compare_mode: {compare_mode}")
+
+# ------------------------------------------------------------
+# Check whether a record is usable for a given mode
+# ------------------------------------------------------------
+def has_required_explanations(rec, compare_mode):
+    _, text_a, _, text_b = get_explanations(rec, compare_mode)
+    return bool(text_a and text_b)
+
+# ------------------------------------------------------------
+# Build fixed pool
+# ------------------------------------------------------------
+selected_keys = set()
+survey_items = []
+
+for item in FIXED_SELECTIONS:
+    key = (item["prompt_id"], item["iteration"])
+    rec = by_pair.get(key)
+    if rec is None:
+        print(f"[WARN] Missing fixed item: prompt {key[0]}, iteration {key[1]}")
+        continue
+
+    if not has_required_explanations(rec, item["compare_mode"]):
+        print(f"[WARN] Fixed item lacks required explanations: {key}, mode={item['compare_mode']}")
+        continue
+
+    survey_items.append({
+        "prompt_id": item["prompt_id"],
+        "iteration": item["iteration"],
+        "compare_mode": item["compare_mode"],
+        "record": rec,
+        "fixed": True,
+    })
+    selected_keys.add(key)
+
+# ------------------------------------------------------------
+# Randomly sample 10 more pairs
+#
+# Strategy:
+# - Exclude already selected fixed items
+# - Prefer base_vs_retrieved normally
+# - If winner is combined and combined text exists, sometimes
+#   compare base_vs_combined to get more interesting cases
+# ------------------------------------------------------------
+candidate_items = []
+
+for (pid, it), rec in by_pair.items():
+    if (pid, it) in selected_keys:
+        continue
+
+    winner = rec.get("judge", {}).get("winner", "")
+    possible_modes = []
+
+    if has_required_explanations(rec, "base_vs_retrieved"):
+        possible_modes.append("base_vs_retrieved")
+
+    if winner == "combined" and has_required_explanations(rec, "base_vs_combined"):
+        possible_modes.append("base_vs_combined")
+
+    if winner == "combined" and has_required_explanations(rec, "retrieved_vs_combined"):
+        possible_modes.append("retrieved_vs_combined")
+
+    if not possible_modes:
+        continue
+
+    # prefer base_vs_combined for combined winners, otherwise base_vs_retrieved
+    if winner == "combined" and "base_vs_combined" in possible_modes:
+        mode = "base_vs_combined"
+    else:
+        mode = possible_modes[0]
+
+    candidate_items.append({
+        "prompt_id": pid,
+        "iteration": it,
+        "compare_mode": mode,
+        "record": rec,
+        "fixed": False,
+    })
+
+if len(candidate_items) < 10:
+    print(f"[WARN] Only {len(candidate_items)} random candidates available, not 10.")
+
+random.shuffle(candidate_items)
+survey_items.extend(candidate_items[:10])
+
+# ------------------------------------------------------------
+# Final shuffle so fixed/random are mixed in the sheet
+# ------------------------------------------------------------
+random.shuffle(survey_items)
+
+# ------------------------------------------------------------
+# Generate LaTeX blocks
+# ------------------------------------------------------------
+def make_item_block(idx, item):
+    rec = item["record"]
+    pid = item["prompt_id"]
+    iteration = item["iteration"]
+    compare_mode = item["compare_mode"]
+
+    left_name, left_text, right_name, right_text = get_explanations(rec, compare_mode)
+
+    # Randomize which side is A/B
+    if random.random() < 0.5:
+        a_label, a_text = left_name, left_text
+        b_label, b_text = right_name, right_text
+    else:
+        a_label, a_text = right_name, right_text
+        b_label, b_text = left_name, left_text
+
+    prompt_text = rec.get("prompt", "")
+    winner = rec.get("judge", {}).get("winner", "")
+    reason = rec.get("judge", {}).get("reason", "")
+
+    prompt_text = latex_escape(prompt_text)
+    a_text = latex_escape(a_text)
+    b_text = latex_escape(b_text)
+    reason = latex_escape(reason)
+    winner = latex_escape(winner)
+
+    # internal metadata comment for later evaluation
+    metadata_comment = (
+        f"% item={idx} | prompt_id={pid} | iteration={iteration} | "
+        f"compare_mode={compare_mode} | judge_winner={winner} | "
+        f"A_source={a_label} | B_source={b_label}"
+    )
+
+    return f"""
+{metadata_comment}
+\\subsubsection*{{Item {idx}}}
+\\textbf{{Prompt ID:}} {pid} \\hfill \\textbf{{Iteration:}} {iteration}
+
+\\textbf{{Task Prompt:}} {prompt_text}
+
+\\vspace{{0.75em}}
+\\noindent
+\\begin{{minipage}}[t]{{0.48\\textwidth}}
+\\textbf{{Explanation A}}
+
+\\vspace{{0.5em}}
+\\fbox{{
+\\parbox[t][0.30\\textheight][t]{{0.95\\linewidth}}{{{a_text}}}
+}}
+\\end{{minipage}}
+\\hfill
+\\begin{{minipage}}[t]{{0.48\\textwidth}}
+\\textbf{{Explanation B}}
+
+\\vspace{{0.5em}}
+\\fbox{{
+\\parbox[t][0.30\\textheight][t]{{0.95\\linewidth}}{{{b_text}}}
+}}
+\\end{{minipage}}
+
+\\vspace{{1em}}
+
+\\textbf{{Evaluation}}
+\\begin{{itemize}}
+    \\item \\textbf{{Better explanation:}} \\hspace{{1em}} $\\square$ A \\hspace{{1em}} $\\square$ B \\hspace{{1em}} $\\square$ Equal
+    \\item \\textbf{{Grade A:}} \\underline{{\\hspace{{2cm}}}} \\hspace{{1em}} \\textbf{{Grade B:}} \\underline{{\\hspace{{2cm}}}}
+    \\item \\textbf{{Reason:}} \\\\[4.5em]
+\\end{{itemize}}
+
+\\vspace{{1em}}
+\\hrule
+\\vspace{{1em}}
+"""
+
+# ------------------------------------------------------------
+# Build whole document
+# ------------------------------------------------------------
+latex_output = []
+
+latex_output.append(r"""\documentclass[11pt]{article}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{enumitem}
+\usepackage{parskip}
+\setlength{\parindent}{0pt}
+\setlength{\fboxsep}{8pt}
+\setlength{\fboxrule}{0.5pt}
+\renewcommand{\arraystretch}{1.2}
+
+\begin{document}
+""")
+
+latex_output.append(r"\section*{Human Evaluation Sheet}")
+latex_output.append(r"% Write your own intro above if needed.")
+latex_output.append("")
+
+for idx, item in enumerate(survey_items, start=1):
+    latex_output.append(make_item_block(idx, item))
+
+latex_output.append(r"\end{document}")
+
+# ------------------------------------------------------------
+# Save
+# ------------------------------------------------------------
+with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+    f.write("\n".join(latex_output))
+
+print(f"[OK] Human evaluation sheet saved to {OUTPUT_FILE}")
+print(f"[OK] Total items: {len(survey_items)}")
+
 # ============================================================
 # Done
 # ============================================================
