@@ -1,0 +1,170 @@
+[
+    {
+        "prompt_id": 25,
+        "iteration_number": 2,
+        "winner": "retrieved",
+        "grade A": "B",
+        "grade B": "A",
+        "reason": "Winner is B. B covers all the key factors and also provides additional information (eg. objects are on bridge and water) which is useful while A is more concise and accurate."
+    },
+    {
+        "prompt_id": 25,
+        "iteration_number": 6,
+        "winner": "base",
+        "grade A": "A",
+        "grade B": "A",
+        "reason": "Winner A (either one is acceptable). The details in both the explanations are identical, there is no additional insight which would make one explanation better than the other."
+    },
+    {
+        "prompt_id": 52,
+        "iteration_number": 2,
+        "winner": "base",
+        "grade A": "A",
+        "grade B": "A",
+        "reason": "Winner A(either one is acceptable). Both explanations are identical. There is no unnecessary information and it’s clear and concise."
+    },
+    {
+        "prompt_id": 39,
+        "iteration_number": 1,
+        "winner": "base",
+        "grade A": "C",
+        "grade B": "C",
+        "reason": "Winner A (either one is acceptable). Both the explanations are identical. The inclusion of ‘mikado,tenno’ result reduces the usefulness of the explanation as it was stated in both that it is not relevant."
+    },
+    {
+        "prompt_id": 52,
+        "iteration_number": 3,
+        "winner": "base",
+        "grade A": "A",
+        "grade B": "A",
+        "reason": "Winner A(either one is acceptable). Both explanations are fully correct, concise and accurate with no unnecessary information."
+    },
+    {
+        "prompt_id": 69,
+        "iteration_number": 3,
+        "winner": "retrieved",
+        "grade A": "B",
+        "grade B": "A",
+        "reason": "Winner B Explanation B provides more diagnostics details which will useful for downstream tasks"
+    },
+    {
+        "prompt_id": 39,
+        "iteration_number": 3,
+        "winner": "retrieved",
+        "grade A": "C",
+        "grade B": "A",
+        "reason": "Winner is B. Explanation B provides more actionable steps and is more practical while A falls short in these areas"
+    },
+    {
+        "prompt_id": 78,
+        "iteration_number": 3,
+        "winner": "base",
+        "grade A": "A",
+        "grade B": "A",
+        "reason": "Winner A (either one is acceptable) Both the explanations are identical, but both are slightly wordy."
+    },
+    {
+        "prompt_id": 78,
+        "iteration_number": 3,
+        "winner": "base",
+        "grade A": "A",
+        "grade B": "A",
+        "reason": "Winner A (either one is acceptable) Both the explanations are identical, but both are slightly wordy."
+    },
+    {
+        "prompt_id": 11,
+        "iteration_number": 2,
+        "winner": "retrieved",
+        "grade A": "C",
+        "grade B": "B",
+        "reason": "Winner B Explanation B is more useful as it gives a next step as a guideline as compared to A."
+    },
+    {
+        "prompt_id": 9,
+        "iteration_number": 1,
+        "winner": "base",
+        "grade A": "A",
+        "grade B": "A",
+        "reason": "Winner A (either one ins acceptable). Both the explanations are identical and both are slightly restating themselves"
+    },
+    {
+        "prompt_id": 38,
+        "iteration_number": 3,
+        "winner": "retrieved",
+        "grade A": "B",
+        "grade B": "A",
+        "reason": "Winner B. Explanation B provides the next actionable steps while A gives a very generic response "
+    },
+    {
+        "prompt_id": 10,
+        "iteration_number": 5,
+        "winner": "retrieved",
+        "grade A": "A",
+        "grade B": "A",
+        "reason": "Winner B Explanation B is preferred for providing practical guidelines for the next steps that could be taken."
+    },
+    {
+        "prompt_id": 19,
+        "iteration_number": 7,
+        "winner": "base",
+        "grade A": "A",
+        "grade B": "B",
+        "reason": "Winner A Explanation B has more information density but the information does not add much value so it sounds more generic while option A is more focused."
+    },
+    {
+        "prompt_id": 3,
+        "iteration_number": 3,
+        "winner": "retrieved",
+        "grade A": "C",
+        "grade B": "B",
+        "reason": "Winner B The explanation A is making false claim about confidence score because a stable diffusion model does not provide a confidence score while B does not make unsupported claims"
+    },
+    {
+        "prompt_id": 75,
+        "iteration_number": 4,
+        "winner": "base",
+        "grade A": "A",
+        "grade B": "A",
+        "reason": "Winner A Both the explanations are almost identical, in depth and of value, but A is slightly more complete"
+    },
+    {
+        "prompt_id": 55,
+        "iteration_number": 5,
+        "winner": "retrieved",
+        "grade A": "C",
+        "grade B": "A",
+        "reason": "Winner B Explanation B is more focused and provides more useful information rather than genric details which are provided in A."
+    },
+    {
+        "prompt_id": 75,
+        "iteration_number": 6,
+        "winner": "combined",
+        "grade A": "B",
+        "grade B": "A",
+        "reason": "Explanation B provides clear and structured object detection results and explanation A, introduces additional non-overlapping and decision-relevant information so combined is the best option here."
+    },
+    {
+        "prompt_id": 39,
+        "iteration_number": 7,
+        "winner": "retrieved",
+        "grade A": "B",
+        "grade B": "A",
+        "reason": "Winner B Explanation is more complete and informative as compared to that of explanation A."
+    },
+    {
+        "prompt_id": 69,
+        "iteration_number": 7,
+        "winner": "retrieved",
+        "grade A": "B",
+        "grade B": "A",
+        "reason": "Winner B Explanation B has more  non redundant details as compared to that of explanation A."
+    },
+    {
+        "prompt_id": 69,
+        "iteration_number": 2,
+        "winner": "retrieved",
+        "grade A": "C",
+        "grade B": "A",
+        "reason": "Winner B Explanation B is more granular and is more useful for downstream tasks while explanation A is just a high level summary with generic explanation."
+    }
+]

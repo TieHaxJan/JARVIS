@@ -128,6 +128,26 @@ def mark_rephrased_iters_categorical(index_values):
             ax.axvspan(j - 0.5, j + 0.5, alpha=0.12, color=CB_GRAY)
             ax.axvline(j, linestyle="--", linewidth=1.0, alpha=0.7, color="black")
 
+def highlight_human_eval_rephrased(df_sorted):
+    """
+    Highlights the background for any X-axis labels belonging to iterations 6 or 7.
+    df_sorted: The DataFrame used for the plot, must have an 'iteration' column.
+    """
+    ax = plt.gca()
+    # Find indices where iteration is 6 or 7
+    rephrased_indices = df_sorted.index[df_sorted['iteration'].isin(REPHRASED_ITS)].tolist()
+    
+    if rephrased_indices:
+        # Create spans for contiguous blocks of rephrased iterations
+        # (Since it's sorted, 6 and 7 will be at the end)
+        start = min(rephrased_indices) - 0.5
+        end = max(rephrased_indices) + 0.5
+        ax.axvspan(start, end, alpha=0.12, color=CB_GRAY)
+        
+        # Add vertical dashed lines for each specific rephrased point
+        for idx in rephrased_indices:
+            ax.axvline(idx, linestyle="--", linewidth=1.0, alpha=0.5, color="black")
+
 def stacked_rate_bar(
     df_plot,
     x_col,
@@ -1371,6 +1391,94 @@ with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
 print(f"[OK] Human evaluation sheet saved to {OUTPUT_FILE}")
 print(f"[OK] Total items: {len(survey_items)}")
 
+# ============================================================
+# Human vs LLM Comparison: 3 Targeted Graphs
+# ============================================================
+
+# 1. Prepare Data
+target_pairs = [
+    (78, 3), (75, 6), (11, 2), (39, 7), (9, 1), (69, 7),
+    (25, 6), (39, 3), (52, 2), (38, 3), (52, 3), (10, 5), (25, 2),
+    (69, 2), (39, 1), (19, 7), (3, 3), (69, 3), (75, 4), (55, 5)
+]
+
+HUMAN_EVAL_JSON = os.path.join(RUN_DIR, "human_eval_results.json")
+
+if os.path.exists(HUMAN_EVAL_JSON):
+    with open(HUMAN_EVAL_JSON, "r", encoding="utf-8") as f:
+        h_data = json.load(f)
+    df_h = pd.DataFrame(h_data)
+    if "iteration_number" in df_h.columns:
+        df_h = df_h.rename(columns={"iteration_number": "iteration"})
+
+    # Map winners to numbers for plotting (0: base, 1: retrieved, 2: combined)
+    WIN_MAP = {"base": 0, "retrieved": 1, "combined": 2}
+    
+    # 1. Prepare Data
+    comp_list = []
+    for pid, it in target_pairs:
+        l_row = df[(df["prompt_id"] == pid) & (df["iteration"] == it)]
+        h_row = df_h[(df_h["prompt_id"] == pid) & (df_h["iteration"] == it)]
+
+        if not l_row.empty and not h_row.empty:
+            l, h = l_row.iloc[0], h_row.iloc[0]
+            comp_list.append({
+                "prompt_id": pid,      # Keep as int for sorting
+                "iteration": it,      # Keep as int for sorting
+                "llm_win": WIN_MAP.get(l["winner"]),
+                "hum_win": WIN_MAP.get(h["winner"]),
+                "llm_base": l["grade_base_num"],
+                "hum_base": GRADE_MAP.get(h["grade A"]),
+                "llm_retr": l["grade_retrieved_num"],
+                "hum_retr": GRADE_MAP.get(h["grade B"])
+            })
+
+    df_c = pd.DataFrame(comp_list)
+
+    # --- CRITICAL CHANGE: MULTI-COLUMN SORT ---
+    # Sort by Iteration (Low to High), then Prompt ID (Low to High)
+    df_c = df_c.sort_values(by=["iteration", "prompt_id"]).reset_index(drop=True)
+
+    # Create the display label AFTER sorting
+    df_c["id"] = df_c.apply(lambda x: f"{int(x['prompt_id'])}-{int(x['iteration'])}", axis=1)
+
+    # --- Plot 1: Winner Comparison ---
+    plt.figure(figsize=FIGSIZE)
+    plt.scatter(df_c["id"], df_c["llm_win"], color=CB_BLUE, s=120, label="LLM", marker='o')
+    plt.scatter(df_c["id"], df_c["hum_win"], color=CB_RED, s=120, label="Human", marker='x', linewidths=2)
+    highlight_human_eval_rephrased(df_c)
+    plt.yticks([0, 1, 2], ["Base", "Retrieved", "Combined"])
+    plt.xticks(rotation=90, ha='center')
+    plt.ylabel("Winner Category")
+    plt.xlabel("Prompt ID - Iteration")
+    plt.legend(frameon=True)
+    savefig("comp_winners")
+
+    # --- Plot 2: Base (A) Grade Comparison ---
+    plt.figure(figsize=FIGSIZE)
+    plt.scatter(df_c["id"], df_c["llm_base"], color=CB_BLUE, s=120, label="LLM", marker='o')
+    plt.scatter(df_c["id"], df_c["hum_base"], color=CB_RED, s=120, label="Human", marker='x', linewidths=2)
+    highlight_human_eval_rephrased(df_c)
+    plt.ylim(4.5, 0.5) # Numbers 1-6, A is top
+    plt.xticks(rotation=90, ha='center')
+    plt.ylabel("Grade")
+    plt.xlabel("Prompt ID - Iteration")
+    plt.legend(frameon=True)
+    savefig("comp_base_grades")
+
+    # --- Plot 3: Retrieved (B) Grade Comparison ---
+    plt.figure(figsize=FIGSIZE)
+    plt.scatter(df_c["id"], df_c["llm_retr"], color=CB_BLUE, s=120, label="LLM", marker='o')
+    plt.scatter(df_c["id"], df_c["hum_retr"], color=CB_RED, s=120, label="Human", marker='x', linewidths=2)
+    highlight_human_eval_rephrased(df_c)
+    plt.ylim(4.5, 0.5)
+    plt.xticks(rotation=90, ha='center')
+    plt.ylabel("Grade")
+    plt.xlabel("Prompt ID - Iteration")
+    plt.legend(frameon=True)
+    savefig("comp_retrieved_grades")
+
+    print(f"[OK] Generated 3 comparison plots for {len(df_c)} matching pairs.")
 # ============================================================
 # Done
 # ============================================================
