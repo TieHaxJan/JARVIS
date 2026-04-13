@@ -24,7 +24,6 @@
     "prompt": "Translate the sentence 'Bonjour tout le monde' into English.",
     "task_type": "single",
     "models": [
-      "ChatGPT"
     ]
   },
   {
@@ -374,7 +373,6 @@
     "prompt": "Translate '人工智能改变世界' into English.",
     "task_type": "single",
     "models": [
-      "ChatGPT"
     ]
   },
   {
@@ -443,7 +441,6 @@
     "prompt": "Classify sentiment in 'I love how this model works!' and explain reasoning.",
     "task_type": "single",
     "models": [
-      "ChatGPT"
     ]
   },
   {

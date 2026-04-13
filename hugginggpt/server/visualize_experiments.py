@@ -1,7 +1,3 @@
-# ============================================================
-# Headless, NeurIPS-style visualization script
-# ============================================================
-
 import os
 import json
 import glob
@@ -10,10 +6,6 @@ import numpy as np
 import pandas as pd
 import argparse
 from difflib import SequenceMatcher
-
-# -----------------------------
-# Force headless backend
-# -----------------------------
 import matplotlib
 matplotlib.use("Agg")
 
@@ -45,9 +37,8 @@ GRADE_MAP = {"A": 1, "B": 2, "C": 3, "D": 4, "E": 5, "F": 6}
 TEST_PROMPTS_PATH = "./test_prompts.json"
 TEST_PROMPTS_REPHRASED_PATH = "./test_prompts_rephrased.json"
 
-# Colorblind-friendly-ish colors (Okabe-Ito style)
-CB_GREEN = "#009E73"  # bluish green
-CB_RED   = "#D55E00"  # vermillion (reads as red/orange, very colorblind-safe)
+CB_GREEN = "#009E73"
+CB_RED   = "#D55E00"
 CB_BLUE  = "#0072B2"
 CB_PURPLE= "#CC79A7"
 CB_GRAY  = "#666666"
@@ -416,7 +407,7 @@ plt.errorbar(
     label="Base",
     linestyle="none",
     capsize=CAPSIZE,
-    color=CB_RED  # colorblind-safe red (vermillion)
+    color=CB_RED 
 )
 
 plt.errorbar(
@@ -426,7 +417,7 @@ plt.errorbar(
     label="Retrieved",
     linestyle="none",
     capsize=CAPSIZE,
-    color=CB_GREEN  # colorblind-safe green
+    color=CB_GREEN 
 )
 
 plt.xlabel("Iteration")
@@ -910,6 +901,23 @@ stacked_count_bar(
     ylabel="Hit Count",
     filename="model_hit_rate_per_iteration",
     ymax=100
+)
+
+hit_stats = []
+for it, g in df.groupby("iteration"):
+    # Count rows where model_hit is 1.0 (successful hit)
+    hit_count = (g["model_hit"] == 1.0).sum()
+    hit_stats.append({"iteration": it, "count": hit_count})
+
+hit_stats = pd.DataFrame(hit_stats).sort_values("iteration")
+
+stacked_count_bar(
+    hit_stats,
+    x_col="iteration",
+    y_col="count",
+    ylabel="Hit Count",
+    filename="model_match_rate_per_iteration",
+    ymax=100  # Adjust based on your samples per iteration
 )
 
 # 8. Model Exact-set match rate per iteration
