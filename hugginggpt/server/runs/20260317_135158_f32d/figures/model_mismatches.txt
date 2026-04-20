@@ -1,15 +1,8 @@
 Run: runs/20260317_135158_f32d
-Model HIT==0 count: 62 / 700
+Model HIT==0 count: 41 / 679
 
 MISSES (HIT==0)
 ================================================================================
-
-iteration=1 prompt_id=4
-prompt:
-Translate the sentence 'Bonjour tout le monde' into English.
-expected_models: ['ChatGPT']
-predicted_models: []
---------------------------------------------------------------------------------
 
 iteration=1 prompt_id=20
 prompt:
@@ -39,32 +32,11 @@ expected_models: ['facebook/detr-resnet-101']
 predicted_models: ['microsoft/beit-base-patch16-224-pt22k-ft22k']
 --------------------------------------------------------------------------------
 
-iteration=1 prompt_id=52
-prompt:
-Translate '人工智能改变世界' into English.
-expected_models: ['ChatGPT']
-predicted_models: []
---------------------------------------------------------------------------------
-
 iteration=1 prompt_id=59
 prompt:
 Detect layout elements in 'examples/contract_page.jpg'
 expected_models: ['impira/layoutlm-document-qa']
 predicted_models: ['microsoft/beit-base-patch16-224-pt22k-ft22k', 'facebook/detr-resnet-101', 'facebook/maskformer-swin-base-coco']
---------------------------------------------------------------------------------
-
-iteration=1 prompt_id=61
-prompt:
-Classify sentiment in 'I love how this model works!' and explain reasoning.
-expected_models: ['ChatGPT']
-predicted_models: []
---------------------------------------------------------------------------------
-
-iteration=2 prompt_id=4
-prompt:
-Translate the sentence 'Bonjour tout le monde' into English.
-expected_models: ['ChatGPT']
-predicted_models: []
 --------------------------------------------------------------------------------
 
 iteration=2 prompt_id=20
@@ -95,32 +67,11 @@ expected_models: ['facebook/detr-resnet-101']
 predicted_models: ['microsoft/beit-base-patch16-224-pt22k-ft22k']
 --------------------------------------------------------------------------------
 
-iteration=2 prompt_id=52
-prompt:
-Translate '人工智能改变世界' into English.
-expected_models: ['ChatGPT']
-predicted_models: []
---------------------------------------------------------------------------------
-
 iteration=2 prompt_id=59
 prompt:
 Detect layout elements in 'examples/contract_page.jpg'
 expected_models: ['impira/layoutlm-document-qa']
 predicted_models: ['microsoft/beit-base-patch16-224-pt22k-ft22k', 'facebook/detr-resnet-101', 'facebook/maskformer-swin-base-coco']
---------------------------------------------------------------------------------
-
-iteration=2 prompt_id=61
-prompt:
-Classify sentiment in 'I love how this model works!' and explain reasoning.
-expected_models: ['ChatGPT']
-predicted_models: []
---------------------------------------------------------------------------------
-
-iteration=3 prompt_id=4
-prompt:
-Translate the sentence 'Bonjour tout le monde' into English.
-expected_models: ['ChatGPT']
-predicted_models: []
 --------------------------------------------------------------------------------
 
 iteration=3 prompt_id=20
@@ -151,32 +102,11 @@ expected_models: ['facebook/detr-resnet-101']
 predicted_models: ['microsoft/beit-base-patch16-224-pt22k-ft22k']
 --------------------------------------------------------------------------------
 
-iteration=3 prompt_id=52
-prompt:
-Translate '人工智能改变世界' into English.
-expected_models: ['ChatGPT']
-predicted_models: []
---------------------------------------------------------------------------------
-
 iteration=3 prompt_id=59
 prompt:
 Detect layout elements in 'examples/contract_page.jpg'
 expected_models: ['impira/layoutlm-document-qa']
 predicted_models: ['microsoft/beit-base-patch16-224-pt22k-ft22k', 'facebook/detr-resnet-101', 'facebook/maskformer-swin-base-coco']
---------------------------------------------------------------------------------
-
-iteration=3 prompt_id=61
-prompt:
-Classify sentiment in 'I love how this model works!' and explain reasoning.
-expected_models: ['ChatGPT']
-predicted_models: []
---------------------------------------------------------------------------------
-
-iteration=4 prompt_id=4
-prompt:
-Translate the sentence 'Bonjour tout le monde' into English.
-expected_models: ['ChatGPT']
-predicted_models: []
 --------------------------------------------------------------------------------
 
 iteration=4 prompt_id=20
@@ -207,32 +137,11 @@ expected_models: ['facebook/detr-resnet-101']
 predicted_models: ['microsoft/beit-base-patch16-224-pt22k-ft22k']
 --------------------------------------------------------------------------------
 
-iteration=4 prompt_id=52
-prompt:
-Translate '人工智能改变世界' into English.
-expected_models: ['ChatGPT']
-predicted_models: []
---------------------------------------------------------------------------------
-
 iteration=4 prompt_id=59
 prompt:
 Detect layout elements in 'examples/contract_page.jpg'
 expected_models: ['impira/layoutlm-document-qa']
 predicted_models: ['microsoft/beit-base-patch16-224-pt22k-ft22k', 'facebook/detr-resnet-101', 'facebook/maskformer-swin-base-coco']
---------------------------------------------------------------------------------
-
-iteration=4 prompt_id=61
-prompt:
-Classify sentiment in 'I love how this model works!' and explain reasoning.
-expected_models: ['ChatGPT']
-predicted_models: []
---------------------------------------------------------------------------------
-
-iteration=5 prompt_id=4
-prompt:
-Translate the sentence 'Bonjour tout le monde' into English.
-expected_models: ['ChatGPT']
-predicted_models: []
 --------------------------------------------------------------------------------
 
 iteration=5 prompt_id=20
@@ -263,32 +172,11 @@ expected_models: ['facebook/detr-resnet-101']
 predicted_models: ['microsoft/beit-base-patch16-224-pt22k-ft22k']
 --------------------------------------------------------------------------------
 
-iteration=5 prompt_id=52
-prompt:
-Translate '人工智能改变世界' into English.
-expected_models: ['ChatGPT']
-predicted_models: []
---------------------------------------------------------------------------------
-
 iteration=5 prompt_id=59
 prompt:
 Detect layout elements in 'examples/contract_page.jpg'
 expected_models: ['impira/layoutlm-document-qa']
 predicted_models: ['microsoft/beit-base-patch16-224-pt22k-ft22k', 'facebook/detr-resnet-101', 'facebook/maskformer-swin-base-coco']
---------------------------------------------------------------------------------
-
-iteration=5 prompt_id=61
-prompt:
-Classify sentiment in 'I love how this model works!' and explain reasoning.
-expected_models: ['ChatGPT']
-predicted_models: []
---------------------------------------------------------------------------------
-
-iteration=6 prompt_id=4
-prompt:
-Translate the sentence 'Bonjour tout le monde' into English.
-expected_models: ['ChatGPT']
-predicted_models: []
 --------------------------------------------------------------------------------
 
 iteration=6 prompt_id=20
@@ -333,13 +221,6 @@ expected_models: ['facebook/detr-resnet-101']
 predicted_models: ['microsoft/beit-base-patch16-224-pt22k-ft22k']
 --------------------------------------------------------------------------------
 
-iteration=6 prompt_id=52
-prompt:
-Translate '人工智能改变世界' into English.
-expected_models: ['ChatGPT']
-predicted_models: []
---------------------------------------------------------------------------------
-
 iteration=6 prompt_id=58
 prompt:
 Conduct pose detection on 'examples/gym_training.jpg' and formulate a text description.
@@ -352,20 +233,6 @@ prompt:
 Identify the layout components in 'examples/contract_page.jpg'.
 expected_models: ['impira/layoutlm-document-qa']
 predicted_models: ['microsoft/beit-base-patch16-224-pt22k-ft22k', 'facebook/detr-resnet-101', 'facebook/maskformer-swin-base-coco']
---------------------------------------------------------------------------------
-
-iteration=6 prompt_id=61
-prompt:
-Classify the sentiment in 'I love how this model works!' and provide an explanation for your reasoning.
-expected_models: ['ChatGPT']
-predicted_models: []
---------------------------------------------------------------------------------
-
-iteration=7 prompt_id=4
-prompt:
-Translate the sentence 'Bonjour tout le monde' into English.
-expected_models: ['ChatGPT']
-predicted_models: []
 --------------------------------------------------------------------------------
 
 iteration=7 prompt_id=20
@@ -410,13 +277,6 @@ expected_models: ['facebook/detr-resnet-101']
 predicted_models: ['microsoft/beit-base-patch16-224-pt22k-ft22k']
 --------------------------------------------------------------------------------
 
-iteration=7 prompt_id=52
-prompt:
-Translate '人工智能改变世界' into English.
-expected_models: ['ChatGPT']
-predicted_models: []
---------------------------------------------------------------------------------
-
 iteration=7 prompt_id=58
 prompt:
 Conduct pose detection on 'examples/gym_training.jpg' and formulate a text description.
@@ -429,12 +289,5 @@ prompt:
 Identify the layout components in 'examples/contract_page.jpg'.
 expected_models: ['impira/layoutlm-document-qa']
 predicted_models: ['microsoft/beit-base-patch16-224-pt22k-ft22k', 'facebook/detr-resnet-101', 'facebook/maskformer-swin-base-coco']
---------------------------------------------------------------------------------
-
-iteration=7 prompt_id=61
-prompt:
-Classify the sentiment in 'I love how this model works!' and provide an explanation for your reasoning.
-expected_models: ['ChatGPT']
-predicted_models: []
 --------------------------------------------------------------------------------
 
