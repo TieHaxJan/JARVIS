@@ -1,12 +1,98 @@
-# JARVIS
+# JARVIS (Thesis Fork)
 
+> **Note**
+> This repository is a fork of the original JARVIS / HuggingGPT project:
+> [https://github.com/microsoft/JARVIS](https://github.com/microsoft/JARVIS)
+>
+> This fork was developed as part of a **Master’s thesis**, extending the original system with retrieval-augmented reasoning and automated evaluation capabilities.
 
-[![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2303.17580)
-[![Open in Spaces](https://img.shields.io/badge/%F0%9F%A4%97-Open%20in%20Spaces-blue)](https://huggingface.co/spaces/microsoft/HuggingGPT)
+## Overview
 
-The mission of JARVIS is to explore artificial general intelligence (AGI) and deliver cutting-edge research to the whole community.
+The mission of JARVIS is to explore artificial general intelligence (AGI) by orchestrating multiple expert models through a large language model.
+
+This fork extends the original architecture with:
+
+* A **retrieval-augmented generation (RAG)** component
+* An **LLM-based evaluation (judge) framework**
+* A **batch experimentation pipeline**
+* Visualization tools for analyzing iterative improvement
+
+## Thesis Contributions
+
+This work introduces a modified architecture inside HuggingGPT that enables:
+
+* Iterative **explanation refinement via retrieval**
+* Automatic **quality evaluation using an LLM judge**
+* Structured **experimentation across multiple iterations**
+
+Experiments were conducted using:
+
+* **Llama 3.3-70B via Hugging Face Inference Providers** (for orchestration & judging)
+* **Expert models running locally**, requiring significant modifications to `models_server.py`
+
+## Architecture Additions
+
+The following components were added to the system:
+
+* **Retriever (RAG)**
+
+  * `retriever.py`
+    Handles retrieval of relevant prior explanations to improve future outputs.
+
+* **LLM Judge**
+
+  * `judge.py`
+    Compares explanations and determines the better one based on defined criteria.
+
+* **Experiment Runner**
+
+  * `run_batch.py`
+    Runs experiments over multiple iterations using predefined prompts.
+
+* **Prompt Sets**
+
+  * `test_prompts.json`
+  * `test_prompts_rephrased.json`
+    Used to evaluate robustness and generalization.
+
+* **Prompt Rephrasing**
+
+  * `rephrase_prompts.py`
+    Generates paraphrased prompts using an LLM.
+
+* **Evaluation & Visualization**
+
+  * `visualize_experiments.py`
+    Generates graphs and metrics for analyzing performance across iterations.
+
+* **Embedding Validation**
+
+  * `test_embeddings.py`
+    Ensures embedding functionality works correctly during development.
+
+<p align="center">
+<img width="100%" alt="image" src="./hugginggpt/assets/architecture.png">    
+</p>
+
+## Evaluation Pipeline
+
+The extended system enables:
+
+1. Running prompts over multiple iterations
+2. Retrieving and reusing prior explanations (RAG)
+3. Comparing outputs using an LLM judge
+4. Tracking improvement trends
+5. Visualizing results through generated plots
+
+This provides a structured framework for analyzing **knowledge accumulation and explanation quality over time**.
 
 ## What's New
++  [2025.03.18] Final run used for evaluations
++  [2025.01.31] Change to snowflake embedder
++  [2025.12.27] Added centralized data collection
++  [2025.12.01] Added test files for the evaluation
++  [2025.10.07] Added initial Judge
++  [2025.09.04] Added initial RAG setup 
 +  [2025.07.17] Added support for local running llama LLM or using huggingface <a href="https://huggingface.co/docs/inference-providers/en/index">Inference Providers</a> for llama. 
    +  Change from the old deprecated Inference API to also use <a href="https://huggingface.co/docs/inference-providers/en/index">Inference Providers</a> for the expert models.
 +  [2024.01.15] We release Easytool for easier tool usage.
