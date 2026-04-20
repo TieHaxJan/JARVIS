@@ -86,9 +86,180 @@ The extended system enables:
 
 This provides a structured framework for analyzing **knowledge accumulation and explanation quality over time**.
 
+## Telegram Bot Interface
+
+This fork introduces a **Telegram bot interface** as a lightweight, real-time frontend for interacting with HuggingGPT.
+
+The bot enables conversational access to the system without requiring the web UI or direct API calls, making it particularly useful for:
+- Interactive testing
+- Demonstrations
+- Qualitative evaluation of model behavior
+
+The Telegram bot acts as a thin wrapper around the existing HuggingGPT server:
+
+No modifications to the backend API are required. The bot communicates with the system via the existing `/hugginggpt` endpoint.
+
+### Features
+
+- Chat-based interaction via Telegram
+- Supports **multi-turn conversations**
+- Image input via Telegram uploads
+- Automatic handling of:
+  - Generated images
+  - Audio outputs
+  - Video outputs
+- Temporary “waiting” animation while processing requests
+- Compatible with:
+  - Retrieval-augmented pipeline (RAG)
+  - LLM-based evaluation (judge)
+
+### Image Handling
+
+The Telegram bot supports image inputs **without modifying the backend API**.
+
+- Incoming images are downloaded and stored in:
+```
+public/uploads/telegram/
+```
+- The image path is appended to the user message as plain text:
+```
+"Count the objects in this image /uploads/telegram/example.jpg"
+```
+- This reuses the same path-based mechanism already used by HuggingGPT.
+
+Generated outputs are handled similarly:
+- If the backend response contains paths like `/images/...`, `/audios/...`, or `/videos/...`
+- The bot automatically detects and sends them as Telegram media messages
+### Setup
+
+#### 1. Create a Telegram Bot
+
+1. Open Telegram and search for **@BotFather**
+2. Run:
+```
+/newbot
+````
+3. Choose a name and username
+4. Copy the generated bot token
+
+#### 2. Configure Environment
+
+Add the token to your config file:
+
+```yaml
+telegram_bot_token: "YOUR_TELEGRAM_BOT_TOKEN"
+hugginggpt_server_url: "http://127.0.0.1:8004/hugginggpt"
+public_dir: "public"
+````
+
+(Optional)
+
+```yaml
+waiting_gif_path: "public/waiting/mr_bean_waiting.gif"
+```
+
+#### 3. Install Dependencies
+
+```bash
+pip install python-telegram-bot
+```
+
+#### 4. Start the System
+
+Start the HuggingGPT server:
+
+```bash
+python awesome_chat.py --mode server
+```
+
+Start the Telegram bot:
+
+```bash
+python telegram_bot.py --config config.yaml
+```
+
+## Scripts
+
+This repository provides `.sh` scripts to simplify running the system using `tmux`.
+
+`start_telegram_setup_tmux.sh` script launches:
+- the model server
+- the HuggingGPT server (after 30 seconds)
+- the Telegram bot
+
+in a single persistent `tmux` session with split panes. This allows all components to run in parallel and remain active even after disconnecting.
+
+A separate script is included for running the evaluation pipeline.
+
+`start_eval_setup_tmux.sh` script launches:
+- the model server
+- the HuggingGPT server (after 30 seconds)
+- starts the evaluation run with `run_batch.py` (after 45 seconds)
+
+## Setup
+
+### Model Server
+
+```bash
+python3 -m venv env_models
+source env_models/bin/activate
+pip install -r requirements.txt
+
+pip install diffusers==0.20.2 huggingface_hub==0.16.4
+pip install werkzeug==2.3.7 flask==2.3.2
+pip install scipy==1.10.1
+
+python models_server.py --config configs/config.localllama.yaml
+deactivate
+````
+
+### HuggingGPT Server
+
+```bash
+cd JARVIS/hugginggpt/server
+
+python3 -m venv env_chat
+source env_chat/bin/activate
+pip install -r requirements.txt
+
+python awesome_chat.py --config configs/config.localllama.yaml --mode server
+deactivate
+```
+
+### Local LLaMA Server (optional)
+
+To run LLaMA locally:
+
+```bash
+python3 -m venv env_llama
+source env_llama/bin/activate
+pip install -r requirements.txt
+
+python3 llama_server.py
+deactivate
+```
+
+### Download Models
+
+```bash
+huggingface-cli login
+chmod +x download_huggingface_cli.sh
+./download_hugginggpt_cli.sh
+```
+### Configuration
+
+Edit: `configs/config.localllama.yaml` to include your API keys, endpoints, and tokens.
+
+## Requirements
+
+* Linux environment
+* `tmux` installed
+* Python 3.10+
+
 ## What's New
-+  [2025.03.18] Final run used for evaluations
-+  [2025.01.31] Change to snowflake embedder
++  [2026.04.20] Added Telegram Bot as option to interact with HuggingGPT
++  [2026.03.18] Final run used for evaluations
++  [2026.01.31] Change to snowflake embedder
 +  [2025.12.27] Added centralized data collection
 +  [2025.12.01] Added test files for the evaluation
 +  [2025.10.07] Added initial Judge

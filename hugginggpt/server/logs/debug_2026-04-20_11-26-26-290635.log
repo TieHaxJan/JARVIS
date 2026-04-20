@@ -1,0 +1,65 @@
+2026-04-20 11:26:26,301 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda:0
+2026-04-20 11:26:26,301 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: Snowflake/snowflake-arctic-embed-m-v2.0
+2026-04-20 11:26:26,302 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2026-04-20 11:26:26,439 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /Snowflake/snowflake-arctic-embed-m-v2.0/resolve/main/modules.json HTTP/1.1" 307 0
+2026-04-20 11:26:26,444 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/Snowflake/snowflake-arctic-embed-m-v2.0/95c2741480856aa9666782eb4afe11959938017f/modules.json HTTP/1.1" 200 0
+2026-04-20 11:26:26,553 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /Snowflake/snowflake-arctic-embed-m-v2.0/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2026-04-20 11:26:26,558 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/Snowflake/snowflake-arctic-embed-m-v2.0/95c2741480856aa9666782eb4afe11959938017f/config_sentence_transformers.json HTTP/1.1" 200 0
+2026-04-20 11:26:26,667 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /Snowflake/snowflake-arctic-embed-m-v2.0/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2026-04-20 11:26:26,674 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/Snowflake/snowflake-arctic-embed-m-v2.0/95c2741480856aa9666782eb4afe11959938017f/config_sentence_transformers.json HTTP/1.1" 200 0
+2026-04-20 11:26:26,781 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /Snowflake/snowflake-arctic-embed-m-v2.0/resolve/main/README.md HTTP/1.1" 307 0
+2026-04-20 11:26:26,788 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/Snowflake/snowflake-arctic-embed-m-v2.0/95c2741480856aa9666782eb4afe11959938017f/README.md HTTP/1.1" 200 0
+2026-04-20 11:26:26,913 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /Snowflake/snowflake-arctic-embed-m-v2.0/resolve/main/modules.json HTTP/1.1" 307 0
+2026-04-20 11:26:26,918 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/Snowflake/snowflake-arctic-embed-m-v2.0/95c2741480856aa9666782eb4afe11959938017f/modules.json HTTP/1.1" 200 0
+2026-04-20 11:26:27,029 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /Snowflake/snowflake-arctic-embed-m-v2.0/resolve/main/sentence_bert_config.json HTTP/1.1" 404 0
+2026-04-20 11:26:27,138 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /Snowflake/snowflake-arctic-embed-m-v2.0/resolve/main/sentence_roberta_config.json HTTP/1.1" 404 0
+2026-04-20 11:26:27,247 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /Snowflake/snowflake-arctic-embed-m-v2.0/resolve/main/sentence_distilbert_config.json HTTP/1.1" 404 0
+2026-04-20 11:26:27,359 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /Snowflake/snowflake-arctic-embed-m-v2.0/resolve/main/sentence_camembert_config.json HTTP/1.1" 404 0
+2026-04-20 11:26:27,469 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /Snowflake/snowflake-arctic-embed-m-v2.0/resolve/main/sentence_albert_config.json HTTP/1.1" 404 0
+2026-04-20 11:26:27,582 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /Snowflake/snowflake-arctic-embed-m-v2.0/resolve/main/sentence_xlm-roberta_config.json HTTP/1.1" 404 0
+2026-04-20 11:26:27,698 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /Snowflake/snowflake-arctic-embed-m-v2.0/resolve/main/sentence_xlnet_config.json HTTP/1.1" 404 0
+2026-04-20 11:26:27,807 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /Snowflake/snowflake-arctic-embed-m-v2.0/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2026-04-20 11:26:27,914 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /Snowflake/snowflake-arctic-embed-m-v2.0/resolve/main/config.json HTTP/1.1" 307 0
+2026-04-20 11:26:27,921 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/Snowflake/snowflake-arctic-embed-m-v2.0/95c2741480856aa9666782eb4afe11959938017f/config.json HTTP/1.1" 200 0
+2026-04-20 11:26:28,032 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /Snowflake/snowflake-arctic-embed-m-v2.0/resolve/main/configuration_hf_alibaba_nlp_gte.py HTTP/1.1" 307 0
+2026-04-20 11:26:28,038 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/Snowflake/snowflake-arctic-embed-m-v2.0/95c2741480856aa9666782eb4afe11959938017f/configuration_hf_alibaba_nlp_gte.py HTTP/1.1" 200 0
+2026-04-20 11:26:28,147 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /Snowflake/snowflake-arctic-embed-m-v2.0/resolve/main/config.json HTTP/1.1" 307 0
+2026-04-20 11:26:28,154 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/Snowflake/snowflake-arctic-embed-m-v2.0/95c2741480856aa9666782eb4afe11959938017f/config.json HTTP/1.1" 200 0
+2026-04-20 11:26:28,263 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /Snowflake/snowflake-arctic-embed-m-v2.0/resolve/main/modeling_hf_alibaba_nlp_gte.py HTTP/1.1" 307 0
+2026-04-20 11:26:28,271 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/Snowflake/snowflake-arctic-embed-m-v2.0/95c2741480856aa9666782eb4afe11959938017f/modeling_hf_alibaba_nlp_gte.py HTTP/1.1" 200 0
+2026-04-20 11:26:28,569 - transformers_modules.Snowflake.snowflake-arctic-embed-m-v2.0.95c2741480856aa9666782eb4afe11959938017f.modeling_hf_alibaba_nlp_gte - WARNING - Override attn_implementation='sdpa' to 'eager' as use_memory_efficient_attention='true'
+2026-04-20 11:26:28,706 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /Snowflake/snowflake-arctic-embed-m-v2.0/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2026-04-20 11:26:28,711 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/Snowflake/snowflake-arctic-embed-m-v2.0/95c2741480856aa9666782eb4afe11959938017f/tokenizer_config.json HTTP/1.1" 200 0
+2026-04-20 11:26:28,827 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/Snowflake/snowflake-arctic-embed-m-v2.0/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2026-04-20 11:26:29,346 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /Snowflake/snowflake-arctic-embed-m-v2.0/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2026-04-20 11:26:29,352 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/Snowflake/snowflake-arctic-embed-m-v2.0/95c2741480856aa9666782eb4afe11959938017f/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2026-04-20 11:26:29,483 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/Snowflake/snowflake-arctic-embed-m-v2.0 HTTP/1.1" 200 None
+2026-04-20 11:26:29,883 - sentence_transformers.SentenceTransformer - INFO - 1 prompt is loaded, with the key: query
+2026-04-20 11:26:29,885 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2026-04-20 11:26:29,887 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /running HTTP/1.1" 200 17
+2026-04-20 11:26:29,900 - root - DEBUG - text-classification: 30 models
+2026-04-20 11:26:29,900 - root - DEBUG - token-classification: 30 models
+2026-04-20 11:26:29,900 - root - DEBUG - text2text-generation: 30 models
+2026-04-20 11:26:29,900 - root - DEBUG - summarization: 30 models
+2026-04-20 11:26:29,900 - root - DEBUG - translation: 30 models
+2026-04-20 11:26:29,900 - root - DEBUG - question-answering: 30 models
+2026-04-20 11:26:29,900 - root - DEBUG - conversational: 30 models
+2026-04-20 11:26:29,900 - root - DEBUG - text-generation: 30 models
+2026-04-20 11:26:29,900 - root - DEBUG - sentence-similarity: 30 models
+2026-04-20 11:26:29,900 - root - DEBUG - tabular-classification: 30 models
+2026-04-20 11:26:29,900 - root - DEBUG - object-detection: 30 models
+2026-04-20 11:26:29,900 - root - DEBUG - image-classification: 30 models
+2026-04-20 11:26:29,900 - root - DEBUG - image-to-text: 30 models
+2026-04-20 11:26:29,900 - root - DEBUG - text-to-image: 31 models
+2026-04-20 11:26:29,900 - root - DEBUG - image-to-image: 30 models
+2026-04-20 11:26:29,900 - root - DEBUG - visual-question-answering: 13 models
+2026-04-20 11:26:29,900 - root - DEBUG - document-question-answering: 22 models
+2026-04-20 11:26:29,900 - root - DEBUG - image-segmentation: 30 models
+2026-04-20 11:26:29,900 - root - DEBUG - depth-estimation: 30 models
+2026-04-20 11:26:29,900 - root - DEBUG - text-to-video: 8 models
+2026-04-20 11:26:29,900 - root - DEBUG - text-to-speech: 30 models
+2026-04-20 11:26:29,900 - root - DEBUG - automatic-speech-recognition: 30 models
+2026-04-20 11:26:29,900 - root - DEBUG - audio-to-audio: 30 models
+2026-04-20 11:26:29,900 - root - DEBUG - audio-classification: 30 models
+2026-04-20 11:26:29,900 - root - DEBUG - named-entity-recognition: 1 models
+2026-04-20 11:26:29,903 - waitress - INFO - Serving on http://0.0.0.0:8004

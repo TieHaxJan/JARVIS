@@ -299,6 +299,8 @@ def get_id_reason(choose_str):
     return id.strip(), reason.strip(), choose
 
 def record_case(run_dir, success, **args):
+    if not run_dir:
+        run_dir = "."
     if success:
         f = open(f"{run_dir}/logs/log_success.jsonl", "a")
     else:
@@ -1134,6 +1136,8 @@ def build_clean_context(task_description: str, results_json: str) -> str:
     return s.strip()
 
 def log_iteration(record: dict, iteration: int, run_dir: str):
+    if not run_dir:
+        return
     record["iteration"] = iteration
     record["timestamp"] = datetime.now(timezone.utc).isoformat()
     
