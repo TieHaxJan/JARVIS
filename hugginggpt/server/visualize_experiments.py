@@ -17,7 +17,7 @@ import seaborn as sns
 # ============================================================
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--run", default="runs/20260214_095426_e7f9",
+parser.add_argument("--run", default="runs/20260317_135158_f32d",
                     help="Run directory, e.g. runs/20260214_095426_e7f9")
 args = parser.parse_args()
 
@@ -469,52 +469,6 @@ mark_rephrased_iters_categorical(winner_counts.index)
 savefig("judge_winner_counts")
 
 # ============================================================
-# 3. RAG Reliance per Iteration (winner == retrieved)
-# ============================================================
-
-# --- RAG Reliance per Iteration: stacked-area with two lines
-# retrieved line at r
-# combined line at r + c   (where c is your "combined" metric, NOT 1-r)
-
-rag_stats = []
-for it, g in df.groupby("iteration"):
-    r = (g["winner"] == "retrieved").astype(int)
-    c = (g["winner"] == "combined").astype(int)
-    r_mean, _ = mean_ci(r)
-    c_mean, _ = mean_ci(c)
-    rag_stats.append({"iteration": it, "retr_mean": r_mean, "comb_mean": c_mean})
-
-rag_stats = pd.DataFrame(rag_stats).sort_values("iteration")
-rag_stats["top"] = rag_stats["retr_mean"] + rag_stats["comb_mean"]
-
-plt.figure(figsize=FIGSIZE)
-x = rag_stats["iteration"].to_numpy()
-
-plt.bar(
-    x,
-    rag_stats["retr_mean"],
-    width=BAR_WIDTH,
-    color=CB_GREEN,
-    label="Retrieved"
-)
-plt.bar(
-    x,
-    rag_stats["comb_mean"],
-    width=BAR_WIDTH,
-    bottom=rag_stats["retr_mean"],
-    color=CB_RED,
-    label="Combined"
-)
-
-plt.xlabel("Iteration")
-plt.ylabel("Fraction")
-plt.xticks(x, rotation=0)
-plt.ylim(0, 1)
-plt.legend()
-mark_rephrased_iters()
-savefig("rag_reliance")
-
-# ============================================================
 # 4. Cosine Similarity per Iteration (with CI)
 # ============================================================
 
@@ -540,64 +494,51 @@ stacked_rate_bar(
 )
 
 # ============================================================
-# 5. Stability of Cosine Similarity (Task Subgroup)
-# ============================================================
-
-sub_df = df[df["prompt_id"].isin(STABLE_PROMPT_IDS)].copy()
-
-stab = (
-    sub_df.groupby(["iteration", "prompt_id"])["cosine_similarity"]
-    .mean()
-    .reset_index()
-)
-
-plt.figure(figsize=(9, 4.8))
-sns.barplot(
-    data=stab,
-    x="iteration",
-    y="cosine_similarity",
-    hue="prompt_id",
-    palette="colorblind"
-)
-plt.xlabel("Iteration")
-plt.ylabel("Cosine Similarity")
-plt.legend(title="Prompt ID", ncol=3)
-mark_rephrased_iters()
-savefig("cosine_stability_subgroup")
-
-# ============================================================
 # 6. Prompt match per Iteration
 # ============================================================
 
 pm_stats = []
 for it, g in df.groupby("iteration"):
-    # exact same fraction (only where both strings exist)
     both = g[["masked_prompt", "retrieved_prompt"]].notna().all(axis=1)
+
     if both.any():
-        exact_frac = float(g.loc[both, "prompt_same"].mean())
-        mean_ratio, ci_ratio = mean_ci(g.loc[both, "prompt_match_ratio"])
+        exact_count = int(g.loc[both, "prompt_same"].sum())
+        mean_ratio = float(g.loc[both, "prompt_match_ratio"].mean())
+        n_total = int(both.sum())
     else:
-        exact_frac = np.nan
-        mean_ratio, ci_ratio = np.nan, np.nan
+        exact_count = np.nan
+        mean_ratio = np.nan
+        n_total = 0
 
     pm_stats.append({
         "iteration": it,
-        "exact_same_frac": exact_frac,
+        "exact_same_count": exact_count,
         "mean_ratio": mean_ratio,
-        "ci_ratio": ci_ratio
+        "n_total": n_total
     })
 
 pm_stats = pd.DataFrame(pm_stats).sort_values("iteration")
 
-stacked_rate_bar(
-    pm_stats,
-    x_col="iteration",
-    y_col="exact_same_frac",
-    yerr_col=None,
-    ylabel="Exact Same Fraction",
-    filename="prompt_exact_match_per_iteration"
+# Exact same prompt count per iteration
+plt.figure(figsize=FIGSIZE)
+x = pm_stats["iteration"].to_numpy()
+
+plt.bar(
+    x,
+    pm_stats["exact_same_count"],
+    width=BAR_WIDTH,
+    color=CB_GREEN
 )
 
+plt.xlabel("Iteration")
+plt.ylabel("Exact Same Count")
+plt.xticks(x, rotation=0)
+plt.ylim(0, 100)
+mark_rephrased_iters()
+savefig("prompt_exact_match_count_per_iteration")
+
+
+# Mean close-match ratio per iteration
 plt.figure(figsize=FIGSIZE)
 x = pm_stats["iteration"].to_numpy()
 
@@ -605,12 +546,11 @@ plt.bar(
     x,
     pm_stats["mean_ratio"],
     width=BAR_WIDTH,
-    color=CB_GREEN,
-    capsize=CAPSIZE
+    color=CB_GREEN
 )
 
 plt.xlabel("Iteration")
-plt.ylabel("Close-Match Ratio")
+plt.ylabel("Mean Close-Match Ratio")
 plt.xticks(x, rotation=0)
 plt.ylim(0, 1)
 mark_rephrased_iters()
@@ -620,16 +560,14 @@ has_both = df[["masked_prompt", "retrieved_prompt"]].notna().all(axis=1)
 
 rows = []
 for it, g in df[has_both].groupby("iteration"):
-    n = len(g)
-
     exact_retrieved = ((g["prompt_same"]) & (g["winner"] == "retrieved")).sum()
     wrong_retrieved = ((~g["prompt_same"]) & (g["winner"] == "retrieved")).sum()
 
     rows.append({
         "iteration": it,
-        "frac_exact_retrieved": exact_retrieved / n if n else np.nan,
-        "frac_wrong_retrieved": wrong_retrieved / n if n else np.nan,
-        "n_total": n,
+        "count_exact_retrieved": exact_retrieved,
+        "count_wrong_retrieved": wrong_retrieved,
+        "n_total": len(g),
     })
 
 wr = pd.DataFrame(rows).sort_values("iteration")
@@ -639,68 +577,28 @@ x = wr["iteration"].to_numpy()
 
 plt.bar(
     x,
-    wr["frac_wrong_retrieved"],
+    wr["count_wrong_retrieved"],
     width=BAR_WIDTH,
     color=CB_RED,
     label="Retrieved win with non-exact retrieval"
 )
+
 plt.bar(
     x,
-    wr["frac_exact_retrieved"],
+    wr["count_exact_retrieved"],
     width=BAR_WIDTH,
-    bottom=wr["frac_wrong_retrieved"],
+    bottom=wr["count_wrong_retrieved"],
     color=CB_GREEN,
     label="Retrieved win with exact retrieval"
 )
 
 plt.xlabel("Iteration")
-plt.ylabel("Fraction of All Cases")
+plt.ylabel("Count")
 plt.xticks(x, rotation=0)
-plt.ylim(0, 1)
+plt.ylim(0, 100)
 plt.legend()
 mark_rephrased_iters()
-savefig("retrieved_win_rate_exact_vs_wrong")
-
-# --- Heatmap: 4 regimes per iteration (fractions) ---
-use = df[has_both].copy()
-
-use["retrieval_correct"] = np.where(use["prompt_same"], "Exact", "Non-exact")
-use["judge_winner"] = np.where(use["winner"] == "retrieved", "Retrieved wins", "Base wins")
-
-# Counts per iteration x (retrieval_correct, judge_winner)
-counts = (
-    use.groupby(["iteration", "retrieval_correct", "judge_winner"])
-    .size()
-    .reset_index(name="count")
-)
-
-# Pivot into 4 columns
-pivot_counts = counts.pivot_table(
-    index="iteration",
-    columns=["retrieval_correct", "judge_winner"],
-    values="count",
-    fill_value=0
-).sort_index()
-
-# Convert to within-iteration fractions (so each iteration sums to 1)
-pivot_frac = pivot_counts.div(pivot_counts.sum(axis=1), axis=0)
-
-# Flatten column names for nicer heatmap labels
-pivot_frac.columns = [f"{a} | {b}" for a, b in pivot_frac.columns]
-
-n_iter = len(pivot_frac)
-
-plt.figure(figsize=(10, max(6, 0.6 * n_iter)))
-sns.heatmap(
-    pivot_frac,
-    vmin=0, vmax=1,
-    linewidths=0.5,
-    linecolor="white",
-    cbar_kws={"label": "Fraction"}
-)
-plt.xlabel("Regime (retrieval correctness | judge decision)")
-plt.ylabel("Iteration")
-savefig("heatmap_rag_regimes_per_iteration")
+savefig("retrieved_win_counts_exact_vs_wrong")
 
 def load_expected_prompts(path: str) -> dict:
     """
@@ -835,27 +733,44 @@ def get_expected_models_for_row(row) -> list:
 df["expected_models"] = df.apply(get_expected_models_for_row, axis=1)
 df["predicted_models"] = df["expert_output"].apply(extract_predicted_models)
 
+def normalize_models(models):
+    if not isinstance(models, list):
+        return []
+    return [m.strip() for m in models if isinstance(m, str) and m.strip()]
+
+
 def model_hit(expected, predicted) -> float:
-    """
-    HIT: at least one expected model is among predicted models.
-    (robust when your system runs multiple helpers)
-    """
-    if not isinstance(expected, list) or not expected:
-        return np.nan
-    if not isinstance(predicted, list):
+    expected = normalize_models(expected)
+    predicted = normalize_models(predicted)
+
+    # Case 1: no expected model and no predicted model
+    if not expected and not predicted:
+        return 1.0
+
+    # Case 2: no expected model, but ChatGPT/controller handled it directly
+    if not expected and any("chatgpt" in m.lower() or "gpt" in m.lower() for m in predicted):
+        return 1.0
+
+    # Case 3: no expected model, but other model was predicted
+    if not expected:
         return 0.0
-    e = set(expected)
-    p = set(predicted)
-    return 1.0 if len(e.intersection(p)) > 0 else 0.0
+
+    # Normal relaxed hit criterion
+    return 1.0 if set(expected).intersection(set(predicted)) else 0.0
+
 
 def model_exact(expected, predicted) -> float:
-    """
-    EXACT: predicted model set equals expected model set.
-    """
-    if not isinstance(expected, list) or not expected:
-        return np.nan
-    if not isinstance(predicted, list):
-        return 0.0
+    expected = normalize_models(expected)
+    predicted = normalize_models(predicted)
+
+    # Treat empty expected and empty predicted as exact match
+    if not expected and not predicted:
+        return 1.0
+
+    # Optional: treat ChatGPT/controller-only cases as exact for empty expected
+    if not expected and any("chatgpt" in m.lower() or "gpt" in m.lower() for m in predicted):
+        return 1.0
+
     return 1.0 if set(expected) == set(predicted) else 0.0
 
 df["model_hit"] = df.apply(lambda r: model_hit(r["expected_models"], r["predicted_models"]), axis=1)
@@ -888,37 +803,6 @@ print(f"[OK] Model mismatches written to: {model_mismatch_path}")
 # ============================================================
 
 # 7. Model Hit/Miss rate per iteration (with CI)
-hit_stats = []
-for it, g in df.groupby("iteration"):
-    hit_count = (g["model_hit"] == 1.0).sum()
-    hit_stats.append({"iteration": it, "count": hit_count})
-hit_stats = pd.DataFrame(hit_stats).sort_values("iteration")
-
-stacked_count_bar(
-    hit_stats,
-    x_col="iteration",
-    y_col="count",
-    ylabel="Hit Count",
-    filename="model_hit_rate_per_iteration",
-    ymax=100
-)
-
-hit_stats = []
-for it, g in df.groupby("iteration"):
-    # Count rows where model_hit is 1.0 (successful hit)
-    hit_count = (g["model_hit"] == 1.0).sum()
-    hit_stats.append({"iteration": it, "count": hit_count})
-
-hit_stats = pd.DataFrame(hit_stats).sort_values("iteration")
-
-stacked_count_bar(
-    hit_stats,
-    x_col="iteration",
-    y_col="count",
-    ylabel="Hit Count",
-    filename="model_match_rate_per_iteration",
-    ymax=100  # Adjust based on your samples per iteration
-)
 
 # 8. Model Exact-set match rate per iteration
 exact_stats = []
@@ -936,20 +820,23 @@ stacked_count_bar(
     ymax=100
 )
 
-# 9. Inference failure rate per iteration
+# 9. Model invocation failure rate per iteration
 fail_stats = []
 for it, g in df.groupby("iteration"):
-    m, ci = mean_ci(g["inference_failure_rate"])
-    fail_stats.append({"iteration": it, "mean": m, "ci": ci})
+    m = g["inference_failure_rate"].mean()
+    fail_stats.append({
+        "iteration": it,
+        "mean": m
+    })
+
 fail_stats = pd.DataFrame(fail_stats).sort_values("iteration")
 
 stacked_rate_bar(
     fail_stats,
     x_col="iteration",
     y_col="mean",
-    yerr_col="ci",
-    ylabel="Average Failure Rate",
-    filename="inference_failure_rate_per_iteration",
+    ylabel="Model Invocation Failure Rate",
+    filename="model_invocation_failure_rate_per_iteration",
     ylim=(0, 1)
 )
 
