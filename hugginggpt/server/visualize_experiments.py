@@ -451,21 +451,41 @@ color_map = {
     "combined": CB_BLUE,   # or CB_GRAY
 }
 
-plt.figure(figsize=FIGSIZE)
-ax = winner_counts.plot(
+label_map = {
+    "base": "Base",
+    "combined": "Combined",
+    "retrieved": "Retrieved",
+}
+
+legend_width = 1.8  # adjust if needed
+
+fig, ax = plt.subplots(
+    figsize=(FIGSIZE[0] + legend_width, FIGSIZE[1])
+)
+
+winner_counts.plot(
     kind="bar",
     stacked=True,
     width=BAR_WIDTH,
-    figsize=FIGSIZE,
+    ax=ax,
     color=[color_map[c] for c in winner_counts.columns],
 )
 
-plt.xlabel("Iteration")
-plt.ylabel("Count")
-plt.legend()
-plt.ylim(0, 100)
-plt.xticks(rotation=0)
+ax.set_xlabel("Iteration")
+ax.set_ylabel("Count")
+ax.set_ylim(0, 100)
+ax.set_xticklabels(winner_counts.index, rotation=0)
+
+ax.legend(
+    labels=[label_map[c] for c in winner_counts.columns],
+    bbox_to_anchor=(1.02, 1),
+    loc="upper left",
+    borderaxespad=0,
+)
+
 mark_rephrased_iters_categorical(winner_counts.index)
+
+fig.tight_layout()
 savefig("judge_winner_counts")
 
 # ============================================================
