@@ -98,6 +98,7 @@ The bot enables conversational access to the system without requiring the web UI
 The Telegram bot acts as a thin wrapper around the existing HuggingGPT server:
 
 No modifications to the backend API are required. The bot communicates with the system via the existing `/hugginggpt` endpoint.
+The Telegram bot should also be started from the `env_chat` environment.
 
 ### Features
 
@@ -159,7 +160,7 @@ waiting_gif_path: "public/waiting/mr_bean_waiting.gif"
 ```
 
 #### 3. Install Dependencies
-
+If not already installed using `requirements_chat.txt`
 ```bash
 pip install python-telegram-bot librosa soundfile
 ```
@@ -190,11 +191,7 @@ A separate script is included for running the evaluation pipeline.
 ```bash
 python3 -m venv env_models
 source env_models/bin/activate
-pip install -r requirements.txt
-
-pip install diffusers==0.20.2 huggingface_hub==0.16.4
-pip install werkzeug==2.3.7 flask==2.3.2
-pip install scipy==1.10.1
+pip install -r requirements_models.txt
 
 python models_server.py --config configs/config.localllama.yaml
 deactivate
@@ -209,7 +206,7 @@ cd JARVIS/hugginggpt/server
 
 python3 -m venv env_chat
 source env_chat/bin/activate
-pip install -r requirements.txt
+pip install -r requirements_chat.txt
 
 python awesome_chat.py --config configs/config.localllama.yaml --mode server
 deactivate
@@ -224,7 +221,7 @@ python3 -m venv env_llama
 source env_llama/bin/activate
 pip install -r requirements.txt
 
-python3 llama_server.py
+python3 llama_server/llama_server.py
 deactivate
 ```
 
@@ -243,7 +240,22 @@ Edit: `configs/config.localllama.yaml` to include your API keys, endpoints, and 
 
 * Linux environment
 * `tmux` installed
-* Python 3.10+
+* Python 3.10.12
+
+This fork uses separate Python environments for the chat/orchestration components and the expert model server:
+
+* `env_chat` is used for:
+  * `awesome_chat.py`
+  * `telegram_bot.py`
+  * `run_batch.py` (the evaluation script)
+
+* `env_models` is used for:
+  * `models_server.py`
+
+The dependencies for these environments are stored separately:
+
+* `requirements_chat.txt`
+* `requirements_models.txt`
 
 ## What's New
 +  [2026.04.20] Added Telegram Bot as option to interact with HuggingGPT
