@@ -1,0 +1,111 @@
+2026-04-20 12:15:59,930 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda:0
+2026-04-20 12:15:59,930 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: Snowflake/snowflake-arctic-embed-m-v2.0
+2026-04-20 12:15:59,931 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2026-04-20 12:16:00,068 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /Snowflake/snowflake-arctic-embed-m-v2.0/resolve/main/modules.json HTTP/1.1" 307 0
+2026-04-20 12:16:00,075 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/Snowflake/snowflake-arctic-embed-m-v2.0/95c2741480856aa9666782eb4afe11959938017f/modules.json HTTP/1.1" 200 0
+2026-04-20 12:16:00,182 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /Snowflake/snowflake-arctic-embed-m-v2.0/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2026-04-20 12:16:00,189 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/Snowflake/snowflake-arctic-embed-m-v2.0/95c2741480856aa9666782eb4afe11959938017f/config_sentence_transformers.json HTTP/1.1" 200 0
+2026-04-20 12:16:00,296 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /Snowflake/snowflake-arctic-embed-m-v2.0/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2026-04-20 12:16:00,301 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/Snowflake/snowflake-arctic-embed-m-v2.0/95c2741480856aa9666782eb4afe11959938017f/config_sentence_transformers.json HTTP/1.1" 200 0
+2026-04-20 12:16:00,409 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /Snowflake/snowflake-arctic-embed-m-v2.0/resolve/main/README.md HTTP/1.1" 307 0
+2026-04-20 12:16:00,417 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/Snowflake/snowflake-arctic-embed-m-v2.0/95c2741480856aa9666782eb4afe11959938017f/README.md HTTP/1.1" 200 0
+2026-04-20 12:16:00,525 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /Snowflake/snowflake-arctic-embed-m-v2.0/resolve/main/modules.json HTTP/1.1" 307 0
+2026-04-20 12:16:00,531 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/Snowflake/snowflake-arctic-embed-m-v2.0/95c2741480856aa9666782eb4afe11959938017f/modules.json HTTP/1.1" 200 0
+2026-04-20 12:16:00,650 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /Snowflake/snowflake-arctic-embed-m-v2.0/resolve/main/sentence_bert_config.json HTTP/1.1" 404 0
+2026-04-20 12:16:00,758 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /Snowflake/snowflake-arctic-embed-m-v2.0/resolve/main/sentence_roberta_config.json HTTP/1.1" 404 0
+2026-04-20 12:16:00,869 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /Snowflake/snowflake-arctic-embed-m-v2.0/resolve/main/sentence_distilbert_config.json HTTP/1.1" 404 0
+2026-04-20 12:16:00,988 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /Snowflake/snowflake-arctic-embed-m-v2.0/resolve/main/sentence_camembert_config.json HTTP/1.1" 404 0
+2026-04-20 12:16:01,096 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /Snowflake/snowflake-arctic-embed-m-v2.0/resolve/main/sentence_albert_config.json HTTP/1.1" 404 0
+2026-04-20 12:16:01,209 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /Snowflake/snowflake-arctic-embed-m-v2.0/resolve/main/sentence_xlm-roberta_config.json HTTP/1.1" 404 0
+2026-04-20 12:16:01,317 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /Snowflake/snowflake-arctic-embed-m-v2.0/resolve/main/sentence_xlnet_config.json HTTP/1.1" 404 0
+2026-04-20 12:16:01,519 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /Snowflake/snowflake-arctic-embed-m-v2.0/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2026-04-20 12:16:01,628 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /Snowflake/snowflake-arctic-embed-m-v2.0/resolve/main/config.json HTTP/1.1" 307 0
+2026-04-20 12:16:01,634 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/Snowflake/snowflake-arctic-embed-m-v2.0/95c2741480856aa9666782eb4afe11959938017f/config.json HTTP/1.1" 200 0
+2026-04-20 12:16:01,744 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /Snowflake/snowflake-arctic-embed-m-v2.0/resolve/main/configuration_hf_alibaba_nlp_gte.py HTTP/1.1" 307 0
+2026-04-20 12:16:01,751 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/Snowflake/snowflake-arctic-embed-m-v2.0/95c2741480856aa9666782eb4afe11959938017f/configuration_hf_alibaba_nlp_gte.py HTTP/1.1" 200 0
+2026-04-20 12:16:01,862 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /Snowflake/snowflake-arctic-embed-m-v2.0/resolve/main/config.json HTTP/1.1" 307 0
+2026-04-20 12:16:01,869 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/Snowflake/snowflake-arctic-embed-m-v2.0/95c2741480856aa9666782eb4afe11959938017f/config.json HTTP/1.1" 200 0
+2026-04-20 12:16:01,983 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /Snowflake/snowflake-arctic-embed-m-v2.0/resolve/main/modeling_hf_alibaba_nlp_gte.py HTTP/1.1" 307 0
+2026-04-20 12:16:01,989 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/Snowflake/snowflake-arctic-embed-m-v2.0/95c2741480856aa9666782eb4afe11959938017f/modeling_hf_alibaba_nlp_gte.py HTTP/1.1" 200 0
+2026-04-20 12:16:02,285 - transformers_modules.Snowflake.snowflake-arctic-embed-m-v2.0.95c2741480856aa9666782eb4afe11959938017f.modeling_hf_alibaba_nlp_gte - WARNING - Override attn_implementation='sdpa' to 'eager' as use_memory_efficient_attention='true'
+2026-04-20 12:16:02,439 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /Snowflake/snowflake-arctic-embed-m-v2.0/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2026-04-20 12:16:02,444 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/Snowflake/snowflake-arctic-embed-m-v2.0/95c2741480856aa9666782eb4afe11959938017f/tokenizer_config.json HTTP/1.1" 200 0
+2026-04-20 12:16:02,567 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/Snowflake/snowflake-arctic-embed-m-v2.0/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2026-04-20 12:16:03,098 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /Snowflake/snowflake-arctic-embed-m-v2.0/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2026-04-20 12:16:03,104 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/Snowflake/snowflake-arctic-embed-m-v2.0/95c2741480856aa9666782eb4afe11959938017f/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2026-04-20 12:16:03,231 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/Snowflake/snowflake-arctic-embed-m-v2.0 HTTP/1.1" 200 None
+2026-04-20 12:16:03,592 - sentence_transformers.SentenceTransformer - INFO - 1 prompt is loaded, with the key: query
+2026-04-20 12:16:03,594 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8005
+2026-04-20 12:16:03,597 - urllib3.connectionpool - DEBUG - http://localhost:8005 "GET /running HTTP/1.1" 200 17
+2026-04-20 12:16:03,610 - root - DEBUG - text-classification: 30 models
+2026-04-20 12:16:03,610 - root - DEBUG - token-classification: 30 models
+2026-04-20 12:16:03,610 - root - DEBUG - text2text-generation: 30 models
+2026-04-20 12:16:03,610 - root - DEBUG - summarization: 30 models
+2026-04-20 12:16:03,610 - root - DEBUG - translation: 30 models
+2026-04-20 12:16:03,610 - root - DEBUG - question-answering: 30 models
+2026-04-20 12:16:03,610 - root - DEBUG - conversational: 30 models
+2026-04-20 12:16:03,610 - root - DEBUG - text-generation: 30 models
+2026-04-20 12:16:03,610 - root - DEBUG - sentence-similarity: 30 models
+2026-04-20 12:16:03,611 - root - DEBUG - tabular-classification: 30 models
+2026-04-20 12:16:03,611 - root - DEBUG - object-detection: 30 models
+2026-04-20 12:16:03,611 - root - DEBUG - image-classification: 30 models
+2026-04-20 12:16:03,611 - root - DEBUG - image-to-text: 30 models
+2026-04-20 12:16:03,611 - root - DEBUG - text-to-image: 31 models
+2026-04-20 12:16:03,611 - root - DEBUG - image-to-image: 30 models
+2026-04-20 12:16:03,611 - root - DEBUG - visual-question-answering: 13 models
+2026-04-20 12:16:03,611 - root - DEBUG - document-question-answering: 22 models
+2026-04-20 12:16:03,611 - root - DEBUG - image-segmentation: 30 models
+2026-04-20 12:16:03,611 - root - DEBUG - depth-estimation: 30 models
+2026-04-20 12:16:03,611 - root - DEBUG - text-to-video: 8 models
+2026-04-20 12:16:03,611 - root - DEBUG - text-to-speech: 30 models
+2026-04-20 12:16:03,611 - root - DEBUG - automatic-speech-recognition: 30 models
+2026-04-20 12:16:03,611 - root - DEBUG - audio-to-audio: 30 models
+2026-04-20 12:16:03,611 - root - DEBUG - audio-classification: 30 models
+2026-04-20 12:16:03,611 - root - DEBUG - named-entity-recognition: 1 models
+2026-04-20 12:16:03,614 - waitress - INFO - Serving on http://0.0.0.0:8004
+2026-04-20 12:16:23,970 - root - INFO - ********************************************************************************
+2026-04-20 12:16:23,970 - root - INFO - input: How many cars in this image /uploads/telegram/652899706b554613a1a33f150febe8e8.jpg
+2026-04-20 12:16:23,971 - root - DEBUG - Messages: [{'role': 'system', 'content': '#1 Task Planning Stage: You are a helpful AI assistant. Based on the user\'s request, you will recommend the best model from Hugging Face for the task, and explain why. The special tag "<GENERATED>-dep_id" refer to the one generated text/image/audio in the dependency task (Please consider whether the dependency task generates resources of this type.) and "dep_id" must be in "dep" list.  The "dep" field denotes the ids of the previous prerequisite tasks which generate a new resource that the current task relies on.  The "args" field must in ["text", "image", "audio"], nothing else.  The "task" field must be in ["token-classification", "optical-character-recognition", "named-entity-recognition", "text2text-generation", "summarization", "translation", "question-answering", "conversational", "text-generation", "sentence-similarity", "tabular-classification", "object-detection", "image-classification", "image-to-image", "image-to-text", "text-to-image", "text-to-video", "visual-question-answering", "document-question-answering", "image-segmentation", "depth-estimation", "text-to-speech", "automatic-speech-recognition", "audio-to-audio", "audio-classification", "canny-control", "hed-control", "mlsd-control", "normal-control", "openpose-control", "canny-text-to-image", "depth-text-to-image", "hed-text-to-image", "mlsd-text-to-image", "normal-text-to-image", "seg-text-to-image"] You must respond in JSON format like: [\n  {\n    "task": task, \n    "id": task_id, \n    "dep": dependency_task_id, \n    "args": {\n      "text": text or <GENERATED>-dep_id, \n      "image": image_url or <GENERATED>-dep_id, \n      "audio": audio_url or <GENERATED>-dep_id\n    }\n  }\n] Respond with the JSON entry and ONLY the JSON entry! Here are some few-shot examples:'}, {'role': 'user', 'content': 'Give you some pictures e1.jpg, e2.png, e3.jpg, help me count the number of sheep?'}, {'role': 'assistant', 'content': '[{"task": "image-to-text", "id": 0, "dep": [-1], "args": {"image": "e1.jpg" }}, {"task": "object-detection", "id": 1, "dep": [-1], "args": {"image": "e1.jpg" }}, {"task": "visual-question-answering", "id": 2, "dep": [1], "args": {"image": "<GENERATED>-1", "text": "How many sheep in the picture"}} }}, {"task": "image-to-text", "id": 3, "dep": [-1], "args": {"image": "e2.png" }}, {"task": "object-detection", "id": 4, "dep": [-1], "args": {"image": "e2.png" }}, {"task": "visual-question-answering", "id": 5, "dep": [4], "args": {"image": "<GENERATED>-4", "text": "How many sheep in the picture"}} }}, {"task": "image-to-text", "id": 6, "dep": [-1], "args": {"image": "e3.jpg" }},  {"task": "object-detection", "id": 7, "dep": [-1], "args": {"image": "e3.jpg" }}, {"task": "visual-question-answering", "id": 8, "dep": [7], "args": {"image": "<GENERATED>-7", "text": "How many sheep in the picture"}}]'}, {'role': 'user', 'content': 'Look at /e.jpg, can you tell me how many objects in the picture? Give me a picture and video similar to this one.'}, {'role': 'assistant', 'content': '[{"task": "image-to-text", "id": 0, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "object-detection", "id": 1, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "visual-question-answering", "id": 2, "dep": [1], "args": {"image": "<GENERATED>-1", "text": "how many objects in the picture?" }}, {"task": "text-to-image", "id": 3, "dep": [0], "args": {"text": "<GENERATED-0>" }}, {"task": "image-to-image", "id": 4, "dep": [-1], "args": {"image": "/e.jpg" }}, {"task": "text-to-video", "id": 5, "dep": [0], "args": {"text": "<GENERATED-0>" }}]'}, {'role': 'user', 'content': 'given a document /images/e.jpeg, answer me what is the student amount? And describe the image with your voice'}, {'role': 'assistant', 'content': '{"task": "document-question-answering", "id": 0, "dep": [-1], "args": {"image": "/images/e.jpeg", "text": "what is the student amount?" }}, {"task": "visual-question-answering", "id": 1, "dep": [-1], "args": {"image": "/images/e.jpeg", "text": "what is the student amount?" }}, {"task": "image-to-text", "id": 2, "dep": [-1], "args": {"image": "/images/e.jpg" }}, {"task": "text-to-speech", "id": 3, "dep": [2], "args": {"text": "<GENERATED>-2" }}]'}, {'role': 'user', 'content': 'Given an image /example.jpg, first generate a hed image, then based on the hed image generate a new image where a girl is reading a book'}, {'role': 'assistant', 'content': '[{"task": "openpose-control", "id": 0, "dep": [-1], "args": {"image": "/example.jpg" }},  {"task": "openpose-text-to-image", "id": 1, "dep": [0], "args": {"text": "a girl is reading a book", "image": "<GENERATED>-0" }}]'}, {'role': 'user', 'content': "please show me a video and an image of (based on the text) 'a boy is running' and dub it"}, {'role': 'assistant', 'content': '[{"task": "text-to-video", "id": 0, "dep": [-1], "args": {"text": "a boy is running" }}, {"task": "text-to-speech", "id": 1, "dep": [-1], "args": {"text": "a boy is running" }}, {"task": "text-to-image", "id": 2, "dep": [-1], "args": {"text": "a boy is running" }}]'}, {'role': 'user', 'content': 'please show me a joke and an image of cat'}, {'role': 'assistant', 'content': '[{"task": "conversational", "id": 0, "dep": [-1], "args": {"text": "please show me a joke of cat" }}, {"task": "text-to-image", "id": 1, "dep": [-1], "args": {"text": "a photo of cat" }}]'}, {'role': 'user', 'content': "The chat log [ [{'role': 'system', 'content': 'You are HuggingGPT, an AI assistant.'}] ] may contain the resources I mentioned. Now I input { How many cars in this image /uploads/telegram/652899706b554613a1a33f150febe8e8.jpg }. Pay attention to the input and output types of tasks and the dependencies between tasks."}]
+2026-04-20 12:16:23,973 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2026-04-20 12:16:24,151 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/meta-llama/Llama-3.3-70B-Instruct?expand=inferenceProviderMapping HTTP/1.1" 200 None
+2026-04-20 12:16:24,153 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): router.huggingface.co:443
+2026-04-20 12:16:24,475 - urllib3.connectionpool - DEBUG - https://router.huggingface.co:443 "POST /groq/openai/v1/chat/completions HTTP/1.1" 400 122
+2026-04-20 12:16:24,476 - awesome_chat - ERROR - Exception on /hugginggpt [POST]
+Traceback (most recent call last):
+  File "/workspace/JARVIS/hugginggpt/server/env_chat/lib/python3.10/site-packages/huggingface_hub/utils/_http.py", line 409, in hf_raise_for_status
+    response.raise_for_status()
+  File "/workspace/JARVIS/hugginggpt/server/env_chat/lib/python3.10/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://router.huggingface.co/groq/openai/v1/chat/completions
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/JARVIS/hugginggpt/server/env_chat/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/workspace/JARVIS/hugginggpt/server/env_chat/lib/python3.10/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/workspace/JARVIS/hugginggpt/server/env_chat/lib/python3.10/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/workspace/JARVIS/hugginggpt/server/env_chat/lib/python3.10/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/workspace/JARVIS/hugginggpt/server/env_chat/lib/python3.10/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/workspace/JARVIS/hugginggpt/server/awesome_chat.py", line 1429, in chat
+    response = chat_huggingface(messages, api_key, api_type, api_endpoint)
+  File "/workspace/JARVIS/hugginggpt/server/awesome_chat.py", line 1178, in chat_huggingface
+    task_str = parse_task(context, input, api_key, api_type, api_endpoint)
+  File "/workspace/JARVIS/hugginggpt/server/awesome_chat.py", line 468, in parse_task
+    return send_request(data)
+  File "/workspace/JARVIS/hugginggpt/server/awesome_chat.py", line 251, in send_request
+    response = client.chat_completion(
+  File "/workspace/JARVIS/hugginggpt/server/env_chat/lib/python3.10/site-packages/huggingface_hub/inference/_client.py", line 923, in chat_completion
+    data = self._inner_post(request_parameters, stream=stream)
+  File "/workspace/JARVIS/hugginggpt/server/env_chat/lib/python3.10/site-packages/huggingface_hub/inference/_client.py", line 279, in _inner_post
+    hf_raise_for_status(response)
+  File "/workspace/JARVIS/hugginggpt/server/env_chat/lib/python3.10/site-packages/huggingface_hub/utils/_http.py", line 465, in hf_raise_for_status
+    raise _format(BadRequestError, message, response) from e
+huggingface_hub.errors.BadRequestError: (Request ID: req_01kpnd41svfdwvw5sgvqkt713c)
+
+Bad request:
+{'message': '`logit_bias` is not supported with this model', 'type': 'invalid_request_error', 'param': 'logit_bias'}

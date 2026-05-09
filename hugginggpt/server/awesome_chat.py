@@ -146,7 +146,7 @@ elif API_TYPE == "openai":
 elif API_TYPE == "huggingface":
     API_KEY = config["huggingface"]["token"]
     client = InferenceClient(
-        provider="nscale",
+        provider="groq",
         api_key=API_KEY,
     )
 
@@ -252,7 +252,7 @@ def send_request(data):
             model=data["model"],
             messages=data["messages"],
             temperature=data.get("temperature", 0),
-            logit_bias=data.get("logit_bias")
+            #logit_bias=data.get("logit_bias")
         )
         #print(f"[ Response ]: {response}")
         content = response["choices"][0]["message"]["content"].strip()
@@ -1322,7 +1322,13 @@ def chat_huggingface(messages, api_key, api_type, api_endpoint, return_planning 
 
     log_iteration(record, iteration=iteration, run_dir=run_dir)
 
+    judge_summary = (
+        f"\n\nThe judge has decided on the {judge_result['winner']} explanation "
+        f"(Base Grade: {judge_result['rating_A']}, Retrieved Grade: {judge_result['rating_B']}). "
+        f"{judge_result['reason']}"
+    )
     response = replace_explanation_tags(response, final_explanation)
+    response += judge_summary
 
     end = time.time()
     during = end - start

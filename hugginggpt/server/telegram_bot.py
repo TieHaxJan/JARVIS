@@ -6,6 +6,9 @@ from pathlib import Path
 from typing import Any
 import argparse
 import asyncio
+import librosa
+import soundfile as sf
+from urllib.parse import urlparse, unquote
 
 import requests
 import yaml
@@ -45,9 +48,20 @@ TELEGRAM_UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
 HUGGINGGPT_BASE_URL = config.get("hugginggpt_base_url", "").rstrip("/")
 
 # Regex patterns for media paths returned in backend text
-IMAGE_PATTERN = re.compile(r'(http[s]?://\S+|/\S+\.(?:jpg|jpeg|png|gif|webp|tiff))', re.IGNORECASE)
-AUDIO_PATTERN = re.compile(r'(http[s]?://\S+|/\S+\.(?:wav|flac|mp3|ogg|m4a))', re.IGNORECASE)
-VIDEO_PATTERN = re.compile(r'(http[s]?://\S+|/\S+\.(?:mp4|mov|webm|mkv))', re.IGNORECASE)
+IMAGE_PATTERN = re.compile(
+    r'(?:http[s]?://\S+\.(?:jpg|jpeg|png|gif|webp|tiff)|file://\S+\.(?:jpg|jpeg|png|gif|webp|tiff)|/\S+\.(?:jpg|jpeg|png|gif|webp|tiff))',
+    re.IGNORECASE,
+)
+
+AUDIO_PATTERN = re.compile(
+    r'(?:http[s]?://\S+|file://\S+|/\S+\.(?:wav|flac|mp3|ogg|m4a))',
+    re.IGNORECASE,
+)
+
+VIDEO_PATTERN = re.compile(
+    r'(?:http[s]?://\S+|file://\S+|/\S+\.(?:mp4|mov|webm|mkv))',
+    re.IGNORECASE,
+)
 
 
 # ------------------------------------------------------------
@@ -110,6 +124,54 @@ def split_text(text: str, max_len: int = 4000) -> list[str]:
 
     return chunks
 
+def resample_audio(input_path: str, output_path: str, target_sr: int = 16000):
+    audio, sr = librosa.load(input_path, sr=None)  # keep original SR
+    audio_resampled = librosa.resample(audio, orig_sr=sr, target_sr=target_sr)
+    sf.write(output_path, audio_resampled, target_sr)
+
+def normalize_media_ref(ref: str) -> str:
+    ref = ref.strip()
+
+    if ref.startswith("file://"):
+        parsed = urlparse(ref)
+        ref = parsed.path
+
+    ref = unquote(ref)
+
+    while "//" in ref and not ref.startswith("http"):
+        ref = ref.replace("//", "/")
+
+    return ref
+
+
+def should_send_media_ref(ref: str) -> bool:
+    ref = normalize_media_ref(ref)
+
+    if ref.startswith("/uploads/telegram/"):
+        return False
+
+    return (
+        ref.startswith("/images/")
+        or ref.startswith("/audios/")
+        or ref.startswith("/videos/")
+        or ref.startswith("http://")
+        or ref.startswith("https://")
+    )
+
+
+def unique_normalized_refs(items: list[str]) -> list[str]:
+    seen = set()
+    out = []
+
+    for item in items:
+        norm = normalize_media_ref(item)
+        if not should_send_media_ref(norm):
+            continue
+        if norm not in seen:
+            seen.add(norm)
+            out.append(norm)
+
+    return out
 
 def unique_preserve_order(items: list[str]) -> list[str]:
     seen = set()
@@ -122,15 +184,11 @@ def unique_preserve_order(items: list[str]) -> list[str]:
 
 
 def resolve_local_media_path(media_ref: str) -> Path | None:
-    """
-    Convert a backend media reference like /images/x.png into a local file path under public/.
-    For absolute URLs we return None because those are not local files.
-    """
+    media_ref = normalize_media_ref(media_ref)
+
     if media_ref.startswith("http://") or media_ref.startswith("https://"):
         return None
 
-    # Flask serves static_folder="public" with static_url_path="/"
-    # so /images/x.png corresponds to public/images/x.png
     if media_ref.startswith("/"):
         return PUBLIC_DIR / media_ref.lstrip("/")
 
@@ -150,25 +208,58 @@ def build_user_message_from_photo(caption: str | None, relative_path: str) -> st
     return f"Please describe this image {relative_path}"
 
 
-async def send_media_from_reply(update: Update, reply_text: str) -> None:
-    image_refs = unique_preserve_order(IMAGE_PATTERN.findall(reply_text))
-    audio_refs = unique_preserve_order(AUDIO_PATTERN.findall(reply_text))
-    video_refs = unique_preserve_order(VIDEO_PATTERN.findall(reply_text))
+async def send_reply_with_media(update: Update, reply_text: str) -> None:
+    image_refs = unique_normalized_refs(IMAGE_PATTERN.findall(reply_text))
+    audio_refs = unique_normalized_refs(AUDIO_PATTERN.findall(reply_text))
+    video_refs = unique_normalized_refs(VIDEO_PATTERN.findall(reply_text))
 
-    # Images
+    caption_limit = 1024  # Telegram caption limit
+    caption_text = reply_text[:caption_limit]
     for ref in image_refs:
+        norm = normalize_media_ref(ref)
+        local_path = resolve_local_media_path(ref)
+        logger.info("Image ref raw=%s norm=%s local=%s exists=%s", ref, norm, local_path, local_path.exists() if local_path else None)
+
+    # If there is at least one image, send the first one with caption
+    if image_refs:
+        first_image = image_refs[0]
+
         try:
-            if ref.startswith("http://") or ref.startswith("https://"):
-                await update.message.reply_photo(photo=ref)
+            if first_image.startswith("http://") or first_image.startswith("https://"):
+                await update.message.reply_photo(photo=first_image, caption=caption_text)
             else:
-                local_path = resolve_local_media_path(ref)
+                local_path = resolve_local_media_path(first_image)
                 if local_path and local_path.exists():
                     with open(local_path, "rb") as f:
-                        await update.message.reply_photo(photo=f)
+                        await update.message.reply_photo(photo=f, caption=caption_text)
+                else:
+                    # fallback to text if file missing
+                    for chunk in split_text(reply_text):
+                        await update.message.reply_text(chunk)
         except Exception:
-            logger.exception("Failed to send image back to Telegram: %s", ref)
+            logger.exception("Failed to send captioned image: %s", first_image)
+            for chunk in split_text(reply_text):
+                await update.message.reply_text(chunk)
 
-    # Audio
+        # send additional images without repeating caption
+        for ref in image_refs[1:]:
+            try:
+                if ref.startswith("http://") or ref.startswith("https://"):
+                    await update.message.reply_photo(photo=ref)
+                else:
+                    local_path = resolve_local_media_path(ref)
+                    if local_path and local_path.exists():
+                        with open(local_path, "rb") as f:
+                            await update.message.reply_photo(photo=f)
+            except Exception:
+                logger.exception("Failed to send additional image: %s", ref)
+
+    else:
+        # no image -> send text normally
+        for chunk in split_text(reply_text):
+            await update.message.reply_text(chunk)
+
+    # audio
     for ref in audio_refs:
         try:
             if ref.startswith("http://") or ref.startswith("https://"):
@@ -181,11 +272,11 @@ async def send_media_from_reply(update: Update, reply_text: str) -> None:
         except Exception:
             logger.exception("Failed to send audio back to Telegram: %s", ref)
 
-    # Video
+    # video
     for ref in video_refs:
         try:
             if ref.startswith("http://") or ref.startswith("https://"):
-                await update.message.reply_video(video=ref)
+                await update.message.reply_video(video=ref, caption="" if image_refs else None)
             else:
                 local_path = resolve_local_media_path(ref)
                 if local_path and local_path.exists():
@@ -232,11 +323,26 @@ async def run_backend_and_reply(update: Update, context: ContextTypes.DEFAULT_TY
             except Exception:
                 logger.exception("Failed to delete waiting GIF")
 
-    for chunk in split_text(reply_text):
-        await update.message.reply_text(chunk)
+    if reply_text.startswith("Error while contacting HuggingGPT:"):
+        for chunk in split_text(reply_text):
+            await update.message.reply_text(chunk)
+        return
 
-    if not reply_text.startswith("Error while contacting HuggingGPT:"):
-        await send_media_from_reply(update, reply_text)
+    # Check whether the reply contains at least one sendable output image.
+    image_refs = unique_normalized_refs(IMAGE_PATTERN.findall(reply_text))
+    has_output_image = len(image_refs) > 0
+
+    if has_output_image:
+        caption_text = reply_text[:1024]
+        remaining_text = reply_text[1024:].strip()
+
+        await send_reply_with_media(update, caption_text)
+
+        if remaining_text:
+            for chunk in split_text(remaining_text):
+                await update.message.reply_text(chunk)
+    else:
+        await send_reply_with_media(update, reply_text)
 
 
 # ------------------------------------------------------------
@@ -256,6 +362,7 @@ async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
         "/reset - clear local chat history\n\n"
         "You can send:\n"
         "- text messages\n"
+        "- voice messages, reply to these to instruct the model\n"
         "- a photo\n"
         "- a photo with a caption like:\n"
         "  Count the objects in this image"
@@ -270,13 +377,23 @@ async def reset_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> N
 # ------------------------------------------------------------
 # Message handlers
 # ------------------------------------------------------------
-async def handle_text_message(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+async def handle_text_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if not update.message or not update.message.text:
         return
 
     user_text = update.message.text.strip()
     if not user_text:
         return
+
+    # check if replying to a voice message
+    reply = update.message.reply_to_message
+    voice_store = context.chat_data.get("voice_messages", {})
+
+    if reply and reply.message_id in voice_store:
+        audio_path = voice_store[reply.message_id]
+
+        # build prompt using audio file path
+        user_text = f"{user_text} {audio_path}"
 
     await run_backend_and_reply(update, context, user_text)
 
@@ -317,6 +434,31 @@ async def handle_photo_message(update: Update, context: ContextTypes.DEFAULT_TYP
     except Exception as e:
         logger.exception("Telegram photo handling error")
         await update.message.reply_text(f"Error while handling the image:\n{e}")
+        
+async def handle_voice_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    if not update.message or not update.message.voice:
+        return
+
+    voice = update.message.voice
+    telegram_file = await context.bot.get_file(voice.file_id)
+
+    filename = f"{uuid.uuid4().hex}.ogg"
+    local_path = TELEGRAM_UPLOAD_DIR / filename
+
+    await telegram_file.download_to_drive(custom_path=str(local_path))
+
+    resampled_path = TELEGRAM_UPLOAD_DIR / f"{uuid.uuid4().hex}_16k.wav"
+    resample_audio(str(local_path), str(resampled_path))
+
+    relative_path = f"/uploads/telegram/{resampled_path.name}"
+
+    # store mapping: message_id → file path
+    voice_store = context.chat_data.setdefault("voice_messages", {})
+    voice_store[update.message.message_id] = relative_path
+
+    await update.message.reply_text(
+        "Voice message received. Reply to your voice message with instructions."
+    )
 
 
 def main() -> None:
@@ -332,6 +474,7 @@ def main() -> None:
 
     # Photo handler first, then text
     app.add_handler(MessageHandler(filters.PHOTO, handle_photo_message))
+    app.add_handler(MessageHandler(filters.VOICE, handle_voice_message))
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_text_message))
 
     logger.info("Telegram bot started")

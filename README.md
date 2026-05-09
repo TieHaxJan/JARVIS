@@ -161,22 +161,9 @@ waiting_gif_path: "public/waiting/mr_bean_waiting.gif"
 #### 3. Install Dependencies
 
 ```bash
-pip install python-telegram-bot
+pip install python-telegram-bot librosa soundfile
 ```
 
-#### 4. Start the System
-
-Start the HuggingGPT server:
-
-```bash
-python awesome_chat.py --mode server
-```
-
-Start the Telegram bot:
-
-```bash
-python telegram_bot.py --config config.yaml
-```
 
 ## Scripts
 
@@ -214,6 +201,8 @@ deactivate
 ````
 
 ### HuggingGPT Server
+Change the inference provider in `awesome_chat.py` in line 149 to the preferred provider.
+Enable/ Disable logit_bias in line 255 for your preferred provider.
 
 ```bash
 cd JARVIS/hugginggpt/server
