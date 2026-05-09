@@ -580,13 +580,14 @@ has_both = df[["masked_prompt", "retrieved_prompt"]].notna().all(axis=1)
 
 rows = []
 for it, g in df[has_both].groupby("iteration"):
-    exact_retrieved = ((g["prompt_same"]) & (g["winner"] == "retrieved")).sum()
-    wrong_retrieved = ((~g["prompt_same"]) & (g["winner"] == "retrieved")).sum()
+    retrieval_winners = g["winner"].isin(["retrieved", "combined"])
+    exact_retrieval_win = ((g["prompt_same"]) & retrieval_winners).sum()
+    wrong_retrieval_win = ((~g["prompt_same"]) & retrieval_winners).sum()
 
     rows.append({
         "iteration": it,
-        "count_exact_retrieved": exact_retrieved,
-        "count_wrong_retrieved": wrong_retrieved,
+        "count_exact_retrieved": exact_retrieval_win,
+        "count_wrong_retrieved": wrong_retrieval_win,
         "n_total": len(g),
     })
 
@@ -600,7 +601,7 @@ plt.bar(
     wr["count_wrong_retrieved"],
     width=BAR_WIDTH,
     color=CB_RED,
-    label="Retrieved win with non-exact retrieval"
+    label="Non-exact retrieval"
 )
 
 plt.bar(
@@ -609,7 +610,7 @@ plt.bar(
     width=BAR_WIDTH,
     bottom=wr["count_wrong_retrieved"],
     color=CB_GREEN,
-    label="Retrieved win with exact retrieval"
+    label="Exact retrieval"
 )
 
 plt.xlabel("Iteration")
